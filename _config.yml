@@ -1,0 +1,15 @@
+markdown: rdiscount
+permalink: /:categories/:title.html
+destination: ./_site
+auto: true
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore
+author: Aitor Gómez Goiri
+gravatar: b0f00a2ea95fb62954454074a4a6fc28
+email: aitor.gomez@deusto.es
+web: http://aitor.gomezgoiri.net
+twitter: gomezgoiri
+github: gomezgoiri
+linkedin: gomezgoiri
