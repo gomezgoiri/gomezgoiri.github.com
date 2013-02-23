@@ -9,4 +9,6 @@ bib: http://aitor.gomezgoiri.net/gomezgoiri2011collaboration.bib
 semantics: 
 --- 
 
-abstract
+In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.
+Hence, a promising next step should be to build interaction models on top of this network connectivity and thus focus on the application layer, i.e. how to achieve useful aggregated functionality out of these Internet-connected ecosystems of sensors and actuators.
+This work analyses the adoption of Triple Spaces coordination language by very heterogeneous and resource-constrained devices and outlines how its primitives can help to develop fully distributed and very decoupled scenarios.

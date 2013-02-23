@@ -9,4 +9,7 @@ bib: http://aitor.gomezgoiri.net/publications/laiseca2011distributed.bib
 semantics: http://www.morelab.deusto.es/resource/distributed-tracking-system-for-patients-with-cognitive-impairments
 --- 
 
-abstract
+The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.
+These requirements, such as medical staff and financial resources, have been multiplied in the last years, and this tendency will continue in the forthcoming ones.
+In order to reduce these requirements, the introduction of new technologies will be a key aspect.
+n this paper we propose a test-question-based memory game that collects the answers given by patients and facilitates access to this information to caregivers and relatives.

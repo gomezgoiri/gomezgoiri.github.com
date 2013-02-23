@@ -10,4 +10,7 @@ semantics: http://www.morelab.deusto.es/resource/a-triple-space-based-semantic-d
 slides: http://www.slideshare.net/twolf/a-triple-spacebased-semantic-distributed-middleware-for-internet-of-things
 --- 
 
-abstract
+In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.
+In this context, the Triple Space approach, where different processes share common semantic knowledge, seems to fit perfectly.
+In this paper we present our progress towards a semantic middleware which allows the communication between a wide range of embedded devices in a distributed, decoupled and very expressive manner.
+This solution has been tested in a stereotypical deployment scenario showing the promising potential of this approach for local environments.

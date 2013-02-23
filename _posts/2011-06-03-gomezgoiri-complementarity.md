@@ -9,4 +9,8 @@ bib: http://aitor.gomezgoiri.net/publications/gomezgoiri2011complementarity.bib
 semantics: http://www.morelab.deusto.es/resource/on-the-complementarity-of-triple-spaces-and-the-web-of-things
 --- 
 
-abstract
+The Internet of Things (IoT) enables communication among real-world things and devices through Internet.
+So far, IoT research has focused on allowing such communication through different protocols and architectures.
+Some of these architectural approaches are Web of Things (WoT) and Triple Space (TS) which are both resource oriented architectures.
+This work analyses and compares both approaches and outlines the scenarios in which they will be more useful.
+Particularly, it outlines how some of the drawbacks of WoT in the discovery and cooperation aspects may be complemented by integrating with TS.
