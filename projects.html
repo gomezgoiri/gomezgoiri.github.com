@@ -1,14 +1,14 @@
 ---
 layout: default
-title: R&D Projects
+title: R&amp;D Projects
 ---
 
-<h1>R&D Projects</h1>
+<h1>{{ page.title %}}</h1>
 
 {% for post in site.posts %}
   {% if post.category == 'projects' %}
   
-    <h2> {{ post.title }}</h2>
+    <h2 style="margin-top: 20px;"> {{ post.title }}</h2>
   
     <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
     <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">visit the project's website</a></p>
