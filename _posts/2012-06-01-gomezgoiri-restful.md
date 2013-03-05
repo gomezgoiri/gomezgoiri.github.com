@@ -8,6 +8,7 @@ pdf: http://aitor.gomezgoiri.net/publications/gomezgoiri2012restful.pdf
 bib: http://aitor.gomezgoiri.net/publications/gomezgoiri2012restful.bib
 semantics: http://www.slideshare.net/twolf/restful-triple-spaces-of-things
 slides: http://www.slideshare.net/twolf/restful-triple-spaces-of-things
+slideshare-embed_code: 13378432
 --- 
 
 The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.

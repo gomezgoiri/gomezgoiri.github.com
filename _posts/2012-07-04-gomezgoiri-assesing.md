@@ -8,6 +8,7 @@ pdf: http://aitor.gomezgoiri.net/publications/gomezgoiri2012dissemination.pdf?at
 semantics: http://www.morelab.deusto.es/resource/assessing-data-dissemination-strategies-within-triple-spaces-on-the-web-of-things
 bib: http://aitor.gomezgoiri.net/publications/gomezgoiri2012dissemination.bib?attredirects=0
 slides: http://www.slideshare.net/twolf/assessing-data-dissemination-strategies
+slideshare-embed_code: 13652892
 --- 
 
 The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol and other web techniques.

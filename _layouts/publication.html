@@ -11,13 +11,13 @@ comments: true
       <a href="/publications{{ page.url }}" rel="bookmark" title="Permanent link to ">{{ page.title }}</a>
     </h2>
     <h5>
-        <time>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</time> - 
-        <author>{{ site.author }}</author>
+	<author>{{ page.authors }}</author> - 
+        <time>{{ page.date | date: '%B' }} {{ page.date | date: '%Y' }}</time>
     </h5>
   </header>
   
   <blockquote>
-      <p>{{ page.authors }}. <span style="font-weight:bold;">{{ page.title }}</span>. {{ page.rest_citation }}</p>
+      <p>{{ page.rest_citation }}</p>
   </blockquote>
 
   
