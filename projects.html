@@ -11,6 +11,7 @@ title: R&amp;D Projects
     <h2 style="margin-top: 20px;"> {{ post.title }}</h2>
   
     <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
-    <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">visit the project's website</a></p>
+    
+    <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">Go to its website</a></p>
   {% endif %}
 {% endfor %}
