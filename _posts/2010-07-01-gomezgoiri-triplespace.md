@@ -8,6 +8,7 @@ pdf: http://sites.google.com/a/gomezgoiri.net/aitor-gomez-goiri/publications/gom
 bib: http://aitor.gomezgoiri.net/publications/TS-BasdSemnticDistribtdMiddlwr4IoT.bibtex
 semantics: http://www.morelab.deusto.es/resource/a-triple-space-based-semantic-distributed-middleware-for-internet-of-things
 slides: http://www.slideshare.net/twolf/a-triple-spacebased-semantic-distributed-middleware-for-internet-of-things
+slideshare-embed_code: 4751866
 --- 
 
 In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.

@@ -1,3 +1,17 @@
 .citation {
   font-size: 100%;
 }
+
+h2 {
+  font-size: 80%;
+}
+
+.avatar {
+  float: right;
+  margin-left: 20px;
+}
+
+.qrcode {
+  float: right;
+  margin-left: 20px;
+}
