@@ -5,4 +5,27 @@ title: Page Not Found
 
 <h1>Page Not Found</h1>
 
-<p>Try <a href="http://www.google.com">searching</a> or go back to the <a href="/">Home page</a></p>
+<img class="avatar"
+      src="img/404_thinking.jpg"
+      alt="404 error image"
+      width="200"
+      height="200">
+
+<p>Try searching or go back to the <a href="/">home page</a>.</p>
+
+<script>
+  (function() {
+    var cx = '003123041647642216693:z-wgm1zzozk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<div style="width: 500px;">
+  <gcse:search></gcse:search>
+</div>
