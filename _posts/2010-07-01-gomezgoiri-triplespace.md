@@ -3,7 +3,7 @@ layout: publication
 category: publications
 title: A Triple Space-Based Semantic Distributed Middleware for Internet of Things
 authors: Aitor Gómez-Goiri, Diego López-de-Ipiña
-rest_citation: In Florian Daniel and Federico Facca, editors, Current Trends in Web Engineering, volume 6385 of Lecture Notes in Computer Science, pages 447-458. Springer Berlin / Heidelberg, July 2010. 10.1007/978-3-642-16985-4 43.
+rest_citation: In Florian Daniel and Federico Facca, editors, Current Trends in Web Engineering, volume 6385 of Lecture Notes in Computer Science, pages 447-458. Springer Berlin / Heidelberg, July 2010. DOI: <a href="http://link.springer.com/chapter/10.1007/978-3-642-16985-4_43">10.1007/978-3-642-16985-4_43</a>.
 pdf: /files/pdf/gomezgoiri2010triplespace.pdf
 bib: /files/bibtex/gomezgoiri2010triplespace.bib
 semantics: http://www.morelab.deusto.es/resource/a-triple-space-based-semantic-distributed-middleware-for-internet-of-things
