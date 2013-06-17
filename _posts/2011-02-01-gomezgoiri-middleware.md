@@ -12,5 +12,5 @@ semantics: http://www.morelab.deusto.es/resource/middleware-semantico-orientado-
 En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.
 En este contexto, los modelos semánticos pueden utilizarse para describir el contexto que rodea dichos dispositivos de una manera muy expresiva, normalmente almacenada en bases de conocimiento centralizadas.
 Las aplicaciones construidas a partir de estas bases de conocimiento que generalmente no son sensibles a la dinamicidad de la red.
-El middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del \textit{Triple Space}.
+El middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del *Triple Space*.
 Este middleware ha sido probado en un escenario estereotipado, mostrando cómo los diferentes nodos de una red pueden compartir información, conservando su autonomía y con un rendimiento razonable en los dispositivos con capacidad de computación reducida.

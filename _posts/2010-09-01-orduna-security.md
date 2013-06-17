@@ -12,4 +12,8 @@ slideshare-embed_code: 5188900
 
 --- 
 
-abstract
+As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes critical.
+In the Semantic Web the old and well-known vulnerabilities reappear with all the power of the new semantic mechanisms.
+This semantic mechanisms offer new and dangerous possibilities to malicious users.
+For this reason it is important for the developers to know and prevent the vulnerabilities in their applications.
+In this paper we analyze the possibilities of injection attacks in the most used semantic query / update languages (SPARQL/SPARUL).
