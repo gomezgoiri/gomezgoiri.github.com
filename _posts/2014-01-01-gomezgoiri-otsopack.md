@@ -3,7 +3,7 @@ layout: publication
 category: publications
 title: Otsopack&#58; Lightweight semantic framework for interoperable ambient intelligence applications
 authors: Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña
-rest_citation: (to appear)
+rest_citation: <a href="http://www.journals.elsevier.com/computers-in-human-behavior/">Computers in Human Behavior</a>. <a href="http://www.sciencedirect.com/science/article/pii/S0747563213002148">To appear</a>.
 bib: /files/bibtex/gomezgoiri20XXotsopack.bib
 --- 
 

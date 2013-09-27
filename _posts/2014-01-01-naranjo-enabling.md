@@ -3,7 +3,7 @@ layout: publication
 category: publications
 title: Enabling user access control in energy-constrained wireless smart environments
 authors: J. A. M. Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, L. G. Casado
-rest_citation: (to appear)
+rest_citation: <a href="http://www.jucs.org/">Journal of Universal Computer Science</a>. To appear.
 bib: /files/bibtex/naranjo20XXenabling.bib
 --- 
 
