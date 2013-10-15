@@ -25,6 +25,10 @@ comments: true
     {% if page.bib %}
       <a href="{{ page.bib }}"><img src="../img/bibtex.png" alt="Bibtex citation" /></a>
     {% endif %}
+        
+    {% if page.code %}
+      <a href="{{ page.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
+    {% endif %}
     
     {% if page.semantics %}
       <a href="{{ page.semantics }}"><img src="../img/rdf.png" alt="Semantics of the publication" /></a>
@@ -37,10 +41,6 @@ comments: true
     
     {% if page.pdf %}
       <a href="{{ page.pdf }}"><img src="../img/pdf.png" alt="Read the full publication" /></a>
-    {% endif %}
-    
-    {% if page.code %}
-      <a href="{{ page.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
     {% endif %}
   </div>
 

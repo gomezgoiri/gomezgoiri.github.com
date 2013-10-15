@@ -25,6 +25,10 @@ title: Publications
 	  <a href="{{ post.bib }}" title="Download the citation in Bibtex format"><img src="img/bibtex.png" alt="Bibtex citation" /></a>
 	{% endif %}
 	
+	{% if post.code %}
+	  <a href="{{ page.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
+	{% endif %}
+	
 	{% if post.semantics %}
 	  <a href="{{ post.semantics }}" title="Check the semantic description of this publication"><img src="img/rdf.png" alt="Semantics of the publication" /></a>
 	{% endif %}
@@ -36,10 +40,7 @@ title: Publications
 	{% if post.pdf %}
 	  <a href="{{ post.pdf }}" title="Download this publication in PDF format"><img src="img/pdf.png" alt="Publication in PDF" /></a>
 	{% endif %}
-	
-	{% if page.code %}
-	  <a href="{{ page.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
-	{% endif %}
+
       </div>
       
       <div style="clear:both;">
