@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800,400);
+
+body {
+  font-family: 'Open Sans';
+  font-size: medium;
+  font-weight: 400;
+}
+h1, h2, h3 {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.small * {
+  font-size: small !important;
+}
+code {
+  border-radius: 5px;
+}
+.inverse {
+  background: #272822;
+  color: #777872;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2 {
+  color: #f3f3f3;
+  line-height: 0.8em;
+}
+.footnote {
+  position: absolute;
+  font-size: small;
+  bottom: 3em;
+  right: 3em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+    color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 2em;
+}
