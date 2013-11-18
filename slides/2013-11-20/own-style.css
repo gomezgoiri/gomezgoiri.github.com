@@ -1,12 +1,25 @@
+/**
+ * Deusto theme for remark.
+ * 
+ * Copyright (C) 2013 Aitor Gómez Goiri, http://aitor.gomezgoiri.net
+ * 
+ * sass --watch deusto.scss:../deusto.css
+ */
+
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800,400);
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: x-large;
   font-weight: 400;
 }
 h1, h2, h3 {
-  font-family: 'Open Sans';
+  color: #2c4b9b;
+  font-family: 'Francois One', Impact, sans-serif;
+  font-size: 1.5em;
   font-weight: 800;
   margin-bottom: 0;
 }
@@ -46,4 +59,58 @@ code {
   width: 75%;
   float: right;
   padding-top: 2em;
+}
+
+
+/* Own adjustments */
+
+.remark-slide-number {
+  visibility: hidden;
+}
+a:not(.image) {
+  color: #2c4b9b;
+  text-shadow: none;
+  border: none;
+}
+a:not(.image):hover {
+  color: #8794b9;
+}
+.breakline {
+  display: block;
+  clear: both;
+}
+
+/* Frontpage */
+.frontpage {
+  background-image: url('img/front-background.png');
+}
+.frontpage .frontcontent-outer { /* Not directly specified in ".frontpage" because .remark-slide overrides padding properties */
+  position:relative;
+  height: 55%;
+  margin-bottom: 45%;
+  padding-top: 0em;
+}
+.frontpage .frontcontent-inner { /* To center it */
+  position:absolute;
+  top:50%;
+  margin-top:-6em;
+}
+.frontpage h1 {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+  font-weight: 800;
+  /*text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);*/
+}
+.frontpage h2 {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+  font-weight: 400;
+}
+.frontpage .date {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+  font-weight: 400;
 }

@@ -8,10 +8,39 @@
   <body>
     <textarea id="source">
 
-class: center, middle
+class: center, frontpage
+
+.frontcontent-outer[
+ .frontcontent-inner[
 
 # Coordination of Internet-connected objects through a Distributed Semantic Space
-## Aitor Gómez Goiri
+## Aitor Gómez Goiri .breakline[ [gomezgoiri.net](http://gomezgoiri.net)]
+
+<!--Internet unit, [DeustoTech](http://www.deustotech.deusto.es/)
+.breakline[ [www.morelab.deusto.es](http://www.morelab.deusto.es) ]-->
+
+.date[November 20, 2013]
+
+  ]
+]
+
+---
+
+# Outline
+
+ 1. Motivation
+ 2. Thesis outline
+ 3. New space model
+ 4. Search architecture
+ 5. Actuation
+ 6. Conclusion
+
+---
+
+class: center, middle
+
+# Motivation
+<!--## (1/6)-->
 
 ---
 
@@ -32,47 +61,20 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 <!-- Molaría más tener un supertítulo en pequeño para que se notase que sigo en la motivation -->
 # Motivation: UbiComp
 
-Environment where devices imperceptibly work on our behalf.
+Devices imperceptibly working on our behalf.
 
  * Its real power "_comes not from any one of these devices, it emerges from the interaction of all of them_".
 
 --
 
- * Lately: IoT and (much less frustating) mobile computing.
+ * IoT and mobile computing.
+ * __Problem__: devices and applications build upon them are heterogeneous.
   
 ???
 
 UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
 
-
----
-
-# Motivation: space-based computing
-
- * Decoupling!
- <!-- Dibujito -->
---
-
- * Often applied to UbiComp
-  * Can these devices get more involved in the management of the space?
-
-???
-
-Research question: oportunidad de PhD! :-P
-
-More involved -> Not only mere clients.
-
----
-
-# Research question
-
-Can these devices get more involved in the management of the space?
-
- * Problem: devices and applications build upon them are heterogeneous.
-
-???
-
-We face a problem of interoperability.
+Lately: Internet of Things and (much less frustating) mobile computing.
 
 ---
 
@@ -106,27 +108,40 @@ The IEEE defines it as
      * Some of them can even autonomously reason and expand this information.
     * Other may need to rely in third entities.
     * In any case, we can anticipate a trend.
-
- And talking about exchanging info...
 ---
 
-# The Web and Hypermedia APIs
+# Motivation: space-based computing
 
- * Massively accepted way to exchange information for humans...
+ * Decoupling!
+ <!-- Dibujito -->
 --
- but also for applications, which expose their capabilities through HTTP APIs.
- 
- * REST architectural style comprises the design principles of _the modern web_
- 
-  * also in the IoT => WoT
-  
+
+ * Often applied to UbiComp
+ * Used with Semantics
+
 ???
 
- Principles:
-  * Scalability
-  * Simplicity
-  * Portability
-  * etc.
+ * Ideal for environments which change (in short and long time)
+
+---
+
+[IMG y análisis]
+
+ * Can these devices get more involved in the management of the space?
+
+???
+
+Research question: oportunidad de PhD! :-P
+
+More involved -> Not only mere clients.
+
+---
+
+class: center, middle
+
+# Thesis outline
+<!--## (2/6)-->
+<!-- Poner algo para que se sepa que no queda muchísimo -->
 
 ---
 
@@ -139,14 +154,11 @@ and interoperable__ fashion._
 
 ---
 
-# Objectives
+# Work-areas
 
- 1. Spaces model for uncoupled communication between participants but enriched with their own managed knowledge.
- 1. TSC interface for HTTP compatible with (most of) the REST principles.
+ 1. Space model.
  1. Search-aware architecture for end-to-end communication between devices.
  1. Actuation of different actuation mechanisms.
- 1. Alignment between space-based communication and direct REST service consumption.
- 
 
 ???
 
@@ -160,27 +172,120 @@ class: center, middle
 
 ???
 
-Actually this is simplified version of all my unfruitful attempts.
+This is simplified version of all my unfruitful attempts.
+
+5 year process (prior to knowing that I wanted to be a PhD student).
 
 ---
 
-# First attempt
+# Baseline Model 
 
-Let all devices provide their own information in a completely decentralized fashion.
+Triple Space Computing (TSC)
+ 
+ * Spaces identified by URIs
+ * Tuples == RDF Triples & RDF Graphs
+ * Templates = triple patterns
+
+???
+
+Uses elements from the SW
+
+--
+
+# Model: 1st attempt
+
+Completely decentralized
+
+ * Each device manages its own information
+ * Ask to the rest (P2P)
+
+???
 
 Pros:
- 
- * Manageability
- * Aligned with the WoT vision
- 
-  * Interoperability &#10004;
+
+ * Avoid depending on others: simplify management
+  * each device manages its own knowledge
+ * Reduces networking in writings
+  * Which are quite frequent (updates of a sensor measure)
+ * Unreliable
+  * Is there any other way of distributing content?
 
 Cons:
 
- * Devices reliability
- * What about the uncoupling?
+ * Inconsistency (Brewer)
+ * Difficult to create: subscription, transactions, etc.
+ * JXTA: not really interoperable
+ 
+  * Not appropriate for limited devices
+  * Discontinued
+  * The hell!
+  
+---
+
+# Model: 2nd attempt (I)
+
+Same model, substitute the communication mechanism.
+
+ * To interoperate, it is better to adopt a widely accepted mechanism
+--
+: the Web!
+
+???
+
+ Mechanism/protocol
+
+---
+ 
+# The Web and Hypermedia APIs
+
+ * Massively accepted by humans.
+ * Also for applications, which expose their capabilities through HTTP APIs.
+-- 
+ * REST architectural style comprises the design principles of _the modern web_
+ 
+  * indeed, it has an efect in the IoT: Web of Things
+  
+???
+
+ Properties achieved:
+  * Scalability
+  * Simplicity
+  * Portability
+  * etc.
+ 
+ 1. TSC interface for HTTP compatible with (most of) the REST principles.
+ 
+---
+
+# Model: 2nd attempt (II)
+
+TSC interface for HTTP compatible with (most of) the REST principles.
+
+ * Resource oriented: spaces, RDF Graphs, RDF triples
+ * HTTP verbs mapped to TSC primitives
+ * Status codes, content negotiation, etc.
+
+It is not hypermedia driven (yet).
+
+Still...
+
+???
+
+HATEOAS: future work.
+
+* Although it has a human oriented API
+--
+
+# Problem with the 1st and 2nd attempts
+
+What about the uncoupling?
  
    * Space uncoupling
+???
+
+ * You can substitute devices in the space.
+ * You don't need to configure the space (devices discover in a space).
+
 --
 &#10004;
 
@@ -190,11 +295,10 @@ Cons:
 
 ???
 
- * You can substitute devices in the space.
- * You don't need to configure the space (devices discover in a space).
- * Podemos lidiar con su confiabilidad: se supone que sus datos no serán críticos.
- * Time uncoupling => needed for coordination purposes
-  * Subscription => difficult with unreliable  
+ * Needed for coordination purposes
+  * But devices are __unreliable__
+ * Subscriptions => difficult (i.e. more networking)
+ * Replicate contents (i.e. more networking)
 
 ---
 
@@ -210,28 +314,6 @@ We realized that we used the space for different purposes:
 ???
 
 Based on our experience.
-
-Coordination patterns.
-
----
-
-# Final model: HTTP API
-
-Access to the whole space and to each of the spaces federated devices:
-
- * Resource oriented: spaces, RDF Graphs, RDF triples
- * HTTP verbs mapped to TSC primitives
- * Status codes, content negotiation, etc.
-
-Almost REST (not hypermedia driven)
-
-???
-
-Spaces: identified by URIs
-
-HATEOAS: future line
-
-* Although it has a human oriented API
 
 ---
 
@@ -264,7 +346,7 @@ Igual se podra poner alguno de esos aspectos
 
 class: center, middle
 
-# Actuation through TSC
+# Actuation
 
 ---
 
