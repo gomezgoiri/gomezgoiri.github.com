@@ -90,20 +90,24 @@ The IEEE defines it as
   
   * Syntactic level
   * Semantic level
-
+  
 ???
-
  1. Rely on widely accepted communication protocols (interop __ab-initio__)
- 
+
  1. Syntactic: format of the data (i.e. its syntax and encoding)
  1. Semantic: precise meaning of the info
  
   * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
   * Mencionar SW
-   * Space-based + SW = Triple Space Computing
+   * Space-based + SW = Triple Space Computing!
+  * Semantic in limited devices __Overhead__?
+    * Many of the current devices are able to manage their info
+     * Even if it is more verbosed
+     * Some of them can even autonomously reason and expand this information.
+    * Other may need to rely in third entities.
+    * In any case, we can anticipate a trend.
 
  And talking about exchanging info...
- 
 ---
 
 # The Web and Hypermedia APIs
@@ -113,6 +117,16 @@ The IEEE defines it as
  but also for applications, which expose their capabilities through HTTP APIs.
  
  * REST architectural style comprises the design principles of _the modern web_
+ 
+  * also in the IoT => WoT
+  
+???
+
+ Principles:
+  * Scalability
+  * Simplicity
+  * Portability
+  * etc.
 
 ---
 
@@ -124,6 +138,171 @@ environments where heterogeneous devices communicate __autonomously__ in a __dec
 and interoperable__ fashion._
 
 ---
+
+# Objectives
+
+ 1. Spaces model for uncoupled communication between participants but enriched with their own managed knowledge.
+ 1. TSC interface for HTTP compatible with (most of) the REST principles.
+ 1. Search-aware architecture for end-to-end communication between devices.
+ 1. Actuation of different actuation mechanisms.
+ 1. Alignment between space-based communication and direct REST service consumption.
+ 
+
+???
+
+ Let me sketch some of this points in the remaining minutes.
+
+---
+
+class: center, middle
+
+# New Space model
+
+???
+
+Actually this is simplified version of all my unfruitful attempts.
+
+---
+
+# First attempt
+
+Let all devices provide their own information in a completely decentralized fashion.
+
+Pros:
+ 
+ * Manageability
+ * Aligned with the WoT vision
+ 
+  * Interoperability &#10004;
+
+Cons:
+
+ * Devices reliability
+ * What about the uncoupling?
+ 
+   * Space uncoupling
+--
+&#10004;
+
+   * Time uncoupling
+--
+   x
+
+???
+
+ * You can substitute devices in the space.
+ * You don't need to configure the space (devices discover in a space).
+ * Podemos lidiar con su confiabilidad: se supone que sus datos no serán críticos.
+ * Time uncoupling => needed for coordination purposes
+  * Subscription => difficult with unreliable  
+
+---
+
+# Final model
+
+We realized that we used the space for different purposes:
+
+ 1. Search information
+ 1. Coordinate through the space
+
+[IMG ESPACIO]
+
+???
+
+Based on our experience.
+
+Coordination patterns.
+
+---
+
+# Final model: HTTP API
+
+Access to the whole space and to each of the spaces federated devices:
+
+ * Resource oriented: spaces, RDF Graphs, RDF triples
+ * HTTP verbs mapped to TSC primitives
+ * Status codes, content negotiation, etc.
+
+Almost REST (not hypermedia driven)
+
+???
+
+Spaces: identified by URIs
+
+HATEOAS: future line
+
+* Although it has a human oriented API
+
+---
+
+class: center, middle
+
+# Search architecture
+
+---
+
+# Search architecture
+
+[IMG]
+
+???
+
+End-to-end
+WP to enhance the search
+WP chosen dynamically
+Considering energy consumption
+
+---
+
+# Evaluation
+
+???
+
+Igual se podra poner alguno de esos aspectos
+
+---
+
+class: center, middle
+
+# Actuation through TSC
+
+---
+
+# Actuation through TSC
+
+---
+
+# Actuation in REST
+
+ * RESTdesc
+ 
+---
+
+# Alignment proposal
+
+ * Reuse REST providers
+ * Reuse consumers which use space
+ * Avoid their modification
+
+---
+
+class: center, middle
+
+# Conclusion
+
+---
+
+# Conclusion
+
+???
+
+Coger de mi tesis
+---
+
+class: center, middle
+
+# Any questions?
+
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
     </script>
