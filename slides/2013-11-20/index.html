@@ -45,8 +45,8 @@ class: center, middle
 
 # Motivation
 
- 1. UbiComp
  1. Space-based computing
+ 1. UbiComp
 
 ???
 
@@ -80,7 +80,7 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 Devices imperceptibly working on our behalf.
 
  * Its real power "_comes not from any one of these devices, it emerges from the __interaction__ of all of them_".
- * IoT and mobile computing.
+ * The Internet of Things and mobile computing.
 
 ???
 
@@ -191,8 +191,8 @@ class: middle
 # Work-areas
 
  1. Space model.
- 1. Search-aware architecture for end-to-end communication between devices.
- 1. Actuation of different actuation mechanisms.
+ 1. Energy-aware Search architecture.
+ 1. Actuation mechanisms.
 
 ---
 
@@ -250,16 +250,14 @@ Completely decentralized
 
 ???
 
-Pros:
+Benefits:
 
  * Avoid depending on others: simplify management
   * each device manages its own knowledge
  * Reduces networking in writings
   * Which are quite frequent (updates of a sensor measure)
- * Unreliable
-  * Is there any other way of distributing content?
 
-Cons:
+Drawbacks:
 
  * Inconsistency (Brewer)
  * Difficult to create: subscription, transactions, etc.
@@ -286,7 +284,7 @@ To interoperate, it is better to adopt a widely accepted mechanism.
 <!-- poner flechitas hacia el navegador -->
 ---
  
-# The Web and Hypermedia APIs
+# Why the Web?
 .subtitle[
 ## Space model
 ]
@@ -303,6 +301,7 @@ To interoperate, it is better to adopt a widely accepted mechanism.
 ???
 
  Properties achieved:
+ 
   * Scalability
   * Simplicity
   * Portability
@@ -381,6 +380,7 @@ What about the uncoupling?
 
  * Needed for coordination purposes
   * But devices are __unreliable__
+  * Is there any other way of distributing content?
  * Subscriptions => difficult (i.e. more networking)
  * Replicate contents (i.e. more networking)
 
