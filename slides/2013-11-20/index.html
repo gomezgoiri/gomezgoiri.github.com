@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Información básica del razonador CLIPS para Android</title>
+    <title>Coordination of Internet-connected objects through a Distributed Semantic Space</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
   </head>
@@ -32,8 +32,7 @@ class: center, frontpage
  2. Thesis outline
  3. New space model
  4. Search architecture
- 5. Actuation
- 6. Conclusion
+ 5. Conclusion
 
 ---
 
@@ -59,45 +58,57 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 ---
 
 <!-- Molaría más tener un supertítulo en pequeño para que se notase que sigo en la motivation -->
-# Motivation: UbiComp
+# UbiComp
+.subtitle[
+## Motivation
+]
 
 Devices imperceptibly working on our behalf.
 
- * Its real power "_comes not from any one of these devices, it emerges from the interaction of all of them_".
-
+ * Its real power "_comes not from any one of these devices, it emerges from the __interaction__ of all of them_".
+ * IoT and mobile computing.
 --
 
- * IoT and mobile computing.
- * __Problem__: devices and applications build upon them are heterogeneous.
+<div style="margin-top: 3em;" />
+
+## Problem
+Devices and applications build upon them are heterogeneous.
   
 ???
 
 UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
 
-Lately: Internet of Things and (much less frustating) mobile computing.
+Lately: Internet of Things and (much less frustrating) mobile computing.
 
 ---
 
 # Interoperability
+.subtitle[
+## Motivation
+]
 
 The IEEE defines it as
 
  > The ability of two or more systems or components to exchange information
  > and to use the information that has been exchanged. <!-- TODO cite -->
+ 
+---
 
---
+# Interoperability
+.subtitle[
+## Motivation
+]
 
- 1. To _exchange_ information
- 1. To _use_ it
-  
-  * Syntactic level
-  * Semantic level
+The IEEE defines it as
+
+ > .weak[The ability of two or more systems or components to __exchange__ information
+ > and to __use__ the information that has been exchanged.] <!-- TODO cite -->
   
 ???
  1. Rely on widely accepted communication protocols (interop __ab-initio__)
 
- 1. Syntactic: format of the data (i.e. its syntax and encoding)
- 1. Semantic: precise meaning of the info
+ 1. Syntactic level: format of the data (i.e. its syntax and encoding)
+ 1. Semantic level: precise meaning of the info
  
   * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
   * Mencionar SW
@@ -110,7 +121,10 @@ The IEEE defines it as
     * In any case, we can anticipate a trend.
 ---
 
-# Motivation: space-based computing
+# Space-based computing
+.subtitle[
+## Motivation
+]
 
  * Decoupling!
  <!-- Dibujito -->
@@ -145,13 +159,25 @@ class: center, middle
 
 ---
 
-# Hypothesis
+class: middle
 
-_The __alignment of the TSC paradigm with the web's principles__ together with the
-consideration of its __energy and computational impact__, leads to UbiComp
-environments where heterogeneous devices communicate __autonomously__ in a __decoupled
-and interoperable__ fashion._
+<!--# Hypothesis-->
 
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in a decoupled
+ > and interoperable fashion.
+ 
+---
+
+class: middle
+
+.weak[
+ > The __alignment of the TSC paradigm with the web's principles__ together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate __autonomously__ in a __decoupled
+ > and interoperable__ fashion.
+]
 ---
 
 # Work-areas
@@ -160,15 +186,24 @@ and interoperable__ fashion._
  1. Search-aware architecture for end-to-end communication between devices.
  1. Actuation of different actuation mechanisms.
 
+---
+
+# Work-areas
+
+ 1. Space model.
+ 1. Search-aware architecture for end-to-end communication between devices.
+ 1. <del>Actuation of different actuation mechanisms.</del>
 ???
 
- Let me sketch some of this points in the remaining minutes.
+Let me sketch some of this points in the remaining minutes.
+ 
+For the sake of time, I omit the 3rd one and explain the rest summarized.
 
 ---
 
 class: center, middle
 
-# New Space model
+# Space model
 
 ???
 
@@ -178,7 +213,10 @@ This is simplified version of all my unfruitful attempts.
 
 ---
 
-# Baseline Model 
+# Baseline Model
+.subtitle[
+## Space model
+]
 
 Triple Space Computing (TSC)
  
@@ -190,14 +228,17 @@ Triple Space Computing (TSC)
 
 Uses elements from the SW
 
---
+---
 
-# Model: 1st attempt
+# 1st attempt
+.subtitle[
+## Space model
+]
 
 Completely decentralized
 
  * Each device manages its own information
- * Ask to the rest (P2P)
+ * It asks to the rest (P2P)
 
 ???
 
@@ -222,29 +263,35 @@ Cons:
   
 ---
 
-# Model: 2nd attempt (I)
+# 2nd attempt (I)
+.subtitle[
+## Space model
+]
 
-Same model, substitute the communication mechanism.
-
- * To interoperate, it is better to adopt a widely accepted mechanism
---
-: the Web!
-
+Same model, we substituted the _communication mechanism_
 ???
+To interoperate, it is better to adopt a widely accepted mechanism.
 
- Mechanism/protocol
-
+<!-- Mechanism/protocol -->
+--
+: the Web! 
+<!-- poner flechitas hacia el navegador -->
 ---
  
 # The Web and Hypermedia APIs
+.subtitle[
+## Space model
+]
 
- * Massively accepted by humans.
- * Also for applications, which expose their capabilities through HTTP APIs.
--- 
+ * Massively accepted <!--by humans.-->
+ * A lot of applications expose their capabilities using HTTP APIs
+  * Indeed, it has been widely applied to IoT: the _Web of Things_
+--
+
  * REST architectural style comprises the design principles of _the modern web_
- 
-  * indeed, it has an efect in the IoT: Web of Things
-  
+
+<!--  Dibujito o tabla para que se intuya? -->
+
 ???
 
  Properties achieved:
@@ -252,46 +299,54 @@ Same model, substitute the communication mechanism.
   * Simplicity
   * Portability
   * etc.
- 
- 1. TSC interface for HTTP compatible with (most of) the REST principles.
- 
 ---
 
-# Model: 2nd attempt (II)
+# 2nd attempt (II)
+.subtitle[
+## Space model
+]
 
-TSC interface for HTTP compatible with (most of) the REST principles.
+TSC interface for HTTP:
 
  * Resource oriented: spaces, RDF Graphs, RDF triples
  * HTTP verbs mapped to TSC primitives
  * Status codes, content negotiation, etc.
 
-It is not hypermedia driven (yet).
+Compatible with (most of) the REST principles.
 
-Still...
+ * It is not hypermedia driven (yet)
+
+<!--enumerar los principios que cumple-->
 
 ???
+
+TSC interface for HTTP compatible with (most of) the REST principles.
 
 HATEOAS: future work.
 
 * Although it has a human oriented API
---
+
+---
 
 # Problem with the 1st and 2nd attempts
+.subtitle[
+## Space model
+]
 
 What about the uncoupling?
  
-   * Space uncoupling
+   * Space uncoupling 
 ???
 
- * You can substitute devices in the space.
- * You don't need to configure the space (devices discover in a space).
+ * You can substitute devices in the space
+ * You don't need to configure the space (devices discover in a space)
 
 --
-&#10004;
+<span style="color: #4db849;">&#10004;</span>
 
-   * Time uncoupling
+   * Time uncoupling 
 --
-   x
+<span style="color: #e53f39;">&#10060;</span>
 
 ???
 
@@ -303,17 +358,28 @@ What about the uncoupling?
 ---
 
 # Final model
+.subtitle[
+## Space model
+]
 
 We realized that we used the space for different purposes:
 
- 1. Search information
+ 1. Search for information
  1. Coordinate through the space
 
-[IMG ESPACIO]
+--
+
+<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+
+<!-- A modo de evaluación o conclusión, poner una tabla con las propiedades -->
 
 ???
 
 Based on our experience.
+
+Hence, we propose a dual model.
+ * Coordination space
+ * Outer space: enhanced by the information provided by autonomous devices
 
 ---
 
@@ -323,48 +389,61 @@ class: center, middle
 
 ---
 
-# Search architecture
+class: center, middle
 
-[IMG]
+<img alt="Energy-aware search architecture" src="img/architecture.svg" style="width: 100%;" />
 
 ???
 
 End-to-end
 WP to enhance the search
 WP chosen dynamically
-Considering energy consumption
+Considering energy consumption and computation
 
 ---
 
-# Evaluation
+# Evaluation: Energy consumption
 
-???
-
-Igual se podra poner alguno de esos aspectos
+<img alt="Energy consumption for each class" src="img/energy_consumption.svg" style="width: 90%;" />
 
 ---
+
+# Evaluation: Network activity
+
+<img alt="Requests generated using different strategies" src="img/requests_by_strategies.svg" style="width: 90%;" />
+
+---
+
+# Evaluation: Network activity (by type of device)
+
+<img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
+
+
+
+<!--
+===
 
 class: center, middle
 
 # Actuation
 
----
+===
 
 # Actuation through TSC
 
----
+===
 
 # Actuation in REST
 
  * RESTdesc
  
----
+===
 
 # Alignment proposal
 
  * Reuse REST providers
  * Reuse consumers which use space
- * Avoid their modification
+ * Avoid their modification-->
 
 ---
 
@@ -375,6 +454,14 @@ class: center, middle
 ---
 
 # Conclusion
+
+ * Mixing best of two worlds: space-based computing and the web.
+ * Energy-aware search
+ * Future work:
+  * Coordination space distribution
+  * Security
+  * Evaluation of its performance in real deployments
+  * Etc.
 
 ???
 
@@ -383,7 +470,8 @@ Coger de mi tesis
 
 class: center, middle
 
-# Any questions?
+# Questions?
+Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deusto.es)]
 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">

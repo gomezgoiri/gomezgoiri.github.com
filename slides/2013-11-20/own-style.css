@@ -9,7 +9,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800,400);
 @import url(http://fonts.googleapis.com/css?family=Francois+One);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -22,6 +21,12 @@ h1, h2, h3 {
   font-size: 1.5em;
   font-weight: 800;
   margin-bottom: 0;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 1em;
 }
 .small * {
   font-size: small !important;
@@ -79,6 +84,20 @@ a:not(.image):hover {
   display: block;
   clear: both;
 }
+strong {
+  color: #375dc2;
+}
+.weak {
+  color: #cccccc;
+}
+.subtitle h2 {
+  color: #2c4b9b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+  font-weight: 400;
+  margin-top: 0;
+}
+
 
 /* Frontpage */
 .frontpage {
@@ -114,3 +133,5 @@ a:not(.image):hover {
   font-size: 80%;
   font-weight: 400;
 }
+
+/* Questions page */
