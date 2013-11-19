@@ -46,7 +46,9 @@ class: center, middle
 # Motivation
 
  1. Space-based computing
- 1. UbiComp
+ 1. Ubiquitous computing (UbiComp)
+
+<img alt="UbiComp and Space based computing" src="img/ubicomp_space.svg" style="width: 100%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
 
 ???
 
@@ -63,7 +65,8 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 
  * Space uncoupling
  * Time uncoupling
- <!-- Dibujito -->
+
+<img alt="Space based computing: rd, in and out primitives" src="img/spacebasedcomp.svg" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
 
 ???
 
@@ -117,6 +120,10 @@ The IEEE defines it as
 
  > .weak[The ability of two or more systems or components to __exchange__ information
  > and to __use__ the information that has been exchanged.] <!-- TODO cite -->
+
+
+<img alt="Interoperability: exchange and use" src="img/interoperability.svg" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
+
 
 ???
  1. Rely on widely accepted communication protocols (interop __ab-initio__)
@@ -201,19 +208,19 @@ class: middle
 
 ---
 
-# Work-areas
+# Objectives
 
  1. Space model.
- 1. Energy-aware Search architecture.
+ 1. Energy-aware search architecture.
  1. Actuation mechanisms.
 
 ---
 
-# Work-areas
+# Objectives
 
  1. Space model.
- 1. Search-aware architecture for end-to-end communication between devices.
- 1. <del>Actuation of different actuation mechanisms.</del>
+ 1. Energy-aware search architecture.
+ 1. <del>Actuation mechanisms.</del>
 ???
 
 Let me sketch some of this points in the remaining minutes.
@@ -294,8 +301,10 @@ To interoperate, it is better to adopt a widely accepted mechanism.
 <!-- Mechanism/protocol -->
 --
 
+background-image: url(img/the_web.svg)
 
-.center[the Web!]
+.center[
+<h2 style="margin-top:5em;">the Web!</h2>]
 <!-- poner flechitas hacia el navegador -->
 ---
  
@@ -309,7 +318,7 @@ To interoperate, it is better to adopt a widely accepted mechanism.
   * Indeed, it has been widely applied to IoT: the __Web of Things__
 --
 
- * REST architectural style comprises the design principles of _the modern web_
+ * __REST__ architectural style comprises the design principles of _the modern web_
 
 <!--  Dibujito o tabla para que se intuya? -->
 
@@ -351,12 +360,12 @@ class: middle
 
 TSC interface for HTTP:
 
- * Resource oriented: spaces, RDF Graphs, RDF triples
- * HTTP verbs mapped to TSC primitives
- * Status codes, content negotiation, etc.
-
-Compatible with (most of) the REST principles.
-
+ * __Resource oriented__: spaces, RDF Graphs, RDF triples
+ 
+ * HTTP __verbs__ mapped to TSC __primitives__
+ 
+ * Other features: status codes, content negotiation, etc.
+ 
  * It is not hypermedia driven (yet)
 
 <!--enumerar los principios que cumple-->
@@ -378,18 +387,20 @@ HATEOAS: future work.
 
 What about the uncoupling?
  
-   * Space uncoupling 
+ 
+ <img alt="Space and time" src="img/uncoupling.svg" style="width:90%; margin-top: 2em; display: block; margin-left: auto; margin-right: auto"" class="center" />
+
+--
+ 
+<span style="margin-left: 1.4em;">Space uncoupling <span style="color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span></span>
 ???
 
  * You can substitute devices in the space
  * You don't need to configure the space (devices discover in a space)
 
 --
-<span style="color: #4db849;">&#10004;</span>
 
-   * Time uncoupling 
---
-<span style="color: #e53f39;">&#10060;</span>
+<span style="float:right;">Time uncoupling <span style="color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span></span>
 
 ???
 
@@ -458,7 +469,7 @@ Considering energy consumption and computation
 
 ---
 
-# Evaluation: Network activity (by type of device)
+# Evaluation: Network activity (by device type)
 
 <img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
 
@@ -499,14 +510,15 @@ class: center, middle
 
 # Conclusion
 
- * Mix the best of two worlds: space-based computing and the web.
+ * __Mix the best__ of two worlds: space-based computing and the web.
   * Uncoupling
   * Scalability, simplicity...
- * Energy-aware search
- * Future work:
-  * Distribution of the coordination space
-  * Security aspects
+ * __Energy__-aware search
+ 
+ * __Future__ work:
   * Evaluation of its performance in real deployments
+  * Security aspects
+  * Distribution of the coordination space
   * Etc.
 
 ???
@@ -514,10 +526,34 @@ class: center, middle
 Coger de mi tesis
 ---
 
-class: center, middle
+class: middle, questionslide
 
 # Questions?
 Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deusto.es)]
+
+---
+
+class: center, middle
+
+All rights of images are reserved by the <br />
+__original owners__*, the rest of the content is licensed <br />
+under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/)__ license.
+
+<div style="margin-top:3em"/>
+
+![Creative commons by-sa 3.0 license logo](img/CC-logo.svg)
+
+<div style="margin-top:3em"/>
+
+\* [leogg](http://openclipart.org/detail/89209/),
+[finchweb](http://openclipart.org/detail/170018/),
+[rduris](http://openclipart.org/detail/167948/),
+[williamtheaker](http://openclipart.org/detail/178310/),
+[cibo00](http://openclipart.org/detail/14056/),
+[liftarn](http://openclipart.org/detail/181651/),
+[jiangyi_99](http://openclipart.org/detail/183056/),
+[mazeo](http://openclipart.org/detail/87055/) and 
+[Justin Ternet](http://openclipart.org/detail/182928/).
 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">

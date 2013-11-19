@@ -138,3 +138,9 @@ strong {
 }
 
 /* Questions page */
+.remark-slide .questionslide {
+  height: 100%;
+  background-image:url('img/dudando.svg');
+  background-repeat:no-repeat;
+  background-position:right bottom; 
+}
