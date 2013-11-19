@@ -72,6 +72,9 @@ code {
 .remark-slide-number {
   visibility: hidden;
 }
+.remark-notes {
+  font-size: 0.7em;
+}
 a:not(.image) {
   color: #2c4b9b;
   text-shadow: none;

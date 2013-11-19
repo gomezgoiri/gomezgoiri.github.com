@@ -61,8 +61,8 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 ## Motivation
 ]
 
- * Space decoupling
- * Time decoupling
+ * Space uncoupling
+ * Time uncoupling
  <!-- Dibujito -->
 
 ???
@@ -86,7 +86,7 @@ Devices imperceptibly working on our behalf.
 
 UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
 
-Lately: Internet of Things and (much less frustrating) mobile computing.
+Lately: IoT & mobile comp. __contributed to this vision__.
 --
 
 <div style="margin-top: 3em;" />
@@ -125,9 +125,22 @@ The IEEE defines it as
  1. Semantic level: precise meaning of the info
  
   * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
-  * Mencionar SW
     
-<!-- Añadir transpa explicando qué es Web Semántica -->
+---
+
+# The Semantic Web
+.subtitle[
+## Motivation
+]
+
+
+ > .weak[The vision of the Semantic Web is to extend principles of the Web from documents to data.
+ > Data should be accessed using the general Web architecture using, e.g., URI-s;
+ > data should be __related to one another__ just as documents (or portions of documents) are already.
+ > This also means creation of a common framework that allows data
+ > to be __shared and reused__ across application, enterprise, and community boundaries,
+ > to be __processed automatically__ by tools as well as manually,
+ > including revealing possible __new relationships__ among pieces of data.]
     
 ---
 
@@ -172,7 +185,7 @@ class: middle
 
  > The TSC paradigm together with the
  > consideration of its energy and computational impact, leads to UbiComp
- > environments where heterogeneous devices communicate autonomously in a decoupled
+ > environments where heterogeneous devices communicate autonomously in a uncoupled
  > and interoperable fashion.
  
 ---
@@ -182,7 +195,7 @@ class: middle
 .weak[
  > The __TSC paradigm__ together with the
  > consideration of its __energy and computational impact__, leads to UbiComp
- > environments where heterogeneous devices communicate __autonomously__ in a __decoupled
+ > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
  > and interoperable__ fashion.
 ]
 
@@ -215,9 +228,7 @@ class: center, middle
 
 ???
 
-This is simplified version of all my unfruitful attempts.
-
-5 year process (prior to knowing that I wanted to be a PhD student).
+This is __simplified version__ of all my unfruitful attempts.
 
 ---
 
@@ -250,9 +261,11 @@ Completely decentralized
 
 ???
 
+I did this prior to knowing that I wanted to be a PhD student.
+
 Benefits:
 
- * Avoid depending on others: simplify management
+ * Avoids depending on others: simplify management
   * each device manages its own knowledge
  * Reduces networking in writings
   * Which are quite frequent (updates of a sensor measure)
@@ -260,12 +273,12 @@ Benefits:
 Drawbacks:
 
  * Inconsistency (Brewer)
- * Difficult to create: subscription, transactions, etc.
+ * Difficulty to create: subscription, transactions, etc.
  * JXTA: not really interoperable
  
   * Not appropriate for limited devices
   * Discontinued
-  * The hell!
+  * A nightmare!
   
 ---
 
@@ -280,7 +293,9 @@ To interoperate, it is better to adopt a widely accepted mechanism.
 
 <!-- Mechanism/protocol -->
 --
-: the Web! 
+
+
+.center[the Web!]
 <!-- poner flechitas hacia el navegador -->
 ---
  
@@ -291,7 +306,7 @@ To interoperate, it is better to adopt a widely accepted mechanism.
 
  * Massively accepted <!--by humans.-->
  * A lot of applications expose their capabilities using HTTP APIs
-  * Indeed, it has been widely applied to IoT: the _Web of Things_
+  * Indeed, it has been widely applied to IoT: the __Web of Things__
 --
 
  * REST architectural style comprises the design principles of _the modern web_
@@ -314,7 +329,7 @@ class: middle
 
  > The __alignment of the TSC paradigm with the web's principles__ together with the
  > consideration of its energy and computational impact, leads to UbiComp
- > environments where heterogeneous devices communicate autonomously in a decoupled
+ > environments where heterogeneous devices communicate autonomously in a uncoupled
  > and interoperable fashion.
  
 ---
@@ -324,7 +339,7 @@ class: middle
 .weak[
  > The __alignment of the TSC paradigm with the web's principles__ together with the
  > consideration of its __energy and computational impact__, leads to UbiComp
- > environments where heterogeneous devices communicate __autonomously__ in a __decoupled
+ > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
  > and interoperable__ fashion.
 ]
 ---
@@ -484,11 +499,13 @@ class: center, middle
 
 # Conclusion
 
- * Mixing best of two worlds: space-based computing and the web.
+ * Mix the best of two worlds: space-based computing and the web.
+  * Uncoupling
+  * Scalability, simplicity...
  * Energy-aware search
  * Future work:
-  * Coordination space distribution
-  * Security
+  * Distribution of the coordination space
+  * Security aspects
   * Evaluation of its performance in real deployments
   * Etc.
 
