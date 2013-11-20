@@ -456,11 +456,14 @@ We realized that we used the space for different purposes:
 
 ???
 
-Based on our experience.
+Based on our __experience__.
 
-Hence, we propose a dual model.
- * Coordination space
- * Outer space: enhanced by the information provided by autonomous devices
+Hence, we propose a __dual model__.
+
+* Coordination space
+ * Enhanced by the information provided by autonomous devices
+* Outer space:
+ * __Enriched view__
 
 ---
 
@@ -475,9 +478,9 @@ class: center, middle
 <img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 90%;" />
 
 ???
-
- 1. Improve the search, become it smarter
- 1. Move the management tasks created by our proposal to more powerful devices
+ 
+1. Improve the search, become it smarter 
+1. Move the management tasks created by our proposal to more powerful devices
 
 ---
 
@@ -487,13 +490,17 @@ class: center, middle
 
 ???
 
- * WP to enhance the search
-  * WP chosen dynamically: considering energy consumption and computation
+1. Different __roles__
+1. Providers
+1. Consumers: directly request/query providers
+ * Which ones?
+1. Clues or indexes
+ * __Light__ example (measures, lamp)
+1. WP to enhance the search
+ * WP chosen __dynamically__: considering energy consumption and computation
   * changes over the time
- * End-to-end
-  * Consumers directly ask to providers
-  * Don't depend on the WP to resolve the queries
-   * Just to get and update the clues
+ * Consumers __don't depend__ on the WP to resolve the queries
+  * Just to get and update the clues
 
 ---
 
@@ -501,38 +508,23 @@ class: center, middle
 
 <img alt="Requests generated using different strategies" src="img/requests_by_strategies.svg" style="width: 90%;" />
 
+???
+
+* Better than floading
+* Comparing to caching: depends on the # of providers and the # of queries
+
 ---
 
 # Evaluation: Network activity (by device type)
 
 <img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
 
+???
 
-
-<!--
-===
-
-class: center, middle
-
-# Actuation
-
-===
-
-# Actuation through TSC
-
-===
-
-# Actuation in REST
-
- * RESTdesc
- 
-===
-
-# Alignment proposal
-
- * Reuse REST providers
- * Reuse consumers which use space
- * Avoid their modification-->
+* On average, activity is reduced considerably
+* Besides,
+ * less requests on the limited devices
+ * additional tasks, moved to more powerful ones
 
 ---
 
