@@ -279,8 +279,8 @@ Benefits:
 
 Drawbacks:
 
+ * Flooding: networking
  * Inconsistency (Brewer)
- * Difficulty to create: subscription, transactions, etc.
  * JXTA: not really interoperable
  
   * Not appropriate for limited devices
@@ -305,7 +305,13 @@ background-image: url(img/the_web.svg)
 
 .center[
 <h2 style="margin-top:5em;">the Web!</h2>]
-<!-- poner flechitas hacia el navegador -->
+
+???
+
+Even this presentation is part of the web!
+
+(at least, it is running in a web browser and it will be uploaded afterwards ;-))
+
 ---
  
 # Why the Web?
@@ -315,7 +321,6 @@ background-image: url(img/the_web.svg)
 
  * Massively accepted <!--by humans.-->
  * A lot of applications expose their capabilities using HTTP APIs
-  * Indeed, it has been widely applied to IoT: the __Web of Things__
 --
 
  * __REST__ architectural style comprises the design principles of _the modern web_
@@ -330,6 +335,13 @@ background-image: url(img/the_web.svg)
   * Simplicity
   * Portability
   * etc.
+ 
+ They are useful for limited devices!
+ 
+--
+
+ * Actually, it has been widely applied to IoT: the __Web of Things__
+ 
 ---
 
 class: middle
@@ -358,7 +370,7 @@ class: middle
 ## Space model
 ]
 
-TSC interface for HTTP:
+HTTP API for TSC:
 
  * __Resource oriented__: spaces, RDF Graphs, RDF triples
  
@@ -372,11 +384,18 @@ TSC interface for HTTP:
 
 ???
 
+As part of this 2nd attempt... we made an HTTP API
+
 TSC interface for HTTP compatible with (most of) the REST principles.
 
 HATEOAS: future work.
 
 * Although it has a human oriented API
+
+
+Drawback not mentioned yet:
+
+ * subscription, transactions, etc. vs stateless
 
 ---
 
@@ -396,7 +415,8 @@ What about the uncoupling?
 ???
 
  * You can substitute devices in the space
- * You don't need to configure the space (devices discover in a space)
+ * You don't need to configure the space
+  * Programmers only care about data (forced by the primitives)
 
 --
 
@@ -404,11 +424,17 @@ What about the uncoupling?
 
 ???
 
- * Needed for coordination purposes
-  * But devices are __unreliable__
-  * Is there any other way of distributing content?
+ * Provider holds its content...
+  * only accessible when the provider is available
+  * it is __unreliable__
  * Subscriptions => difficult (i.e. more networking)
- * Replicate contents (i.e. more networking)
+ * Move contents to other nodes
+  * how to distinguish the reliable ones?
+  * measures away from where they are generated
+   * what if the other node lefts the space but the provider is available?
+ * Replicate contents
+  * more networking
+  * not easy (unreliable => networking)
 
 ---
 
@@ -444,22 +470,30 @@ class: center, middle
 
 ---
 
+# Evaluation: Energy consumption
+
+<img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 90%;" />
+
+???
+
+ 1. Improve the search, become it smarter
+ 1. Move the management tasks created by our proposal to more powerful devices
+
+---
+
 class: center, middle
 
 <img alt="Energy-aware search architecture" src="img/architecture.svg" style="width: 100%;" />
 
 ???
 
-End-to-end
-WP to enhance the search
-WP chosen dynamically
-Considering energy consumption and computation
-
----
-
-# Evaluation: Energy consumption
-
-<img alt="Energy consumption for each class" src="img/energy_consumption.svg" style="width: 90%;" />
+ * WP to enhance the search
+  * WP chosen dynamically: considering energy consumption and computation
+  * changes over the time
+ * End-to-end
+  * Consumers directly ask to providers
+  * Don't depend on the WP to resolve the queries
+   * Just to get and update the clues
 
 ---
 
@@ -516,7 +550,7 @@ class: center, middle
  * __Energy__-aware search
  
  * __Future__ work:
-  * Evaluation of its performance in real deployments
+  * Performance evaluation in real deployments over a long period of time, with many different applications running
   * Security aspects
   * Distribution of the coordination space
   * Etc.
