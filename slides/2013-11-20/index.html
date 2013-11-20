@@ -70,8 +70,12 @@ I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
 
 ???
 
- * Ideal for environments which change (in short and long time)
- 
+* Benefits
+  * You can __substitute__ devices in the space
+  * You don't need to __reconfigure__ them
+* Ideal for environments which __change__ / are __dynamic__
+  * in the short and long term
+
 ---
 
 <!-- Molaría más tener un supertítulo en pequeño para que se notase que sigo en la motivation -->
@@ -126,12 +130,12 @@ The IEEE defines it as
 
 
 ???
- 1. Rely on widely accepted communication protocols (interop __ab-initio__)
-
- 1. Syntactic level: format of the data (i.e. its syntax and encoding)
- 1. Semantic level: precise meaning of the info
- 
-  * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
+1. Exchange
+ * We rely on widely accepted communication protocols (interop __ab-initio__)
+2. Use
+ 1. __Syntactic__ level: format of the data (i.e. its syntax and encoding)
+ 1. __Semantic__ level: precise meaning of the info
+    * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
     
 ---
 
@@ -160,22 +164,24 @@ class: center, middle
 After analyzing these research areas...
 
 Space-based computing:
- * Often applied to UbiComp
- * Used with Semantics
+
+* Often applied to UbiComp
+* Used with Semantics
 
 Usually centrallizing so...
 
 I made myself a question (research question, PhD opportunity)
 
- * Can these devices get more involved in the management of the space?
-   ( more involved == Not only mere clients )
+* Can these devices get __more involved__ in the management of the space?
+  * Not only mere clients
 
-  * Semantic in limited devices __Overhead__?
-    * Many of the current devices are able to manage their info
-     * Even if it is more verbosed
-     * Some of them can even autonomously reason and expand this information.
-    * Other may need to rely in third entities.
-    * In any case, we can anticipate a trend.
+* Semantic in limited devices __Overhead__?
+  * Many of the current devices are able to manage their info
+    * Even if it is more verbosed
+    * Some of them can reason and expand this information.
+    * Others may need to rely in third machines.
+      * Out of the scope
+  * Anyway, we might be anticipating a trend.
 ---
 
 class: center, middle
@@ -250,6 +256,10 @@ Triple Space Computing (TSC)
  * Tuples == RDF Triples & RDF Graphs
  * Templates = triple patterns
 
+<div style="margin-top:2em;" />
+
+![Resources in TSC](img/tsc_resources.svg)
+ 
 ???
 
 Uses elements from the SW
@@ -261,10 +271,10 @@ Uses elements from the SW
 ## Space model
 ]
 
-Completely decentralized
+Completely __decentralized__
 
  * Each device manages its own information
- * It asks to the rest (P2P)
+ * It asks to the rest using a __P2P__ approach
 
 ???
 
@@ -272,16 +282,17 @@ I did this prior to knowing that I wanted to be a PhD student.
 
 Benefits:
 
- * Avoids depending on others: simplify management
+* Reduces __dependency__ on others
   * each device manages its own knowledge
- * Reduces networking in writings
+  * this simplifies the __management__
+* Reduces networking in __writings__
   * Which are quite frequent (updates of a sensor measure)
 
 Drawbacks:
 
- * Flooding: networking
- * Inconsistency (Brewer)
- * JXTA: not really interoperable
+* Flooding-based __search__: networking
+* __Inconsistency__ (Brewer)
+* __JXTA__: not really interoperable
  
   * Not appropriate for limited devices
   * Discontinued
@@ -295,8 +306,10 @@ Drawbacks:
 ]
 
 Same model, we substituted the _communication mechanism_
+
 ???
-To interoperate, it is better to adopt a widely accepted mechanism.
+
+To interoperate, it is better to adopt a __widely accepted__ mechanism.
 
 <!-- Mechanism/protocol -->
 --
@@ -341,6 +354,8 @@ Even this presentation is part of the web!
 --
 
  * Actually, it has been widely applied to IoT: the __Web of Things__
+ 
+ * Conflicts: push approach, subscription mechanisms...
  
 ---
 
@@ -393,7 +408,7 @@ HATEOAS: future work.
 * Although it has a human oriented API
 
 
-Drawback not mentioned yet:
+Drawbacks not mentioned yet:
 
  * subscription, transactions, etc. vs stateless
 
@@ -414,9 +429,7 @@ What about the uncoupling?
 <span style="margin-left: 1.4em;">Space uncoupling <span style="color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span></span>
 ???
 
- * You can substitute devices in the space
- * You don't need to configure the space
-  * Programmers only care about data (forced by the primitives)
+* Programmers only care about data (__forced__ by the primitives)
 
 --
 
@@ -424,17 +437,16 @@ What about the uncoupling?
 
 ???
 
- * Provider holds its content...
+* Provider holds its content...
   * only accessible when the provider is available
-  * it is __unreliable__
- * Subscriptions => difficult (i.e. more networking)
- * Move contents to other nodes
+* __Move contents__ to other nodes
   * how to distinguish the reliable ones?
   * measures away from where they are generated
    * what if the other node lefts the space but the provider is available?
- * Replicate contents
+* Replicate contents
   * more networking
   * not easy (unreliable => networking)
+* __Complex__
 
 ---
 
@@ -448,6 +460,12 @@ We realized that we used the space for different purposes:
  1. Search for information
  1. Coordinate through the space
 
+???
+
+__Time__ uncoupling particularly __important for coordination__
+
+* No so much for search (real time)
+
 --
 
 <img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
@@ -455,6 +473,8 @@ We realized that we used the space for different purposes:
 <!-- A modo de evaluación o conclusión, poner una tabla con las propiedades -->
 
 ???
+
+<hr />
 
 Based on our __experience__.
 
@@ -464,6 +484,7 @@ Hence, we propose a __dual model__.
  * Enhanced by the information provided by autonomous devices
 * Outer space:
  * __Enriched view__
+ * what's happening on __real time__
 
 ---
 
@@ -479,8 +500,8 @@ class: center, middle
 
 ???
  
-1. Improve the search, become it smarter 
-1. Move the management tasks created by our proposal to more powerful devices
+1. __Improve__ the search, become it smarter 
+1. Move the __management tasks__ created by our proposal __to__ more __powerful__ devices
 
 ---
 
@@ -521,7 +542,7 @@ class: center, middle
 
 ???
 
-* On average, activity is reduced considerably
+* On average, __activity is reduced__ considerably
 * Besides,
  * less requests on the limited devices
  * additional tasks, moved to more powerful ones
@@ -547,9 +568,6 @@ class: center, middle
   * Distribution of the coordination space
   * Etc.
 
-???
-
-Coger de mi tesis
 ---
 
 class: middle, questionslide
