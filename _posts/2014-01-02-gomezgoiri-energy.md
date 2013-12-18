@@ -5,7 +5,7 @@ title: Energy-aware Architecture for Information Search in the Semantic Web of T
 authors: Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña
 rest_citation: <a href="http&#58;//www.inderscience.com/jhome.php?jcode=ijwgs">Journal of Web and Grid Services</a>, (Extending the Internet of Things to the Web of Things). To appear.
 bib: /files/bibtex/gomezgoiri20XXenergy.bib
-code: /files/code/gomezgoiri201Xenergy.html
+code: /files/code/gomezgoiri2014energy.html
 --- 
 
 Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.
