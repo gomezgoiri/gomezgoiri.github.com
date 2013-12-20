@@ -3,15 +3,24 @@ layout: default
 title: R&amp;D Projects
 ---
 
+<script>
+  $(function() {
+    $( "#accordion" ).accordion();
+  });
+</script>
+
 <h1>{{ page.title }}</h1>
 
+<!-- TODO Separate ongoing and finished -->
+<div id="accordion">
 {% for post in site.posts %}
   {% if post.category == 'projects' %}
   
-    <h2 style="margin-top: 20px;"> {{ post.title }}</h2>
-  
-    <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
-    
-    <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">Go to its website</a></p>
+    <h3>{{ post.title }}</h3>
+    <div>
+      <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
+      <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">Go to its website</a></p>
+    <div>
   {% endif %}
 {% endfor %}
+</div>
