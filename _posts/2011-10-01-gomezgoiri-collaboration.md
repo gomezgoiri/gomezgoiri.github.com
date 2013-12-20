@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego
 rest_citation: In <a href="http://ieee-sensors2011.org" target="_blank">IEEE Sensors 2011</a>, pages 651-654. Limerick, Ireland, October 2011. ISBN&#58; <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=6127316">978-1-4244-9290-9</a>.
 pdf: /files/pdf/gomezgoiri2011collaboration.pdf
 bib: /files/bibtex/gomezgoiri2011collaboration.bib
-semantics: 
+semantics: collaboration-of-sensors-and-actuators-through-triple-spaces
 --- 
 
 In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.

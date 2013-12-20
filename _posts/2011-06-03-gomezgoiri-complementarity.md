@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri, Diego López-de-Ipiña
 rest_citation: In Proceedings of the Second International Workshop on Web of Things, <a href="http://www.webofthings.com/wot/2011/">WoT&#39;11</a>, pages 12&#58;1–12&#58;6. ISBN&#58; <a href="http://doi.acm.org/10.1145/1993966.1993983" target="_blank">978-1-4503-0624-9</a>. New York, NY, USA, 2011.
 pdf: /files/pdf/gomezgoiri2011complementarity.pdf
 bib: /files/bibtex/gomezgoiri2011complementarity.bib
-semantics: http://www.morelab.deusto.es/resource/on-the-complementarity-of-triple-spaces-and-the-web-of-things
+semantics: on-the-complementarity-of-triple-spaces-and-the-web-of-things
 --- 
 
 The Internet of Things (IoT) enables communication among real-world things and devices through Internet.

@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri and Diego López-de-Ipiña
 rest_citation: Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (<a href="http://www.esiot.com/">IMIS</a>), pp.763-769, Palermo, Italy, July 4-6, 2012. DOI&#58; <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6296950">10.1109/IMIS.2012.120</a>.
 pdf: /files/pdf/gomezgoiri2012dissemination.pdf
 bib: /files/bibtex/gomezgoiri2012dissemination.bib
-semantics: http://www.morelab.deusto.es/resource/assessing-data-dissemination-strategies-within-triple-spaces-on-the-web-of-things
+semantics: assessing-data-dissemination-strategies-within-triple-spaces-on-the-web-of-things
 slides: http://www.slideshare.net/twolf/assessing-data-dissemination-strategies
 slideshare-embed_code: 13652892
 --- 

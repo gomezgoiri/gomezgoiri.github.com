@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri, Diego López-de-Ipiña
 rest_citation: In Florian Daniel and Federico Facca, editors, Current Trends in Web Engineering, volume 6385 of Lecture Notes in Computer Science, pages 447-458. Springer Berlin / Heidelberg, July 2010. DOI&#58; <a href="http://link.springer.com/chapter/10.1007/978-3-642-16985-4_43">10.1007/978-3-642-16985-4_43</a>.
 pdf: /files/pdf/gomezgoiri2010triplespace.pdf
 bib: /files/bibtex/gomezgoiri2010triplespace.bib
-semantics: http://www.morelab.deusto.es/resource/a-triple-space-based-semantic-distributed-middleware-for-internet-of-things
+semantics: a-triple-space-based-semantic-distributed-middleware-for-internet-of-things
 slides: http://www.slideshare.net/twolf/a-triple-spacebased-semantic-distributed-middleware-for-internet-of-things
 slideshare-embed_code: 4751866
 --- 

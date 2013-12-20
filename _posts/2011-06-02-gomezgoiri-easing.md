@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri, Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, 
 rest_citation: Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.
 pdf: /files/pdf/gomezgoiri2011easing.pdf
 bib: /files/bibtex/gomezgoiri2011easing.bib
-semantics: http://www.morelab.deusto.es/resource/easing-the-mobility-of-disabled-people-in-supermarkets-using-a-distributed-solution
+semantics: easing-the-mobility-of-disabled-people-in-supermarkets-using-a-distributed-solution
 --- 
 
 People's impairments cause a wide range of difficulties in everyday tasks.

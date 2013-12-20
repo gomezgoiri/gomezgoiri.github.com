@@ -6,7 +6,7 @@ authors: Xabier Laiseca, Eduardo Castillejo, Pablo Orduña, Aitor Gómez-Goiri, 
 rest_citation: Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.
 pdf: /files/pdf/laiseca2011distributed.pdf
 bib: /files/bibtex/laiseca2011distributed.bib
-semantics: http://www.morelab.deusto.es/resource/distributed-tracking-system-for-patients-with-cognitive-impairments
+semantics: distributed-tracking-system-for-patients-with-cognitive-impairments
 --- 
 
 The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.

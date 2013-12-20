@@ -6,7 +6,7 @@ authors: Aitor Gómez-Goiri, Mikel Emaldi-Manrique, Diego López-de-Ipiña
 rest_citation: <a href="http://www.cepis.org/upgrade">UPGRADE journal</a>, &nbsp;2011, Issue No. 1&#58; 5-16. <a href="http://www.cepis.org/upgrade/index.jsp?p=2701&amp;n=2702">February 2011</a>. ISSN&#58; 1684-5285
 pdf: http://www.cepis.org/upgrade/media/GomezGoiri_1_20112.pdf
 bib: /files/bibtex/gomezgoiri2011semantic.bib
-semantics: http://www.morelab.deusto.es/resource/a-semantic-resource-oriented-middleware-for-pervasive-environments
+semantics: a-semantic-resource-oriented-middleware-for-pervasive-environments
 --- 
 
 Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.
