@@ -3,7 +3,7 @@ layout: teaching
 category: teaching
 subcategory: university
 title: Programming II
-where: <a href="http://www.ingenieria.deusto.es/servlet/Satellite/Estudio/1328008555971/_ingl/%231/0/cx/UniversidadDeusto/comun/render">BSc in Computer Engineering</a>
+where: <a href="http://www.ingenieria.deusto.es/cs/Satellite/ingenieria/es/estudios-0/estudios-ingenieria-grado/ingenieria-informatica/ingenieria-informatica/">BSc in Computer Engineering</a>
 original_name: Programazioa II
 topics: algorithms and data structures (2D arrays, object files, lists, queues, stacks and trees).
 language: Basque
