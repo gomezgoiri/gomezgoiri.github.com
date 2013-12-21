@@ -3,24 +3,87 @@ layout: default
 title: R&amp;D Projects
 ---
 
-<script>
-  $(function() {
-    $( "#accordion" ).accordion();
-  });
-</script>
-
 <h1>{{ page.title }}</h1>
 
+<!-- Timeline -->
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+<script type="text/javascript">
+google.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var container = document.getElementById('example1');
+
+  var chart = new google.visualization.Timeline(container);
+
+  var dataTable = new google.visualization.DataTable();
+
+  dataTable.addColumn({ type: 'string', id: 'President' });
+  dataTable.addColumn({ type: 'date', id: 'Start' });
+  dataTable.addColumn({ type: 'date', id: 'End' });
+
+  dataTable.addRows([
+    {% for post in site.posts %}
+      {% if post.category == 'projects' %}
+	['{{ post.short }}', new Date('{{ post.start }}'), new Date('{{ post.end }}') ],
+      {% endif %}
+    {% endfor %}
+  ]);
+
+  chart.draw(dataTable);
+}
+</script>
+<div id="example1" style="width: 100%; height: 300px;"></div>
+
+<!-- Better on the header? -->
+<!-- jQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
+
 <!-- TODO Separate ongoing and finished -->
-<div id="accordion">
+
+{% capture currentyear %}{{ site.time | date: '%Y' }}{% endcapture %}
+<h2>Ongoing</h2>
+
+<div id="ongoingaccordion">
 {% for post in site.posts %}
-  {% if post.category == 'projects' %}
-  
+  {% capture end_number %}{{ post.end | '%d' }}{% endcapture %}
+  {% if (post.category == 'projects') and (end_number >= currentyear) %}
     <h3>{{ post.title }}</h3>
     <div>
       <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
-      <p><a href="{{ post.more_info }}">Read more</a> or <a href="{{ post.website }}">Go to its website</a></p>
+      <p><a href="{{ post.more_info }}">Read more</a>
+      {% if post.website %}
+	or <a href="{{ post.website }}">Go to its website</a></p>
+      {% endif %}
     </div>
   {% endif %}
 {% endfor %}
 </div>
+
+<h2>Finished</h2>
+<div id="finishedaccordion">
+{% for post in site.posts %}
+  {% capture end_number %}{{ post.end | '%d' }}{% endcapture %}
+  {% if (post.category == 'projects') and (end_number < currentyear) %}
+    <h3>{{ post.title }}</h3>
+    <div>
+      <p> {{ post.content | strip_html | truncatewords: 55 }} <p>
+      <p><a href="{{ post.more_info }}">Read more</a>
+      {% if post.website %}
+	or <a href="{{ post.website }}">Go to its website</a></p>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+
+
+<script>
+  var allcollapsed = { active: false, collapsible: true }
+  $(function() {
+    $( "#ongoingaccordion" ).accordion(allcollapsed);
+    $( "#finishedaccordion" ).accordion(allcollapsed);
+  });
+</script>
