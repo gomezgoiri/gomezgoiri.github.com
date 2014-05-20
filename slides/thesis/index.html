@@ -175,50 +175,11 @@ Interoperability problem
 ## UbiComp
 ]
 
-The IEEE defines _interoperability_ as
+The IEEE defines __interoperability__ as
 
- > The ability of two or more systems or components to exchange information
- > and to use the information that has been exchanged. <!-- TODO cite -->
+ > The ability of two or more systems or components to __exchange__ information
+ > and to __use__ the information that has been exchanged. <!-- TODO cite -->
  
----
-
-# Challenge 2: heterogeneity
-.subtitle[
-## UbiComp
-]
-
-The IEEE defines _interoperability_ as
-
- > .weak[The ability of two or more systems or components to __exchange__ information
- > and to __use__ the information that has been exchanged.] <!-- TODO cite -->
-
-
-<img alt="Interoperability: exchange and use" src="img/interoperability.svg" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
-
-???
-1. Exchange
-2. Use
-
----
-
-# Challenge 2a: exchange info
-.subtitle[
-## UbiComp, Challenge 2: heterogeneity
-]
-
-<img alt="The web of Things" src="img/transpas/11.png" style="width: 100%; display: block;">
-
-???
-
-We rely on widely accepted communication protocols (interop __ab-initio__)
-
-Web:
- * simplicity
- * scalability
- * etc.
-
-Matches with the Things needs => __Web of Things__
-
 ---
 
 # Challenge 2b: use info
@@ -236,9 +197,9 @@ Matches with the Things needs => __Web of Things__
     * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
 ---
 
-# Challenge 2: solution
+# Challenge 2b: solution
 .subtitle[
-## UbiComp
+## UbiComp, Challenge 2: heterogeneity
 ]
 
 The Semantic Web
@@ -254,7 +215,7 @@ The Semantic Web
  > to be __shared and reused__ across application, enterprise, and community boundaries,
  > to be __processed automatically__ by tools as well as manually,
  > including revealing possible __new relationships__ among pieces of data.]
-    
+
 ---
 
 class: center, middle
@@ -263,12 +224,14 @@ class: center, middle
 
 ???
 
+FIXME: aprovechar esta y/u otra transpa para hacer una pasada superficial al estado del arte
+
 After analyzing these research areas...
 
 Space-based computing:
 
-* Often applied to UbiComp
-* Used with Semantics
+ * Often applied to UbiComp
+ * Used with Semantics
 
 Usually centrallizing so...
 
@@ -284,137 +247,29 @@ I made myself a question (research question, PhD opportunity)
     * Others may need to rely in third machines.
       * Out of the scope
   * Anyway, we might be anticipating a trend.
----
-
-class: center, middle
-
-# Thesis outline
-<!--## (2/6)-->
-<!-- Poner algo para que se sepa que no queda muchísimo -->
 
 ---
 
-class: middle
-
-<!--# Hypothesis-->
-
- > The TSC paradigm together with the
- > consideration of its energy and computational impact, leads to UbiComp
- > environments where heterogeneous devices communicate autonomously in an uncoupled
- > and interoperable fashion.
- 
----
-
-class: middle
-
-.weak[
- > The __TSC paradigm__ together with the
- > consideration of its __energy and computational impact__, leads to UbiComp
- > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
- > and interoperable__ fashion.
-]
-
----
-
-# Objectives
-
- 1. Space model.
- 1. Energy-aware search architecture.
- 1. Actuation mechanisms.
-
----
-
-# Objectives
-
- 1. Space model.
- 1. Energy-aware search architecture.
- 1. <del>Actuation mechanisms.</del>
-???
-
-Let me sketch some of this points in the remaining minutes.
- 
-For the sake of time, I omit the 3rd one and explain the rest summarized.
-
----
-
-class: center, middle
-
-# Space model
-
-???
-
-This is __simplified version__ of all my unfruitful attempts.
-
----
-
-# Baseline Model
+# Challenge 2a: exchange info
 .subtitle[
-## Space model
+## UbiComp, Challenge 2: heterogeneity
 ]
 
-Triple Space Computing (TSC)
- 
- * Spaces identified by URIs
- * Tuples == RDF Triples & RDF Graphs
- * Templates = triple patterns
+The IEEE defines _interoperability_ as
 
-<div style="margin-top:2em;" />
+ > .weak[The ability of two or more systems or components to _exchange_ information
+ > and to __use__ the information that has been exchanged.] <!-- TODO cite -->
 
-![Resources in TSC](img/tsc_resources.svg)
- 
-???
-
-Uses elements from the SW
-
----
-
-# 1st attempt
-.subtitle[
-## Space model
-]
-
-Completely __decentralized__
-
- * Each device manages its own information
- * It asks to the rest using a __P2P__ approach
 
 ???
-
-I did this prior to knowing that I wanted to be a PhD student.
-
-Benefits:
-
-* Reduces __dependency__ on others
-  * each device manages its own knowledge
-  * this simplifies the __management__
-* Reduces networking in __writings__
-  * Which are quite frequent (updates of a sensor measure)
-
-Drawbacks:
-
-* Flooding-based __search__: networking
-* __Inconsistency__ (Brewer)
-* __JXTA__: not really interoperable
- 
-  * Not appropriate for limited devices
-  * Discontinued
-  * A nightmare!
-  
----
-
-# 2nd attempt (I)
-.subtitle[
-## Space model
-]
-
-Same model, we substituted the _communication mechanism_
-
-???
+1. Exchange
+2. Use
 
 To interoperate, it is better to adopt a __widely accepted__ mechanism.
 
-<!-- Mechanism/protocol -->
---
+To rely on widely accepted communication protocols => interop __ab-initio__
+
+---
 
 background-image: url(img/the_web.svg)
 
@@ -450,15 +305,33 @@ Even this presentation is part of the web!
   * Simplicity
   * Portability
   * etc.
- 
- They are useful for limited devices!
- 
---
+
+---
+
+
+# Solution 2a: exchange info
+.subtitle[
+## UbiComp, Challenge 2: heterogeneity
+]
+
+<img alt="The web of Things" src="img/transpas/11.png" style="width: 100%; display: block;">
+
+???
+
+ These properties are useful for limited devices!
 
  * Actually, it has been widely applied to IoT: the __Web of Things__
  
  * Conflicts: push approach, subscription mechanisms...
  
+ Lo que me gusta de WoT: los dispositivos no son meros clientes, también proveedores
+
+---
+
+class: center, middle
+
+# Hyphothesis
+
 ---
 
 class: middle
@@ -480,6 +353,15 @@ class: middle
  > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
  > and interoperable__ fashion.
 ]
+
+---
+
+# Goals
+
+ 1. Space model
+ 2. Search architecture
+ 3. Actuation mechanism
+
 ---
 
 # 2nd attempt (II)
@@ -700,6 +582,78 @@ under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa
 [jiangyi_99](http://openclipart.org/detail/183056/),
 [mazeo](http://openclipart.org/detail/87055/) and 
 [Justin Ternet](http://openclipart.org/detail/182928/).
+
+
+---
+
+class: center, middle
+
+# Backup slides
+
+---
+
+class: center, middle
+
+# Space model
+
+???
+
+This is __simplified version__ of all my unfruitful attempts.
+
+---
+
+# Baseline Model
+.subtitle[
+## Space model
+]
+
+Triple Space Computing (TSC)
+ 
+ * Spaces identified by URIs
+ * Tuples == RDF Triples & RDF Graphs
+ * Templates = triple patterns
+
+<div style="margin-top:2em;" />
+
+![Resources in TSC](img/tsc_resources.svg)
+ 
+???
+
+Uses elements from the SW
+
+---
+
+# 1st attempt
+.subtitle[
+## Space model
+]
+
+Completely __decentralized__
+
+ * Each device manages its own information
+ * It asks to the rest using a __P2P__ approach
+
+???
+
+I did this prior to knowing that I wanted to be a PhD student.
+
+Benefits:
+
+* Reduces __dependency__ on others
+  * each device manages its own knowledge
+  * this simplifies the __management__
+* Reduces networking in __writings__
+  * Which are quite frequent (updates of a sensor measure)
+
+Drawbacks:
+
+* Flooding-based __search__: networking
+* __Inconsistency__ (Brewer)
+* __JXTA__: not really interoperable
+ 
+  * Not appropriate for limited devices
+  * Discontinued
+  * A nightmare!
 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
