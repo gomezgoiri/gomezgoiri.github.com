@@ -179,7 +179,7 @@ The IEEE defines __interoperability__ as
 
  > The ability of two or more systems or components to __exchange__ information
  > and to __use__ the information that has been exchanged. <!-- TODO cite -->
- 
+
 ---
 
 # Challenge 2b: use info
@@ -283,7 +283,7 @@ Even this presentation is part of the web!
 (at least, it is running in a web browser and it will be uploaded afterwards ;-))
 
 ---
- 
+
 # Why the Web?
 .subtitle[
 ## Space model
@@ -300,7 +300,7 @@ Even this presentation is part of the web!
 ???
 
  Properties achieved:
- 
+
   * Scalability
   * Simplicity
   * Portability
@@ -321,10 +321,26 @@ Even this presentation is part of the web!
  These properties are useful for limited devices!
 
  * Actually, it has been widely applied to IoT: the __Web of Things__
- 
+
  * Conflicts: push approach, subscription mechanisms...
- 
+
  Lo que me gusta de WoT: los dispositivos no son meros clientes, también proveedores
+
+---
+
+# UbiComp challenges: summary
+
+ 1. Dinamicity
+ 2. Interoperability
+
+---
+
+# UbiComp challenges: summary
+
+ 1. Dinamicity: tuple spaces
+ 2. Interoperability: semantics + web
+
+(mejor con iconos)
 
 ---
 
@@ -336,7 +352,7 @@ class: center, middle
 
 class: middle
 
- > The __alignment of the TSC paradigm with the web's principles__ together with the
+ > The alignment of the TSC paradigm with the web's principles together with the
  > consideration of its energy and computational impact, leads to UbiComp
  > environments where heterogeneous devices communicate autonomously in an uncoupled
  > and interoperable fashion.
@@ -345,7 +361,7 @@ class: middle
 
 class: middle
 
-weak[
+.weak[
  > The __alignment of the TSC paradigm with the web's principles__ together with the
  > consideration of its energy and computational impact, leads to UbiComp
  > environments where heterogeneous devices communicate autonomously in an uncoupled
@@ -357,7 +373,7 @@ weak[
 class: middle
 
 .weak[
- > The _alignment of the TSC paradigm with the web's principles_ together with the
+ > The alignment of the TSC paradigm with the web's principles together with the
  > consideration of its __energy and computational impact__, leads to UbiComp
  > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
  > and interoperable__ fashion.
@@ -373,26 +389,48 @@ class: middle
 
 ---
 
-# 2nd attempt (II)
-.subtitle[
-## Space model
-]
+# Space model
+
+<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+
+Analysis:
+
+ * Networking properties
+ * Coordination properties
+ * Is it for limited devices?
+
+???
+
+After several attempts... this model confines much of the information in the devices
+(explicar que detras de esto hay una motivación personal).
+
+We proposed a __dual model__.
+
+* Coordination space
+ * Enhanced by the information provided by autonomous devices
+* Outer space:
+ * __Enriched view__
+ * what's happening on __real time__
+
+---
+
+# Space model: networking properties
 
 HTTP API for TSC:
 
  * __Resource oriented__: spaces, RDF Graphs, RDF triples
- 
+
  * HTTP __verbs__ mapped to TSC __primitives__
- 
+
  * Other features: status codes, content negotiation, etc.
- 
+
  * It is not hypermedia driven (yet)
+
+  [tabla de propiedades networking]
 
 <!--enumerar los principios que cumple-->
 
 ???
-
-As part of this 2nd attempt... we made an HTTP API
 
 TSC interface for HTTP compatible with (most of) the REST principles.
 
@@ -400,36 +438,47 @@ HATEOAS: future work.
 
 * Although it has a human oriented API
 
-
 Drawbacks not mentioned yet:
 
  * subscription, transactions, etc. vs stateless
 
 ---
 
-# Problem with the 1st and 2nd attempts
-.subtitle[
-## Space model
-]
+# Space model: coordination properties
 
 What about the uncoupling?
- 
- 
- <img alt="Space and time" src="img/uncoupling.svg" style="width:90%; margin-top: 2em; display: block; margin-left: auto; margin-right: auto"" class="center" />
+
+
+<img alt="Space and time" src="img/uncoupling.svg" style="width:60%; margin-top: 2em; display: block; margin-left: 12em; margin-right: auto"/>
+<div style="margin-top: 1em;">
+ <span style="margin-left: 12em;">Space uncoupling</span>
+ <span style="float:right;">Time uncoupling</span>
+</div>
+
+???
+
+Brief explanation of what these two uncouplings are
 
 --
- 
-<span style="margin-left: 1.4em;">Space uncoupling <span style="color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span></span>
+<div>
+ <span style="float:left;">Coordination space</span>
+ <span style="width: 20em; float:right;">
+     <span style="margin-left: 25%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+     <span style="margin-left: 40%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+</span>
+</div>
+
+<div style="clear:both;">
+<span style="float:left;">Outer space</span>
+<span style="width: 20em; float:right;">
+    <span style="margin-left: 25%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+    <span style="margin-left: 40%; color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span>
+</span>
+</div>
+
 ???
 
 * Programmers only care about data (__forced__ by the primitives)
-
---
-
-<span style="float:right;">Time uncoupling <span style="color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span></span>
-
-???
-
 * Provider holds its content...
   * only accessible when the provider is available
 * __Move contents__ to other nodes
@@ -441,43 +490,24 @@ What about the uncoupling?
   * not easy (unreliable => networking)
 * __Complex__
 
----
-
-# Final model
-.subtitle[
-## Space model
-]
-
 We realized that we used the space for different purposes:
 
  1. Search for information
  1. Coordinate through the space
 
-???
-
 __Time__ uncoupling particularly __important for coordination__
 
 * No so much for search (real time)
 
---
+---
 
-<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+# Space model: properties for UbiComp
 
-<!-- A modo de evaluación o conclusión, poner una tabla con las propiedades -->
+<img alt="Space and time" src="img/ubicomp_properties.png" class="center" style="width:90%;"/>
 
 ???
 
-<hr />
-
-Based on our __experience__.
-
-Hence, we propose a __dual model__.
-
-* Coordination space
- * Enhanced by the information provided by autonomous devices
-* Outer space:
- * __Enriched view__
- * what's happening on __real time__
+Y más que enrollarse aquí, dar como paso a lo siguiente
 
 ---
 
@@ -487,13 +517,19 @@ class: center, middle
 
 ---
 
+[Encaje en el modelo?]
+
+Ver que está pensado para el outer-space
+
+---
+
 # Evaluation: Energy consumption
 
 <img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 90%;" />
 
 ???
- 
-1. __Improve__ the search, become it smarter 
+
+1. __Improve__ the search, become it smarter
 1. Move the __management tasks__ created by our proposal __to__ more __powerful__ devices
 
 ---
@@ -554,7 +590,7 @@ class: center, middle
   * Uncoupling
   * Scalability, simplicity...
  * __Energy__-aware search
- 
+
  * __Future__ work:
   * Performance evaluation in real deployments over a long period of time, with many different applications running
   * Security aspects
@@ -589,7 +625,7 @@ under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa
 [cibo00](http://openclipart.org/detail/14056/),
 [liftarn](http://openclipart.org/detail/181651/),
 [jiangyi_99](http://openclipart.org/detail/183056/),
-[mazeo](http://openclipart.org/detail/87055/) and 
+[mazeo](http://openclipart.org/detail/87055/) and
 [Justin Ternet](http://openclipart.org/detail/182928/).
 
 
@@ -617,7 +653,7 @@ This is __simplified version__ of all my unfruitful attempts.
 ]
 
 Triple Space Computing (TSC)
- 
+
  * Spaces identified by URIs
  * Tuples == RDF Triples & RDF Graphs
  * Templates = triple patterns
@@ -625,26 +661,25 @@ Triple Space Computing (TSC)
 <div style="margin-top:2em;" />
 
 ![Resources in TSC](img/tsc_resources.svg)
- 
+
 ???
 
 Uses elements from the SW
 
 ---
 
-# 1st attempt
-.subtitle[
-## Space model
-]
-
-Completely __decentralized__
+# Space model: completely decentralized
 
  * Each device manages its own information
  * It asks to the rest using a __P2P__ approach
 
+[table with benefits and drawbacks]
+
 ???
 
 I did this prior to knowing that I wanted to be a PhD student.
+
+Alternative model.
 
 Benefits:
 
@@ -659,7 +694,7 @@ Drawbacks:
 * Flooding-based __search__: networking
 * __Inconsistency__ (Brewer)
 * __JXTA__: not really interoperable
- 
+
   * Not appropriate for limited devices
   * Discontinued
   * A nightmare!
@@ -667,8 +702,9 @@ Drawbacks:
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
     </script>
+    <!-- Substitute with remark-latest.min.js -->
     <script type="text/javascript">
       var slideshow = remark.create();
     </script>
   </body>
-</html> 
+</html>
