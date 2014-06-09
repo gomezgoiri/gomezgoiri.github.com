@@ -20,7 +20,7 @@ class: center, frontpage
 <!--Internet unit, [DeustoTech](http://www.deustotech.deusto.es/)
 .breakline[ [www.morelab.deusto.es](http://www.morelab.deusto.es) ]-->
 
-.date[Month 00, 2014]
+.date[June 16, 2014]
 
   ]
 ]
@@ -78,9 +78,9 @@ So the __mobile computing__ appeared.
 
 ???
 
-Nowadays, not only a wider range of smartphones, but also everyday objects like cars or washing machines connect to the Internet to exchange information.
+Nowadays, __not only__ a wider range of smartphones, but also everyday objects like cars or washing machines connect to the Internet to exchange information.
 
-IoT!
+This is what __is know as__ the Internet of Things (IoT).
 
 ---
 
@@ -90,11 +90,11 @@ IoT!
 
 ???
 
-Lately: IoT & mobile comp. __contributed to Ubicomp__.
+And particularly the IoT and the mobile computing have __contributed to Ubicomp__.
 
 UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
 
-Devices imperceptibly working on our behalf.
+It describes environments where devices imperceptibly work on our behalf.
 
 ---
 
@@ -104,71 +104,91 @@ Devices imperceptibly working on our behalf.
 
 ???
 
-Its real power "comes not from any one of these devices, it emerges from the interaction of all of them".
+But, in Mark's words, UbiComp's real power "comes not from any one of these devices, it emerges from the __interaction of all__ of them".
+
+This interaction brings __challenges__ to UbiComp.
+
+In this thesis I've  focused on two of them.
 
 ---
 
-# Challenge 1: The dynamic nature of the devices
-.subtitle[
-## UbiComp
-]
+# UbiComp, challenge 1: dynamism
+
+<img alt="Guy reading the news while his home works on his behalf" src="img/transpas/ubicomp01.png" style="width: 100%; display: block;">
+
+???
+
+First, we have the dynamism.
+
+This dinamicity has its effects both in the short and the long term.
+
+In the short term, due to devices' mobile nature, they can come and go frequently.
+
+---
+
+# UbiComp, challenge 1: dynamism
 
 <img alt="The umbrella goes out" src="img/transpas/ubicomp03.png" style="width: 100%; display: block;">
 
 ???
 
-Mobile nature: los dispositivos van y vienen (short term)
+For instance, in the figure we can see that the umbrella which was in the stand few moments ago, is now being used outside the house.
 
 ---
 
-# Challenge 1: The dynamic nature of the devices
-.subtitle[
-## UbiComp
-]
+# UbiComp, challenge 1: dynamism
+
+<img alt="Guy reading the news while his home works on his behalf" src="img/transpas/ubicomp01.png" style="width: 100%; display: block;">
+
+???
+
+The environment also changes in the long term whenever we definitely replace an element.
+
+---
+
+# UbiComp, challenge 1: dynamism
 
 <img alt="The clock is renewed" src="img/transpas/ubicomp04.png" style="width: 100%; display: block;">
 
 ???
 
-Replaceability: for example with a improved digital clock (long term)
+For instance, we could replace the our smart clock with a new version.
 
 ---
 
-# Challenge 1: solution
-.subtitle[
-## UbiComp
-]
-
-Space-based computing
+# UbiComp, challenge 1: proposed solution
 
 <img alt="Space based computing: rd, in and out primitives" src="img/transpas/space-based.png" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto">
 
 ???
 
-Uncoupled: space & time.
+To face this dynamism, we propose the use of space-based computing (or Tuple Spaces).
+
+Tuple Spaces is a paradigm where nodes coordinate with each other by writing and reading structured pieces of information (i.e., tuples) in a shared space.
+
+This paradigm can be uncoupled in space and time.
+
+__Space uncoupling__ is achieved because the nodes don't need to know each other beforehand to communicate.
+That is, TS' primitives do not care about addresses and references, they just care about the content being shared.
+
+__Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
 
 ---
 
-# Challenge 2: heterogeneity
-.subtitle[
-## UbiComp
-]
+# UbiComp, challenge 2: heterogeneity
 
 <img alt="Dude, what are you talking about?" src="img/transpas/interoperability01.png" style="width: 100%; display: block;">
 <!-- dispositivos hablando chino, coreano, cirilico y alphabeto -->
 
 ???
 
-Devices and applications build upon them are heterogeneous.
+The second challenge UbiComp has to face is that both the devices and the applications build upon them are heterogeneous.
 
-Interoperability problem
+That is, the interoperability is a key property for these environments.
 
 ---
 
-# Challenge 2: heterogeneity
-.subtitle[
-## UbiComp
-]
+# UbiComp, challenge 2: heterogeneity
 
 The IEEE defines __interoperability__ as
 
@@ -177,45 +197,48 @@ The IEEE defines __interoperability__ as
 
 ---
 
-# Challenge 2: heterogeneity
-.subtitle[
-## UbiComp
-]
+# UbiComp, challenge 2: heterogeneity
 
 The IEEE defines __interoperability__ as
 
 > .weak[The ability of two or more systems or components to _exchange_ information
 > and to __use__ the information that has been exchanged.]
 
+???
+
+So, let's first talk about the second problem: how to use (or reuse) information.
+
 ---
 
-# Challenge 2b: use info
-.subtitle[
-## UbiComp, Challenge 2: heterogeneity
-]
+# UbiComp, challenge 2b: use info
 
 <img alt="The robot does not understand chinese or japanese" src="img/transpas/interoperability02.png" style="width: 100%; display: block;">
 
 ???
 
-2. Use
- 1. __Syntactic__ level: format of the data (i.e. its syntax and encoding)
- 1. __Semantic__ level: precise meaning of the info
+We can identify two levels two allow this __use__:
+
+ 1. The  __syntactic__ level cares about  the format of the data (i.e. its syntax and encoding)
+    * For instance, if the robot does not undestand chinese characters, the information the mobile phone provides will be useless.
+
+ 1. The __semantic__ level gives a precise meaning to the info
     * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
+    * Following the example, this character may mean different things depending on the context.
+    * Funnily enough, I translated something to chinese for this presentation using an automatic tool.
+    * When my co-supervisor asked about the meaning to a chinese colleague, it was confused because the meaning was either "X or X".
+
 ---
 
-# Challenge 2b: solution
-.subtitle[
-## UbiComp, Challenge 2: heterogeneity
-]
 
-The Semantic Web
+# UbiComp, challenge 2b: proposed solution
 
 <img alt="The robot does understand terms" src="img/transpas/interoperability03.png" style="width: 100%; display: block;">
 
 ???
 
- > .weak[The vision of the __Semantic Web__ is to extend principles of the Web from documents to data.
+To achieve both levels, I propose to use __Semantic Web__ standards and tools.
+
+ > .weak[The __vision__ of the Semantic Web is to extend principles of the Web from documents to data.
  > Data should be accessed using the general Web architecture using, e.g., URI-s;
  > data should be __related to one another__ just as documents (or portions of documents) are already.
  > This also means creation of a common framework that allows data
@@ -231,36 +254,48 @@ class: center, middle
 
 ???
 
-FIXME: aprovechar esta y/u otra transpa para hacer una pasada superficial al estado del arte
+<!-- Aprovecho esta ptranspa para hacer una pasada superficial al estado del arte -->
 
-After analyzing these research areas...
+After analyzing these research areas in the UbiComp domain I saw that...
 
-Space-based computing:
+Space-based computing
 
- * Often applied to UbiComp
- * Used with Semantics
+ * has often been applied to UbiComp
+ * and it has also been used with Semantics,
+ * but usually centrallizing the space on powerful devices.
 
-Usually centrallizing so...
+This makes perfect sense since
 
-I made myself a question (research question, PhD opportunity)
+ 1. semantic processing can add too much overhead to limited devices
+ 2. it is hard to ensure the space's availability with unsteady (too dynamic) devices
 
-* Can these devices get __more involved__ in the management of the space?
-  * Not only mere clients
+However,
 
-* Semantic in limited devices __Overhead__?
-  * Many of the current devices are able to manage their info
+ 1. current embedded and mobile devices are notably more powerful than 5 years ago
+ <!--
+ TODO
+ Preparar una transpa de backup por si preguntan cómo de viable es.
+ Ideas:
+   * Many of the current devices are able to manage their info
+   * Gráfico con pruebas que hicimos en su día:
     * Even if it is more verbosed
     * Some of them can reason and expand this information.
     * Others may need to rely in third machines.
-      * Out of the scope
-  * Anyway, we might be anticipating a trend.
+     * Out of the scope
+    * Anyway, we might be anticipating a trend.
+ -->
+ 2. having dedicated servers is costly and hard to manage in simple scenarios
+
+
+So, with these considerations in mind, I made myself a question:
+<!-- research question => PhD opportunity -->
+
+ * Can these devices get __more involved__ in the management of the space?
+   Not only as mere clients.
 
 ---
 
-# Challenge 2a: exchange info
-.subtitle[
-## UbiComp, Challenge 2: heterogeneity
-]
+# UbiComp, challenge 2a:  exchange info
 
 The IEEE defines _interoperability_ as
 
@@ -269,12 +304,13 @@ The IEEE defines _interoperability_ as
 
 
 ???
-1. Exchange
-2. Use
 
-To interoperate, it is better to adopt a __widely accepted__ mechanism.
+But, to talk about this involvement of the apparently limited devices, let me first resume to the sub-challenge we did not tackled before: __how to exchange information__.
 
-To rely on widely accepted communication protocols => interop __ab-initio__
+To interoperate, it is better to adopt a __widely accepted__ communication mechanism. <!-- mechanism/protocols -->
+This is called interop __ab-initio__.
+
+And what's more accepted today than...
 
 ---
 
@@ -285,53 +321,53 @@ background-image: url(img/the_web.svg)
 
 ???
 
+...the web?
+
 Even this presentation is part of the web!
 
-(at least, it is running in a web browser and it will be uploaded afterwards ;-))
+http://rawgit.com/gomezgoiri/gomezgoiri.github.com/master/slides/thesis/index.html
 
 ---
 
 # Why the Web?
 .subtitle[
-## Space model
+## UbiComp, challenge 2a:  exchange info
 ]
 
- * Massively accepted <!--by humans.-->
- * A lot of applications expose their capabilities using HTTP APIs
+ * Massively accepted <!--by humans. (this is not a real reason) -->
+  * By humans
+  * Also, a lot of applications expose their capabilities using HTTP APIs
 --
 
- * __REST__ architectural style comprises the design principles of _the modern web_
-
-<!--  Dibujito o tabla para que se intuya? -->
+ * Scalability
+ * Simplicity
+ * Portability
+ * etc.
 
 ???
 
- Properties achieved:
+__REST__ architectural style comprises the design principles of _the modern web_
 
-  * Scalability
-  * Simplicity
-  * Portability
-  * etc.
+It achieves the following properties  (see Fielding's thesis)
+
+Note that most of these properties are particularly useful for limited devices.
 
 ---
 
-
-# Solution 2a: exchange info
-.subtitle[
-## UbiComp, Challenge 2: heterogeneity
-]
+# UbiComp, challenge 2a:  exchange info
 
 <img alt="The web of Things" src="img/transpas/wot.png" style="width: 100%; display: block;">
 
 ???
 
- These properties are useful for limited devices!
+As a consequence, the web has been widely applied to IoT, bringing what people has called the __Web of Things__ (WoT).
 
- * Actually, it has been widely applied to IoT: the __Web of Things__
+<!-- Transpa backup: WoT challenges: push approach, subscription mechanisms... -->
 
- * Conflicts: push approach, subscription mechanisms...
+In the WoT, everyday things expose their capabilities through web standards so they are first-class web citizens.
+This way, they can seamlessly work with other web apps.
 
- Lo que me gusta de WoT: los dispositivos no son meros clientes, también proveedores
+This goes along with my interest in having devices which are not mere clients, but also active data providers.
 
 ---
 
