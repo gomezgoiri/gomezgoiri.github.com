@@ -4,6 +4,7 @@
     <title>Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <base href="https://dl.dropboxusercontent.com/u/9804351/">
+    <!--<base href="http://localhost:8000/">-->
     <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
   </head>
   <body>
@@ -34,7 +35,6 @@ class: center, frontpage
 ???
 
 In the beginning researchers created the Internet.
-(todo el guiño a la biblia)
 
 Internet composed by few computers.
 
@@ -48,7 +48,7 @@ Internet composed by few computers.
 
 Then, the popularity of the Internet grew and connecting computers became easier and cheaper.
 
-More and more.
+Consequently, more and more computers got connected.
 
 ---
 
@@ -58,7 +58,7 @@ More and more.
 
 ???
 
-Thanks to wireless technologies, devices can connect to the Internet without having to be physically connected to a network.
+Thanks to wireless technologies, devices started connecting to the Internet without having to be physically connected to a network.
 
 ---
 
@@ -90,7 +90,7 @@ This is what __is know as__ the Internet of Things (IoT).
 
 ???
 
-And particularly the IoT and the mobile computing have __contributed to Ubicomp__.
+Both the IoT and the mobile computing have __contributed to Ubicomp__.
 
 UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
 
@@ -122,7 +122,7 @@ First, we have the dynamism.
 
 This dinamicity has its effects both in the short and the long term.
 
-In the short term, due to devices' mobile nature, they can come and go frequently.
+Since most devices have a mobile nature, they can come and go frequently in the short term.
 
 ---
 
@@ -162,7 +162,7 @@ For instance, we could replace the our smart clock with a new version.
 
 ???
 
-To face this dynamism, we propose the use of space-based computing (or Tuple Spaces).
+Space-based computing (or Tuple Spaces) face this dynamism successfully.
 
 Tuple Spaces is a paradigm where nodes coordinate with each other by writing and reading structured pieces of information (i.e., tuples) in a shared space.
 
@@ -173,33 +173,34 @@ That is, TS' primitives do not care about addresses and references, they just ca
 
 __Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
 
+<!-- TODO ¿Hacer 2 transpas aclaratorias? 1. Temporal diagrama secuencia y 2. mostrando primitivas para lo de referencia -->
+
 ---
 
 # UbiComp, challenge 2: heterogeneity
 
 <img alt="Dude, what are you talking about?" src="img/transpas/interoperability01.png" style="width: 100%; display: block;">
-<!-- dispositivos hablando chino, coreano, cirilico y alphabeto -->
 
 ???
 
 The second challenge UbiComp has to face is that both the devices and the applications build upon them are heterogeneous.
 
-That is, the interoperability is a key property for these environments.
+This means that the interoperability is a key property for these environments.
 
 ---
 
 # UbiComp, challenge 2: heterogeneity
 
-The IEEE defines __interoperability__ as
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
 
  > The ability of two or more systems or components to __exchange__ information
- > and to __use__ the information that has been exchanged. <!-- TODO cite -->
+ > and to __use__ the information that has been exchanged.
 
 ---
 
 # UbiComp, challenge 2: heterogeneity
 
-The IEEE defines __interoperability__ as
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
 
 > .weak[The ability of two or more systems or components to _exchange_ information
 > and to __use__ the information that has been exchanged.]
@@ -224,8 +225,9 @@ We can identify two levels two allow this __use__:
  1. The __semantic__ level gives a precise meaning to the info
     * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
     * Following the example, this character may mean different things depending on the context.
-    * Funnily enough, I translated something to chinese for this presentation using an automatic tool.
-    * When my co-supervisor asked about the meaning to a chinese colleague, it was confused because the meaning was either "X or X".
+    * TODO Preguntar a primez cual era el caracter conflictivo!
+     * Funnily enough, I translated something to chinese for this presentation using an automatic tool.
+     * When my co-supervisor asked about the meaning to a chinese colleague, it was confused because the meaning was either "X or X".
 
 ---
 
@@ -297,15 +299,15 @@ So, with these considerations in mind, I made myself a question:
 
 # UbiComp, challenge 2a:  exchange info
 
-The IEEE defines _interoperability_ as
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238)  defines _interoperability_ as
 
  > .weak[The ability of two or more systems or components to __exchange__ information
- > and to _use_ the information that has been exchanged.] <!-- TODO cite -->
+ > and to _use_ the information that has been exchanged.]
 
 
 ???
 
-But, to talk about this involvement of the apparently limited devices, let me first resume to the sub-challenge we did not tackled before: __how to exchange information__.
+But, to talk about this involvement of the apparently limited devices, let me first resume to the sub-challenge we did not tackle before: __how to exchange information__.
 
 To interoperate, it is better to adopt a __widely accepted__ communication mechanism. <!-- mechanism/protocols -->
 This is called interop __ab-initio__.
@@ -334,21 +336,33 @@ http://rawgit.com/gomezgoiri/gomezgoiri.github.com/master/slides/thesis/index.ht
 ## UbiComp, challenge 2a:  exchange info
 ]
 
- * Massively accepted <!--by humans. (this is not a real reason) -->
-  * By humans
-  * Also, a lot of applications expose their capabilities using HTTP APIs
---
-
- * Scalability
- * Simplicity
- * Portability
- * etc.
+<img alt="The web is widely accepted" src="img/transpas/web_accepted01.png" style="width: 100%;" />
 
 ???
 
+* Massively accepted <!--by humans. (this is not a real reason) -->
+ * By humans
+ * Also, a lot of applications expose their capabilities using HTTP APIs
+
 __REST__ architectural style comprises the design principles of _the modern web_
 
+---
+
+# Why the Web?
+.subtitle[
+## UbiComp, challenge 2a:  exchange info
+]
+
+<img alt="The web is widely accepted" src="img/transpas/web_accepted02.png" style="width: 100%;" />
+
+???
+
 It achieves the following properties  (see Fielding's thesis)
+
+* Scalability
+* Simplicity
+* Portability
+* etc.
 
 Note that most of these properties are particularly useful for limited devices.
 
@@ -367,7 +381,7 @@ As a consequence, the web has been widely applied to IoT, bringing what people h
 In the WoT, everyday things expose their capabilities through web standards so they are first-class web citizens.
 This way, they can seamlessly work with other web apps.
 
-This goes along with my interest in having devices which are not mere clients, but also active data providers.
+This goes hand in hand with my interest in having devices which are not mere clients, but also active data providers.
 
 ---
 
@@ -380,6 +394,10 @@ This goes along with my interest in having devices which are not mere clients, b
 class: center, middle
 
 # Hyphothesis
+
+???
+
+To sum up these interests, I made the following hypothesis.
 
 ---
 
@@ -420,6 +438,18 @@ class: middle
  2. Search architecture
  3. Actuation mechanism
 
+[ ICONS? ]
+
+???
+
+1. Propose a new space model which merges the benefits from Space-based computing and the web.
+1. An energy-aware search for this new model.
+1. An actuation mechanism.
+
+In my dissertation, and in this presentation, I've focused on the second aspect.
+
+Consequently, I will restrict myself to a brief comment on the first and third points.
+
 ---
 
 # Space model
@@ -434,46 +464,63 @@ Analysis:
 
 ???
 
-After several attempts... this model confines much of the information in the devices
-(explicar que detras de esto hay una motivación personal).
+After several attempts, I came up with the __dual model__ shown in the figure.
 
-We proposed a __dual model__.
+It is composed by:
 
-* Coordination space
- * Enhanced by the information provided by autonomous devices
-* Outer space:
- * __Enriched view__
- * what's happening on __real time__
+ * Coordination space
+  * Pretty much a classical semantic space
+  * It is enhanced by the information provided by autonomous devices (or asteroids)
+ * Outer space
+  * __Enriched view__
+  * what's happening on __real time__
+
+This model confines much of the information in the devices.
 
 ---
 
 # Space model: networking properties
 
-HTTP API for TSC:
-
- * __Resource oriented__: spaces, RDF Graphs, RDF triples
-
- * HTTP __verbs__ mapped to TSC __primitives__
-
- * Other features: status codes, content negotiation, etc.
-
- * It is not hypermedia driven (yet)
-
-  [tabla de propiedades networking]
-
-<!--enumerar los principios que cumple-->
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties01.png" style="width: 100%;" />
 
 ???
 
-TSC interface for HTTP compatible with (most of) the REST principles.
+To analyse the networking properties of the solution proposed, we must note that both spaces are accessed through their APIs.
 
-HATEOAS: future work.
+Both APIs are based on the space-based computing primitives, which are compatible with (most of) the REST principles:
 
+* It is resource oriented: the resources are the spaces, RDF Graphs and RDF triples.
+* HTTP verbs can be directly mapped to TSC primitives.
+* We use other HTTP features: status codes, content negotiation, etc.
+
+---
+
+# Space model: networking properties
+
+<img alt="The API is not hypermedia-driven" src="img/transpas/networking_properties02.png" style="width: 100%;" />
+
+???
+
+We lack to follow a REST principle:
+
+* Hypermedia-driven (HATEOAS), this is actually an interesting future work.
 * Although it has a human oriented API
 
-Drawbacks not mentioned yet:
+Accessing to the spaces through a REST-like API provides the following features to our model:
 
- * subscription, transactions, etc. vs stateless
+* Scalability (4+)
+* Simplicity (3+-)
+* UP performance, efficiency & evolvability (2+)
+* Portability, extensibility, configurability, reusability & reliability (+)
+* Visibility (+-)
+* Net performance (-)
+
+And it also comes with some drawbacks:
+
+* Less simplicity, reusability & visibility than pure REST APIs (hypermedia-driven)
+* Mechanisms such as subscriptions and transactions go against the statelessness
+
+Specifically, we will see how this affects coordination properties.
 
 ---
 
@@ -490,7 +537,8 @@ What about the uncoupling?
 
 ???
 
-Brief explanation of what these two uncouplings are
+Move the explanation of uncoupling here?
+<!-- Not yet because I'm unsure whether these slides will be kept -->
 
 --
 <div>
@@ -511,26 +559,28 @@ Brief explanation of what these two uncouplings are
 
 ???
 
-* Programmers only care about data (__forced__ by the primitives)
-* Provider holds its content...
-  * only accessible when the provider is available
+Obviously, the coordination space corresponds with the clasical model and therefore has both uncouplings.
+
+In the _outer space_, programmers are forced by space-based primitives not to care about data too.
+
+However, regarding _time uncoupling_, since each provider holds its content, this is only accessible when the provider is available.
+
+Other possible solutions:
+
 * __Move contents__ to other nodes
   * how to distinguish the reliable ones?
   * measures away from where they are generated
    * what if the other node lefts the space but the provider is available?
 * Replicate contents
   * more networking
-  * not easy (unreliable => networking)
-* __Complex__
+  * it is not easy with unreliable nodes
 
-We realized that we used the space for different purposes:
+However, I kept it this way when I identified (realized) that we used the space for different purposes:
 
  1. Search for information
  1. Coordinate through the space
 
-__Time__ uncoupling particularly __important for coordination__
-
-* No so much for search (real time)
+Time uncoupling is particularly important for coordination, but not so much for search (real time).
 
 ---
 
@@ -540,17 +590,26 @@ __Time__ uncoupling particularly __important for coordination__
 
 ???
 
-Y más que enrollarse aquí, dar como paso a lo siguiente
+Finally, we can see how the properties commented before interrelate with desirable properties in UbiComp.
+
+Particularly, we can see two conflictive interrelations:
+
+ 1. The web is not the most efficient communication mechanism.
+ 2. The semantic web negatively affects computation overload and energy autonomy.
+
+To reduce the first one, we can redesign the API or just adopt more lightweight protocols (e.g., CoAP which mimics many of HTTP's properties).
+
+For the latter one, we have specifically designed a search architecture.
 
 ---
 
 class: center, middle
 
-# Search architecture
+# Energy-aware Search Architecture
 
 ---
 
-# Problem
+# Motivation: in the context of this PhD <!-- Or specific -->
 
 How to search in the _outer space_?
 
@@ -558,31 +617,44 @@ How to search in the _outer space_?
 
 ???
 
+How can we search in the _outer space_?
+
 Or generalizing...
 
 ---
 
-# More general problem
-
-How to search in a semantic web provided by limited devices?
+# Motivation: a generalization
 
 [Esquema cacharros ofreciendo ficheros rdf]
 
 ???
 
-Problem: computation (podemos poner hasta graficos de cosas que hayamos hecho)
+How to search in a semantic web provided by limited devices?
 
 ---
 
-# Solution 1: Let's centralize everything
+# Possible solution: Intermediary providers
 
 [cacharros enviando sus ficheros rdf a un servidor]
 
+[cacharro preguntando a un servidor]
+
+???
+
+One popular solution is to centralize all the knowledge in a more powerful machine (or machines).
+For sake of clarity, let's assume that there is just one machine.
+
+This way, the devices periodically send their information to this machines,
+and it stores the information.
+
+Whenever a limited device needs to query for something, it has to ask to this machine.
+
 ---
 
-# Solution 1: Let's centralize everything
+# Problems with intermediary providers
 
-[cacharro preguntando a un servidor]
+[Situación 1: sensor con fichero de t5, servidor t3]
+[Situación 2: sensor intenta preguntar a un servidor que ya no existe]
 
 ???
 
@@ -595,17 +667,25 @@ Problems:
  * Once they rely on intermediaries, these intermediaries must be available at
  all time. Otherwise, the devices would not be able to talk to each other.
 
-  * ¡Poner ejemplo de Navastag!
+And this happens way too frequently on the Internet.
+For example, the Navastag was an IoT which completely depent on an external service.
+The company of this internet-connected bunny dissapeared and they did not maintain the servers.
+<!-- They released a poorly documented code. -->
+As a consequence, nowadays the Navastag is pretty much an expensive decoration.
 
 ---
 
-# My solution: Let's promote the direct communication
+# My solution: Promote the direct communication
 
 [cacharros preguntandose entre sí]
 
 ???
 
-Not at any price (e.g., broadcasting), energy is important...
+To avoid this kind of situations, I conceived an environments where devices communicate with each other directly.
+
+But, obviously, we cannot do this at any price.
+
+For instance, a broadcasting-based solution will generate innecessary computation and networking activity.
 
 ---
 
@@ -615,30 +695,130 @@ Not at any price (e.g., broadcasting), energy is important...
 
 ???
 
- * Dynamic intermediaries (e.g. "search facilitators")
- * Moving the load from less powerful to more powerful
- 1. __Improve__ the search, become it smarter
- 1. Move the __management tasks__ created by our proposal __to__ more __powerful__ devices
+And since computation and networking result in significant higher energy consumption,
+we need to find a strategy which efficiently manages both aspects.
+
+Particularly, I propose to:
+
+* Move the load __from less powerful to more powerful__ devices
+
+To this end, I propose to use dynamic intermediaries (i.e., "search facilitators")
+
+ 1. They __improve__ the search, become it smarter
+ 1. Help to move the __management tasks__ created by my proposal __to__ more __powerful__ devices
 
 ---
 
 class: center, middle
+<!--# Elements in the architecture proposed-->
 
-<img alt="Energy-aware search architecture" src="img/architecture.svg" style="width: 100%;" />
+<img alt="Energy-aware search architecture" src="img/transpas/architecture.svg" style="width: 100%;" />
 
 ???
 
-1. Different __roles__
-1. Providers
-1. Consumers: directly request/query providers
- * Which ones?
-1. Clues or indexes
- * __Light__ example (measures, lamp)
-1. WP to enhance the search
- * WP chosen __dynamically__: considering energy consumption and computation
+We can see the following __roles__:
+
+1. Providers: carry their own information (mobile scenarios)
+1. Consumers: directly request/query providers to obtain fresh data
+1. White Page to enhance the search
+ * WP is chosen __dynamically__: considering energy consumption and computation
   * changes over the time
  * Consumers __don't depend__ on the WP to resolve the queries
   * Just to get and update the clues
+
+Additionally, we can see how semantic data is summarized in information pieces called __clues__ (or indexes).
+There are two types:
+ * Clues gererated by providers
+ * Aggregated clues which are the sum of individual clues, managed in the WP
+
+---
+
+# Clues
+
+[schema prov sending a clue and getting an aggregated clue version]
+
+???
+
+Note that the system is based in an assumption:
+__clues do not change frequently since they represent the type of information the nodes host rather than the specific data which is constantly generated__
+
+* Clues generated by a provider and sent to the WP getting an aggregated clue version
+ 1. every time a clue is updated
+ 2. before its lifetime expires
+ 3. whenever there is a new WP in the Space with a lower setup version than the one in the Provider
+
+* Aggregated clues
+ * obtained by Consumers
+  1. when they don't have one
+  2. periodically
+   * upper time: ensures a fresh view
+   * lower time: not to flood the WP
+   * in between, with the last 10 queries
+ * they process them to decide which nodes to ask for information
+ * as an optimization WP can answer this elements
+
+---
+
+# Clue content
+
+<img alt="Semantic example and clue types" src="img/transpas/semantic_example.svg" style="width: 100%;" />
+
+???
+
+The semantic web is formed by RDF triples.
+They are composed by a subject, a predicate and an object.
+
+Clues need to:
+
+* summarize the information hold by a provider
+* not change frequently
+
+I considered three alternatives:
+
+* Classes stored
+* Prefixes
+* Predicates
+
+---
+
+# WP
+
+selection
+
+???
+
+The selection process can start
+
+1. when no WP is available (the first node to realize the absence starts it) or
+2. when the current WP gets a worse score than other nodes (the current WP)
+
+
+How? Ranking them according to information provided by discovery mechanism.
+
+* memory of the device
+* storage capacity of the device
+* time since it joined the Space (aproximately)
+* its battery charge
+
+---
+
+# Experimental environment
+
+<img alt="Real time measures" src="img/transpas/time_measures.png" style="width: 100%;" />
+
+<img alt="Sample templates" src="img/transpas/evaluation_templates.png" style="width: 100%;" />
+
+???
+
+To test all this architecture, I prepared several experiments.
+
+I performed a simulation using as inputs for the parametrization the following response times tested in several devices.
+
+These time measures affect the performance of the solution (e.g., indirectly how much energy consumed).
+
+For the data provider by sensors, I used real knowledge from real datasets following describing sensing stations.
+
+The templates used are the ones shown, which try to consider queries from different nature.
 
 ---
 
@@ -648,8 +828,11 @@ class: center, middle
 
 ???
 
-* Better than floading
-* Comparing to caching: depends on the # of providers and the # of queries
+Obviously it is better than flooding
+
+And comparing to caching, it depends on the # of providers and the # of queries.
+
+However, the more of each elements the scenario has, the better our solution is compared to caching.
 
 ---
 
@@ -659,10 +842,24 @@ class: center, middle
 
 ???
 
-* On average, __activity is reduced__ considerably
-* Besides,
- * less requests on the limited devices
- * additional tasks, moved to more powerful ones
+On the right hand side we can see how on average, __activity is reduced__ considerably.
+
+On the left hand side, we see that
+
+ * limited devices face less requests
+ * the additional tasks generated by the solution are moved to the more powerful ones
+
+---
+
+# Evaluation: Network activity (high dynamism)
+
+<img alt="XXX" src="img/transpas/evaluation_dynamic.png" style="width: 100%; margin-top: 10%;" />
+
+???
+
+This chart show how the solution proposes does not generate too much overhead even when the WP drops out frequently.
+
+We also tested it with mDNS discovery.
 
 ---
 
@@ -672,18 +869,51 @@ class: center, middle
 
 ---
 
-# Conclusion
+# Contributions
 
- * __Mix the best__ of two worlds: space-based computing and the web.
-  * Uncoupling
-  * Scalability, simplicity...
- * __Energy__-aware search
+* Space-model
+* Energy aware search
+ * Promotes end-to-end HTTP requests between constrained devices
+ * Balances the management load considering devices' computing and energy capacities
+ * Structures the nodes in different dynamic roles with different responsibilities
+* Analysis of how to interoperate with existing REST-based actuators from space-based computing
+ 
+ <!-- Enumerar la larga que la tengo? -->
 
- * __Future__ work:
-  * Performance evaluation in real deployments over a long period of time, with many different applications running
-  * Security aspects
-  * Distribution of the coordination space
-  * Etc.
+???
+
+* End-to-end: they do not need an intermediary to search (i.e., to select the appropriate providers to request).
+
+---
+
+# Technical contributions
+
+* __Otsopack__
+* Parametrizable __simulation environment__
+* Implementation of the same __basic actuation scenario__ to compare different actuation mechanisms
+ 
+In parallel...
+
+* Lightweight __user access control__ for limited devices
+* Use of Otsopack in a number of __different domains__
+ * Homes, hospitals and residences, supermarkets or hotels.
+
+???
+
+Otsopack is a middleware which follows some of the ideas presented about web-based semantic space-based computing.
+
+<hr>
+
+To finish, let me thank all the people who has helped me during this time citing one of the greatest philosopher ever.
+
+---
+
+class: quoteslide
+
+???
+
+
+Rafiki once said: "Oh yes, the past can hurt. But from the way I see it, you can either run from it, or... learn from it."
 
 ---
 
@@ -723,22 +953,11 @@ class: center, middle
 
 # Backup slides
 
----
-
-class: center, middle
-
-# Space model
-
-???
-
-This is __simplified version__ of all my unfruitful attempts.
+<!-- TODO poner todas las figuras y evaluaciones! -->
 
 ---
 
-# Baseline Model
-.subtitle[
-## Space model
-]
+# Space model: baseline
 
 Triple Space Computing (TSC)
 
@@ -787,6 +1006,43 @@ Drawbacks:
   * Discontinued
   * A nightmare!
 
+---
+
+Problem: semantic computation (podemos poner hasta graficos de cosas que hayamos hecho)
+
+---
+
+# Hypothesis: some definitions
+
+  * Heterogeneity: Fully-fledged computers and resource constrained devices (e.g., mobile and embedded devices) must coexist in these environments.
+  * Autonomy: Devices must not depend on others to consume or provide data on their behalf.
+  However, they might be aided by other devices to complete some related tasks (e.g., search the appropriate nodes to request).
+  * Uncoupling: The communication must be data-driven.
+  From the user perspective devices do not directly refer to each other.
+  Additionally, the provider and the consumer should not coexist in time.
+  However, note that since this sub-aspect contradicts the autonomy principle, their selection might be left to the user.
+  * Interoperability: Devices must be able to exchange information with other systems and to use that information.
+
+---
+
+class: center, middle
+
+# Additional Evaluation
+
+---
+
+# Evaluation: Network activity (by role)
+
+<img alt="Requests by role" src="img/transpas/evaluation_requests.png" style="width: 100%; margin-top: 10%;" />
+
+???
+
+In the following chart we show the type of communication for an scenario with 100 consumers and different network sizes.
+
+It shows that most of the requests are from consumers to providers.
+
+Therefore, maintaining the architecture does not creates much overhead and it does not increase much with the number of consumers.
+  
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
     </script>
