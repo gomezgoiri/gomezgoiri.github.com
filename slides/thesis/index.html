@@ -46,7 +46,7 @@ Internet composed by few computers.
 
 ???
 
-Then, the popularity of the Internet grew and connecting computers became easier and cheaper.
+Then, the popularity of the Internet increased and connecting computers became easier and cheaper.
 
 Consequently, more and more computers got connected.
 
@@ -58,7 +58,7 @@ Consequently, more and more computers got connected.
 
 ???
 
-Thanks to wireless technologies, devices started connecting to the Internet without having to be physically connected to a network.
+Thanks to wireless technologies, devices started accessing to the Internet without having to be physically connected to a network.
 
 ---
 
@@ -120,7 +120,7 @@ In this thesis I've  focused on two of them.
 
 First, we have the dynamism.
 
-This dinamicity has its effects both in the short and the long term.
+This dynamism has its effects both in the short and the long term.
 
 Since most devices have a mobile nature, they can come and go frequently in the short term.
 
@@ -142,7 +142,7 @@ For instance, in the figure we can see that the umbrella which was in the stand 
 
 ???
 
-The environment also changes in the long term whenever we definitely replace an element.
+The environment also changes in the long term whenever an element is definitively replaced.
 
 ---
 
@@ -152,7 +152,7 @@ The environment also changes in the long term whenever we definitely replace an 
 
 ???
 
-For instance, we could replace the our smart clock with a new version.
+For instance, we could replace the smart clock with a newer version.
 
 ---
 
@@ -162,7 +162,7 @@ For instance, we could replace the our smart clock with a new version.
 
 ???
 
-Space-based computing (or Tuple Spaces) face this dynamism successfully.
+Space-based computing (or Tuple Spaces) faces this dynamism successfully.
 
 Tuple Spaces is a paradigm where nodes coordinate with each other by writing and reading structured pieces of information (i.e., tuples) in a shared space.
 
@@ -217,14 +217,14 @@ So, let's first talk about the second problem: how to use (or reuse) information
 
 ???
 
-We can identify two levels two allow this __use__:
+We can identify two levels to allow this __use__:
 
  1. The  __syntactic__ level cares about  the format of the data (i.e. its syntax and encoding)
     * For instance, if the robot does not undestand chinese characters, the information the mobile phone provides will be useless.
 
  1. The __semantic__ level gives a precise meaning to the info
     * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
-    * Following the example, this character may mean different things depending on the context.
+    * Following the example, this character may mean different things depending on the context (and it does actually).
     * TODO Preguntar a primez cual era el caracter conflictivo!
      * Funnily enough, I translated something to chinese for this presentation using an automatic tool.
      * When my co-supervisor asked about the meaning to a chinese colleague, it was confused because the meaning was either "X or X".
@@ -263,7 +263,7 @@ After analyzing these research areas in the UbiComp domain I saw that...
 Space-based computing
 
  * has often been applied to UbiComp
- * and it has also been used with Semantics,
+ * and it has also been used with Semantics (I focus on Triple Space Computing paradigm or TSC), <!-- Necesario porque luego lo nombro en la hipotesis -->
  * but usually centrallizing the space on powerful devices.
 
 This makes perfect sense since
@@ -340,9 +340,9 @@ http://rawgit.com/gomezgoiri/gomezgoiri.github.com/master/slides/thesis/index.ht
 
 ???
 
-* Massively accepted <!--by humans. (this is not a real reason) -->
+The web is massively accepted <!--by humans. (this is not a real reason) -->
  * By humans
- * Also, a lot of applications expose their capabilities using HTTP APIs
+ * But also, by machines: a lot of applications expose their capabilities using HTTP APIs
 
 __REST__ architectural style comprises the design principles of _the modern web_
 
@@ -378,8 +378,8 @@ As a consequence, the web has been widely applied to IoT, bringing what people h
 
 <!-- Transpa backup: WoT challenges: push approach, subscription mechanisms... -->
 
-In the WoT, everyday things expose their capabilities through web standards so they are first-class web citizens.
-This way, they can seamlessly work with other web apps.
+In the WoT, everyday things expose their capabilities through web standards.
+This way, they are first-class web citizens and can seamlessly work with other web apps.
 
 This goes hand in hand with my interest in having devices which are not mere clients, but also active data providers.
 
@@ -470,12 +470,14 @@ It is composed by:
 
  * Coordination space
   * Pretty much a classical semantic space
-  * It is enhanced by the information provided by autonomous devices (or asteroids)
+  * It is enhanced by the information provided by autonomous devices (or asteroids) which are part of the
  * Outer space
   * __Enriched view__
   * what's happening on __real time__
 
 This model confines much of the information in the devices.
+
+I analysed this model from different perspectives.
 
 ---
 
@@ -501,12 +503,17 @@ Both APIs are based on the space-based computing primitives, which are compatibl
 
 ???
 
-We lack to follow a REST principle:
+Unfortunately, the APIs are not hypermedia-driven, that is they do not follow the HATEOAS REST principle.
 
-* Hypermedia-driven (HATEOAS), this is actually an interesting future work.
-* Although it has a human oriented API
+In short, this principle means that the client should not __know__ anything apart from an __URL__ to use an API.
+It should drive the interaction __selecting the new application states__ from the web hypermedia content provided by the server at each step.
 
-Accessing to the spaces through a REST-like API provides the following features to our model:
+Although, the API is actually hypermedia-driven for humans, it is not for machines.
+This has left as future work.
+
+<hr>
+
+Anyway, accessing to the spaces through a REST-like API provides the following features to our model:
 
 * Scalability (4+)
 * Simplicity (3+-)
@@ -559,28 +566,28 @@ Move the explanation of uncoupling here?
 
 ???
 
-Obviously, the coordination space corresponds with the clasical model and therefore has both uncouplings.
+Obviously, the coordination space corresponds with the clasical model and therefore has both uncoupling levels.
 
 In the _outer space_, programmers are forced by space-based primitives not to care about data too.
 
 However, regarding _time uncoupling_, since each provider holds its content, this is only accessible when the provider is available.
 
-Other possible solutions:
+Some possible solutions to fix this would be:
 
 * __Move contents__ to other nodes
   * how to distinguish the reliable ones?
-  * measures away from where they are generated
+  * the measures would be moved away from where they are generated
    * what if the other node lefts the space but the provider is available?
-* Replicate contents
+* __Replicate__ contents
   * more networking
-  * it is not easy with unreliable nodes
+  * maintaining the data consistency is not easy with unreliable nodes
 
-However, I kept it this way when I identified (realized) that we used the space for different purposes:
+However, I kept it this way, with an time coupled outer-space, when I identified (realized) that we used the space for different purposes:
 
  1. Search for information
  1. Coordinate through the space
 
-Time uncoupling is particularly important for coordination, but not so much for search (real time).
+Time uncoupling is particularly important for coordination, but not so much to search (in real time).
 
 ---
 
@@ -594,7 +601,7 @@ Finally, we can see how the properties commented before interrelate with desirab
 
 Particularly, we can see two conflictive interrelations:
 
- 1. The web is not the most efficient communication mechanism.
+ 1. The web has a low networking perfomance.
  2. The semantic web negatively affects computation overload and energy autonomy.
 
 To reduce the first one, we can redesign the API or just adopt more lightweight protocols (e.g., CoAP which mimics many of HTTP's properties).
@@ -606,6 +613,10 @@ For the latter one, we have specifically designed a search architecture.
 class: center, middle
 
 # Energy-aware Search Architecture
+
+???
+
+And this is precisely the second goal of my dissertation.
 
 ---
 
@@ -619,13 +630,15 @@ How to search in the _outer space_?
 
 How can we search in the _outer space_?
 
-Or generalizing...
+Remember that the "asteroids" from the right-hand side are independent small web providers.
+
+Or generalizing it...
 
 ---
 
 # Motivation: a generalization
 
-[Esquema cacharros ofreciendo ficheros rdf]
+<img alt="XXX" src="img/transpas/search_motivation.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -635,9 +648,12 @@ How to search in a semantic web provided by limited devices?
 
 # Possible solution: Intermediary providers
 
-[cacharros enviando sus ficheros rdf a un servidor]
+<img alt="XXX" src="img/transpas/search_centralize.png" class="center" style="width:100%;"/>
 
-[cacharro preguntando a un servidor]
+<!--
+1. cacharros enviando sus ficheros rdf a un servidor
+2. cacharro preguntando a un servidor
+-->
 
 ???
 
@@ -653,8 +669,13 @@ Whenever a limited device needs to query for something, it has to ask to this ma
 
 # Problems with intermediary providers
 
+
+<img alt="XXX" src="img/transpas/search_centralize_problems.png" class="center" style="width:100%;"/>
+
+<!--
 [Situación 1: sensor con fichero de t5, servidor t3]
 [Situación 2: sensor intenta preguntar a un servidor que ya no existe]
+-->
 
 ???
 
@@ -677,7 +698,8 @@ As a consequence, nowadays the Navastag is pretty much an expensive decoration.
 
 # My solution: Promote the direct communication
 
-[cacharros preguntandose entre sí]
+<img alt="XXX" src="img/transpas/search_everyone.png" class="center" style="width:100%;"/>
+<!-- cacharros preguntandose entre sí -->
 
 ???
 
@@ -735,7 +757,9 @@ There are two types:
 
 # Clues
 
-[schema prov sending a clue and getting an aggregated clue version]
+<img alt="XXX" src="img/transpas/clues_working.png" class="center" style="width:100%;"/>
+
+<!-- schema prov sending a clue and getting an aggregated clue version -->
 
 ???
 
@@ -810,13 +834,13 @@ How? Ranking them according to information provided by discovery mechanism.
 
 ???
 
-To test all this architecture, I prepared several experiments.
+To test all this architecture, I carried out several simulations.
 
-I performed a simulation using as inputs for the parametrization the following response times tested in several devices.
+To parametrize them, I used the following response times tested in several devices as inputs.
 
 These time measures affect the performance of the solution (e.g., indirectly how much energy consumed).
 
-For the data provider by sensors, I used real knowledge from real datasets following describing sensing stations.
+For the data provided in the simulation, I used real knowledge from real datasets describing sensing stations and their measures.
 
 The templates used are the ones shown, which try to consider queries from different nature.
 
