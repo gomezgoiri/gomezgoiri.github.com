@@ -434,14 +434,8 @@ This is also common in most of the systems which use the Semantic Web in UbiComp
 
 ---
 
-# Possible solution: Intermediary providers
-
-<img alt="XXX" src="img/transpas/search_centralize.png" class="center" style="width:100%;"/>
-
-<!--
-1. cacharros enviando sus ficheros rdf a un servidor
-2. cacharro preguntando a un servidor
--->
+# Common design: delegate semantic provision
+<img alt="XXX" src="img/transpas/centralized_provision01.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -451,7 +445,21 @@ For sake of clarity, let's assume that there is just one machine.
 This way, the devices periodically send their information to this machine,
 and it stores all the information.
 
+---
+
+# Common design: delegate semantic provision
+<img alt="XXX" src="img/transpas/centralized_provision02.png" class="center" style="width:100%;"/>
+
+???
+
 Whenever a limited device needs to query for something, it has to ask to this machine.
+
+---
+
+# Common design: delegate semantic provision
+<img alt="XXX" src="img/transpas/centralized_provision03.png" class="center" style="width:100%;"/>
+
+???
 
 The reasons to do this are mainly two:
 
@@ -460,20 +468,131 @@ The reasons to do this are mainly two:
 
 However,
 
- 1. current embedded and mobile devices are notably more powerful than 5 years ago
- <!--
- TODO
- Preparar una transpa de backup por si preguntan cómo de viable es.
- Ideas:
-   * Many of the current devices are able to manage their info
-   * Gráfico con pruebas que hicimos en su día:
-    * Even if it is more verbosed
-    * Some of them can reason and expand this information.
-    * Others may need to rely in third machines.
-     * Out of the scope
-    * Anyway, we might be anticipating a trend.
- -->
- 2. Availability is not always a requirement. In fact, the unavailability, "represents" the mobile nature of the environment/space.
+ 1. Availability is not always a requirement. In fact, the unavailability, "represents" the mobile nature of the environment/space.
+ 1. Current embedded and mobile devices are notably more powerful than 5 years ago
+
+And, now, let me do a brief parenthesis to talk about this...
+
+---
+
+# "Small" or "limited" are relative adjectives <!-- IoT? Energy-aware? -->
+<img alt="XXX" src="img/transpas/dunk-portrait-2006.jpg" class="center" style="width: 20em;"/>
+<!-- Explain: which devices, results for semantic web testings, the evolution experienced since I first started working in this -->
+
+???
+
+The player in the center is Nate Robinson who, compared to any of the remaining NBA players will be considered small.
+However, I'm about 4cm smaller than him, so I wouldn't particularly consider him small.
+
+My dissertation has been focused on the limited devices needs and, still, what I propose might not be appropriate for several current limited platforms.
+
+So, what does "limited" mean for me?
+In short: any device able to manage semantic annotations.
+Anyhow, I propose several adaptations in my model for more restricted ones.
+Really limited ones should use a Gateway, and this gateway would be part of my solution.
+
+Personally, I have tested the feasibility of using the semantic web in limited platforms.
+Later on, I will present some of this results.
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision04.png" class="center" style="width:100%;"/>
+
+???
+
+So, after this parenthesis, let's return to the delegation of semantic provision and management from limited to more powerful devices.
+
+This design has two problems.
+
+First, when devices rely on others to provide information, it is not guaranteed
+that the information accessed will accurately represent the last information
+available in the data providers.
+
+In the example, we see a limited device (e.g, a sensor) with a version of its contents created at _t3_.
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision05.png" class="center" style="width:100%;"/>
+
+???
+
+It sends its contents to a server.
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision06.png" class="center" style="width:100%;"/>
+
+???
+
+This server stores this version.
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision07.png" class="center" style="width:100%;"/>
+
+???
+
+Afterwards, the sensor generates a new version with new measures at t6.
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision08.png" class="center" style="width:100%;"/>
+
+???
+
+It is obvious that if other device now asked for the content provided by this sensor to the server...
+
+---
+
+# Delegation of semantic provision: Problem 1
+
+<img alt="XXX" src="img/transpas/centralized_provision09.png" class="center" style="width:100%;"/>
+
+???
+
+...it will get the outdated version.
+
+---
+
+# Delegation of semantic provision: Problem 2
+
+<img alt="XXX" src="img/transpas/centralized_provision10.png" class="center" style="width:100%;"/>
+
+???
+
+The second problem happens because once devices rely on intermediaries,
+these intermediaries must be available at all time.
+Otherwise, the devices would not be able to talk to each other.
+
+Note that,
+
+ * Having dedicated servers is costly and hard to manage in simple scenarios
+ * Externalizing these servers, makes you system dependant on third-parties.
+
+And this happens way too frequently on the Internet.
+
+---
+
+# Delegation of semantic provision: Problem 2
+
+<img alt="XXX" src="img/transpas/navaztag.png" class="center" style="width:100%;"/>
+
+???
+
+For example, the Navastag was an IoT which completely depent on an external service.
+The company of this internet-connected bunny dissapeared and they did not maintain the servers.
+<!-- They released a poorly documented code. -->
+As a consequence, nowadays the Navastag is pretty much an expensive decoration.
 
 
 So, with these considerations in mind, I made myself a question:
@@ -481,37 +600,6 @@ So, with these considerations in mind, I made myself a question:
 
  * Can these devices get __more involved__ in the management of the space?
    Not only as mere clients.
-
----
-
-# Problems with intermediary providers
-
-
-<img alt="XXX" src="img/transpas/search_centralize_problems.png" class="center" style="width:100%;"/>
-
-<!--
-[Situación 1: sensor con fichero de t5, servidor t3]
-[Situación 2: sensor intenta preguntar a un servidor que ya no existe]
--->
-
-???
-
-Problems:
-
- *  When devices rely on others to provide information, it is not guaranteed
- that the information accessed will accurately represent the last information
- available in the data providers (e.g., the sensors).
-
- * Once they rely on intermediaries, these intermediaries must be available at
- all time. Otherwise, the devices would not be able to talk to each other.
-  * Having dedicated servers is costly and hard to manage in simple scenarios
-  * Externalizing these servers, makes you system dependant on third-parties.
-
-And this happens way too frequently on the Internet.
-For example, the Navastag was an IoT which completely depent on an external service.
-The company of this internet-connected bunny dissapeared and they did not maintain the servers.
-<!-- They released a poorly documented code. -->
-As a consequence, nowadays the Navastag is pretty much an expensive decoration.
 
 ---
 
@@ -604,6 +692,8 @@ This model confines much of the information in the devices.
 
 I analysed this model from different perspectives.
 
+To analyse the networking properties of the solution proposed, we must note that both spaces are accessed through their APIs.
+
 ---
 
 # Space model: networking properties
@@ -612,11 +702,40 @@ I analysed this model from different perspectives.
 
 ???
 
-To analyse the networking properties of the solution proposed, we must note that both spaces are accessed through their APIs.
-
 Both APIs are based on the space-based computing primitives, which are compatible with (most of) the REST principles:
 
-* It is resource oriented: the resources are the spaces, RDF Graphs and RDF triples.
+* It is resource oriented. It has the following types of resources: spaces
+
+---
+
+# Space model: networking properties
+
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties02.png" style="width: 100%;" />
+
+???
+
+which contain RDF Graphs
+
+---
+
+# Space model: networking properties
+
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties03.png" style="width: 100%;" />
+
+???
+
+which contain RDF triples.
+
+The triples are the most basic information unit in Triple Space Computing.
+
+---
+
+# Space model: networking properties
+
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties04.png" style="width: 100%;" />
+
+???
+
 * HTTP verbs can be directly mapped to TSC primitives.
 * We use other HTTP features: status codes, content negotiation, etc.
 
@@ -624,7 +743,7 @@ Both APIs are based on the space-based computing primitives, which are compatibl
 
 # Space model: networking properties
 
-<img alt="The API is not hypermedia-driven" src="img/transpas/networking_properties02.png" style="width: 100%;" />
+<img alt="The API is not hypermedia-driven" src="img/transpas/networking_properties05.png" style="width: 100%;" />
 
 ???
 
@@ -636,30 +755,38 @@ It should drive the interaction __selecting the new application states__ from th
 Although, the API is actually hypermedia-driven for humans, it is not for machines.
 This has left as future work.
 
-<hr>
+---
+
+# Space model: networking properties
+
+REST-like APIs
+
+* Scalability
+* Simplicity
+* UP performance
+* Efficiency
+* Evolvability
+
+???
 
 Anyway, accessing to the spaces through a REST-like API provides the following features to our model:
 
 * Scalability (4+)
 * Simplicity (3+-)
 * UP performance, efficiency & evolvability (2+)
-* Portability, extensibility, configurability, reusability & reliability (+)
-* Visibility (+-)
-* Net performance (-)
+* and others [avoid enumeration]
+ * Portability, extensibility, configurability, reusability & reliability (+)
+ * Visibility (+-)
+ * Net performance (-)
 
 And it also comes with some drawbacks:
 
 * Less simplicity, reusability & visibility than pure REST APIs (hypermedia-driven)
 * Mechanisms such as subscriptions and transactions go against the statelessness
 
-Specifically, we will see how this affects coordination properties.
-
 ---
 
 # Space model: coordination properties
-
-What about the uncoupling?
-
 
 <img alt="Space and time" src="img/uncoupling.svg" style="width:60%; margin-top: 2em; display: block; margin-left: 12em; margin-right: auto"/>
 <div style="margin-top: 1em;">
@@ -669,7 +796,9 @@ What about the uncoupling?
 
 ???
 
-Move the explanation of uncoupling here?
+But, having a part of the model which is based on the web also affects uncoupling.
+
+[Move the explanation of uncoupling here?]
 <!-- Not yet because I'm unsure whether these slides will be kept -->
 
 --
@@ -690,9 +819,6 @@ Obviously, the coordination space corresponds with the clasical model and theref
 
 # Space model: coordination properties
 
-What about the uncoupling?
-
-
 <img alt="Space and time" src="img/uncoupling.svg" style="width:60%; margin-top: 2em; display: block; margin-left: 12em; margin-right: auto"/>
 <div style="margin-top: 1em;">
  <span style="margin-left: 12em;">Space uncoupling</span>
@@ -711,13 +837,16 @@ What about the uncoupling?
   <span style="float:left;">Outer space</span>
   <span style="width: 20em; float:right;">
       <span style="margin-left: 25%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+???
+
+In the _outer space_, programmers are forced by space-based primitives not to care about data too.
+
+--
       <span style="margin-left: 40%; color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span>
   </span>
 </div>
 
 ???
-
-In the _outer space_, programmers are forced by space-based primitives not to care about data too.
 
 However, regarding _time uncoupling_, since each provider holds its content, this is only accessible when the provider is available.
 
@@ -759,7 +888,9 @@ Particularly, we can see two conflictive interrelations:
 
 ???
 
- 1. The web has a low networking perfomance
+Firstly, the web has a low networking perfomance.
+
+To reduce or mitigate it, we can redesign the API or just adopt more lightweight protocols (e.g., CoAP which mimics many of HTTP's properties).
 
 ---
 
@@ -769,17 +900,26 @@ Particularly, we can see two conflictive interrelations:
 
 ???
 
- 2. The semantic web negatively affects computation overload and energy autonomy
+Secondly, the semantic web negatively affects computation overload and energy autonomy.
 
-To reduce the first one, we can redesign the API or just adopt more lightweight protocols (e.g., CoAP which mimics many of HTTP's properties).
-
-For the latter one, we have specifically designed a search architecture.
+For this purpose, we have specifically designed a search architecture.
 
 ---
 
 class: center, middle
 
-# Energy-aware Search Architecture
+# Energy-aware Search Architecture <!-- TODO call it in other way??? -->
+
+Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña. Energy-aware
+architecture for information search in the semantic web of things. Inter-
+national Journal of Web and Grid Services, 10:192–217, 2014. To appear.
+
+Aitor Gómez-Goiri and Diego López-de-Ipiña. Assessing data dissem-
+ination strategies within triple spaces on the web of things. In 2012
+Sixth International Conference on Innovative Mobile and Internet Ser-
+vices in Ubiquitous Computing (IMIS), pages 763 –769, July 2012. doi:
+10.1109/IMIS.2012.120
+
 
 ???
 
@@ -1099,6 +1239,36 @@ class: center, middle
 
 ---
 
+# The Semantic Web and limited devices
+
+???
+
+Some <!-- Our early attempts with Arduino were unsuccessful-->
+
+However, with current advances in:
+
+ * semantic reasoners for this type of environments (mencionar al tio que hizo un razonador adaptado)
+ * lightweight semantic formats
+ * lightweight web protocols
+ * mobile and embedded devices' the processing capacity
+ * [autonomy of the batteries](http://energi.us/liberacion-patentes-tesla/) or
+ * energy harvesting...
+
+More and more devices will be able to manage semantics.
+ <!--
+ TODO
+ Preparar una transpa de backup por si preguntan cómo de viable es.
+ Ideas:
+   * Many of the current devices are able to manage their info
+   * Gráfico con pruebas que hicimos en su día:
+    * Even if it is more verbosed
+    * Some of them can reason and expand this information.
+    * Others may need to rely in third machines.
+     * Out of the scope
+    * Anyway, we might be anticipating a trend.
+ -->
+---
+
 # Space model: baseline
 
 Triple Space Computing (TSC)
@@ -1114,39 +1284,6 @@ Triple Space Computing (TSC)
 ???
 
 Uses elements from the SW
-
----
-
-# Space model: completely decentralized
-
- * Each device manages its own information
- * It asks to the rest using a __P2P__ approach
-
-[table with benefits and drawbacks]
-
-???
-
-I did this prior to knowing that I wanted to be a PhD student.
-
-Alternative model.
-
-Benefits:
-
-* Reduces __dependency__ on others
-  * each device manages its own knowledge
-  * this simplifies the __management__
-* Reduces networking in __writings__
-  * Which are quite frequent (updates of a sensor measure)
-
-Drawbacks:
-
-* Flooding-based __search__: networking
-* __Inconsistency__ (Brewer)
-* __JXTA__: not really interoperable
-
-  * Not appropriate for limited devices
-  * Discontinued
-  * A nightmare!
 
 ---
 
