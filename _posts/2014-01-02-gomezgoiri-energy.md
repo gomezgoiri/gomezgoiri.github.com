@@ -3,7 +3,7 @@ layout: publication
 category: publications
 title: Energy-aware Architecture for Information Search in the Semantic Web of Things
 authors: Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña
-rest_citation: <a href="http&#58;//www.inderscience.com/jhome.php?jcode=ijwgs">International Journal of Web and Grid Services</a>, <a href="http://www.inderscience.com/info/inarticle.php?artid=60252">Vol.10, No.2/3, pp.192–217</a>, 2014. DOI: <a href="http://dx.doi.org/10.1504/IJWGS.2014.060252">10.1504/IJWGS.2014.060252</a>.
+rest_citation: <a href="http&#58;//www.inderscience.com/jhome.php?jcode=ijwgs">International Journal of Web and Grid Services</a>, <a href="http://www.inderscience.com/info/inarticle.php?artid=60252">Vol.10, No.2/3, pp.192–217</a>, 2014. DOI&#58; <a href="http://dx.doi.org/10.1504/IJWGS.2014.060252">10.1504/IJWGS.2014.060252</a>.
 bib: /files/bibtex/gomezgoiri2014energy.bib
 code: /files/code/gomezgoiri2014energy.html
 --- 
