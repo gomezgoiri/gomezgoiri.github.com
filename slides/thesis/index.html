@@ -603,7 +603,6 @@ So, with these considerations in mind, I made myself a question:
 
 ---
 
-
 class: center, middle
 
 # Hyphothesis
@@ -662,6 +661,30 @@ class: middle
 In my dissertation, and in this presentation, I've focused on the second aspect.
 
 Consequently, I will restrict myself to a brief comment on the first and third points.
+
+---
+
+class: center, middle
+
+# Space model
+
+.citations[
+
+* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
+Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications.
+[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
+[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), January 2014.
+* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
+RESTful Triple Spaces of Things.
+Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
+* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
+Collaboration of Sensors and Actuators through Triple Spaces.
+In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
+* Aitor Gómez-Goiri, Diego López-de-Ipiña.
+On the complementarity of Triple Spaces and the Web of Things.
+In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
+
+]
 
 ---
 
@@ -910,16 +933,15 @@ class: center, middle
 
 # Energy-aware Search Architecture <!-- TODO call it in other way??? -->
 
-Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña. Energy-aware
-architecture for information search in the semantic web of things. Inter-
-national Journal of Web and Grid Services, 10:192–217, 2014. To appear.
+.citations[
 
-Aitor Gómez-Goiri and Diego López-de-Ipiña. Assessing data dissem-
-ination strategies within triple spaces on the web of things. In 2012
-Sixth International Conference on Innovative Mobile and Internet Ser-
-vices in Ubiquitous Computing (IMIS), pages 763 –769, July 2012. doi:
-10.1109/IMIS.2012.120
-
+* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
+Energy-aware architecture for information search in the semantic web of things.
+[International Journal of Web and Grid Services](http://www.inderscience.com/jhome.php?jcode=ijwgs), [Vol. 10, No. 2/3](http://www.inderscience.com/info/inarticle.php?artid=60252), pp. 192–217, 2014.
+* Aitor Gómez-Goiri and Diego López-de-Ipiña.
+Assessing data dissemination strategies within triple spaces on the web of things.
+In 2012 Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS), pages 763 –769, July 2012.
+]
 
 ???
 
@@ -950,33 +972,46 @@ Or generalizing it...
 ???
 
 How to search in a semantic web provided by limited devices?
-(and remember my driving motivation: to promote the direct communication between)
 
---
+---
 
-# My solution: Promote the direct communication
+# How to search?
 
 <img alt="XXX" src="img/transpas/search_everyone.png" class="center" style="width:100%;"/>
 <!-- cacharros preguntandose entre sí -->
 
 ???
 
-To avoid this kind of situations, I conceived an environments where devices communicate with each other directly.
+(and remember my driving motivation: to promote the direct communication between)
 
-But, obviously, we cannot do this at any price.
+Devices need to communicate with each other directly, but this cannot be done at any price.
 
-For instance, a broadcasting-based solution will generate innecessary computation and networking activity.
+For instance, a broadcasting-based solution will generate a high computation and networking activity.
 
 ---
 
-# Evaluation: Energy consumption
+# Energy consumption: an example
+
+<img alt="FoxG20 used to measure energy" src="img/transpas/foxg20.jpg" style="width: 80%;" />
+
+<!-- TODO put details about this platform
+TODO foto de la fuente de alimentación programable -->
+
+???
+
+To find out how this computing and networking activities can affect an embedded platform,
+I checked that reasoning and attending to HTTP requests in a FoxG20 embedded device makes it consume approximately 20% more energy.
+
+
+To sum up, since computation and networking result in significant higher energy consumption,
+we need to find a strategy which efficiently manages both aspects.
+---
+
+# Energy consumption: an example
 
 <img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 90%;" />
 
 ???
-
-And since computation and networking result in significant higher energy consumption,
-we need to find a strategy which efficiently manages both aspects.
 
 Particularly, I propose to:
 
