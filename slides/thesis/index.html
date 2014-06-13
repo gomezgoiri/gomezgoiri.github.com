@@ -3,8 +3,8 @@
   <head>
     <title>Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <!--<base href="https://dl.dropboxusercontent.com/u/9804351/">-->
-    <base href="http://localhost:8000/">
+    <base href="https://dl.dropboxusercontent.com/u/9804351/">
+    <!--<base href="http://localhost:8000/">-->
     <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
   </head>
   <body>
@@ -493,7 +493,7 @@ And, now, let me do a brief parenthesis to talk about this...
 
 ---
 
-# "Small" or "limited" are relative adjectives <!-- IoT? Energy-aware? -->
+# "Short" or "limited" are relative adjectives <!-- IoT? Energy-aware? -->
 .subtitle[
 ## Motivation
 ]
@@ -503,17 +503,17 @@ And, now, let me do a brief parenthesis to talk about this...
 ???
 
 The player in the center is Nate Robinson who, compared to any of the remaining NBA players will be considered small.
-However, I'm about 4cm smaller than him, so I wouldn't particularly consider him small.
+However, he is about 4 cm taller than me, so I wouldn't consider him small.
 
-My dissertation has been focused on the limited devices needs and, still, what I propose might not be appropriate for several current limited platforms.
+Similarly, my dissertation has focused on the limited devices needs and, still, what I propose might not be appropriate for several current limited platforms.
 
 So, what does "limited" mean for me?
-In short: any device able to manage semantic annotations.
+In short, I talk about any mobile or embedded device able to manage semantic annotations.
 Anyhow, I propose several adaptations in my model for more restricted ones.
 Really limited ones should use a Gateway, and this gateway would be part of my solution.
 
-Personally, I have tested the feasibility of using the semantic web in limited platforms.
-Later on, I will present some of this results.
+Personally, I have tested the feasibility of using the semantic web in several limited platforms.
+Later on, I will present some of these results.
 
 ---
 
@@ -1298,6 +1298,9 @@ That is, they can implement caching.
 ---
 
 # Evaluation: Network activity
+.subtitle[
+## Energy-aware search architecture
+]
 
 <img alt="Requests generated using different strategies" src="img/requests_by_strategies.svg" style="width: 90%;" />
 
@@ -1324,6 +1327,9 @@ lo nuestro tira con "tipos de pregunta" semejantes -->
 ---
 
 # Evaluation: Network activity (by device type)
+.subtitle[
+## Energy-aware search architecture
+]
 
 <img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
 
@@ -1348,6 +1354,9 @@ On the right hand side, we see two desired effects:
 ---
 
 # Evaluation: Network activity (high dynamism)
+.subtitle[
+## Energy-aware search architecture
+]
 
 <img alt="XXX" src="img/transpas/evaluation_dynamic.png" style="width: 100%; margin-top: 10%;" />
 
@@ -1366,6 +1375,383 @@ In the left hand side, we see that for a frequent drop-interval, providers are f
 However, when the aggregated clues have enough time to be propagated to most of the consumers (in this case at 5 minutes drop interval),
 the new WP can be initiated from a previous aggregated clue version.
 This avoids the situation when most of the providers re-send their clues over and over.
+
+---
+
+class: center, middle
+
+# Actuation
+
+???
+
+The third goal of my dissertation was to explore how to actuate through space-based computing.
+
+Specifically, the idea I present here is currently in its early stages and still has to be fully developed.
+However, I find it interesting as it covers the actuation in space-based computing from a completely novel perspective.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+
+???
+
+To solve this question I first examined the common actuation patterns over Tuple Spaces.
+
+For sake of brevity, I will present just two of them.
+
+The first one is the __replicated-worker pattern__.
+
+In this pattern, there is a master process and many worker processes able to compute the same task.
+
+1. The master takes a problem, divides it into smaller tasks, and
+2. writes these tasks into the space.
+3. Any available worker takes a task,
+4. processes it,
+5. and writes the result back into the space.
+
+When all the workers have written their results,
+
+1. the master takes these results and
+2. combines them into a meaningful merged solution
+
+This pattern is scalable and naturally balances the load on the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+
+???
+
+The second pattern in the __specialist pattern__.
+
+It can be as a variation of the previous one.
+The different is that in this pattern each worker is specialized and performs a particular task.
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+
+???
+
+We can translate the previous patterns to the UbiComp usage examples.
+
+For instance, a node may write a "task to turn the fan on" in the space.
+
+A smart-fan which belongs to the same space, will then take the task, process it and activate the blades.
+
+Then, it may write a result in the space (e.g., with information about when it was turned on) that the "activator node" will read.
+
+---
+
+# Limitations
+.subtitle[
+## Actuation
+]
+
+???
+
+This approach has been widely applied in the literature.
+Particularly, this idea evolved into service-oriented engines.
+The task-types where described through services and task through _service invocations_.
+
+In fact, in a pre-PhD paper, I also explored this approach.
+However, the more about I read about WoT, the more I liked its simple actuation mechanism.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+
+HTTP POST /fan/blades/01
+
+Content
+
+true
+
+
+???
+
+For example, for the fan, we could simply make a HTTP POST request to the smart-fan at the URL shown.
+
+However, remember that this per-se is not REST.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+
+[grafo explicando como llegar al siguiente paso]
+
+/fan -> /fan/blades/01
+ -> /fan/blades
+
+???
+
+To achieve the hypermedia-drivenness, the application has to describe the state transitions the client can select through hypermedia.
+
+Doing this in a way that the client can be a machine is currently a hot research topic.
+
+Some solutions propose to use the semantic web to describe this applications and state transitions.
+
+Personally, I have experimented with the one which, in my honest opinion, combines better the flexibility and simple design.
+It is called RESTdesc.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+[rule example remarking its different parts]
+
+???
+
+RESTdesc describes HTTP methods using rules expressed in the Notation 3 (or N3) language.
+
+A rule’s premise expresses the requirements to make an state transition.
+
+A rule’s conclusion expresses both the REST call that needs to be made and the description of the invocation results.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+[previous rule and the URL where we can get it]
+
+[el esquemita de un dispositivo obteniendo eso mismo: un fichero con una premisa y conclusión]
+
+???
+
+These descriptions can be obtained through different mechanisms.
+
+We will assume that they are provided in the same resources which it describes using the HTTP OPTIONS verb.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+[el fichero N3]
+
+[otro fichero con una F de final en la conclusión]
+
+[background knowledge]
+
+[paso a paso de lo que pasa, como se procesa, se obtiene un plan, que tiene pasos, que tienen HTTP requests]
+
+???
+
+So when a client has crawled an API collecting several of these descriptions, what can we do with them?
+
+This client needs to have also:
+
+* a goal: other rule which expresses the ending state it wants to reach
+* background knowledge expressed with semantics
+
+With these 3 pieces of information, it can use a reasoner (e.g. EYE reasoner) to make a tentative plan.
+
+This plan indicates different paths to reach the desired goal (or final state).
+Let us assume that there is only one path or no path.
+
+This path will contain different steps composed by the rules which need to be invoked to obtain a plan.
+And since this rules are composed by the HTTP requests, we just have to check that we can invoke them.
+
+---
+
+# Motivation
+.subtitle[
+## Actuation
+]
+
+???
+
+In short, RESTdesc helps machines learning how to use an API autonomously.
+That is, becomes them hypermedia-driven.
+
+The main advantage of an hypermedia-driven API is that it can its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
+
+So, considering the current prevalence of REST-like APIs, this additional feature will open a new world of possibilities to web apps.
+Translating it to the WoT field, it will allow to act using actuators unknown beforehand.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/actuation_comparison.png" style="width: 100%; margin-top: 10%;" />
+
+???
+
+However, both mechanisms are quite distinct in nature.
+One promotes the direct communication style, while the other promotes an indirect uncoupled style.
+
+We can also see in the table how each of them require additional features: <!-- TODO subrayar en la tabla -->
+
+* A subscription mechanism in the case of space-based computing.
+ It helps nodes to be aware of what is written into the space without constantly polling it.
+* A reasoner to create a execution plan
+
+
+So I made myself a question, could space-based computing take advantage of these existing REST-based actuators?
+Furthermore, could this reuse be made in a seamless way for nodes already following each of techniques?
+
+---
+
+# Driving scenario
+.subtitle[
+## Actuation
+]
+
+[dibujito del escenario]
+
+???
+
+As a first step to answer this question, I planned a baseline scenario and implemented it using both mechanisms.
+
+The scenario is the "helloworld" of the scenarios: turning on and off a light.
+However, it helps to understand both actuation mechanisms and test the interoperation ideas.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/requests_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
+
+???
+
+After implementing both scenarios, I tested how the variation in the number of providers (e.g., actuators) affected these techniques.
+
+First, we can see that as the amount of actuators increases, both techniques generate more requests.
+The slope will vary depending on the design (and implementation) of each solution.
+In any case, the figure shows that none of the techniques behave in a scalable manner.
+
+In the case of space-based actuation, the variation corresponds to the subscription request of each actuator and two additional writings it does. <!-- FIXME comprobar que es así -->
+
+In the case of REST-based actuation the crawler needs to obtain 5 different rules for each actuator.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<!-- TODO put the Raspberry Pi and its characteristics -->
+
+<img alt="XXX" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
+
+???
+
+In this second chart, we see that the amount of actuators affects more severely to REST-based actuation.
+This is due mainly to the to the reasoning process which takes place in the node which generates the plan.
+
+[causes]
+
+
+In Space-based actuation, all the participants must be aware of what is writ-
+ten into the space to react (i.e., they are proactive). Both consumers and pro-
+viders read and write from the space, 
+
+However, in space-based actuation each actuator subscribes to specific changes.
+Thanks to this specificity, they are only affected by the contents they are interested in, generating . On the contrary, the Space will be involved in any net-
+working activity. Therefore, although it depends on the number of providers
+and consumers’ interactions, the networking activity will presumably be high
+for the node hosting the Space.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+[tabla comparación]
+
+???
+
+From the results and after analysing the characteristics of both techniques, we came out to the following table.
+It summarizes the strengths and weaknesses of both techniques.
+
+In the XXX, we can see that...
+
+---
+
+# Interoperation
+.subtitle[
+## Actuation
+]
+
+[schema which takes REST-based provider and space-based change activation node <-- name this somehow previously]
+[space with additional processing]
+
+???
+
+With these considerations in mind, I propose a solution which does not affect any of the actuators of nodes which generate changes from the previous scenario.
+
+In this solution, all the changes are performed in the space.
+
+---
+
+# Interoperation: execution
+.subtitle[
+## Actuation
+]
+
+[las tuercas, se convierten en una ejecución donde se ponen las equivalencias que hace]
+
+???
+
+• It uses the Node B’s subscription to the task result as a goal for the reason-
+ing. In our implementation, this correspondence needs a minimal map-
+ping between N3QL [144] and SPARQL [162]. The reason why we use
+both languages are the underlying frameworks: EYE [149] and RDFLib
+[133].
+• The agent uses all the content written into the space as additional know-
+ledge for the reasoning process. This is feasible because the agent resides
+in the same machine as the space. Otherwise, acquiring this knowledge
+through the network would be too consuming both in bandwidth and in
+time.
+
+---
+
+# Discussion
+.subtitle[
+## Actuation
+]
+
+<!-- TODO mirar a ver si sé explicar los otros problemas facilmente -->
+
+* If there are two or more paths to reach a goal, how can we discern which
+one to follow? This problem is specific to the REST actuation.
+* How does the middleware deal with the coexistence of both mechanisms?
+When both methods can be applied, which one is triggered? Will one of
+them prevail over the second?
+
+???
 
 ---
 
