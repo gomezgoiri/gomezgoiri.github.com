@@ -1540,7 +1540,7 @@ They consider queries from different nature.
 ## Energy-aware search architecture
 ]
 
-[Schema showing how negative broadcasting works]
+<img alt="Negative broadcasting" src="img/transpas/negative_broadcasting.png" style="width: 100%;" />
 
 <!-- FIXME Añadir una transpa justificativa de por qué no he implementado otras del estado del arte!
 Poner las que luego ví que existían basadas en cachear, por lo cual medio cubro esto :-P
@@ -1655,6 +1655,7 @@ However, I find it interesting as it covers the actuation in space-based computi
 .subtitle[
 ## Actuation
 ]
+<img alt="XXX" src="img/transpas/ts_patterns01.png" style="width: 100%;" />
 
 ???
 
@@ -1662,20 +1663,103 @@ To solve this question I first examined the common actuation patterns over Tuple
 
 For sake of brevity, I will present just two of them.
 
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns02.png" style="width: 100%;" />
+
+???
+
 The first one is the __replicated-worker pattern__.
 
 In this pattern, there is a master process and many worker processes able to compute the same task.
 
-1. The master takes a problem, divides it into smaller tasks, and
-2. writes these tasks into the space.
-3. Any available worker takes a task,
-4. processes it,
-5. and writes the result back into the space.
+---
 
-When all the workers have written their results,
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns03.png" style="width: 100%;" />
 
-1. the master takes these results and
-2. combines them into a meaningful merged solution
+???
+
+First, the master takes a problem, divides it into smaller tasks, and
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns04.png" style="width: 100%;" />
+
+???
+
+writes these tasks into the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns05.png" style="width: 100%;" />
+
+???
+
+Then, any available worker takes a task,
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns06.png" style="width: 100%;" />
+
+???
+
+processes it,
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns07.png" style="width: 100%;" />
+
+???
+
+and writes the result back into the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns08.png" style="width: 100%;" />
+
+???
+
+As the workers write their results the master takes these results from the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns09.png" style="width: 100%;" />
+
+???
+
+When the master has collected all the results, it combines them into a meaningful merged solution.
 
 This pattern is scalable and naturally balances the load on the space.
 
@@ -1685,13 +1769,15 @@ This pattern is scalable and naturally balances the load on the space.
 .subtitle[
 ## Actuation
 ]
+<img alt="XXX" src="img/transpas/ts_patterns10.png" style="width: 100%;" />
 
 ???
 
 The second pattern in the __specialist pattern__.
 
-It can be as a variation of the previous one.
-The different is that in this pattern each worker is specialized and performs a particular task.
+It can be seen as a variation of the previous one.
+
+The difference is that in this pattern each worker is specialized and knows how to make a particular task.
 
 ---
 
@@ -1699,32 +1785,56 @@ The different is that in this pattern each worker is specialized and performs a 
 .subtitle[
 ## Actuation
 ]
+<img alt="XXX" src="img/transpas/ts_patterns11.png" style="width: 100%;" />
 
 ???
 
 We can translate the previous patterns to the UbiComp usage examples.
 
-For instance, a node may write a "task to turn the fan on" in the space.
+---
 
-A smart-fan which belongs to the same space, will then take the task, process it and activate the blades.
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns12.png" style="width: 100%;" />
+
+???
+
+For instance, a smartphone may write a "task to turn the fan on" in the space.
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns13.png" style="width: 100%;" />
+
+???
+
+A smart-fan which belongs to the same space, will then take the task,
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/ts_patterns14.png" style="width: 100%;" />
+
+???
+
+process it and as a result activate the blades.
 
 Then, it may write a result in the space (e.g., with information about when it was turned on) that the "activator node" will read.
 
----
-
-# Limitations
-.subtitle[
-## Actuation
-]
-
-???
-
 This approach has been widely applied in the literature.
-Particularly, this idea evolved into service-oriented engines.
-The task-types where described through services and task through _service invocations_.
+In the past, this idea evolved into service-oriented engines.
+.weak[The task-types where described through services and task through _service invocations_.]
 
-In fact, in a pre-PhD paper, I also explored this approach.
-However, the more about I read about WoT, the more I liked its simple actuation mechanism.
+In fact, in the early stages of my PhD, I also explored this approach.
+However, the more I read about WoT, the more I liked its simplicity.
 
 ---
 
@@ -1733,18 +1843,19 @@ However, the more about I read about WoT, the more I liked its simple actuation 
 ## Actuation
 ]
 
-HTTP POST /fan/blades/01
+<div style="margin-top: 5em;"></div>
 
-Content
-
+```http
+POST /blades HTTP/1.1
+Host: smartfan.eu
 true
-
+```
 
 ???
 
-For example, for the fan, we could simply make a HTTP POST request to the smart-fan at the URL shown.
+For example, for the fan, we could simply make a HTTP POST request to the smart-fan.
 
-However, remember that this per-se is not REST.
+However, remember that like most of the resource-oriented API, this per-se would not be REST-compliant.
 
 ---
 
@@ -1752,22 +1863,31 @@ However, remember that this per-se is not REST.
 .subtitle[
 ## Actuation
 ]
-
-[grafo explicando como llegar al siguiente paso]
-
-/fan -> /fan/blades/01
- -> /fan/blades
+<img alt="XXX" src="img/transpas/hypermedia_driven01.png" style="width: 100%;" />
 
 ???
 
-To achieve the hypermedia-drivenness, the application has to describe the state transitions the client can select through hypermedia.
+To make the API hypermedia-driven, the application has to describe the current state and the transitions to the next ones.
 
-Doing this in a way that the client can be a machine is currently a hot research topic.
+This way, the client can select the next state of the application through hypermedia.
+
+When the client is a human, it is trivial for him to the HTML content and to interpret which link to follow or which button to press.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
+
+???
+
+However, doing this automatically (without human intervention) is currently a hot research topic.
 
 Some solutions propose to use the semantic web to describe this applications and state transitions.
 
-Personally, I have experimented with the one which, in my honest opinion, combines better the flexibility and simple design.
-It is called RESTdesc.
+Personally, I have used a solution called RESTdesc.
 
 ---
 
@@ -1776,15 +1896,15 @@ It is called RESTdesc.
 ## Actuation
 ]
 
-[rule example remarking its different parts]
+<img alt="XXX" src="img/transpas/restdesc_rule01.png" style="width: 70%;" />
 
 ???
 
 RESTdesc describes HTTP methods using rules expressed in the Notation 3 (or N3) language.
 
-A rule’s premise expresses the requirements to make an state transition.
+In the figure, we can see a description for a HTTP GET method.
 
-A rule’s conclusion expresses both the REST call that needs to be made and the description of the invocation results.
+It explains how to obtain a light measure.
 
 ---
 
@@ -1793,15 +1913,75 @@ A rule’s conclusion expresses both the REST call that needs to be made and the
 ## Actuation
 ]
 
-[previous rule and the URL where we can get it]
+<img alt="XXX" src="img/transpas/restdesc_rule02.png" style="width: 70%;" />
 
-[el esquemita de un dispositivo obteniendo eso mismo: un fichero con una premisa y conclusión]
+???
+
+A rule’s premise expresses the requirements to make an state transition.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/restdesc_rule03.png" style="width: 70%;" />
+
+???
+
+A rule’s conclusion expresses both the REST call that needs to be made and...
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/restdesc_rule04.png" style="width: 70%;" />
+
+???
+
+...the description of what we can expect as a result of the request.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+```http
+OPTIONS /deustotech/lights HTTP/1.1
+Host: deusto.eu
+```
+
+```http
+HTTP/1.0 200 OK
+Date: Sat, 14 Jun 2014 21:22:01 GMT
+Content-type: text/n3; charset=UTF-8
+Content-Length: 512
+
+{
+ actuators:light ssn:madeObservation ?light_obs .
+} => {
+ _:request http:methodName "GET" ;
+ http:requestURI ?light_obs ;
+ http:resp [ http:body ?light_obs ].
+ ?light_obs a ssn:Observation ;
+ ssn:observedProperty sweet:Light ;
+...
+
+```
 
 ???
 
 These descriptions can be obtained through different mechanisms.
 
-We will assume that they are provided in the same resources which it describes using the HTTP OPTIONS verb.
+We will assume that they are provided in the same resources which it describes.
+
+To this end, we can use the HTTP OPTIONS verb.
 
 ---
 
@@ -1810,30 +1990,72 @@ We will assume that they are provided in the same resources which it describes u
 ## Actuation
 ]
 
-[el fichero N3]
-
-[otro fichero con una F de final en la conclusión]
-
-[background knowledge]
-
-[paso a paso de lo que pasa, como se procesa, se obtiene un plan, que tiene pasos, que tienen HTTP requests]
+<img alt="XXX" src="img/transpas/restdesc_how01.png" style="width: 95%;" />
 
 ???
 
-So when a client has crawled an API collecting several of these descriptions, what can we do with them?
+So, when a client has crawled an API collecting several of these descriptions, what can we do with them?
 
-This client needs to have also:
+IF we also have...
 
-* a goal: other rule which expresses the ending state it wants to reach
-* background knowledge expressed with semantics
+---
 
-With these 3 pieces of information, it can use a reasoner (e.g. EYE reasoner) to make a tentative plan.
+# RESTdesc
+.subtitle[
+## Actuation
+]
 
-This plan indicates different paths to reach the desired goal (or final state).
-Let us assume that there is only one path or no path.
+<img alt="XXX" src="img/transpas/restdesc_how02.png" style="width: 95%;" />
+
+???
+
+__a goal__, which is an special rule which expresses the ending state we wants to reach and...
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/restdesc_how03.png" style="width: 95%;" />
+
+???
+
+... background knowledge expressed with semantics,
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/restdesc_how04.png" style="width: 95%;" />
+
+???
+
+THEN we use a reasoner to make an execution plan.
+
+Personally, I have used the EYE reasoner.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="XXX" src="img/transpas/restdesc_how05.png" style="width: 95%;" />
+
+???
+
+This plan indicates different paths to __reach the desired goal__ (or final state).
+Let's assume that there is only one path (or no path).
 
 This path will contain different steps composed by the rules which need to be invoked to obtain a plan.
-And since this rules are composed by the HTTP requests, we just have to check that we can invoke them.
+
+And since these rules are composed by the HTTP requests, we just have to check if we can invoke them.
 
 ---
 
@@ -1841,16 +2063,19 @@ And since this rules are composed by the HTTP requests, we just have to check th
 .subtitle[
 ## Actuation
 ]
+<img alt="XXX" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
 
 ???
 
-In short, RESTdesc helps machines learning how to use an API autonomously.
-That is, becomes them hypermedia-driven.
+In short, machines can learn how to use an API autonomously using RESTdesc.
 
-The main advantage of an hypermedia-driven API is that it can its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
+That is, RESTdesc becomes APIs hypermedia-driven.
+
+The main advantage of an hypermedia-driven API is that it can change its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
 
 So, considering the current prevalence of REST-like APIs, this additional feature will open a new world of possibilities to web apps.
-Translating it to the WoT field, it will allow to act using actuators unknown beforehand.
+
+Translating it to the WoT field, it will allow to act using actuators not known at the design or implementation phases.
 
 ---
 
@@ -1858,21 +2083,122 @@ Translating it to the WoT field, it will allow to act using actuators unknown be
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/actuation_comparison.png" style="width: 100%; margin-top: 10%;" />
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td>Indirect</td>
+      <td>Decoupling</td>
+      <td>Subscriptions</td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td>Direct</td>
+      <td>Reuse</td>
+      <td>Rule-based reasoning</td>
+    </tr>
+  </tbody>
+</table>
 
 ???
 
 However, both mechanisms are quite distinct in nature.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td><strong>Indirect</strong></td>
+      <td>Decoupling</td>
+      <td>Subscriptions</td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td><strong>Direct</strong></td>
+      <td>Reuse</td>
+      <td>Rule-based reasoning</td>
+    </tr>
+  </tbody>
+</table>
+
+???
+
 One promotes the direct communication style, while the other promotes an indirect uncoupled style.
 
-We can also see in the table how each of them require additional features: <!-- TODO subrayar en la tabla -->
+.weak[
+
+* Decoupled communication
+* Reuse of third-party WoT apps
+
+]
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td>Indirect</td>
+      <td>Decoupling</td>
+      <td><strong>Subscriptions</strong></td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td>Direct</td>
+      <td>Reuse</td>
+      <td><strong>Rule-based reasoning</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+???
+
+We can also see in the table how each of them require additional features:
 
 * A subscription mechanism in the case of space-based computing.
- It helps nodes to be aware of what is written into the space without constantly polling it.
-* A reasoner to create a execution plan
+ This mechanism helps nodes to be aware of what is written into the space without constantly polling it.
+* A reasoner to create a execution plan,
 
 
-So I made myself a question, could space-based computing take advantage of these existing REST-based actuators?
+So I made myself the following question: could space-based computing take advantage of these existing REST-based actuators?
+
 Furthermore, could this reuse be made in a seamless way for nodes already following each of techniques?
 
 ---
@@ -1882,7 +2208,7 @@ Furthermore, could this reuse be made in a seamless way for nodes already follow
 ## Actuation
 ]
 
-[dibujito del escenario]
+<img alt="XXX" src="img/transpas/actuation_scenario.png" style="width: 100%;" />
 
 ???
 
@@ -1901,7 +2227,7 @@ However, it helps to understand both actuation mechanisms and test the interoper
 
 ???
 
-After implementing both scenarios, I tested how the variation in the number of providers (e.g., actuators) affected these techniques.
+After implementing both scenarios, I calculated how the variation in the number of providers (e.g., actuators) could affect these techniques.
 
 First, we can see that as the amount of actuators increases, both techniques generate more requests.
 The slope will vary depending on the design (and implementation) of each solution.
@@ -1917,28 +2243,27 @@ In the case of REST-based actuation the crawler needs to obtain 5 different rule
 .subtitle[
 ## Actuation
 ]
-
-<!-- TODO put the Raspberry Pi and its characteristics -->
-
-<img alt="XXX" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
+<img alt="XXX" src="img/transpas/raspberry-pi-model-b.jpg" style="width:60%; margin-top:1em;" class="center" />
+<table style="margin-top:1em;">
+  <tr>
+    <td style="width:9em">Platform</td>
+    <td>Raspberry Pi (model B)</td>
+  </tr>
+  <tr>
+    <td>RAM Memory</td>
+    <td>512 MB</td>
+  </tr>
+  <tr>
+    <td>CPU</td>
+    <td>700 MHz Low Power ARM1176JZ-F Applications Processor</td>
+  </tr>
+</table>
 
 ???
 
-In this second chart, we see that the amount of actuators affects more severely to REST-based actuation.
-This is due mainly to the to the reasoning process which takes place in the node which generates the plan.
+To check how much computing resources each techniques requires, I tested both techniques in a Raspberry Pi.
 
-[causes]
-
-
-In Space-based actuation, all the participants must be aware of what is writ-
-ten into the space to react (i.e., they are proactive). Both consumers and pro-
-viders read and write from the space, 
-
-However, in space-based actuation each actuator subscribes to specific changes.
-Thanks to this specificity, they are only affected by the contents they are interested in, generating . On the contrary, the Space will be involved in any net-
-working activity. Therefore, although it depends on the number of providers
-and consumers’ interactions, the networking activity will presumably be high
-for the node hosting the Space.
+Again, the scenario was tested with 1, 200, 400, 600, 800 and 1000 actuators.
 
 ---
 
@@ -1947,17 +2272,188 @@ for the node hosting the Space.
 ## Actuation
 ]
 
-[tabla comparación]
+<img alt="XXX" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
 
 ???
 
-From the results and after analysing the characteristics of both techniques, we came out to the following table.
-It summarizes the strengths and weaknesses of both techniques.
+In the chart, we see that the amount of actuators affects more severely to REST-based actuation.
+This is due to the to the reasoning process which takes place in the node which generates the plan.
 
-In the XXX, we can see that...
+In space-based actuation, most of the time is spent checking subscriptions at each write.
+Note that even if the subscription mechanism was unoptimized due to its prototyping nature, it made space-based actuation scale much better.
 
 ---
 
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td>Perspective</td>
+      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:10em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2">REST-based</td>
+      <td>Provider</td>
+      <td>Reactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, high</td>
+      <td>Demanding</td>
+    </tr>
+  </tbody>
+</table>
+???
+
+From the results and after analysing the characteristics of both techniques, we came out to the following table.
+
+It summarizes the strengths and weaknesses of both techniques.
+
+---
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td>Perspective</td>
+      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:10em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, limited</td>
+      <td><strong>Limited</strong></td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2">REST-based</td>
+      <td>Provider</td>
+      <td>Reactive,limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, <strong>high</strong></td>
+      <td><strong>Demanding</strong></td>
+    </tr>
+  </tbody>
+</table>
+???
+
+From the point of view of the actuator, the previous charts have already shown its higher activity compared to space-based actuation.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td>Perspective</td>
+      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:10em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2">REST-based</td>
+      <td>Provider</td>
+      <td>Reactive, <strong>limited</strong></td>
+      <td><strong>Limited</strong></td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, high</td>
+      <td>Demanding</td>
+    </tr>
+  </tbody>
+</table>
+???
+
+The table shows how the providers in the second actuation mechanism are more lightweight.
+
+That is, they just attend to the request received using HTTP.
+
+Probably as a consequence of these few requirements, exposing the actuation capabilities of the limited devices with HTTP is a consolidated trend.
+.weak[This tendency is backed by the WoT initiative.]
+
+REST-desc only requires them to describe an API's resources semantically.
+
+This can be done before deploying them and does not affect to their usual operation.
+
+---
 # Interoperation
 .subtitle[
 ## Actuation
@@ -1968,7 +2464,7 @@ In the XXX, we can see that...
 
 ???
 
-With these considerations in mind, I propose a solution which does not affect any of the actuators of nodes which generate changes from the previous scenario.
+With these considerations in mind, I propose a solution which does not affect any of the actuators or nodes which generate changes from the previous scenario.
 
 In this solution, all the changes are performed in the space.
 
