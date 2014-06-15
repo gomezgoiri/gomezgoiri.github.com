@@ -1694,10 +1694,14 @@ International Workshop on Extending Seamlessly to the Internet of Things (esIoT)
 ]
 ???
 
-The third goal of my dissertation was to explore how to actuate through space-based computing.
+The third goal of my dissertation focuses on exploring how to physically actuate on a smart-environment using space-based computing.
 
 Specifically, the idea I present here is currently in its early stages and still has to be fully developed.
-However, I find it interesting as it covers the actuation in space-based computing from a completely novel perspective.
+
+However, I find it interesting as it
+
+1. helps to have a complete picture of the whole model presented and
+1. covers the actuation in space-based computing from a completely novel perspective.
 
 ---
 
@@ -2600,9 +2604,9 @@ This way, we avoid additional costly networking operations (both in bandwidth an
 ## Actuation
 ]
 
-Further investigation with more complex scenarios needed:
+Further investigation with more complex scenarios is needed:
 
-* Is the __translation__ always possible?
+* Is the __translation__ between the subscriptions and the goal always possible?
 * If the plan has __2 or more paths__ to achieve a goal, which one should we chose?
 * What if __two different actuators__ from space-based and rest-based actuation can be activated?
 
@@ -2643,12 +2647,53 @@ To conclude, let me present my contributions and conclusions.
 
  > The alignment of the TSC paradigm with the web's principles together with the
  > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+
+???
+
+First, let me start checking how I have given an answer to the hypothesis.
+
+---
+
+# Hypothesis
+
+ > The alignment of the __TSC paradigm__ with the __web's principles__ together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+
+???
+
+This three elements have guided my dissertation:
+
+ * The semantic space-based paradigm called Triple Space Computing (TSC)
+ * Its alignment with the web
+ * The consideration of limited devices needs regarding their energy and computation constraints.
+
+---
+
+# Hypothesis
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
  > environments where heterogeneous devices communicate __autonomously__ in an uncoupled
  > and interoperable fashion.
 
 ???
 
-The search architecture presented has the goal of promoting end-to-end searchs between devices.
+The autonomy is reached through the web-based dual space model presented.
+
+This model has a federated space formed by the _sub-spaces_ managed by devices which manage their own semantic data.
+
+To help them searching in such space, I have designed a dynamic architecture which
+
+* promotes end-to-end search between devices and
+* considers their energy and computation capabilities.
+
+Besides, the mixed actuation technique presented reduces even more the requirements for an actuator to belong to my space model.
+
+Now, actuators already exposing their capabilities through an HTTP API, only need to annotate it semantically to enable their reuse through the space.
 
 ---
 
@@ -2661,7 +2706,11 @@ The search architecture presented has the goal of promoting end-to-end searchs b
 
 ???
 
-coordination primitives
+Regarding the uncoupling, all the communication between the devices is driven by the data.
+
+On top of the space, there is no need to refer to concrete addresses.
+
+Furthermore, the model also contemplates a more classical space that devices can use to coordinate with each other in a time uncoupled way.
 
 ---
 
@@ -2674,74 +2723,234 @@ coordination primitives
 
 ???
 
-not only the Semantic Web adoption, also the actuation mechanism tested
+Finally, I have dealt with the interoperability:
+
+1. using the semantic web to promote data reuse and the web to use a widely accepted exchange mechanism; and
+1. analysing how to reuse a novel and true REST-based actuation technique from the space-based computing perspective.
 
 ---
 
-# Contributions
+# Contributions: space model
 
-* Space-model which integrates with the web-world
-* A searching mechanism for WoT
- * Promotes end-to-end HTTP requests between constrained devices
- * Balances the management load considering devices' computing and energy capacities
- * Structures the nodes in different dynamic roles with different responsibilities
-* Analysis of how to interoperate with existing REST-based actuators from space-based computing
-* [Enumeration of the papers, etc.] <!-- Enumerar la larga que la tengo? -->
+<div style="font-size: smaller">
+
+* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
+__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
+[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
+[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
+* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
+__RESTful Triple Spaces of Things__.
+Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
+* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
+__Collaboration of Sensors and Actuators through Triple Spaces__.
+In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
+* Aitor Gómez-Goiri, Diego López-de-Ipiña.
+__On the complementarity of Triple Spaces and the Web of Things__.
+In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
+
+</div>
 
 ???
 
-* End-to-end: they do not need an intermediary to search (i.e., to select the appropriate providers to request).
+The work done in this dissertation has been covered by the following publications.
+
+Regarding the _space model_,
+
+although I published other early papers related to Triple Spaces and smart-environments,
+
+these publications are the ones which cover most of the aspects presented today.
+
+---
+
+# Scientific contributions: space model
+
+<div style="font-size: smaller">
+
+* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
+__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
+[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
+[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
+* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
+__RESTful Triple Spaces of Things__.
+Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
+* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
+__Collaboration of Sensors and Actuators through Triple Spaces__.
+In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
+* Aitor Gómez-Goiri, Diego López-de-Ipiña.
+__On the complementarity of Triple Spaces and the Web of Things__.
+In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
+
+</div>
+???
+
+The work done in this dissertation has been covered by the following publications.
+
+Regarding the _space model_,
+
+although I published other early papers related to Triple Spaces and smart-environments,
+
+these publications are the ones which cover most of the aspects presented today.
+
+---
+
+# Scientific contributions: search architecture
+
+<div style="font-size: smaller">
+
+* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
+__Energy-aware architecture for information search in the semantic web of things__.
+[International Journal of Web and Grid Services](http://www.inderscience.com/jhome.php?jcode=ijwgs), [Vol. 10, No. 2/3](http://www.inderscience.com/info/inarticle.php?artid=60252), pp. 192–217, 2014.
+* Aitor Gómez-Goiri and Diego López-de-Ipiña.
+__Assessing data dissemination strategies within triple spaces on the web of things__.
+In 2012 Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS), pages 763 –769, July 2012.
+
+</div>
+???
+
+Regarding the search architecture, the first publication covers in detail the work presented today.
+
+The second one is a more general and premature approach to the same problem.
+
+---
+
+# Scientific contributions: actuation
+
+<div style="font-size: smaller">
+
+* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
+__Reusing web-enabled actuators from a semantic space-based perspective__.
+International Workshop on Extending Seamlessly to the Internet of Things (esIoT), July 2014. To appear.
+
+</div>
+???
+
+Finally, the following paper explains the mixed actuation technique and its related considerations.
+
+---
+
+# Scientific contributions: related
+
+<div style="font-size: smaller">
+
+* Lightweight __user access control__ for limited devices.
+ * Juan Álvaro Muñoz Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Leocadio González Casado.
+ _Enabling user access control in energy-constrained wireless smart environments_.
+ Journal of Universal Computer Science, 19(17):2490–2505, November 2013.
+ * Juan Álvaro Muñoz Naranjo, Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña, and Leocadio González Casado.
+ _Extending a user access control proposal for wireless network services with hierarchical user credentials_.
+ In CISIS’13, in Advances in Intelligent Systems and Computing, n. 239, pp. 601–610.
+ * Juan Álvaro Muñoz Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and L. G. Casado.
+ _Lightweight user access control in energy-constrained wireless network services_.
+ In Ubiquitous Computing and Ambient Intelligence, LNCS, pp. 33–41, January 2012.
+
+</div>
+???
+
+In parallel to the development of this thesis, I have co-autored three papers about a Lightweight __user access control__ for limited devices.
+
+---
+
+# Scientific contributions: related
+
+<div style="font-size: smaller">
+
+* Use of TSC middleware in a number of __different domains__:
+ * Aitor Gómez-Goiri, Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Diego López-de-Ipiña, and Sergio Fínez.
+ _Easing the mobility of disabled people in supermarkets using a distributed solution_.
+ In Ambient Assisted Living, n. 6693 in LNCS, pp. 41–48, January 2011.
+ * Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Fínez Sergio.
+ _Distributed semantic middleware for social robotic services_.
+ In Robot 2011, Seville, Spain, November 2011.
+ * Xabier Laiseca, Eduardo Castillejo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Ester González Aguado.
+ _Distributed tracking system for patients with cognitive impairments_.
+ In Ambient Assisted Living, n. 6693 in LNCS, pp. 49-56, January 2011. 
+
+</div>
+???
+
+Furthermore, I have published four other articles explaining our experiences applying a TSC middleware in a number of __different domains__.
+This middleware compliant with most of the considerations I presented before.
 
 ---
 
 # Technical contributions
 
-* __Otsopack__
-* Parametrizable __simulation environment__
-* Implementation of the same __basic actuation scenario__ to compare different actuation mechanisms
- 
-In parallel...
+As a result of my PhD, I have open-sourced the following software:
 
-* Lightweight __user access control__ for limited devices
-* Use of Otsopack in a number of __different domains__
- * Homes, hospitals and residences, supermarkets or hotels.
+* A parametrizable __simulation environment__
+ <span style="font-size: smaller"> https://github.com/gomezgoiri/Semantic-WoT-Environment-Simulation </span>
+
+* The three different implementations of the same __basic actuation scenario__ presented before
+ <span style="font-size: smaller"> https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace </span>
+
+* A TSC-based middleware: __Otsopack__
+ https://github.com/gomezgoiri/otsopack
+
+<img alt="Otsopack logo" src="img/transpas/otsopack_logo.png" style="width: 40%;" class="center" />
 
 ???
+
+During this time, I have contributed to the community open-sourcing the following software:
+
+* The parametrizable __simulation environment__ used to evaluate the searching proposal
+* The different implementations used for the comparison of the three actuation techniques presented
+* and Otsopack.
 
 Otsopack is a middleware which follows some of the ideas presented about web-based semantic space-based computing.
 
 ---
 
+# Technical contributions
+
+Otsopack has been used in the following research projects:
+
+ * __THOFU__ (CEN-20101019), funded by the Spanish Centro para el Desarrollo Tecnológico Industrial (CDTI) and supported by the the Spanish Ministry of Science and Innovation.
+ * __ACROSS__ (TSI-020301-2009-27), funded by the Spanish Ministerio de Industria, Turismo y Comercio.
+ * __TALIS+ENGINE__ (TIN2010-20510-C04-03), funded by the Spanish Ministry of Science and Innovation.
+ * __ISMED__ (PC2008-28), funded by the Department of Education, Universities and Research of the Basque Government for the period 2008-10.
+
+---
+
+# Technical contributions
+
+These projects used it in __different domains__...
+
+ * Residences
+ * Hospitals
+ * Supermarkets
+ * Hotels
+ * and homes environments.
+
+<img alt="XXX" src="img/transpas/domain_supermarket.png" style="position: absolute; bottom: 1em; right: 16em; width: 40%;" />
+<img alt="XXX" src="img/transpas/domain_residence.png" style="position: absolute; bottom: 2em; right: 2em; width: 30%;" />
+---
+
 # Future work
 
-* __Limited devices are not just dumb devices__
- * Managing semantic content in limited devices is still challenging
-* __Do we really need the Semantic Web?__
- * We sometimes look down on interoperability
- * Sometimes the lack of adequate tools make too complex for a human to annotate contents
-* __Will true-REST-architectures ever prevail?__
+* Are __limited__ devices just __dumb__ devices unable to manage semantic annotations?
+* __Do__ we really __need the Semantic Web__?
+* Will true-__REST__-architectures ever __prevail__?
 
 ???
 
-* This dissertation has addressed this problem from a novel perspective: give responsibilities to limited devices
- * Managing semantic content in limited devices is still challenging
- * However, there are many interesting parallel works on reasoning, compressing the contents, etc.
-* We sometimes look down on interoperability: both in the academia and in the industry.
- * In the academia, due to the prototyping nature of most of our applications
- * In the industry, due to a lack of openess and real need of interoperate with big amount of data.
- * Furthermore, interoperability benefits are usually perceived in the mid/long term.
- * However, this is changing too with the _Linked Data_ initiative.
-* Will true-REST-architectures ever prevail?
- * Some interesting works are leveraging this challenge
- * I have experimented for the first time how one of this proposals could be used from the space-based perspective.
+To end this presentation, let me comment some considerations.
 
+* The first is that, nowadays, managing semantic content in limited devices is still challenging
+ * However, there are many parallel works on reasoning, compressing semantic contents, etc. that will probably make it easier in the near future.
+* The second is that I have the impression that we sometimes look down on interoperability both in the academia and in the industry.
+ * In the academia, due to the prototyping nature of most of our applications
+ * In the industry, due to a lack of openness and impossibility to perceive its benefits in the short term
+ * However, this is changing too with the _Linked Data_ initiative.
+* Finally, REST-architectures have been subject of discussion since two thousand.
+ * Although REST-like architectures are very popular nowadays, the need of making them hypermedia-driven is not shared by many web developers.
+ * I personally experienced the benefits of describing a REST API in a machine _understandable_ way through RESTdesc.
+ * If this or a similar tool becomes popular, automatically reusing third-party applications' capabilities will be closer than ever.
 ---
 
 class: middle, questionslide
 
 # Questions?
 Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deusto.es)]
-
 
 ???
 
@@ -2795,7 +3004,7 @@ However, with current advances in:
  * semantic reasoners for this type of environments (mencionar al tio que hizo un razonador adaptado)
  * lightweight semantic formats
  * lightweight web protocols
- * mobile and embedded devices' the processing capacity
+ * mobile and embedded devices' the processing capability
  * [autonomy of the batteries](http://energi.us/liberacion-patentes-tesla/) or
  * energy harvesting...
 
