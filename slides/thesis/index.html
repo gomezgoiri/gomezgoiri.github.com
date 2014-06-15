@@ -204,8 +204,7 @@ For instance, we could replace the smart clock with a newer version.
 .subtitle[
 ## Introduction
 ]
-
-<img alt="Space based computing: rd, in and out primitives" src="img/transpas/space-based.png" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto">
+<img alt="Space based computing: rd, in and out primitives" src="img/transpas/space-based.png" style="width: 100%;">
 
 ???
 
@@ -649,12 +648,13 @@ So, with these considerations in mind, I made myself a question:
 
 class: center, middle
 
-# Hyphothesis
+# Hypothesis
 
 ???
 
 To sum up these interests, I made the following hypothesis.
 
+(__ATENCION__: calmate y lee esto lentamente)
 ---
 
 class: middle
@@ -682,7 +682,7 @@ class: middle
 .weak[
  > The alignment of the TSC paradigm with the web's principles together with the
  > consideration of its __energy and computational impact__, leads to UbiComp
- > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
+ > environments where heterogeneous devices communicate __autonomously__ in an __uncoupled
  > and interoperable__ fashion.
 ]
 
@@ -714,22 +714,23 @@ class: center, middle
 
 .citations[
 
-* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
-Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications.
+* Aitor Gómez-Goiri, P. Orduña, J. Diego, D. López-de-Ipiña.
+__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
 [Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
-[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), January 2014.
+[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
 * Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
-RESTful Triple Spaces of Things.
+__RESTful Triple Spaces of Things__.
 Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
 * Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
-Collaboration of Sensors and Actuators through Triple Spaces.
+__Collaboration of Sensors and Actuators through Triple Spaces__.
 In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
 * Aitor Gómez-Goiri, Diego López-de-Ipiña.
-On the complementarity of Triple Spaces and the Web of Things.
+__On the complementarity of Triple Spaces and the Web of Things__.
 In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
 
 ]
-
+???
+(__ATENCIÓN__: Respira y bebe agua o cuenta hasta tres para que les dé tiempo a asimilar que eso son citas)
 ---
 
 # Space model
@@ -829,7 +830,7 @@ The triples are the most basic information unit in Triple Space Computing.
 
 ???
 
-Unfortunately, the APIs are not hypermedia-driven, that is they do not follow the HATEOAS REST principle.
+Unfortunately, the APIs are not hypermedia-driven.
 
 In short, this principle means that the client should not __know__ anything apart from an __URL__ to use an API.
 It should drive the interaction __selecting the new application states__ from the web hypermedia content provided by the server at each step.
@@ -952,6 +953,8 @@ However, this will come at the cost of more complexity and networking activity.
   * maintaining the data consistency is not easy with unreliable nodes
 -->
 
+[__ENFATIZAR__]
+
 Therefore, I kept it this way, with an time coupled outer-space, when I identified (realized) that we used the space for different purposes:
 
  1. Search for information
@@ -1008,21 +1011,22 @@ For this purpose, we have specifically designed a search architecture.
 
 class: center, middle
 
-# Energy-aware Search Architecture <!-- TODO call it in other way??? -->
+# Energy-aware search architecture <!-- TODO call it in other way??? -->
 
 .citations[
 
 * Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
-Energy-aware architecture for information search in the semantic web of things.
+__Energy-aware architecture for information search in the semantic web of things__.
 [International Journal of Web and Grid Services](http://www.inderscience.com/jhome.php?jcode=ijwgs), [Vol. 10, No. 2/3](http://www.inderscience.com/info/inarticle.php?artid=60252), pp. 192–217, 2014.
 * Aitor Gómez-Goiri and Diego López-de-Ipiña.
-Assessing data dissemination strategies within triple spaces on the web of things.
+__Assessing data dissemination strategies within triple spaces on the web of things__.
 In 2012 Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS), pages 763 –769, July 2012.
 ]
-
 ???
 
 And this is precisely the second goal of my dissertation.
+
+(__ATENCIÓN__: Respira y bebe agua o cuenta hasta tres para que les dé tiempo a asimilar que eso son citas)
 
 ---
 
@@ -1638,10 +1642,58 @@ This avoids the situation when most of the providers re-send their clues over an
 
 ---
 
+# Summary
+.subtitle[
+## Energy-aware search architecture
+]
+
+The presented search architecture cares about _computation_ (C) and _energy_ (E), because:
+
+ * Management __tasks are delegated__ to the most powerful devices in the space (C+E)
+ * The search is improved avoiding many __unnecessary requests__ (C+E)
+ * If the _Provider_ __cannot process__ the _aggregated clue_, it can delegate it on the WP (C)
+ * The WP selection process prioritizes cases where __less providers__ are forced to __resend__ their last clue version (E).
+
+???
+
+The presented search architecture cares about __computation__ and __energy__, because:
+
+ * The additional management tasks created are delegated to one of the most powerful devices in the space (C+E)
+ * The search is improved avoiding many unnecessary requests (C+E)
+ * If the _Provider_ cannot processing the _aggregated clue_, it can delegate it on the WP (C)
+ * The WP selection process prioritizes cases where __less providers__ are forced to __resend__ their last clue version (E).
+  1. gives priority to the nodes which has an updated version of the _aggregated clue_
+  2. gives priority to steady nodes so the new WP will not presumably be replaced in a long time (E)
+
+---
+
+#Summary
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 80%;" class="center" />
+
+???
+
+Note that in the simulation, the energy has been measured indirectly through the computation and networking activity.
+
+Using the time needed for each activity, we could estimate energy losses thanks to evaluations equivalent to the one presented for the FoxG20 platform.
+
+To obtain a more precise energy consumption view, measures in a real running scenarios could be considered.
+
+---
+
 class: center, middle
 
 # Actuation
 
+.citations[
+
+* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
+__Reusing web-enabled actuators from a semantic space-based perspective__.
+International Workshop on Extending Seamlessly to the Internet of Things (esIoT), July 2014. To appear.
+]
 ???
 
 The third goal of my dissertation was to explore how to actuate through space-based computing.
