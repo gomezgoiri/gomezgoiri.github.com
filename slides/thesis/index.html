@@ -2293,14 +2293,14 @@ Note that even if the subscription mechanism was unoptimized due to its prototyp
   <thead>
     <tr>
       <td style="width:7em">Actuation</td>
-      <td>Perspective</td>
-      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
     </tr>
     <tr class="first_row">
       <td></td>
       <td></td>
       <td style="text-align:center; width:10em">Networking</td>
-      <td style="text-align:center; width:10em">Computation</td>
+      <td style="text-align:center; width:8em">Computation</td>
     </tr>
   </thead>
   <tbody>
@@ -2341,18 +2341,23 @@ It summarizes the strengths and weaknesses of both techniques.
 
 ---
 
+# Comparison
+.subtitle[
+## Actuation
+]
+
 <table style="margin-top:3em;">
   <thead>
     <tr>
       <td style="width:7em">Actuation</td>
-      <td>Perspective</td>
-      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
     </tr>
     <tr class="first_row">
       <td></td>
       <td></td>
       <td style="text-align:center; width:10em">Networking</td>
-      <td style="text-align:center; width:10em">Computation</td>
+      <td style="text-align:center; width:8em">Computation</td>
     </tr>
   </thead>
   <tbody>
@@ -2363,8 +2368,8 @@ It summarizes the strengths and weaknesses of both techniques.
       <td>Limited</td>
     </tr>
     <tr>
-      <td>Consumer</td>
-      <td>Proactive, limited</td>
+      <td><strong>Consumer</strong></td>
+      <td>Proactive, <strong>limited</strong></td>
       <td><strong>Limited</strong></td>
     </tr>
     <tr>
@@ -2379,7 +2384,7 @@ It summarizes the strengths and weaknesses of both techniques.
       <td>Limited</td>
     </tr>
     <tr>
-      <td>Consumer</td>
+      <td><strong>Consumer</strong></td>
       <td>Proactive, <strong>high</strong></td>
       <td><strong>Demanding</strong></td>
     </tr>
@@ -2400,14 +2405,14 @@ From the point of view of the actuator, the previous charts have already shown i
   <thead>
     <tr>
       <td style="width:7em">Actuation</td>
-      <td>Perspective</td>
-      <td colspan="2" style="text-align:center; width:20em">Activity</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
     </tr>
     <tr class="first_row">
       <td></td>
       <td></td>
       <td style="text-align:center; width:10em">Networking</td>
-      <td style="text-align:center; width:10em">Computation</td>
+      <td style="text-align:center; width:8em">Computation</td>
     </tr>
   </thead>
   <tbody>
@@ -2428,8 +2433,8 @@ From the point of view of the actuator, the previous charts have already shown i
       <td>Varies</td>
     </tr>
     <tr>
-      <td rowspan="2">REST-based</td>
-      <td>Provider</td>
+      <td rowspan="2"><strong>REST</strong>-based</td>
+      <td><strong>Provider</strong></td>
       <td>Reactive, <strong>limited</strong></td>
       <td><strong>Limited</strong></td>
     </tr>
@@ -2454,41 +2459,89 @@ REST-desc only requires them to describe an API's resources semantically.
 This can be done before deploying them and does not affect to their usual operation.
 
 ---
+
 # Interoperation
 .subtitle[
 ## Actuation
 ]
-
-[schema which takes REST-based provider and space-based change activation node <-- name this somehow previously]
-[space with additional processing]
-
+<img alt="XXX" src="img/transpas/mixed_actuation01.png" style="width: 100%;" />
 ???
 
-With these considerations in mind, I propose a solution which does not affect any of the actuators or nodes which generate changes from the previous scenario.
+With these considerations in mind, I propose a solution which completely reuses the nodes implemented for the previous actuation techniques.
 
-In this solution, all the changes are performed in the space.
+In the left hand side, we see a master node from Space-based actuation which writes the "turn light on" task.
 
 ---
 
-# Interoperation: execution
+# Interoperation
 .subtitle[
 ## Actuation
 ]
-
-[las tuercas, se convierten en una ejecución donde se ponen las equivalencias que hace]
-
+<img alt="XXX" src="img/transpas/mixed_actuation02.png" style="width: 100%;" />
 ???
 
-• It uses the Node B’s subscription to the task result as a goal for the reason-
-ing. In our implementation, this correspondence needs a minimal map-
-ping between N3QL [144] and SPARQL [162]. The reason why we use
-both languages are the underlying frameworks: EYE [149] and RDFLib
-[133].
-• The agent uses all the content written into the space as additional know-
-ledge for the reasoning process. This is feasible because the agent resides
-in the same machine as the space. Otherwise, acquiring this knowledge
-through the network would be too consuming both in bandwidth and in
-time.
+In the right hand side, we see a smart-bulb light which exposes their actuation capabilities through an HTTP API.
+
+---
+
+# Interoperation
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/mixed_actuation03.png" style="width: 100%;" />
+???
+
+This API is described using RESTdesc.
+
+In my dissertation, I propose not to altere the existing nodes.
+
+Therefore, the space needs to be extended to make their interoperability possible.
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/mixed_actuation04.png" style="width: 100%;" />
+???
+
+And... how is it extended?
+
+Specifically, the space will be responsible of:
+
+* Translating subscription to a task result into a reasoning goal.
+ Considering the how I implemented the subscriptions .weak[(based on SPARQL using RDFLib)], this is a straightforward syntactic translation .weak[(from SPARQL to N3QL for EYE)].
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/mixed_actuation05.png" style="width: 100%;" />
+???
+
+Apart from this, it will be in charge of two tasks performed by the client in REST-based actuation:
+
+ * crawl APIs to obtain RESTdesc rules and
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="XXX" src="img/transpas/mixed_actuation06.png" style="width: 100%;" />
+???
+
+ * create a plan.
+
+Note one benefitial aspect: as the process resides in the same machine as the space, it can locally read all the content written into the space.
+
+This content is provided as additional knowledge to the reasoning process.
+
+This way, we avoid additional costly networking operations (both in bandwidth and in time) to obtain this knowledge.
 
 ---
 
@@ -2497,15 +2550,32 @@ time.
 ## Actuation
 ]
 
-<!-- TODO mirar a ver si sé explicar los otros problemas facilmente -->
+Further investigation with more complex scenarios needed:
 
-* If there are two or more paths to reach a goal, how can we discern which
-one to follow? This problem is specific to the REST actuation.
-* How does the middleware deal with the coexistence of both mechanisms?
-When both methods can be applied, which one is triggered? Will one of
-them prevail over the second?
+* Is the __translation__ always possible?
+* If the plan has __2 or more paths__ to achieve a goal, which one should we chose?
+* What if __two different actuators__ from space-based and rest-based actuation can be activated?
 
 ???
+
+However, the hybrid-actuation technique presented needs further investigation to ensure its universality.
+
+For example,
+
+* Would the translation between the subscriptions and the goal always be possible?
+ What if the node initiating the change does not subscribe to any result?
+
+* If there are two or more paths to reach a goal, how can we discern which one to follow?
+ This problem is specific to the REST actuation using REST-desc.
+
+* How does the middleware deal with the coexistence of both mechanisms?
+ When both methods can be applied, which one is triggered?
+ Which one should prevail over the second?
+
+
+In any case, I analysed actuation in space-based computing from a novel-point of view.
+
+From the space-based consumer perspective, I proposed to seamlessly reuse actuators from the WoT.
 
 ---
 
@@ -2515,7 +2585,7 @@ class: center, middle
 
 ???
 
-To conclude, let me give some views on the areas I experimented in during my dissertation and tell you my contributions in this aspect.
+To conclude, let me present my contributions and conslusions.
 
 ---
 
