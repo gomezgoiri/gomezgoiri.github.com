@@ -496,17 +496,12 @@ And, now, let me do a brief parenthesis to talk about this...
 ???
 
 The player in the center is Nate Robinson who, compared to any of the remaining NBA players will be considered small.
+
 However, he is about 4 cm taller than me, so I wouldn't consider him small.
 
-Similarly, my dissertation has focused on the limited devices needs and, still, what I propose might not be appropriate for several current limited platforms.
+The same thing happens when we speak about _limited devices_.
 
-So, what does "limited" mean for me?
-In short, I talk about any mobile or embedded device able to manage semantic annotations.
-Anyhow, I propose several adaptations in my model for more restricted ones.
-Really limited ones should use a Gateway, and this gateway would be part of my solution.
-
-Personally, I have tested the feasibility of using the semantic web in several limited platforms.
-Later on, I will present some of these results.
+In the context of my dissertation, _limited devices_ are mobile or embedded devices able to manage semantic annotations.
 
 ---
 
@@ -689,14 +684,18 @@ To sum up these interests, I made the following hypothesis.
  3. Actuation mechanism
 
 ???
+To validate the hypothesis, the main objective of this dissertation was _to design a middleware which follows the TSC paradigm_
 
-1. Propose a new space model which merges the benefits from Space-based computing and the web.
-1. An energy-aware search for this new model.
-1. An actuation mechanism.
+* according to web principles
+* and considering the energy and computation aspects.
 
-In my dissertation, and in this presentation, I've focused on the second aspect.
+<hr>
 
-Consequently, I will restrict myself to a brief comment on the first and third points.
+This objective can be achieved through the following sub-goals:
+
+1. Merge the benefits from Space-based computing and the web in a __new space model__.
+1. Add searching capability to this model, and
+1. Define how to actuate using it.
 
 ---
 
@@ -706,23 +705,16 @@ class: center, middle
 
 .citations[
 
-* Aitor Gómez-Goiri, P. Orduña, J. Diego, D. López-de-Ipiña.
-__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
-[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
-[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
-* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
-__RESTful Triple Spaces of Things__.
-Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
-* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
-__Collaboration of Sensors and Actuators through Triple Spaces__.
-In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
-* Aitor Gómez-Goiri, Diego López-de-Ipiña.
-__On the complementarity of Triple Spaces and the Web of Things__.
-In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
+* [CHB2014] Lightweight semantic framework for interoperable ambient intelligence applications
+* [WoT2012] RESTful Triple Spaces of Things
+* [IEEESensors2011] Collaboration of Sensors and Actuators through Triple Spaces.
+* [WoT2011] On the complementarity of Triple Spaces and the Web of Things.
 
 ]
 ???
-(__ATENCIÓN__: Respira y bebe agua o cuenta hasta tres para que les dé tiempo a asimilar que eso son citas)
+First, let's talk about the space model.
+
+Note that at the bottom there are some articles I published regarding this issue.
 ---
 
 # Space model
@@ -742,17 +734,17 @@ After several attempts, I came up with the __dual model__ shown in the figure.
 It is composed by:
 
  * Coordination space
-  * Pretty much a classical semantic space
-  * It is enhanced by the information provided by autonomous devices (or asteroids) which are part of the
+  * which is pretty much a classical semantic space
+  * enhanced by the information provided by autonomous devices (or asteroids) which are part of the
  * Outer space
-  * __Enriched view__
+  * This OS is an __enriched view__ of
   * what's happening on __real time__
 
 This model confines much of the information in the devices.
 
 I analysed this model from different perspectives.
 
-To analyse the networking properties of the solution proposed, we must note that both spaces are accessed through their APIs.
+To analyse its networking properties, we must note that both spaces are accessed through their APIs.
 
 ---
 
@@ -767,7 +759,7 @@ To analyse the networking properties of the solution proposed, we must note that
 
 Both APIs are based on the space-based computing primitives, which are compatible with (most of) the REST principles:
 
-* It is resource oriented. It has the following types of resources: spaces
+* The API is resource oriented. It has the following types of resources: spaces
 
 ---
 
@@ -808,8 +800,11 @@ The triples are the most basic information unit in Triple Space Computing.
 
 ???
 
-* HTTP verbs can be directly mapped to TSC primitives.
-* We use other HTTP features: status codes, content negotiation, etc.
+* The API's TSC primitives can be directly mapped to HTTP verbs
+* Furthermore, we take advantage of other HTTP features:
+ * status codes,
+ * content negotiation,
+ * etc.
 
 ---
 
@@ -822,13 +817,13 @@ The triples are the most basic information unit in Triple Space Computing.
 
 ???
 
-Unfortunately, the APIs are not hypermedia-driven.
+Unfortunately, these APIs are not hypermedia-driven.
 
 In short, this principle means that the client should not __know__ anything apart from an __URL__ to use an API.
+
 It should drive the interaction __selecting the new application states__ from the web hypermedia content provided by the server at each step.
 
 Although, the API is actually hypermedia-driven for humans, it is not for machines.
-This has left as future work.
 
 ---
 
@@ -841,7 +836,7 @@ REST-like APIs
 
 * Scalability
 * Simplicity
-* UP performance
+* User perceived performance
 * Efficiency
 * Evolvability
 
@@ -852,15 +847,15 @@ Anyway, accessing to the spaces through a REST-like API provides the following f
 * Scalability (4+)
 * Simplicity (3+-)
 * UP performance, efficiency & evolvability (2+)
-* and others [avoid enumeration]
+* and some other properties [avoid enumeration]
  * Portability, extensibility, configurability, reusability & reliability (+)
  * Visibility (+-)
  * Net performance (-)
 
 And it also comes with some drawbacks:
 
-* Less simplicity, reusability & visibility than pure REST APIs (hypermedia-driven)
-* Mechanisms such as subscriptions and transactions go against the statelessness
+* Less simplicity, reusability & visibility than pure REST APIs and
+* Mechanisms such as subscriptions and transactions go against REST architecture's statelessness
 
 ---
 
@@ -878,9 +873,6 @@ And it also comes with some drawbacks:
 ???
 
 But, having a part of the model which is based on the web also affects uncoupling.
-
-[Move the explanation of uncoupling here?]
-<!-- Not yet because I'm unsure whether these slides will be kept -->
 
 --
 
@@ -926,7 +918,7 @@ Obviously, the coordination space corresponds with the clasical model and theref
 In the _outer space_, programmers are forced by space-based primitives not to care about data too.
 
 --
-      <span style="margin-left: 40%; color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span>
+      <span style="margin-left: 40%; color: #e53f39; font-size: 1.5em; vertical-align: middle; font-weight: bold;">X</span><!-- &#10060; <- Not recognized in Win7-->
   </span>
 </div>
 
@@ -934,20 +926,9 @@ In the _outer space_, programmers are forced by space-based primitives not to ca
 
 However, regarding _time uncoupling_, since each provider holds its content, this is only accessible when the provider is available.
 
-Some possible solutions to avoid this uncoupling would be: to move contents to other nodes or to replicate contents.
-However, this will come at the cost of more complexity and networking activity.
-<!-- * __Move contents__ to other nodes
-  * how to distinguish the reliable ones?
-  * the measures would be moved away from where they are generated
-   * what if the other node lefts the space but the provider is available?
-* __Replicate__ contents
-  * more networking
-  * maintaining the data consistency is not easy with unreliable nodes
--->
-
 [__ENFATIZAR__]
 
-Therefore, I kept it this way, with an time coupled outer-space, when I identified (realized) that we used the space for different purposes:
+I kept a time coupled outer-space because I identified (realized) that we used the space for two different purposes:
 
  1. Search for information
  1. Coordinate through the space
@@ -967,7 +948,7 @@ Time uncoupling is particularly important for coordination, but not so much to s
 
 Finally, we can see how the properties commented before interrelate with desirable properties in UbiComp.
 
-Particularly, we can see two conflictive interrelations:
+Particularly, we can see two negative interrelations:
 
 ---
 
@@ -980,22 +961,7 @@ Particularly, we can see two conflictive interrelations:
 
 ???
 
-Firstly, the web has a low networking perfomance.
-
-To reduce or mitigate it, we can redesign the API or just adopt more lightweight protocols (e.g., CoAP which mimics many of HTTP's properties).
-
----
-
-# Properties for UbiComp
-.subtitle[
-##  Space model
-]
-
-<img alt="Space and time" src="img/transpas/ubicomp_properties03.png" class="center" style="width:90%;"/>
-
-???
-
-Secondly, the semantic web negatively affects computation overload and energy autonomy.
+The semantic web negatively affects computation overload and energy autonomy.
 
 For this purpose, we have specifically designed a search architecture.
 
@@ -1007,12 +973,8 @@ class: center, middle
 
 .citations[
 
-* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
-__Energy-aware architecture for information search in the semantic web of things__.
-[International Journal of Web and Grid Services](http://www.inderscience.com/jhome.php?jcode=ijwgs), [Vol. 10, No. 2/3](http://www.inderscience.com/info/inarticle.php?artid=60252), pp. 192–217, 2014.
-* Aitor Gómez-Goiri and Diego López-de-Ipiña.
-__Assessing data dissemination strategies within triple spaces on the web of things__.
-In 2012 Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS), pages 763 –769, July 2012.
+* [IJWGS2014] Energy-aware architecture for information search in the semantic web of things.
+* [IMIS2012] Assessing data dissemination strategies within triple spaces on the web of things.
 ]
 ???
 
@@ -1033,11 +995,11 @@ How to search in the _outer space_?
 
 ???
 
-How can we search in the _outer space_?
+So, how can we search in the _outer space_?
 
 Remember that the "asteroids" from the right-hand side are independent small web providers.
 
-Or generalizing it...
+Therefore, generalizing the problem...
 
 ---
 
@@ -1050,9 +1012,9 @@ Or generalizing it...
 
 ???
 
-How to search in a semantic web provided by limited devices?
+How can we search in a semantic web provided by limited devices?
 
-(and remember my driving motivation: to promote the direct communication between)
+(and remember my driving motivation: to promote the direct communication between them)
 
 ---
 
@@ -1077,14 +1039,25 @@ For instance, a broadcasting-based solution will generate a high computation and
 ##  Energy-aware search architecture
 ]
 
-<img alt="FoxG20 used to measure energy" src="img/transpas/foxg20.jpg" style="width: 80%;" class="center" />
-
-<!-- TODO put details about this platform
-TODO foto de la fuente de alimentación programable -->
-
+<img alt="FoxG20 used to measure energy" src="img/transpas/foxg20.jpg" style="width: 60%; margin-top:1em;" class="center" />
+<table style="margin:0px auto; width:500px">
+  <tr>
+    <td style="width:9em">Platform</td>
+    <td>FoxG20</td>
+  </tr>
+  <tr>
+    <td>RAM Memory</td>
+    <td>64 MB</td>
+  </tr>
+  <tr>
+    <td>CPU</td>
+    <td>400 MHz Atmel ARM9</td>
+  </tr>
+</table>
 ???
 
-To find out how this computing and networking activities could affect an embedded platform,
+To find out how these computing and networking activities could affect an embedded platform,
+
 I checked their effects in a FoxG20 embedded device.
 
 ---
@@ -1099,6 +1072,7 @@ I checked their effects in a FoxG20 embedded device.
 ???
 
 In periods when it reasons or attends HTTP requests, it consumes approximately 20% more energy.
+
 In other platforms, similar energy wastes can be presumed.
 
 But beyond concrete energy consumptions, what this __chart transmits__ is that since computation and networking result in significant higher energy consumption,
@@ -1200,12 +1174,11 @@ For instance, from the figure, providing the laptop is steady, it may be chosen 
 
 ???
 
-So, to facilitate this search, I propose to summarize the information through a piece of information called _clue_.
+_Providers_ summarize their knowledge into pieces of information called _clues_.
 
-Note that the system is based in an assumption:
-_clues do not change frequently since they represent the type of information the nodes host rather than the specific data which is constantly generated_
+Note that the solution is based in a principle: _clues do not change frequently_. .weak[principle~=basic rule]
 
-_Providers_ summarize this knowledge into pieces of information called _clues_ (processing it)
+This is possible if they represent the __type__ of information a node hosts rather than the data it constantly generates.
 
 ---
 
@@ -1217,14 +1190,11 @@ _Providers_ summarize this knowledge into pieces of information called _clues_ (
 
 ???
 
-
-Providers send a clue to WP in any of the following situations:
- 1. when a clue is updated
- 2. before its lifetime expires
- 3. whenever there is a new WP in the Space with a lower setup version than the one in the Provider
- 
 The White Page stores clues in what it is called an _aggregated clue_.
-This _aggregated clue_ is versioned (in the figure, it has the _i-1_ version).
+
+This _aggregated clue_ is versioned.
+
+In the figure, it has the _i-1_ version.
 
 ---
 
@@ -1236,7 +1206,11 @@ This _aggregated clue_ is versioned (in the figure, it has the _i-1_ version).
 
 ???
 
-Once it receives the new clue, the White Page adds it to the _aggregated clue_, creating a new version (in the figure _i_).
+Providers send a clue to the WP in any of the following situations:
+
+ 1. when a clue is updated
+ 2. before its lifetime expires
+ 3. whenever there is a new WP in the Space with a lower setup version than the one in the Provider
 
 ---
 
@@ -1248,9 +1222,9 @@ Once it receives the new clue, the White Page adds it to the _aggregated clue_, 
 
 ???
 
-As a response to its request, the providers obtains this aggregated clue version.
+Once the WP receives the new clue, it adds the clue to the _aggregated clue_ creating a new version.
 
-The aggregated clues are the piece of informations which helps _Consumers_ searching for information efficiently.
+In the figure, version _i_.
 
 ---
 
@@ -1262,16 +1236,9 @@ The aggregated clues are the piece of informations which helps _Consumers_ searc
 
 ???
 
-Therefore, _Consumers_ need to obtain an _aggregated clue_.
+As a response to its request, the providers obtain this aggregated clue version.
 
-This happens in these occasions:
-  1. they don't have one
-  2. periodically
-   * upper bound time: ensures a fresh view
-   * lower bound time: not to flood the WP
-   * in between, checking the average frequency when the last 10 queries have happened
-   
-Using this _aggregated clue_ data, their are able to independently resolve their queries.
+The aggregated clues help _Consumers_ searching for information efficiently.
 
 ---
 
@@ -1283,9 +1250,18 @@ Using this _aggregated clue_ data, their are able to independently resolve their
 
 ???
 
-That is, they process them to decide which nodes to ask for information.
+Therefore, _Consumers_ need to obtain an _aggregated clue_.
 
-Exceptionally, as an optimization for nodes with severe computation restrictions, _Consumers_ can also the WP can answer directly which nodes it should ask for. 
+This happens in these occasions:
+
+  1. when they don't have one or
+  2. periodically
+   * this period is adjusted checking the average frequency of its last 10 queries.
+   * In any case, this period is bounded with an
+   * upper bound time, which ensures a fresh view; and
+   * a lower bound time, which avoids flooding to the WP
+   
+Using these _aggregated clues_, _Consumers_ are able to independently resolve their queries.
 
 ---
 
@@ -1294,6 +1270,20 @@ Exceptionally, as an optimization for nodes with severe computation restrictions
 ## Energy-aware search architecture
 ]
 <img alt="XXX" src="img/transpas/search_proposal07.png" class="center" style="width:100%;"/>
+
+???
+
+In other words, a _Consumer_ process an _aggregated clue_ to decide to which nodes to ask for information.
+
+Exceptionally, as an optimization for nodes with severe computation restrictions, _Consumers_ can also query the WP which nodes to ask.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="XXX" src="img/transpas/search_proposal08.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1310,15 +1300,19 @@ Finally, the consumer is now able to decide to which node address its request.
 
 ???
 
-So, how do this clues look like?
+So, how do a clue look like?
 
-A clue is a summary of the information hold by a provider.
+As I mentioned, a clue is a summary of the knowledge hold by a provider.
 
-This information looks as the figure shows.
+This knowledge is modelled according to Semantic Web standards.
 
-The semantic web is formed by RDF triples.
+The Semantic Web is formed by RDF triples.
 
-They are composed by a subject, a predicate and an object.
+These triples are composed by a subject, a predicate and an object.
+
+The figure shows an schema of several interrelated triples.
+
+The edges represent the predicates which relate terms with each other.
 
 ---
 
@@ -1331,11 +1325,8 @@ They are composed by a subject, a predicate and an object.
 
 ???
 
-As a query language, I have considered wildcard-patterns such as the ones shown at the bottom of the image.
+As a query language for this knowledge, I use wildcard-patterns such as the ones shown at the bottom of the image.
 <!-- TODO transpa backup explicando por qué no SPARQL -->
-
-
-So, considering that clues need not to change frequently, I considered three alternatives:
 
 ---
 
@@ -1348,7 +1339,11 @@ So, considering that clues need not to change frequently, I considered three alt
 
 ???
 
-* __Predicates__ which contain the relations between terms (just the significants).
+So, to summarize this information, I consider three alternatives:
+
+* Use the __predicates__.
+ * They contain the relations between terms.
+ * I select just the significant ones.
  * In the example, ssn:observes and ssn:observedBy.
 
 ---
@@ -1362,7 +1357,9 @@ So, considering that clues need not to change frequently, I considered three alt
 
 ???
 
-* __Prefixes__, which indicate the vocabularies used by the node to describe the knowledge provided.
+* Use the __prefixes__.
+ * They indicate the common startings for the URIs used in the triples.
+ * They often correspond to vocabularies used by the node to describe the knowledge.
  * In the example, ssn, weather, sweet and ex.
  
 ---
@@ -1376,7 +1373,8 @@ So, considering that clues need not to change frequently, I considered three alt
 
 ???
 
-* __Classes__ stored which detail which types of terms a node provides.
+* And finally, summarize the knowledge using __classes__.
+ * They detail types of terms.
  * In the example, ssn:Sensor and weather:RainfallObservation.
 
 ---
@@ -1394,13 +1392,14 @@ Using a __discovery mechanism__ each node shares:
 
 ???
 
-To run our proposal, we require a __discovery mechanism__ able to
+To run my proposal, I require a __discovery mechanism__ able to
 
 1. get the Spaces that a particular node belongs to,
 2. identify the WP and its setup version, and
 3. provide additional information about nodes to decide which one can be the next WP.
 
 I tested the impact of the discovery mechanism using mDNS and DNS-SD.
+
 However, the specific mechanism used is transversal to the architecture.
 
 ---
@@ -1413,9 +1412,11 @@ However, the specific mechanism used is transversal to the architecture.
 
 ???
 
-The selection process can start
+The selection process can start:
 
-1. when no WP is available (in this case, the first node to realize its absence starts this process) or
+First, when no WP is available.
+
+In this case, the first node to realize its absence starts this process.
 
 ---
 
@@ -1427,7 +1428,9 @@ The selection process can start
 
 ???
 
-2. when the current WP gets a worse score than other nodes (in this case, it's the current WP who checks this)
+Second, when the current WP gets a worse score than other nodes.
+
+In this case, it's the current WP the node who checks this periodically.
 
 ---
 
@@ -1502,15 +1505,13 @@ The goal of this ranking is to move the additional load needed to maintain the a
 ## Energy-aware search architecture
 ]
 
-<img alt="Real time measures" src="img/transpas/time_measures.png" style="width: 100%;" />
-[I will replace this table, with a chart, the photos of the real devices used and their specs]
+<img alt="Real time measures" src="img/transpas/device_times.png" style="width: 70%;" class="center" />
 
 ???
 
 To test all this architecture, I carried out several simulations.
 
-To parametrize them, I used the following response times as inputs.
-They have been measured in the real platforms shown and they affect the performance of the solution and indirectly how much energy is consumed.
+To parametrize them, I measured the time needed by real platforms to answer to a semantic query.
 
 ---
 
@@ -1519,15 +1520,18 @@ They have been measured in the real platforms shown and they affect the performa
 ## Energy-aware search architecture
 ]
 
-<img alt="Sample templates" src="img/transpas/evaluation_templates.png" style="width: 100%;" />
-[Apart from this, I will enumerate the sources of my datasets to show they authenticity]
+* AEMET metereological dataset
+* University of Luebeck Wisebed Sensor Readings
+* Kno.e.sis Linked Sensor Data
+* Bizkaisense
 
 ???
 
-For the data used in the simulation, I extracted them from real datasets describing sensing stations and their measures.
+For the data used in the simulation, I extracted them from real datasets.
 
-The templates used are the ones shown in the table.
-They consider queries from different nature.
+All these dataset describe sensing stations and their measures.
+
+On the other hand, the querying templates used consider queries from different nature.
 
 ---
 
@@ -1546,9 +1550,11 @@ Otras o muy complejas de implementar, o no ponían el código.
 ???
 
 As a baseline for the comparison, I used the rawest strategy: negative broadcasting.
+
 In this strategy, a node propagates its query to the rest of the nodes it knows about.
 
 As an optimization, a node can memorize which nodes successfully answer the same query in the past.
+
 That is, they can implement caching.
 
 ---
@@ -1563,19 +1569,21 @@ That is, they can implement caching.
 ???
 
 In the figure we show the results of performing 1.000 queries during one hour for 1 or 100 consumers using each of the strategies explained.
+In the proposed solution we can see that an increase in the number of consumers does not increase the number of requests too much.
+In fact, the difference between these two cases is found in the additional management tasks.
 
-Obviously my solution is better than NB.
-Comparing it to caching, it depends on the # of consumer and the # of queries.
-
+Comparing it with other solutions, it requires less requests than NB and caching with 100 different consumers.
 For the same number of queries, the more consumers there are, the closer to NB caching behaves.
-The figure shows that with 100 consumers, the caching strategy is in between NB and our solution.
 
-Caching with just one consumer is better than our solution in most of the cases.
-However, as the as the network size increases it gets very close to our solution.
+When there is only a consumer in the space, caching works slightly better than our solution.
+However, its performance gets closer to our solution as the network size increases.
 
-In our solution we can see that an increase in the number of consumers does not increase the numbers of requests too much.
-In fact, the difference between this two cases is found in the additional management tasks.
-We can also check the 
+In other cases, this balance between both strategies will change depending on:
+
+* the number of consumers and
+* the number of queries
+
+Unlike in caching, a _Consumer_ using our solution can also give accurate responses the first time it resolves a query.
 
 <!-- NOTA este caso es uno en el que las clues permiten discriminar muy bien, caching es mejor para preguntas que se repiten mucho,
 lo nuestro tira con "tipos de pregunta" semejantes -->
@@ -1587,7 +1595,7 @@ lo nuestro tira con "tipos de pregunta" semejantes -->
 ## Energy-aware search architecture
 ]
 
-<img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
+<img alt="Energy consumption for each class" src="img/transpas/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
 
 ???
 
@@ -1619,16 +1627,18 @@ On the right hand side, we see two desired effects:
 ???
 
 Using the same devices as in the previous simulation, this evaluation shows what happens when we have a very dynamic scenario where nodes frequently come and go.
-Specifically, it simulates nodes joining and leaving the Space at different intervals: 30 seconds, 1 minute, 5, 10, 20, 30 and 45 minutes.
+Specifically, it simulates nodes joining and leaving the Space at different intervals .weak[(30 seconds, 1 minute, 5, 10, 20, 30 and 45 minutes)].
 We also added an scenario with no drops as a baseline.
-Note that we represent this scenario by configuring the drop-interval with a greater value than the simulation time.
+.weak[Note that we represent this scenario by configuring the drop-interval with a greater value than the simulation time.]
 
-Furthermore, the evaluation tests the most harmful situation: the node leaving the Space abruptly is always the WP. 
+Furthermore, the evaluation tests the most harmful situation: the node __abruptly leaving__ the Space __is__ always the __WP__.
 
-In the right hand side, we see how the solution presented does not present a substantial overhead comparing to NB.
+In the left hand side, we see how in the worse case scenario, our solution is far below NB.
 
-In the left hand side, we see that for a frequent drop-interval, providers are forced to send their individual clues to many new WPs.
-However, when the aggregated clues have enough time to be propagated to most of the consumers (in this case at 5 minutes drop interval),
+In the right hand side, we see an increase of about 13.000 requests for the most frequent drop-interval simulation.
+This happens because providers are forced to send their individual clues to many new WPs.
+
+However, once the aggregated clues have been propagated to most of the consumers (in this case at 5 minutes drop interval),
 the new WP can be initiated from a previous aggregated clue version.
 This avoids the situation when most of the providers re-send their clues over and over.
 
@@ -1682,9 +1692,7 @@ class: center, middle
 
 .citations[
 
-* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
-__Reusing web-enabled actuators from a semantic space-based perspective__.
-International Workshop on Extending Seamlessly to the Internet of Things (esIoT), July 2014. To appear.
+* [esIoT2014] Reusing web-enabled actuators from a semantic space-based perspective.
 ]
 ???
 
@@ -1695,7 +1703,7 @@ Specifically, the idea I present here is currently in its early stages and still
 However, I find it interesting as it
 
 1. helps to have a complete picture of the whole model presented and
-1. covers the actuation in space-based computing from a completely novel perspective.
+1. it covers the actuation in space-based computing from a completely novel perspective.
 
 ---
 
@@ -1707,7 +1715,7 @@ However, I find it interesting as it
 
 ???
 
-To solve this question I first examined the common actuation patterns over Tuple Spaces.
+To solve this question I first examined the common Tuple Spaces' usage patterns.
 
 For sake of brevity, I will present just two of them.
 
@@ -1795,7 +1803,7 @@ and writes the result back into the space.
 
 ???
 
-As the workers write their results the master takes these results from the space.
+As the workers write their results, the master takes these results from the space.
 
 ---
 
@@ -1849,7 +1857,7 @@ We can translate the previous patterns to the UbiComp usage examples.
 
 ???
 
-For instance, a smartphone may write a "task to turn the fan on" in the space.
+For instance, a smartphone may write the task "turn the fan on" into the space.
 
 ---
 
@@ -1875,13 +1883,16 @@ A smart-fan which belongs to the same space, will then take the task,
 
 process it and as a result activate the blades.
 
-Then, it may write a result in the space (e.g., with information about when it was turned on) that the "activator node" will read.
+Then, it may write a result in the space that the "activator node" will read.
+
+For example, with information about when it was turned on.
 
 This approach has been widely applied in the literature.
 In the past, this idea evolved into service-oriented engines.
 .weak[The task-types where described through services and task through _service invocations_.]
 
 In fact, in the early stages of my PhD, I also explored this approach.
+
 However, the more I read about WoT, the more I liked its simplicity.
 
 ---
@@ -1919,7 +1930,7 @@ To make the API hypermedia-driven, the application has to describe the current s
 
 This way, the client can select the next state of the application through hypermedia.
 
-When the client is a human, it is trivial for him to the HTML content and to interpret which link to follow or which button to press.
+When the client is a human, it is trivial for him to interpret the HTML content and decide which link to follow or which button to press.
 
 ---
 
@@ -1933,7 +1944,7 @@ When the client is a human, it is trivial for him to the HTML content and to int
 
 However, doing this automatically (without human intervention) is currently a hot research topic.
 
-Some solutions propose to use the semantic web to describe this applications and state transitions.
+Some solutions propose to use the semantic web to describe these applications and state transitions.
 
 Personally, I have used a solution called RESTdesc.
 
@@ -1948,7 +1959,7 @@ Personally, I have used a solution called RESTdesc.
 
 ???
 
-RESTdesc describes HTTP methods using rules expressed in the Notation 3 (or N3) language.
+RESTdesc describes HTTP methods using rules expressed in the Notation 3 language (or N3).
 
 In the figure, we can see a description for a HTTP GET method.
 
@@ -1978,7 +1989,9 @@ A rule’s premise expresses the requirements to make an state transition.
 
 ???
 
-A rule’s conclusion expresses both the REST call that needs to be made and...
+A rule’s conclusion expresses both
+
+* the REST call that needs to be made and...
 
 ---
 
@@ -2057,7 +2070,7 @@ IF we also have...
 
 ???
 
-__a goal__, which is an special rule which expresses the ending state we wants to reach and...
+... background knowledge expressed with semantics, and...
 
 ---
 
@@ -2070,7 +2083,7 @@ __a goal__, which is an special rule which expresses the ending state we wants t
 
 ???
 
-... background knowledge expressed with semantics,
+__a goal__, which is an special rule which expresses the ending state we want to reach;
 
 ---
 
@@ -2083,7 +2096,7 @@ __a goal__, which is an special rule which expresses the ending state we wants t
 
 ???
 
-THEN we use a reasoner to make an execution plan.
+THEN we can use a reasoner to make an execution plan.
 
 Personally, I have used the EYE reasoner.
 
@@ -2121,8 +2134,6 @@ That is, RESTdesc becomes APIs hypermedia-driven.
 
 The main advantage of an hypermedia-driven API is that it can change its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
 
-So, considering the current prevalence of REST-like APIs, this additional feature will open a new world of possibilities to web apps.
-
 Translating it to the WoT field, it will allow to act using actuators not known at the design or implementation phases.
 
 ---
@@ -2159,7 +2170,7 @@ Translating it to the WoT field, it will allow to act using actuators not known 
 
 ???
 
-However, both mechanisms are quite distinct in nature.
+The two actuation techniques presented are quite distinct in nature.
 
 ---
 
@@ -2247,7 +2258,7 @@ We can also see in the table how each of them require additional features:
 
 So I made myself the following question: could space-based computing take advantage of these existing REST-based actuators?
 
-Furthermore, could this reuse be made in a seamless way for nodes already following each of techniques?
+Furthermore, could this reuse be made in a seamless way for nodes already following each of these techniques?
 
 ---
 
@@ -2263,6 +2274,7 @@ Furthermore, could this reuse be made in a seamless way for nodes already follow
 As a first step to answer this question, I planned a baseline scenario and implemented it using both mechanisms.
 
 The scenario is the "helloworld" of the scenarios: turning on and off a light.
+
 However, it helps to understand both actuation mechanisms and test the interoperation ideas.
 
 ---
@@ -2309,9 +2321,9 @@ In the case of REST-based actuation the crawler needs to obtain 5 different rule
 
 ???
 
-To check how much computing resources each techniques requires, I tested both techniques in a Raspberry Pi.
+To check how much computing resources each techniques requires, I tested them in a Raspberry Pi.
 
-Again, the scenario was tested with 1, 200, 400, 600, 800 and 1000 actuators.
+Again, the scenario was tested with 1 to a thousand actuators.
 
 ---
 
@@ -2324,10 +2336,12 @@ Again, the scenario was tested with 1, 200, 400, 600, 800 and 1000 actuators.
 
 ???
 
-In the chart, we see that the amount of actuators affects more severely to REST-based actuation.
+In the chart, we see that the amount of actuators affects more severely to __REST__-based actuation.
+
 This is due to the to the reasoning process which takes place in the node which generates the plan.
 
-In space-based actuation, most of the time is spent checking subscriptions at each write.
+In __space__-based actuation, most of the time is spent checking subscriptions at each write.
+
 Note that even if the subscription mechanism was unoptimized due to its prototyping nature, it made space-based actuation scale much better.
 
 ---
@@ -2383,7 +2397,7 @@ Note that even if the subscription mechanism was unoptimized due to its prototyp
 </table>
 ???
 
-From the results and after analysing the characteristics of both techniques, we came out to the following table.
+Considering these results and after analysing the characteristics of both techniques, we came out to the following table.
 
 It summarizes the strengths and weaknesses of both techniques.
 
@@ -2440,7 +2454,7 @@ It summarizes the strengths and weaknesses of both techniques.
 </table>
 ???
 
-From the point of view of the actuator, the previous charts have already shown its higher activity compared to space-based actuation.
+From the actuator point of view, the previous charts have already shown its higher activity compared to space-based actuation.
 
 ---
 
@@ -2502,7 +2516,7 @@ That is, they just attend to the request received using HTTP.
 Probably as a consequence of these few requirements, exposing the actuation capabilities of the limited devices with HTTP is a consolidated trend.
 .weak[This tendency is backed by the WoT initiative.]
 
-REST-desc only requires them to describe an API's resources semantically.
+REST-desc only requires devices to additionally provide their API's resources' descriptions.
 
 This can be done before deploying them and does not affect to their usual operation.
 
@@ -2556,9 +2570,9 @@ Therefore, the space needs to be extended to make their interoperability possibl
 
 And... how is it extended?
 
-Specifically, the space will be responsible of:
+The space will be responsible of:
 
-* Translating subscription to a task result into a reasoning goal.
+* Translating a _subscription to a task result_ into a reasoning goal.
  Considering the how I implemented the subscriptions .weak[(based on SPARQL using RDFLib)], this is a straightforward syntactic translation .weak[(from SPARQL to N3QL for EYE)].
 
 ---
@@ -2611,14 +2625,14 @@ However, the hybrid-actuation technique presented needs further investigation to
 For example,
 
 * Would the translation between the subscriptions and the goal always be possible?
- What if the node initiating the change does not subscribe to any result?
+ .weak[What if the node initiating the change does not subscribe to any result?]
 
 * If there are two or more paths to reach a goal, how can we discern which one to follow?
- This problem is specific to the REST actuation using REST-desc.
+ .weak[This problem is specific to the REST actuation using REST-desc.]
 
 * How does the middleware deal with the coexistence of both mechanisms?
  When both methods can be applied, which one is triggered?
- Which one should prevail over the second?
+ .weak[Which one prevails over the other?]
 
 
 In any case, I analysed actuation in space-based computing from a novel-point of view.
@@ -2676,9 +2690,12 @@ This three elements have guided my dissertation:
 
 ???
 
-The autonomy is reached through the web-based dual space model presented.
+As a result, I wanted to check that the devices could communicate autonomously in an uncoupled and interoperable fashion.
 
-This model has a federated space formed by the _sub-spaces_ managed by devices which manage their own semantic data.
+
+The __autonomy__ is reached through the web-based dual space model presented.
+
+This model has a federated space formed by the _sub-spaces_ where devices manage their own semantic data.
 
 To help them searching in such space, I have designed a dynamic architecture which
 
@@ -2700,7 +2717,7 @@ Now, actuators already exposing their capabilities through an HTTP API, only nee
 
 ???
 
-Regarding the uncoupling, all the communication between the devices is driven by the data.
+Regarding the __uncoupling__, all the communication between the devices is driven by the data.
 
 On top of the space, there is no need to refer to concrete addresses.
 
@@ -2717,42 +2734,10 @@ Furthermore, the model also contemplates a more classical space that devices can
 
 ???
 
-Finally, I have dealt with the interoperability:
+Finally, I have dealt with the __interoperability__:
 
 1. using the semantic web to promote data reuse and the web to use a widely accepted exchange mechanism; and
 1. analysing how to reuse a novel and true REST-based actuation technique from the space-based computing perspective.
-
----
-
-# Contributions: space model
-
-<div style="font-size: smaller">
-
-* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
-__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
-[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
-[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
-* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
-__RESTful Triple Spaces of Things__.
-Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
-* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
-__Collaboration of Sensors and Actuators through Triple Spaces__.
-In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
-* Aitor Gómez-Goiri, Diego López-de-Ipiña.
-__On the complementarity of Triple Spaces and the Web of Things__.
-In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
-
-</div>
-
-???
-
-The work done in this dissertation has been covered by the following publications.
-
-Regarding the _space model_,
-
-although I published other early papers related to Triple Spaces and smart-environments,
-
-these publications are the ones which cover most of the aspects presented today.
 
 ---
 
@@ -2760,21 +2745,13 @@ these publications are the ones which cover most of the aspects presented today.
 
 <div style="font-size: smaller">
 
-* Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña.
-__Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications__.
-[Computers in Human Behavior](http://www.journals.elsevier.com/computers-in-human-behavior/),
-[Vol. 30](http://www.sciencedirect.com/science/journal/07475632/30/supp/C), Pages [460-467](http://www.sciencedirect.com/science/article/pii/S0747563213002148), Jan 2014.
-* Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña.
-__RESTful Triple Spaces of Things__.
-Third International Workshop on the Web of Things (WoT 2012). Newcastle, UK, June 2012.
-* Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña.
-__Collaboration of Sensors and Actuators through Triple Spaces__.
-In [IEEE Sensors 2011](http://ieee-sensors2011.org/), pages 651-654. Limerick, Ireland, October 2011.
-* Aitor Gómez-Goiri, Diego López-de-Ipiña.
-__On the complementarity of Triple Spaces and the Web of Things__.
-In Proceedings of the Second International Workshop on Web of Things, WoT'11, pages 12:1–12:6.
+* [CHB2014] Lightweight semantic framework for interoperable ambient intelligence applications
+* [WoT2012] RESTful Triple Spaces of Things
+* [IEEESensors2011] Collaboration of Sensors and Actuators through Triple Spaces.
+* [WoT2011] On the complementarity of Triple Spaces and the Web of Things.
 
 </div>
+
 ???
 
 The work done in this dissertation has been covered by the following publications.
@@ -2791,12 +2768,8 @@ these publications are the ones which cover most of the aspects presented today.
 
 <div style="font-size: smaller">
 
-* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
-__Energy-aware architecture for information search in the semantic web of things__.
-[International Journal of Web and Grid Services](http://www.inderscience.com/jhome.php?jcode=ijwgs), [Vol. 10, No. 2/3](http://www.inderscience.com/info/inarticle.php?artid=60252), pp. 192–217, 2014.
-* Aitor Gómez-Goiri and Diego López-de-Ipiña.
-__Assessing data dissemination strategies within triple spaces on the web of things__.
-In 2012 Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (IMIS), pages 763 –769, July 2012.
+* [IJWGS2014] Energy-aware architecture for information search in the semantic web of things.
+* [IMIS2012] Assessing data dissemination strategies within triple spaces on the web of things.
 
 </div>
 ???
@@ -2811,9 +2784,7 @@ The second one is a more general and premature approach to the same problem.
 
 <div style="font-size: smaller">
 
-* Aitor Gómez-Goiri, Iñigo Goiri, and Diego López-de-Ipiña.
-__Reusing web-enabled actuators from a semantic space-based perspective__.
-International Workshop on Extending Seamlessly to the Internet of Things (esIoT), July 2014. To appear.
+* [esIoT2014] Reusing web-enabled actuators from a semantic space-based perspective.
 
 </div>
 ???
@@ -2824,18 +2795,13 @@ Finally, the following paper explains the mixed actuation technique and its rela
 
 # Scientific contributions: related
 
-<div style="font-size: smaller">
+
 
 * Lightweight __user access control__ for limited devices.
- * Juan Álvaro Muñoz Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Leocadio González Casado.
- _Enabling user access control in energy-constrained wireless smart environments_.
- Journal of Universal Computer Science, 19(17):2490–2505, November 2013.
- * Juan Álvaro Muñoz Naranjo, Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña, and Leocadio González Casado.
- _Extending a user access control proposal for wireless network services with hierarchical user credentials_.
- In CISIS’13, in Advances in Intelligent Systems and Computing, n. 239, pp. 601–610.
- * Juan Álvaro Muñoz Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and L. G. Casado.
- _Lightweight user access control in energy-constrained wireless network services_.
- In Ubiquitous Computing and Ambient Intelligence, LNCS, pp. 33–41, January 2012.
+<div style="font-size: smaller">
+ * [JUCS2013] Enabling user access control in energy-constrained wireless smart environments.
+ * [CISIS2013] Extending a user access control proposal for wireless network services with hierarchical user credentials.
+ * [UCAmI2012] Lightweight user access control in energy-constrained wireless network services.
 
 </div>
 ???
@@ -2846,24 +2812,21 @@ In parallel to the development of this thesis, I have co-autored three papers ab
 
 # Scientific contributions: related
 
-<div style="font-size: smaller">
+
 
 * Use of TSC middleware in a number of __different domains__:
- * Aitor Gómez-Goiri, Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Diego López-de-Ipiña, and Sergio Fínez.
- _Easing the mobility of disabled people in supermarkets using a distributed solution_.
+<div style="font-size: smaller">
+ * [IWAAL2011] Easing the mobility of disabled people in supermarkets using a distributed solution.
  In Ambient Assisted Living, n. 6693 in LNCS, pp. 41–48, January 2011.
- * Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Fínez Sergio.
- _Distributed semantic middleware for social robotic services_.
- In Robot 2011, Seville, Spain, November 2011.
- * Xabier Laiseca, Eduardo Castillejo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, and Ester González Aguado.
- _Distributed tracking system for patients with cognitive impairments_.
- In Ambient Assisted Living, n. 6693 in LNCS, pp. 49-56, January 2011. 
+ * [Robot2011] Distributed semantic middleware for social robotic services
+ * [IWAAL2011] Distributed tracking system for patients with cognitive impairments.
 
 </div>
 ???
 
 Furthermore, I have published four other articles explaining our experiences applying a TSC middleware in a number of __different domains__.
-This middleware compliant with most of the considerations I presented before.
+
+This middleware is compliant with most of the considerations I presented before.
 
 ---
 
@@ -2929,16 +2892,15 @@ These projects used it in __different domains__...
 
 To end this presentation, let me comment some considerations.
 
-* The first is that, nowadays, managing semantic content in limited devices is still challenging
- * However, there are many parallel works on reasoning, compressing semantic contents, etc. that will probably make it easier in the near future.
-* The second is that I have the impression that we sometimes look down on interoperability both in the academia and in the industry.
- * In the academia, due to the prototyping nature of most of our applications
- * In the industry, due to a lack of openness and impossibility to perceive its benefits in the short term
- * However, this is changing too with the _Linked Data_ initiative.
-* Finally, REST-architectures have been subject of discussion since two thousand.
- * Although REST-like architectures are very popular nowadays, the need of making them hypermedia-driven is not shared by many web developers.
- * I personally experienced the benefits of describing a REST API in a machine _understandable_ way through RESTdesc.
- * If this or a similar tool becomes popular, automatically reusing third-party applications' capabilities will be closer than ever.
+* From my experience, nowadays there are __not many__ embedded or mobile devices able to manage the semantic web successfully.
+ * However, recent works on lightweight reasoning, communication protocols or semantic formats, can __considerably reduce__ the computing requirements needed.
+* The second is that I have the impression that we sometimes __look down on__ interoperability.
+ * .weak[Causes: impossibility to perceive its benefits in the short term and privacy concerns]
+ * However, the __Linked Data__ initiative is slowly changing this perception.
+* Finally, although __REST-like__ architectures are very popular nowadays, the need of making them hypermedia-driven is not shared by many web developers.
+ * And this is a pity, because otherwise __using__ third-party web applications' __automatically__ would be much closer.
+ * .weak[Razonamiento: in this case, the industry will put pressure on the academia {akadimia}]
+
 ---
 
 class: middle, questionslide
@@ -2948,7 +2910,7 @@ Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deu
 
 ???
 
-With this I conclude my presentation and I am ready to answer the questions and comments you make issue regarding this dissertation.
+With this I conclude my presentation and I am ready to answer the questions and comments you make regarding this dissertation.
 
 Thank you very much for listening.
 
@@ -2989,18 +2951,21 @@ class: center, middle
 
 # The Semantic Web and limited devices
 
+* semantic reasoners for this type of environments (mencionar al tio que hizo un razonador adaptado)
+* lightweight semantic formats
+* lightweight web protocols
+* mobile and embedded devices' the processing capability
+* [autonomy of the batteries](http://energi.us/liberacion-patentes-tesla/) or
+* energy harvesting
+* large etc.
+
 ???
 
-Some <!-- Our early attempts with Arduino were unsuccessful-->
+Some of our attempts with several platforms (e.g., Arduino) where unsuccessful.
 
 However, with current advances in:
 
- * semantic reasoners for this type of environments (mencionar al tio que hizo un razonador adaptado)
- * lightweight semantic formats
- * lightweight web protocols
- * mobile and embedded devices' the processing capability
- * [autonomy of the batteries](http://energi.us/liberacion-patentes-tesla/) or
- * energy harvesting...
+[leer]
 
 More and more devices will be able to manage semantics.
  <!--
@@ -3017,9 +2982,7 @@ More and more devices will be able to manage semantics.
  -->
 ---
 
-# Space model: baseline
-
-Triple Space Computing (TSC)
+# Triple Space Computing (TSC)
 
  * Spaces identified by URIs
  * Tuples == RDF Triples & RDF Graphs
@@ -3032,10 +2995,6 @@ Triple Space Computing (TSC)
 ???
 
 Uses elements from the SW
-
----
-
-Problem: semantic computation (podemos poner hasta graficos de cosas que hayamos hecho)
 
 ---
 
@@ -3054,7 +3013,53 @@ Problem: semantic computation (podemos poner hasta graficos de cosas que hayamos
 
 class: center, middle
 
-# Additional Evaluation
+# Additional evaluation details
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Specs" src="img/transpas/devices_technical.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Libraries used" src="img/transpas/devices_libraries.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Real time measures" src="img/transpas/time_measures.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Sample templates" src="img/transpas/evaluation_templates.png" style="width: 100%; margin-top: 3em;" />
+
+???
+
+The templates used are the ones shown in the table.
+
+---
+
+# Evaluation: Clues recall
+
+<img alt="Clues recall" src="img/transpas/clue_recall.png" style="width: 100%; margin-top: 10%;" />
+
+---
+
+# Evaluation: Clues precision
+
+<img alt="Clues recall" src="img/transpas/clue_precision.png" style="width: 100%; margin-top: 10%;" />
+
+---
+
+# Evaluation: Clues length
+
+<img alt="Clues recall" src="img/transpas/clues_length.png" style="width: 65%; margin-top: 10%;" class="center" />
 
 ---
 
@@ -3069,7 +3074,24 @@ In the following chart we show the type of communication for an scenario with 10
 It shows that most of the requests are from consumers to providers.
 
 Therefore, maintaining the architecture does not creates much overhead and it does not increase much with the number of consumers.
-  
+
+---
+
+# Evaluation: Discovery mechanism
+
+* Use of mDNS and DNS-SD.
+* TXT record changes
+ 1. when a new WP is selected
+ 2. when we update the time elapsed since it joined the Space and its battery charge level
+
+* In the most static scenario the TXT record is written only once.
+* In the more dynamic one, it updates that record 126 times after writing it for the first time.
+
+???
+
+This demonstrates that the overhead generated on the discovery system by our solution is minimal even in the worst-case scenario.
+
+
     </textarea>
     <!--<script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">-->
     <script src="remark-0.5.9.min.js" type="text/javascript">
