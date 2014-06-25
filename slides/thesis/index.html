@@ -73,7 +73,7 @@ class: center, middle
 
 In the beginning researchers created the Internet.
 
-Internet composed by few computers.
+Internet was composed by few computers.
 
 ---
 
@@ -189,7 +189,7 @@ Since most devices have a mobile nature, they can come and go frequently in the 
 
 ???
 
-For instance, in the figure we can see that the umbrella which was in the stand few moments ago, is now being used outside the house.
+For instance, in the figure we can see that the umbrella which was in the stand few moments ago, is now being used outside the house, outside the smart environment.
 
 ---
 
@@ -231,10 +231,11 @@ Space-based computing (or Tuple Spaces) faces this dynamism successfully.
 
 Tuple Spaces is a paradigm where nodes coordinate with each other by writing and reading structured pieces of information (i.e., tuples) in a shared space.
 
-This paradigm can be uncoupled in space and time.
+This paradigm can be uncoupled in space and in time.
 
 __Space uncoupling__ is achieved because the nodes don't need to know each other beforehand to communicate.
-That is, TS' primitives do not care about addresses and references, they just care about the content being shared.
+
+That is, TS' primitives do not care about addresses and references, they just care about the content which is being shared.
 
 __Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
 
@@ -267,6 +268,10 @@ The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __inte
  > The ability of two or more systems or components to __exchange__ information
  > and to __use__ the information that has been exchanged.
 
+???
+
+The [AI] triple [I] defines...
+ 
 ---
 
 # UbiComp, challenge 2: heterogeneity
@@ -296,15 +301,12 @@ So, let's first talk about the second problem: how to use (or reuse) information
 
 We can identify two levels to allow this __use__:
 
- 1. The  __syntactic__ level cares about  the format of the data (i.e. its syntax and encoding)
+ 1. The  __syntactic__ level, which cares about  the format of the data (i.e. its syntax and encoding)
     * For instance, if the robot does not undestand chinese characters, the information the mobile phone provides will be useless.
 
- 1. The __semantic__ level gives a precise meaning to the info
+ 1. The __semantic__ level gives a precise meaning to the information...
     * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
     * Following the example, this character may mean different things depending on the context (and it does actually).
-    * TODO Preguntar a primez cual era el caracter conflictivo!
-     * Funnily enough, I translated something to chinese for this presentation using an automatic tool.
-     * When my co-supervisor asked about the meaning to a chinese colleague, it was confused because the meaning was either "X or X".
 
 ---
 
@@ -319,6 +321,12 @@ We can identify two levels to allow this __use__:
 ???
 
 To achieve both levels, I propose to use __Semantic Web__ standards and tools.
+
+The __vision__ of the Semantic Web is to extend principles of the Web from documents to data.
+
+It propose to relate terms to one another, so they can be shared and reused across applications.
+
+This terms can be processed automatically revealing new relationships among the data.
 
  > .weak[The __vision__ of the Semantic Web is to extend principles of the Web from documents to data.
  > Data should be accessed using the general Web architecture using, e.g., URI-s;
@@ -343,7 +351,7 @@ The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238)  defines _inte
 
 ???
 
-The other aspect which affect the interoperability is __how to exchange information__.
+The other aspect which affects the interoperability is __how to exchange information__.
 
 To interoperate, it is better to adopt a __widely accepted__ communication mechanism. <!-- mechanism/protocols -->
 This is called interop __ab-initio__.
@@ -376,6 +384,7 @@ http://rawgit.com/gomezgoiri/gomezgoiri.github.com/master/slides/thesis/index.ht
 ???
 
 The web is massively accepted <!--by humans. (this is not a real reason) -->
+
  * By humans
  * But also, by machines: a lot of applications expose their capabilities using HTTP APIs
 
@@ -428,6 +437,15 @@ This goes hand in hand with my interest in having devices which are not mere cli
 ]
 <img alt="The web of Things" src="img/transpas/ubicomp_solutions.png" style="width: 100%; display: block;">
 
+???
+
+Summarizing, I propose to face UbiComp dynamism using space-base computing.
+
+To tacke the heterogeneity, I propose to use
+
+* the web to exchange information and
+* the semantic web standards to make it reusable
+
 ---
 
 # State-of-the-art
@@ -464,6 +482,7 @@ This is also common in most of the systems which use the Semantic Web in UbiComp
 ???
 
 So, one popular design solution when working with limited devices is to centralize all the knowledge in a more powerful machine (or machines).
+
 For sake of clarity, let's assume that there is just one machine.
 
 This way, the devices periodically send their information to this machine,
@@ -537,6 +556,8 @@ So, after this parenthesis, let's return to the delegation of semantic provision
 
 This design has two problems.
 
+[RESPIRAR y LEER ANTES  que viene frase larga]
+
 First, when devices rely on others to provide information, it is not guaranteed
 that the information accessed will accurately represent the last information
 available in the data providers.
@@ -593,7 +614,7 @@ Afterwards, the sensor generates a new version with new measures at t6.
 
 ???
 
-It is obvious that if other device now asked for the content provided by this sensor to the server...
+It is obvious that if other device now askes for the content provided by this sensor to the server...
 
 ---
 
@@ -640,9 +661,11 @@ And this happens way too frequently on the Internet.
 
 ???
 
-For example, the Navastag was an IoT which completely depent on an external service.
+For example, the Navastag was an IoT device which was completely depent on an external service.
+
 The company of this internet-connected bunny dissapeared and they did not maintain the servers.
 <!-- They released a poorly documented code. -->
+
 As a consequence, nowadays the Navastag is pretty much an expensive decoration.
 
 
@@ -843,10 +866,9 @@ The triples are the most basic information unit in Triple Space Computing.
 ???
 
 * The API's TSC primitives can be directly mapped to HTTP verbs
-* Furthermore, we take advantage of other HTTP features:
- * status codes,
- * content negotiation,
- * etc.
+* Furthermore, we take advantage of other HTTP features such as
+ * status codes or the
+ * content negotiation.
 
 ---
 
@@ -897,7 +919,7 @@ Anyway, accessing to the spaces through a REST-like API provides the following f
 And it also comes with some drawbacks:
 
 * Less simplicity, reusability & visibility than pure REST APIs and
-* Mechanisms such as subscriptions and transactions go against REST architecture's statelessness
+* that Mechanisms such as subscriptions and transactions go against REST architecture's statelessness
 
 ---
 
@@ -1227,6 +1249,7 @@ Note that from now to the evaluation, I will talk about roles rather than specif
 Each device can select at any time its role: provider, consumer, both or none.
 
 The White Page is selected between all of them.
+
 For instance, from the figure, providing the laptop is steady, it may be chosen as the new WP.
 
 ---
