@@ -11,14 +11,14 @@ slides: http://gomezgoiri.net/slides/thesis/index.html
 
 Supervisors:
 
-* Diego López de Ipiña
-* Iñigo Goiri.
+* [Diego López de Ipiña](http://paginaspersonales.deusto.es/dipina/) (University of Deusto)
+* [Iñigo Goiri](http://www.research.rutgers.edu/~goiri/) ([Rutgers University](http://www.rutgers.edu/)).
 
 Jury panel:
 
-* Antonio F. Gómez-Skarmeta (University of Murcia, president)
-* George Roussos (University of London)
-* Mikel Larrea (University of the Basque Country)
+* Antonio F. Gómez-Skarmeta ([University of Murcia](http://www.um.es/), president)
+* [George Roussos](http://www.dcs.bbk.ac.uk/~gr/) ([University of London](http://www.dcs.bbk.ac.uk))
+* [Mikel Larrea](http://www.sc.ehu.es/acwlaalm/) ([University of the Basque Country](http://www.ehu.es))
 
 <hr />
 
