@@ -4,7 +4,7 @@ category: publications
 title: Semantic Tuple Spaces for Constrained Devices&#58; A Web-compliant Vision
 authors: Aitor Gómez-Goiri
 rest_citation: PhD thesis, <a href="http://www.deusto.es">Universidad de Deusto</a>, June 16th, 2014.
-pdf: https://dl.dropboxusercontent.com/u/9804351/dissertation.pdf
+pdf: https://dl.dropboxusercontent.com/u/9804351/gomezgoiri2014dissertation.pdf
 bib: /files/bibtex/gomezgoiri2014dissertation.bib
 slides: http://gomezgoiri.net/slides/thesis/index.html
 --- 
