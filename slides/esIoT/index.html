@@ -4,7 +4,7 @@
     <title>Reusing Web-enabled Actuators from a Semantic Space-based Perspective</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!--<base href="http://localhost:8000/">-->
-    <base href="https://dl.dropboxusercontent.com/u/9804351/">
+    <!--<base href="https://dl.dropboxusercontent.com/u/9804351/">-->
     <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
   </head>
   <body>
@@ -407,7 +407,7 @@ Thanks to these uncoupling levels, TS faces dynamism successfully both in the sh
 class: center, middle
 
 # Actuation
-## How to produce a change in the space?
+## How to make a change in the space?
 
 ---
 
@@ -979,11 +979,17 @@ Furthermore, could this reuse be made in a seamless way for nodes already follow
 
 ---
 
+class: center, middle
+
+# Hybrid actuation
+## Could we seamlessly reuse web actuators from space-based perspective?
+
+---
+
 # Driving scenario
 .subtitle[
 ## Actuation
 ]
-
 <img alt="XXX" src="img/esiot/actuation_scenario.png" style="width: 100%;" />
 
 ???
@@ -1339,12 +1345,17 @@ This way, we avoid additional costly networking operations (both in bandwidth an
 
 ---
 
-# Discussion
+# Conclusions and Future Work
 .subtitle[
 ## Actuation
 ]
 
-Further investigation with more complex scenarios is needed:
+Seamless reuse in simple scenario was possible.
+
+ * <span style="font-size: large;"> [github.com/gomezgoiri /reusingWebActuatorsFromSemanticSpace](https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace) </span>
+
+
+Further investigation with more complex scenarios is needed.
 
 * Is the __translation__ between the subscriptions and the goal always possible?
 * If the plan has __2 or more paths__ to achieve a goal, which one should we chose?
@@ -1366,41 +1377,11 @@ For example,
  When both methods can be applied, which one is triggered?
  .weak[Which one prevails over the other?]
 
-
 In any case, I analysed actuation in space-based computing from a novel-point of view.
 
 From the space-based consumer perspective, I proposed to seamlessly reuse actuators from the WoT.
 
----
-
-class: center, middle
-
-# Conclusion
-
-???
-
-To conclude, let me present my contributions and conclusions.
-
----
-
-# Future work
-
-* Are __limited__ devices just __dumb__ devices unable to manage semantic annotations?
-* __Do__ we really __need the Semantic Web__?
-* Will true-__REST__-architectures ever __prevail__?
-
-???
-
-To end this presentation, let me comment some considerations.
-
-* From my experience, nowadays there are __not many__ embedded or mobile devices able to manage the semantic web successfully.
- * However, recent works on lightweight reasoning, communication protocols or semantic formats, can __considerably reduce__ the computing requirements needed.
-* The second is that I have the impression that we sometimes __look down on__ interoperability.
- * .weak[Causes: impossibility to perceive its benefits in the short term and privacy concerns]
- * However, the __Linked Data__ initiative is slowly changing this perception.
-* Finally, although __REST-like__ architectures are very popular nowadays, the need of making them hypermedia-driven is not shared by many web developers.
- * And this is a pity, because otherwise __using__ third-party web applications' __automatically__ would be much closer.
- * .weak[Razonamiento: in this case, the industry will put pressure on the academia {akadimia}]
+Additionally, what about reusing space-based actuation capabilities from the web?
 
 ---
 
