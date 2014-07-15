@@ -28,27 +28,20 @@ Hello to everyone.
 
 My name is... I come from the univ... to present the paper I made together with Iñigo and Diego entitled...
 
-<!--
-- --
+---
 
 # Outline
 
-.weak[
+1 - Introduction
 
-1- Introduction
+2 - Baseline actuation techniques
 
-2- Hypothesis
+3 - Comparison
 
-3 - Space model
+4 - Hybrid actuation
 
-4- Search architecture
+5 - Conclusions
 
-5- Actuation
-
-]
-
-6- Conclusions
--->
 ---
 
 class: center, middle
@@ -66,7 +59,11 @@ class: center, middle
 
 ???
 
-In the beginning Internet was composed by few computers.
+So let's start from the beginning.
+
+At the beginning, there were few computers in the Internet.
+
+Maybe too beginning.
 
 ---
 
@@ -124,7 +121,7 @@ Both IoT and the mobile computing have contributed to the __Ubicomp__ idea.
 
 ---
 
-# UbiComp, challenge: heterogeneity
+# Heterogeneity challenge
 .subtitle[
 ## Introduction
 ]
@@ -133,15 +130,15 @@ Both IoT and the mobile computing have contributed to the __Ubicomp__ idea.
 
 ???
 
-So, nowadays, we have __heterogeneous__ devices running on top of heterogeneous applications.
+So, as we saw in the previous slide, nowadays, we have __heterogeneous__ devices running on top of heterogeneous applications.
 
 This means that the __interoperability__ is a key property for these environments.
 
 ---
 
-# UbiComp, challenge: heterogeneity
+# Interoperability
 .subtitle[
-## Introduction
+## Introduction > Heterogeneity
 ]
 
 The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
@@ -155,9 +152,9 @@ The [AI] triple [I] defines...
  
 ---
 
-# UbiComp, challenge: heterogeneity
+# Interoperability
 .subtitle[
-## Introduction
+## Introduction > Heterogeneity
 ]
 
 The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
@@ -171,9 +168,9 @@ So, let's first talk about the second problem: how to use (or reuse) information
 
 ---
 
-# UbiComp, heterogeneity: use info
+# Interoperability: use info
 .subtitle[
-## Introduction
+## Introduction > Heterogeneity
 ]
 
 <img alt="The robot does not understand chinese or japanese" src="img/esiot/interoperability02.png" style="width: 100%; display: block;">
@@ -192,9 +189,9 @@ We can identify two levels to allow this __use__:
 ---
 
 
-# UbiComp, heterogeneity: use info (solution)
+# Interoperability: use info (solution)
 .subtitle[
-## Introduction
+## Introduction > Heterogeneity
 ]
 
 <img alt="The robot does understand terms" src="img/esiot/interoperability03.png" style="width: 100%; display: block;">
@@ -219,9 +216,9 @@ This terms can be __processed automatically__ revealing __new relationships__ am
 
 ---
 
-# UbiComp, heterogeneity:  exchange info
+# Interoperability:  exchange info
 .subtitle[
-## Introduction
+## Introduction > Heterogeneity
 ]
 
 The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238)  defines _interoperability_ as
@@ -242,7 +239,7 @@ this paper analyses __more general__ communication strategies.
 
 # Exchange info 1: the Web
 .subtitle[
-## Introduction > UbiComp, heterogeneity
+## Introduction > Heterogeneity
 ]
 <img alt="The web is widely accepted" src="img/esiot/web_accepted01.png" style="width: 100%;" />
 
@@ -261,7 +258,7 @@ __REST__ architectural style comprises the design principles of _the modern web_
 
 # Exchange info 1: the Web
 .subtitle[
-## Introduction > UbiComp, heterogeneity
+## Introduction > Heterogeneity
 ]
 <img alt="The web is widely accepted" src="img/esiot/web_accepted02.png" style="width: 100%;" />
 
@@ -280,7 +277,7 @@ Note that most of these properties are particularly useful for limited devices.
 
 # Exchange info 1: the Web
 .subtitle[
-## Introduction > UbiComp, heterogeneity
+## Introduction > Heterogeneity
 ]
 
 <img alt="The web of Things" src="img/esiot/wot.png" style="width: 100%; display: block;">
@@ -298,7 +295,7 @@ This way, they are first-class web citizens and can seamlessly work with other w
 
 # Exchange info 2: Tuple Spaces
 .subtitle[
-## Introduction > UbiComp, heterogeneity
+## Introduction > Heterogeneity
 ]
 <img alt="Space-based computing: rd, in and out primitives" src="img/esiot/space_based01.png" style="width: 100%;">
 
@@ -312,7 +309,7 @@ Tuple Spaces is a paradigm where nodes coordinate with each other by writing and
 
 # Exchange info 2: Tuple Spaces
 .subtitle[
-## Introduction > UbiComp, heterogeneity
+## Introduction > Heterogeneity
 ]
 <img alt="Space-based computing: space and time uncoupled" src="img/esiot/space_based02.png" style="width: 100%;">
 
@@ -320,100 +317,22 @@ Tuple Spaces is a paradigm where nodes coordinate with each other by writing and
 
 This paradigm can be uncoupled in space and in time.
 
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based03.png" style="width: 100%;">
-
-???
-
-__Space uncoupling__ is achieved because the nodes don't need to know each other beforehand to communicate.
-
-That is, TS' primitives do not care about addresses and references, they just care about the content which is being shared.
-
-When the computer writes the circle does not know which one node use this piece of info.
-
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based04.png" style="width: 100%;">
-
-???
-
-Similarly, if the umbrella reads a circle, it does not know which one generated this concrete blue circle.
-
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based05.png" style="width: 100%;">
-
-???
-
-__Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
-
-For instance, after writing the pentagon...
-
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based06.png" style="width: 100%;">
-
-???
-
-...the laptop might left the space.
-
-For instance, because it run out of battery of it phisically left the room.
-
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based07.png" style="width: 100%;">
-
-???
-
-Then, an umbrella might join the space.
-
----
-
-# Exchange info 2: Tuple Spaces
-.subtitle[
-## Introduction > UbiComp, heterogeneity
-]
-<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based08.png" style="width: 100%;">
-
-???
-
-If it ask for a pentagon, it will get the one written by the laptop even if it is not present.
-
-Thanks to these uncoupling levels, TS faces dynamism successfully both in the short and in the long term.
+ * _Space uncoupling_ is achieved because the nodes __don't need to know each other beforehand to communicate__.
+ * _Time uncoupling_ is achieved because two nodes communicating with each other __do not need to coexist at the same time__.
 
 ---
 
 class: center, middle
 
-# Actuation
-## How to make a change in the space?
+# Baseline actuation techniques
+## How to make a change in the environment?
+### (2/5)
 
 ---
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns01.png" style="width: 100%;" />
 
@@ -427,7 +346,7 @@ For sake of brevity, I will present just two of them.
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns02.png" style="width: 100%;" />
 
@@ -441,7 +360,7 @@ In this pattern, there is a master process and many worker processes able to com
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns03.png" style="width: 100%;" />
 
@@ -453,7 +372,7 @@ First, the master takes a problem, divides it into smaller tasks, and
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns04.png" style="width: 100%;" />
 
@@ -465,7 +384,7 @@ writes these tasks into the space.
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns05.png" style="width: 100%;" />
 
@@ -477,7 +396,7 @@ Then, any available worker takes a task,
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns06.png" style="width: 100%;" />
 
@@ -489,7 +408,7 @@ processes it,
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns07.png" style="width: 100%;" />
 
@@ -501,7 +420,7 @@ and writes the result back into the space.
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns08.png" style="width: 100%;" />
 
@@ -513,7 +432,7 @@ As the workers write their results, the master takes these results from the spac
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns09.png" style="width: 100%;" />
 
@@ -527,7 +446,7 @@ This pattern is scalable and naturally balances the load on the space.
 
 # Patterns for Tuple Spaces
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns10.png" style="width: 100%;" />
 
@@ -537,37 +456,37 @@ The second pattern in the __specialist pattern__.
 
 It can be seen as a variation of the previous one.
 
-The difference is that in this pattern each worker is specialized and knows how to make a particular task.
+The difference is that in this pattern each __worker is specialized__ and knows how to make a particular task.
 
 ---
 
 # Patterns for Tuple Spaces in UbiComp
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns11.png" style="width: 100%;" />
 
 ???
 
-We can translate the previous patterns to the UbiComp usage examples.
+We can __translate__ the previous patterns to our domain.
 
 ---
 
 # Patterns for Tuple Spaces in UbiComp
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns12.png" style="width: 100%;" />
 
 ???
 
-For instance, a smartphone may write the task "turn the fan on" into the space.
+For instance, a smartphone may write the "__turn the fan on__" __task__ into the space.
 
 ---
 
 # Patterns for Tuple Spaces in UbiComp
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns13.png" style="width: 100%;" />
 
@@ -579,15 +498,15 @@ A smart-fan which belongs to the same space, will then take the task,
 
 # Patterns for Tuple Spaces in UbiComp
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/ts_patterns14.png" style="width: 100%;" />
 
 ???
 
-process it and as a result activate the blades.
+process it and as a result __activate the blades__.
 
-Then, it may write a result in the space that the "activator node" will read.
+Then, it may __write a result__ in the space that the "activator node" will read.
 
 For example, with information about when it was turned on.
 
@@ -600,7 +519,7 @@ The task-types where described through services and task through _service invoca
 
 # HTTP API
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <div style="margin-top: 5em;"></div>
@@ -613,20 +532,19 @@ true
 
 ???
 
-
-However, the more I read about WoT, the more I liked its simplicity.
+However, the more I read about __WoT__, the more I liked its simplicity.
 
 For example, for the fan, we could simply make a HTTP POST request to the smart-fan.
 
-Unfortunately, like most of the resource-oriented API, this per-se would not be REST-compliant.
+Unfortunately, like most of the resource-oriented API, this per-se would __not__ be __REST-compliant__.
 
 ---
 
-# HTTP API
+# REST/Hypermedia-driven HTTP API
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
-<img alt="REST APÎ describes current state and possible transitions" src="img/esiot/hypermedia_driven01.png" style="width: 100%;" />
+<img alt="REST API describes current state and possible transitions" src="img/esiot/hypermedia_driven01.png" style="width: 100%;" />
 
 ???
 
@@ -639,9 +557,9 @@ This way, the client can __select__ the __next state__ of the application throug
 
 ---
 
-# HTTP API
+# REST/Hypermedia-driven HTTP API
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/hypermedia_driven02.png" style="width: 100%;" />
 
@@ -651,83 +569,83 @@ When the __client is a human__, it's easy for him to interpret the HTML content 
 
 ---
 
-# HTTP API
+# REST/Hypermedia-driven HTTP API
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/hypermedia_driven03.png" style="width: 100%;" />
 
 ???
 
-However, doing this automatically (without human intervention) is currently a hot research topic.
+However, doing this automatically (__without human intervention__) is currently a __hot research topic__.
 
-Some solutions propose to use the semantic web to describe these applications and state transitions.
+Some solutions propose to use the __semantic__ web to __describe__ these __applications and__ state __transitions__.
 
-In this paper, we used a solution called RESTdesc.
+In this paper, we used a solution called __RESTdesc__.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_rule01.png" style="width: 70%;" />
 
 ???
 
-RESTdesc describes HTTP methods using rules expressed in the Notation 3 language (or N3).
+RESTdesc describes HTTP methods using __rules expressed in the Notation 3__ language (or N3).
 
-In the figure, we can see a description for a HTTP GET method.
+In the figure, we can see a description for a HTTP __GET__ method.
 
-It explains how to obtain a light measure.
+It explains __how to obtain a light measure__.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_rule02.png" style="width: 70%;" />
 
 ???
 
-A rule’s premise expresses the requirements to make an state transition.
+A rule’s __premise__ expresses the __requirements__ to make an state __transition__.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_rule03.png" style="width: 70%;" />
 
 ???
 
-A rule’s conclusion expresses both
+A rule’s __conclusion__ expresses both
 
-* the REST call that needs to be made and...
+* the HTTP call that needs to be made and...
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_rule04.png" style="width: 70%;" />
 
 ???
 
-...the description of what we can expect as a result of the request.
+...the description of what we can __expect as a result__ of the request.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 ```http
@@ -759,20 +677,20 @@ These descriptions can be obtained through different mechanisms.
 
 We will assume that they are provided in the same resources which it describes.
 
-To this end, we can use the HTTP OPTIONS verb.
+To this end, we can use the __HTTP OPTIONS verb__.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_how01.png" style="width: 95%;" />
 
 ???
 
-So, when a client has crawled an API collecting several of these descriptions, what can we do with them?
+So, when a client has __crawled an API__ collecting several of these descriptions, __what can we do__ with them?
 
 IF we also have...
 
@@ -780,7 +698,7 @@ IF we also have...
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_how02.png" style="width: 95%;" />
@@ -793,35 +711,35 @@ IF we also have...
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_how03.png" style="width: 95%;" />
 
 ???
 
-__a goal__, which is an special rule which expresses the ending state we want to reach;
+__a goal__, which is an __special rule__ which expresses the __ending state__ we want to reach;
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_how04.png" style="width: 95%;" />
 
 ???
 
-THEN we can use a reasoner to make an execution plan.
+THEN we can use a reasoner to make an __execution plan__.
 
-Personally, I have used the EYE reasoner.
+Personally, I have used the __EYE reasoner__.
 
 ---
 
 # RESTdesc
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 
 <img alt="XXX" src="img/esiot/restdesc_how05.png" style="width: 95%;" />
@@ -839,25 +757,32 @@ And since these rules are composed by the HTTP requests, we just have to check i
 
 # Motivation
 .subtitle[
-## Actuation
+## Baseline actuation techniques
 ]
 <img alt="XXX" src="img/esiot/hypermedia_driven03.png" style="width: 100%;" />
 
 ???
 
-In short, machines can learn how to use an API autonomously using RESTdesc.
+In short, machines can learn __how to use__ an API __autonomously__ using RESTdesc.
 
 That is, RESTdesc becomes APIs hypermedia-driven.
 
-The main advantage of an hypermedia-driven API is that it can change its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
+The main advantage of an hypermedia-driven __API__ is that it __can change its shape over the time__ and the applications automatically consuming it will not need to be reconfigured or redeveloped.
 
-Translating it to the WoT field, it will allow to act using actuators not known at the design or implementation phases.
+Translating it to the WoT field, it will allow to act __using actuators not known__ at the design or implementation phases.
 
 ---
 
+class: center, middle
+
 # Comparison
+### (3/5)
+
+---
+
+# General properties and requirements
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -891,9 +816,9 @@ The two actuation techniques presented are quite distinct in nature.
 
 ---
 
-# Comparison
+# General properties and requirements
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -934,9 +859,9 @@ One promotes the direct communication style, while the other promotes an indirec
 
 ---
 
-# Comparison
+# General properties and requirements
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -969,42 +894,30 @@ One promotes the direct communication style, while the other promotes an indirec
 We can also see in the table how each of them require additional features:
 
 * A subscription mechanism in the case of space-based computing.
- This mechanism helps nodes to be aware of what is written into the space without constantly polling it.
+ This mechanism helps nodes __to be aware__ of what is written into the space without constantly polling it.
 * A reasoner to create a execution plan,
-
-
-So I made myself the following question: could space-based computing take advantage of these existing REST-based actuators?
-
-Furthermore, could this reuse be made in a seamless way for nodes already following each of these techniques?
-
----
-
-class: center, middle
-
-# Hybrid actuation
-## Could we seamlessly reuse web actuators from space-based perspective?
 
 ---
 
 # Driving scenario
 .subtitle[
-## Actuation
+## Comparison
 ]
 <img alt="XXX" src="img/esiot/actuation_scenario.png" style="width: 100%;" />
 
 ???
 
-As a first step to answer this question, I planned a baseline scenario and implemented it using both mechanisms.
+To __deepen__ in the comparison, I planned a baseline scenario and __implemented it using both__ mechanisms.
 
 The scenario is the "helloworld" of the scenarios: turning on and off a light.
 
-However, it helps to understand both actuation mechanisms and test the interoperation ideas.
+However, it __helps to understand__ both actuation mechanisms and test the interoperation ideas.
 
 ---
 
-# Comparison
+# Networking activity
 .subtitle[
-## Actuation
+## Comparison
 ]
 <img alt="XXX" src="img/esiot/requests_by_techniques.svg" style="width: 100%; margin-top: 5%;" />
 
@@ -1013,8 +926,8 @@ However, it helps to understand both actuation mechanisms and test the interoper
 After implementing both scenarios, I calculated how the variation in the number of providers (e.g., actuators) could affect these techniques.
 
 First, we can see that as the amount of actuators increases, both techniques generate more requests.
-The slope will vary depending on the design (and implementation) of each solution.
-In any case, the figure shows that none of the techniques behave in a scalable manner.
+The __slope__ will __vary depending on the design__ (and implementation) of each solution.
+In any case, the figure shows that __none__ of the techniques behave in a __scalable__ manner.
 
 In the case of space-based actuation, the variation corresponds to the subscription request of each actuator and two additional writings it does. <!-- FIXME comprobar que es así -->
 
@@ -1022,9 +935,9 @@ In the case of REST-based actuation the crawler needs to obtain 5 different rule
 
 ---
 
-# Comparison
+# Experimental environment
 .subtitle[
-## Actuation
+## Comparison
 ]
 <img alt="XXX" src="img/esiot/raspberry-pi-model-b.jpg" style="width:60%; margin-top:1em;" class="center" />
 <table style="margin-top:1em;">
@@ -1046,13 +959,13 @@ In the case of REST-based actuation the crawler needs to obtain 5 different rule
 
 To check how much computing resources each techniques requires, I tested them in a Raspberry Pi.
 
-Again, the scenario was tested with 1 to a thousand actuators.
+Again, the scenario was tested __with 1 to a thousand actuators__.
 
 ---
 
-# Comparison
+# Computing activity
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <img alt="XXX" src="img/esiot/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
@@ -1061,17 +974,17 @@ Again, the scenario was tested with 1 to a thousand actuators.
 
 In the chart, we see that the amount of actuators affects more severely to __REST__-based actuation.
 
-This is due to the to the reasoning process which takes place in the node which generates the plan.
+This is due to the to the __reasoning process__ which takes place in the node which generates the plan.
 
-In __space__-based actuation, most of the time is spent checking subscriptions at each write.
+In __space__-based actuation, most of the time is spent __checking subscriptions__ at each write.
 
-Note that even if the subscription mechanism was unoptimized due to its prototyping nature, it made space-based actuation scale much better.
+Note that even if the subscription mechanism was unoptimized due to its __prototyping nature__, it made space-based actuation scale much better.
 
 ---
 
-# Comparison
+# Summary
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -1126,9 +1039,9 @@ It summarizes the strengths and weaknesses of both techniques.
 
 ---
 
-# Comparison
+# Summary
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -1177,13 +1090,13 @@ It summarizes the strengths and weaknesses of both techniques.
 </table>
 ???
 
-From the actuator point of view, the previous charts have already shown its higher activity compared to space-based actuation.
+From the consumer point of view, the previous charts have already shown its __higher activity__ compared to space-based actuation.
 
 ---
 
-# Comparison
+# Summary
 .subtitle[
-## Actuation
+## Comparison
 ]
 
 <table style="margin-top:3em;">
@@ -1232,11 +1145,11 @@ From the actuator point of view, the previous charts have already shown its high
 </table>
 ???
 
-The table shows how the providers in the second actuation mechanism are more lightweight.
+The table shows how the __providers in the second__ actuation mechanism are more __lightweight__.
 
 That is, they just attend to the request received using HTTP.
 
-Probably as a consequence of these few requirements, exposing the actuation capabilities of the limited devices with HTTP is a consolidated trend.
+Probably as a consequence of these few requirements, exposing the actuation capabilities of the limited devices with HTTP is a __consolidated trend__.
 .weak[This tendency is backed by the WoT initiative.]
 
 REST-desc only requires devices to additionally provide their API's resources' descriptions.
@@ -1245,14 +1158,32 @@ This can be done before deploying them and does not affect to their usual operat
 
 ---
 
+class: center, middle
+
+# Hybrid actuation
+## Could we seamlessly reuse web actuators from space-based perspective?
+### (4/5)
+
+???
+
+So, seeing_these properties, the question I wanted to explore in this paper was:
+
+* could __space-based computing take advantage__ of these existing __REST-based actuators__?
+
+Reuse lightweight providers and consumers.
+
+Furthermore, could this reuse be made in a __seamless way for nodes already following each of these techniques__?
+
+---
+
 # Interoperation
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation01.png" style="width: 100%;" />
 ???
 
-With these considerations in mind, I propose a solution which completely reuses the nodes implemented for the previous actuation techniques.
+With these considerations in mind, I propose a solution which __completely reuses__ the nodes implemented for the previous actuation techniques.
 
 In the left hand side, we see a master node from Space-based actuation which writes the "turn light on" task.
 
@@ -1260,7 +1191,7 @@ In the left hand side, we see a master node from Space-based actuation which wri
 
 # Interoperation
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation02.png" style="width: 100%;" />
 ???
@@ -1271,73 +1202,73 @@ In the right hand side, we see a smart-bulb light which exposes their actuation 
 
 # Interoperation
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation03.png" style="width: 100%;" />
 ???
 
-This API is described using RESTdesc.
+This API is __described__ using RESTdesc.
 
-In my dissertation, I propose not to altere the existing nodes.
+In this paper, I propose __not to alter__ the existing nodes.
 
 Therefore, the space needs to be extended to make their interoperability possible.
 
 ---
 
-# Interoperation: how?
+# Proposed solution
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation04.png" style="width: 100%;" />
 ???
 
 And... how is it extended?
 
-The space will be responsible of:
+The __space__ will be responsible of:
 
 * Translating a _subscription to a task result_ into a reasoning goal.
- Considering the how I implemented the subscriptions .weak[(based on SPARQL using RDFLib)], this is a straightforward syntactic translation .weak[(from SPARQL to N3QL for EYE)].
+ Considering the how I implemented the subscriptions .weak[(based on SPARQL using RDFLib)], this is a straightforward __syntactic translation__ .weak[(from SPARQL to N3QL for EYE)].
 
 ---
 
-# Interoperation: how?
+# Proposed solution
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation05.png" style="width: 100%;" />
 ???
 
 Apart from this, it will be in charge of two tasks performed by the client in REST-based actuation:
 
- * crawl APIs to obtain RESTdesc rules and
+ * __crawl__ APIs to obtain RESTdesc rules and
 
 ---
 
-# Interoperation: how?
+# Proposed solution
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 <img alt="XXX" src="img/esiot/mixed_actuation06.png" style="width: 100%;" />
 ???
 
- * create a plan.
+ * __create__ a plan.
 
-Note one benefitial aspect: as the process resides in the same machine as the space, it can locally read all the content written into the space.
+Note one beneficial aspect: as the process resides in the same machine as the space, it can __locally read__ all the content written into the space.
 
 This content is provided as additional knowledge to the reasoning process.
 
-This way, we avoid additional costly networking operations (both in bandwidth and in time) to obtain this knowledge.
+This way, we __avoid__ additional costly __networking__ operations (both in bandwidth and in time) to obtain this knowledge.
 
 ---
 
 # Discussion
 .subtitle[
-## Actuation
+## Hybrid actuation
 ]
 
 1. Obtaining background knowledge
 1. Triggering REST actuation
-1. From subscription to result to goal
+1. From a _subscription to result_ to goal
 
  * More general from task to result.
 
@@ -1345,17 +1276,20 @@ This way, we avoid additional costly networking operations (both in bandwidth an
 
 ---
 
-# Conclusions and Future Work
-.subtitle[
-## Actuation
-]
+class: center, middle
 
-Seamless reuse in simple scenario was possible.
+# Conclusions
+
+---
+
+# Conclusions and Future Work
+
+Seamless reuse in simple scenario
 
  * <span style="font-size: large;"> [github.com/gomezgoiri /reusingWebActuatorsFromSemanticSpace](https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace) </span>
 
 
-Further investigation with more complex scenarios is needed.
+Further investigation with more complex scenarios is needed
 
 * Is the __translation__ between the subscriptions and the goal always possible?
 * If the plan has __2 or more paths__ to achieve a goal, which one should we chose?
@@ -1363,7 +1297,9 @@ Further investigation with more complex scenarios is needed.
 
 ???
 
-However, the hybrid-actuation technique presented needs further investigation to ensure its universality.
+We presented a solution to...
+
+However, the hybrid-actuation technique presented needs further investigation to __ensure its universality__.
 
 For example,
 
@@ -1421,6 +1357,88 @@ under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa
 class: center, middle
 
 # Backup slides
+
+---
+
+# Space uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based03.png" style="width: 100%;">
+
+???
+
+__Space uncoupling__ is achieved because the nodes don't need to know each other beforehand to communicate.
+
+That is, TS' primitives do not care about addresses and references, they just care about the content which is being shared.
+
+When the computer writes the circle does not know which one node use this piece of info.
+
+---
+
+# Space uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based04.png" style="width: 100%;">
+
+???
+
+Similarly, if the umbrella reads a circle, it does not know which one generated this concrete blue circle.
+
+---
+
+# Time uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based05.png" style="width: 100%;">
+
+???
+
+__Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
+
+For instance, after writing the pentagon...
+
+---
+
+# Time uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based06.png" style="width: 100%;">
+
+???
+
+...the laptop might left the space.
+
+For instance, because it run out of battery of it phisically left the room.
+
+---
+
+# Time uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based07.png" style="width: 100%;">
+
+???
+
+Then, an umbrella might join the space.
+
+---
+
+# Time uncoupling
+.subtitle[
+## Tuple Spaces
+]
+<img alt="Space-based computing: space uncoupled" src="img/esiot/space_based08.png" style="width: 100%;">
+
+???
+
+If it ask for a pentagon, it will get the one written by the laptop even if it is not present.
+
+Thanks to these uncoupling levels, TS faces dynamism successfully both in the short and in the long term.
 
 ---
 
