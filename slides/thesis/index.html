@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <base href="https://dl.dropboxusercontent.com/u/9804351/">
     <!--<base href="http://localhost:8000/">-->
-    <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="own-style.css" />
   </head>
   <body>
     <textarea id="source">
@@ -219,6 +219,8 @@ For instance, we could replace the smart clock with a newer version.
 
 ---
 
+class: no-slide-number
+
 # UbiComp, challenge 1: proposed solution
 .subtitle[
 ## Introduction
@@ -363,7 +365,10 @@ And what's more accepted today than...
 background-image: url(img/the_web.svg)
 
 .center[
-<h2 style="margin-top:5em;">the Web!</h2>]
+  <h2 style="margin-top:10em;">the Web!<span class="print"> &#42;</span></h2>
+  <!-- To export to the PDF version -->
+  <p class="print" style="font-size: xx-small;">&#42; This made sense in the presentation's original format: HTML.</p>
+]
 
 ???
 
@@ -416,7 +421,7 @@ Note that most of these properties are particularly useful for limited devices.
 ## Introduction
 ]
 
-<img alt="The web of Things" src="img/transpas/wot.png" style="width: 100%; display: block;">
+<img alt="The web of Things" src="img/transpas/wot.png" style="width: 100%; display: block; margin-top: 2em;">
 
 ???
 
@@ -477,7 +482,7 @@ This is also common in most of the systems which use the Semantic Web in UbiComp
 .subtitle[
 ## Motivation
 ]
-<img alt="XXX" src="img/transpas/centralized_provision01.png" class="center" style="width:100%;"/>
+<img alt="Common design: all limited devices send their semantically described data to a more powerful intermediary" src="img/transpas/centralized_provision01.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -494,7 +499,7 @@ and it stores all the information.
 .subtitle[
 ## Motivation
 ]
-<img alt="XXX" src="img/transpas/centralized_provision02.png" class="center" style="width:100%;"/>
+<img alt="Common design: a limited device queries the intermediary to search for information" src="img/transpas/centralized_provision02.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -506,7 +511,7 @@ Whenever a limited device needs to query for something, it has to ask to this ma
 .subtitle[
 ## Motivation
 ]
-<img alt="XXX" src="img/transpas/centralized_provision03.png" class="center" style="width:100%;"/>
+<img alt="Weak (limited) devices and a poweful intermediary" src="img/transpas/centralized_provision03.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -528,7 +533,7 @@ And, now, let me do a brief parenthesis to talk about this...
 .subtitle[
 ## Motivation
 ]
-<img alt="XXX" src="img/transpas/dunk-portrait-2006.jpg" class="center" style="width: 20em;"/>
+<img alt="NBA 2006 dunk contest's contenders" src="img/transpas/dunk-portrait-2006.jpg" class="center" style="width: 19em;"/>
 <!-- Explain: which devices, results for semantic web testings, the evolution experienced since I first started working in this -->
 
 ???
@@ -547,8 +552,7 @@ In the context of my dissertation, _limited devices_ are mobile or embedded devi
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision04.png" class="center" style="width:100%;"/>
+<img alt="Device A creates a content at t3" src="img/transpas/centralized_provision04.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -570,8 +574,7 @@ In the example, we see a limited device (e.g, a sensor) with a version of its co
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision05.png" class="center" style="width:100%;"/>
+<img alt="Device A sends content to intermediary" src="img/transpas/centralized_provision05.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -583,8 +586,7 @@ It sends its contents to a server.
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision06.png" class="center" style="width:100%;"/>
+<img alt="Intermediary stores the content" src="img/transpas/centralized_provision06.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -596,8 +598,7 @@ This server stores this version.
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision07.png" class="center" style="width:100%;"/>
+<img alt="Device A creates a new version of the content" src="img/transpas/centralized_provision07.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -609,8 +610,7 @@ Afterwards, the sensor generates a new version with new measures at t6.
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision08.png" class="center" style="width:100%;"/>
+<img alt="Device C asks to the intermediary" src="img/transpas/centralized_provision08.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -622,8 +622,7 @@ It is obvious that if other device now askes for the content provided by this se
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision09.png" class="center" style="width:100%;"/>
+<img alt="Device C obtains outdated knowledge" src="img/transpas/centralized_provision09.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -635,8 +634,7 @@ It is obvious that if other device now askes for the content provided by this se
 .subtitle[
 ## Motivation
 ]
-
-<img alt="XXX" src="img/transpas/centralized_provision10.png" class="center" style="width:100%;"/>
+<img alt="When the intermediary leaves the space the devices are not able to search" src="img/transpas/centralized_provision10.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -657,7 +655,7 @@ And this happens way too frequently on the Internet.
 .subtitle[
 ## Motivation
 ]
-<img alt="XXX" src="img/transpas/navaztag.png" class="center" style="width:100%;"p/>
+<img alt="Nabaztag" src="img/transpas/nabaztag.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -817,7 +815,6 @@ To analyse its networking properties, we must note that both spaces are accessed
 .subtitle[
 ##  Space model
 ]
-
 <img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties01.png" style="width: 100%;" />
 
 ???
@@ -832,7 +829,6 @@ Both APIs are based on the space-based computing primitives, which are compatibl
 .subtitle[
 ##  Space model
 ]
-
 <img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties02.png" style="width: 100%;" />
 
 ???
@@ -845,7 +841,6 @@ which contain RDF Graphs
 .subtitle[
 ##  Space model
 ]
-
 <img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties03.png" style="width: 100%;" />
 
 ???
@@ -860,7 +855,6 @@ The triples are the most basic information unit in Triple Space Computing.
 .subtitle[
 ##  Space model
 ]
-
 <img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties04.png" style="width: 100%;" />
 
 ???
@@ -876,7 +870,6 @@ The triples are the most basic information unit in Triple Space Computing.
 .subtitle[
 ##  Space model
 ]
-
 <img alt="The API is not hypermedia-driven" src="img/transpas/networking_properties05.png" style="width: 100%;" />
 
 ???
@@ -928,7 +921,9 @@ And it also comes with some drawbacks:
 ##  Space model
 ]
 
-<img alt="Space and time" src="img/uncoupling.svg" style="width:60%; margin-top: 2em; display: block; margin-left: 12em; margin-right: auto"/>
+<img alt="Space and time" src="img/uncoupling.svg" class="noprint" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<!-- To export to the PDF version -->
+<img alt="Space and time" src="img/transpas/uncoupling-pdf.png" class="print" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
 <div style="margin-top: 1em;">
  <span style="margin-left: 12em;">Space uncoupling</span>
  <span style="float:right;">Time uncoupling</span>
@@ -959,7 +954,9 @@ Obviously, the coordination space corresponds with the clasical model and theref
 ##  Space model
 ]
 
-<img alt="Space and time" src="img/uncoupling.svg" style="width:60%; margin-top: 2em; display: block; margin-left: 12em; margin-right: auto"/>
+<img alt="Space and time" src="img/uncoupling.svg" class="noprint" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<!-- To export to the PDF version -->
+<img alt="Space and time" src="img/transpas/uncoupling-pdf.png" class="print" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
 <div style="margin-top: 1em;">
  <span style="margin-left: 12em;">Space uncoupling</span>
  <span style="float:right;">Time uncoupling</span>
@@ -1094,8 +1091,7 @@ Therefore, generalizing the problem...
 .subtitle[
 ## Energy-aware search architecture
 ]
-
-<img alt="XXX" src="img/transpas/search_motivation01.png" class="center" style="width:100%;"/>
+<img alt="How to query semantic web providers?" src="img/transpas/search_motivation01.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1109,9 +1105,7 @@ How can we search in a semantic web provided by limited devices?
 .subtitle[
 ## Energy-aware search architecture
 ]
-
-<img alt="XXX" src="img/transpas/search_motivation02.png" class="center" style="width:100%;"/>
-<!-- cacharros preguntandose entre sí -->
+<img alt="Semantic web providers asking to each others" src="img/transpas/search_motivation02.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1171,7 +1165,6 @@ we need to find a strategy which efficiently manages both aspects.
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Roles for the search-architecture: White Page" src="img/transpas/search_roles01.png" style="width: 100%;" class="center" />
 
 ???
@@ -1186,7 +1179,6 @@ This "search facilitator", called White Page from now on, is chosen dynamically 
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Roles for the search architecture: Providers" src="img/transpas/search_roles02.png" style="width: 100%;" class="center" />
 
 ???
@@ -1201,7 +1193,6 @@ Apart from the White Page role, a node can have two other roles:
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Roles for the search architecture: Providers hold contents" src="img/transpas/search_roles03.png" style="width: 100%;" class="center" />
 
 ???
@@ -1214,7 +1205,6 @@ Apart from the White Page role, a node can have two other roles:
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Roles for the search architecture: Consumers" src="img/transpas/search_roles04.png" style="width: 100%;" class="center" />
 
 ???
@@ -1227,7 +1217,6 @@ and _Consumers_...
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Roles for the search architecture: Consumers" src="img/transpas/search_roles05.png" style="width: 100%;" class="center" />
 
 ???
@@ -1258,7 +1247,7 @@ For instance, from the figure, providing the laptop is steady, it may be chosen 
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal01.png" class="center" style="width:100%;"/>
+<img alt="A provider creates a clue using its content as input" src="img/transpas/search_proposal01.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1274,7 +1263,7 @@ This is possible if they represent the __type__ of information a node hosts rath
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal02.png" class="center" style="width:100%;"/>
+<img alt="White Page stores an aggregated clue" src="img/transpas/search_proposal02.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1290,7 +1279,7 @@ In the figure, it has the _i-1_ version.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal03.png" class="center" style="width:100%;"/>
+<img alt="A provider sends a clue" src="img/transpas/search_proposal03.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1306,7 +1295,7 @@ Providers send a clue to the WP in any of the following situations:
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal04.png" class="center" style="width:100%;"/>
+<img alt="White Page updates the aggregated clue" src="img/transpas/search_proposal04.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1320,7 +1309,7 @@ In the figure, version _i_.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal05.png" class="center" style="width:100%;"/>
+<img alt="The provider gets the last aggregated clue version as a response" src="img/transpas/search_proposal05.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1334,7 +1323,7 @@ The aggregated clues help _Consumers_ searching for information efficiently.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal06.png" class="center" style="width:100%;"/>
+<img alt="Consumer obtains the latest aggregated clue" src="img/transpas/search_proposal06.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1357,11 +1346,11 @@ Using these _aggregated clues_, _Consumers_ are able to independently resolve th
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal07.png" class="center" style="width:100%;"/>
+<img alt="Consumer processes an aggregated clue to decide which node to query " src="img/transpas/search_proposal07.png" class="center" style="width:100%;"/>
 
 ???
 
-In other words, a _Consumer_ process an _aggregated clue_ to decide to which nodes to ask for information.
+In other words, a _Consumer_ processes an _aggregated clue_ to decide to which nodes to ask for information.
 
 Exceptionally, as an optimization for nodes with severe computation restrictions, _Consumers_ can also query the WP which nodes to ask.
 
@@ -1371,7 +1360,7 @@ Exceptionally, as an optimization for nodes with severe computation restrictions
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/search_proposal08.png" class="center" style="width:100%;"/>
+<img alt="Consumer queries to some providers" src="img/transpas/search_proposal08.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1496,7 +1485,7 @@ However, the specific mechanism used is transversal to the architecture.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection01.png" class="center" style="width:100%;"/>
+<img alt="No White Page available in the space" src="img/transpas/wp_selection01.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1512,7 +1501,7 @@ In this case, the first node to realize its absence starts this process.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection02.png" class="center" style="width:100%;"/>
+<img alt="White Page ranking the nodes to find the new White Page" src="img/transpas/wp_selection02.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1526,7 +1515,7 @@ In this case, it's the current WP the node who checks this periodically.
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection03.png" class="center" style="width:100%;"/>
+<img alt="White Page selection" src="img/transpas/wp_selection03.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1540,7 +1529,7 @@ The "WP selector" ranks the nodes according to the information provided by their
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection04.png" class="center" style="width:100%;"/>
+<img alt="White Page selection takes into account the approximate time since devices joined the space" src="img/transpas/wp_selection04.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1552,7 +1541,7 @@ approximate time since the device joined the Space (to estimate its reliability)
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection05.png" class="center" style="width:100%;"/>
+<img alt="White Page selection takes into account devices' memory" src="img/transpas/wp_selection05.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1564,7 +1553,7 @@ and its memory,
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection06.png" class="center" style="width:100%;"/>
+<img alt="White Page selection takes into account devices' storage capacity" src="img/transpas/wp_selection06.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1576,7 +1565,7 @@ and its memory,
 .subtitle[
 ## Energy-aware search architecture
 ]
-<img alt="XXX" src="img/transpas/wp_selection07.png" class="center" style="width:100%;"/>
+<img alt="White Page selection takes into account devices' battery level" src="img/transpas/wp_selection07.png" class="center" style="width:100%;"/>
 
 ???
 
@@ -1627,7 +1616,6 @@ On the other hand, the querying templates used consider queries from different n
 .subtitle[
 ## Energy-aware search architecture
 ]
-
 <img alt="Negative broadcasting" src="img/transpas/negative_broadcasting.png" style="width: 100%;" />
 
 <!-- FIXME Añadir una transpa justificativa de por qué no he implementado otras del estado del arte!
@@ -1652,7 +1640,7 @@ That is, they can implement caching.
 ## Energy-aware search architecture
 ]
 
-<img alt="Requests generated using different strategies" src="img/requests_by_strategies.svg" style="width: 90%;" />
+<img alt="Chart comparing the network activity generated by different strategies as the network size increases" src="img/requests_by_strategies.svg" style="width: 90%;" />
 
 ???
 
@@ -1683,7 +1671,7 @@ lo nuestro tira con "tipos de pregunta" semejantes -->
 ## Energy-aware search architecture
 ]
 
-<img alt="Energy consumption for each class" src="img/transpas/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
+<img alt="Chart comparing the average energy consumption for each type of device in negative broadcasting and in our solution" src="img/transpas/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
 
 ???
 
@@ -1710,7 +1698,7 @@ On the right hand side, we see two desired effects:
 ## Energy-aware search architecture
 ]
 
-<img alt="XXX" src="img/transpas/evaluation_dynamic.png" style="width: 100%; margin-top: 10%;" />
+<img alt="Chart comparing the network activity generated by our solution in very dynamic networks" src="img/transpas/evaluation_dynamic.png" style="width: 100%; margin-top: 10%;" />
 
 ???
 
@@ -1822,7 +1810,7 @@ However, I find it interesting as it
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns01.png" style="width: 100%;" />
+<img alt="A space" src="img/transpas/ts_patterns01.png" style="width: 100%;" />
 
 ???
 
@@ -1836,7 +1824,7 @@ For sake of brevity, I will present just two of them.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns02.png" style="width: 100%;" />
+<img alt="Master node and worker nodes" src="img/transpas/ts_patterns02.png" style="width: 100%;" />
 
 ???
 
@@ -1850,7 +1838,7 @@ In this pattern, there is a master process and many worker processes able to com
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns03.png" style="width: 100%;" />
+<img alt="Master node divides a problem in subproblems" src="img/transpas/ts_patterns03.png" style="width: 100%;" />
 
 ???
 
@@ -1862,7 +1850,7 @@ First, the master takes a problem, divides it into smaller tasks, and
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns04.png" style="width: 100%;" />
+<img alt="Master writes subproblems" src="img/transpas/ts_patterns04.png" style="width: 100%;" />
 
 ???
 
@@ -1874,7 +1862,7 @@ writes these tasks into the space.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns05.png" style="width: 100%;" />
+<img alt="Some workers take these subproblems" src="img/transpas/ts_patterns05.png" style="width: 100%;" />
 
 ???
 
@@ -1886,7 +1874,7 @@ Then, any available worker takes a task,
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns06.png" style="width: 100%;" />
+<img alt="These workers compute their subproblems" src="img/transpas/ts_patterns06.png" style="width: 100%;" />
 
 ???
 
@@ -1898,7 +1886,7 @@ processes it,
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns07.png" style="width: 100%;" />
+<img alt="These workers write their subsolutions" src="img/transpas/ts_patterns07.png" style="width: 100%;" />
 
 ???
 
@@ -1910,7 +1898,7 @@ and writes the result back into the space.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns08.png" style="width: 100%;" />
+<img alt="Master node takes the subsolutions" src="img/transpas/ts_patterns08.png" style="width: 100%;" />
 
 ???
 
@@ -1922,7 +1910,7 @@ As the workers write their results, the master takes these results from the spac
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns09.png" style="width: 100%;" />
+<img alt="Master merges the subsolutions into a meaningful result" src="img/transpas/ts_patterns09.png" style="width: 100%;" />
 
 ???
 
@@ -1936,7 +1924,7 @@ This pattern is scalable and naturally balances the load on the space.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns10.png" style="width: 100%;" />
+<img alt="Specialist pattern with specialist workers" src="img/transpas/ts_patterns10.png" style="width: 100%;" />
 
 ???
 
@@ -1952,7 +1940,7 @@ The difference is that in this pattern each worker is specialized and knows how 
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns11.png" style="width: 100%;" />
+<img alt="Specialist pattern used in UbiComp" src="img/transpas/ts_patterns11.png" style="width: 100%;" />
 
 ???
 
@@ -1964,7 +1952,7 @@ We can translate the previous patterns to the UbiComp usage examples.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns12.png" style="width: 100%;" />
+<img alt="Mobile writes a task" src="img/transpas/ts_patterns12.png" style="width: 100%;" />
 
 ???
 
@@ -1976,7 +1964,7 @@ For instance, a smartphone may write the task "turn the fan on" into the space.
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns13.png" style="width: 100%;" />
+<img alt="Fan reads the task" src="img/transpas/ts_patterns13.png" style="width: 100%;" />
 
 ???
 
@@ -1988,7 +1976,7 @@ A smart-fan which belongs to the same space, will then take the task,
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/ts_patterns14.png" style="width: 100%;" />
+<img alt="Fan activates its blades" src="img/transpas/ts_patterns14.png" style="width: 100%;" />
 
 ???
 
@@ -2033,7 +2021,7 @@ However, remember that like most of the resource-oriented API, this per-se would
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/hypermedia_driven01.png" style="width: 100%;" />
+<img alt="Human interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven01.png" style="width: 100%;" />
 
 ???
 
@@ -2049,7 +2037,7 @@ When the client is a human, it is trivial for him to interpret the HTML content 
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
+<img alt="Robot interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
 
 ???
 
@@ -2066,7 +2054,7 @@ Personally, I have used a solution called RESTdesc.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_rule01.png" style="width: 70%;" />
+<img alt="RESTdesc description in Notation3" src="img/transpas/restdesc_rule01.png" style="width: 70%;" />
 
 ???
 
@@ -2083,7 +2071,7 @@ It explains how to obtain a light measure.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_rule02.png" style="width: 70%;" />
+<img alt="RESTdesc description in Notation3, premise stressed" src="img/transpas/restdesc_rule02.png" style="width: 70%;" />
 
 ???
 
@@ -2096,7 +2084,7 @@ A rule’s premise expresses the requirements to make an state transition.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_rule03.png" style="width: 70%;" />
+<img alt="RESTdesc description in Notation3, REST call stressed" src="img/transpas/restdesc_rule03.png" style="width: 70%;" />
 
 ???
 
@@ -2111,7 +2099,7 @@ A rule’s conclusion expresses both
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_rule04.png" style="width: 70%;" />
+<img alt="RESTdesc description in Notation3, description of what is get as a result stressed" src="img/transpas/restdesc_rule04.png" style="width: 70%;" />
 
 ???
 
@@ -2162,7 +2150,7 @@ To this end, we can use the HTTP OPTIONS verb.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_how01.png" style="width: 95%;" />
+<img alt="RESTdesc descriptions" src="img/transpas/restdesc_how01.png" style="width: 95%;" />
 
 ???
 
@@ -2177,7 +2165,7 @@ IF we also have...
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_how02.png" style="width: 95%;" />
+<img alt="Background knowledge" src="img/transpas/restdesc_how02.png" style="width: 95%;" />
 
 ???
 
@@ -2190,7 +2178,7 @@ IF we also have...
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_how03.png" style="width: 95%;" />
+<img alt="Goal" src="img/transpas/restdesc_how03.png" style="width: 95%;" />
 
 ???
 
@@ -2203,7 +2191,7 @@ __a goal__, which is an special rule which expresses the ending state we want to
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_how04.png" style="width: 95%;" />
+<img alt="Execution to get a plan" src="img/transpas/restdesc_how04.png" style="width: 95%;" />
 
 ???
 
@@ -2218,7 +2206,7 @@ Personally, I have used the EYE reasoner.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/restdesc_how05.png" style="width: 95%;" />
+<img alt="An execution plan is composed by different paths to reach the goal" src="img/transpas/restdesc_how05.png" style="width: 95%;" />
 
 ???
 
@@ -2235,7 +2223,7 @@ And since these rules are composed by the HTTP requests, we just have to check i
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
+<img alt="Robot interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
 
 ???
 
@@ -2377,8 +2365,7 @@ Furthermore, could this reuse be made in a seamless way for nodes already follow
 .subtitle[
 ## Actuation
 ]
-
-<img alt="XXX" src="img/transpas/actuation_scenario.png" style="width: 100%;" />
+<img alt="A node turns on a light bulb" src="img/transpas/actuation_scenario.png" style="width: 100%;" />
 
 ???
 
@@ -2394,7 +2381,7 @@ However, it helps to understand both actuation mechanisms and test the interoper
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/requests_by_techniques.svg" style="width: 100%; margin-top: 5%;" />
+<img alt="Chart comparing the network activity generated by REST-based and Space-based actuation as the number of actuators increase" src="img/transpas/requests_by_techniques.svg" style="width: 100%; margin-top: 5%;" />
 
 ???
 
@@ -2414,7 +2401,7 @@ In the case of REST-based actuation the crawler needs to obtain 5 different rule
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/raspberry-pi-model-b.jpg" style="width:60%; margin-top:1em;" class="center" />
+<img alt="Raspberry Pi Model B" src="img/transpas/raspberry-pi-model-b.jpg" style="width:60%; margin-top:1em;" class="center" />
 <table style="margin-top:1em;">
   <tr>
     <td style="width:9em">Platform</td>
@@ -2443,7 +2430,7 @@ Again, the scenario was tested with 1 to a thousand actuators.
 ## Actuation
 ]
 
-<img alt="XXX" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
+<img alt="Chart comparing the time needed to actuate in REST-based and Space-based actuation as the number of actuators increase" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
 
 ???
 
@@ -2637,7 +2624,7 @@ This can be done before deploying them and does not affect to their usual operat
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation01.png" style="width: 100%;" />
+<img alt="Node writes a task" src="img/transpas/mixed_actuation01.png" style="width: 100%;" />
 ???
 
 With these considerations in mind, I propose a solution which completely reuses the nodes implemented for the previous actuation techniques.
@@ -2650,7 +2637,7 @@ In the left hand side, we see a master node from Space-based actuation which wri
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation02.png" style="width: 100%;" />
+<img alt="Light bulb exposes its capabilities through an HTTP API" src="img/transpas/mixed_actuation02.png" style="width: 100%;" />
 ???
 
 In the right hand side, we see a smart-bulb light which exposes their actuation capabilities through an HTTP API.
@@ -2661,7 +2648,7 @@ In the right hand side, we see a smart-bulb light which exposes their actuation 
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation03.png" style="width: 100%;" />
+<img alt="Light bulb exposes its capabilities through a REST API" src="img/transpas/mixed_actuation03.png" style="width: 100%;" />
 ???
 
 This API is described using RESTdesc.
@@ -2676,7 +2663,7 @@ Therefore, the space needs to be extended to make their interoperability possibl
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation04.png" style="width: 100%;" />
+<img alt="Subscription is translated into a goal" src="img/transpas/mixed_actuation04.png" style="width: 100%;" />
 ???
 
 And... how is it extended?
@@ -2692,7 +2679,7 @@ The space will be responsible of:
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation05.png" style="width: 100%;" />
+<img alt="RESTdesc descriptions" src="img/transpas/mixed_actuation05.png" style="width: 100%;" />
 ???
 
 Apart from this, it will be in charge of two tasks performed by the client in REST-based actuation:
@@ -2705,7 +2692,7 @@ Apart from this, it will be in charge of two tasks performed by the client in RE
 .subtitle[
 ## Actuation
 ]
-<img alt="XXX" src="img/transpas/mixed_actuation06.png" style="width: 100%;" />
+<img alt="Execution to get a plan" src="img/transpas/mixed_actuation06.png" style="width: 100%;" />
 ???
 
  * create a plan.
@@ -3010,8 +2997,8 @@ These projects used it in __different domains__...
  * Hotels
  * and homes environments.
 
-<img alt="XXX" src="img/transpas/domain_supermarket.png" style="position: absolute; bottom: 1em; right: 16em; width: 40%;" />
-<img alt="XXX" src="img/transpas/domain_residence.png" style="position: absolute; bottom: 2em; right: 2em; width: 30%;" />
+<img alt="Otsopack used in a supermarket" src="img/transpas/domain_supermarket.png" style="position: absolute; bottom: 1em; right: 16em; width: 40%;" />
+<img alt="Otsopack used in a nursing home" src="img/transpas/domain_residence.png" style="position: absolute; bottom: 2em; right: 2em; width: 30%;" />
 ---
 
 # Future work
