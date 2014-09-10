@@ -7,6 +7,7 @@ rest_citation: PhD thesis, <a href="http://www.deusto.es">Universidad de Deusto<
 pdf: https://dl.dropboxusercontent.com/u/9804351/gomezgoiri2014dissertation.pdf
 bib: /files/bibtex/gomezgoiri2014dissertation.bib
 slides: http://gomezgoiri.net/slides/thesis/index.html
+code: https://github.com/gomezgoiri/dissertation
 --- 
 
 Supervisors:
