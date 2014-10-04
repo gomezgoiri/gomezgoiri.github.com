@@ -3,15 +3,25 @@ layout: default
 title: Aitor Gómez Goiri
 ---
 
+<div itemscope itemtype="http://schema.org/Person">
+
 <section>
   <h1>Biography</h1>
     <img class="avatar"
 	 src="http://s.gravatar.com/avatar/{{ site.gravatar }}?s=200"
 	 alt="{{ site.author }}"
 	 width="200"
-	 height="200" />
+	 height="200"
+	 itemprop="image" />
+	 
     <p>I'm a Research Associate at the <a href="http://www.morelab.deusto.es/">MORElab research group</a> (I also worked as an Assistant Professor at the <a href="http://www.deusto.es/">University of Deusto</a>).
-    I finished a <a href="http://en.wikipedia.org/wiki/Double_degree">joint-degree</a> on <a href="http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page">Computer Engineering and Engineering in Industrial Organization</a> in 2008 and a MSc in <a href="http://www.diss.deusto.es/">Software Development</a> in 2010 and <a href="publications/gomezgoiri-semantic.html" style="font-weight:bold;">my PhD</a> in 2014 at the University of Deusto.</p>
+      <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+	I finished a <a href="http://en.wikipedia.org/wiki/Double_degree">joint-degree</a> on <a href="http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page">Computer Engineering and Engineering in Industrial Organization</a> in 2008 and a MSc in <a href="http://www.diss.deusto.es/">Software Development</a> in 2010 and <a href="publications/gomezgoiri-semantic.html" style="font-weight:bold;">my PhD</a> in 2014 at the
+	<span itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+	  <span itemprop="name">University of Deusto<span>.
+	</span>
+      </span>
+    </p>
 </section>
 
 <section style="clear:both; margin-top: 40px;">
@@ -24,12 +34,29 @@ title: Aitor Gómez Goiri
       height="160" />
 
     <blockquote>
-    <p>Aitor Gómez Goiri (aitor.gomez [at] deusto.es) <br>
-    <a href="http://www.morelab.deusto.es/">MORElab - Envisioning Future Internet</a> <br>
-    <a href="http://www.deustotech.deusto.es/">Deusto Institute of Technology</a> - <a href="http://www.deusto.es/">DeustoTech, University of Deusto</a> <br>
-    Avda. Universidades 24, 48007 - Bilbao, Spain <br>
-    Tel: +34 944 139 003 Ext. 2794 <br>
-    Fax: +34 944 139 166</p>
+    <p>
+      <span itemprop="name">Aitor Gómez Goiri</span> (<span itemprop="email">aitor.gomez [at] deusto.es</span>) <br>
+      <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+	<span itemprop="department" itemscope itemtype="http://schema.org/Organization">
+	  <span itemprop="department" itemscope itemtype="http://schema.org/Organization">
+	    <a href="http://www.morelab.deusto.es/" itemprop="url">
+	      <span itemprop="name">MORElab - Envisioning Future Internet</span>
+	    </a> <br>
+	  </span>
+	  <a href="http://www.deustotech.deusto.es/" itemprop="url">
+	    <span itemprop="name">Deusto Institute of Technology - DeustoTech</span>
+	  </a>,
+	</span>
+	<a href="http://www.deusto.es/" itemprop="url">
+	  <span itemprop="name">University of Deusto</span>
+	</a>
+      </span><br>
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	<span itemprop="streetAddress">Avda. Universidades 24, 48007 - Bilbao, Spain</span><br>
+	Tel: <span itemprop="telephone">+34 944 139 003 Ext. 2794</span><br>
+	Fax: <span itemprop="faxNumber">+34 944 139 166</span>
+      </span>
+    </p>
     </blockquote>
 </section>
 
@@ -42,10 +69,13 @@ title: Aitor Gómez Goiri
       <li>My open-source <a href="https://github.com/gomezgoiri">contributions on Github</a></li>
       <li>My (probably less updated) <a href="http://es.linkedin.com/in/gomezgoiri">CV on Linkedin</a></li>
       <li>My <a href="http://www.slideshare.net/twolf">presentations on SlideShare</a></li>
-      <li><a href="http://www.morelab.deusto.es/resource/aitor-gomez-goiri">Semantic knowledge about me</a></li>
+      <li><a href="http://www.morelab.deusto.es/resource/aitor-gomez-goiri" itemprop="sameAs">Semantic knowledge about me</a></li>
       <li>My <a href="http://www.morelab.deusto.es/index.php/members">colleagues</a></li>
     </ul>
 </section>
+
+</div>
+
 
 <script src="http://code.jquery.com/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="/js/konami.js"></script>
