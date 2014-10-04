@@ -2,13 +2,13 @@
 layout: default
 comments: true
 ---
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
   <nav id="back">
     <a href="../publications.html">&#60;&#60; Back to the publications list</a>
   </nav>
   <header>
     <h2>
-      <a href="{{ page.url }}" rel="bookmark" title="Permanent link to ">{{ page.title }}</a>
+      <a href="{{ page.url }}" rel="bookmark" title="Permanent link to " itemprop="url"><span itemprop="name">{{ page.title }}</span></a>
     </h2>
     <h5>
 	<author>{{ page.authors }}</author>
@@ -27,16 +27,20 @@ comments: true
     {% endif %}
         
     {% if page.code %}
-      <a href="{{ page.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
+      <span itemprop="hasPart" itemscope itemtype="http://schema.org/Code">
+	<a href="{{ page.code }}" itemprop="codeRepository"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
+      </span>
     {% endif %}
     
     {% if page.semantics %}
-      <a href="http://www.morelab.deusto.es/labman/resource/publications/{{ page.semantics }}"><img src="../img/rdf.png" alt="Semantics of the publication" /></a>
+      <a href="http://www.morelab.deusto.es/labman/resource/publications/{{ page.semantics }}" itemprop="sameAs"><img src="../img/rdf.png" alt="Semantics of the publication" /></a>
     {% endif %}
     
     {% comment %} Just if the slide has not already been embeded {% endcomment %} 
     {% if page.slides and page.slideshare-embed_code == null %}
-      <a href="{{ page.slides }}"><img src="../img/slides.png" alt="Presentation" /></a>
+      <span itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
+	<a href="{{ page.slides }}"><img src="../img/slides.png" alt="Presentation" /></a>
+      </span>
     {% endif %}
     
     {% if page.pdf %}
@@ -46,7 +50,7 @@ comments: true
 
   <br />
   
-  <p style="clear: both;">{{ content }}</p>
+  <p style="clear: both;" itemprop="description">{{ content }}</p>
   
   {% if page.slideshare-embed_code %}
     <p /><br /><p />

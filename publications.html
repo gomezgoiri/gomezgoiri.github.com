@@ -16,32 +16,37 @@ title: Publications
       <h2>{{ post.date | date:"%Y" }}</h2>
     {% endif %}
     
-    
-      <p>{{ post.authors }}. <span style="font-weight:bold;">{{ post.title }}</span>. {{ post.rest_citation }}</p>
-      <p><a href="{{ post.url }}">Read more...</a></p>
-      
-      <div style="float:right; margin-bottom:20px">
-	{% if post.bib %}
-	  <a href="{{ post.bib }}" title="Download the citation in Bibtex format"><img src="img/bibtex.png" alt="Bibtex citation" /></a>
-	{% endif %}
+      <span itemscope itemtype="http://schema.org/ScholarlyArticle">
+	<p>{{ post.authors }}. <span style="font-weight:bold;" itemprop="name">{{ post.title }}</span>. {{ post.rest_citation }}</p>
+	<p><a href="{{ post.url }}" itemprop="url">Read more...</a></p>
 	
-	{% if post.code %}
-	  <a href="{{ post.code }}"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
-	{% endif %}
-	
-	{% if post.semantics %}
-	  <a href="http://www.morelab.deusto.es/labman/resource/publications/{{ post.semantics }}" title="Check the semantic description of this publication"><img src="img/rdf.png" alt="Semantics of the publication" /></a>
-	{% endif %}
-	
-	{% if post.slides %}
-	  <a href="{{ post.slides }}" title="See the presentation of this publication"><img src="img/slides.png" alt="Presentation" /></a>
-	{% endif %}
-	
-	{% if post.pdf %}
-	  <a href="{{ post.pdf }}" title="Download this publication in PDF format"><img src="img/pdf.png" alt="Publication in PDF" /></a>
-	{% endif %}
+	<div style="float:right; margin-bottom:20px">
+	  {% if post.bib %}
+	    <a href="{{ post.bib }}" title="Download the citation in Bibtex format"><img src="img/bibtex.png" alt="Bibtex citation" /></a>
+	  {% endif %}
+	  
+	  {% if post.code %}
+	    <span itemprop="hasPart" itemscope itemtype="http://schema.org/Code">
+	      <a href="{{ post.code }}" itemprop="codeRepository"><img src="../img/code-icon.png" alt="Check the code associated with the publication" /></a>
+	    </span>
+	  {% endif %}
+	  
+	  {% if post.semantics %}
+	    <a href="http://www.morelab.deusto.es/labman/resource/publications/{{ post.semantics }}" title="Check the semantic description of this publication"><img src="img/rdf.png" alt="Semantics of the publication" /></a>
+	  {% endif %}
+	  
+	  {% if post.slides %}
+	    <span itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
+	      <a href="{{ post.slides }}" title="See the presentation of this publication"><img src="img/slides.png" alt="Presentation" /></a>
+	    </span>
+	  {% endif %}
+	  
+	  {% if post.pdf %}
+	    <a href="{{ post.pdf }}" title="Download this publication in PDF format"><img src="img/pdf.png" alt="Publication in PDF" /></a>
+	  {% endif %}
 
-      </div>
+	</div>
+      </span>
       
       <div style="clear:both;">
     </div>
