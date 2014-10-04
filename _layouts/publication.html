@@ -50,7 +50,9 @@ comments: true
 
   <br />
   
-  <p style="clear: both;" itemprop="description">{{ content }}</p>
+  <p style="clear: both;">
+    <span itemprop="description">{{ content }}</span>
+  </p>
   
   {% if page.slideshare-embed_code %}
     <p /><br /><p />
