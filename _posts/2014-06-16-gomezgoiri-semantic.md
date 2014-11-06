@@ -17,9 +17,9 @@ Supervisors:
 
 Jury panel:
 
-* Antonio F. Gómez-Skarmeta ([University of Murcia](http://www.um.es/), president)
-* [George Roussos](http://www.dcs.bbk.ac.uk/~gr/) ([University of London](http://www.dcs.bbk.ac.uk))
-* [Mikel Larrea](http://www.sc.ehu.es/acwlaalm/) ([University of the Basque Country](http://www.ehu.es))
+* Antonio F. Gómez-Skarmeta ([University of Murcia](http://www.um.es/), chair)
+* [George Roussos](http://www.dcs.bbk.ac.uk/~gr/) ([University of London](http://www.dcs.bbk.ac.uk), vocal)
+* [Mikel Larrea](http://www.sc.ehu.es/acwlaalm/) ([University of the Basque Country](http://www.ehu.es), secretary)
 
 <hr />
 
