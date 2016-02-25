@@ -1,17 +1,10 @@
+
 .container {
-  width: 800px;
+  width: 970px;
 }
 
-.navbar .container {
-  width: 800px;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 24px;
+.navbar {
+  border-radius: 0;
 }
 
 .field .name {
@@ -20,14 +13,4 @@ h2 {
 
 .citation {
   font-size: 100%;
-}
-
-.avatar {
-  float: right;
-  margin-left: 20px;
-}
-
-.qrcode {
-  float: right;
-  margin-left: 20px;
 }

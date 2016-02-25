@@ -1,1 +1,12 @@
+
+# Site build by Jekyll
 _site/
+
+
+# Required dependencies
+## Bootstrap
+bower_components/bootstrap/*
+!bower_components/bootstrap/dist/
+## jQuery
+bower_components/jquery/*
+!bower_components/jquery/jquery.min.js

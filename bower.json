@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gomezgoiri/gomezgoiri.github.com",
+  "authors": [
+    "Aitor Gómez Goiri <aitor@gomezgoiri.net>"
+  ],
+  "description": "Javascript module with GUI helpers to build PTAnywhere widgets.",
+  "dependencies": {
+    "bootstrap": "3.3.6"
+  }
+}
