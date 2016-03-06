@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /:categories/:title.html
 destination: ./_site
 auto: true
