@@ -28,3 +28,14 @@ During the following articles, I will guide you through the features I developed
  1. Learning Analytics
 
 ## FAQ
+
+### Why do you write these articles here and not in their website or in GitHub?
+In short: to specifically focus on the work I did in them.
+The GitHub projects might contain more extensive documentation but
+they might have also evolved since I stopped working on them or become unavailable or whatever.
+
+### Why do you include screenshoots and screencasts instead of links to the web applications?
+ 1. I am describing the work I (me) did and they might have evolved since I stopped working on them,
+ 1. there are parts which are not publicly accessible or
+ 1. even if they are public, I cannot guarantee that they will keep like that in the future.
+    I don't own these projects.
