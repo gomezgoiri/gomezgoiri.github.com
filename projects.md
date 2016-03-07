@@ -17,15 +17,17 @@ For a more research-oriented view of my work, please visit the [R&amp;D section]
 ## PT Anywhere
 
 [Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/) is a network simulation tool created by [Cisco](http://www.cisco.com/).
-As part of the [FORGE project](forge.html), I developed a web version/frontend for it.
+As part of the [FORGE project](projects/forge.html), I developed a web version/frontend for it.
 
 During the following articles, I will guide you through the features I developed for it:
 
+ 1. [Introduction - Architecture](coding/ptAnywhere-intro.html)
  1. Installation
  1. Web widget
  1. HTTP API
  1. Internal API
  1. Learning Analytics
+
 
 ## FAQ
 

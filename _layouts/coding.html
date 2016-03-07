@@ -1,0 +1,36 @@
+---
+layout: default
+comments: true
+---
+<article>
+  <div class="row">
+    <div class="col-sm-12">
+      <nav id="back">
+        <a href="../projects.html">&#60;&#60; Back to the projects list</a>
+      </nav>
+      <header>
+        <h1>
+          <a href="{{ page.url }}" rel="bookmark" title="Permanent link to " itemprop="url"><span itemprop="name">{{ page.title }}</span></a>
+        </h1>
+      </header>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      {{ content }}
+    </div>
+  </div>
+
+  {% if page.subsection_js %}
+    <div id="navigation"></div>
+
+    <script src="/js/subsections.js"></script>
+    <script src="{{ page.subsection_js }}"></script>
+    <script>
+    $(function() {
+      subsection.update_pager($('#navigation'), ptanywhere_subsection, {{ page.subsection_element }});
+    });
+    </script>
+  {% endif %}
+</article>
