@@ -28,8 +28,8 @@ It also relies on one or more _PT managers_ to handle _Packet Tracer_ instances.
 Each manager can handle several concurrent instances.
 Optionally, the API can also record interaction details in a [Tin Can API](https://tincanapi.com/) compatible Learning Record Store (LRS).
 
-In the next section, we will briefly explain __how to install__ _PTAnywhere_.
-However, if you are interested in a specific part of the architecture you can also go directly clicking in any of the following links:
+In the next section, I briefly explain __how to install__ _PTAnywhere_.
+However, if you are interested in a specific part of the architecture you can go directly to its explanation clicking in any of the following links:
 
  1. [Web frontend (widget)](ptAnywhere-frontend.html).
 

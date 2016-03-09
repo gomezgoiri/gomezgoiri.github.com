@@ -1,6 +1,6 @@
 var subsection = (function () {
 
-  function update(divSelector, subsections, currentSubsectionNumber) {
+  function create_pager(divSelector, subsections, currentSubsectionNumber) {
     var html = '<nav>' +
                 '<ul class="pager">';
     if (subsections.length>1 && currentSubsectionNumber>0) {
@@ -15,7 +15,14 @@ var subsection = (function () {
     divSelector.html($(html));
   }
 
+  function fill_dropdown(divSelector, subsections) {
+    for (var i=0; i<subsections.length; i++) {
+      divSelector.append('<li><a href="' + subsections[i].url + '">' + subsections[i].title + '</a></li>');
+    }
+  }
+
   return {
-      update_pager: update
+      create_pager: create_pager,
+      fill_dropdown: fill_dropdown,
   };
 })();
