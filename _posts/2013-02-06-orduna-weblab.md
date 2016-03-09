@@ -1,11 +1,11 @@
---- 
+---
 layout: publication
 category: publications
 title: WebLab-Deployer&#58; exporting remote laboratories as SaaS through federation protocols
-authors: Pablo Orduña, Xabier Larrakoetxea, David Buján, Aitor Gómez-Goiri, Ignacio Angulo, Olga Dziabenko, Luis Rodriguez-Gil, Diego López-de-Ipiña, Javier Garzia-Zubia
+authors: Pablo Orduña, Xabier Larrakoetxea, David Buján, Aitor Gómez-Goiri, Ignacio Angulo, Olga Dziabenko, Luis Rodriguez-Gil, Diego López-de-Ipiña, Javier Garcia-Zubia
 rest_citation: <a href="http://www.rev-conference.org/REV2013/">REV2013&#58; 10th International Conference on Remote Engineering and Virtual Instrumentation</a>. Sydney, Australia, 6 - 8 February 2013.
 bib: /files/bibtex/orduna2013weblab.bib
---- 
+---
 
 During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the world.
 However, today most of the remote laboratories are still only used by the same institution that provides or even develops them, or by direct partners in federated environments.

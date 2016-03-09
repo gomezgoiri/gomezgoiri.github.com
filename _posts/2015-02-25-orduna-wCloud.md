@@ -1,0 +1,10 @@
+---
+layout: publication
+category: publications
+title: wCloud&#58; Automatic generation of WebLab-Deusto deployments in the Cloud
+authors: Pablo Orduña, Aitor Gómez-Goiri, Luis Rodriguez-Gil, Javier Diego, Diego López-de-Ipiña, Javier Garcia-Zubia
+rest_citation: In <a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7080986">12th International Conference on Remote Engineering and Virtual Instrumentation (REV)</a>, pp.223–229</a>, February 2015, Bangkok , Thailand. DOI&#58; <a href="http://dx.doi.org/10.1109/REV.2015.7087296">10.1109/REV.2015.7087296</a>.
+bib: /files/bibtex/orduna2015wcloud.bib
+---
+
+Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in universities as if they were in a hands-on-lab session. Since most remote labs share certain management tasks (authentication, Learning Analytics, scheduling, etc.), software systems implementing them on top of which remote labs could be implemented were developed and called Remote Lab Management Systems (RLMS). A key feature provided by certain RLMSs is sharing a remote laboratory between two systems deployed in two institutions. This way, it becomes possible to have multiple RLMS instances (which are pure software) in a Cloud environment, customized for different schools or universities. Each school would have its own RLMS, with all the management features (e.g., managing its own students), and in the end, the RLMS would connect to the RLMS which has the physical equipment. The focus of this contribution is to detail how this “RLMS as a Service” is being implemented in the case of WebLab-Deusto as part of the mCloud project, from a technical point of view.
