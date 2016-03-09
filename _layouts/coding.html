@@ -9,6 +9,9 @@ comments: true
         <a href="../projects.html">&#60;&#60; Back to the projects list</a>
       </nav>
       <header>
+        {% if page.subtitle %}
+          <h4>{{ page.subtitle }}</h4>
+        {% endif %}
         <h1>
           <a href="{{ page.url }}" rel="bookmark" title="Permanent link to " itemprop="url"><span itemprop="name">{{ page.title }}</span></a>
         </h1>

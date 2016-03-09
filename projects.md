@@ -22,11 +22,22 @@ As part of the [FORGE project](projects/forge.html), I developed a web version/f
 During the following articles, I will guide you through the features I developed for it:
 
  1. [Introduction - Architecture](coding/ptAnywhere-intro.html)
- 1. Installation
- 1. Web widget
- 1. HTTP API
- 1. Internal API
- 1. Learning Analytics
+
+ 1. [Installation](coding/ptAnywhere-installation.html)
+
+     Technologies used: [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/).
+ 1. [Web frontend (widget)](coding/ptAnywhere-frontend.html).
+
+    Technologies used: [jQuery](https://jquery.com/), [vis.js](http://visjs.org/), [Bower](http://bower.io/) & [Jasmine](http://jasmine.github.io/).
+ 1. [HTTP API](coding/ptAnywhere-http_api.html).
+
+    Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/), [Maven](https://maven.apache.org/) & [Redis](http://redis.io/).
+ 1. [Internal Packet Tracer API](coding/ptAnywhere-internal_api.html).
+
+    Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).
+ 1. [Learning Analytics](coding/ptAnywhere-learning_analytics.html).
+
+    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).
 
 
 ## FAQ

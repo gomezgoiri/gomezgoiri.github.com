@@ -2,8 +2,7 @@ var subsection = (function () {
 
   function update(divSelector, subsections, currentSubsectionNumber) {
     var html = '<nav>' +
-                '<ul class="pager">' +
-                '<li class="previous';
+                '<ul class="pager">';
     if (subsections.length>1 && currentSubsectionNumber>0) {
       var previousPage = subsections[currentSubsectionNumber-1];
       html += '<li class="previous"><a href="' + previousPage.url + '"><span aria-hidden="true">&larr;</span> ' + previousPage.title + '</a></li>';
