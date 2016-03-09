@@ -4,6 +4,7 @@ category: publications
 title: Security analysis and resource requirements of group-oriented user access control for hardware-constrained wireless network services
 authors: Daniela Ventura, Aitor Gómez-Goiri, Vincenzo Catania, Diego López-de-Ipiña, J. A. M. Naranjo, L. G. Casado
 rest_citation: <a href="http://jigpal.oxfordjournals.org/">Logic Journal of the IGPL</a>, <a href="http://jigpal.oxfordjournals.org/content/24/1/80.abstract">Vol.24, No.1, pp.80–91</a>, 2016. <br /> DOI&#58; <a href="http://dx.doi.org/10.1093/jigpal/jzv045">10.1093/jigpal/jzv045</a>.
+pdf: /files/pdf/ventura2016security.pdf
 bib: /files/bibtex/ventura2016security.bib
 code: https://github.com/lightsec
 ---
