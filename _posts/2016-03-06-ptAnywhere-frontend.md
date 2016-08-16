@@ -21,7 +21,7 @@ This is how a typical _PT Anywhere_ session looks like in a browser:
 
 To create this widget (i.e., the _PT Anywhere_ front end), I used the following _JavaScript libraries_:
 
- * [jQuery](https://jquery.com/): to make HTTP requests and [manipulate](https://github.com/PTAnywhere/widget-ui) the [HTML DOM](http://www.w3schools.com/jsref/dom_obj_document.asp).
+ * [Angular JS](https://angularjs.org/): I reimplemented the whole widget which initially used [jQuery](https://jquery.com/).
  * [vis.js](http://visjs.org/): to show the network topology.
  * [Jasmine](http://jasmine.github.io/): for testing the [_PTAnywhere API_ client JS library](https://github.com/PTAnywhere/ptAnywhere-js).
 

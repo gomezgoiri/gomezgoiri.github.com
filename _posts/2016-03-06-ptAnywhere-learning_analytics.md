@@ -61,13 +61,13 @@ For a more detailed documentation, visit [this page](https://github.com/PTAnywhe
 ## Features of the dashboard
 
  * Client-side visualizations use [Chart.js](http://www.chartjs.org/), & [vis.js](http://visjs.org/).
- * Client-side dashboard uses [jQuery](https://jquery.com/) & [Bootstrap](http://getbootstrap.com/).
+ * Client-side dashboard uses [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/) & [Bootstrap](http://getbootstrap.com/).
  * Server-side application is implemented in [Jersey 2.x](https://jersey.java.net/) using [Freemarker](http://freemarker.org/).
  * The _Learning Record Store_ is queried using [Learning Locker's Aggregation API](http://docs.learninglocker.net/statements_api/#aggregate).
 
 
 <div class="row">
-  <iframe class="col-sm-offset-2 col-sm-8" width="420" height="315" src="https://www.youtube.com/embed/l-lJ_qJxR_U" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj" frameborder="0" allowfullscreen></iframe>
 </div>
 
 

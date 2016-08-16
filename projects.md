@@ -28,7 +28,7 @@ During the following articles, I will guide you through the features I developed
      Technologies used: [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/).
  1. [Web frontend (widget)](coding/ptAnywhere-frontend.html).
 
-    Technologies used: [jQuery](https://jquery.com/), [vis.js](http://visjs.org/), [Bower](http://bower.io/) & [Jasmine](http://jasmine.github.io/).
+    Technologies used: [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/), [vis.js](http://visjs.org/), [Bower](http://bower.io/) & [Jasmine](http://jasmine.github.io/).
  1. [HTTP API](coding/ptAnywhere-http_api.html).
 
     Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/), [Maven](https://maven.apache.org/) & [Redis](http://redis.io/).
@@ -37,7 +37,7 @@ During the following articles, I will guide you through the features I developed
     Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).
  1. [Learning Analytics](coding/ptAnywhere-learning_analytics.html).
 
-    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).
+    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Angular JS](https://angularjs.org/), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).
 
 
 ## FAQ
