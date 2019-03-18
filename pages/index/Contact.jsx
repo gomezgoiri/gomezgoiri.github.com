@@ -5,7 +5,7 @@ const noneDisplay = { display: 'none' }
 const Contact = () => (
   <div className="row">
     <div className="col-sm-12">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
     </div>
     <div className="col-sm-8">
       <blockquote>

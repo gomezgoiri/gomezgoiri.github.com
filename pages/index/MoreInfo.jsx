@@ -3,7 +3,7 @@ import React from 'react'
 const MoreInfo = () => (
   <div className="row">
     <div className="col-sm-12">
-      <h1>More about me</h1>
+      <h2>More about me</h2>
 
       <p>Do you still want to know more about me? Check the following links:</p>
       <ul>
