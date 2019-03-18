@@ -19,7 +19,8 @@ const getPage = (file, page) => {
   return found ? FOLDER_PREFIX_TO_PAGE[found] : '/rdProjects/content'
 }
 
-const assetPrefix = process.env.NODE_ENV === 'production' ? '/next-blog' : ''
+// const assetPrefix = process.env.NODE_ENV === 'production' ? '/next-blog' : ''
+const assetPrefix = ''
 
 module.exports = {
   exportPathMap: () => {
