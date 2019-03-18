@@ -12,8 +12,7 @@ const Title = styled.span`
 const Item = ({ title, url, authors, restCitation, ...other }) => (
   <span itemScope itemType="http://schema.org/ScholarlyArticle">
     <p>
-      {authors}.<Title itemProp="name">{title}</Title>
-      .
+      {authors}. <Title itemProp="name">{title}</Title>.{' '}
       <span dangerouslySetInnerHTML={{ __html: restCitation }} />
     </p>
     <p>

@@ -8,10 +8,10 @@ const topMargin = { marginTop: '30px' }
 const Biography = ({ gravatar, author }) => (
   <div className="row">
     <div className="col-sm-8">
-      <h1>Biography</h1>
+      <h2>Biography</h2>
       <p>
         <>
-          I&apos;m a researcher at
+          I&apos;m a researcher at{' '}
           <span
             itemProp="affiliation"
             itemScope

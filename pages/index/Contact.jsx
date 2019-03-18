@@ -10,11 +10,8 @@ const Contact = () => (
     <div className="col-sm-8">
       <blockquote>
         <p>
-          <span itemProp="name">Aitor Gómez-Goiri</span>
-          {' '}
-(
+          <span itemProp="name">Aitor Gómez-Goiri</span> (
           <span itemProp="email">aitor.gomez [at] ikerlan.es</span>
-
           )
           <br />
           <span
@@ -29,7 +26,6 @@ const Contact = () => (
               style={noneDisplay}
             >
               <span itemProp="name">
-
                 Information and communications technology
               </span>
               <span
@@ -51,24 +47,18 @@ const Contact = () => (
             itemType="http://schema.org/PostalAddress"
           >
             <span itemProp="streetAddress">
-
               Pº. J. Mª. Arizmendiarrieta, 2
               <br />
-
               Arrasate-Mondragón
               <br />
-
               20500
               <br />
-
               Spain
             </span>
             <br />
-
             Tel:
             <span itemProp="telephone">+34 943 712 400</span>
             <br />
-
             Fax:
             <span itemProp="faxNumber">+34 943 796 944</span>
           </span>

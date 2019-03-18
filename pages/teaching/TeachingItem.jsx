@@ -22,36 +22,27 @@ const TeachingItem = ({
   <article>
     <header>
       <div>
-        <FieldName>Course name:</FieldName> 
-        {' '}
-        {originalName}
+        <FieldName>Course name:</FieldName> {originalName}
       </div>
       <div>
-        <FieldName>Topics:</FieldName>
-        {' '}
+        <FieldName>Topics:</FieldName>{' '}
         <span dangerouslySetInnerHTML={{ __html: topics }} />
       </div>
       <div>
-        <FieldName>Language:</FieldName> 
-        {' '}
-        {language}
+        <FieldName>Language:</FieldName> {language}
       </div>
       {who && (
         <div>
-          <FieldName>Who?</FieldName>
-          {' '}
+          <FieldName>Who?</FieldName>{' '}
           <span dangerouslySetInnerHTML={{ __html: who }} />
         </div>
       )}
       <div>
-        <FieldName>Where?</FieldName>
-        {' '}
+        <FieldName>Where?</FieldName>{' '}
         <span dangerouslySetInnerHTML={{ __html: where }} />
       </div>
       <div>
-        <FieldName>When?</FieldName> 
-        {' '}
-        {when}
+        <FieldName>When?</FieldName> {when}
       </div>
     </header>
 

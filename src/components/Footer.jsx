@@ -7,23 +7,15 @@ const Footer = () => (
     <Container>
       <p>
         <small>
-
-          Hosted on
-          {' '}
+          Hosted on{' '}
           <a href="https://github.com/gomezgoiri/gomezgoiri.github.com">
-
             GitHub Pages
           </a>
-
           , theme by
-          <a href="http://getbootstrap.com">Bootstrap</a>
-, based on
-          {' '}
+          <a href="http://getbootstrap.com">Bootstrap</a>, based on{' '}
           <a href="https://github.com/tscanlin/next-blog">
-
             Tim Scanlin&apos;s next-blog
           </a>
-
           .
         </small>
       </p>

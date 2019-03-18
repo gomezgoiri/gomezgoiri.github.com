@@ -13,8 +13,7 @@ const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
         src="bibtex.png"
         alt="Bibtex citation"
       />
-    )}
-    {' '}
+    )}{' '}
     {code && (
       <span itemProp="hasPart" itemScope itemType="http://schema.org/Code">
         <Icon
@@ -24,8 +23,7 @@ const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
           alt="Check the code associated with the publication"
         />
       </span>
-    )}
-    {' '}
+    )}{' '}
     {semantics && (
       <Icon
         href={`http://www.morelab.deusto.es/labman/resource/publications/${semantics}`}
@@ -33,8 +31,7 @@ const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
         src="rdf.png"
         alt="Semantics of the publication"
       />
-    )}
-    {' '}
+    )}{' '}
     {slides && (
       <span
         itemProp="hasPart"
@@ -48,8 +45,7 @@ const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
           alt="Presentation"
         />
       </span>
-    )}
-    {' '}
+    )}{' '}
     {pdf && (
       <Icon
         href={pdf}

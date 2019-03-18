@@ -7,7 +7,6 @@ import TeachingItem from './TeachingItem'
 
 const CollapsedTitle = styled(({ topics, className }) => (
   <p className={className}>
-
     Topics:
     <span dangerouslySetInnerHTML={{ __html: topics }} />
   </p>

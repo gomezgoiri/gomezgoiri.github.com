@@ -11,19 +11,11 @@ const PUBS_BY_DATE = getPublicationsByDate()
 const Publications = ({ title, description }) => (
   <Page siteTitle={title} heroTitle={title} description={description}>
     <p>
-
-      Alternatively, you can check these publications on
-      {' '}
+      Alternatively, you can check these publications on{' '}
       <a href="http://scholar.google.com/citations?user=FD8S5rEAAAAJ&hl=en">
-
         Google Scholar
-      </a>
-      {' '}
-
-      or 
-      {' '}
-      <a href="http://dl.acm.org/author_page.cfm?id=81479661857">ACM</a>
-.
+      </a>{' '}
+      or <a href="http://dl.acm.org/author_page.cfm?id=81479661857">ACM</a>.
     </p>
     {Object.keys(PUBS_BY_DATE)
       .reverse()
