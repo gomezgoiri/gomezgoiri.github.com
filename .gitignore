@@ -1,19 +1,8 @@
-# Site build by Jekyll
-_site/
-
-
-# Mac OS X
+node_modules
+.next
 .DS_Store
-
-
-# Required dependencies
-## Bootstrap
-bower_components/bootstrap/*
-!bower_components/bootstrap/dist/
-## jQuery
-bower_components/jquery/*
-!bower_components/jquery/dist/jquery.min.js
-
-
-# Mac OSX
-.DS_Store
+out
+public
+*.log
+content/**/*.json
+yarn.lock

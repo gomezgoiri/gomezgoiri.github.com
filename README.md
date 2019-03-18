@@ -1,15 +1,36 @@
-gomezgoiri.github.com
-=====================
+# gomezgoiri.github.com
 
-My personal website.
+My personal website using [next](https://github.com/zeit/next.js/).
+The base project is [next-blog](https://github.com/tscanlin/next-blog).
 
-This site uses [Jekyll](https://github.com/jekyll/jekyll) so just install it...
-```
-gem install jekyll
-gem install kramdown
+**NOTE:** Make sure to run `npm run build:content` before `npm start` for the first time.
+
+## Install dependencies
+
+```sh
+npm install
 ```
 
-...and build it!
+## Build content
+
+```sh
+npm run build:content
 ```
-jekyll serve
+
+## Run development server
+
+```sh
+npm start
+```
+
+## Build for production
+
+```sh
+npm run build
+```
+
+## Deploy in Github pages
+
+```sh
+npm run deploy
 ```
