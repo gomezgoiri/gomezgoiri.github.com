@@ -21,8 +21,7 @@ const TeachingPage = ({ title, description, bodyHtml }) => {
       <p>
         I taught the following courses at the{' '}
         <a href="http://www.ingenieria.deusto.es/">Faculty of Engineering</a> of
-        the
-        <a href="http://www.deusto.es/">University of Deusto</a>:
+        the <a href="http://www.deusto.es/">University of Deusto</a>:
       </p>
 
       {POSTS.filter(({ category }) => category === 'university').map(post => (
@@ -37,8 +36,7 @@ const TeachingPage = ({ title, description, bodyHtml }) => {
       <hr />
 
       <p>
-        The
-        <a href="http://www.e-ghost.deusto.es/">e-ghost</a> is the{' '}
+        The <a href="http://www.e-ghost.deusto.es/">e-ghost</a> is the{' '}
         <a href="http://en.wikipedia.org/wiki/Free_software">free software</a>{' '}
         group of the University of Deusto. It organizes summer courses on
         related topics. As part of these courses I have taught the following
