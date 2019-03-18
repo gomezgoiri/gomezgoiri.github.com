@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coordination of Internet-connected objects through a Distributed Semantic Space</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="own-style.css" media="screen" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, frontpage
+
+.frontcontent-outer[
+ .frontcontent-inner[
+
+# Coordination of Internet-connected objects through a Distributed Semantic Space
+## Aitor Gómez Goiri .breakline[ [gomezgoiri.net](http://gomezgoiri.net)]
+
+<!--Internet unit, [DeustoTech](http://www.deustotech.deusto.es/)
+.breakline[ [www.morelab.deusto.es](http://www.morelab.deusto.es) ]-->
+
+.date[November 20, 2013]
+
+  ]
+]
+
+---
+
+# Outline
+
+ 1. Motivation
+ 2. Thesis outline
+ 3. New space model
+ 4. Search architecture
+ 5. Conclusion
+
+---
+
+class: center, middle
+
+# Motivation
+<!--## (1/6)-->
+
+---
+
+# Motivation
+
+ 1. Space-based computing
+ 1. Ubiquitous computing (UbiComp)
+
+<img alt="UbiComp and Space based computing" src="img/ubicomp_space.svg" style="width: 100%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
+
+???
+
+I'm not talking about the pragmatic motivation, which is to get a PhD ;-)
+
+2 fields influenced me.
+
+---
+
+# Space-based computing
+.subtitle[
+## Motivation
+]
+
+ * Space uncoupling
+ * Time uncoupling
+
+<img alt="Space based computing: rd, in and out primitives" src="img/spacebasedcomp.svg" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
+
+???
+
+* Benefits
+  * You can __substitute__ devices in the space
+  * You don't need to __reconfigure__ them
+* Ideal for environments which __change__ / are __dynamic__
+  * in the short and long term
+
+---
+
+<!-- Molaría más tener un supertítulo en pequeño para que se notase que sigo en la motivation -->
+# UbiComp
+.subtitle[
+## Motivation
+]
+
+Devices imperceptibly working on our behalf.
+
+ * Its real power "_comes not from any one of these devices, it emerges from the __interaction__ of all of them_".
+ * The Internet of Things and mobile computing.
+
+???
+
+UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
+
+Lately: IoT & mobile comp. __contributed to this vision__.
+--
+
+<div style="margin-top: 3em;" />
+
+## Problem
+Devices and applications build upon them are heterogeneous.
+
+---
+
+# Interoperability
+.subtitle[
+## Motivation
+]
+
+The IEEE defines it as
+
+ > The ability of two or more systems or components to exchange information
+ > and to use the information that has been exchanged. <!-- TODO cite -->
+ 
+---
+
+# Interoperability
+.subtitle[
+## Motivation
+]
+
+The IEEE defines it as
+
+ > .weak[The ability of two or more systems or components to __exchange__ information
+ > and to __use__ the information that has been exchanged.] <!-- TODO cite -->
+
+
+<img alt="Interoperability: exchange and use" src="img/interoperability.svg" style="width: 80%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto" />
+
+
+???
+1. Exchange
+ * We rely on widely accepted communication protocols (interop __ab-initio__)
+2. Use
+ 1. __Syntactic__ level: format of the data (i.e. its syntax and encoding)
+ 1. __Semantic__ level: precise meaning of the info
+    * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
+    
+---
+
+# The Semantic Web
+.subtitle[
+## Motivation
+]
+
+
+ > .weak[The vision of the Semantic Web is to extend principles of the Web from documents to data.
+ > Data should be accessed using the general Web architecture using, e.g., URI-s;
+ > data should be __related to one another__ just as documents (or portions of documents) are already.
+ > This also means creation of a common framework that allows data
+ > to be __shared and reused__ across application, enterprise, and community boundaries,
+ > to be __processed automatically__ by tools as well as manually,
+ > including revealing possible __new relationships__ among pieces of data.]
+    
+---
+
+class: center, middle
+
+<img alt="Scope of the dissertation" src="img/venn.svg" style="width: 90%;" />
+
+???
+
+After analyzing these research areas...
+
+Space-based computing:
+
+* Often applied to UbiComp
+* Used with Semantics
+
+Usually centrallizing so...
+
+I made myself a question (research question, PhD opportunity)
+
+* Can these devices get __more involved__ in the management of the space?
+  * Not only mere clients
+
+* Semantic in limited devices __Overhead__?
+  * Many of the current devices are able to manage their info
+    * Even if it is more verbosed
+    * Some of them can reason and expand this information.
+    * Others may need to rely in third machines.
+      * Out of the scope
+  * Anyway, we might be anticipating a trend.
+---
+
+class: center, middle
+
+# Thesis outline
+<!--## (2/6)-->
+<!-- Poner algo para que se sepa que no queda muchísimo -->
+
+---
+
+class: middle
+
+<!--# Hypothesis-->
+
+ > The TSC paradigm together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in a uncoupled
+ > and interoperable fashion.
+ 
+---
+
+class: middle
+
+.weak[
+ > The __TSC paradigm__ together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
+ > and interoperable__ fashion.
+]
+
+---
+
+# Objectives
+
+ 1. Space model.
+ 1. Energy-aware search architecture.
+ 1. Actuation mechanisms.
+
+---
+
+# Objectives
+
+ 1. Space model.
+ 1. Energy-aware search architecture.
+ 1. <del>Actuation mechanisms.</del>
+???
+
+Let me sketch some of this points in the remaining minutes.
+ 
+For the sake of time, I omit the 3rd one and explain the rest summarized.
+
+---
+
+class: center, middle
+
+# Space model
+
+???
+
+This is __simplified version__ of all my unfruitful attempts.
+
+---
+
+# Baseline Model
+.subtitle[
+## Space model
+]
+
+Triple Space Computing (TSC)
+ 
+ * Spaces identified by URIs
+ * Tuples == RDF Triples & RDF Graphs
+ * Templates = triple patterns
+
+<div style="margin-top:2em;" />
+
+![Resources in TSC](img/tsc_resources.svg)
+ 
+???
+
+Uses elements from the SW
+
+---
+
+# 1st attempt
+.subtitle[
+## Space model
+]
+
+Completely __decentralized__
+
+ * Each device manages its own information
+ * It asks to the rest using a __P2P__ approach
+
+???
+
+I did this prior to knowing that I wanted to be a PhD student.
+
+Benefits:
+
+* Reduces __dependency__ on others
+  * each device manages its own knowledge
+  * this simplifies the __management__
+* Reduces networking in __writings__
+  * Which are quite frequent (updates of a sensor measure)
+
+Drawbacks:
+
+* Flooding-based __search__: networking
+* __Inconsistency__ (Brewer)
+* __JXTA__: not really interoperable
+ 
+  * Not appropriate for limited devices
+  * Discontinued
+  * A nightmare!
+  
+---
+
+# 2nd attempt (I)
+.subtitle[
+## Space model
+]
+
+Same model, we substituted the _communication mechanism_
+
+???
+
+To interoperate, it is better to adopt a __widely accepted__ mechanism.
+
+<!-- Mechanism/protocol -->
+--
+
+background-image: url(img/the_web.svg)
+
+.center[
+<h2 style="margin-top:5em;">the Web!</h2>]
+
+???
+
+Even this presentation is part of the web!
+
+(at least, it is running in a web browser and it will be uploaded afterwards ;-))
+
+---
+ 
+# Why the Web?
+.subtitle[
+## Space model
+]
+
+ * Massively accepted <!--by humans.-->
+ * A lot of applications expose their capabilities using HTTP APIs
+--
+
+ * __REST__ architectural style comprises the design principles of _the modern web_
+
+<!--  Dibujito o tabla para que se intuya? -->
+
+???
+
+ Properties achieved:
+ 
+  * Scalability
+  * Simplicity
+  * Portability
+  * etc.
+ 
+ They are useful for limited devices!
+ 
+--
+
+ * Actually, it has been widely applied to IoT: the __Web of Things__
+ 
+ * Conflicts: push approach, subscription mechanisms...
+ 
+---
+
+class: middle
+
+<!--# Hypothesis-->
+
+ > The __alignment of the TSC paradigm with the web's principles__ together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in a uncoupled
+ > and interoperable fashion.
+ 
+---
+
+class: middle
+
+.weak[
+ > The __alignment of the TSC paradigm with the web's principles__ together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate __autonomously__ in a __uncoupled
+ > and interoperable__ fashion.
+]
+---
+
+# 2nd attempt (II)
+.subtitle[
+## Space model
+]
+
+HTTP API for TSC:
+
+ * __Resource oriented__: spaces, RDF Graphs, RDF triples
+ 
+ * HTTP __verbs__ mapped to TSC __primitives__
+ 
+ * Other features: status codes, content negotiation, etc.
+ 
+ * It is not hypermedia driven (yet)
+
+<!--enumerar los principios que cumple-->
+
+???
+
+As part of this 2nd attempt... we made an HTTP API
+
+TSC interface for HTTP compatible with (most of) the REST principles.
+
+HATEOAS: future work.
+
+* Although it has a human oriented API
+
+
+Drawbacks not mentioned yet:
+
+ * subscription, transactions, etc. vs stateless
+
+---
+
+# Problem with the 1st and 2nd attempts
+.subtitle[
+## Space model
+]
+
+What about the uncoupling?
+ 
+ 
+ <img alt="Space and time" src="img/uncoupling.svg" style="width:90%; margin-top: 2em; display: block; margin-left: auto; margin-right: auto"" class="center" />
+
+--
+ 
+<span style="margin-left: 1.4em;">Space uncoupling <span style="color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span></span>
+???
+
+* Programmers only care about data (__forced__ by the primitives)
+
+--
+
+<span style="float:right;">Time uncoupling <span style="color: #e53f39; font-size: 1.5em; vertical-align: middle;">&#10060;</span></span>
+
+???
+
+* Provider holds its content...
+  * only accessible when the provider is available
+* __Move contents__ to other nodes
+  * how to distinguish the reliable ones?
+  * measures away from where they are generated
+   * what if the other node lefts the space but the provider is available?
+* Replicate contents
+  * more networking
+  * not easy (unreliable => networking)
+* __Complex__
+
+---
+
+# Final model
+.subtitle[
+## Space model
+]
+
+We realized that we used the space for different purposes:
+
+ 1. Search for information
+ 1. Coordinate through the space
+
+???
+
+__Time__ uncoupling particularly __important for coordination__
+
+* No so much for search (real time)
+
+--
+
+<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+
+<!-- A modo de evaluación o conclusión, poner una tabla con las propiedades -->
+
+???
+
+<hr />
+
+Based on our __experience__.
+
+Hence, we propose a __dual model__.
+
+* Coordination space
+ * Enhanced by the information provided by autonomous devices
+* Outer space:
+ * __Enriched view__
+ * what's happening on __real time__
+
+---
+
+class: center, middle
+
+# Search architecture
+
+---
+
+# Evaluation: Energy consumption
+
+<img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 90%;" />
+
+???
+ 
+1. __Improve__ the search, become it smarter 
+1. Move the __management tasks__ created by our proposal __to__ more __powerful__ devices
+
+---
+
+class: center, middle
+
+<img alt="Energy-aware search architecture" src="img/architecture.svg" style="width: 100%;" />
+
+???
+
+1. Different __roles__
+1. Providers
+1. Consumers: directly request/query providers
+ * Which ones?
+1. Clues or indexes
+ * __Light__ example (measures, lamp)
+1. WP to enhance the search
+ * WP chosen __dynamically__: considering energy consumption and computation
+  * changes over the time
+ * Consumers __don't depend__ on the WP to resolve the queries
+  * Just to get and update the clues
+
+---
+
+# Evaluation: Network activity
+
+<img alt="Requests generated using different strategies" src="img/requests_by_strategies.svg" style="width: 90%;" />
+
+???
+
+* Better than floading
+* Comparing to caching: depends on the # of providers and the # of queries
+
+---
+
+# Evaluation: Network activity (by device type)
+
+<img alt="Energy consumption for each class" src="img/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
+
+???
+
+* On average, __activity is reduced__ considerably
+* Besides,
+ * less requests on the limited devices
+ * additional tasks, moved to more powerful ones
+
+---
+
+class: center, middle
+
+# Conclusion
+
+---
+
+# Conclusion
+
+ * __Mix the best__ of two worlds: space-based computing and the web.
+  * Uncoupling
+  * Scalability, simplicity...
+ * __Energy__-aware search
+ 
+ * __Future__ work:
+  * Performance evaluation in real deployments over a long period of time, with many different applications running
+  * Security aspects
+  * Distribution of the coordination space
+  * Etc.
+
+---
+
+class: middle, questionslide
+
+# Questions?
+Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deusto.es)]
+
+---
+
+class: center, middle
+
+All rights of images are reserved by the <br />
+__original owners__*, the rest of the content is licensed <br />
+under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/)__ license.
+
+<div style="margin-top:3em"/>
+
+![Creative commons by-sa 3.0 license logo](img/CC-logo.svg)
+
+<div style="margin-top:3em"/>
+
+\* [leogg](http://openclipart.org/detail/89209/),
+[finchweb](http://openclipart.org/detail/170018/),
+[rduris](http://openclipart.org/detail/167948/),
+[williamtheaker](http://openclipart.org/detail/178310/),
+[cibo00](http://openclipart.org/detail/14056/),
+[liftarn](http://openclipart.org/detail/181651/),
+[jiangyi_99](http://openclipart.org/detail/183056/),
+[mazeo](http://openclipart.org/detail/87055/) and 
+[Justin Ternet](http://openclipart.org/detail/182928/).
+
+    </textarea>
+    <script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html> 

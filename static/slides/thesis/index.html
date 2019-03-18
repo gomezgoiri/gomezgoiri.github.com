@@ -1,0 +1,3218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <base href="https://dl.dropboxusercontent.com/u/9804351/">
+    <!--<base href="http://localhost:8000/">-->
+    <link rel="stylesheet" type="text/css" href="own-style.css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, frontpage
+
+.frontcontent-outer[
+ .frontcontent-inner[
+
+# Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision
+## Aitor Gómez Goiri .breakline[ [gomezgoiri.net](http://gomezgoiri.net)]
+
+<!--Internet unit, [DeustoTech](http://www.deustotech.deusto.es/)
+.breakline[ [www.morelab.deusto.es](http://www.morelab.deusto.es) ]-->
+
+.date[June 16, 2014]
+
+  ]
+]
+???
+
+President of the panel, members of the panel.
+
+Ladies and gentlemen.
+
+Good morning.
+
+I will start the exposition and defense of my PhD thesis.
+
+---
+
+# Outline
+
+1. Introduction
+1. Hypothesis
+1. Space model
+1. Search architecture
+1. Actuation
+1. Conclusions
+
+???
+
+First, I will introduce it.
+
+And as a result of this introduction, I will present my hypothesis and the goals I planned to validate it.
+
+Then, I will explain each of these goals in the following 3 sections __concluding__ the presentation afterwards.
+
+---
+
+class: center, middle
+
+# Introduction
+
+---
+
+# Background
+.subtitle[
+## Introduction
+]
+
+<img alt="And god said: let's make Internet" src="img/transpas/internet01.png" style="width: 90%; display: block; margin-top: 2em; margin-left: auto; margin-right: auto">
+
+???
+
+In the beginning researchers created the Internet.
+
+Internet was composed by few computers.
+
+---
+
+# Background
+.subtitle[
+## Introduction
+]
+<img alt="Internet popularizes" src="img/transpas/internet02.png" style="width: 100%; display: block;">
+
+???
+
+Then, the popularity of the Internet increased and connecting computers became easier and cheaper.
+
+Consequently, more and more computers got connected.
+
+---
+
+# Background
+.subtitle[
+## Introduction
+]
+<img alt="Wireless comes to the Internet" src="img/transpas/internet03.png" style="width: 100%; display: block;">
+
+???
+
+Thanks to wireless technologies, devices started accessing to the Internet without having to be physically connected to a network.
+
+---
+
+# Background
+.subtitle[
+## Introduction
+]
+<img alt="Mobile computing appears" src="img/transpas/internet04.png" style="width: 100%; display: block;">
+
+???
+
+So the __mobile computing__ appeared.
+
+---
+
+# Background
+.subtitle[
+## Introduction
+]
+<img alt="The Internet of Things appears" src="img/transpas/internet05.png" style="width: 100%; display: block;">
+
+???
+
+Nowadays, __not only__ a wider range of smartphones, but also everyday objects like cars or washing machines connect to the Internet to exchange information.
+
+This is what __is know as__ the Internet of Things (IoT).
+
+---
+
+# Background: UbiComp
+.subtitle[
+## Introduction
+]
+
+<img alt="Guy reading the news while his home works on his behalf" src="img/transpas/ubicomp01.png" style="width: 100%; display: block;">
+
+???
+
+Both the IoT and the mobile computing have __contributed to Ubicomp__.
+
+UbiComp is a term __coined__ by Mark Weiser (in the early nineties).
+
+It describes environments where devices imperceptibly work on our behalf.
+
+---
+
+# Background: UbiComp
+.subtitle[
+## Introduction
+]
+
+<img alt="Devices work together" src="img/transpas/ubicomp02.png" style="width: 100%; display: block;">
+
+???
+
+But, in Mark's words, UbiComp's real power "comes not from any one of these devices, it emerges from the __interaction of all__ of them".
+
+This interaction brings __challenges__ to UbiComp.
+
+In this thesis I've  focused on two of them.
+
+---
+
+# UbiComp, challenge 1: dynamism
+.subtitle[
+## Introduction
+]
+
+<img alt="Guy reading the news while his home works on his behalf" src="img/transpas/ubicomp01.png" style="width: 100%; display: block;">
+
+???
+
+First, we have the dynamism.
+
+This dynamism has its effects both in the short and the long term.
+
+Since most devices have a mobile nature, they can come and go frequently in the short term.
+
+---
+
+# UbiComp, challenge 1: dynamism
+.subtitle[
+## Introduction
+]
+
+<img alt="The umbrella goes out" src="img/transpas/ubicomp03.png" style="width: 100%; display: block;">
+
+???
+
+For instance, in the figure we can see that the umbrella which was in the stand few moments ago, is now being used outside the house, outside the smart environment.
+
+---
+
+# UbiComp, challenge 1: dynamism
+.subtitle[
+## Introduction
+]
+
+<img alt="Guy reading the news while his home works on his behalf" src="img/transpas/ubicomp01.png" style="width: 100%; display: block;">
+
+???
+
+The environment also changes in the long term whenever an element is definitively replaced.
+
+---
+
+# UbiComp, challenge 1: dynamism
+.subtitle[
+## Introduction
+]
+
+<img alt="The clock is renewed" src="img/transpas/ubicomp04.png" style="width: 100%; display: block;">
+
+???
+
+For instance, we could replace the smart clock with a newer version.
+
+---
+
+class: no-slide-number
+
+# UbiComp, challenge 1: proposed solution
+.subtitle[
+## Introduction
+]
+<img alt="Space based computing: rd, in and out primitives" src="img/transpas/space-based.png" style="width: 100%;">
+
+???
+
+Space-based computing (or Tuple Spaces) faces this dynamism successfully.
+
+Tuple Spaces is a paradigm where nodes coordinate with each other by writing and reading structured pieces of information (i.e., tuples) in a shared space.
+
+This paradigm can be uncoupled in space and in time.
+
+__Space uncoupling__ is achieved because the nodes don't need to know each other beforehand to communicate.
+
+That is, TS' primitives do not care about addresses and references, they just care about the content which is being shared.
+
+__Time uncoupling__ is achieved because two nodes communicating with each other do not need to coexist at the same time.
+
+<!-- TODO ¿Hacer 2 transpas aclaratorias? 1. Temporal diagrama secuencia y 2. mostrando primitivas para lo de referencia -->
+
+---
+
+# UbiComp, challenge 2: heterogeneity
+.subtitle[
+## Introduction
+]
+
+<img alt="Dude, what are you talking about?" src="img/transpas/interoperability01.png" style="width: 100%; display: block;">
+
+???
+
+The second challenge UbiComp has to face is that both the devices and the applications build upon them are heterogeneous.
+
+This means that the interoperability is a key property for these environments.
+
+---
+
+# UbiComp, challenge 2: heterogeneity
+.subtitle[
+## Introduction
+]
+
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
+
+ > The ability of two or more systems or components to __exchange__ information
+ > and to __use__ the information that has been exchanged.
+
+???
+
+The [AI] triple [I] defines...
+ 
+---
+
+# UbiComp, challenge 2: heterogeneity
+.subtitle[
+## Introduction
+]
+
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238) defines __interoperability__ as
+
+> .weak[The ability of two or more systems or components to _exchange_ information
+> and to __use__ the information that has been exchanged.]
+
+???
+
+So, let's first talk about the second problem: how to use (or reuse) information.
+
+---
+
+# UbiComp, challenge 2a: use info
+.subtitle[
+## Introduction
+]
+
+<img alt="The robot does not understand chinese or japanese" src="img/transpas/interoperability02.png" style="width: 100%; display: block;">
+
+???
+
+We can identify two levels to allow this __use__:
+
+ 1. The  __syntactic__ level, which cares about  the format of the data (i.e. its syntax and encoding)
+    * For instance, if the robot does not undestand chinese characters, the information the mobile phone provides will be useless.
+
+ 1. The __semantic__ level gives a precise meaning to the information...
+    * _"understandable by any other application that was not initially developed for this purpose"_ <!-- TODO cite -->
+    * Following the example, this character may mean different things depending on the context (and it does actually).
+
+---
+
+
+# UbiComp, challenge 2a: proposed solution
+.subtitle[
+## Introduction
+]
+
+<img alt="The robot does understand terms" src="img/transpas/interoperability03.png" style="width: 100%; display: block;">
+
+???
+
+To achieve both levels, I propose to use __Semantic Web__ standards and tools.
+
+The __vision__ of the Semantic Web is to extend principles of the Web from documents to data.
+
+It proposes to relate terms to one another, so they can be shared and reused across applications.
+
+This terms can be processed automatically revealing new relationships among the data.
+
+ > .weak[The __vision__ of the Semantic Web is to extend principles of the Web from documents to data.
+ > Data should be accessed using the general Web architecture using, e.g., URI-s;
+ > data should be __related to one another__ just as documents (or portions of documents) are already.
+ > This also means creation of a common framework that allows data
+ > to be __shared and reused__ across application, enterprise, and community boundaries,
+ > to be __processed automatically__ by tools as well as manually,
+ > including revealing possible __new relationships__ among pieces of data.]
+
+---
+
+# UbiComp, challenge 2b:  exchange info
+.subtitle[
+## Introduction
+]
+
+The [IEEE](http://ieeexplore.ieee.org/servlet/opac?punumber=2238)  defines _interoperability_ as
+
+ > .weak[The ability of two or more systems or components to __exchange__ information
+ > and to _use_ the information that has been exchanged.]
+
+
+???
+
+The other aspect which affects the interoperability is __how to exchange information__.
+
+To interoperate, it is better to adopt a __widely accepted__ communication mechanism. <!-- mechanism/protocols -->
+This is called interop __ab-initio__.
+
+And what's more accepted today than...
+
+---
+
+background-image: url(img/the_web.svg)
+
+.center[
+  <h2 style="margin-top:10em;">the Web!<span class="print"> &#42;</span></h2>
+  <!-- To export to the PDF version -->
+  <p class="print" style="font-size: xx-small;">&#42; This made sense in the presentation's original format: HTML.</p>
+]
+
+???
+
+...the web?
+
+Even this presentation is part of the web!
+
+http://rawgit.com/gomezgoiri/gomezgoiri.github.com/master/slides/thesis/index.html
+
+---
+
+# Why the Web?
+.subtitle[
+## Introduction > UbiComp, challenge 2b:  exchange info
+]
+<img alt="The web is widely accepted" src="img/transpas/web_accepted01.png" style="width: 100%;" />
+
+???
+
+The web is massively accepted <!--by humans. (this is not a real reason) -->
+
+ * By humans
+ * But also, by machines: a lot of applications expose their capabilities using HTTP APIs
+
+__REST__ architectural style comprises the design principles of _the modern web_
+
+---
+
+# Why the Web?
+.subtitle[
+## Introduction > UbiComp, challenge 2b:  exchange info
+]
+<img alt="The web is widely accepted" src="img/transpas/web_accepted02.png" style="width: 100%;" />
+
+???
+
+It achieves the following properties  (see Fielding's thesis)
+
+* Scalability
+* Simplicity
+* Portability
+* etc.
+
+Note that most of these properties are particularly useful for limited devices.
+
+---
+
+# UbiComp, challenge 2b:  exchange info
+.subtitle[
+## Introduction
+]
+
+<img alt="The web of Things" src="img/transpas/wot.png" style="width: 100%; display: block; margin-top: 2em;">
+
+???
+
+As a consequence, the web has been widely applied to IoT, bringing what people has called the __Web of Things__ (WoT).
+
+<!-- Transpa backup: WoT challenges: push approach, subscription mechanisms... -->
+
+In the WoT, everyday things expose their capabilities through web standards.
+This way, they are first-class web citizens and can seamlessly work with other web apps.
+
+This goes hand in hand with my interest in having devices which are not mere clients, but also active data providers.
+
+---
+
+# Summary: Solutions for UbiComp challenges
+.subtitle[
+## Introduction
+]
+<img alt="The web of Things" src="img/transpas/ubicomp_solutions.png" style="width: 100%; display: block;">
+
+???
+
+Summarizing, I propose to face UbiComp dynamism using space-base computing.
+
+To tacke the heterogeneity, I propose to use
+
+* the web to exchange information and
+* the semantic web standards to make it reusable
+
+---
+
+# State-of-the-art
+.subtitle[
+## Motivation
+]
+
+<!-- TODO Delimit the scope in this section or in the next one? -->
+
+<img alt="Scope of the dissertation" src="img/transpas/venn_background.png" style="width: 100%;" />
+
+???
+
+<!-- Aprovecho esta ptranspa para hacer una pasada superficial al estado del arte -->
+
+After analyzing these research areas in the UbiComp domain I saw that...
+
+Space-based computing
+
+ * has often been applied to UbiComp
+ * and it has also been used with Semantics (I focus on Triple Space Computing paradigm or TSC), <!-- Necesario porque luego lo nombro en la hipotesis -->
+ * but usually centrallizing the space on powerful devices.
+
+This is also common in most of the systems which use the Semantic Web in UbiComp.
+
+---
+
+# Common design: delegate semantic provision
+.subtitle[
+## Motivation
+]
+<img alt="Common design: all limited devices send their semantically described data to a more powerful intermediary" src="img/transpas/centralized_provision01.png" class="center" style="width:100%;"/>
+
+???
+
+So, one popular design solution when working with limited devices is to centralize all the knowledge in a more powerful machine (or machines).
+
+For sake of clarity, let's assume that there is just one machine.
+
+This way, the devices periodically send their information to this machine,
+and it stores all the information.
+
+---
+
+# Common design: delegate semantic provision
+.subtitle[
+## Motivation
+]
+<img alt="Common design: a limited device queries the intermediary to search for information" src="img/transpas/centralized_provision02.png" class="center" style="width:100%;"/>
+
+???
+
+Whenever a limited device needs to query for something, it has to ask to this machine.
+
+---
+
+# Common design: delegate semantic provision
+.subtitle[
+## Motivation
+]
+<img alt="Weak (limited) devices and a poweful intermediary" src="img/transpas/centralized_provision03.png" class="center" style="width:100%;"/>
+
+???
+
+The reasons to do this are mainly two:
+
+ 1. semantic processing can add too much overhead to limited devices
+ 2. it is hard to ensure the information availability with unsteady (too dynamic) devices
+
+However,
+
+ 1. Availability is not always a requirement. In fact, the unavailability, "represents" the mobile nature of the environment/space.
+ 1. Current embedded and mobile devices are notably more powerful than 5 years ago
+
+And, now, let me do a brief parenthesis to talk about this...
+
+---
+
+# "Short" or "limited" are relative adjectives <!-- IoT? Energy-aware? -->
+.subtitle[
+## Motivation
+]
+<img alt="NBA 2006 dunk contest's contenders" src="img/transpas/dunk-portrait-2006.jpg" class="center" style="width: 19em;"/>
+<!-- Explain: which devices, results for semantic web testings, the evolution experienced since I first started working in this -->
+
+???
+
+The player in the center is Nate Robinson who, compared to any of the remaining NBA players will be considered small.
+
+However, he is about 4 cm taller than me, so I wouldn't consider him small.
+
+The same thing happens when we speak about _limited devices_.
+
+In the context of my dissertation, _limited devices_ are mobile or embedded devices able to manage semantic annotations.
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Device A creates a content at t3" src="img/transpas/centralized_provision04.png" class="center" style="width:100%;"/>
+
+???
+
+So, after this parenthesis, let's return to the delegation of semantic provision and management from limited to more powerful devices.
+
+This design has two problems.
+
+[RESPIRAR y LEER ANTES  que viene frase larga]
+
+First, when devices rely on others to provide information, it is not guaranteed
+that the information accessed will accurately represent the last information
+available in the data providers.
+
+In the example, we see a limited device (e.g, a sensor) with a version of its contents created at _t3_.
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Device A sends content to intermediary" src="img/transpas/centralized_provision05.png" class="center" style="width:100%;"/>
+
+???
+
+It sends its contents to a server.
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Intermediary stores the content" src="img/transpas/centralized_provision06.png" class="center" style="width:100%;"/>
+
+???
+
+This server stores this version.
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Device A creates a new version of the content" src="img/transpas/centralized_provision07.png" class="center" style="width:100%;"/>
+
+???
+
+Afterwards, the sensor generates a new version with new measures at t6.
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Device C asks to the intermediary" src="img/transpas/centralized_provision08.png" class="center" style="width:100%;"/>
+
+???
+
+It is obvious that if other device now askes for the content provided by this sensor to the server...
+
+---
+
+# Delegation of semantic provision: Problem 1
+.subtitle[
+## Motivation
+]
+<img alt="Device C obtains outdated knowledge" src="img/transpas/centralized_provision09.png" class="center" style="width:100%;"/>
+
+???
+
+...it will get the outdated version.
+
+---
+
+# Delegation of semantic provision: Problem 2
+.subtitle[
+## Motivation
+]
+<img alt="When the intermediary leaves the space the devices are not able to search" src="img/transpas/centralized_provision10.png" class="center" style="width:100%;"/>
+
+???
+
+The second problem happens because once devices rely on intermediaries,
+these intermediaries must be available at all time.
+Otherwise, the devices would not be able to talk to each other.
+
+Note that,
+
+ * Having dedicated servers is costly and hard to manage in simple scenarios
+ * Externalizing these servers, makes you system dependant on third-parties.
+
+And this happens way too frequently on the Internet.
+
+---
+
+# Delegation of semantic provision: Problem 2
+.subtitle[
+## Motivation
+]
+<img alt="Nabaztag" src="img/transpas/nabaztag.png" class="center" style="width:100%;"/>
+
+???
+
+For example, the Navastag was an IoT device which was completely depent on an external service.
+
+The company of this internet-connected bunny dissapeared and they did not maintain the servers.
+<!-- They released a poorly documented code. -->
+
+As a consequence, nowadays the Navastag is pretty much an expensive decoration.
+
+
+So, with these considerations in mind, I made myself a question:
+<!-- research question => PhD opportunity -->
+
+ * Can these devices get __more involved__ in the management of the space?
+   Not only as mere clients.
+
+   
+To sum up these interests, I made the following hypothesis.
+
+(__ATENCION__: calmate y lee esto lentamente)
+
+---
+
+# Hypothesis
+
+<div style="margin-top: 5em"></div>
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+
+---
+
+# Hypothesis
+
+<div style="margin-top: 5em"></div>
+
+.weak[
+ > The __alignment of the TSC paradigm with the web's principles__ together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+ ]
+
+---
+
+# Hypothesis
+
+<div style="margin-top: 5em"></div>
+
+.weak[
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate __autonomously__ in an __uncoupled
+ > and interoperable__ fashion.
+]
+
+---
+
+# Goals
+
+ 1. Space model
+ 2. Search architecture
+ 3. Actuation mechanism
+
+???
+To validate the hypothesis, the main objective of this dissertation was _to design a middleware which follows the TSC paradigm_
+
+* according to web principles
+* and considering the energy and computation aspects.
+
+<hr>
+
+This objective can be achieved through the following sub-goals:
+
+1. Merge the benefits from Space-based computing and the web in a __new space model__.
+1. Add searching capability to this model, and
+1. Define how to actuate using it.
+
+---
+
+# Outline
+
+.weak[
+
+1- Introduction
+
+2- Hypothesis
+ ]
+
+3 - Space model
+
+.weak[
+
+4- Search architecture
+
+5- Actuation
+
+6- Conclusions
+
+]
+
+---
+
+class: center, middle
+
+# Space model
+
+.citations[
+
+* [CHB2014] Lightweight semantic framework for interoperable ambient intelligence applications
+* [WoT2012] RESTful Triple Spaces of Things
+* [IEEESensors2011] Collaboration of Sensors and Actuators through Triple Spaces.
+* [WoT2011] On the complementarity of Triple Spaces and the Web of Things.
+
+]
+???
+First, let's talk about the space model.
+
+Note that at the bottom there are some articles I published regarding this issue.
+---
+
+# Space model
+
+<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+
+Analysis:
+
+ * Networking properties
+ * Coordination properties
+ * Is it for limited devices?
+
+???
+
+After several attempts, I came up with the __dual model__ shown in the figure.
+
+It is composed by:
+
+ * Coordination space
+  * which is pretty much a classical semantic space
+  * enhanced by the information provided by autonomous devices (or asteroids) which are part of the
+ * Outer space
+  * This OS is an __enriched view__ of
+  * what's happening on __real time__
+
+This model confines much of the information in the devices.
+
+I analysed this model from different perspectives.
+
+To analyse its networking properties, we must note that both spaces are accessed through their APIs.
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties01.png" style="width: 100%;" />
+
+???
+
+Both APIs are based on the space-based computing primitives, which are compatible with (most of) the REST principles:
+
+* The API is resource oriented. It has the following types of resources: spaces
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties02.png" style="width: 100%;" />
+
+???
+
+which contain RDF Graphs
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties03.png" style="width: 100%;" />
+
+???
+
+which contain RDF triples.
+
+The triples are the most basic information unit in Triple Space Computing.
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+<img alt="TSC is resource oriented and matches with HTTP verbs" src="img/transpas/networking_properties04.png" style="width: 100%;" />
+
+???
+
+* The API's TSC primitives can be directly mapped to HTTP verbs
+* Furthermore, we take advantage of other HTTP features such as
+ * status codes or the
+ * content negotiation.
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+<img alt="The API is not hypermedia-driven" src="img/transpas/networking_properties05.png" style="width: 100%;" />
+
+???
+
+Unfortunately, these APIs are not hypermedia-driven.
+
+In short, this principle means that the client should not __know__ anything apart from an __URL__ to use an API.
+
+It should drive the interaction __selecting the new application states__ from the web hypermedia content provided by the server at each step.
+
+Although, the API is actually hypermedia-driven for humans, it is not for machines.
+
+---
+
+# Networking properties
+.subtitle[
+##  Space model
+]
+
+REST-like APIs
+
+* Scalability
+* Simplicity
+* User perceived performance
+* Efficiency
+* Evolvability
+
+???
+
+Anyway, accessing to the spaces through a REST-like API provides the following features to our model:
+
+* Scalability (4+)
+* Simplicity (3+-)
+* UP performance, efficiency & evolvability (2+)
+* and some other properties [avoid enumeration]
+ * Portability, extensibility, configurability, reusability & reliability (+)
+ * Visibility (+-)
+ * Net performance (-)
+
+And it also comes with some drawbacks:
+
+* Less simplicity, reusability & visibility than pure REST APIs and
+* that Mechanisms such as subscriptions and transactions go against REST architecture's statelessness
+
+---
+
+# Coordination properties
+.subtitle[
+##  Space model
+]
+
+<img alt="Space and time" src="img/uncoupling.svg" class="noprint" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<!-- To export to the PDF version -->
+<img alt="Space and time" src="img/transpas/uncoupling-pdf.png" class="print" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<div style="margin-top: 1em;">
+ <span style="margin-left: 12em;">Space uncoupling</span>
+ <span style="float:right;">Time uncoupling</span>
+</div>
+
+???
+
+But, having a part of the model which is based on the web also affects uncoupling.
+
+--
+
+<div>
+ <span style="float:left;">Coordination space</span>
+ <span style="width: 20em; float:right;">
+     <span style="margin-left: 25%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+     <span style="margin-left: 40%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+  </span>
+</div>
+
+???
+
+Obviously, the coordination space corresponds with the clasical model and therefore has both uncoupling levels.
+
+---
+
+# Coordination properties
+.subtitle[
+##  Space model
+]
+
+<img alt="Space and time" src="img/uncoupling.svg" class="noprint" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<!-- To export to the PDF version -->
+<img alt="Space and time" src="img/transpas/uncoupling-pdf.png" class="print" style="width:60%; margin-top: 2em; margin-left: 12em; margin-right: auto"/>
+<div style="margin-top: 1em;">
+ <span style="margin-left: 12em;">Space uncoupling</span>
+ <span style="float:right;">Time uncoupling</span>
+</div>
+
+<div>
+ <span style="float:left; color: #cccccc;">Coordination space</span>
+ <span style="width: 20em; float:right;">
+     <span style="margin-left: 25%; color: #adb8ac; font-size: 2em; vertical-align: middle;">&#10004;</span>
+     <span style="margin-left: 40%; color: #adb8ac; font-size: 2em; vertical-align: middle;">&#10004;</span>
+  </span>
+</div>
+
+<div style="clear:both;">
+  <span style="float:left;">Outer space</span>
+  <span style="width: 20em; float:right;">
+      <span style="margin-left: 25%; color: #4db849; font-size: 2em; vertical-align: middle;">&#10004;</span>
+???
+
+In the _outer space_, programmers are forced by space-based primitives not to care about data too.
+
+--
+      <span style="margin-left: 40%; color: #e53f39; font-size: 1.5em; vertical-align: middle; font-weight: bold;">X</span><!-- &#10060; <- Not recognized in Win7-->
+  </span>
+</div>
+
+???
+
+However, regarding _time uncoupling_, since each provider holds its content, this is only accessible when the provider is available.
+
+[__ENFATIZAR__]
+
+I kept a time coupled outer-space because I identified (realized) that we used the space for two different purposes:
+
+ 1. Search for information
+ 1. Coordinate through the space
+
+Time uncoupling is particularly important for coordination, but not so much to search (in real time).
+
+---
+
+# Properties for UbiComp
+.subtitle[
+##  Space model
+]
+
+<img alt="Space and time" src="img/transpas/ubicomp_properties01.png" class="center" style="width:90%;"/>
+
+???
+
+Finally, we can see how the properties commented before interrelate with desirable properties in UbiComp.
+
+Particularly, we can see two negative interrelations:
+
+---
+
+# Properties for UbiComp
+.subtitle[
+##  Space model
+]
+
+<img alt="Space and time" src="img/transpas/ubicomp_properties02.png" class="center" style="width:90%;"/>
+
+???
+
+The semantic web negatively affects computation overload and energy autonomy.
+
+For this purpose, we have specifically designed a search architecture.
+
+---
+
+# Outline
+
+.weak[
+
+1- Introduction
+
+2- Hypothesis
+
+3 - Space model
+ ]
+
+4- Search architecture
+
+.weak[
+
+5- Actuation
+
+6- Conclusions
+
+]
+
+---
+
+class: center, middle
+
+# Energy-aware search architecture <!-- TODO call it in other way??? -->
+
+.citations[
+
+* [IJWGS2014] Energy-aware architecture for information search in the semantic web of things.
+* [IMIS2012] Assessing data dissemination strategies within triple spaces on the web of things.
+]
+???
+
+And this is precisely the second goal of my dissertation.
+
+(__ATENCIÓN__: Respira y bebe agua o cuenta hasta tres para que les dé tiempo a asimilar que eso son citas)
+
+---
+
+# Problem: in the context of this PhD <!-- Or specific -->
+.subtitle[
+## Energy-aware search architecture
+]
+
+How to search in the _outer space_?
+
+<img alt="Proposed dual model" src="img/new_model.svg" style="width: 100%;" />
+
+???
+
+So, how can we search in the _outer space_?
+
+Remember that the "asteroids" from the right-hand side are independent small web providers.
+
+Therefore, generalizing the problem...
+
+---
+
+# Problem: a generalization
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="How to query semantic web providers?" src="img/transpas/search_motivation01.png" class="center" style="width:100%;"/>
+
+???
+
+How can we search in a semantic web provided by limited devices?
+
+(and remember my driving motivation: to promote the direct communication between them)
+
+---
+
+# Problem: a generalization
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Semantic web providers asking to each others" src="img/transpas/search_motivation02.png" class="center" style="width:100%;"/>
+
+???
+
+Devices need to communicate with each other directly, but this cannot be done at any price.
+
+For instance, a broadcasting-based solution will generate a high computation and networking activity.
+
+---
+
+# Energy consumption: an example
+.subtitle[
+##  Energy-aware search architecture
+]
+
+<img alt="FoxG20 used to measure energy" src="img/transpas/foxg20.jpg" style="width: 60%; margin-top:1em;" class="center" />
+<table style="margin:0px auto; width:500px">
+  <tr>
+    <td style="width:9em">Platform</td>
+    <td>FoxG20</td>
+  </tr>
+  <tr>
+    <td>RAM Memory</td>
+    <td>64 MB</td>
+  </tr>
+  <tr>
+    <td>CPU</td>
+    <td>400 MHz Atmel ARM9</td>
+  </tr>
+</table>
+???
+
+To find out how these computing and networking activities could affect an embedded platform,
+
+I checked their effects in a FoxG20 embedded device.
+
+---
+
+# Energy consumption: an example
+.subtitle[
+##  Energy-aware search architecture
+]
+
+<img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 80%;" class="center" />
+
+???
+
+In periods when it reasons or attends HTTP requests, it consumes approximately 20% more energy.
+
+In other platforms, similar energy wastes can be presumed.
+
+But beyond concrete energy consumptions, what this __chart transmits__ is that since computation and networking result in significant higher energy consumption,
+we need to find a strategy which efficiently manages both aspects.
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Roles for the search-architecture: White Page" src="img/transpas/search_roles01.png" style="width: 100%;" class="center" />
+
+???
+
+What __I conceived__ is an architecture which uses "search facilitators" to help nodes to __improve__ their search process.
+
+This "search facilitator", called White Page from now on, is chosen dynamically between all the nodes in a space and can change over the time.
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Roles for the search architecture: Providers" src="img/transpas/search_roles02.png" style="width: 100%;" class="center" />
+
+???
+ 
+Apart from the White Page role, a node can have two other roles:
+
+ * _Providers_...
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Roles for the search architecture: Providers hold contents" src="img/transpas/search_roles03.png" style="width: 100%;" class="center" />
+
+???
+ 
+...which carry their own semantic information
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Roles for the search architecture: Consumers" src="img/transpas/search_roles04.png" style="width: 100%;" class="center" />
+
+???
+
+and _Consumers_...
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Roles for the search architecture: Consumers" src="img/transpas/search_roles05.png" style="width: 100%;" class="center" />
+
+???
+
+...which directly request or query providers to obtain fresh data.
+
+---
+
+# Roles
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Devices have different roles at each moment" src="img/transpas/devices_have_roles.png" style="width: 100%;" class="center" />
+
+???
+
+Note that from now to the evaluation, I will talk about roles rather than specific devices.
+
+Each device can select at any time its role: provider, consumer, both or none.
+
+The White Page is selected between all of them.
+
+For instance, from the figure, providing the laptop is steady, it may be chosen as the new WP.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="A provider creates a clue using its content as input" src="img/transpas/search_proposal01.png" class="center" style="width:100%;"/>
+
+???
+
+_Providers_ summarize their knowledge into pieces of information called _clues_.
+
+Note that the solution is based in a principle: _clues do not change frequently_. .weak[principle~=basic rule]
+
+This is possible if they represent the __type__ of information a node hosts rather than the data it constantly generates.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page stores an aggregated clue" src="img/transpas/search_proposal02.png" class="center" style="width:100%;"/>
+
+???
+
+The White Page stores clues in what it is called an _aggregated clue_.
+
+This _aggregated clue_ is versioned.
+
+In the figure, it has the _i-1_ version.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="A provider sends a clue" src="img/transpas/search_proposal03.png" class="center" style="width:100%;"/>
+
+???
+
+Providers send a clue to the WP in any of the following situations:
+
+ 1. when a clue is updated
+ 2. before its lifetime expires
+ 3. whenever there is a new WP in the Space with a lower setup version than the one in the Provider
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page updates the aggregated clue" src="img/transpas/search_proposal04.png" class="center" style="width:100%;"/>
+
+???
+
+Once the WP receives the new clue, it adds the clue to the _aggregated clue_ creating a new version.
+
+In the figure, version _i_.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="The provider gets the last aggregated clue version as a response" src="img/transpas/search_proposal05.png" class="center" style="width:100%;"/>
+
+???
+
+As a response to its request, the providers obtain this aggregated clue version.
+
+The aggregated clues help _Consumers_ searching for information efficiently.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Consumer obtains the latest aggregated clue" src="img/transpas/search_proposal06.png" class="center" style="width:100%;"/>
+
+???
+
+Therefore, _Consumers_ need to obtain an _aggregated clue_.
+
+This happens in these occasions:
+
+  1. when they don't have one or
+  2. periodically
+   * this period is adjusted checking the average frequency of its last 10 queries.
+   * In any case, this period is bounded with an
+   * upper bound time, which ensures a fresh view; and
+   * a lower bound time, which avoids flooding to the WP
+   
+Using these _aggregated clues_, _Consumers_ are able to independently resolve their queries.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Consumer processes an aggregated clue to decide which node to query " src="img/transpas/search_proposal07.png" class="center" style="width:100%;"/>
+
+???
+
+In other words, a _Consumer_ processes an _aggregated clue_ to decide to which nodes to ask for information.
+
+Exceptionally, as an optimization for nodes with severe computation restrictions, _Consumers_ can also query the WP which nodes to ask.
+
+---
+
+# Clues
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Consumer queries to some providers" src="img/transpas/search_proposal08.png" class="center" style="width:100%;"/>
+
+???
+
+Finally, the consumer is now able to decide to which node address its request.
+
+---
+
+# Clue content
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Semantic example and clue types" src="img/transpas/semanticExample01.png" style="width: 100%;" />
+
+???
+
+So, how do a clue look like?
+
+As I mentioned, a clue is a summary of the knowledge hold by a provider.
+
+This knowledge is modelled according to Semantic Web standards.
+
+The Semantic Web is formed by RDF triples.
+
+These triples are composed by a subject, a predicate and an object.
+
+The figure shows an schema of several interrelated triples.
+
+The edges represent the predicates which relate terms with each other.
+
+---
+
+# Clue content
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Semantic example and clue types" src="img/transpas/semanticExample02.png" style="width: 100%;" />
+
+???
+
+As a query language for this knowledge, I use wildcard-patterns such as the ones shown at the bottom of the image.
+<!-- TODO transpa backup explicando por qué no SPARQL -->
+
+---
+
+# Clue content
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Semantic example and clue types" src="img/transpas/semanticExample03.png" style="width: 100%;" />
+
+???
+
+So, to summarize this information, I consider three alternatives:
+
+* Use the __predicates__.
+ * They contain the relations between terms.
+ * I select just the significant ones.
+ * In the example, ssn:observes and ssn:observedBy.
+
+---
+
+# Clue content
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Semantic example and clue types" src="img/transpas/semanticExample04.png" style="width: 100%;" />
+
+???
+
+* Use the __prefixes__.
+ * They indicate the common startings for the URIs used in the triples.
+ * They often correspond to vocabularies used by the node to describe the knowledge.
+ * In the example, ssn, weather, sweet and ex.
+ 
+---
+
+# Clue content
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Semantic example and clue types" src="img/transpas/semanticExample05.png" style="width: 100%;" />
+
+???
+
+* And finally, summarize the knowledge using __classes__.
+ * They detail types of terms.
+ * In the example, ssn:Sensor and weather:RainfallObservation.
+
+---
+
+# Discovery
+.subtitle[
+## Energy-aware search architecture
+]
+
+Using a __discovery mechanism__ each node shares:
+
+1. the __Spaces__ it belongs to,
+2. whether it is __White Page__ (+ its setup version)
+3. information for the White Page __selection__ process
+
+???
+
+To run my proposal, I require a __discovery mechanism__ able to
+
+1. get the Spaces that a particular node belongs to,
+2. identify the WP and its setup version, and
+3. provide additional information about nodes to decide which one can be the next WP.
+
+I tested the impact of the discovery mechanism using mDNS and DNS-SD.
+
+However, the specific mechanism used is transversal to the architecture.
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="No White Page available in the space" src="img/transpas/wp_selection01.png" class="center" style="width:100%;"/>
+
+???
+
+The selection process can start:
+
+First, when no WP is available.
+
+In this case, the first node to realize its absence starts this process.
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page ranking the nodes to find the new White Page" src="img/transpas/wp_selection02.png" class="center" style="width:100%;"/>
+
+???
+
+Second, when the current WP gets a worse score than other nodes.
+
+In this case, it's the current WP the node who checks this periodically.
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page selection" src="img/transpas/wp_selection03.png" class="center" style="width:100%;"/>
+
+???
+
+And how does the selection work?
+
+The "WP selector" ranks the nodes according to the information provided by their discovery mechanism.
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page selection takes into account the approximate time since devices joined the space" src="img/transpas/wp_selection04.png" class="center" style="width:100%;"/>
+
+???
+
+approximate time since the device joined the Space (to estimate its reliability),
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page selection takes into account devices' memory" src="img/transpas/wp_selection05.png" class="center" style="width:100%;"/>
+
+???
+
+and its memory,
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page selection takes into account devices' storage capacity" src="img/transpas/wp_selection06.png" class="center" style="width:100%;"/>
+
+???
+
+* storage capacity, and
+
+---
+
+# White page selection
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="White Page selection takes into account devices' battery level" src="img/transpas/wp_selection07.png" class="center" style="width:100%;"/>
+
+???
+
+* battery level.
+
+The goal of this ranking is to move the additional load needed to maintain the architecture to the most __powerful and stable__ device in the space.
+
+---
+
+<!-- TODO Slide recap: why is it energy aware and how does it help on the computation? -->
+
+# Experimental environment: simulation inputs
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Real time measures" src="img/transpas/device_times.png" style="width: 70%;" class="center" />
+
+???
+
+To test all this architecture, I carried out several simulations.
+
+To parametrize them, I measured the time needed by real platforms to answer to a semantic query.
+
+---
+
+# Experimental environment: simulation inputs
+.subtitle[
+## Energy-aware search architecture
+]
+
+* AEMET metereological dataset
+* University of Luebeck Wisebed Sensor Readings
+* Kno.e.sis Linked Sensor Data
+* Bizkaisense
+
+???
+
+For the data used in the simulation, I extracted them from real datasets.
+
+All these dataset describe sensing stations and their measures.
+
+On the other hand, the querying templates used consider queries from different nature.
+
+---
+
+# Compared strategies
+.subtitle[
+## Energy-aware search architecture
+]
+<img alt="Negative broadcasting" src="img/transpas/negative_broadcasting.png" style="width: 100%;" />
+
+<!-- FIXME Añadir una transpa justificativa de por qué no he implementado otras del estado del arte!
+Poner las que luego ví que existían basadas en cachear, por lo cual medio cubro esto :-P
+Otras o muy complejas de implementar, o no ponían el código.
+-->
+
+???
+
+As a baseline for the comparison, I used the rawest strategy: negative broadcasting.
+
+In this strategy, a node propagates its query to the rest of the nodes it knows about.
+
+As an optimization, a node can memorize which nodes successfully answer the same query in the past.
+
+That is, they can implement caching.
+
+---
+
+# Evaluation: Network activity
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Chart comparing the network activity generated by different strategies as the network size increases" src="img/requests_by_strategies.svg" style="width: 90%;" />
+
+???
+
+In the figure we show the results of performing 1.000 queries during one hour for 1 or 100 consumers using each of the strategies explained.
+In the proposed solution we can see that an increase in the number of consumers does not increase the number of requests too much.
+In fact, the difference between these two cases is found in the additional management tasks.
+
+Comparing it with other solutions, it requires less requests than NB and caching with 100 different consumers.
+For the same number of queries, the more consumers there are, the closer to NB caching behaves.
+
+When there is only a consumer in the space, caching works slightly better than our solution.
+However, its performance gets closer to our solution as the network size increases.
+
+In other cases, this balance between both strategies will change depending on:
+
+* the number of consumers and
+* the number of queries
+
+Unlike in caching, a _Consumer_ using our solution can also give accurate responses the first time it resolves a query.
+
+<!-- NOTA este caso es uno en el que las clues permiten discriminar muy bien, caching es mejor para preguntas que se repiten mucho,
+lo nuestro tira con "tipos de pregunta" semejantes -->
+
+---
+
+# Evaluation: Network activity (by device type)
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Chart comparing the average energy consumption for each type of device in negative broadcasting and in our solution" src="img/transpas/activity_measures.svg" style="width: 100%; margin-top: 10%;" />
+
+???
+
+In this chart, we analyse the networking activity generated in each node (on average).
+
+The experiment consists of 300 nodes joined to a Space running on:
+ * 1 server,
+ * 30 galaxy tabs,
+ * 75 FoxG20 and
+ * 194 Digi’s XBee sensors
+
+
+On the left hand side we can see how each device __reduces its activity__ considerably.
+
+On the right hand side, we see two desired effects:
+
+ * the limited devices face less requests and consequently reduce their activity
+ * the additional tasks generated by the solution are moved to the more powerful ones
+
+---
+
+# Evaluation: Network activity (high dynamism)
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Chart comparing the network activity generated by our solution in very dynamic networks" src="img/transpas/evaluation_dynamic.png" style="width: 100%; margin-top: 10%;" />
+
+???
+
+Using the same devices as in the previous simulation, this evaluation shows what happens when we have a very dynamic scenario where nodes frequently come and go.
+Specifically, it simulates nodes joining and leaving the Space at different intervals .weak[(30 seconds, 1 minute, 5, 10, 20, 30 and 45 minutes)].
+We also added an scenario with no drops as a baseline.
+.weak[Note that we represent this scenario by configuring the drop-interval with a greater value than the simulation time.]
+
+Furthermore, the evaluation tests the most harmful situation: the node __abruptly leaving__ the Space __is__ always the __WP__.
+
+In the left hand side, we see how in the worse case scenario, our solution is far below NB.
+
+In the right hand side, we see an increase of about 13.000 requests for the most frequent drop-interval simulation.
+This happens because providers are forced to send their individual clues to many new WPs.
+
+However, once the aggregated clues have been propagated to most of the consumers (in this case at 5 minutes drop interval),
+the new WP can be initiated from a previous aggregated clue version.
+This avoids the situation when most of the providers re-send their clues over and over.
+
+---
+
+# Summary
+.subtitle[
+## Energy-aware search architecture
+]
+
+The presented search architecture cares about _computation_ (C) and _energy_ (E), because:
+
+ * Management __tasks are delegated__ to the most powerful devices in the space (C+E)
+ * The search is improved avoiding many __unnecessary requests__ (C+E)
+ * If the _Provider_ __cannot process__ the _aggregated clue_, it can delegate it on the WP (C)
+ * The WP selection process prioritizes cases where __less providers__ are forced to __resend__ their last clue version (E).
+
+???
+
+The presented search architecture cares about __computation__ and __energy__, because:
+
+ * The additional management tasks created are delegated to one of the most powerful devices in the space (C+E)
+ * The search is improved avoiding many unnecessary requests (C+E)
+ * If the _Provider_ cannot processing the _aggregated clue_, it can delegate it on the WP (C)
+ * The WP selection process prioritizes cases where __less providers__ are forced to __resend__ their last clue version (E).
+  1. gives priority to the nodes which has an updated version of the _aggregated clue_
+  2. gives priority to steady nodes so the new WP will not presumably be replaced in a long time (E)
+
+---
+
+#Summary
+.subtitle[
+## Energy-aware search architecture
+]
+
+<img alt="Energy consumption for each type of activity" src="img/energy_consumption.svg" style="width: 80%;" class="center" />
+
+???
+
+Note that in the simulation, the energy has been measured indirectly through the computation and networking activity.
+
+Using the time needed for each activity, we could estimate energy losses thanks to evaluations equivalent to the one presented for the FoxG20 platform.
+
+To obtain a more precise energy consumption view, measures in a real running scenarios could be considered.
+
+---
+
+# Outline
+
+.weak[
+
+1- Introduction
+
+2- Hypothesis
+
+3 - Space model
+
+4- Search architecture
+]
+
+5- Actuation
+
+.weak[
+
+6- Conclusions
+
+]
+
+---
+
+class: center, middle
+
+# Actuation
+
+.citations[
+
+* [esIoT2014] Reusing web-enabled actuators from a semantic space-based perspective.
+]
+???
+
+The third goal of my dissertation focuses on exploring how to physically actuate on a smart-environment using space-based computing.
+
+Specifically, the idea I present here is currently in its early stages and still has to be fully developed.
+
+However, I find it interesting as it
+
+1. helps to have a complete picture of the whole model presented and
+1. it covers the actuation in space-based computing from a completely novel perspective.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="A space" src="img/transpas/ts_patterns01.png" style="width: 100%;" />
+
+???
+
+To solve this question I first examined the common Tuple Spaces' usage patterns.
+
+For sake of brevity, I will present just two of them.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Master node and worker nodes" src="img/transpas/ts_patterns02.png" style="width: 100%;" />
+
+???
+
+The first one is the __replicated-worker pattern__.
+
+In this pattern, there is a master process and many worker processes able to compute the same task.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Master node divides a problem in subproblems" src="img/transpas/ts_patterns03.png" style="width: 100%;" />
+
+???
+
+First, the master takes a problem, divides it into smaller tasks, and
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Master writes subproblems" src="img/transpas/ts_patterns04.png" style="width: 100%;" />
+
+???
+
+writes these tasks into the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Some workers take these subproblems" src="img/transpas/ts_patterns05.png" style="width: 100%;" />
+
+???
+
+Then, any available worker takes a task,
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="These workers compute their subproblems" src="img/transpas/ts_patterns06.png" style="width: 100%;" />
+
+???
+
+processes it,
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="These workers write their subsolutions" src="img/transpas/ts_patterns07.png" style="width: 100%;" />
+
+???
+
+and writes the result back into the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Master node takes the subsolutions" src="img/transpas/ts_patterns08.png" style="width: 100%;" />
+
+???
+
+As the workers write their results, the master takes these results from the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Master merges the subsolutions into a meaningful result" src="img/transpas/ts_patterns09.png" style="width: 100%;" />
+
+???
+
+When the master has collected all the results, it combines them into a meaningful merged solution.
+
+This pattern is scalable and naturally balances the load on the space.
+
+---
+
+# Patterns for Tuple Spaces
+.subtitle[
+## Actuation
+]
+<img alt="Specialist pattern with specialist workers" src="img/transpas/ts_patterns10.png" style="width: 100%;" />
+
+???
+
+The second pattern in the __specialist pattern__.
+
+It can be seen as a variation of the previous one.
+
+The difference is that in this pattern each worker is specialized and knows how to make a particular task.
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="Specialist pattern used in UbiComp" src="img/transpas/ts_patterns11.png" style="width: 100%;" />
+
+???
+
+We can translate the previous patterns to the UbiComp usage examples.
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="Mobile writes a task" src="img/transpas/ts_patterns12.png" style="width: 100%;" />
+
+???
+
+For instance, a smartphone may write the task "turn the fan on" into the space.
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="Fan reads the task" src="img/transpas/ts_patterns13.png" style="width: 100%;" />
+
+???
+
+A smart-fan which belongs to the same space, will then take the task,
+
+---
+
+# Patterns for Tuple Spaces in UbiComp
+.subtitle[
+## Actuation
+]
+<img alt="Fan activates its blades" src="img/transpas/ts_patterns14.png" style="width: 100%;" />
+
+???
+
+process it and as a result activate the blades.
+
+Then, it may write a result in the space that the "activator node" will read.
+
+For example, with information about when it was turned on.
+
+This approach has been widely applied in the literature.
+In the past, this idea evolved into service-oriented engines.
+.weak[The task-types where described through services and task through _service invocations_.]
+
+In fact, in the early stages of my PhD, I also explored this approach.
+
+However, the more I read about WoT, the more I liked its simplicity.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+
+<div style="margin-top: 5em;"></div>
+
+```http
+POST /blades HTTP/1.1
+Host: smartfan.eu
+true
+```
+
+???
+
+For example, for the fan, we could simply make a HTTP POST request to the smart-fan.
+
+However, remember that like most of the resource-oriented API, this per-se would not be REST-compliant.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+<img alt="Human interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven01.png" style="width: 100%;" />
+
+???
+
+To make the API hypermedia-driven, the application has to describe the current state and the transitions to the next ones.
+
+This way, the client can select the next state of the application through hypermedia.
+
+When the client is a human, it is trivial for him to interpret the HTML content and decide which link to follow or which button to press.
+
+---
+
+# HTTP API
+.subtitle[
+## Actuation
+]
+<img alt="Robot interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
+
+???
+
+However, doing this automatically (without human intervention) is currently a hot research topic.
+
+Some solutions propose to use the semantic web to describe these applications and state transitions.
+
+Personally, I have used a solution called RESTdesc.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="RESTdesc description in Notation3" src="img/transpas/restdesc_rule01.png" style="width: 70%;" />
+
+???
+
+RESTdesc describes HTTP methods using rules expressed in the Notation 3 language (or N3).
+
+In the figure, we can see a description for a HTTP GET method.
+
+It explains how to obtain a light measure.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="RESTdesc description in Notation3, premise stressed" src="img/transpas/restdesc_rule02.png" style="width: 70%;" />
+
+???
+
+A rule’s premise expresses the requirements to make an state transition.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="RESTdesc description in Notation3, REST call stressed" src="img/transpas/restdesc_rule03.png" style="width: 70%;" />
+
+???
+
+A rule’s conclusion expresses both
+
+* the REST call that needs to be made and...
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="RESTdesc description in Notation3, description of what is get as a result stressed" src="img/transpas/restdesc_rule04.png" style="width: 70%;" />
+
+???
+
+...the description of what we can expect as a result of the request.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+```http
+OPTIONS /deustotech/lights HTTP/1.1
+Host: deusto.eu
+```
+
+```http
+HTTP/1.0 200 OK
+Date: Sat, 14 Jun 2014 21:22:01 GMT
+Content-type: text/n3; charset=UTF-8
+Content-Length: 512
+
+{
+ actuators:light ssn:madeObservation ?light_obs .
+} => {
+ _:request http:methodName "GET" ;
+ http:requestURI ?light_obs ;
+ http:resp [ http:body ?light_obs ].
+ ?light_obs a ssn:Observation ;
+ ssn:observedProperty sweet:Light ;
+...
+
+```
+
+???
+
+These descriptions can be obtained through different mechanisms.
+
+We will assume that they are provided in the same resources which it describes.
+
+To this end, we can use the HTTP OPTIONS verb.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="RESTdesc descriptions" src="img/transpas/restdesc_how01.png" style="width: 95%;" />
+
+???
+
+So, when a client has crawled an API collecting several of these descriptions, what can we do with them?
+
+IF we also have...
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="Background knowledge" src="img/transpas/restdesc_how02.png" style="width: 95%;" />
+
+???
+
+... background knowledge expressed with semantics, and...
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="Goal" src="img/transpas/restdesc_how03.png" style="width: 95%;" />
+
+???
+
+__a goal__, which is an special rule which expresses the ending state we want to reach;
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="Execution to get a plan" src="img/transpas/restdesc_how04.png" style="width: 95%;" />
+
+???
+
+THEN we can use a reasoner to make an execution plan.
+
+Personally, I have used the EYE reasoner.
+
+---
+
+# RESTdesc
+.subtitle[
+## Actuation
+]
+
+<img alt="An execution plan is composed by different paths to reach the goal" src="img/transpas/restdesc_how05.png" style="width: 95%;" />
+
+???
+
+This plan indicates different paths to __reach the desired goal__ (or final state).
+Let's assume that there is only one path (or no path).
+
+This path will contain different steps composed by the rules which need to be invoked to obtain a plan.
+
+And since these rules are composed by the HTTP requests, we just have to check if we can invoke them.
+
+---
+
+# Motivation
+.subtitle[
+## Actuation
+]
+<img alt="Robot interprets a RESTful application's current state to decide the next state" src="img/transpas/hypermedia_driven02.png" style="width: 100%;" />
+
+???
+
+In short, machines can learn how to use an API autonomously using RESTdesc.
+
+That is, RESTdesc becomes APIs hypermedia-driven.
+
+The main advantage of an hypermedia-driven API is that it can change its _shape_ over the time and the applications automatically consuming it will not need to be reconfigured or redeveloped.
+
+Translating it to the WoT field, it will allow to act using actuators not known at the design or implementation phases.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td>Indirect</td>
+      <td>Decoupling</td>
+      <td>Subscriptions</td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td>Direct</td>
+      <td>Reuse</td>
+      <td>Rule-based reasoning</td>
+    </tr>
+  </tbody>
+</table>
+
+???
+
+The two actuation techniques presented are quite distinct in nature.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td><strong>Indirect</strong></td>
+      <td>Decoupling</td>
+      <td>Subscriptions</td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td><strong>Direct</strong></td>
+      <td>Reuse</td>
+      <td>Rule-based reasoning</td>
+    </tr>
+  </tbody>
+</table>
+
+???
+
+One promotes the direct communication style, while the other promotes an indirect uncoupled style.
+
+.weak[
+
+* Decoupled communication
+* Reuse of third-party WoT apps
+
+]
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr class="first_row">
+      <td style="width:7em">Actuation</td>
+      <td style="width:8em">Communication style</td>
+      <td style="width:7em">Benefits</td>
+      <td>Required features</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space-based</td>
+      <td>Indirect</td>
+      <td>Decoupling</td>
+      <td><strong>Subscriptions</strong></td>
+    </tr>
+    <tr>
+      <td>REST-based</td>
+      <td>Direct</td>
+      <td>Reuse</td>
+      <td><strong>Rule-based reasoning</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+???
+
+We can also see in the table how each of them require additional features:
+
+* A subscription mechanism in the case of space-based computing.
+ This mechanism helps nodes to be aware of what is written into the space without constantly polling it.
+* A reasoner to create a execution plan,
+
+
+So I made myself the following question: could space-based computing take advantage of these existing REST-based actuators?
+
+Furthermore, could this reuse be made in a seamless way for nodes already following each of these techniques?
+
+---
+
+# Driving scenario
+.subtitle[
+## Actuation
+]
+<img alt="A node turns on a light bulb" src="img/transpas/actuation_scenario.png" style="width: 100%;" />
+
+???
+
+As a first step to answer this question, I planned a baseline scenario and implemented it using both mechanisms.
+
+The scenario is the "helloworld" of the scenarios: turning on and off a light.
+
+However, it helps to understand both actuation mechanisms and test the interoperation ideas.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+<img alt="Chart comparing the network activity generated by REST-based and Space-based actuation as the number of actuators increase" src="img/transpas/requests_by_techniques.svg" style="width: 100%; margin-top: 5%;" />
+
+???
+
+After implementing both scenarios, I calculated how the variation in the number of providers (e.g., actuators) could affect these techniques.
+
+First, we can see that as the amount of actuators increases, both techniques generate more requests.
+The slope will vary depending on the design (and implementation) of each solution.
+In any case, the figure shows that none of the techniques behave in a scalable manner.
+
+In the case of space-based actuation, the variation corresponds to the subscription request of each actuator and two additional writings it does. <!-- FIXME comprobar que es así -->
+
+In the case of REST-based actuation the crawler needs to obtain 5 different rules for each actuator.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+<img alt="Raspberry Pi Model B" src="img/transpas/raspberry-pi-model-b.jpg" style="width:60%; margin-top:1em;" class="center" />
+<table style="margin-top:1em;">
+  <tr>
+    <td style="width:9em">Platform</td>
+    <td>Raspberry Pi (model B)</td>
+  </tr>
+  <tr>
+    <td>RAM Memory</td>
+    <td>512 MB</td>
+  </tr>
+  <tr>
+    <td>CPU</td>
+    <td>700 MHz Low Power ARM1176JZ-F Applications Processor</td>
+  </tr>
+</table>
+
+???
+
+To check how much computing resources each techniques requires, I tested them in a Raspberry Pi.
+
+Again, the scenario was tested with 1 to a thousand actuators.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<img alt="Chart comparing the time needed to actuate in REST-based and Space-based actuation as the number of actuators increase" src="img/transpas/performance_by_techniques.svg" style="width: 100%; margin-top: 10%;" />
+
+???
+
+In the chart, we see that the amount of actuators affects more severely to __REST__-based actuation.
+
+This is due to the to the reasoning process which takes place in the node which generates the plan.
+
+In __space__-based actuation, most of the time is spent checking subscriptions at each write.
+
+Note that even if the subscription mechanism was unoptimized due to its prototyping nature, it made space-based actuation scale much better.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:8em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2">REST-based</td>
+      <td>Provider</td>
+      <td>Reactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, high</td>
+      <td>Demanding</td>
+    </tr>
+  </tbody>
+</table>
+???
+
+Considering these results and after analysing the characteristics of both techniques, we came out to the following table.
+
+It summarizes the strengths and weaknesses of both techniques.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:8em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td><strong>Consumer</strong></td>
+      <td>Proactive, <strong>limited</strong></td>
+      <td><strong>Limited</strong></td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2">REST-based</td>
+      <td>Provider</td>
+      <td>Reactive,limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td><strong>Consumer</strong></td>
+      <td>Proactive, <strong>high</strong></td>
+      <td><strong>Demanding</strong></td>
+    </tr>
+  </tbody>
+</table>
+???
+
+From the actuator point of view, the previous charts have already shown its higher activity compared to space-based actuation.
+
+---
+
+# Comparison
+.subtitle[
+## Actuation
+]
+
+<table style="margin-top:3em;">
+  <thead>
+    <tr>
+      <td style="width:7em">Actuation</td>
+      <td style="width:7em">Perspective</td>
+      <td colspan="2" style="text-align:center; width:18em">Activity</td>
+    </tr>
+    <tr class="first_row">
+      <td></td>
+      <td></td>
+      <td style="text-align:center; width:10em">Networking</td>
+      <td style="text-align:center; width:8em">Computation</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Space-based</td>
+      <td>Provider</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, limited</td>
+      <td>Limited</td>
+    </tr>
+    <tr>
+      <td>Space</td>
+      <td>Reactive, high</td>
+      <td>Varies</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>REST</strong>-based</td>
+      <td><strong>Provider</strong></td>
+      <td>Reactive, <strong>limited</strong></td>
+      <td><strong>Limited</strong></td>
+    </tr>
+    <tr>
+      <td>Consumer</td>
+      <td>Proactive, high</td>
+      <td>Demanding</td>
+    </tr>
+  </tbody>
+</table>
+???
+
+The table shows how the providers in the second actuation mechanism are more lightweight.
+
+That is, they just attend to the request received using HTTP.
+
+Probably as a consequence of these few requirements, exposing the actuation capabilities of the limited devices with HTTP is a consolidated trend.
+.weak[This tendency is backed by the WoT initiative.]
+
+REST-desc only requires devices to additionally provide their API's resources' descriptions.
+
+This can be done before deploying them and does not affect to their usual operation.
+
+---
+
+# Interoperation
+.subtitle[
+## Actuation
+]
+<img alt="Node writes a task" src="img/transpas/mixed_actuation01.png" style="width: 100%;" />
+???
+
+With these considerations in mind, I propose a solution which completely reuses the nodes implemented for the previous actuation techniques.
+
+In the left hand side, we see a master node from Space-based actuation which writes the "turn light on" task.
+
+---
+
+# Interoperation
+.subtitle[
+## Actuation
+]
+<img alt="Light bulb exposes its capabilities through an HTTP API" src="img/transpas/mixed_actuation02.png" style="width: 100%;" />
+???
+
+In the right hand side, we see a smart-bulb light which exposes their actuation capabilities through an HTTP API.
+
+---
+
+# Interoperation
+.subtitle[
+## Actuation
+]
+<img alt="Light bulb exposes its capabilities through a REST API" src="img/transpas/mixed_actuation03.png" style="width: 100%;" />
+???
+
+This API is described using RESTdesc.
+
+In my dissertation, I propose not to altere the existing nodes.
+
+Therefore, the space needs to be extended to make their interoperability possible.
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="Subscription is translated into a goal" src="img/transpas/mixed_actuation04.png" style="width: 100%;" />
+???
+
+And... how is it extended?
+
+The space will be responsible of:
+
+* Translating a _subscription to a task result_ into a reasoning goal.
+ Considering the how I implemented the subscriptions .weak[(based on SPARQL using RDFLib)], this is a straightforward syntactic translation .weak[(from SPARQL to N3QL for EYE)].
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="RESTdesc descriptions" src="img/transpas/mixed_actuation05.png" style="width: 100%;" />
+???
+
+Apart from this, it will be in charge of two tasks performed by the client in REST-based actuation:
+
+ * crawl APIs to obtain RESTdesc rules and
+
+---
+
+# Interoperation: how?
+.subtitle[
+## Actuation
+]
+<img alt="Execution to get a plan" src="img/transpas/mixed_actuation06.png" style="width: 100%;" />
+???
+
+ * create a plan.
+
+Note one benefitial aspect: as the process resides in the same machine as the space, it can locally read all the content written into the space.
+
+This content is provided as additional knowledge to the reasoning process.
+
+This way, we avoid additional costly networking operations (both in bandwidth and in time) to obtain this knowledge.
+
+---
+
+# Discussion
+.subtitle[
+## Actuation
+]
+
+Further investigation with more complex scenarios is needed:
+
+* Is the __translation__ between the subscriptions and the goal always possible?
+* If the plan has __2 or more paths__ to achieve a goal, which one should we chose?
+* What if __two different actuators__ from space-based and rest-based actuation can be activated?
+
+???
+
+However, the hybrid-actuation technique presented needs further investigation to ensure its universality.
+
+For example,
+
+* Would the translation between the subscriptions and the goal always be possible?
+ .weak[What if the node initiating the change does not subscribe to any result?]
+
+* If there are two or more paths to reach a goal, how can we discern which one to follow?
+ .weak[This problem is specific to the REST actuation using REST-desc.]
+
+* How does the middleware deal with the coexistence of both mechanisms?
+ When both methods can be applied, which one is triggered?
+ .weak[Which one prevails over the other?]
+
+
+In any case, I analysed actuation in space-based computing from a novel-point of view.
+
+From the space-based consumer perspective, I proposed to seamlessly reuse actuators from the WoT.
+
+
+---
+
+# Outline
+
+.weak[
+
+1- Introduction
+
+2- Hypothesis
+
+3 - Space model
+
+4- Search architecture
+
+5- Actuation
+
+]
+
+6- Conclusions
+
+---
+
+class: center, middle
+
+# Conclusion
+
+???
+
+To conclude, let me present my contributions and conclusions.
+
+---
+
+# Hypothesis
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+
+???
+
+First, let me start checking how I have given an answer to the hypothesis.
+
+---
+
+# Hypothesis
+
+ > The alignment of the __TSC paradigm__ with the __web's principles__ together with the
+ > consideration of its __energy and computational impact__, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and interoperable fashion.
+
+???
+
+This three elements have guided my dissertation:
+
+ * The semantic space-based paradigm called Triple Space Computing (TSC)
+ * Its alignment with the web
+ * The consideration of limited devices needs regarding their energy and computation constraints.
+
+---
+
+# Hypothesis
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate __autonomously__ in an uncoupled
+ > and interoperable fashion.
+
+???
+
+As a result, I wanted to check that the devices could communicate autonomously in an uncoupled and interoperable fashion.
+
+
+The __autonomy__ is reached through the web-based dual space model presented.
+
+This model has a federated space formed by the _sub-spaces_ where devices manage their own semantic data.
+
+To help them searching in such space, I have designed a dynamic architecture which
+
+* promotes end-to-end search between devices and
+* considers their energy and computation capabilities.
+
+Besides, the mixed actuation technique presented reduces even more the requirements for an actuator to belong to my space model.
+
+Now, actuators already exposing their capabilities through an HTTP API, only need to annotate it semantically to enable their reuse through the space.
+
+---
+
+# Hypothesis
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an __uncoupled__
+ > and interoperable fashion.
+
+???
+
+Regarding the __uncoupling__, all the communication between the devices is driven by the data.
+
+On top of the space, there is no need to refer to concrete addresses.
+
+Furthermore, the model also contemplates a more classical space that devices can use to coordinate with each other in a time uncoupled way.
+
+---
+
+# Hypothesis
+
+ > The alignment of the TSC paradigm with the web's principles together with the
+ > consideration of its energy and computational impact, leads to UbiComp
+ > environments where heterogeneous devices communicate autonomously in an uncoupled
+ > and __interoperable__ fashion.
+
+???
+
+Finally, I have dealt with the __interoperability__:
+
+1. using the semantic web to promote data reuse and the web to use a widely accepted exchange mechanism; and
+1. analysing how to reuse a novel and true REST-based actuation technique from the space-based computing perspective.
+
+---
+
+# Scientific contributions: space model
+
+<div style="font-size: smaller">
+
+* [CHB2014] Lightweight semantic framework for interoperable ambient intelligence applications
+* [WoT2012] RESTful Triple Spaces of Things
+* [IEEESensors2011] Collaboration of Sensors and Actuators through Triple Spaces.
+* [WoT2011] On the complementarity of Triple Spaces and the Web of Things.
+
+</div>
+
+???
+
+The work done in this dissertation has been covered by the following publications.
+
+Regarding the _space model_,
+
+although I published other early papers related to Triple Spaces and smart-environments,
+
+these publications are the ones which cover most of the aspects presented today.
+
+---
+
+# Scientific contributions: search architecture
+
+<div style="font-size: smaller">
+
+* [IJWGS2014] Energy-aware architecture for information search in the semantic web of things.
+* [IMIS2012] Assessing data dissemination strategies within triple spaces on the web of things.
+
+</div>
+???
+
+Regarding the search architecture, the first publication covers in detail the work presented today.
+
+The second one is a more general and premature approach to the same problem.
+
+---
+
+# Scientific contributions: actuation
+
+<div style="font-size: smaller">
+
+* [esIoT2014] Reusing web-enabled actuators from a semantic space-based perspective.
+
+</div>
+???
+
+Finally, the following paper explains the mixed actuation technique and its related considerations.
+
+---
+
+# Scientific contributions: related
+
+
+
+* Lightweight __user access control__ for limited devices.
+<div style="font-size: smaller">
+ * [JUCS2013] Enabling user access control in energy-constrained wireless smart environments.
+ * [CISIS2013] Extending a user access control proposal for wireless network services with hierarchical user credentials.
+ * [UCAmI2012] Lightweight user access control in energy-constrained wireless network services.
+
+</div>
+???
+
+In parallel to the development of this thesis, I have co-autored three papers about a Lightweight __user access control__ for limited devices.
+
+---
+
+# Scientific contributions: related
+
+
+
+* Use of TSC middleware in a number of __different domains__:
+<div style="font-size: smaller">
+ * [IWAAL2011] Easing the mobility of disabled people in supermarkets using a distributed solution.
+ In Ambient Assisted Living, n. 6693 in LNCS, pp. 41–48, January 2011.
+ * [Robot2011] Distributed semantic middleware for social robotic services
+ * [IWAAL2011] Distributed tracking system for patients with cognitive impairments.
+
+</div>
+???
+
+Furthermore, I have published four other articles explaining our experiences applying a TSC middleware in a number of __different domains__.
+
+This middleware is compliant with most of the considerations I presented before.
+
+---
+
+# Technical contributions
+
+As a result of my PhD, I have open-sourced the following software:
+
+* A parametrizable __simulation environment__
+ <span style="font-size: smaller"> https://github.com/gomezgoiri/Semantic-WoT-Environment-Simulation </span>
+
+* The three different implementations of the same __basic actuation scenario__ presented before
+ <span style="font-size: smaller"> https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace </span>
+
+* A TSC-based middleware: __Otsopack__
+ https://github.com/gomezgoiri/otsopack
+
+<img alt="Otsopack logo" src="img/transpas/otsopack_logo.png" style="width: 40%;" class="center" />
+
+???
+
+During this time, I have contributed to the community open-sourcing the following software:
+
+* The parametrizable __simulation environment__ used to evaluate the searching proposal
+* The different implementations used for the comparison of the three actuation techniques presented
+* and Otsopack.
+
+Otsopack is a middleware which follows some of the ideas presented about web-based semantic space-based computing.
+
+---
+
+# Technical contributions
+
+Otsopack has been used in the following research projects:
+
+ * __THOFU__ (CEN-20101019), funded by the Spanish Centro para el Desarrollo Tecnológico Industrial (CDTI) and supported by the the Spanish Ministry of Science and Innovation.
+ * __ACROSS__ (TSI-020301-2009-27), funded by the Spanish Ministerio de Industria, Turismo y Comercio.
+ * __TALIS+ENGINE__ (TIN2010-20510-C04-03), funded by the Spanish Ministry of Science and Innovation.
+ * __ISMED__ (PC2008-28), funded by the Department of Education, Universities and Research of the Basque Government for the period 2008-10.
+
+---
+
+# Technical contributions
+
+These projects used it in __different domains__...
+
+ * Residences
+ * Hospitals
+ * Supermarkets
+ * Hotels
+ * and homes environments.
+
+<img alt="Otsopack used in a supermarket" src="img/transpas/domain_supermarket.png" style="position: absolute; bottom: 1em; right: 16em; width: 40%;" />
+<img alt="Otsopack used in a nursing home" src="img/transpas/domain_residence.png" style="position: absolute; bottom: 2em; right: 2em; width: 30%;" />
+---
+
+# Future work
+
+* Are __limited__ devices just __dumb__ devices unable to manage semantic annotations?
+* __Do__ we really __need the Semantic Web__?
+* Will true-__REST__-architectures ever __prevail__?
+
+???
+
+To end this presentation, let me comment some considerations.
+
+* From my experience, nowadays there are __not many__ embedded or mobile devices able to manage the semantic web successfully.
+ * However, recent works on lightweight reasoning, communication protocols or semantic formats, can __considerably reduce__ the computing requirements needed.
+* The second is that I have the impression that we sometimes __look down on__ interoperability.
+ * .weak[Causes: impossibility to perceive its benefits in the short term and privacy concerns]
+ * However, the __Linked Data__ initiative is slowly changing this perception.
+* Finally, although __REST-like__ architectures are very popular nowadays, the need of making them hypermedia-driven is not shared by many web developers.
+ * And this is a pity, because otherwise __using__ third-party web applications' __automatically__ would be much closer.
+ * .weak[Razonamiento: in this case, the industry will put pressure on the academia {akadimia}]
+
+---
+
+class: middle, questionslide
+
+# Questions?
+Aitor Gómez Goiri .breakline[ aitor.gomez (at) [deusto (dot) es](http://www.deusto.es)]
+
+???
+
+With this I conclude my presentation and I am ready to answer the questions and comments you make regarding this dissertation.
+
+Thank you very much for listening.
+
+---
+
+class: center, middle
+
+All rights of images are reserved by the <br />
+__original owners__*, the rest of the content is licensed <br />
+under a __[Creative Commons by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/)__ license.
+
+<div style="margin-top:3em"/>
+
+![Creative commons by-sa 3.0 license logo](img/CC-logo.svg)
+
+<div style="margin-top:3em"/>
+
+\* [leogg](http://openclipart.org/detail/89209/),
+[rduris](http://openclipart.org/detail/167948/),
+[williamtheaker](http://openclipart.org/detail/178310/) and
+[cibo00](http://openclipart.org/detail/14056/).
+
+
+---
+
+class: center, middle
+
+# Backup slides
+
+<!-- TODO poner todas las figuras y evaluaciones! -->
+
+---
+
+# The Semantic Web and limited devices
+
+* semantic reasoners for this type of environments (mencionar al tio que hizo un razonador adaptado)
+* lightweight semantic formats
+* lightweight web protocols
+* mobile and embedded devices' the processing capability
+* [autonomy of the batteries](http://energi.us/liberacion-patentes-tesla/) or
+* energy harvesting
+* large etc.
+
+???
+
+Some of our attempts with several platforms (e.g., Arduino) where unsuccessful.
+
+However, with current advances in:
+
+[leer]
+
+More and more devices will be able to manage semantics.
+ <!--
+ TODO
+ Preparar una transpa de backup por si preguntan cómo de viable es.
+ Ideas:
+   * Many of the current devices are able to manage their info
+   * Gráfico con pruebas que hicimos en su día:
+    * Even if it is more verbosed
+    * Some of them can reason and expand this information.
+    * Others may need to rely in third machines.
+     * Out of the scope
+    * Anyway, we might be anticipating a trend.
+ -->
+---
+
+# Triple Space Computing (TSC)
+
+ * Spaces identified by URIs
+ * Tuples == RDF Triples & RDF Graphs
+ * Templates = triple patterns
+
+<div style="margin-top:2em;" />
+
+![Resources in TSC](img/tsc_resources.svg)
+
+???
+
+Uses elements from the SW
+
+---
+
+# Hypothesis: some definitions
+
+  * Heterogeneity: Fully-fledged computers and resource constrained devices (e.g., mobile and embedded devices) must coexist in these environments.
+  * Autonomy: Devices must not depend on others to consume or provide data on their behalf.
+  However, they might be aided by other devices to complete some related tasks (e.g., search the appropriate nodes to request).
+  * Uncoupling: The communication must be data-driven.
+  From the user perspective devices do not directly refer to each other.
+  Additionally, the provider and the consumer should not coexist in time.
+  However, note that since this sub-aspect contradicts the autonomy principle, their selection might be left to the user.
+  * Interoperability: Devices must be able to exchange information with other systems and to use that information.
+
+---
+
+class: center, middle
+
+# Additional evaluation details
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Specs" src="img/transpas/devices_technical.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Libraries used" src="img/transpas/devices_libraries.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Real time measures" src="img/transpas/time_measures.png" style="width: 100%; margin-top: 3em;" />
+
+---
+
+# Experimental environment: simulation inputs
+
+<img alt="Sample templates" src="img/transpas/evaluation_templates.png" style="width: 100%; margin-top: 3em;" />
+
+???
+
+The templates used are the ones shown in the table.
+
+---
+
+# Evaluation: Clues recall
+
+<img alt="Clues recall" src="img/transpas/clue_recall.png" style="width: 100%; margin-top: 10%;" />
+
+---
+
+# Evaluation: Clues precision
+
+<img alt="Clues recall" src="img/transpas/clue_precision.png" style="width: 100%; margin-top: 10%;" />
+
+---
+
+# Evaluation: Clues length
+
+<img alt="Clues recall" src="img/transpas/clues_length.png" style="width: 65%; margin-top: 10%;" class="center" />
+
+---
+
+# Evaluation: Network activity (by role)
+
+<img alt="Requests by role" src="img/transpas/evaluation_requests.png" style="width: 100%; margin-top: 10%;" />
+
+???
+
+In the following chart we show the type of communication for an scenario with 100 consumers and different network sizes.
+
+It shows that most of the requests are from consumers to providers.
+
+Therefore, maintaining the architecture does not creates much overhead and it does not increase much with the number of consumers.
+
+---
+
+# Evaluation: Discovery mechanism
+
+* Use of mDNS and DNS-SD.
+* TXT record changes
+ 1. when a new WP is selected
+ 2. when we update the time elapsed since it joined the Space and its battery charge level
+
+* In the most static scenario the TXT record is written only once.
+* In the more dynamic one, it updates that record 126 times after writing it for the first time.
+
+???
+
+This demonstrates that the overhead generated on the discovery system by our solution is minimal even in the worst-case scenario.
+
+
+    </textarea>
+    <!--<script src="http://gnab.github.io/remark/downloads/remark-0.5.9.min.js" type="text/javascript">-->
+    <script src="remark-0.5.9.min.js" type="text/javascript">
+    </script>
+    <!-- Substitute with remark-latest.min.js -->
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

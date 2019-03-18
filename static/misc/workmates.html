@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Thank you guys!</title>
+  </head>
+  <body>
+    <p><a href="http://helheim.deusto.es:8890/sparql?default-graph-uri=http%3A%2F%2Flabman&query=PREFIX+swrcfe%3A+%3Chttp%3A%2F%2Fwww.morelab.deusto.es%2Fontologies%2Fswrcfe.owl%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ffiname+%3Ffaname+WHERE+%7B%0D%0A++%3Fjob+swrcfe%3AdoneBy+%3Chttp%3A%2F%2Fwww.morelab.deusto.es%2Flabman%2Fresource%2Fpeople%2Faitor-gomez-goiri%3E+.%0D%0A++%7B%0D%0A++++%3Fjob2+swrcfe%3AdoneBy+%3Fformerworkmate+.%0D%0A++++%3Fformerworkmate+foaf%3AfamilyName+%3Ffaname+.%0D%0A++++%3Fformerworkmate+foaf%3AfirstName+%3Ffiname+.%0D%0A++++%3Fjob+swrcfe%3AjobStartDate+%3Fjobstartdate+.%0D%0A%0D%0A++++OPTIONAL+%7B+%3Fjob2+swrcfe%3AjobEndDate++%3Fjobenddate+%7D%0D%0A++++FILTER%28%3Fjobstartdate+%3C+%3Fjobenddate%29%0D%0A++%7D+UNION+%7B%0D%0A++++%3Fjob2+swrcfe%3AdoneBy+%3Fworkmate+.%0D%0A++++%3Fworkmate+foaf%3AfamilyName+%3Ffaname+.%0D%0A++++%3Fworkmate+foaf%3AfirstName+%3Ffiname+.%0D%0A%0D%0A++++OPTIONAL+%7B+%3Fjob2+swrcfe%3AjobEndDate+%3Fjobenddate+%7D%0D%0A++++FILTER%28%21bound%28%3Fjobenddate%29%29%0D%0A++%7D%0D%0A%0D%0A++FILTER%28%3Fjob+%21%3D+%3Fjob2%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on">Click here<a/> to check all the workmates I have to thank!</p>
+    
+    <p>This is the SPARQL query used:</p>
+    <textarea rows="25" cols="100">
+PREFIX swrcfe: <http://www.morelab.deusto.es/ontologies/swrcfe.owl#>
+
+SELECT DISTINCT ?finame ?faname WHERE {
+  ?job swrcfe:doneBy <http://www.morelab.deusto.es/labman/resource/people/aitor-gomez-goiri> .
+  {
+    ?job2 swrcfe:doneBy ?formerworkmate .
+    ?formerworkmate foaf:familyName ?faname .
+    ?formerworkmate foaf:firstName ?finame .
+    ?job swrcfe:jobStartDate ?jobstartdate .
+
+    OPTIONAL { ?job2 swrcfe:jobEndDate  ?jobenddate }
+    FILTER(?jobstartdate < ?jobenddate)
+  } UNION {
+    ?job2 swrcfe:doneBy ?workmate .
+    ?workmate foaf:familyName ?faname .
+    ?workmate foaf:firstName ?finame .
+
+    OPTIONAL { ?job2 swrcfe:jobEndDate ?jobenddate }
+    FILTER(!bound(?jobenddate))
+  }
+
+  FILTER(?job != ?job2)
+}
+    </textarea>
+    
+    
+    <script>
+    window.location.replace("http://helheim.deusto.es:8890/sparql?default-graph-uri=http%3A%2F%2Flabman&query=PREFIX+swrcfe%3A+%3Chttp%3A%2F%2Fwww.morelab.deusto.es%2Fontologies%2Fswrcfe.owl%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Ffiname+%3Ffaname+WHERE+%7B%0D%0A++%3Fjob+swrcfe%3AdoneBy+%3Chttp%3A%2F%2Fwww.morelab.deusto.es%2Flabman%2Fresource%2Fpeople%2Faitor-gomez-goiri%3E+.%0D%0A++%7B%0D%0A++++%3Fjob2+swrcfe%3AdoneBy+%3Fformerworkmate+.%0D%0A++++%3Fformerworkmate+foaf%3AfamilyName+%3Ffaname+.%0D%0A++++%3Fformerworkmate+foaf%3AfirstName+%3Ffiname+.%0D%0A++++%3Fjob+swrcfe%3AjobStartDate+%3Fjobstartdate+.%0D%0A%0D%0A++++OPTIONAL+%7B+%3Fjob2+swrcfe%3AjobEndDate++%3Fjobenddate+%7D%0D%0A++++FILTER%28%3Fjobstartdate+%3C+%3Fjobenddate%29%0D%0A++%7D+UNION+%7B%0D%0A++++%3Fjob2+swrcfe%3AdoneBy+%3Fworkmate+.%0D%0A++++%3Fworkmate+foaf%3AfamilyName+%3Ffaname+.%0D%0A++++%3Fworkmate+foaf%3AfirstName+%3Ffiname+.%0D%0A%0D%0A++++OPTIONAL+%7B+%3Fjob2+swrcfe%3AjobEndDate+%3Fjobenddate+%7D%0D%0A++++FILTER%28%21bound%28%3Fjobenddate%29%29%0D%0A++%7D%0D%0A%0D%0A++FILTER%28%3Fjob+%21%3D+%3Fjob2%29%0D%0A%7D&should-sponge=&format=text%2Fhtml&timeout=0&debug=on")
+    </script>
+    <noscript>
+    (Javascript is disabled in your browser, click in one of the previous links to check the code)
+    </noscript>
+  </body>
+</html>
