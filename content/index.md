@@ -6,4 +6,8 @@ web: http://gomezgoiri.net
 twitter: gomezgoiri
 github: gomezgoiri
 linkedin: gomezgoiri
+page: /
+paths:
+  - /
+  - /index.html
 ---

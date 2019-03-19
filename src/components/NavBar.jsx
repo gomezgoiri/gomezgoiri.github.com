@@ -6,16 +6,13 @@ const NavBar = () => (
   <nav className="navbar navbar-default">
     <Container>
       <div className="navbar-header">
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" href="/index.html">
           Aitor Gómez Goiri
         </Link>
       </div>
 
       <div className="collapse navbar-collapse navbar-right">
         <ul className="nav navbar-nav">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
           <li>
             <Link href="/projects.html">Projects</Link>
           </li>

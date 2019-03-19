@@ -50,14 +50,7 @@ module.exports = {
         posts[fullUrl] = config
       })
 
-    return Object.assign(
-      {},
-      {
-        '/': { page: '/' }
-      },
-      posts,
-      paths
-    ) // aliases
+    return Object.assign({}, posts, paths) // aliases
   },
   assetPrefix,
   webpack: config => {
