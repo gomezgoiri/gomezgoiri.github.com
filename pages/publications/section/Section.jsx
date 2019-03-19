@@ -12,7 +12,7 @@ const Publications = ({ title, description }) => (
   <Page siteTitle={title} heroTitle={title} description={description}>
     <p>
       Alternatively, you can check these publications on{' '}
-      <a href="http://scholar.google.com/citations?user=FD8S5rEAAAAJ&hl=en">
+      <a href="http://scholar.google.com/citations?user=z8bozPMAAAAJ&hl=en">
         Google Scholar
       </a>{' '}
       or <a href="http://dl.acm.org/author_page.cfm?id=81479661857">ACM</a>.
