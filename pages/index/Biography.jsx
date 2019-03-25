@@ -41,7 +41,7 @@ const Biography = ({ gravatar, author }) => (
               <span itemProp="name">the Open University</span>
             </a>
             , UK).
-          </span>
+          </span>{' '}
           Before 2015, I worked at the{' '}
           <a href="http://www.morelab.deusto.es/">MORElab research group</a> and
           as an Assistant Professor at the{' '}
@@ -51,6 +51,7 @@ const Biography = ({ gravatar, author }) => (
             itemScope
             itemType="http://schema.org/Organization"
           >
+            {' '}
             I finished a{' '}
             <a href="http://en.wikipedia.org/wiki/Double_degree">
               joint-degree
