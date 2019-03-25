@@ -21,7 +21,7 @@ const Biography = ({ gravatar, author }) => (
               <span itemProp="name">IK4-IKERLAN</span>
             </a>
           </span>
-          . From 2015 to 2016, I worked at the
+          . From 2015 to 2016, I worked at the{' '}
           <span
             itemProp="affiliation"
             itemScope
@@ -35,7 +35,7 @@ const Biography = ({ gravatar, author }) => (
               <a href="http://kmi.open.ac.uk" itemProp="url">
                 <span itemProp="name">Knowledge Media Institute</span>, KMi
               </a>
-            </span>
+            </span>{' '}
             (
             <a href="http://www.open.ac.uk" itemProp="url">
               <span itemProp="name">the Open University</span>
