@@ -25,17 +25,6 @@ const MoreInfo = () => (
           </a>
         </li>
         <li>
-          <a
-            href="http://www.morelab.deusto.es/resource/aitor-gomez-goiri"
-            itemProp="sameAs"
-          >
-            Semantic knowledge about me
-          </a>
-        </li>
-        <li>
-          My <a href="http://kmi.open.ac.uk/people/">colleagues</a>
-        </li>
-        <li>
           My <a href="https://morelab.deusto.es/people/members/">former</a>{' '}
           <a href="http://kmi.open.ac.uk/people/">colleagues</a>
         </li>
