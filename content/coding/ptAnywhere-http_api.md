@@ -8,7 +8,13 @@ date: 2016-06-03
 
 Main technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/) & [Redis](http://redis.io/).
 
- <iframe width="420" height="315" src="https://www.youtube.com/embed/1fQsdI9iKwE" frameborder="0" allowfullscreen></iframe>
+ <iframe
+  width="420" height="315"
+  style="width: 420px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/1fQsdI9iKwE"
+>
+</iframe>
 
 ## Features
 
@@ -39,4 +45,10 @@ What does the API do behind the scenes?
 - It records interactions in TinCan API. For more info, read the _Learning Analytics_ subsection.
 - It handles sessions using Redis. For example, it caches information of the running _Packet Tracer_ instance to reduce internal requests and speed up loading.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HegugNt9o-0" frameborder="0" allowfullscreen></iframe>
+<iframe
+  width="560" height="315"
+  style="width: 560px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/HegugNt9o-0"
+>
+</iframe>

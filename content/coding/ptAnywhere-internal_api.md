@@ -15,7 +15,13 @@ Main technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.ce
 - It uses [Docker](https://www.docker.com/) to run isolated _Packet Tracer_ instances in a lightweight manner.
 - It uses [Celery](http://www.celeryproject.org/) to manage Docker containers' lifecycle.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/u3XQvArqBO0" frameborder="0" allowfullscreen></iframe>
+<iframe
+  width="420" height="315"
+  style="width: 420px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/u3XQvArqBO0"
+>
+</iframe>
 
 ## How does it work?
 
@@ -36,7 +42,13 @@ To reduce containers' CPU consumption when they are not being used (i.e., they a
 When a new allocation is requested and an instance is available, the internal API unpauses it and loads the initial file removing the data from any previous session.
 All the containers are created using the same image and mounting a [data volume container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) which contains _Packet Tracer_'s installation and configuration files.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kH8Uy5GU1ds" frameborder="0" allowfullscreen></iframe>
+<iframe
+  width="560" height="315"
+  style="width: 560px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/kH8Uy5GU1ds"
+>
+</iframe>
 
 ### Celery
 
@@ -53,4 +65,10 @@ To do these tasks, we use two queues: a normal one and a high priority one.
 The high priority queue is used to ensure that allocations and deallocations are done as fast as possible.
 Both tasks are the ones that the public API triggers and can be done immediately.
 
- <iframe width="420" height="315" src="https://www.youtube.com/embed/FWH38yjknNA" frameborder="0" allowfullscreen></iframe>
+ <iframe
+  width="420" height="315"
+  style="width: 420px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/FWH38yjknNA"
+>
+</iframe>

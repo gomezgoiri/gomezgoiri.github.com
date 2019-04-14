@@ -14,7 +14,13 @@ This iBook contains a chapter entitled _Basic Network Router Configuration_ wher
 
 This is how a typical _PT Anywhere_ session looks like in a browser:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/UauKSWQC2XQ" frameborder="0" allowfullscreen></iframe>
+<iframe
+  width="420" height="315"
+  style="width: 420px; height: 315px;"
+  frameborder="0" allowfullscreen
+  src="https://www.youtube.com/embed/UauKSWQC2XQ"
+>
+</iframe>
 
 To create this widget (i.e., the _PT Anywhere_ front end), I used the following _JavaScript libraries_:
 

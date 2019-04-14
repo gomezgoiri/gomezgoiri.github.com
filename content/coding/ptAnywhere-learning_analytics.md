@@ -62,7 +62,12 @@ For a more detailed documentation, visit [this page](https://github.com/PTAnywhe
 - The _Learning Record Store_ is queried using [Learning Locker's Aggregation API](http://docs.learninglocker.net/statements_api/#aggregate).
 
 <div class="row">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    width="560" height="315"
+    style="width: 560px; height: 315px;"
+    frameborder="0" allowfullscreen
+    src="https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj"
+  />
 </div>
 
 ## Data analysis
