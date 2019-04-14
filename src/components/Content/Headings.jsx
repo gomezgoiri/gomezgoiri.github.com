@@ -19,10 +19,10 @@ const Headings = ({ title = '', subtitle, href }) => {
   }
 
   return (
-    <>
+    <div className="content">
       {subtitle && <h4>{subtitle}</h4>}
       <h1>{value}</h1>
-    </>
+    </div>
   )
 }
 

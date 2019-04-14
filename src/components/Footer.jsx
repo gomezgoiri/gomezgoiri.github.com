@@ -1,17 +1,15 @@
 import React from 'react'
-import Container from './Container'
 
 const Footer = () => (
-  <footer>
-    <hr />
-    <Container>
+  <footer className="footer">
+    <div className="container content has-text-centered">
       <p>
         <small>
           Hosted on{' '}
           <a href="https://github.com/gomezgoiri/gomezgoiri.github.com">
             GitHub Pages
           </a>
-          , using <a href="http://getbootstrap.com">Bootstrap</a> theme and
+          , using <a href="https://bulma.io">Bulma</a> and
           based on{' '}
           <a href="https://github.com/tscanlin/next-blog">
             Tim Scanlin&apos;s next-blog
@@ -19,7 +17,7 @@ const Footer = () => (
           .
         </small>
       </p>
-    </Container>
+    </div>
   </footer>
 )
 

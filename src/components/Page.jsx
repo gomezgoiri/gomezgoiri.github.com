@@ -21,11 +21,9 @@ const Page = ({
       }
       description={description}
     />
-    <main>
-      <NavBar />
-      <Content {...other}>{children}</Content>
-      <Footer />
-    </main>
+    <NavBar />
+    <Content {...other}>{children}</Content>
+    <Footer />
   </div>
 )
 

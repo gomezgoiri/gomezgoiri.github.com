@@ -1,25 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from '../../../src/components/Link'
+import styled from 'styled-components'
 
-const BottomNav = ({ prev, next }) => (
-  <nav>
-    <ul className="pager">
-      {prev && (
-        <li className="previous">
-          <Link href={prev.url}>
-            <span aria-hidden="true">←</span> {prev.title}
+import Link from 'components/Link'
+
+const BottomNav = ({ className, prev, next }) => (
+  <nav className={`level ${className}`}>
+    {prev && (
+      <div className="level-left">
+        <div className="level-item">
+          <Link href={prev.url} className="button is-white">
+            <i className="fas fa-chevron-left" aria-hidden="true" />
+            <span>{prev.title}</span>
           </Link>
-        </li>
-      )}
-      {next && (
-        <li className="next">
-          <Link href={next.url}>
-            {next.title} <span aria-hidden="true">→</span>
+        </div>
+      </div>
+    )}
+    {next && (
+      <div className="level-right">
+        <div className="level-item">
+          <Link href={next.url} className="button is-white">
+            <span>{next.title}</span>
+            <i className="fas fa-chevron-right" aria-hidden="true" />
           </Link>
-        </li>
-      )}
-    </ul>
+        </div>
+      </div>
+    )}
   </nav>
 )
 
@@ -30,7 +36,20 @@ const NavItem = PropTypes.shape({
 
 BottomNav.propTypes = {
   prev: NavItem,
-  next: NavItem
+  next: NavItem,
+  className: PropTypes.string.isRequired
 }
 
-export default BottomNav
+export default styled(BottomNav)`
+  margin-top: 2em;
+
+  .button {
+    i.fa-chevron-right {
+      margin-left: 1em;
+    }
+
+    i.fa-chevron-left {
+      margin-right: 1em;
+    }
+  }
+`
