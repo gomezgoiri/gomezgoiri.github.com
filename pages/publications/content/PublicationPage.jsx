@@ -16,6 +16,8 @@ const IFrameContainer = styled.div`
     border: 1px solid #ccc;
     border-width: 1px 1px 0;
     margin-bottom: 5px;
+    width: 427px;
+    height: 356px;
   }
 `
 
@@ -107,7 +109,7 @@ PublicationPage.propTypes = {
   description: PropTypes.string,
   restCitation: PropTypes.string,
   bodyHtml: PropTypes.string,
-  slideshareEmbedCode: PropTypes.string
+  slideshareEmbedCode: PropTypes.number
 }
 
 export default PublicationPage
