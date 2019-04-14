@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContentImporter from '../../../src/components/ContentImporter'
+import ContentImporter from 'components/ContentImporter'
 import ProjectPage from './ProjectPage'
 
 const Project = () => (

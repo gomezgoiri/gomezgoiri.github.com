@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from '../../src/components/Link'
+import Link from 'components/Link'
 
 const Icon = ({ href, src, alt, ...other }) => (
   <Link href={href} {...other}>

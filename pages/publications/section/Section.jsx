@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
-import { makeUrl, getPublicationsByDate } from '../../../src/utils/content'
-
-import Page from '../../../src/components/Page'
+import Page from 'components/Page'
+import { makeUrl, getPublicationsByDate } from 'utils/content'
 import Item from './Item'
 
 const PUBS_BY_DATE = getPublicationsByDate()

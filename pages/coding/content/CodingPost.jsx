@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Page from '../../../src/components/Page'
+import Page from 'components/Page'
+import { createSubsectionDict } from 'utils/content'
+
 import SubsectionDropdown from './SubsectionDropdown'
 import BottomNav from './BottomNav'
-
-import { createSubsectionDict } from '../../../src/utils/content'
 
 const CodingPost = ({
   title,

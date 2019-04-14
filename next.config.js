@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const path = require('path')
 const SUMMARY_JSON = require('./content/summary.json')
 
 const FOLDER_PREFIX_TO_PAGE = {
@@ -23,12 +24,8 @@ const getPage = (file, page) => {
 const assetPrefix = ''
 
 module.exports = {
-  exportPathMap: () => {
-    const posts = {}
-    const paths = {}
-
-    SUMMARY_JSON.fileMap &&
-      Object.keys(SUMMARY_JSON.fileMap).forEach(file => {
+  exportPathMap: () =>
+    Object.keys(SUMMARY_JSON.fileMap || {}).reduce((ret, file) => {
         const fileObj = SUMMARY_JSON.fileMap[file]
 
         const fullUrl = file.match(/^content(.+)\.json$/)[1]
@@ -39,21 +36,30 @@ module.exports = {
           }
         }
 
+        const pathss = {}
         if (fileObj.paths) {
           // Handle custom paths / aliases.
-          fileObj.paths.forEach(path => {
-            paths[path] = config
+          fileObj.paths.forEach(p => {
+            // eslint-disable-next-line no-param-reassign
+            pathss[p] = config
           })
         }
 
-        // No matter it has paths or not, add the fullUrl path
-        posts[fullUrl] = config
-      })
-
-    return Object.assign({}, posts, paths) // aliases
-  },
+        return {
+          ...ret,
+          ...pathss,
+          // No matter it has paths or not, add the fullUrl path
+          [fullUrl]: config
+        }
+      },
+      {}
+    ),
   assetPrefix,
   webpack: config => {
+    config.resolve.modules.push(
+      path.resolve(__dirname, './src')
+    )
+
     config.plugins.push(
       new webpack.DefinePlugin({
         'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix)

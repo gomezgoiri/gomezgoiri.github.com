@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Page from '../../../src/components/Page'
-import Link from '../../../src/components/Link'
+import Page from 'components/Page'
+import Link from 'components/Link'
 
 const ProjectPage = ({
   title,

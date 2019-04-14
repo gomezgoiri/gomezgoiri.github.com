@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Page from '../../../src/components/Page'
+import Page from 'components/Page'
 import PublicationIcons from '../PublicationIcons'
 
 const DivClear = styled.div`

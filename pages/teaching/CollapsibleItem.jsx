@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import CollapsiblePanel from '../../src/components/CollapsiblePanel'
+import CollapsiblePanel from 'components/CollapsiblePanel'
 import TeachingItem from './TeachingItem'
 
 const CollapsedTitle = styled(({ topics, className }) => (

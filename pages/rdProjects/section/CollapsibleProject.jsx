@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import CollapsiblePanel from '../../../src/components/CollapsiblePanel'
-import Link from '../../../src/components/Link'
-import { makeUrl } from '../../../src/utils/content'
+import CollapsiblePanel from 'components/CollapsiblePanel'
+import Link from 'components/Link'
+import { makeUrl } from 'utils/content'
 
-const rightMargin = { marginRight: '0.3em' }
+const RightLink = styled.a`
+  margin-right: 0.3em;
+`
 
 const CollapsibleProject = ({
   title,
@@ -17,19 +20,20 @@ const CollapsibleProject = ({
 }) => (
   <CollapsiblePanel expanded={expanded} title={title} onCollapse={onCollapse}>
     <p dangerouslySetInnerHTML={{ __html: preview }} />
-    <div className="text-right">
-      <a
-        href={website}
-        role="button"
-        className="btn btn-default"
-        style={rightMargin}
-      >
-        Go to website
-      </a>
-
-      <Link href={makeUrl(other)} role="button" className="btn btn-info">
-        Read more
-      </Link>
+    <div className="level">
+      <div className="level-left" />
+      <div className="level-right">
+        <RightLink
+          href={website}
+          role="button"
+          className="button"
+        >
+          Go to website
+        </RightLink>
+        <Link href={makeUrl(other)} role="button" className="button is-primary">
+          Read more
+        </Link>
+      </div>
     </div>
   </CollapsiblePanel>
 )

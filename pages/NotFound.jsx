@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Page from '../src/components/Page'
+import Page from 'components/Page'
 import { title, cx } from '../content/404.json'
 
 const SearchContainer = styled.div`

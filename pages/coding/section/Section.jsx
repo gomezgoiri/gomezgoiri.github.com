@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Page from '../../../src/components/Page'
+import Page from 'components/Page'
 
 const CodingSection = ({ title, description, bodyHtml }) => (
   <Page siteTitle={title} heroTitle={title} description={description}>

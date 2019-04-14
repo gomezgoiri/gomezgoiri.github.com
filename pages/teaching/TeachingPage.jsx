@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import SUMMARY_JSON from '../../content/summary.json'
-import { filterTeaching } from '../../src/utils/content'
+import Page from 'components/Page'
+import { filterTeaching } from 'utils/content'
 
-import Page from '../../src/components/Page'
 import CollapsibleItem from './CollapsibleItem'
+import SUMMARY_JSON from '../../content/summary.json'
 
 const POSTS = Object.values(filterTeaching(SUMMARY_JSON))
 
