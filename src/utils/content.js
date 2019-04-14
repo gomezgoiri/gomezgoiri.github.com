@@ -26,6 +26,8 @@ const filterPublications = () => filterByPath('content/publications')
 
 const filterTeaching = () => filterByPath('content/teaching')
 
+const filterCV = subfolder => filterByPath(`content/cv/${subfolder}`)
+
 const createSubsectionDict = ({ base, dir, subsection }) =>
   SUMMARY_JSON &&
   SUMMARY_JSON.fileMap &&
@@ -65,6 +67,7 @@ export {
   filterRDProjects,
   filterPublications,
   filterTeaching,
+  filterCV,
   createSubsectionDict,
   getPublicationsByDate
 }
