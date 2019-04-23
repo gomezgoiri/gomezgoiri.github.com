@@ -51,7 +51,7 @@ For a more detailed documentation, visit [this page](https://github.com/PTAnywhe
 </div>
 
 <div class="row" style="margin-top: 4%">
-  <img class="col-sm-offset-2 col-sm-8" alt="Learning Locker screenshot" src="http://i.imgur.com/rus5D9pl.png" />
+  <img class="col-sm-offset-2 col-sm-8" alt="Learning Locker screenshot" src="https://i.imgur.com/rus5D9pl.png" />
 </div>
 
 ## Features of the dashboard
