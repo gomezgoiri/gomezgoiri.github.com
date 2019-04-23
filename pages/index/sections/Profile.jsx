@@ -17,7 +17,7 @@ const Profile = props => (
       </div>
       <div className="column is-one-thirds-desktop avatar">
         <img
-          src={`http://s.gravatar.com/avatar/${PROFILE.gravatar}?s=200`}
+          src={`https://s.gravatar.com/avatar/${PROFILE.gravatar}?s=200`}
           alt={PROFILE.author}
           width="200"
           height="200"

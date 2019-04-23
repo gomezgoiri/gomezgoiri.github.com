@@ -9,5 +9,5 @@ github: gomezgoiri
 linkedin: gomezgoiri
 slideshare: twolf
 # http://www.qr-generator.nu/vcard.php
-contactQr: http://tinyurl.com/jlbwljw
+contactQr: https://tinyurl.com/jlbwljw
 ---
