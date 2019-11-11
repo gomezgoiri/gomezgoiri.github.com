@@ -4,7 +4,17 @@ gravatar: b0f00a2ea95fb62954454074a4a6fc28
 ---
 
 <p>
-  I&apos;m a researcher at
+  I&apos;m a senior researcher at
+  <span
+    itemProp="affiliation"
+    itemScope
+    itemType="http://schema.org/Organization"
+  >
+    <a href="https://www.tecnalia.com/">
+      <span itemProp="name">Tecnalia</span>
+    </a>
+  </span>.
+  From 2016 to 2019 I worked at
   <span
     itemProp="affiliation"
     itemScope
@@ -13,8 +23,7 @@ gravatar: b0f00a2ea95fb62954454074a4a6fc28
     <a href="http://www.ikerlan.es">
       <span itemProp="name">Ikerlan</span>
     </a>
-  </span>.
-  From 2015 to 2016, I worked at the
+  </span> and from 2015 to 2016, at the
   <span
     itemProp="affiliation"
     itemScope
