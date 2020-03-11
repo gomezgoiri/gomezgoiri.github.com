@@ -6911,7 +6911,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/home/tulvur/workspace/gomezgoiri.github.com/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/aitor/workspace/gomezgoiri.github.com/.next");
       return error;
     }
   };
