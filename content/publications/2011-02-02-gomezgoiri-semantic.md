@@ -5,8 +5,6 @@ restCitation: '<a href="http://www.cepis.org/upgrade">UPGRADE journal</a>, 2011,
 pdf: http://www.cepis.org/upgrade/media/GomezGoiri_1_20112.pdf
 bib: /static/files/bibtex/gomezgoiri2011semantic.bib
 semantics: a-semantic-resource-oriented-middleware-for-pervasive-environments
-paths:
-  - /publications/gomezgoiri-semantic.html
 ---
 
 Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.

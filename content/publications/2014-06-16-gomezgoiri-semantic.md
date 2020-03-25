@@ -6,6 +6,8 @@ pdf: https://gateway.pinata.cloud/ipfs/QmaTVSWNg53eBpLQqwguDkt8j8TqfVX3DWQg34sEz
 bib: /static/files/bibtex/gomezgoiri2014dissertation.bib
 slides: https://gateway.pinata.cloud/ipfs/Qmdsxg5aKm2VBqzAQcicVjUD61RexpwW5p1y3wU4sPVa5z
 code: https://github.com/gomezgoiri/dissertation
+paths:
+  - /publications/gomezgoiri-dissertation.html
 ---
 
 Supervisors:

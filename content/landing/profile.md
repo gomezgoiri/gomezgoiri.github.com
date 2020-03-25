@@ -63,7 +63,7 @@ gravatar: b0f00a2ea95fb62954454074a4a6fc28
     <a href="http://www.diss.deusto.es/">Software Development</a> in
     2010 and
     <a
-      href="publications/gomezgoiri-semantic.html"
+      href="publications/gomezgoiri-dissertation.html"
       style={boldStyle}
     >
       my PhD
