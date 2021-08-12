@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Chart from 'react-google-charts'
+// import Chart from 'react-google-charts'
 
 const columns = [
   { type: 'string', id: 'President' },
   { type: 'date', id: 'Start' },
-  { type: 'date', id: 'End' }
+  { type: 'date', id: 'End' },
 ]
 
-const TimelineChart = ({ rows = [], onSelected }) => (
+/* const TimelineChart = ({ rows = [], onSelected }) => (
   <Chart
     chartType="Timeline"
     width="100%"
@@ -32,6 +32,12 @@ const TimelineChart = ({ rows = [], onSelected }) => (
       }
     ]}
   />
+) */
+
+const TimelineChart = ({ rows = [], onSelected }) => (
+  <div style={{ margin: '2em' }}>
+    (Sorry, I'll try to bring the timeline back here soon)
+  </div>
 )
 
 TimelineChart.propTypes = {
@@ -39,10 +45,10 @@ TimelineChart.propTypes = {
     PropTypes.shape({
       short: PropTypes.string,
       start: PropTypes.string,
-      end: PropTypes.string
+      end: PropTypes.string,
     })
   ),
-  onSelected: PropTypes.func.isRequired
+  onSelected: PropTypes.func.isRequired,
 }
 
 export default TimelineChart
