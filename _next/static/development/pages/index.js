@@ -15,10 +15,10 @@ module.exports = {"siteTitle":"Aitor Gómez Goiri","description":"Aitor's person
 /*!**************************************!*\
   !*** ./content/landing/contact.json ***!
   \**************************************/
-/*! exports provided: siteTitle, description, gravatar, email, web, twitter, github, linkedin, slideshare, contactQr, bodyContent, bodyHtml, dir, base, ext, sourceBase, sourceExt, default */
+/*! exports provided: siteTitle, description, gravatar, email, web, twitter, github, linkedin, orcid, slideshare, contactQr, bodyContent, bodyHtml, dir, base, ext, sourceBase, sourceExt, default */
 /***/ (function(module) {
 
-module.exports = {"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","email":"aitor.gomez [at] ikerlan.es","web":"http://gomezgoiri.net","twitter":"gomezgoiri","github":"gomezgoiri","linkedin":"gomezgoiri","slideshare":"twolf","contactQr":"https://tinyurl.com/jlbwljw","bodyContent":"","bodyHtml":"","dir":"content/landing","base":"contact.json","ext":".json","sourceBase":"contact.md","sourceExt":".md"};
+module.exports = {"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","email":"aitor.gomez [at] tecnalia.com","web":"http://gomezgoiri.net","twitter":"gomezgoiri","github":"gomezgoiri","linkedin":"gomezgoiri","orcid":"0000-0002-5576-0379","slideshare":"twolf","contactQr":"https://tinyurl.com/jlbwljw","bodyContent":"","bodyHtml":"","dir":"content/landing","base":"contact.json","ext":".json","sourceBase":"contact.md","sourceExt":".md"};
 
 /***/ }),
 
@@ -29,7 +29,7 @@ module.exports = {"siteTitle":"Aitor Gómez Goiri","description":"Aitor's person
 /*! exports provided: author, gravatar, bodyContent, bodyHtml, preview, title, dir, base, ext, sourceBase, sourceExt, default */
 /***/ (function(module) {
 
-module.exports = {"author":"Aitor Gómez Goiri","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","bodyContent":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-semantic.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","bodyHtml":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-semantic.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","preview":"I&apos;m a senior researcher at\n\n      Tecnalia\n\n  .\n  From 2016 to 2019 I worked at\n\n      Ikerlan\n\n   and from 2015 to 2016, at the","title":"Tecnalia","dir":"content/landing","base":"profile.json","ext":".json","sourceBase":"profile.md","sourceExt":".md"};
+module.exports = {"author":"Aitor Gómez Goiri","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","bodyContent":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-dissertation.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","bodyHtml":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-dissertation.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","preview":"I&apos;m a senior researcher at\n\n      Tecnalia\n\n  .\n  From 2016 to 2019 I worked at\n\n      Ikerlan\n\n   and from 2015 to 2016, at the","title":"Tecnalia","dir":"content/landing","base":"profile.json","ext":".json","sourceBase":"profile.md","sourceExt":".md"};
 
 /***/ }),
 
@@ -40,7 +40,7 @@ module.exports = {"author":"Aitor Gómez Goiri","gravatar":"b0f00a2ea95fb6295445
 /*! exports provided: fileMap, sourceFileArray, default */
 /***/ (function(module) {
 
-module.exports = {"fileMap":{"content/coding/ptAnywhere-http_api.json":{"title":"HTTP API","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":3,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/) & [Redis](http://redis.io/).\n\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/1fQsdI9iKwE\"\n>\n</iframe>\n\n## Features\n\n- Implemented in [Jersey 2.x](https://jersey.java.net/). The API follows the [JAX-RS 2.0](https://jax-rs-spec.java.net/) specification and fully uses annotations instead of ugly and obscure XML-based configurations.\n- REST-like API where resources are the center of the interactions (note: it is [not fully hypermedia-driven](http://restfulwebapis.org)). See the requests made in session where a new switch is created and linked with another one:\n\n```\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/network\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports?free=true\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/5ejnGalLRjeKNmWML4HZQQ--/ports?free=true\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports/FastEthernet0+3/link\n```\n\n- Discoverable API (uses [HTTP Link headers](https://www.w3.org/wiki/LinkHeader))\n- Extensively described with [Swagger](http://swagger.io/).\n\nThe following code shows the use of these features in practice:\n\n<script src=\"https://gist.github.com/gomezgoiri/0e9cfba5e5ecb61d8233722341ba0503.js\"></script>\n\n## How does it work?\n\nWhat does the API do behind the scenes?\n\n- It assigns one _Packet Tracer_ instance to each session (and destroys it afterwards). For more info, read the _Internal API_ subsection.\n- It records interactions in TinCan API. For more info, read the _Learning Analytics_ subsection.\n- It handles sessions using Redis. For example, it caches information of the running _Packet Tracer_ instance to reduce internal requests and speed up loading.\n\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/HegugNt9o-0\"\n>\n</iframe>","bodyHtml":"<p>Main technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/1fQsdI9iKwE\"\n>\n</iframe>\n<h2>Features</h2>\n<ul>\n<li>Implemented in <a href=\"https://jersey.java.net/\">Jersey 2.x</a>. The API follows the <a href=\"https://jax-rs-spec.java.net/\">JAX-RS 2.0</a> specification and fully uses annotations instead of ugly and obscure XML-based configurations.</li>\n<li>REST-like API where resources are the center of the interactions (note: it is <a href=\"http://restfulwebapis.org\">not fully hypermedia-driven</a>). See the requests made in session where a new switch is created and linked with another one:</li>\n</ul>\n<pre><code>POST http://forge.kmi.open.ac.uk/api/v1/sessions\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/network\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports?free=true\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/5ejnGalLRjeKNmWML4HZQQ--/ports?free=true\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports/FastEthernet0+3/link\n</code></pre>\n<ul>\n<li>Discoverable API (uses <a href=\"https://www.w3.org/wiki/LinkHeader\">HTTP Link headers</a>)</li>\n<li>Extensively described with <a href=\"http://swagger.io/\">Swagger</a>.</li>\n</ul>\n<p>The following code shows the use of these features in practice:</p>\n<script src=\"https://gist.github.com/gomezgoiri/0e9cfba5e5ecb61d8233722341ba0503.js\"></script>\n<h2>How does it work?</h2>\n<p>What does the API do behind the scenes?</p>\n<ul>\n<li>It assigns one <em>Packet Tracer</em> instance to each session (and destroys it afterwards). For more info, read the <em>Internal API</em> subsection.</li>\n<li>It records interactions in TinCan API. For more info, read the <em>Learning Analytics</em> subsection.</li>\n<li>It handles sessions using Redis. For example, it caches information of the running <em>Packet Tracer</em> instance to reduce internal requests and speed up loading.</li>\n</ul>\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/HegugNt9o-0\"\n>\n</iframe>","preview":"Main technologies used: JAX-RS (Jersey), Swagger & Redis.\n\nFeatures\n\nImplemented in Jersey 2.x. The API follows the JAX-RS 2.0 specification","dir":"content/coding","base":"ptAnywhere-http_api.json","ext":".json","sourceBase":"ptAnywhere-http_api.md","sourceExt":".md"},"content/404.json":{"title":"Page Not Found","cx":"003123041647642216693:z-wgm1zzozk","page":"/NotFound","paths":["/404.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"404.json","ext":".json","sourceBase":"404.md","sourceExt":".md"},"content/coding/ptAnywhere-frontend.json":{"title":"Front end","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":2,"date":"2016-06-03T00:00:00.000Z","bodyContent":"_PT Anywhere_'s main goal is to **facilitate the access to _Packet Tracer_**.\nTo this end, it offers a simple web interface to the students.\n\nStudents might access directly using the browser or through the [iBook we created](publications/domingue-forging.html) for the [FORGE project](projects/forge.html).\nThis iBook contains a chapter entitled _Basic Network Router Configuration_ where the _PTAnywhere_ widget is embedded.\n\nThis is how a typical _PT Anywhere_ session looks like in a browser:\n\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/UauKSWQC2XQ\"\n>\n</iframe>\n\nTo create this widget (i.e., the _PT Anywhere_ front end), I used the following _JavaScript libraries_:\n\n- [Angular JS](https://angularjs.org/): I reimplemented the whole widget which initially used [jQuery](https://jquery.com/).\n- [vis.js](http://visjs.org/): to show the network topology.\n- [Jasmine](http://jasmine.github.io/): for testing the [_PTAnywhere API_ client JS library](https://github.com/PTAnywhere/ptAnywhere-js).\n\nThe web application which creates this widget is managed in this [GitHub project](https://github.com/PTAnywhere/ptAnywhere-widgets) which depends on these [other](https://github.com/PTAnywhere/widget-ui) [two](https://github.com/PTAnywhere/ptAnywhere-js).","bodyHtml":"<p><em>PT Anywhere</em>'s main goal is to <strong>facilitate the access to <em>Packet Tracer</em></strong>.\nTo this end, it offers a simple web interface to the students.</p>\n<p>Students might access directly using the browser or through the <a href=\"publications/domingue-forging.html\">iBook we created</a> for the <a href=\"projects/forge.html\">FORGE project</a>.\nThis iBook contains a chapter entitled <em>Basic Network Router Configuration</em> where the <em>PTAnywhere</em> widget is embedded.</p>\n<p>This is how a typical <em>PT Anywhere</em> session looks like in a browser:</p>\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/UauKSWQC2XQ\"\n>\n</iframe>\n<p>To create this widget (i.e., the <em>PT Anywhere</em> front end), I used the following <em>JavaScript libraries</em>:</p>\n<ul>\n<li><a href=\"https://angularjs.org/\">Angular JS</a>: I reimplemented the whole widget which initially used <a href=\"https://jquery.com/\">jQuery</a>.</li>\n<li><a href=\"http://visjs.org/\">vis.js</a>: to show the network topology.</li>\n<li><a href=\"http://jasmine.github.io/\">Jasmine</a>: for testing the <a href=\"https://github.com/PTAnywhere/ptAnywhere-js\"><em>PTAnywhere API</em> client JS library</a>.</li>\n</ul>\n<p>The web application which creates this widget is managed in this <a href=\"https://github.com/PTAnywhere/ptAnywhere-widgets\">GitHub project</a> which depends on these <a href=\"https://github.com/PTAnywhere/widget-ui\">other</a> <a href=\"https://github.com/PTAnywhere/ptAnywhere-js\">two</a>.</p>\n","preview":"PT Anywhere's main goal is to facilitate the access to Packet Tracer.\nTo this end, it offers a simple web interface to the","dir":"content/coding","base":"ptAnywhere-frontend.json","ext":".json","sourceBase":"ptAnywhere-frontend.md","sourceExt":".md"},"content/coding/ptAnywhere-installation.json":{"title":"Installation","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":1,"date":"2016-06-03T00:00:00.000Z","bodyContent":"The complete installation process is described in detail [here](https://github.com/PTAnywhere/ptAnywhere-installation/wiki).\n\nAll the machines needed to create a typical _PT Anywhere_ installation can be **provisioned** using a modular [Ansible](https://www.ansible.com/) _playbook_ (it follows [best practices](http://docs.ansible.com/ansible/playbooks_best_practices.html)).\nThis _Ansible playbook_ describes the steps needed to install each component in a self-documented, simple and easy to read way.\nFor more details, check the [detailed instructions](https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Ansible).\n\n> Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.\n\nThe Ansible script can be used in already existing machines (virtual or not):\n\n    ansible-playbook -vvvv -u [remote-user] -i machine --private-key [private-key-location] --ask-become-pass main.yml\n\n---\n\nSometimes it might also be useful to **create and provision _virtual machines_** from scratch.\nFor example, during development it is useful to have a local machines which replicate production servers.\nTo this end, I also created a [Vagrant](https://www.vagrantup.com/) script.\n\n> Vagrant is a tool for building complete development environments.\n\nThis script defines the requirements for each machine (e.g., RAM, number of CPUs or OS type) and how to use Ansible to provision them.\nFor developers' convenience, I created two typical installation configurations:\n\n1.  An installation with _only one machine_.\n\n    In this machine, Ansible installs the web server, the scheduling module and the module which creates _Packet Tracer_ instances (using _Docker_).\n\n        $ MACHINES='./vagrant/one_machine.rb' vagrant up\n\n1.  An installation with _two machines_.\n\n    The first machine has the web server and the scheduling module.\n    The second machine manages _Packet Tracer_ instances using _Docker_.\n\nFor more details on how to use the _Vagrant_ script, check the [detailed instructions](https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Vagrant).\n\n---\n\nFinally, to create and provision the _Learning Record Store_ (LRS), I created a _PT Anywhere independent_ [GitHub project](https://github.com/gomezgoiri/learninglocker-centos7) which has other _Ansible_ and _Vagrant_ scripts.\nThese script can be used to install [Learning Locker](http://learninglocker.net/) (an open-source LRS) on [CentOS 7](https://www.centos.org/) and [RHEL 7](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) .\nFor more information on the LRS, you can go to the [Learning Analytics](coding/ptAnywhere-learning_analytics.html) section.\n\n> Learning Locker is the world's most installed LRS","bodyHtml":"<p>The complete installation process is described in detail <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki\">here</a>.</p>\n<p>All the machines needed to create a typical <em>PT Anywhere</em> installation can be <strong>provisioned</strong> using a modular <a href=\"https://www.ansible.com/\">Ansible</a> <em>playbook</em> (it follows <a href=\"http://docs.ansible.com/ansible/playbooks_best_practices.html\">best practices</a>).\nThis <em>Ansible playbook</em> describes the steps needed to install each component in a self-documented, simple and easy to read way.\nFor more details, check the <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Ansible\">detailed instructions</a>.</p>\n<blockquote>\n<p>Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.</p>\n</blockquote>\n<p>The Ansible script can be used in already existing machines (virtual or not):</p>\n<pre><code>ansible-playbook -vvvv -u [remote-user] -i machine --private-key [private-key-location] --ask-become-pass main.yml\n</code></pre>\n<hr>\n<p>Sometimes it might also be useful to <strong>create and provision <em>virtual machines</em></strong> from scratch.\nFor example, during development it is useful to have a local machines which replicate production servers.\nTo this end, I also created a <a href=\"https://www.vagrantup.com/\">Vagrant</a> script.</p>\n<blockquote>\n<p>Vagrant is a tool for building complete development environments.</p>\n</blockquote>\n<p>This script defines the requirements for each machine (e.g., RAM, number of CPUs or OS type) and how to use Ansible to provision them.\nFor developers' convenience, I created two typical installation configurations:</p>\n<ol>\n<li>\n<p>An installation with <em>only one machine</em>.</p>\n<p>In this machine, Ansible installs the web server, the scheduling module and the module which creates <em>Packet Tracer</em> instances (using <em>Docker</em>).</p>\n<pre><code>$ MACHINES='./vagrant/one_machine.rb' vagrant up\n</code></pre>\n</li>\n<li>\n<p>An installation with <em>two machines</em>.</p>\n<p>The first machine has the web server and the scheduling module.\nThe second machine manages <em>Packet Tracer</em> instances using <em>Docker</em>.</p>\n</li>\n</ol>\n<p>For more details on how to use the <em>Vagrant</em> script, check the <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Vagrant\">detailed instructions</a>.</p>\n<hr>\n<p>Finally, to create and provision the <em>Learning Record Store</em> (LRS), I created a <em>PT Anywhere independent</em> <a href=\"https://github.com/gomezgoiri/learninglocker-centos7\">GitHub project</a> which has other <em>Ansible</em> and <em>Vagrant</em> scripts.\nThese script can be used to install <a href=\"http://learninglocker.net/\">Learning Locker</a> (an open-source LRS) on <a href=\"https://www.centos.org/\">CentOS 7</a> and <a href=\"https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux\">RHEL 7</a> .\nFor more information on the LRS, you can go to the <a href=\"coding/ptAnywhere-learning_analytics.html\">Learning Analytics</a> section.</p>\n<blockquote>\n<p>Learning Locker is the world's most installed LRS</p>\n</blockquote>\n","preview":"The complete installation process is described in detail here.\n\nAll the machines needed to create a typical PT Anywhere installation can be","dir":"content/coding","base":"ptAnywhere-installation.json","ext":".json","sourceBase":"ptAnywhere-installation.md","sourceExt":".md"},"content/coding/ptAnywhere-learning_analytics.json":{"title":"Learning Analytics","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":5,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)).\n\n## Data recorded\n\nTin Can API records data in so called statements.\nThey conceptually capture a learning activity.\n\nThese statements are composed by the following elements: subject, verb, activity, result and context.\nThe following table summarizes what _PT Anywhere_ records and how.\nFor a more detailed documentation, visit [this page](https://github.com/PTAnywhere/ptAnywhere-api/wiki/Vocabulary-used-to-capture-user-interaction).\n\n<div class=\"row\" style=\"margin-top: 4%\">\n  <div class=\"col-sm-offset-2 col-sm-8\">\n    <table class=\"table table-striped\">\n      <tbody>\n        <tr>\n          <th scope=\"row\">Subject</th>\n          <td class=\"text-right\">Anonymized ID. Reused from a previous session ID if possible.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Verb</th>\n          <td class=\"text-right\">Initialized, terminated, created, deleted, updated and used.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Activity</th>\n          <td class=\"text-right\">Widget, Device, Link and Command line.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Result</th>\n          <td class=\"text-right\">\n            Specific for an activity instantiation.<br />\n            It has general data and application specific information<br />\n            (discouraged because does not promote interoperability).\n          </td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Context</th>\n          <td class=\"text-right\">Session ID and activity categorization.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<div class=\"row\" style=\"margin-top: 4%\">\n  <img class=\"col-sm-offset-2 col-sm-8\" alt=\"Learning Locker screenshot\" src=\"https://i.imgur.com/rus5D9pl.png\" />\n</div>\n\n## Features of the dashboard\n\n- Client-side visualizations use [Chart.js](http://www.chartjs.org/), & [vis.js](http://visjs.org/).\n- Client-side dashboard uses [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/) & [Bootstrap](http://getbootstrap.com/).\n- Server-side application is implemented in [Jersey 2.x](https://jersey.java.net/) using [Freemarker](http://freemarker.org/).\n- The _Learning Record Store_ is queried using [Learning Locker's Aggregation API](http://docs.learninglocker.net/statements_api/#aggregate).\n\n<div class=\"row\">\n  <iframe\n    width=\"560\" height=\"315\"\n    style=\"width: 560px; height: 315px;\"\n    frameborder=\"0\" allowfullscreen\n    src=\"https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj\"\n  >\n  </iframe>\n</div>\n\n## Data analysis\n\nMain technologies used: [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [SciPy](https://www.scipy.org/), [Sklearn](http://scikit-learn.org) and [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/index.html).","bodyHtml":"<p>Main technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>).</p>\n<h2>Data recorded</h2>\n<p>Tin Can API records data in so called statements.\nThey conceptually capture a learning activity.</p>\n<p>These statements are composed by the following elements: subject, verb, activity, result and context.\nThe following table summarizes what <em>PT Anywhere</em> records and how.\nFor a more detailed documentation, visit <a href=\"https://github.com/PTAnywhere/ptAnywhere-api/wiki/Vocabulary-used-to-capture-user-interaction\">this page</a>.</p>\n<div class=\"row\" style=\"margin-top: 4%\">\n  <div class=\"col-sm-offset-2 col-sm-8\">\n    <table class=\"table table-striped\">\n      <tbody>\n        <tr>\n          <th scope=\"row\">Subject</th>\n          <td class=\"text-right\">Anonymized ID. Reused from a previous session ID if possible.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Verb</th>\n          <td class=\"text-right\">Initialized, terminated, created, deleted, updated and used.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Activity</th>\n          <td class=\"text-right\">Widget, Device, Link and Command line.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Result</th>\n          <td class=\"text-right\">\n            Specific for an activity instantiation.<br />\n            It has general data and application specific information<br />\n            (discouraged because does not promote interoperability).\n          </td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Context</th>\n          <td class=\"text-right\">Session ID and activity categorization.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n<div class=\"row\" style=\"margin-top: 4%\">\n  <img class=\"col-sm-offset-2 col-sm-8\" alt=\"Learning Locker screenshot\" src=\"https://i.imgur.com/rus5D9pl.png\" />\n</div>\n<h2>Features of the dashboard</h2>\n<ul>\n<li>Client-side visualizations use <a href=\"http://www.chartjs.org/\">Chart.js</a>, &amp; <a href=\"http://visjs.org/\">vis.js</a>.</li>\n<li>Client-side dashboard uses <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"https://jquery.com/\">jQuery</a> &amp; <a href=\"http://getbootstrap.com/\">Bootstrap</a>.</li>\n<li>Server-side application is implemented in <a href=\"https://jersey.java.net/\">Jersey 2.x</a> using <a href=\"http://freemarker.org/\">Freemarker</a>.</li>\n<li>The <em>Learning Record Store</em> is queried using <a href=\"http://docs.learninglocker.net/statements_api/#aggregate\">Learning Locker's Aggregation API</a>.</li>\n</ul>\n<div class=\"row\">\n  <iframe\n    width=\"560\" height=\"315\"\n    style=\"width: 560px; height: 315px;\"\n    frameborder=\"0\" allowfullscreen\n    src=\"https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj\"\n  >\n  </iframe>\n</div>\n<h2>Data analysis</h2>\n<p>Main technologies used: <a href=\"http://pandas.pydata.org/\">Pandas</a>, <a href=\"http://matplotlib.org/\">Matplotlib</a>, <a href=\"https://www.scipy.org/\">SciPy</a>, <a href=\"http://scikit-learn.org\">Sklearn</a> and <a href=\"https://stanford.edu/~mwaskom/software/seaborn/index.html\">Seaborn</a>.</p>\n","preview":"Main technologies used: Tin Can API (Learning Locker).\n\nData recorded\n\nTin Can API records data in so called statements.\nThey conceptually","dir":"content/coding","base":"ptAnywhere-learning_analytics.json","ext":".json","sourceBase":"ptAnywhere-learning_analytics.md","sourceExt":".md"},"content/coding/ptAnywhere-intro.json":{"title":"Introduction","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":0,"date":"2016-06-03T00:00:00.000Z","bodyContent":"[Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/) is a network simulation tool created by [Cisco](http://www.cisco.com/).\nAs part of the [FORGE project](projects/forge.html), I developed a web version/frontend for it.\n\nHowever, despite of the simplicity of the user interface, the architecture which lies behind is not simple at all.\nIn this article, I will briefly explain the different parts of the architecture.\n\nA _PTAnywhere_ installation looks like the following image shows.\n\n<div class=\"text-center\" style=\"margin-bottom: 20px;\">\n  <img alt=\"PTAnywhere installation diagram\" src=\"https://raw.githubusercontent.com/wiki/PTAnywhere/ptAnywhere-installation/typical_installation.png\" width=\"60%\">\n</div>\n\nThere is a web server where the [PTAnywhere API](https://github.com/PTAnywhere/ptAnywhere-api) is deployed.\nAdditionally, it might also serve the web application with the [HTML widgets](https://github.com/PTAnywhere/ptAnywhere-widgets) which use the API.\nThe _PTAnywhere API_ uses a [Redis](http://redis.io/) database to handle students' sessions.\nIt also relies on one or more _PT managers_ to handle _Packet Tracer_ instances.\nEach manager can handle several concurrent instances.\nOptionally, the API can also record interaction details in a [Tin Can API](https://tincanapi.com/) compatible Learning Record Store (LRS).\n\nIn the next section, I briefly explain **how to install** _PTAnywhere_.\nHowever, if you are interested in a specific part of the architecture you can go directly to its explanation clicking in any of the following links:\n\n1.  [Web frontend (widget)](ptAnywhere-frontend.html).\n\n    Technologies used: [jQuery](https://jquery.com/), [vis.js](http://visjs.org/) & [Jasmine](http://jasmine.github.io/).\n\n1.  [HTTP API](ptAnywhere-http_api.html).\n\n    Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/) & [Redis](http://redis.io/).\n\n1.  [Internal Packet Tracer API](ptAnywhere-internal_api.html).\n\n    Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n1.  [Learning Analytics](ptAnywhere-learning_analytics.html).\n\n    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).","bodyHtml":"<p><a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Packet Tracer</a> is a network simulation tool created by <a href=\"http://www.cisco.com/\">Cisco</a>.\nAs part of the <a href=\"projects/forge.html\">FORGE project</a>, I developed a web version/frontend for it.</p>\n<p>However, despite of the simplicity of the user interface, the architecture which lies behind is not simple at all.\nIn this article, I will briefly explain the different parts of the architecture.</p>\n<p>A <em>PTAnywhere</em> installation looks like the following image shows.</p>\n<div class=\"text-center\" style=\"margin-bottom: 20px;\">\n  <img alt=\"PTAnywhere installation diagram\" src=\"https://raw.githubusercontent.com/wiki/PTAnywhere/ptAnywhere-installation/typical_installation.png\" width=\"60%\">\n</div>\n<p>There is a web server where the <a href=\"https://github.com/PTAnywhere/ptAnywhere-api\">PTAnywhere API</a> is deployed.\nAdditionally, it might also serve the web application with the <a href=\"https://github.com/PTAnywhere/ptAnywhere-widgets\">HTML widgets</a> which use the API.\nThe <em>PTAnywhere API</em> uses a <a href=\"http://redis.io/\">Redis</a> database to handle students' sessions.\nIt also relies on one or more <em>PT managers</em> to handle <em>Packet Tracer</em> instances.\nEach manager can handle several concurrent instances.\nOptionally, the API can also record interaction details in a <a href=\"https://tincanapi.com/\">Tin Can API</a> compatible Learning Record Store (LRS).</p>\n<p>In the next section, I briefly explain <strong>how to install</strong> <em>PTAnywhere</em>.\nHowever, if you are interested in a specific part of the architecture you can go directly to its explanation clicking in any of the following links:</p>\n<ol>\n<li>\n<p><a href=\"ptAnywhere-frontend.html\">Web frontend (widget)</a>.</p>\n<p>Technologies used: <a href=\"https://jquery.com/\">jQuery</a>, <a href=\"http://visjs.org/\">vis.js</a> &amp; <a href=\"http://jasmine.github.io/\">Jasmine</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-http_api.html\">HTTP API</a>.</p>\n<p>Technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-internal_api.html\">Internal Packet Tracer API</a>.</p>\n<p>Technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-learning_analytics.html\">Learning Analytics</a>.</p>\n<p>Technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>), <a href=\"http://www.chartjs.org/\">Chart.js</a> &amp; <a href=\"http://visjs.org/\">vis.js</a>.</p>\n</li>\n</ol>\n","preview":"Packet Tracer is a network simulation tool created by Cisco.\nAs part of the FORGE project, I developed a web version/frontend for","dir":"content/coding","base":"ptAnywhere-intro.json","ext":".json","sourceBase":"ptAnywhere-intro.md","sourceExt":".md"},"content/cv/career/2011a.json":{"title":"University of Deusto","what":"Assistant lecturer","when":"2011 and 2012","where":"Bilbao, Spain","bodyContent":"I taught BSc and MSc students _programming_ (data structures and algorithms in Java) and\n_development tools_ (VCS, unit testing, continuous integration and issue tracking systems).\n_Additional skills_: communication & working to deadlines.","bodyHtml":"<p>I taught BSc and MSc students <em>programming</em> (data structures and algorithms in Java) and\n<em>development tools</em> (VCS, unit testing, continuous integration and issue tracking systems).\n<em>Additional skills</em>: communication &amp; working to deadlines.</p>\n","preview":"I taught BSc and MSc students programming (data structures and algorithms in Java) and\ndevelopment tools (VCS, unit testing, continuous","dir":"content/cv/career","base":"2011a.json","ext":".json","sourceBase":"2011a.md","sourceExt":".md"},"content/cv/career/2007.json":{"title":"Asanpi 2000 S.L.","what":"System administrator","when":"2007","where":"Abanto-Zierbena, Spain","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2007.json","ext":".json","sourceBase":"2007.md","sourceExt":".md"},"content/coding/ptAnywhere-internal_api.json":{"title":"Internal PT API","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":4,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n## Features\n\n- Implemented in [Flask](http://flask.pocoo.org/). Run on top of [Gunicorn](http://gunicorn.org/) and [Nginx](https://www.nginx.com/).\n- Extensively described with [Swagger](http://swagger.io/).\n- It uses [Docker](https://www.docker.com/) to run isolated _Packet Tracer_ instances in a lightweight manner.\n- It uses [Celery](http://www.celeryproject.org/) to manage Docker containers' lifecycle.\n\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/u3XQvArqBO0\"\n>\n</iframe>\n\n## How does it work?\n\nThe internal API uses Docker to create _Packet Tracer_ instances.\nHowever, requests always interact with Docker indirectly through Celery.\n\n### Docker\n\n_Packet Tracer_ instances are run isolated in a Docker container.\nInstead of creating a new instance/container for each _PT Anywhere_ session,\ncontainers are reused as much as possible.\n\nTo do this, we made a distinction between _Instance_ resources and _Allocation_ resources.\n**Instance** resources can be mapped to Docker containers.\nAn **Allocation** resource represent the exclusive use of one of these containers during a certain period.\n\nTo reduce containers' CPU consumption when they are not being used (i.e., they are not allocated by a session) they are paused.\nWhen a new allocation is requested and an instance is available, the internal API unpauses it and loads the initial file removing the data from any previous session.\nAll the containers are created using the same image and mounting a [data volume container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) which contains _Packet Tracer_'s installation and configuration files.\n\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/kH8Uy5GU1ds\"\n>\n</iframe>\n\n### Celery\n\nCelery runs the following tasks in the background:\n\n- Create instance. Containers are created whenever they are needed only if certain thresholds have not been reached. E.g., general maximum CPU and memory limits are defined to avoid overloading the server.\n- Delete instance.\n- Allocate instance. This task either allocates available instances or triggers a creation task to get a new instance.\n- Deallocate instance. Once a _PTAnywhere_ session has ended, the associated instance (i.e., container) can be released.\n- Wait for instance to be ready. This task checks whether the _Packet Tracer_ instance inside a container answers to commands. In plain words, it is a sort of ping to _Packet Tracer_. After certain unsuccessful retries, it marks it as erroneous.\n- Monitor instance. Celery checks instances marked as faulty to see if their associated containers can be restarted. Otherwise they are deleted. This is a periodic task handled by [Celery Beat](http://docs.celeryproject.org/en/latest/reference/celery.beat.html).\n\nTo do these tasks, we use two queues: a normal one and a high priority one.\nThe high priority queue is used to ensure that allocations and deallocations are done as fast as possible.\nBoth tasks are the ones that the public API triggers and can be done immediately.\n\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/FWH38yjknNA\"\n>\n</iframe>","bodyHtml":"<p>Main technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Implemented in <a href=\"http://flask.pocoo.org/\">Flask</a>. Run on top of <a href=\"http://gunicorn.org/\">Gunicorn</a> and <a href=\"https://www.nginx.com/\">Nginx</a>.</li>\n<li>Extensively described with <a href=\"http://swagger.io/\">Swagger</a>.</li>\n<li>It uses <a href=\"https://www.docker.com/\">Docker</a> to run isolated <em>Packet Tracer</em> instances in a lightweight manner.</li>\n<li>It uses <a href=\"http://www.celeryproject.org/\">Celery</a> to manage Docker containers' lifecycle.</li>\n</ul>\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/u3XQvArqBO0\"\n>\n</iframe>\n<h2>How does it work?</h2>\n<p>The internal API uses Docker to create <em>Packet Tracer</em> instances.\nHowever, requests always interact with Docker indirectly through Celery.</p>\n<h3>Docker</h3>\n<p><em>Packet Tracer</em> instances are run isolated in a Docker container.\nInstead of creating a new instance/container for each <em>PT Anywhere</em> session,\ncontainers are reused as much as possible.</p>\n<p>To do this, we made a distinction between <em>Instance</em> resources and <em>Allocation</em> resources.\n<strong>Instance</strong> resources can be mapped to Docker containers.\nAn <strong>Allocation</strong> resource represent the exclusive use of one of these containers during a certain period.</p>\n<p>To reduce containers' CPU consumption when they are not being used (i.e., they are not allocated by a session) they are paused.\nWhen a new allocation is requested and an instance is available, the internal API unpauses it and loads the initial file removing the data from any previous session.\nAll the containers are created using the same image and mounting a <a href=\"https://docs.docker.com/engine/userguide/containers/dockervolumes/\">data volume container</a> which contains <em>Packet Tracer</em>'s installation and configuration files.</p>\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/kH8Uy5GU1ds\"\n>\n</iframe>\n<h3>Celery</h3>\n<p>Celery runs the following tasks in the background:</p>\n<ul>\n<li>Create instance. Containers are created whenever they are needed only if certain thresholds have not been reached. E.g., general maximum CPU and memory limits are defined to avoid overloading the server.</li>\n<li>Delete instance.</li>\n<li>Allocate instance. This task either allocates available instances or triggers a creation task to get a new instance.</li>\n<li>Deallocate instance. Once a <em>PTAnywhere</em> session has ended, the associated instance (i.e., container) can be released.</li>\n<li>Wait for instance to be ready. This task checks whether the <em>Packet Tracer</em> instance inside a container answers to commands. In plain words, it is a sort of ping to <em>Packet Tracer</em>. After certain unsuccessful retries, it marks it as erroneous.</li>\n<li>Monitor instance. Celery checks instances marked as faulty to see if their associated containers can be restarted. Otherwise they are deleted. This is a periodic task handled by <a href=\"http://docs.celeryproject.org/en/latest/reference/celery.beat.html\">Celery Beat</a>.</li>\n</ul>\n<p>To do these tasks, we use two queues: a normal one and a high priority one.\nThe high priority queue is used to ensure that allocations and deallocations are done as fast as possible.\nBoth tasks are the ones that the public API triggers and can be done immediately.</p>\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/FWH38yjknNA\"\n>\n</iframe>","preview":"Main technologies used: Flask, Celery & Docker.\n\nFeatures\n\nImplemented in Flask. Run on top of Gunicorn and Nginx.\nExtensively described","dir":"content/coding","base":"ptAnywhere-internal_api.json","ext":".json","sourceBase":"ptAnywhere-internal_api.md","sourceExt":".md"},"content/cv/career/2011b.json":{"title":"Lancaster University","what":"Visiting researcher","when":"2011 (6 weeks)","where":"Lancaster, UK","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2011b.json","ext":".json","sourceBase":"2011b.md","sourceExt":".md"},"content/cv/career/2013.json":{"title":"ETH Zürich","what":"Visiting researcher","when":"2013 (7 weeks)","where":"Zürich, Switzerland","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2013.json","ext":".json","sourceBase":"2013.md","sourceExt":".md"},"content/cv/career/2015.json":{"title":"University of Deusto","what":"Research Associate, Research Assistant","when":"2008-2014, 2014-2015","where":"Bilbao, Spain","bodyContent":"I installed and managed a multi-node [OpenStack](https://www.openstack.org/) cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring its [high availability](https://github.com/gomezgoiri/weblabdeusto-playbooks).\nI co-designed and implemented an authentication and authorization mechanism for [hardware-constrained devices](https://github.com/lightsec).\nI ported the [CLIPS](http://www.clipsrules.net/) [rule-based reasoner to Android](https://github.com/gomezgoiri/CLIPS4Android).\n_Additional skills_: team working, self-learning, agile methodologies, working to deadlines & problem assessing and solving.\n\n<!--\nIn the ISMED and ACROSS projects, I developed a Semantic and Web based middleware for different mobile and embedded platforms.\nWorking at the Internet Unit of the Deusto Institute of Technology, DeustoTech.\nI am involved in projects related with the use of Semantic and Web Technologies in resource constrained devices (i.e., mobile and embedded devices).\nAs part of Adizain project, I created a distributed OSGi application which used a queue-based communication.\n-->","bodyHtml":"<p>I installed and managed a multi-node <a href=\"https://www.openstack.org/\">OpenStack</a> cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring its <a href=\"https://github.com/gomezgoiri/weblabdeusto-playbooks\">high availability</a>.\nI co-designed and implemented an authentication and authorization mechanism for <a href=\"https://github.com/lightsec\">hardware-constrained devices</a>.\nI ported the <a href=\"http://www.clipsrules.net/\">CLIPS</a> <a href=\"https://github.com/gomezgoiri/CLIPS4Android\">rule-based reasoner to Android</a>.\n<em>Additional skills</em>: team working, self-learning, agile methodologies, working to deadlines &amp; problem assessing and solving.</p>\n<!--\nIn the ISMED and ACROSS projects, I developed a Semantic and Web based middleware for different mobile and embedded platforms.\nWorking at the Internet Unit of the Deusto Institute of Technology, DeustoTech.\nI am involved in projects related with the use of Semantic and Web Technologies in resource constrained devices (i.e., mobile and embedded devices).\nAs part of Adizain project, I created a distributed OSGi application which used a queue-based communication.\n-->","preview":"I installed and managed a multi-node OpenStack cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring","dir":"content/cv/career","base":"2015.json","ext":".json","sourceBase":"2015.md","sourceExt":".md"},"content/cv/career/2019b.json":{"title":"Tecnalia","what":"Senior researcher at Cybersecurity team","when":"Since 2019","where":"Vitoria-Gasteiz, Spain","bodyContent":"I designed and developed several decentralized applications for a range of projects where blockchain (or more generally _distributed ledger_) technologies were used to ensure an immutable, agreed and shared state between untrusted parties.\n\n- Smart-contracts for [Ethereum](https://ethereum.org/) with Solidity.\n- ÐApps in Javascript.","bodyHtml":"<p>I designed and developed several decentralized applications for a range of projects where blockchain (or more generally <em>distributed ledger</em>) technologies were used to ensure an immutable, agreed and shared state between untrusted parties.</p>\n<ul>\n<li>Smart-contracts for <a href=\"https://ethereum.org/\">Ethereum</a> with Solidity.</li>\n<li>ÐApps in Javascript.</li>\n</ul>\n","preview":"I designed and developed several decentralized applications for a range of projects where blockchain (or more generally distributed ledger)","dir":"content/cv/career","base":"2019b.json","ext":".json","sourceBase":"2019b.md","sourceExt":".md"},"content/cv/career/2019.json":{"title":"IKERLAN","what":"Researcher at the Big Data Architectures team","when":"2016-2019","where":"Arrasate, Spain","bodyContent":"I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing scales or remote controls). The webapps I built let customers monitor their equipment, actuate over it and exploit the data they send to guarantee their correct maintenance.\n\n- Data visualizations in Single-page applications using _React_ and _Redux_. Interaction with devices using websockets and MQTT protocol.\n- Web APIs using _AWS API Gateway_ or _Springboot_ and integrating several authentication services.\n- Data ingest using _Spark structured streaming_, _Apache Kafka_ and _AWS Lambda functions_.\n- Storage using both relational and NoSQL databases like _PostgreSQL_, _DynamoDB_ o _InfluxDB_.\n- Automated deployment using Serverless framework, Maven and Docker containers.","bodyHtml":"<p>I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing scales or remote controls). The webapps I built let customers monitor their equipment, actuate over it and exploit the data they send to guarantee their correct maintenance.</p>\n<ul>\n<li>Data visualizations in Single-page applications using <em>React</em> and <em>Redux</em>. Interaction with devices using websockets and MQTT protocol.</li>\n<li>Web APIs using <em>AWS API Gateway</em> or <em>Springboot</em> and integrating several authentication services.</li>\n<li>Data ingest using <em>Spark structured streaming</em>, <em>Apache Kafka</em> and <em>AWS Lambda functions</em>.</li>\n<li>Storage using both relational and NoSQL databases like <em>PostgreSQL</em>, <em>DynamoDB</em> o <em>InfluxDB</em>.</li>\n<li>Automated deployment using Serverless framework, Maven and Docker containers.</li>\n</ul>\n","preview":"I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing","dir":"content/cv/career","base":"2019.json","ext":".json","sourceBase":"2019.md","sourceExt":".md"},"content/cv/career/2016.json":{"title":"Open University","what":"Research Associate","when":"2015-2016","where":"Milton Keynes, UK","bodyContent":"Lead design, development and maintenance of [PT Anywhere](http://pt-anywhere.kmi.open.ac.uk/),<br />\na web version for the popular network simulator ([Cisco Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/)).<br />\nScaling up PT to run more than 500 simultaneous instances per machine using Docker.<br />\nCreating web API for managing instance allocation and creation based on the computer load.<br />\nCreating tools and visualizations to aid teachers improving students' learning process.<br />\nCreating automatic provision scripts for every component of the architecture.<br />\nResearch on Technology Enhanced Learning within [FORGE](http://ict-forge.eu/) and [weSPOT](http://wespot.net) EU projects.<br />\n_Additional skills_: agile methodologies & problem assessing and solving.","bodyHtml":"<p>Lead design, development and maintenance of <a href=\"http://pt-anywhere.kmi.open.ac.uk/\">PT Anywhere</a>,<br />\na web version for the popular network simulator (<a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Cisco Packet Tracer</a>).<br />\nScaling up PT to run more than 500 simultaneous instances per machine using Docker.<br />\nCreating web API for managing instance allocation and creation based on the computer load.<br />\nCreating tools and visualizations to aid teachers improving students' learning process.<br />\nCreating automatic provision scripts for every component of the architecture.<br />\nResearch on Technology Enhanced Learning within <a href=\"http://ict-forge.eu/\">FORGE</a> and <a href=\"http://wespot.net\">weSPOT</a> EU projects.<br />\n<em>Additional skills</em>: agile methodologies &amp; problem assessing and solving.</p>\n","preview":"Lead design, development and maintenance of PT Anywhere,\na web version for the popular network simulator (Cisco Packet Tracer).\nScaling up","dir":"content/cv/career","base":"2016.json","ext":".json","sourceBase":"2016.md","sourceExt":".md"},"content/cv/education/2010.json":{"title":"University of Deusto","when":"2009-2010","where":"Bilbao, Spain","bodyContent":"__M.Sc.__ in Development and Integration of Software Solutions<br />\nSpecializations: Java and mobile computing.","bodyHtml":"<p><strong>M.Sc.</strong> in Development and Integration of Software Solutions<br />\nSpecializations: Java and mobile computing.</p>\n","preview":"M.Sc. in Development and Integration of Software Solutions\nSpecializations: Java and mobile computing.","dir":"content/cv/education","base":"2010.json","ext":".json","sourceBase":"2010.md","sourceExt":".md"},"content/cv/education/2008.json":{"title":"University of Deusto","when":"2002-2008","where":"Bilbao, Spain","bodyContent":"__B.Sc.__ Computer Engineering<br />\n__B.Sc.__ Industrial Organization Engineering<br />\n(Joint Degree)","bodyHtml":"<p><strong>B.Sc.</strong> Computer Engineering<br />\n<strong>B.Sc.</strong> Industrial Organization Engineering<br />\n(Joint Degree)</p>\n","preview":"B.Sc. Computer Engineering\nB.Sc. Industrial Organization Engineering\n(Joint Degree)","dir":"content/cv/education","base":"2008.json","ext":".json","sourceBase":"2008.md","sourceExt":".md"},"content/cv/education/2014.json":{"title":"University of Deusto","when":"2010-2014","where":"Bilbao, Spain","bodyContent":"__PhD__ in Computer Science.<br />\nDissertation: &#8220;_Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision_&#8221;\n<!-- Supervisors: Diego L&oacute;pez-de-Ipi&ntilde;a and I&ntilde;igo Goiri. -->","bodyHtml":"<p><strong>PhD</strong> in Computer Science.<br />\nDissertation: “<em>Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision</em>”</p>\n<!-- Supervisors: Diego L&oacute;pez-de-Ipi&ntilde;a and I&ntilde;igo Goiri. -->","preview":"PhD in Computer Science.\nDissertation: &#8220;Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision&#8221;","dir":"content/cv/education","base":"2014.json","ext":".json","sourceBase":"2014.md","sourceExt":".md"},"content/cv/technical/02-languages.json":{"title":"Languages","bodyContent":"[JavaScript](http://www.w3schools.com/js/), [Java](http://www.java.com), [Python](https://www.python.org) and others to a lesser extent\n\n<!-- [PHP](http://php.net), [SQL](http://www.w3schools.com/sql/) & [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) -->","bodyHtml":"<p><a href=\"http://www.w3schools.com/js/\">JavaScript</a>, <a href=\"http://www.java.com\">Java</a>, <a href=\"https://www.python.org\">Python</a> and others to a lesser extent</p>\n<!-- [PHP](http://php.net), [SQL](http://www.w3schools.com/sql/) & [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) -->","preview":"JavaScript, Java, Python and others to a lesser extent","dir":"content/cv/technical","base":"02-languages.json","ext":".json","sourceBase":"02-languages.md","sourceExt":".md"},"content/cv/technical/03-frontend.json":{"title":"Web frontend","bodyContent":"[HTML5](http://www.w3schools.com/html/html5_intro.asp), [CSS](http://www.w3schools.com/css/), [React](https://reactjs.org/), [Redux](https://es.redux.js.org/) y [Rxjs](https://rxjs-dev.firebaseapp.com/) <br/>\nWide experience using libraries like [Material UI](https://material-ui.com/), [Highcharts](https://www.highcharts.com/), [vis.js](http://visjs.org/) or [Google maps](https://www.google.com/maps)\n\n<!-- [AngularJS](https://angularjs.org/), [jQuery](https://jquery.com/) -->","bodyHtml":"<p><a href=\"http://www.w3schools.com/html/html5_intro.asp\">HTML5</a>, <a href=\"http://www.w3schools.com/css/\">CSS</a>, <a href=\"https://reactjs.org/\">React</a>, <a href=\"https://es.redux.js.org/\">Redux</a> y <a href=\"https://rxjs-dev.firebaseapp.com/\">Rxjs</a> <br/>\nWide experience using libraries like <a href=\"https://material-ui.com/\">Material UI</a>, <a href=\"https://www.highcharts.com/\">Highcharts</a>, <a href=\"http://visjs.org/\">vis.js</a> or <a href=\"https://www.google.com/maps\">Google maps</a></p>\n<!-- [AngularJS](https://angularjs.org/), [jQuery](https://jquery.com/) -->","preview":"HTML5, CSS, React, Redux y Rxjs\nWide experience using libraries like Material UI, Highcharts, vis.js or Google maps","dir":"content/cv/technical","base":"03-frontend.json","ext":".json","sourceBase":"03-frontend.md","sourceExt":".md"},"content/cv/technical/05-aws.json":{"title":"Amazon WS","bodyContent":"Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 & _Cognito_","bodyHtml":"<p>Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 &amp; <em>Cognito</em></p>\n","preview":"Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 & Cognito","dir":"content/cv/technical","base":"05-aws.json","ext":".json","sourceBase":"05-aws.md","sourceExt":".md"},"content/cv/technical/04-backend.json":{"title":"Web backend","bodyContent":"REST, [Springboot](https://spring.io/projects/spring-boot), [Jersey](https://jersey.java.net/) ([JAX-RS](https://jax-rs-spec.java.net/)), [Flask](http://flask.pocoo.org/), Websockets, [Keycloak](https://www.keycloak.org), [Celery](http://www.celeryproject.org/) & [Swagger](http://swagger.io/)\n\n<!-- [Restlet](https://restlet.com/) -->","bodyHtml":"<p>REST, <a href=\"https://spring.io/projects/spring-boot\">Springboot</a>, <a href=\"https://jersey.java.net/\">Jersey</a> (<a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a>), <a href=\"http://flask.pocoo.org/\">Flask</a>, Websockets, <a href=\"https://www.keycloak.org\">Keycloak</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"http://swagger.io/\">Swagger</a></p>\n<!-- [Restlet](https://restlet.com/) -->","preview":"REST, Springboot, Jersey (JAX-RS), Flask, Websockets, Keycloak, Celery & Swagger","dir":"content/cv/technical","base":"04-backend.json","ext":".json","sourceBase":"04-backend.md","sourceExt":".md"},"content/cv/technical/06-big-data.json":{"title":"Big data","bodyContent":"[Spark structured streaming](https://spark.apache.org) & [Kafka](https://kafka.apache.org/)","bodyHtml":"<p><a href=\"https://spark.apache.org\">Spark structured streaming</a> &amp; <a href=\"https://kafka.apache.org/\">Kafka</a></p>\n","preview":"Spark structured streaming & Kafka","dir":"content/cv/technical","base":"06-big-data.json","ext":".json","sourceBase":"06-big-data.md","sourceExt":".md"},"content/cv/technical/07-data-analysis.json":{"title":"Data Analysis","bodyContent":"[Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), _[Scikit-learn](http://scikit-learn.org)_ & [Jupyter](https://ipython.org/notebook.html)","bodyHtml":"<p><a href=\"http://pandas.pydata.org/\">Pandas</a>, <a href=\"http://matplotlib.org/\">Matplotlib</a>, <em><a href=\"http://scikit-learn.org\">Scikit-learn</a></em> &amp; <a href=\"https://ipython.org/notebook.html\">Jupyter</a></p>\n","preview":"Pandas, Matplotlib, Scikit-learn & Jupyter","dir":"content/cv/technical","base":"07-data-analysis.json","ext":".json","sourceBase":"07-data-analysis.md","sourceExt":".md"},"content/cv/technical/12-os.json":{"title":"OS","bodyContent":"Sysadmin on [GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) ([Debian](https://www.debian.org/) and [RHEL](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/) -based) & _[OpenStack](https://www.openstack.org/)_","bodyHtml":"<p>Sysadmin on <a href=\"http://www.gnu.org/gnu/linux-and-gnu.html\">GNU/Linux</a> (<a href=\"https://www.debian.org/\">Debian</a> and <a href=\"https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/\">RHEL</a> -based) &amp; <em><a href=\"https://www.openstack.org/\">OpenStack</a></em></p>\n","preview":"Sysadmin on GNU/Linux (Debian and RHEL -based) & OpenStack","dir":"content/cv/technical","base":"12-os.json","ext":".json","sourceBase":"12-os.md","sourceExt":".md"},"content/cv/technical/09-db.json":{"title":"Databases","bodyContent":"[PostgreSQL](https://www.postgresql.org/), [DynamoDB](https://aws.amazon.com/es/dynamodb/), _[InfluxDB](https://www.influxdata.com/)_, [Redis](http://redis.io/), [MongoDB](https://www.mongodb.org/), [MySQL](https://www.mysql.com/), RDF Stores ([Sesame](http://rdf4j.org/), [GraphDB](http://ontotext.com/products/graphdb/)) & [Learning Locker](https://learninglocker.net) ([Tin Can API](http://tincanapi.com/))","bodyHtml":"<p><a href=\"https://www.postgresql.org/\">PostgreSQL</a>, <a href=\"https://aws.amazon.com/es/dynamodb/\">DynamoDB</a>, <em><a href=\"https://www.influxdata.com/\">InfluxDB</a></em>, <a href=\"http://redis.io/\">Redis</a>, <a href=\"https://www.mongodb.org/\">MongoDB</a>, <a href=\"https://www.mysql.com/\">MySQL</a>, RDF Stores (<a href=\"http://rdf4j.org/\">Sesame</a>, <a href=\"http://ontotext.com/products/graphdb/\">GraphDB</a>) &amp; <a href=\"https://learninglocker.net\">Learning Locker</a> (<a href=\"http://tincanapi.com/\">Tin Can API</a>)</p>\n","preview":"PostgreSQL, DynamoDB, InfluxDB, Redis, MongoDB, MySQL, RDF Stores (Sesame, GraphDB) & Learning Locker (Tin Can API)","dir":"content/cv/technical","base":"09-db.json","ext":".json","sourceBase":"09-db.md","sourceExt":".md"},"content/index.json":{"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","page":"/","paths":["/","/index.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"index.json","ext":".json","sourceBase":"index.md","sourceExt":".md"},"content/landing/contact.json":{"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","email":"aitor.gomez [at] ikerlan.es","web":"http://gomezgoiri.net","twitter":"gomezgoiri","github":"gomezgoiri","linkedin":"gomezgoiri","slideshare":"twolf","contactQr":"https://tinyurl.com/jlbwljw","bodyContent":"","bodyHtml":"","dir":"content/landing","base":"contact.json","ext":".json","sourceBase":"contact.md","sourceExt":".md"},"content/cv/technical/11-testing.json":{"title":"Testing","bodyContent":"XUnit, [Mockito](http://mockito.org/), [EasyMock](http://easymock.org/), [Jasmine](http://jasmine.github.io/), _[jMeter](http://jmeter.apache.org/)_ & _[Selenium](http://www.seleniumhq.org/)_\n\n<!-- From PhD: RESTdesc, FuXi, SimPy, pyzeroconf -->","bodyHtml":"<p>XUnit, <a href=\"http://mockito.org/\">Mockito</a>, <a href=\"http://easymock.org/\">EasyMock</a>, <a href=\"http://jasmine.github.io/\">Jasmine</a>, <em><a href=\"http://jmeter.apache.org/\">jMeter</a></em> &amp; <em><a href=\"http://www.seleniumhq.org/\">Selenium</a></em></p>\n<!-- From PhD: RESTdesc, FuXi, SimPy, pyzeroconf -->","preview":"XUnit, Mockito, EasyMock, Jasmine, jMeter & Selenium","dir":"content/cv/technical","base":"11-testing.json","ext":".json","sourceBase":"11-testing.md","sourceExt":".md"},"content/cv/technical/08-mobile-iot.json":{"title":"Mobile & IoT","bodyContent":"[Android](https://www.android.com/), Linux-based embedded platforms (e.g., [Raspberry Pi](https://www.raspberrypi.org/)) & _[Arduino](https://www.arduino.cc/)_","bodyHtml":"<p><a href=\"https://www.android.com/\">Android</a>, Linux-based embedded platforms (e.g., <a href=\"https://www.raspberrypi.org/\">Raspberry Pi</a>) &amp; <em><a href=\"https://www.arduino.cc/\">Arduino</a></em></p>\n","preview":"Android, Linux-based embedded platforms (e.g., Raspberry Pi) & Arduino","dir":"content/cv/technical","base":"08-mobile-iot.json","ext":".json","sourceBase":"08-mobile-iot.md","sourceExt":".md"},"content/landing/profile.json":{"author":"Aitor Gómez Goiri","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","bodyContent":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-semantic.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","bodyHtml":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-semantic.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","preview":"I&apos;m a senior researcher at\n\n      Tecnalia\n\n  .\n  From 2016 to 2019 I worked at\n\n      Ikerlan\n\n   and from 2015 to 2016, at the","title":"Tecnalia","dir":"content/landing","base":"profile.json","ext":".json","sourceBase":"profile.md","sourceExt":".md"},"content/projects/2007-09-01-ismed.json":{"title":"ISMED: Intelligent Semantic Middleware for Embedded Devices","short":"ISMED","start":"2007-01","end":"2010-12","website":"http://www.tecnologico.deusto.es/projects/ISMED","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/ismed","bodyContent":"The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home) environments equipped by heterogeneous wireless embedded devices.\nThis semantic middleware adopting the SOA paradigm will be based on the following six core aspects:\n\n- **Sensing**: allows for the capture of environment contextual data through sensors. In particular, the usage of intelligent cameras will allow for people detection and tracking. Other sensor types will gather knowledge about user habits and preferences. The sensorial data captured will be translated into a semantic format useful for the rest of elements.\n- **Service discovery**: allows for the discovery of devices together with their services encountered within an environment. The discovered services are described by means of semantic techniques so that the service composition or reasoning elements can use the captured knowledge.\n- **Service composition**: allows for the provision of composite services resulted from the functional composition and adaptation of two or more services provided by other devices. A key difference compared to other more static and centralised enterprise composition approaches is that the composition process will be continuous, dynamic and completely distributed.\n- **Learning**: it will allow for the cooperative learning of a set of behaviour rules among a community of embedded devices, thus adding new intelligence to the environment. Besides, it will serve to identify hidden unexpected relationships among services through machine learning techniques.\n  Reasoning: each device will individually accomplish some reasoning taking into consideration both its own sensor readings exported as services to other devices, and the readings and capacities published by other devices to the environment during the discovery phase.\n- **Semantic Modelling**: it will act as integrator of other aspects of the middleware, providing a common core infrastructure in the form of a repository of semantic knowledge shared. It will be responsible of gathering the RDF graphs defining the context of services and sensor samples which characterise an environment. Its behaviour will be analogous to a Tuple Spaces system which in this case is extended with semantic capacities, i.e. a distributed and shared RDF store on which the discovery, reasoning, composition and learning aspects of this middleware will be supported.\n\nThe semantic middleware provided, extensible to any cooperative environment, will be deployed and validated in an Ambient Intelligence (AmI)-dedicated research lab at the University of Deusto, namely [SmartLab](http://www.smartlab.deusto.es/). This lab is equipped with a plethora of sensorial and actuation devices which thanks to this semantic infrastructure will seamlessly cooperate in order to provide intelligent services to the end-users.","bodyHtml":"<p>The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home) environments equipped by heterogeneous wireless embedded devices.\nThis semantic middleware adopting the SOA paradigm will be based on the following six core aspects:</p>\n<ul>\n<li><strong>Sensing</strong>: allows for the capture of environment contextual data through sensors. In particular, the usage of intelligent cameras will allow for people detection and tracking. Other sensor types will gather knowledge about user habits and preferences. The sensorial data captured will be translated into a semantic format useful for the rest of elements.</li>\n<li><strong>Service discovery</strong>: allows for the discovery of devices together with their services encountered within an environment. The discovered services are described by means of semantic techniques so that the service composition or reasoning elements can use the captured knowledge.</li>\n<li><strong>Service composition</strong>: allows for the provision of composite services resulted from the functional composition and adaptation of two or more services provided by other devices. A key difference compared to other more static and centralised enterprise composition approaches is that the composition process will be continuous, dynamic and completely distributed.</li>\n<li><strong>Learning</strong>: it will allow for the cooperative learning of a set of behaviour rules among a community of embedded devices, thus adding new intelligence to the environment. Besides, it will serve to identify hidden unexpected relationships among services through machine learning techniques.\nReasoning: each device will individually accomplish some reasoning taking into consideration both its own sensor readings exported as services to other devices, and the readings and capacities published by other devices to the environment during the discovery phase.</li>\n<li><strong>Semantic Modelling</strong>: it will act as integrator of other aspects of the middleware, providing a common core infrastructure in the form of a repository of semantic knowledge shared. It will be responsible of gathering the RDF graphs defining the context of services and sensor samples which characterise an environment. Its behaviour will be analogous to a Tuple Spaces system which in this case is extended with semantic capacities, i.e. a distributed and shared RDF store on which the discovery, reasoning, composition and learning aspects of this middleware will be supported.</li>\n</ul>\n<p>The semantic middleware provided, extensible to any cooperative environment, will be deployed and validated in an Ambient Intelligence (AmI)-dedicated research lab at the University of Deusto, namely <a href=\"http://www.smartlab.deusto.es/\">SmartLab</a>. This lab is equipped with a plethora of sensorial and actuation devices which thanks to this semantic infrastructure will seamlessly cooperate in order to provide intelligent services to the end-users.</p>\n","preview":"The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home)","dir":"content/projects","base":"2007-09-01-ismed.json","ext":".json","sourceBase":"2007-09-01-ismed.md","sourceExt":".md"},"content/projects.json":{"title":"Open source contributions","description":"Publications","page":"/coding/section","paths":["/projects.html"],"bodyContent":"Since I first heard about [free software](http://www.gnu.org/philosophy/free-sw.html) back in my [student days](http://www.e-ghost.deusto.es/), I have always been interested in it.\nI am a supporter of this community and its philosophy.\n\nAs a way to give back part of what I have received, I have given some talks but more importantly I have contributed to several open-source projects as often as my research has allowed me.\n\nInstead of simply putting a link to my [GitHub account](https://github.com/gomezgoiri), in this section I will discuss some of the most interesting projects that I have made.\nFor a more research-oriented view of my work, please visit the [R&amp;D section](research_projects.html).\n\n## PT Anywhere\n\n[Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/) is a network simulation tool created by [Cisco](http://www.cisco.com/).\nAs part of the [FORGE project](/projects/forge), I developed a web version/frontend for it.\n\nDuring the following articles, I will guide you through the features I developed for it:\n\n1.  [Introduction - Architecture](coding/ptAnywhere-intro)\n\n1.  [Installation](coding/ptAnywhere-installation)\n\n    Technologies used: [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/).\n\n1.  [Web frontend (widget)](coding/ptAnywhere-frontend).\n\n    Technologies used: [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/), [vis.js](http://visjs.org/), [Bower](http://bower.io/) & [Jasmine](http://jasmine.github.io/).\n\n1.  [HTTP API](coding/ptAnywhere-http_api).\n\n    Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/), [Maven](https://maven.apache.org/) & [Redis](http://redis.io/).\n\n1.  [Internal Packet Tracer API](coding/ptAnywhere-internal_api).\n\n    Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n1.  [Learning Analytics](coding/ptAnywhere-learning_analytics).\n\n    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Angular JS](https://angularjs.org/), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).\n\n## FAQ\n\n### Why don't you write these articles in their website or in GitHub?\n\nIn short: to specifically focus on the work I did in them and in the technology I used.\nThe GitHub projects might contain more extensive documentation but\nthey might have also evolved since I stopped working on them or become unavailable or whatever.\n\n### Why do you include screenshoots and screencasts instead of links to web applications?\n\n1.  I am describing the work I (me) did and they might have evolved since I stopped working on them,\n1.  there are parts which are not publicly accessible or\n1.  even if they are public, I cannot guarantee that they will keep like that in the future.\n    I don't own these projects.","bodyHtml":"<p>Since I first heard about <a href=\"http://www.gnu.org/philosophy/free-sw.html\">free software</a> back in my <a href=\"http://www.e-ghost.deusto.es/\">student days</a>, I have always been interested in it.\nI am a supporter of this community and its philosophy.</p>\n<p>As a way to give back part of what I have received, I have given some talks but more importantly I have contributed to several open-source projects as often as my research has allowed me.</p>\n<p>Instead of simply putting a link to my <a href=\"https://github.com/gomezgoiri\">GitHub account</a>, in this section I will discuss some of the most interesting projects that I have made.\nFor a more research-oriented view of my work, please visit the <a href=\"research_projects.html\">R&amp;D section</a>.</p>\n<h2>PT Anywhere</h2>\n<p><a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Packet Tracer</a> is a network simulation tool created by <a href=\"http://www.cisco.com/\">Cisco</a>.\nAs part of the <a href=\"/projects/forge\">FORGE project</a>, I developed a web version/frontend for it.</p>\n<p>During the following articles, I will guide you through the features I developed for it:</p>\n<ol>\n<li>\n<p><a href=\"coding/ptAnywhere-intro\">Introduction - Architecture</a></p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-installation\">Installation</a></p>\n<p>Technologies used: <a href=\"https://www.vagrantup.com/\">Vagrant</a> &amp; <a href=\"https://www.ansible.com/\">Ansible</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-frontend\">Web frontend (widget)</a>.</p>\n<p>Technologies used: <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"https://jquery.com/\">jQuery</a>, <a href=\"http://visjs.org/\">vis.js</a>, <a href=\"http://bower.io/\">Bower</a> &amp; <a href=\"http://jasmine.github.io/\">Jasmine</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-http_api\">HTTP API</a>.</p>\n<p>Technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a>, <a href=\"https://maven.apache.org/\">Maven</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-internal_api\">Internal Packet Tracer API</a>.</p>\n<p>Technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-learning_analytics\">Learning Analytics</a>.</p>\n<p>Technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>), <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"http://www.chartjs.org/\">Chart.js</a> &amp; <a href=\"http://visjs.org/\">vis.js</a>.</p>\n</li>\n</ol>\n<h2>FAQ</h2>\n<h3>Why don't you write these articles in their website or in GitHub?</h3>\n<p>In short: to specifically focus on the work I did in them and in the technology I used.\nThe GitHub projects might contain more extensive documentation but\nthey might have also evolved since I stopped working on them or become unavailable or whatever.</p>\n<h3>Why do you include screenshoots and screencasts instead of links to web applications?</h3>\n<ol>\n<li>I am describing the work I (me) did and they might have evolved since I stopped working on them,</li>\n<li>there are parts which are not publicly accessible or</li>\n<li>even if they are public, I cannot guarantee that they will keep like that in the future.\nI don't own these projects.</li>\n</ol>\n","preview":"Since I first heard about free software back in my student days, I have always been interested in it.\nI am a supporter of this community and","dir":"content","base":"projects.json","ext":".json","sourceBase":"projects.md","sourceExt":".md"},"content/projects/2009-09-01-across.json":{"title":"ACROSS: Auto-configurable robots for social services","short":"ACROSS","start":"2009-01","end":"2011-12","website":"http://www.acrosspse.com","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/across","bodyContent":"The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent systems. These systems are able to self-reconfigure and modify their behavior autonomously through the capacity for understanding, learning and software remote access.\n\nACROSS provides an Open-Source development community to exploit different technological advances, some of them initially unconnected with Robotics. Taking advantage of this synergy, ACROSS will be the starting point from which new standards in robot applications will be built.\n\nThe main technological goals of ACROSS are the following:\n\n- Improve emotional and cognitive capabilities of Social Robots.\n- Context-awareness perception.\n- Establish discovery, composition and execution services using Autonomic Computing Techniques.\n- Open Source software architecture based on distributed components supported by an Open-Source Development Community.\n- Swarm robotics module.","bodyHtml":"<p>The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent systems. These systems are able to self-reconfigure and modify their behavior autonomously through the capacity for understanding, learning and software remote access.</p>\n<p>ACROSS provides an Open-Source development community to exploit different technological advances, some of them initially unconnected with Robotics. Taking advantage of this synergy, ACROSS will be the starting point from which new standards in robot applications will be built.</p>\n<p>The main technological goals of ACROSS are the following:</p>\n<ul>\n<li>Improve emotional and cognitive capabilities of Social Robots.</li>\n<li>Context-awareness perception.</li>\n<li>Establish discovery, composition and execution services using Autonomic Computing Techniques.</li>\n<li>Open Source software architecture based on distributed components supported by an Open-Source Development Community.</li>\n<li>Swarm robotics module.</li>\n</ul>\n","preview":"The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent","dir":"content/projects","base":"2009-09-01-across.json","ext":".json","sourceBase":"2009-09-01-across.md","sourceExt":".md"},"content/projects/2010-09-01-crosen.json":{"title":"CROSen!: Comunicación, Razonamiento, Orquestación y Socialización para la creación de Ecosistemas de Objetos Inteligentes","short":"CROSen","start":"2010-01","end":"2011-12","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/crosen","bodyContent":"","bodyHtml":"","dir":"content/projects","base":"2010-09-01-crosen.json","ext":".json","sourceBase":"2010-09-01-crosen.md","sourceExt":".md"},"content/projects/2011-09-01-futureinternet2.json":{"title":"Future Internet II","short":"FI2","start":"2011-01","end":"2013-12","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/future-internet-ii","bodyContent":"","bodyHtml":"","dir":"content/projects","base":"2011-09-01-futureinternet2.json","ext":".json","sourceBase":"2011-09-01-futureinternet2.md","sourceExt":".md"},"content/projects/2011-07-01-thofu.json":{"title":"THOFU: Tecnologías del Hotel del Futuro","short":"THOFU","start":"2010-01","end":"2013-12","website":"http://www.thofu.es","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/thofu","bodyContent":"THOFU is a large multidisciplinary R&D project which aims to enhance the offer of the hospitality sector through joint research on a new conception of the future hotel, from the spaces and their construction, to objects that reside in it, the interaction with guests, as well as the symbiosis with the Internet.","bodyHtml":"<p>THOFU is a large multidisciplinary R&amp;D project which aims to enhance the offer of the hospitality sector through joint research on a new conception of the future hotel, from the spaces and their construction, to objects that reside in it, the interaction with guests, as well as the symbiosis with the Internet.</p>\n","preview":"THOFU is a large multidisciplinary R&D project which aims to enhance the offer of the hospitality sector through joint research on a new","dir":"content/projects","base":"2011-07-01-thofu.json","ext":".json","sourceBase":"2011-07-01-thofu.md","sourceExt":".md"},"content/projects/2011-09-01-mcloud.json":{"title":"mCloud: advanced migration of applications to cloud computing","short":"mCloud","start":"2011-01","end":"2014-12","website":"http://innovacion.grupogesfor.com/web/mcloud","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/mcloud","bodyContent":"The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service oriented development models, having in mind methodological, technological and business aspects. Thus, mCloud will help to increase Spanish software companies' competitiveness by giving them tools to progress towards the Internet of Services where applications will mainly be deployed on the Cloud.","bodyHtml":"<p>The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service oriented development models, having in mind methodological, technological and business aspects. Thus, mCloud will help to increase Spanish software companies' competitiveness by giving them tools to progress towards the Internet of Services where applications will mainly be deployed on the Cloud.</p>\n","preview":"The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service","dir":"content/projects","base":"2011-09-01-mcloud.json","ext":".json","sourceBase":"2011-09-01-mcloud.md","sourceExt":".md"},"content/cv/technical/10-devops.json":{"title":"DevOps","bodyContent":"[Docker](https://www.docker.com/), [Ansible](https://www.ansible.com/), [Jenkins](https://jenkins-ci.org/), [Maven](https://maven.apache.org/), [Npm](https://www.npmjs.com), [Serverless](https://serverless.com), [Pip](https://pip.pypa.io), [Git](https://git-scm.com/), _[Mercurial](https://www.mercurial-scm.org/)_ & [SVN](https://subversion.apache.org/)\n\n<!-- [Vagrant](https://www.vagrantup.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/) -->","bodyHtml":"<p><a href=\"https://www.docker.com/\">Docker</a>, <a href=\"https://www.ansible.com/\">Ansible</a>, <a href=\"https://jenkins-ci.org/\">Jenkins</a>, <a href=\"https://maven.apache.org/\">Maven</a>, <a href=\"https://www.npmjs.com\">Npm</a>, <a href=\"https://serverless.com\">Serverless</a>, <a href=\"https://pip.pypa.io\">Pip</a>, <a href=\"https://git-scm.com/\">Git</a>, <em><a href=\"https://www.mercurial-scm.org/\">Mercurial</a></em> &amp; <a href=\"https://subversion.apache.org/\">SVN</a></p>\n<!-- [Vagrant](https://www.vagrantup.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/) -->","preview":"Docker, Ansible, Jenkins, Maven, Npm, Serverless, Pip, Git, Mercurial & SVN","dir":"content/cv/technical","base":"10-devops.json","ext":".json","sourceBase":"10-devops.md","sourceExt":".md"},"content/projects/2015-01-01-forge.json":{"title":"FORGE: Forging Online Education through FIRE","short":"FORGE","start":"2015-01","end":"2016-08","website":"http://ict-forge.eu","paths":["/projects/forge"],"bodyContent":"Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future Internet Research and Experimentation) with the ongoing education revolution.\nThis project will specify development methodologies and best practices for offering FIRE experimentation facilities to learners and to the learning community in general.\nFORGE relates to communications and IT, as well as to other disciplines including the physical and social sciences.\nIt will lead to a strong connection between the learning community and existing FIRE platforms and supporting tools.","bodyHtml":"<p>Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future Internet Research and Experimentation) with the ongoing education revolution.\nThis project will specify development methodologies and best practices for offering FIRE experimentation facilities to learners and to the learning community in general.\nFORGE relates to communications and IT, as well as to other disciplines including the physical and social sciences.\nIt will lead to a strong connection between the learning community and existing FIRE platforms and supporting tools.</p>\n","preview":"Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future","dir":"content/projects","base":"2015-01-01-forge.json","ext":".json","sourceBase":"2015-01-01-forge.md","sourceExt":".md"},"content/projects/2012-09-01-adizain.json":{"title":"ADIZAIN: Monitor Inteligente de superficies comerciales","short":"ADIZAIN","start":"2012-06","end":"2013-12","website":"http://www.morelab.deusto.es/adizain/","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/adizain","bodyContent":"This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the management of different commercial multi-vendor security devices (e.g., people counters or video cameras).\n\nThe resulting system has the following features:\n\n- **Modular design**: it is organized in several OSGi modules which talk to each other through declarative services.\n- **Distributed, decoupled and scalable design**: it uses queues (ActiveMQ) for the inter-OSGi container communication and a NoSQL database (MongoDB).\n- **Customizable and interactive user experience**: it relies on a rule-based reasoning framework to generate alerts and events on a web interface based on MQTT, Javascript and HTML5.","bodyHtml":"<p>This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the management of different commercial multi-vendor security devices (e.g., people counters or video cameras).</p>\n<p>The resulting system has the following features:</p>\n<ul>\n<li><strong>Modular design</strong>: it is organized in several OSGi modules which talk to each other through declarative services.</li>\n<li><strong>Distributed, decoupled and scalable design</strong>: it uses queues (ActiveMQ) for the inter-OSGi container communication and a NoSQL database (MongoDB).</li>\n<li><strong>Customizable and interactive user experience</strong>: it relies on a rule-based reasoning framework to generate alerts and events on a web interface based on MQTT, Javascript and HTML5.</li>\n</ul>\n","preview":"This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the","dir":"content/projects","base":"2012-09-01-adizain.json","ext":".json","sourceBase":"2012-09-01-adizain.md","sourceExt":".md"},"content/projects/2016-09-01-partm.json":{"title":"PARTM: Development of a new Remote Access Port for Machines with Built-in Remote Control Receivers","short":"PARTM","start":"2016-09","end":"2019-04","website":"http://www.ikerlan.es/notas-de-prensa/notas-de-prensa/dispositivos-de-control-remoto-conectados-a-la-nube-para-abrir-nuevas-oportunidades-de-negocio-en-la-industria","bodyContent":"As part of the PARTM project we developed a scalable platform to monitor and manage [IKUSI](http://www.ikusi.com)'s industrial remote controls and the machines that they control (e.g., cranes), creating a new range of services and maintenance related businesses.","bodyHtml":"<p>As part of the PARTM project we developed a scalable platform to monitor and manage <a href=\"http://www.ikusi.com\">IKUSI</a>'s industrial remote controls and the machines that they control (e.g., cranes), creating a new range of services and maintenance related businesses.</p>\n","preview":"As part of the PARTM project we developed a scalable platform to monitor and manage IKUSI's industrial remote controls and the machines that","dir":"content/projects","base":"2016-09-01-partm.json","ext":".json","sourceBase":"2016-09-01-partm.md","sourceExt":".md"},"content/projects/2015-01-01-wespot.json":{"title":"weSPOT","short":"weSPOT","start":"2015-01","end":"2015-10","website":"http://wespot.net","bodyContent":"weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and teaching practices.\nIt lowers the threshold for linking everyday life with science teaching in schools by technology.\n\nweSPOT supports the meaningful contextualization of scientific concepts by relating them to personal curiosity, experiences, and reasoning.\nIt addresses several challenges in the area of science learning and technology support for building personal conceptual knowledge.","bodyHtml":"<p>weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and teaching practices.\nIt lowers the threshold for linking everyday life with science teaching in schools by technology.</p>\n<p>weSPOT supports the meaningful contextualization of scientific concepts by relating them to personal curiosity, experiences, and reasoning.\nIt addresses several challenges in the area of science learning and technology support for building personal conceptual knowledge.</p>\n","preview":"weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and","dir":"content/projects","base":"2015-01-01-wespot.json","ext":".json","sourceBase":"2015-01-01-wespot.md","sourceExt":".md"},"content/projects/2017-01-01-falink.json":{"title":"FAlink: Digital platform to remotely monitor press machines","short":"FAlink","start":"2017-01","end":"2018-01","website":"http://www.ikerlan.es/notas-de-prensa/notas-de-prensa/ik4ikerlan-colabora-con-fagor-arrasate-en-el-desarrollo-de-su-innovador-sistema-de-digitalizacin-que-permite-el-mantenimiento-remoto-de-mquinas","bodyContent":"In this project we built a digital platform which eases the supervision of [Fagor Arrasate](http://www.fagorarrasate.com)'s machines all over the world.\nIt encompasses data analysis tools to monitor press machines avoiding unexpected downtimes and extending their life time.","bodyHtml":"<p>In this project we built a digital platform which eases the supervision of <a href=\"http://www.fagorarrasate.com\">Fagor Arrasate</a>'s machines all over the world.\nIt encompasses data analysis tools to monitor press machines avoiding unexpected downtimes and extending their life time.</p>\n","preview":"In this project we built a digital platform which eases the supervision of Fagor Arrasate's machines all over the world.\nIt encompasses data","dir":"content/projects","base":"2017-01-01-falink.json","ext":".json","sourceBase":"2017-01-01-falink.md","sourceExt":".md"},"content/projects/2011-09-01-talisengine.json":{"title":"TALIS+ENGINE: Razonamiento Híbrido Cooperativo y Semántico para la Orquestación de Servicios en Entornos Asistenciales","short":"TALIS+Engine","start":"2011-01","end":"2013-12","moreInfo":"http://www.morelab.deusto.es/labman/projects/info/talisengine","bodyContent":"The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to advance in the automatic or semi-automatic service composition within assistive environments with the goal of allowing in a spontaneous manner the environment adaptation to the concrete needs and goals of the user. Such adaptation of environment’s behaviour demands the adoption of cooperative, hybrid (symbolic and connectionist), adaptable and scalable (evolving being aware of the emerging and disappearing devices and their sensing and acting capabilities) intelligence techniques.","bodyHtml":"<p>The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to advance in the automatic or semi-automatic service composition within assistive environments with the goal of allowing in a spontaneous manner the environment adaptation to the concrete needs and goals of the user. Such adaptation of environment’s behaviour demands the adoption of cooperative, hybrid (symbolic and connectionist), adaptable and scalable (evolving being aware of the emerging and disappearing devices and their sensing and acting capabilities) intelligence techniques.</p>\n","preview":"The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to","dir":"content/projects","base":"2011-09-01-talisengine.json","ext":".json","sourceBase":"2011-09-01-talisengine.md","sourceExt":".md"},"content/publications.json":{"title":"Publications","description":"Publications","page":"/publications/section","paths":["/publications.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"publications.json","ext":".json","sourceBase":"publications.md","sourceExt":".md"},"content/publications/2010-09-01-orduna-security.json":{"title":"Identifying Security Issues in the Semantic Web: Injection attacks in the Semantic Query Languages","authors":"Pablo Orduña, Aitor Almeida, Unai Aguilera, Xabier Laiseca, Diego López-de-Ipiña, Aitor Gómez-Goiri","restCitation":"Actas de las VI Jornadas Científico-Técnicas en Servicios Web y SOA JSWEB 2010. p. p. 43 - 50. Valencia, Spain. September 2010. ISBN: 9 78-84-92812-59-2.","pdf":"http://www.morelab.deusto.es/publications/2010/orduna2010identifying.pdf","bib":"/static/files/bibtex/orduna2010identifying.bib","semantics":"identifying-security-issues-in-the-semantic-web-injection-attacks-in-the-semantic-query-languages","slides":"http://www.slideshare.net/nctrun/identifying-security-issues-in-the-semantic-web-injection-attacks-in-the-semantic-query-languages","slideshareEmbedCode":5188900,"bodyContent":"As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes critical.\nIn the Semantic Web the old and well-known vulnerabilities reappear with all the power of the new semantic mechanisms.\nThis semantic mechanisms offer new and dangerous possibilities to malicious users.\nFor this reason it is important for the developers to know and prevent the vulnerabilities in their applications.\nIn this paper we analyze the possibilities of injection attacks in the most used semantic query / update languages (SPARQL/SPARUL).","bodyHtml":"<p>As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes critical.\nIn the Semantic Web the old and well-known vulnerabilities reappear with all the power of the new semantic mechanisms.\nThis semantic mechanisms offer new and dangerous possibilities to malicious users.\nFor this reason it is important for the developers to know and prevent the vulnerabilities in their applications.\nIn this paper we analyze the possibilities of injection attacks in the most used semantic query / update languages (SPARQL/SPARUL).</p>\n","preview":"As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes","dir":"content/publications","base":"2010-09-01-orduna-security.json","ext":".json","sourceBase":"2010-09-01-orduna-security.md","sourceExt":".md"},"content/publications/2010-07-01-gomezgoiri-triplespace.json":{"title":"A Triple Space-Based Semantic Distributed Middleware for Internet of Things","authors":"Aitor Gómez-Goiri, Diego López-de-Ipiña","restCitation":"In Florian Daniel and Federico Facca, editors, Current Trends in Web Engineering, volume 6385 of Lecture Notes in Computer Science, pages 447-458. Springer Berlin / Heidelberg, July 2010. DOI: <a href=\"http://link.springer.com/chapter/10.1007/978-3-642-16985-4_43\">10.1007/978-3-642-16985-4_43</a>.","pdf":"/static/files/pdf/gomezgoiri2010triplespace.pdf","bib":"/static/files/bibtex/gomezgoiri2010triplespace.bib","semantics":"a-triple-space-based-semantic-distributed-middleware-for-internet-of-things","slides":"http://www.slideshare.net/twolf/a-triple-spacebased-semantic-distributed-middleware-for-internet-of-things","slideshareEmbedCode":4751866,"bodyContent":"In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.\nIn this context, the Triple Space approach, where different processes share common semantic knowledge, seems to fit perfectly.\nIn this paper we present our progress towards a semantic middleware which allows the communication between a wide range of embedded devices in a distributed, decoupled and very expressive manner.\nThis solution has been tested in a stereotypical deployment scenario showing the promising potential of this approach for local environments.","bodyHtml":"<p>In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.\nIn this context, the Triple Space approach, where different processes share common semantic knowledge, seems to fit perfectly.\nIn this paper we present our progress towards a semantic middleware which allows the communication between a wide range of embedded devices in a distributed, decoupled and very expressive manner.\nThis solution has been tested in a stereotypical deployment scenario showing the promising potential of this approach for local environments.</p>\n","preview":"In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to","dir":"content/publications","base":"2010-07-01-gomezgoiri-triplespace.json","ext":".json","sourceBase":"2010-07-01-gomezgoiri-triplespace.md","sourceExt":".md"},"content/publications/2011-06-02-gomezgoiri-easing.json":{"title":"Easing the Mobility of Disabled People in Supermarkets Using a Distributed Solution","authors":"Aitor Gómez-Goiri, Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Diego López-de-Ipiña, Sergio Fínez","restCitation":"Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.","pdf":"/static/files/pdf/gomezgoiri2011easing.pdf","bib":"/static/files/bibtex/gomezgoiri2011easing.bib","semantics":"easing-the-mobility-of-disabled-people-in-supermarkets-using-a-distributed-solution","bodyContent":"People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at home, but especially outside it, where their reduced mobility is a burden.\nBuying in a supermarket can be sometimes troublesome for them and so as to facilitate this task, a product locator application is proposed.\nThis application runs on heterogeneous personal mobile devices keeping the user private information safe on them, and it locates the desired products over each supermarket's map.","bodyHtml":"<p>People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at home, but especially outside it, where their reduced mobility is a burden.\nBuying in a supermarket can be sometimes troublesome for them and so as to facilitate this task, a product locator application is proposed.\nThis application runs on heterogeneous personal mobile devices keeping the user private information safe on them, and it locates the desired products over each supermarket's map.</p>\n","preview":"People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at","dir":"content/publications","base":"2011-06-02-gomezgoiri-easing.json","ext":".json","sourceBase":"2011-06-02-gomezgoiri-easing.md","sourceExt":".md"},"content/publications/2011-11-01-castillejo-robotic.json":{"title":"Distributed Semantic Middleware for Social Robotic Services","authors":"Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Aitor Gómez-Goiri, Diego López de Ipiña, Sergio Fínez","restCitation":"Robot 2011 - III Workshop de Robótica: Robótica Experimental. Seville, Spain. Nov, 2011","pdf":"http://www.morelab.deusto.es/publications/2011/eCastillejo_robot2011.pdf","bib":"/static/files/bibtex/castillejo2011distributed.bib","slides":"http://www.slideshare.net/edlectrico/distributed-semantic-middleware-for-social-robotic-services","slideshareEmbedCode":10412946,"semantics":"distributed-tracking-system-for-patients-with-cognitive-impairments","bodyContent":"Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their intrinsic nature.\nMoreover, these\nenvironments don’t support any semantics by themselves,\nbecoming necessary the implementation of additional solutions\nfor knowledge representation and management.\nAs a result,\nnew troubles arise, as integration and management related.\nThis work proposes the use of a Triple Spaces solution for\nintegrating any semantic and distributed environment.\nParticulary, it outlines how two very different scenarios have been\nimplemented under the Triple Spaces paradigm.","bodyHtml":"<p>Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their intrinsic nature.\nMoreover, these\nenvironments don’t support any semantics by themselves,\nbecoming necessary the implementation of additional solutions\nfor knowledge representation and management.\nAs a result,\nnew troubles arise, as integration and management related.\nThis work proposes the use of a Triple Spaces solution for\nintegrating any semantic and distributed environment.\nParticulary, it outlines how two very different scenarios have been\nimplemented under the Triple Spaces paradigm.</p>\n","preview":"Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their","dir":"content/publications","base":"2011-11-01-castillejo-robotic.json","ext":".json","sourceBase":"2011-11-01-castillejo-robotic.md","sourceExt":".md"},"content/publications/2011-10-01-gomezgoiri-collaboration.json":{"title":"Collaboration of Sensors and Actuators through Triple Spaces","authors":"Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña","restCitation":"In <a href=\"http://ieee-sensors2011.org\" target=\"_blank\">IEEE Sensors 2011</a>, pages 651-654. Limerick, Ireland, October 2011. ISBN: <a href=\"http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=6127316\">978-1-4244-9290-9</a>.","pdf":"/static/files/pdf/gomezgoiri2011collaboration.pdf","bib":"/static/files/bibtex/gomezgoiri2011collaboration.bib","semantics":"collaboration-of-sensors-and-actuators-through-triple-spaces","bodyContent":"In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.\nHence, a promising next step should be to build interaction models on top of this network connectivity and thus focus on the application layer, i.e. how to achieve useful aggregated functionality out of these Internet-connected ecosystems of sensors and actuators.\nThis work analyses the adoption of Triple Spaces coordination language by very heterogeneous and resource-constrained devices and outlines how its primitives can help to develop fully distributed and very decoupled scenarios.","bodyHtml":"<p>In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.\nHence, a promising next step should be to build interaction models on top of this network connectivity and thus focus on the application layer, i.e. how to achieve useful aggregated functionality out of these Internet-connected ecosystems of sensors and actuators.\nThis work analyses the adoption of Triple Spaces coordination language by very heterogeneous and resource-constrained devices and outlines how its primitives can help to develop fully distributed and very decoupled scenarios.</p>\n","preview":"In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of","dir":"content/publications","base":"2011-10-01-gomezgoiri-collaboration.json","ext":".json","sourceBase":"2011-10-01-gomezgoiri-collaboration.md","sourceExt":".md"},"content/publications/2012-06-01-gomezgoiri-restful.json":{"title":"RESTful Triple Spaces of Things","authors":"Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña","restCitation":"Third International <a href=\"http://www.webofthings.org/wot/2012/\">Workshop on the Web of Things</a> (WoT 2012). Newcastle, UK, June 2012. ISBN&#58; 978-1-4503-1603-3. DOI&#58; <a href=\"http://dx.doi.org/10.1145/2379756.2379761\" target=\"_blank\">10.1145/2379756.2379761</a>","pdf":"/static/files/pdf/gomezgoiri2012restful.pdf","bib":"/static/files/bibtex/gomezgoiri2012restful.bib","semantics":"restful-triple-spaces-of-things","slides":"http://www.slideshare.net/twolf/restful-triple-spaces-of-things","slideshareEmbedCode":13378432,"bodyContent":"The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these objects have to face well-known problems from the web world.\nThe lack of expressiveness and human orientation of the syntactically described capabilities and contents of those resources is one of these difficulties.\nThe Semantic Web on the contrary interlinks each object's data to one another, enabling its automatic process to reveal possible new relationships and therefore enhancing the interoperability of semantic-enabled objects.\nIn this work we present a semantically enabled Web of Things compliant HTTP interface for Internet-enabled objects which uses Triple Spaces (TS) as a basis.\nSpecifically, we address the adoption of this paradigm by a wide range of resource constrained devices assessing the feasibility of our middleware solution, focusing both on the web and on the semantic aspects. Besides, we stress the degree of interoperability achieved by the applications made using RESTful TS by describing two scenarios where it could be used.","bodyHtml":"<p>The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these objects have to face well-known problems from the web world.\nThe lack of expressiveness and human orientation of the syntactically described capabilities and contents of those resources is one of these difficulties.\nThe Semantic Web on the contrary interlinks each object's data to one another, enabling its automatic process to reveal possible new relationships and therefore enhancing the interoperability of semantic-enabled objects.\nIn this work we present a semantically enabled Web of Things compliant HTTP interface for Internet-enabled objects which uses Triple Spaces (TS) as a basis.\nSpecifically, we address the adoption of this paradigm by a wide range of resource constrained devices assessing the feasibility of our middleware solution, focusing both on the web and on the semantic aspects. Besides, we stress the degree of interoperability achieved by the applications made using RESTful TS by describing two scenarios where it could be used.</p>\n","preview":"The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these","dir":"content/publications","base":"2012-06-01-gomezgoiri-restful.json","ext":".json","sourceBase":"2012-06-01-gomezgoiri-restful.md","sourceExt":".md"},"content/publications/2011-06-03-gomezgoiri-complementarity.json":{"title":"On the complementarity of Triple Spaces and the Web of Things","authors":"Aitor Gómez-Goiri, Diego López-de-Ipiña","restCitation":"In Proceedings of the Second International Workshop on Web of Things, <a href=\"http://www.webofthings.com/wot/2011/\">WoT 11</a>, pages 12:1–12:6. ISBN: <a href=\"http://doi.acm.org/10.1145/1993966.1993983\" target=\"_blank\">978-1-4503-0624-9</a>. New York, NY, USA, 2011.","pdf":"/static/files/pdf/gomezgoiri2011complementarity.pdf","bib":"/static/files/bibtex/gomezgoiri2011complementarity.bib","semantics":"on-the-complementarity-of-triple-spaces-and-the-web-of-things","bodyContent":"The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on allowing such communication through different protocols and architectures.\nSome of these architectural approaches are Web of Things (WoT) and Triple Space (TS) which are both resource oriented architectures.\nThis work analyses and compares both approaches and outlines the scenarios in which they will be more useful.\nParticularly, it outlines how some of the drawbacks of WoT in the discovery and cooperation aspects may be complemented by integrating with TS.","bodyHtml":"<p>The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on allowing such communication through different protocols and architectures.\nSome of these architectural approaches are Web of Things (WoT) and Triple Space (TS) which are both resource oriented architectures.\nThis work analyses and compares both approaches and outlines the scenarios in which they will be more useful.\nParticularly, it outlines how some of the drawbacks of WoT in the discovery and cooperation aspects may be complemented by integrating with TS.</p>\n","preview":"The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on","dir":"content/publications","base":"2011-06-03-gomezgoiri-complementarity.json","ext":".json","sourceBase":"2011-06-03-gomezgoiri-complementarity.md","sourceExt":".md"},"content/publications/2011-06-01-laiseca-distributed.json":{"title":"Distributed Tracking System for Patients with Cognitive Impairments","authors":"Xabier Laiseca, Eduardo Castillejo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, Ester Gonzalez-Aguado","restCitation":"Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.","pdf":"/static/files/pdf/laiseca2011distributed.pdf","bib":"/static/files/bibtex/laiseca2011distributed.bib","semantics":"distributed-tracking-system-for-patients-with-cognitive-impairments","bodyContent":"The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.\nThese requirements, such as medical staff and financial resources, have been multiplied in the last years, and this tendency will continue in the forthcoming ones.\nIn order to reduce these requirements, the introduction of new technologies will be a key aspect.\nn this paper we propose a test-question-based memory game that collects the answers given by patients and facilitates access to this information to caregivers and relatives.","bodyHtml":"<p>The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.\nThese requirements, such as medical staff and financial resources, have been multiplied in the last years, and this tendency will continue in the forthcoming ones.\nIn order to reduce these requirements, the introduction of new technologies will be a key aspect.\nn this paper we propose a test-question-based memory game that collects the answers given by patients and facilitates access to this information to caregivers and relatives.</p>\n","preview":"The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with","dir":"content/publications","base":"2011-06-01-laiseca-distributed.json","ext":".json","sourceBase":"2011-06-01-laiseca-distributed.md","sourceExt":".md"},"content/publications/2011-02-01-gomezgoiri-middleware.json":{"title":"Middleware Semántico Orientado a Recursos para Entornos Ubicuos","authors":"Aitor Gómez-Goiri, Mikel Emaldi-Manrique, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.ati.es/novatica/\">NOVATICA journal</a>, (209): 9–16. ISSN: 0211-2124. February 2011. (<a href=\"http://www.ati.es/spip.php?article2131\">artículo finalista VI Edición del premio NOVATICA</a>)","pdf":"http://www.ati.es/novatica/2011/209/209-9-VI-Premio-Novatica-finalista.pdf","bib":"/static/files/bibtex/gomezgoiri2011middleware.bib","semantics":"middleware-semantico-orientado-a-recursos-para-entornos-ubicuos","bodyContent":"En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este contexto, los modelos semánticos pueden utilizarse para describir el contexto que rodea dichos dispositivos de una manera muy expresiva, normalmente almacenada en bases de conocimiento centralizadas.\nLas aplicaciones construidas a partir de estas bases de conocimiento que generalmente no son sensibles a la dinamicidad de la red.\nEl middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del _Triple Space_.\nEste middleware ha sido probado en un escenario estereotipado, mostrando cómo los diferentes nodos de una red pueden compartir información, conservando su autonomía y con un rendimiento razonable en los dispositivos con capacidad de computación reducida.","bodyHtml":"<p>En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este contexto, los modelos semánticos pueden utilizarse para describir el contexto que rodea dichos dispositivos de una manera muy expresiva, normalmente almacenada en bases de conocimiento centralizadas.\nLas aplicaciones construidas a partir de estas bases de conocimiento que generalmente no son sensibles a la dinamicidad de la red.\nEl middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del <em>Triple Space</em>.\nEste middleware ha sido probado en un escenario estereotipado, mostrando cómo los diferentes nodos de una red pueden compartir información, conservando su autonomía y con un rendimiento razonable en los dispositivos con capacidad de computación reducida.</p>\n","preview":"En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este","dir":"content/publications","base":"2011-02-01-gomezgoiri-middleware.json","ext":".json","sourceBase":"2011-02-01-gomezgoiri-middleware.md","sourceExt":".md"},"content/publications/2012-06-20-gomezgoiri-otsopack.json":{"title":"Otsopack: Lightweight Framework for Ambient Intelligence Applications","authors":"Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña and Javier Diego","restCitation":"5th World Summit on the Knowledge Society (WSKS 2012), June 20-22, 2012, Rome, Italy","bodyContent":"Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments, a wide variety of devices and platforms such as sensors, actuators or digital personality carriers (mobile devices) are usually deployed.\nIf each application has been developed for each platform using ad-hoc services, the interaction and the chances of adding or replacing devices decreases.\nParadigms such as Triple Space Computing -a tuplespace extension- are focused on enabling the interoperability and coordination of applications, by sharing information represented in a semantic format through a common virtual space.\nAs long as the application developers use standard ontologies, different applications using the same spaces will interact automatically.\nTo do so, a middleware that makes this abstraction possible is required.\nThe focus of this paper is to present Otsopack, a Triple Spaces fully distributed middleware designed to enable the development of AmI applications running in mobile and resource constrained devices.","bodyHtml":"<p>Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments, a wide variety of devices and platforms such as sensors, actuators or digital personality carriers (mobile devices) are usually deployed.\nIf each application has been developed for each platform using ad-hoc services, the interaction and the chances of adding or replacing devices decreases.\nParadigms such as Triple Space Computing -a tuplespace extension- are focused on enabling the interoperability and coordination of applications, by sharing information represented in a semantic format through a common virtual space.\nAs long as the application developers use standard ontologies, different applications using the same spaces will interact automatically.\nTo do so, a middleware that makes this abstraction possible is required.\nThe focus of this paper is to present Otsopack, a Triple Spaces fully distributed middleware designed to enable the development of AmI applications running in mobile and resource constrained devices.</p>\n","preview":"Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments,","dir":"content/publications","base":"2012-06-20-gomezgoiri-otsopack.json","ext":".json","sourceBase":"2012-06-20-gomezgoiri-otsopack.md","sourceExt":".md"},"content/publications/2012-07-04-gomezgoiri-assesing.json":{"title":"Assessing data dissemination strategies within Triple Spaces on the Web of Things","authors":"Aitor Gómez-Goiri and Diego López-de-Ipiña","restCitation":"Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (<a href=\"http://www.esiot.com/\">IMIS</a>), pp.763-769, Palermo, Italy, July 4-6, 2012. DOI&#58; <a href=\"http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6296950\">10.1109/IMIS.2012.120</a>.","pdf":"/static/files/pdf/gomezgoiri2012dissemination.pdf","bib":"/static/files/bibtex/gomezgoiri2012dissemination.bib","semantics":"assessing-data-dissemination-strategies-within-triple-spaces-on-the-web-of-things","slides":"http://www.slideshare.net/twolf/assessing-data-dissemination-strategies","slideshareEmbedCode":13652892,"bodyContent":"The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol and other web techniques.\nUnfortunately, it usually defines the data shared by these devices in a syntactic level, showing a lack of expressiveness.\nDuring the last decade, the Semantic Web (SW) has aimed to solve these problems by adding logic to the Web to make it machine-understandable and by therefore enhancing the interoperability of the applications using it.\nThe SW is used in the Triple Space Computing paradigm, which proposes a blackboard model where semantically described knowledge is shared between different devices in a completely RESTful, and consequently WoT compliant, manner.\nThis paradigm's shared blackboard can be implemented using many strategies, from centralized to completely distributed.\nIn this work, we compare and analyze the behaviors of these two extreme cases in several simulations which try to represent common IoT scenarios.\nFinally, we propose an improvement of the completely distributed strategy by enabling the gossiping between devices.","bodyHtml":"<p>The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol and other web techniques.\nUnfortunately, it usually defines the data shared by these devices in a syntactic level, showing a lack of expressiveness.\nDuring the last decade, the Semantic Web (SW) has aimed to solve these problems by adding logic to the Web to make it machine-understandable and by therefore enhancing the interoperability of the applications using it.\nThe SW is used in the Triple Space Computing paradigm, which proposes a blackboard model where semantically described knowledge is shared between different devices in a completely RESTful, and consequently WoT compliant, manner.\nThis paradigm's shared blackboard can be implemented using many strategies, from centralized to completely distributed.\nIn this work, we compare and analyze the behaviors of these two extreme cases in several simulations which try to represent common IoT scenarios.\nFinally, we propose an improvement of the completely distributed strategy by enabling the gossiping between devices.</p>\n","preview":"The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol","dir":"content/publications","base":"2012-07-04-gomezgoiri-assesing.json","ext":".json","sourceBase":"2012-07-04-gomezgoiri-assesing.md","sourceExt":".md"},"content/publications/2012-12-03-naranjo-lightweight.json":{"title":"Lightweight User Access Control in Energy-Constrained Wireless Network Services","authors":"J. A. M. Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, L. G. Casado","restCitation":"In Proceedings of the Sixth International Conference, <a href=\"http://mami.uclm.es/ucami2012/\">UCAmI 2012</a>, Vitoria-Gasteiz, Spain, December 3-5, 2012. ISBN&#58; 978-3-642-35376-5. DOI&#58; <a href=\"http://link.springer.com/chapter/10.1007%2F978-3-642-35377-2_5\">10.1007/978-3-642-35377-2_5</a>","pdf":"/static/files/pdf/naranjo2012lightweight.pdf","bib":"/static/files/bibtex/naranjo2012lightweight.bib","semantics":"lightweight-user-access-control-in-energy-constrained-wireless-network-services","bodyContent":"This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with services.\nLow energy consumption is a key point in this kind of scenarios given that devices usually run on batteries and are unattended for long periods of time.\nOur proposal achieves privacy, authentication, semantic security, low energy and computational demand and device compromise impact limitation on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties and compare our proposal to previous related work.","bodyHtml":"<p>This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with services.\nLow energy consumption is a key point in this kind of scenarios given that devices usually run on batteries and are unattended for long periods of time.\nOur proposal achieves privacy, authentication, semantic security, low energy and computational demand and device compromise impact limitation on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties and compare our proposal to previous related work.</p>\n","preview":"This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with","dir":"content/publications","base":"2012-12-03-naranjo-lightweight.json","ext":".json","sourceBase":"2012-12-03-naranjo-lightweight.md","sourceExt":".md"},"content/publications/2013-11-13-naranjo-extending.json":{"title":"Extending a User Access Control Proposal for Wireless Network Services with Hierarchical User Credentials","authors":"J. A. M. Naranjo, Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña, L. G. Casado","restCitation":"In Proceedings of the Sixth International Conference on Computational Intelligence in Security for Information Systems, <a href=\"http://gicap.ubu.es/cisis2013/home/home.shtml\">CISIS 2013</a>, Salamanca, Spain, September 11-13, 2013. ISBN&#58; 978-3-319-01853-9. DOI&#58; <a href=\"http://link.springer.com/chapter/10.1007%2F978-3-319-01854-6_61\">10.1007/978-3-319-01854-6_61</a>","pdf":"/static/files/pdf/naranjo2013extending.pdf","bib":"/static/files/bibtex/naranjo2013extending.bib","semantics":"extending-a-user-access-control-proposal-for-wireless-network-services-with-hierarchical-user-credentials","bodyContent":"We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth the basic solution and this novel extension focus on minimizing computation, energy, storage and communications required at sensors so they can be run in very constrained hardware, since the computations involved rely on symmetric cryptography and key derivation functions.\nFurthermore, no additional messages between users and sensors are needed.\nAccess control is based on user identity, group membership and time intervals.","bodyHtml":"<p>We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth the basic solution and this novel extension focus on minimizing computation, energy, storage and communications required at sensors so they can be run in very constrained hardware, since the computations involved rely on symmetric cryptography and key derivation functions.\nFurthermore, no additional messages between users and sensors are needed.\nAccess control is based on user identity, group membership and time intervals.</p>\n","preview":"We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth","dir":"content/publications","base":"2013-11-13-naranjo-extending.json","ext":".json","sourceBase":"2013-11-13-naranjo-extending.md","sourceExt":".md"},"content/publications/2011-02-02-gomezgoiri-semantic.json":{"title":"A Semantic Resource Oriented Middleware for Pervasive Environments","authors":"Aitor Gómez-Goiri, Mikel Emaldi-Manrique, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.cepis.org/upgrade\">UPGRADE journal</a>, 2011, Issue No. 1: 5-16. <a href=\"http://www.cepis.org/upgrade/index.jsp?p=2701&amp;n=2702\">February 2011</a>. ISSN: 1684-5285","pdf":"http://www.cepis.org/upgrade/media/GomezGoiri_1_20112.pdf","bib":"/static/files/bibtex/gomezgoiri2011semantic.bib","semantics":"a-semantic-resource-oriented-middleware-for-pervasive-environments","paths":["/publications/gomezgoiri-semantic.html"],"bodyContent":"Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.\nIn this context semantic models can be used to describe the context that surrounds them in a very expressive manner, usually stored in centralized knowledge bases.\nThe applications built on top of these knowledge bases use heterogeneous protocols to transmit their data, but do not capture the dynamicism of the network.\nThe presented middleware facilitates the exchange of knowledge between different sensors and actuators in a highly distributed, decoupled and resource oriented manner following the Triple Space paradigm.\nThis middleware has been tested on an stereotypical scenario, which illustrates how different peers can exchange data keeping them autonomous and yet with a reasonable footprint for devices with reduced computation capabilities.","bodyHtml":"<p>Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.\nIn this context semantic models can be used to describe the context that surrounds them in a very expressive manner, usually stored in centralized knowledge bases.\nThe applications built on top of these knowledge bases use heterogeneous protocols to transmit their data, but do not capture the dynamicism of the network.\nThe presented middleware facilitates the exchange of knowledge between different sensors and actuators in a highly distributed, decoupled and resource oriented manner following the Triple Space paradigm.\nThis middleware has been tested on an stereotypical scenario, which illustrates how different peers can exchange data keeping them autonomous and yet with a reasonable footprint for devices with reduced computation capabilities.</p>\n","preview":"Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected","dir":"content/publications","base":"2011-02-02-gomezgoiri-semantic.json","ext":".json","sourceBase":"2011-02-02-gomezgoiri-semantic.md","sourceExt":".md"},"content/publications/2013-11-01-naranjo-enabling.json":{"title":"Enabling user access control in energy-constrained wireless smart environments","authors":"J. A. M. Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, L. G. Casado","restCitation":"<a href=\"http://www.jucs.org/\">Journal of Universal Computer Science</a>, <a href=\"http://www.jucs.org/jucs_19\">Volume 19</a>, <a href=\"http://www.jucs.org/jucs_19_17\">number 17</a>, <a href=\"http://www.jucs.org/jucs_19_17/enabling_user_access_control\">Pages 2490-2505</a>, November 2013.","bib":"/static/files/bibtex/naranjo2013enabling.bib","pdf":"http://www.jucs.org/jucs_19_17/enabling_user_access_control/jucs_19_17_2490_2502_naranjo.pdf","semantics":"enabling-user-access-control-in-energy-constrained-wireless-smart-environments","bodyContent":"This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal use of computation, energy and storage resources at wireless sensors so as to address constrained devices: the proposed methods for key distribution and access control rely on extremely fast key derivation functions and, for the same reason, memory usage is reduced since keys are computed on the fly when needed.\nOur solution achieves privacy, authentication, semantic security, low energy, low computational demand and impacts mitigation of compromised devices on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties, compare our proposal to previous related work and provide experimental results that confirm its viability.","bodyHtml":"<p>This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal use of computation, energy and storage resources at wireless sensors so as to address constrained devices: the proposed methods for key distribution and access control rely on extremely fast key derivation functions and, for the same reason, memory usage is reduced since keys are computed on the fly when needed.\nOur solution achieves privacy, authentication, semantic security, low energy, low computational demand and impacts mitigation of compromised devices on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties, compare our proposal to previous related work and provide experimental results that confirm its viability.</p>\n","preview":"This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal","dir":"content/publications","base":"2013-11-01-naranjo-enabling.json","ext":".json","sourceBase":"2013-11-01-naranjo-enabling.md","sourceExt":".md"},"content/publications/2014-01-01-gomezgoiri-otsopack.json":{"title":"Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications","authors":"Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.journals.elsevier.com/computers-in-human-behavior/\">Computers in Human Behavior</a>, <a href=\"http://www.sciencedirect.com/science/journal/07475632/30/supp/C\">Volume 30</a>, Pages <a href=\"http://www.sciencedirect.com/science/article/pii/S0747563213002148\">460-467</a>, January 2014, ISSN 0747-5632, <a href=\"http://dx.doi.org/10.1016/j.chb.2013.06.022\">10.1016/j.chb.2013.06.022</a>.","bib":"/static/files/bibtex/gomezgoiri2014otsopack.bib","semantics":"otsopack-lightweight-semantic-framework-for-interoperable-ambient-intelligence-applications","bodyContent":"In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the communication protocols they use is multifarious.\nTherefore, the applications running on top of them remarkably demand interoperability.\nThe Triple Space Computing (TSC) paradigm addresses that problem by sharing information represented in a semantic format through a common virtual space.\nAs long as application developers use standard ontologies, different applications using the same spaces will interact automatically.\nThe focus of this paper is to present Otsopack, a fully distributed TSC middleware designed to meet the needs of mobile and resource constrained devices.\nOtsopack defines a simple HTTP interface for the TSC operations.\nThis interface focuses on simplicity and modularity, so that two implementations that support different modules can still interact.\nTo assess the middleware we provide time and load measurements, and we analyze two independent implementations.","bodyHtml":"<p>In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the communication protocols they use is multifarious.\nTherefore, the applications running on top of them remarkably demand interoperability.\nThe Triple Space Computing (TSC) paradigm addresses that problem by sharing information represented in a semantic format through a common virtual space.\nAs long as application developers use standard ontologies, different applications using the same spaces will interact automatically.\nThe focus of this paper is to present Otsopack, a fully distributed TSC middleware designed to meet the needs of mobile and resource constrained devices.\nOtsopack defines a simple HTTP interface for the TSC operations.\nThis interface focuses on simplicity and modularity, so that two implementations that support different modules can still interact.\nTo assess the middleware we provide time and load measurements, and we analyze two independent implementations.</p>\n","preview":"In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the","dir":"content/publications","base":"2014-01-01-gomezgoiri-otsopack.json","ext":".json","sourceBase":"2014-01-01-gomezgoiri-otsopack.md","sourceExt":".md"},"content/publications/2014-01-02-gomezgoiri-energy.json":{"title":"Energy-aware Architecture for Information Search in the Semantic Web of Things","authors":"Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña","restCitation":"<a href=\"http&#58;//www.inderscience.com/jhome.php?jcode=ijwgs\">International Journal of Web and Grid Services</a>, <a href=\"http://www.inderscience.com/info/inarticle.php?artid=60252\">Vol.10, No.2/3, pp.192–217</a>, 2014. <br /> ISSN: 1741-1106. DOI: <a href=\"http://dx.doi.org/10.1504/IJWGS.2014.060252\">10.1504/IJWGS.2014.060252</a>.","bib":"/static/files/bibtex/gomezgoiri2014energy.bib","code":"/static/files/code/gomezgoiri2014energy.html","bodyContent":"Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this way, these devices can form an Ambient Intelligence environment where they can share and provide information.\nThe integration of such devices is difficult as they normally use different protocols.\nTo overcome this problem, the Web of Things (WoT) initiative proposes to use well-established web standards to ease their communication.\nHowever, these devices still need to share data in different formats.\nFor this reason, it is convenient to annotate data semantically in the WoT.\nWorking with annotated data is expensive for devices which usually have limited capacity.\n\nIn this paper, we propose a dynamic architecture to search semantically annotated data in the WoT.\nThis architecture takes into account the reduced computation capacity and the limited energy autonomy of embedded devices.","bodyHtml":"<p>Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this way, these devices can form an Ambient Intelligence environment where they can share and provide information.\nThe integration of such devices is difficult as they normally use different protocols.\nTo overcome this problem, the Web of Things (WoT) initiative proposes to use well-established web standards to ease their communication.\nHowever, these devices still need to share data in different formats.\nFor this reason, it is convenient to annotate data semantically in the WoT.\nWorking with annotated data is expensive for devices which usually have limited capacity.</p>\n<p>In this paper, we propose a dynamic architecture to search semantically annotated data in the WoT.\nThis architecture takes into account the reduced computation capacity and the limited energy autonomy of embedded devices.</p>\n","preview":"Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this","dir":"content/publications","base":"2014-01-02-gomezgoiri-energy.json","ext":".json","sourceBase":"2014-01-02-gomezgoiri-energy.md","sourceExt":".md"},"content/publications/2014-06-16-gomezgoiri-semantic.json":{"title":"Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision","authors":"Aitor Gómez-Goiri","restCitation":"PhD thesis, <a href=\"http://www.deusto.es\">Universidad de Deusto</a>, June 16th, 2014.","pdf":"https://gateway.pinata.cloud/ipfs/QmaTVSWNg53eBpLQqwguDkt8j8TqfVX3DWQg34sEzbkGa4","bib":"/static/files/bibtex/gomezgoiri2014dissertation.bib","slides":"https://gateway.pinata.cloud/ipfs/Qmdsxg5aKm2VBqzAQcicVjUD61RexpwW5p1y3wU4sPVa5z","code":"https://github.com/gomezgoiri/dissertation","bodyContent":"Supervisors:\n\n- [Diego López de Ipiña](http://paginaspersonales.deusto.es/dipina/) (University of Deusto)\n- [Iñigo Goiri](http://www.research.rutgers.edu/~goiri/) ([Rutgers University](http://www.rutgers.edu/)).\n\nJury panel:\n\n- Antonio F. Gómez-Skarmeta ([University of Murcia](http://www.um.es/), chair)\n- [George Roussos](http://www.dcs.bbk.ac.uk/~gr/) ([University of London](http://www.dcs.bbk.ac.uk), vocal)\n- [Mikel Larrea](http://www.sc.ehu.es/acwlaalm/) ([University of the Basque Country](http://www.ehu.es), secretary)\n\n<hr />\n\nUbiquitous Computing (UbiComp) envisions environments where devices interact among themselves to work seamlessly together on behalf of humans.\nIn recent years, the emergence of the Internet of Things (IoT) concept, which opts for connecting everyday objects to the Internet, and the Mobile Computing paradigm have contributed to strengthening UbiComp.\nFor this reason, UbiComp environments are not necessarily populated by powerful computers.\nOn the contrary, resource constrained devices (e.g., embedded and mobile devices) are the main actors in these environments.\nThus, it is important for the environment to deal with their heterogeneity, unreliability, and replaceability.\n\nIn order to cope with heterogeneity, the Semantic Web has proposed several standards and models to clearly define the terms so that they can be reused across applications boundaries.\nRegarding unreliability and replaceability, space-based computing (or Tuple Spaces) promotes the uncoupled coordination of the devices.\nSolutions based on semantic tuple spaces combine these three beneficial aspects resulting from bridging the Semantic Web and Tuple Spaces domains for UbiComp.\n\nMost of these semantic tuple spaces consider embedded and mobile devices as mere clients in a space managed by more powerful devices.\nSuch delegation helps to reduce the workload of devices with computing and energy limitations.\nHowever, this delegation moves the data away from where it is physically generated.\nThis creates a conflict between providing updated data and generating unnecessary network traffic for unused information.\nIn addition, this delegation makes constrained devices intrinsically dependent on other devices when it might not always be necessary.\nThis dissertation explores how these constrained devices can act as fully fledged semantic knowledge providers to create a more decentralized space.\n\nIn conclusion, this dissertation presents a novel adaptation of semantic tuple space which considers the energy and computational impact on the devices.\nSpecifically, this dissertation proposes the following contributions:\n\n- A space model which considers the principles which have made the web flourish in the last decades, together with the uncoupling properties of space-based computing.\n- An energy-aware search mechanism for autonomous constrained devices.\n- An alignment of two approaches to act on the physical environment, namely a space-based indirect actuation and a web-based direct actuation.","bodyHtml":"<p>Supervisors:</p>\n<ul>\n<li><a href=\"http://paginaspersonales.deusto.es/dipina/\">Diego López de Ipiña</a> (University of Deusto)</li>\n<li><a href=\"http://www.research.rutgers.edu/~goiri/\">Iñigo Goiri</a> (<a href=\"http://www.rutgers.edu/\">Rutgers University</a>).</li>\n</ul>\n<p>Jury panel:</p>\n<ul>\n<li>Antonio F. Gómez-Skarmeta (<a href=\"http://www.um.es/\">University of Murcia</a>, chair)</li>\n<li><a href=\"http://www.dcs.bbk.ac.uk/~gr/\">George Roussos</a> (<a href=\"http://www.dcs.bbk.ac.uk\">University of London</a>, vocal)</li>\n<li><a href=\"http://www.sc.ehu.es/acwlaalm/\">Mikel Larrea</a> (<a href=\"http://www.ehu.es\">University of the Basque Country</a>, secretary)</li>\n</ul>\n<hr />\n<p>Ubiquitous Computing (UbiComp) envisions environments where devices interact among themselves to work seamlessly together on behalf of humans.\nIn recent years, the emergence of the Internet of Things (IoT) concept, which opts for connecting everyday objects to the Internet, and the Mobile Computing paradigm have contributed to strengthening UbiComp.\nFor this reason, UbiComp environments are not necessarily populated by powerful computers.\nOn the contrary, resource constrained devices (e.g., embedded and mobile devices) are the main actors in these environments.\nThus, it is important for the environment to deal with their heterogeneity, unreliability, and replaceability.</p>\n<p>In order to cope with heterogeneity, the Semantic Web has proposed several standards and models to clearly define the terms so that they can be reused across applications boundaries.\nRegarding unreliability and replaceability, space-based computing (or Tuple Spaces) promotes the uncoupled coordination of the devices.\nSolutions based on semantic tuple spaces combine these three beneficial aspects resulting from bridging the Semantic Web and Tuple Spaces domains for UbiComp.</p>\n<p>Most of these semantic tuple spaces consider embedded and mobile devices as mere clients in a space managed by more powerful devices.\nSuch delegation helps to reduce the workload of devices with computing and energy limitations.\nHowever, this delegation moves the data away from where it is physically generated.\nThis creates a conflict between providing updated data and generating unnecessary network traffic for unused information.\nIn addition, this delegation makes constrained devices intrinsically dependent on other devices when it might not always be necessary.\nThis dissertation explores how these constrained devices can act as fully fledged semantic knowledge providers to create a more decentralized space.</p>\n<p>In conclusion, this dissertation presents a novel adaptation of semantic tuple space which considers the energy and computational impact on the devices.\nSpecifically, this dissertation proposes the following contributions:</p>\n<ul>\n<li>A space model which considers the principles which have made the web flourish in the last decades, together with the uncoupling properties of space-based computing.</li>\n<li>An energy-aware search mechanism for autonomous constrained devices.</li>\n<li>An alignment of two approaches to act on the physical environment, namely a space-based indirect actuation and a web-based direct actuation.</li>\n</ul>\n","preview":"Supervisors:\n\nDiego López de Ipiña (University of Deusto)\nIñigo Goiri (Rutgers University).\n\nJury panel:\n\nAntonio F. Gómez-Skarmeta","dir":"content/publications","base":"2014-06-16-gomezgoiri-semantic.json","ext":".json","sourceBase":"2014-06-16-gomezgoiri-semantic.md","sourceExt":".md"},"content/publications/2013-02-06-orduna-weblab.json":{"title":"WebLab-Deployer: exporting remote laboratories as SaaS through federation protocols","authors":"Pablo Orduña, Xabier Larrakoetxea, David Buján, Aitor Gómez-Goiri, Ignacio Angulo, Olga Dziabenko, Luis Rodriguez-Gil, Diego López-de-Ipiña, Javier Garcia-Zubia","restCitation":"<a href=\"http://www.rev-conference.org/REV2013/\">REV2013: 10th International Conference on Remote Engineering and Virtual Instrumentation</a>. Sydney, Australia, 6 - 8 February 2013.","bib":"/static/files/bibtex/orduna2013weblab.bib","bodyContent":"During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the world.\nHowever, today most of the remote laboratories are still only used by the same institution that provides or even develops them, or by direct partners in federated environments.\nThere are two ways to support this type of federation: a) using a federated authentication system such as Shibboleth or b) installing a remote laboratory management system that supports federation natively.\nIn both cases, the consumer institution must go through a process of deployment or complex configuration.\nThis contribution explores providing access to laboratories using a Cloud Computing approach, considering the federated environments that do not have laboratories attached as a SaaS (Software as a Service) system.\nThis approach not only makes adoption by other institutions easier, but also benefits from the existing features provided by Cloud Computing, such as elasticity to reuse the same resources for different institutions to balance the load.","bodyHtml":"<p>During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the world.\nHowever, today most of the remote laboratories are still only used by the same institution that provides or even develops them, or by direct partners in federated environments.\nThere are two ways to support this type of federation: a) using a federated authentication system such as Shibboleth or b) installing a remote laboratory management system that supports federation natively.\nIn both cases, the consumer institution must go through a process of deployment or complex configuration.\nThis contribution explores providing access to laboratories using a Cloud Computing approach, considering the federated environments that do not have laboratories attached as a SaaS (Software as a Service) system.\nThis approach not only makes adoption by other institutions easier, but also benefits from the existing features provided by Cloud Computing, such as elasticity to reuse the same resources for different institutions to balance the load.</p>\n","preview":"During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the","dir":"content/publications","base":"2013-02-06-orduna-weblab.json","ext":".json","sourceBase":"2013-02-06-orduna-weblab.md","sourceExt":".md"},"content/publications/2014-07-02-gomezgoiri-reusing.json":{"title":"Reusing Web-Enabled Actuators from a Semantic Space-Based Perspective","authors":"Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña","restCitation":"<a href=\"https://ieeexplore.ieee.org/xpl/conhome/6963207/proceeding\">Eighth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing</a>, July 2014. <br /> DOI: <a href=\"https://doi.org/10.1109/IMIS.2014.45\">10.1109/IMIS.2014.45 </a>.","bib":"/static/files/bibtex/gomezgoiri2014reusing.bib","slides":"https://gateway.pinata.cloud/ipfs/QmcrYWYakHGnNpxGHM3UwhTEpxjuFi9n9dh8VHH9vp5cSU","code":"https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace","bodyContent":"Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been widely applied to cope with both aspects.\nHowever, the integration of these devices with the web has gained momentum in the last years.\nTherefore, the seamless reuse of these web-enabled devices drastically increases the actuation possibilities of any application.\nThis paper explores how semantic space-based applications can perform the aforementioned reuse.\nThis exploration is guided by the implementation of a scenario.\nThe scenario shows a neat interoperation between nodes from both worlds: space-based computing and the web.\nIn addition, the generalization of the proposed solution poses new challenges to be tackled.","bodyHtml":"<p>Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been widely applied to cope with both aspects.\nHowever, the integration of these devices with the web has gained momentum in the last years.\nTherefore, the seamless reuse of these web-enabled devices drastically increases the actuation possibilities of any application.\nThis paper explores how semantic space-based applications can perform the aforementioned reuse.\nThis exploration is guided by the implementation of a scenario.\nThe scenario shows a neat interoperation between nodes from both worlds: space-based computing and the web.\nIn addition, the generalization of the proposed solution poses new challenges to be tackled.</p>\n","preview":"Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been","dir":"content/publications","base":"2014-07-02-gomezgoiri-reusing.json","ext":".json","sourceBase":"2014-07-02-gomezgoiri-reusing.md","sourceExt":".md"},"content/publications/2015-11-26-domingue-forging.json":{"title":"Forging Online Education through FIRE","authors":"John Domingue, Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, Daan Pareit, Jono Vanhie-Van Gerwen, Christos Tranoris, Kostas Lampropoulos, Guillaume Jourjon, Olivier Fourmaux, Mohammed Yasin Rahman","restCitation":"<a href=\"https://itunes.apple.com/us/book/id1062612920\">iBook</a>, 2015. <br /> ISBN: 978-1-4730-2016-0.","bib":"/static/files/bibtex/domingue2015forging.bib","bodyContent":"The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research and development of new Future Internet concepts, giving researchers the tools they need to conduct large-scale experiments on new paradigms. The FORGE project introduces the FIRE experimental facilities to the eLearning community, in order to promote experimentally driven research in education by using experiments as an interactive learning and training channel both for students and professionals.\n\nThis book introduces a range of Future Internet topics using FIRE facilities. You will have the opportunity to study in depth various aspects of networking protocols and infrastructure, watch instructional movies and screencasts, as well as conduct experiments using the FIRE infrastructure.","bodyHtml":"<p>The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research and development of new Future Internet concepts, giving researchers the tools they need to conduct large-scale experiments on new paradigms. The FORGE project introduces the FIRE experimental facilities to the eLearning community, in order to promote experimentally driven research in education by using experiments as an interactive learning and training channel both for students and professionals.</p>\n<p>This book introduces a range of Future Internet topics using FIRE facilities. You will have the opportunity to study in depth various aspects of networking protocols and infrastructure, watch instructional movies and screencasts, as well as conduct experiments using the FIRE infrastructure.</p>\n","preview":"The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research","dir":"content/publications","base":"2015-11-26-domingue-forging.json","ext":".json","sourceBase":"2015-11-26-domingue-forging.md","sourceExt":".md"},"content/publications/2016-02-01-ventura-security.json":{"title":"Security analysis and resource requirements of group-oriented user access control for hardware-constrained wireless network services","authors":"Daniela Ventura, Aitor Gómez-Goiri, Vincenzo Catania, Diego López-de-Ipiña, J. A. M. Naranjo, L. G. Casado","restCitation":"<a href=\"http://jigpal.oxfordjournals.org/\">Logic Journal of the IGPL</a>, <a href=\"http://jigpal.oxfordjournals.org/content/24/1/80.abstract\">Vol.24, No.1, pp.80–91</a>, 2016. <br /> DOI: <a href=\"http://dx.doi.org/10.1093/jigpal/jzv045\">10.1093/jigpal/jzv045</a>.","pdf":"/static/files/pdf/ventura2016security.pdf","bib":"/static/files/bibtex/ventura2016security.bib","code":"https://github.com/lightsec","bodyContent":"We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and encryption are provided, and access control relies on user identity, group membership and time intervals.\nBoth the basic solution and the extension focus on minimizing computation, energy, storage and communications on the sensor side: computations involved rely on symmetric cryptography and key derivation functions, and no additional messages between user and sensor are needed.\nThe performance of our solution is proven by experiments on a highly constrained platform such as Arduino.\nFinally, its security is validated against the AVISPA tool.","bodyHtml":"<p>We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and encryption are provided, and access control relies on user identity, group membership and time intervals.\nBoth the basic solution and the extension focus on minimizing computation, energy, storage and communications on the sensor side: computations involved rely on symmetric cryptography and key derivation functions, and no additional messages between user and sensor are needed.\nThe performance of our solution is proven by experiments on a highly constrained platform such as Arduino.\nFinally, its security is validated against the AVISPA tool.</p>\n","preview":"We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and","dir":"content/publications","base":"2016-02-01-ventura-security.json","ext":".json","sourceBase":"2016-02-01-ventura-security.md","sourceExt":".md"},"content/teaching.json":{"title":"Teaching","description":"Teaching","page":"/teaching","paths":["/teaching.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"teaching.json","ext":".json","sourceBase":"teaching.md","sourceExt":".md"},"content/publications/2018-11-15-mikroyannidis-ptanywhere.json":{"title":"PT Anywhere: a mobile environment for practical learning of network engineering","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, John Domingue","restCitation":"Interactive Learning Environments pp. 1–15.","bib":"/static/files/bibtex/mikroyannidis2018ptanywhere.bib","bodyContent":"The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised and up-to-date network equipment, as well as the high costs associated with obtaining and maintaining this equipment.\nThe PT Anywhere initiative addresses these challenges by offering a mobile environment for acquiring practical knowledge and skills of network engineering.\nPT Anywhere facilitates learner-centred anywhere/anytime learning and offers learners access to high-quality interactive learning resources.\nAdditionally, PT Anywhere employs Learning Analytics in order to help learners and educators in understanding and improving learning.\nThis paper presents the learning design and software design principles driving the development of PT Anywhere, as well as the outcomes of an evaluation session conducted with members of the Cisco Networking Academy.\nThe results of this evaluation indicate that PT Anywhere holds the potential to engage learners in different ways inside and outside of the classroom, without the need for access to specialised equipment","bodyHtml":"<p>The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised and up-to-date network equipment, as well as the high costs associated with obtaining and maintaining this equipment.\nThe PT Anywhere initiative addresses these challenges by offering a mobile environment for acquiring practical knowledge and skills of network engineering.\nPT Anywhere facilitates learner-centred anywhere/anytime learning and offers learners access to high-quality interactive learning resources.\nAdditionally, PT Anywhere employs Learning Analytics in order to help learners and educators in understanding and improving learning.\nThis paper presents the learning design and software design principles driving the development of PT Anywhere, as well as the outcomes of an evaluation session conducted with members of the Cisco Networking Academy.\nThe results of this evaluation indicate that PT Anywhere holds the potential to engage learners in different ways inside and outside of the classroom, without the need for access to specialised equipment</p>\n","preview":"The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised","dir":"content/publications","base":"2018-11-15-mikroyannidis-ptanywhere.json","ext":".json","sourceBase":"2018-11-15-mikroyannidis-ptanywhere.md","sourceExt":".md"},"content/publications/2015-09-15-mikroyannidis-deploying.json":{"title":"Deploying learning analytics for awareness and reflection in online scientific experimentation","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, John Domingue, Daan Pareit, Jono Vanhie-Van Gerwen, Johann M. Marquez-Barja","restCitation":"In <a href=\"http://www.teleurope.eu/pg/pages/view/389887/\">5th Workshop on Awareness and Reflection in Technology Enhanced Learning (ARTEL)</a> colocated with <a href=\"http://ectel2015.httc.de/index.php?id=704\">10th European Conference on Technology Enhanced Learning: Design for Teaching and Learning in a Networked World (EC-TEL 2015)</a>, 15 September 2015, Toledo, Spain.","pdf":"/static/files/pdf/mikroyannidis2015deploying.pdf","bib":"/static/files/bibtex/mikroyannidis2015deploying.bib","bodyContent":"Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the education sector by offering learners with access to free learning materials of high quality, as well as with the means to monitor their progress and reflect on their learning experiences.\nThis part presents FORGE, a European initiative for online learning and experimentation via interactive learning resources.\nFORGE provides learners and educators with access to world-class experimentation facilities and high quality learning materials.\nAdditionally, the deployment of Learning Analytics in the FORGE learning resources aims at supporting awareness and reflection both for learners and educators.","bodyHtml":"<p>Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the education sector by offering learners with access to free learning materials of high quality, as well as with the means to monitor their progress and reflect on their learning experiences.\nThis part presents FORGE, a European initiative for online learning and experimentation via interactive learning resources.\nFORGE provides learners and educators with access to world-class experimentation facilities and high quality learning materials.\nAdditionally, the deployment of Learning Analytics in the FORGE learning resources aims at supporting awareness and reflection both for learners and educators.</p>\n","preview":"Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the","dir":"content/publications","base":"2015-09-15-mikroyannidis-deploying.json","ext":".json","sourceBase":"2015-09-15-mikroyannidis-deploying.md","sourceExt":".md"},"content/publications/2015-02-25-orduna-wCloud.json":{"title":"wCloud: Automatic generation of WebLab-Deusto deployments in the Cloud","authors":"Pablo Orduña, Aitor Gómez-Goiri, Luis Rodriguez-Gil, Javier Diego, Diego López-de-Ipiña, Javier Garcia-Zubia","restCitation":"In <a href=\"http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7080986\">12th International Conference on Remote Engineering and Virtual Instrumentation (REV)</a>, pp.223–229</a>, February 2015, Bangkok , Thailand. DOI: <a href=\"http://dx.doi.org/10.1109/REV.2015.7087296\">10.1109/REV.2015.7087296</a>.","bib":"/static/files/bibtex/orduna2015wcloud.bib","bodyContent":"Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in universities as if they were in a hands-on-lab session. Since most remote labs share certain management tasks (authentication, Learning Analytics, scheduling, etc.), software systems implementing them on top of which remote labs could be implemented were developed and called Remote Lab Management Systems (RLMS). A key feature provided by certain RLMSs is sharing a remote laboratory between two systems deployed in two institutions. This way, it becomes possible to have multiple RLMS instances (which are pure software) in a Cloud environment, customized for different schools or universities. Each school would have its own RLMS, with all the management features (e.g., managing its own students), and in the end, the RLMS would connect to the RLMS which has the physical equipment. The focus of this contribution is to detail how this “RLMS as a Service” is being implemented in the case of WebLab-Deusto as part of the mCloud project, from a technical point of view.","bodyHtml":"<p>Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in universities as if they were in a hands-on-lab session. Since most remote labs share certain management tasks (authentication, Learning Analytics, scheduling, etc.), software systems implementing them on top of which remote labs could be implemented were developed and called Remote Lab Management Systems (RLMS). A key feature provided by certain RLMSs is sharing a remote laboratory between two systems deployed in two institutions. This way, it becomes possible to have multiple RLMS instances (which are pure software) in a Cloud environment, customized for different schools or universities. Each school would have its own RLMS, with all the management features (e.g., managing its own students), and in the end, the RLMS would connect to the RLMS which has the physical equipment. The focus of this contribution is to detail how this “RLMS as a Service” is being implemented in the case of WebLab-Deusto as part of the mCloud project, from a technical point of view.</p>\n","preview":"Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in","dir":"content/publications","base":"2015-02-25-orduna-wCloud.json","ext":".json","sourceBase":"2015-02-25-orduna-wCloud.md","sourceExt":".md"},"content/teaching/2012-06-01-programazioa-ii.json":{"category":"university","title":"Programming II","where":"<a href=\"http://www.ingenieria.deusto.es/cs/Satellite/ingenieria/es/estudios-0/estudios-ingenieria-grado/ingenieria-informatica/ingenieria-informatica/\">BSc in Computer Engineering</a>","originalName":"Programazioa II","topics":"algorithms and data structures (2D arrays, object files, lists, queues, stacks and trees).","language":"Basque","when":"Second semester of 2010/2011 and 2011/2012 (5 hours a week).","bodyContent":"Materials:\n\n- <a href=\"http://www.slideshare.net/twolf/2d-arraya-eta-objetu-arrayak\" target=\"_blank\">2D arraya eta objetu arrayak</a>\n- <a href=\"http://www.slideshare.net/twolf/02-fitxategiak\" target=\"_blank\">Fitxategiak</a>\n- <a href=\"http://www.slideshare.net/twolf/konposizioa-herentzia-eta-polimorfismoa\" target=\"_blank\">Konposizioa, herentzia eta polimorfismoa</a>\n- <a href=\"http://www.slideshare.net/twolf/egitura-linealak\" target=\"_blank\">Egitura linealak</a>\n- <a href=\"http://www.slideshare.net/twolf/errekurtsibitatea\" target=\"_blank\">Errekurtsibitatea</a>\n- <a href=\"http://www.slideshare.net/twolf/zuhaitzak-9797376\" target=\"_blank\">Zuhaitzak</a>","bodyHtml":"<p>Materials:</p>\n<ul>\n<li><a href=\"http://www.slideshare.net/twolf/2d-arraya-eta-objetu-arrayak\" target=\"_blank\">2D arraya eta objetu arrayak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/02-fitxategiak\" target=\"_blank\">Fitxategiak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/konposizioa-herentzia-eta-polimorfismoa\" target=\"_blank\">Konposizioa, herentzia eta polimorfismoa</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/egitura-linealak\" target=\"_blank\">Egitura linealak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/errekurtsibitatea\" target=\"_blank\">Errekurtsibitatea</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/zuhaitzak-9797376\" target=\"_blank\">Zuhaitzak</a></li>\n</ul>\n","preview":"Materials:\n\n2D arraya eta objetu arrayak\nFitxategiak\nKonposizioa, herentzia eta polimorfismoa\nEgitura linealak\nErrekurtsibitatea\nZuhaitzak","dir":"content/teaching","base":"2012-06-01-programazioa-ii.json","ext":".json","sourceBase":"2012-06-01-programazioa-ii.md","sourceExt":".md"},"content/teaching/2008-07-18-php.json":{"category":"eghost","title":"PHP","where":"<a href=\"http://www.e-ghost.deusto.es/\">E-ghost</a>'s summer courses","originalName":"Introducción a PHP","topics":"<a href=\"http://www.php.net/\">PHP</a>","language":"Spanish","when":"16th-18th July 2008 (6 hours)","bodyContent":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/529882\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n\n<div style=\"margin-bottom:5px\">\n  <strong><a href=\"https://www.slideshare.net/twolf/presentacion-529882\" title=\"Introducción a PHP5\" target=\"_blank\">Introducción a PHP5</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a>\n</div></strong>","bodyHtml":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/529882\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n<div style=\"margin-bottom:5px\">\n  <strong><a href=\"https://www.slideshare.net/twolf/presentacion-529882\" title=\"Introducción a PHP5\" target=\"_blank\">Introducción a PHP5</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a>\n</div></strong>","preview":"Introducción a PHP5  from Aitor Gómez Goiri","dir":"content/teaching","base":"2008-07-18-php.json","ext":".json","sourceBase":"2008-07-18-php.md","sourceExt":".md"},"content/teaching/2012-07-19-redis.json":{"category":"eghost","title":"Redis","where":"<a href=\"http://www.e-ghost.deusto.es/\">E-ghost</a>'s summer courses","originalName":"Redis","topics":"<a href=\"http://redis.io/\">Redis store</a>","language":"Spanish","when":"18th-19th July 2012 (4 hours)","who":"<a href=\"http://paginaspersonales.deusto.es/porduna\">Pablo Orduña</a> and me","bodyContent":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/13761632\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n\n<div style=\"margin-bottom:5px\">\n  <strong> <a href=\"https://www.slideshare.net/twolf/redis-13761632\" title=\"Redis\" target=\"_blank\">Redis</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a></strong>\n</div>","bodyHtml":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/13761632\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n<div style=\"margin-bottom:5px\">\n  <strong> <a href=\"https://www.slideshare.net/twolf/redis-13761632\" title=\"Redis\" target=\"_blank\">Redis</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a></strong>\n</div>","preview":"Redis  from Aitor Gómez Goiri","dir":"content/teaching","base":"2012-07-19-redis.json","ext":".json","sourceBase":"2012-07-19-redis.md","sourceExt":".md"},"content/publications/2017-06-08-mikroyannidis-online.json":{"title":"Online experimentation and interactive learning resources for teaching network engineering","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, John Domingue","restCitation":"In: 2017 IEEE Global Engineering Education Conference (EDUCON) (25-28 Apr 2017, Athens, Greece) (pp. 181-188)","pdf":"http://oro.open.ac.uk/49733/1/07942845.pdf","bib":"/static/files/bibtex/mikroyannidis2017online.bib","bodyContent":"This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has been developed in collaboration with the Cisco Networking Academy in the context of the FORGE project, which promotes online learning and experimentation by offering access to virtual and remote labs. The main goal of this work is allowing learners and educators to perform network simulations within a web browser or an interactive eBook by using any type of mobile, tablet or desktop device.\nLearning Analytics are employed in order to monitor learning behaviour for further analysis of the learning experience offered to students.","bodyHtml":"<p>This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has been developed in collaboration with the Cisco Networking Academy in the context of the FORGE project, which promotes online learning and experimentation by offering access to virtual and remote labs. The main goal of this work is allowing learners and educators to perform network simulations within a web browser or an interactive eBook by using any type of mobile, tablet or desktop device.\nLearning Analytics are employed in order to monitor learning behaviour for further analysis of the learning experience offered to students.</p>\n","preview":"This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has","dir":"content/publications","base":"2017-06-08-mikroyannidis-online.json","ext":".json","sourceBase":"2017-06-08-mikroyannidis-online.md","sourceExt":".md"},"content/teaching/2012-11-18-htas-desarrollo.json":{"category":"university","title":"Development tools","where":"<a href=\"http://www.diss.deusto.es/\">Master's in Development and Integration of Software Solutions</a>","originalName":"Herramientas de soporte integral al desarrollo","topics":"<a href=\"http://en.wikipedia.org/wiki/Revision_control\">version control systems</a> (<a href=\"http://svnbook.red-bean.com/\">subversion</a> and <a href=\"http://hgbook.red-bean.com/\">mercurial</a>), <a href=\"http://en.wikipedia.org/wiki/Unit_testing\">unit testing</a>, etc.","language":"Spanish","when":"First semester of 2011/2012 and 2012/2013 (one week each course, 3 hours a day).","who":"<a href=\"http://paginaspersonales.deusto.es/porduna\">Pablo Orduña</a> and me","bodyContent":"Materials soon...","bodyHtml":"<p>Materials soon...</p>\n","preview":"Materials soon...","dir":"content/teaching","base":"2012-11-18-htas-desarrollo.json","ext":".json","sourceBase":"2012-11-18-htas-desarrollo.md","sourceExt":".md"},"content/research_projects.json":{"title":"R&D Projects","description":"Research and development projects","page":"/rdProjects/section","paths":["/research_projects.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"research_projects.json","ext":".json","sourceBase":"research_projects.md","sourceExt":".md"}},"sourceFileArray":["content/404.md","content/coding/ptAnywhere-frontend.md","content/coding/ptAnywhere-http_api.md","content/coding/ptAnywhere-installation.md","content/coding/ptAnywhere-internal_api.md","content/coding/ptAnywhere-intro.md","content/coding/ptAnywhere-learning_analytics.md","content/cv/career/2007.md","content/cv/career/2011a.md","content/cv/career/2011b.md","content/cv/career/2013.md","content/cv/career/2015.md","content/cv/career/2016.md","content/cv/career/2019.md","content/cv/career/2019b.md","content/cv/education/2008.md","content/cv/education/2010.md","content/cv/education/2014.md","content/cv/technical/02-languages.md","content/cv/technical/03-frontend.md","content/cv/technical/04-backend.md","content/cv/technical/05-aws.md","content/cv/technical/06-big-data.md","content/cv/technical/07-data-analysis.md","content/cv/technical/08-mobile-iot.md","content/cv/technical/09-db.md","content/cv/technical/10-devops.md","content/cv/technical/11-testing.md","content/cv/technical/12-os.md","content/index.md","content/landing/contact.md","content/landing/profile.md","content/projects.md","content/projects/2007-09-01-ismed.md","content/projects/2009-09-01-across.md","content/projects/2010-09-01-crosen.md","content/projects/2011-07-01-thofu.md","content/projects/2011-09-01-futureinternet2.md","content/projects/2011-09-01-mcloud.md","content/projects/2011-09-01-talisengine.md","content/projects/2012-09-01-adizain.md","content/projects/2015-01-01-forge.md","content/projects/2015-01-01-wespot.md","content/projects/2016-09-01-partm.md","content/projects/2017-01-01-falink.md","content/publications.md","content/publications/2010-07-01-gomezgoiri-triplespace.md","content/publications/2010-09-01-orduna-security.md","content/publications/2011-02-01-gomezgoiri-middleware.md","content/publications/2011-02-02-gomezgoiri-semantic.md","content/publications/2011-06-01-laiseca-distributed.md","content/publications/2011-06-02-gomezgoiri-easing.md","content/publications/2011-06-03-gomezgoiri-complementarity.md","content/publications/2011-10-01-gomezgoiri-collaboration.md","content/publications/2011-11-01-castillejo-robotic.md","content/publications/2012-06-01-gomezgoiri-restful.md","content/publications/2012-06-20-gomezgoiri-otsopack.md","content/publications/2012-07-04-gomezgoiri-assesing.md","content/publications/2012-12-03-naranjo-lightweight.md","content/publications/2013-02-06-orduna-weblab.md","content/publications/2013-11-01-naranjo-enabling.md","content/publications/2013-11-13-naranjo-extending.md","content/publications/2014-01-01-gomezgoiri-otsopack.md","content/publications/2014-01-02-gomezgoiri-energy.md","content/publications/2014-06-16-gomezgoiri-semantic.md","content/publications/2014-07-02-gomezgoiri-reusing.md","content/publications/2015-02-25-orduna-wCloud.md","content/publications/2015-09-15-mikroyannidis-deploying.md","content/publications/2015-11-26-domingue-forging.md","content/publications/2016-02-01-ventura-security.md","content/publications/2017-06-08-mikroyannidis-online.md","content/publications/2018-11-15-mikroyannidis-ptanywhere.md","content/research_projects.md","content/teaching.md","content/teaching/2008-07-18-php.md","content/teaching/2012-06-01-programazioa-ii.md","content/teaching/2012-07-19-redis.md","content/teaching/2012-11-18-htas-desarrollo.md"]};
+module.exports = {"fileMap":{"content/404.json":{"title":"Page Not Found","cx":"003123041647642216693:z-wgm1zzozk","page":"/NotFound","paths":["/404.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"404.json","ext":".json","sourceBase":"404.md","sourceExt":".md"},"content/coding/ptAnywhere-frontend.json":{"title":"Front end","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":2,"date":"2016-06-03T00:00:00.000Z","bodyContent":"_PT Anywhere_'s main goal is to **facilitate the access to _Packet Tracer_**.\nTo this end, it offers a simple web interface to the students.\n\nStudents might access directly using the browser or through the [iBook we created](publications/domingue-forging.html) for the [FORGE project](projects/forge.html).\nThis iBook contains a chapter entitled _Basic Network Router Configuration_ where the _PTAnywhere_ widget is embedded.\n\nThis is how a typical _PT Anywhere_ session looks like in a browser:\n\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/UauKSWQC2XQ\"\n>\n</iframe>\n\nTo create this widget (i.e., the _PT Anywhere_ front end), I used the following _JavaScript libraries_:\n\n- [Angular JS](https://angularjs.org/): I reimplemented the whole widget which initially used [jQuery](https://jquery.com/).\n- [vis.js](http://visjs.org/): to show the network topology.\n- [Jasmine](http://jasmine.github.io/): for testing the [_PTAnywhere API_ client JS library](https://github.com/PTAnywhere/ptAnywhere-js).\n\nThe web application which creates this widget is managed in this [GitHub project](https://github.com/PTAnywhere/ptAnywhere-widgets) which depends on these [other](https://github.com/PTAnywhere/widget-ui) [two](https://github.com/PTAnywhere/ptAnywhere-js).","bodyHtml":"<p><em>PT Anywhere</em>'s main goal is to <strong>facilitate the access to <em>Packet Tracer</em></strong>.\nTo this end, it offers a simple web interface to the students.</p>\n<p>Students might access directly using the browser or through the <a href=\"publications/domingue-forging.html\">iBook we created</a> for the <a href=\"projects/forge.html\">FORGE project</a>.\nThis iBook contains a chapter entitled <em>Basic Network Router Configuration</em> where the <em>PTAnywhere</em> widget is embedded.</p>\n<p>This is how a typical <em>PT Anywhere</em> session looks like in a browser:</p>\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/UauKSWQC2XQ\"\n>\n</iframe>\n<p>To create this widget (i.e., the <em>PT Anywhere</em> front end), I used the following <em>JavaScript libraries</em>:</p>\n<ul>\n<li><a href=\"https://angularjs.org/\">Angular JS</a>: I reimplemented the whole widget which initially used <a href=\"https://jquery.com/\">jQuery</a>.</li>\n<li><a href=\"http://visjs.org/\">vis.js</a>: to show the network topology.</li>\n<li><a href=\"http://jasmine.github.io/\">Jasmine</a>: for testing the <a href=\"https://github.com/PTAnywhere/ptAnywhere-js\"><em>PTAnywhere API</em> client JS library</a>.</li>\n</ul>\n<p>The web application which creates this widget is managed in this <a href=\"https://github.com/PTAnywhere/ptAnywhere-widgets\">GitHub project</a> which depends on these <a href=\"https://github.com/PTAnywhere/widget-ui\">other</a> <a href=\"https://github.com/PTAnywhere/ptAnywhere-js\">two</a>.</p>\n","preview":"PT Anywhere's main goal is to facilitate the access to Packet Tracer.\nTo this end, it offers a simple web interface to the","dir":"content/coding","base":"ptAnywhere-frontend.json","ext":".json","sourceBase":"ptAnywhere-frontend.md","sourceExt":".md"},"content/coding/ptAnywhere-http_api.json":{"title":"HTTP API","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":3,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/) & [Redis](http://redis.io/).\n\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/1fQsdI9iKwE\"\n>\n</iframe>\n\n## Features\n\n- Implemented in [Jersey 2.x](https://jersey.java.net/). The API follows the [JAX-RS 2.0](https://jax-rs-spec.java.net/) specification and fully uses annotations instead of ugly and obscure XML-based configurations.\n- REST-like API where resources are the center of the interactions (note: it is [not fully hypermedia-driven](http://restfulwebapis.org)). See the requests made in session where a new switch is created and linked with another one:\n\n```\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/network\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports?free=true\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/5ejnGalLRjeKNmWML4HZQQ--/ports?free=true\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports/FastEthernet0+3/link\n```\n\n- Discoverable API (uses [HTTP Link headers](https://www.w3.org/wiki/LinkHeader))\n- Extensively described with [Swagger](http://swagger.io/).\n\nThe following code shows the use of these features in practice:\n\n<script src=\"https://gist.github.com/gomezgoiri/0e9cfba5e5ecb61d8233722341ba0503.js\"></script>\n\n## How does it work?\n\nWhat does the API do behind the scenes?\n\n- It assigns one _Packet Tracer_ instance to each session (and destroys it afterwards). For more info, read the _Internal API_ subsection.\n- It records interactions in TinCan API. For more info, read the _Learning Analytics_ subsection.\n- It handles sessions using Redis. For example, it caches information of the running _Packet Tracer_ instance to reduce internal requests and speed up loading.\n\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/HegugNt9o-0\"\n>\n</iframe>","bodyHtml":"<p>Main technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/1fQsdI9iKwE\"\n>\n</iframe>\n<h2>Features</h2>\n<ul>\n<li>Implemented in <a href=\"https://jersey.java.net/\">Jersey 2.x</a>. The API follows the <a href=\"https://jax-rs-spec.java.net/\">JAX-RS 2.0</a> specification and fully uses annotations instead of ugly and obscure XML-based configurations.</li>\n<li>REST-like API where resources are the center of the interactions (note: it is <a href=\"http://restfulwebapis.org\">not fully hypermedia-driven</a>). See the requests made in session where a new switch is created and linked with another one:</li>\n</ul>\n<pre><code>POST http://forge.kmi.open.ac.uk/api/v1/sessions\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/network\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports?free=true\nGET http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/5ejnGalLRjeKNmWML4HZQQ--/ports?free=true\nPOST http://forge.kmi.open.ac.uk/api/v1/sessions/JcbaMo1lTh64loN_rTT8IA--/devices/DulfylcRSbWcotn.3Gt2bQ--/ports/FastEthernet0+3/link\n</code></pre>\n<ul>\n<li>Discoverable API (uses <a href=\"https://www.w3.org/wiki/LinkHeader\">HTTP Link headers</a>)</li>\n<li>Extensively described with <a href=\"http://swagger.io/\">Swagger</a>.</li>\n</ul>\n<p>The following code shows the use of these features in practice:</p>\n<script src=\"https://gist.github.com/gomezgoiri/0e9cfba5e5ecb61d8233722341ba0503.js\"></script>\n<h2>How does it work?</h2>\n<p>What does the API do behind the scenes?</p>\n<ul>\n<li>It assigns one <em>Packet Tracer</em> instance to each session (and destroys it afterwards). For more info, read the <em>Internal API</em> subsection.</li>\n<li>It records interactions in TinCan API. For more info, read the <em>Learning Analytics</em> subsection.</li>\n<li>It handles sessions using Redis. For example, it caches information of the running <em>Packet Tracer</em> instance to reduce internal requests and speed up loading.</li>\n</ul>\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/HegugNt9o-0\"\n>\n</iframe>","preview":"Main technologies used: JAX-RS (Jersey), Swagger & Redis.\n\nFeatures\n\nImplemented in Jersey 2.x. The API follows the JAX-RS 2.0 specification","dir":"content/coding","base":"ptAnywhere-http_api.json","ext":".json","sourceBase":"ptAnywhere-http_api.md","sourceExt":".md"},"content/coding/ptAnywhere-installation.json":{"title":"Installation","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":1,"date":"2016-06-03T00:00:00.000Z","bodyContent":"The complete installation process is described in detail [here](https://github.com/PTAnywhere/ptAnywhere-installation/wiki).\n\nAll the machines needed to create a typical _PT Anywhere_ installation can be **provisioned** using a modular [Ansible](https://www.ansible.com/) _playbook_ (it follows [best practices](http://docs.ansible.com/ansible/playbooks_best_practices.html)).\nThis _Ansible playbook_ describes the steps needed to install each component in a self-documented, simple and easy to read way.\nFor more details, check the [detailed instructions](https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Ansible).\n\n> Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.\n\nThe Ansible script can be used in already existing machines (virtual or not):\n\n    ansible-playbook -vvvv -u [remote-user] -i machine --private-key [private-key-location] --ask-become-pass main.yml\n\n---\n\nSometimes it might also be useful to **create and provision _virtual machines_** from scratch.\nFor example, during development it is useful to have a local machines which replicate production servers.\nTo this end, I also created a [Vagrant](https://www.vagrantup.com/) script.\n\n> Vagrant is a tool for building complete development environments.\n\nThis script defines the requirements for each machine (e.g., RAM, number of CPUs or OS type) and how to use Ansible to provision them.\nFor developers' convenience, I created two typical installation configurations:\n\n1.  An installation with _only one machine_.\n\n    In this machine, Ansible installs the web server, the scheduling module and the module which creates _Packet Tracer_ instances (using _Docker_).\n\n        $ MACHINES='./vagrant/one_machine.rb' vagrant up\n\n1.  An installation with _two machines_.\n\n    The first machine has the web server and the scheduling module.\n    The second machine manages _Packet Tracer_ instances using _Docker_.\n\nFor more details on how to use the _Vagrant_ script, check the [detailed instructions](https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Vagrant).\n\n---\n\nFinally, to create and provision the _Learning Record Store_ (LRS), I created a _PT Anywhere independent_ [GitHub project](https://github.com/gomezgoiri/learninglocker-centos7) which has other _Ansible_ and _Vagrant_ scripts.\nThese script can be used to install [Learning Locker](http://learninglocker.net/) (an open-source LRS) on [CentOS 7](https://www.centos.org/) and [RHEL 7](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) .\nFor more information on the LRS, you can go to the [Learning Analytics](coding/ptAnywhere-learning_analytics.html) section.\n\n> Learning Locker is the world's most installed LRS","bodyHtml":"<p>The complete installation process is described in detail <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki\">here</a>.</p>\n<p>All the machines needed to create a typical <em>PT Anywhere</em> installation can be <strong>provisioned</strong> using a modular <a href=\"https://www.ansible.com/\">Ansible</a> <em>playbook</em> (it follows <a href=\"http://docs.ansible.com/ansible/playbooks_best_practices.html\">best practices</a>).\nThis <em>Ansible playbook</em> describes the steps needed to install each component in a self-documented, simple and easy to read way.\nFor more details, check the <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Ansible\">detailed instructions</a>.</p>\n<blockquote>\n<p>Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.</p>\n</blockquote>\n<p>The Ansible script can be used in already existing machines (virtual or not):</p>\n<pre><code>ansible-playbook -vvvv -u [remote-user] -i machine --private-key [private-key-location] --ask-become-pass main.yml\n</code></pre>\n<hr>\n<p>Sometimes it might also be useful to <strong>create and provision <em>virtual machines</em></strong> from scratch.\nFor example, during development it is useful to have a local machines which replicate production servers.\nTo this end, I also created a <a href=\"https://www.vagrantup.com/\">Vagrant</a> script.</p>\n<blockquote>\n<p>Vagrant is a tool for building complete development environments.</p>\n</blockquote>\n<p>This script defines the requirements for each machine (e.g., RAM, number of CPUs or OS type) and how to use Ansible to provision them.\nFor developers' convenience, I created two typical installation configurations:</p>\n<ol>\n<li>\n<p>An installation with <em>only one machine</em>.</p>\n<p>In this machine, Ansible installs the web server, the scheduling module and the module which creates <em>Packet Tracer</em> instances (using <em>Docker</em>).</p>\n<pre><code>$ MACHINES='./vagrant/one_machine.rb' vagrant up\n</code></pre>\n</li>\n<li>\n<p>An installation with <em>two machines</em>.</p>\n<p>The first machine has the web server and the scheduling module.\nThe second machine manages <em>Packet Tracer</em> instances using <em>Docker</em>.</p>\n</li>\n</ol>\n<p>For more details on how to use the <em>Vagrant</em> script, check the <a href=\"https://github.com/PTAnywhere/ptAnywhere-installation/wiki/Install-PTAnywhere-using-Vagrant\">detailed instructions</a>.</p>\n<hr>\n<p>Finally, to create and provision the <em>Learning Record Store</em> (LRS), I created a <em>PT Anywhere independent</em> <a href=\"https://github.com/gomezgoiri/learninglocker-centos7\">GitHub project</a> which has other <em>Ansible</em> and <em>Vagrant</em> scripts.\nThese script can be used to install <a href=\"http://learninglocker.net/\">Learning Locker</a> (an open-source LRS) on <a href=\"https://www.centos.org/\">CentOS 7</a> and <a href=\"https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux\">RHEL 7</a> .\nFor more information on the LRS, you can go to the <a href=\"coding/ptAnywhere-learning_analytics.html\">Learning Analytics</a> section.</p>\n<blockquote>\n<p>Learning Locker is the world's most installed LRS</p>\n</blockquote>\n","preview":"The complete installation process is described in detail here.\n\nAll the machines needed to create a typical PT Anywhere installation can be","dir":"content/coding","base":"ptAnywhere-installation.json","ext":".json","sourceBase":"ptAnywhere-installation.md","sourceExt":".md"},"content/coding/ptAnywhere-internal_api.json":{"title":"Internal PT API","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":4,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n## Features\n\n- Implemented in [Flask](http://flask.pocoo.org/). Run on top of [Gunicorn](http://gunicorn.org/) and [Nginx](https://www.nginx.com/).\n- Extensively described with [Swagger](http://swagger.io/).\n- It uses [Docker](https://www.docker.com/) to run isolated _Packet Tracer_ instances in a lightweight manner.\n- It uses [Celery](http://www.celeryproject.org/) to manage Docker containers' lifecycle.\n\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/u3XQvArqBO0\"\n>\n</iframe>\n\n## How does it work?\n\nThe internal API uses Docker to create _Packet Tracer_ instances.\nHowever, requests always interact with Docker indirectly through Celery.\n\n### Docker\n\n_Packet Tracer_ instances are run isolated in a Docker container.\nInstead of creating a new instance/container for each _PT Anywhere_ session,\ncontainers are reused as much as possible.\n\nTo do this, we made a distinction between _Instance_ resources and _Allocation_ resources.\n**Instance** resources can be mapped to Docker containers.\nAn **Allocation** resource represent the exclusive use of one of these containers during a certain period.\n\nTo reduce containers' CPU consumption when they are not being used (i.e., they are not allocated by a session) they are paused.\nWhen a new allocation is requested and an instance is available, the internal API unpauses it and loads the initial file removing the data from any previous session.\nAll the containers are created using the same image and mounting a [data volume container](https://docs.docker.com/engine/userguide/containers/dockervolumes/) which contains _Packet Tracer_'s installation and configuration files.\n\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/kH8Uy5GU1ds\"\n>\n</iframe>\n\n### Celery\n\nCelery runs the following tasks in the background:\n\n- Create instance. Containers are created whenever they are needed only if certain thresholds have not been reached. E.g., general maximum CPU and memory limits are defined to avoid overloading the server.\n- Delete instance.\n- Allocate instance. This task either allocates available instances or triggers a creation task to get a new instance.\n- Deallocate instance. Once a _PTAnywhere_ session has ended, the associated instance (i.e., container) can be released.\n- Wait for instance to be ready. This task checks whether the _Packet Tracer_ instance inside a container answers to commands. In plain words, it is a sort of ping to _Packet Tracer_. After certain unsuccessful retries, it marks it as erroneous.\n- Monitor instance. Celery checks instances marked as faulty to see if their associated containers can be restarted. Otherwise they are deleted. This is a periodic task handled by [Celery Beat](http://docs.celeryproject.org/en/latest/reference/celery.beat.html).\n\nTo do these tasks, we use two queues: a normal one and a high priority one.\nThe high priority queue is used to ensure that allocations and deallocations are done as fast as possible.\nBoth tasks are the ones that the public API triggers and can be done immediately.\n\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/FWH38yjknNA\"\n>\n</iframe>","bodyHtml":"<p>Main technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n<h2>Features</h2>\n<ul>\n<li>Implemented in <a href=\"http://flask.pocoo.org/\">Flask</a>. Run on top of <a href=\"http://gunicorn.org/\">Gunicorn</a> and <a href=\"https://www.nginx.com/\">Nginx</a>.</li>\n<li>Extensively described with <a href=\"http://swagger.io/\">Swagger</a>.</li>\n<li>It uses <a href=\"https://www.docker.com/\">Docker</a> to run isolated <em>Packet Tracer</em> instances in a lightweight manner.</li>\n<li>It uses <a href=\"http://www.celeryproject.org/\">Celery</a> to manage Docker containers' lifecycle.</li>\n</ul>\n<iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/u3XQvArqBO0\"\n>\n</iframe>\n<h2>How does it work?</h2>\n<p>The internal API uses Docker to create <em>Packet Tracer</em> instances.\nHowever, requests always interact with Docker indirectly through Celery.</p>\n<h3>Docker</h3>\n<p><em>Packet Tracer</em> instances are run isolated in a Docker container.\nInstead of creating a new instance/container for each <em>PT Anywhere</em> session,\ncontainers are reused as much as possible.</p>\n<p>To do this, we made a distinction between <em>Instance</em> resources and <em>Allocation</em> resources.\n<strong>Instance</strong> resources can be mapped to Docker containers.\nAn <strong>Allocation</strong> resource represent the exclusive use of one of these containers during a certain period.</p>\n<p>To reduce containers' CPU consumption when they are not being used (i.e., they are not allocated by a session) they are paused.\nWhen a new allocation is requested and an instance is available, the internal API unpauses it and loads the initial file removing the data from any previous session.\nAll the containers are created using the same image and mounting a <a href=\"https://docs.docker.com/engine/userguide/containers/dockervolumes/\">data volume container</a> which contains <em>Packet Tracer</em>'s installation and configuration files.</p>\n<iframe\n  width=\"560\" height=\"315\"\n  style=\"width: 560px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/kH8Uy5GU1ds\"\n>\n</iframe>\n<h3>Celery</h3>\n<p>Celery runs the following tasks in the background:</p>\n<ul>\n<li>Create instance. Containers are created whenever they are needed only if certain thresholds have not been reached. E.g., general maximum CPU and memory limits are defined to avoid overloading the server.</li>\n<li>Delete instance.</li>\n<li>Allocate instance. This task either allocates available instances or triggers a creation task to get a new instance.</li>\n<li>Deallocate instance. Once a <em>PTAnywhere</em> session has ended, the associated instance (i.e., container) can be released.</li>\n<li>Wait for instance to be ready. This task checks whether the <em>Packet Tracer</em> instance inside a container answers to commands. In plain words, it is a sort of ping to <em>Packet Tracer</em>. After certain unsuccessful retries, it marks it as erroneous.</li>\n<li>Monitor instance. Celery checks instances marked as faulty to see if their associated containers can be restarted. Otherwise they are deleted. This is a periodic task handled by <a href=\"http://docs.celeryproject.org/en/latest/reference/celery.beat.html\">Celery Beat</a>.</li>\n</ul>\n<p>To do these tasks, we use two queues: a normal one and a high priority one.\nThe high priority queue is used to ensure that allocations and deallocations are done as fast as possible.\nBoth tasks are the ones that the public API triggers and can be done immediately.</p>\n <iframe\n  width=\"420\" height=\"315\"\n  style=\"width: 420px; height: 315px;\"\n  frameborder=\"0\" allowfullscreen\n  src=\"https://www.youtube.com/embed/FWH38yjknNA\"\n>\n</iframe>","preview":"Main technologies used: Flask, Celery & Docker.\n\nFeatures\n\nImplemented in Flask. Run on top of Gunicorn and Nginx.\nExtensively described","dir":"content/coding","base":"ptAnywhere-internal_api.json","ext":".json","sourceBase":"ptAnywhere-internal_api.md","sourceExt":".md"},"content/coding/ptAnywhere-intro.json":{"title":"Introduction","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":0,"date":"2016-06-03T00:00:00.000Z","bodyContent":"[Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/) is a network simulation tool created by [Cisco](http://www.cisco.com/).\nAs part of the [FORGE project](projects/forge.html), I developed a web version/frontend for it.\n\nHowever, despite of the simplicity of the user interface, the architecture which lies behind is not simple at all.\nIn this article, I will briefly explain the different parts of the architecture.\n\nA _PTAnywhere_ installation looks like the following image shows.\n\n<div class=\"text-center\" style=\"margin-bottom: 20px;\">\n  <img alt=\"PTAnywhere installation diagram\" src=\"https://raw.githubusercontent.com/wiki/PTAnywhere/ptAnywhere-installation/typical_installation.png\" width=\"60%\">\n</div>\n\nThere is a web server where the [PTAnywhere API](https://github.com/PTAnywhere/ptAnywhere-api) is deployed.\nAdditionally, it might also serve the web application with the [HTML widgets](https://github.com/PTAnywhere/ptAnywhere-widgets) which use the API.\nThe _PTAnywhere API_ uses a [Redis](http://redis.io/) database to handle students' sessions.\nIt also relies on one or more _PT managers_ to handle _Packet Tracer_ instances.\nEach manager can handle several concurrent instances.\nOptionally, the API can also record interaction details in a [Tin Can API](https://tincanapi.com/) compatible Learning Record Store (LRS).\n\nIn the next section, I briefly explain **how to install** _PTAnywhere_.\nHowever, if you are interested in a specific part of the architecture you can go directly to its explanation clicking in any of the following links:\n\n1.  [Web frontend (widget)](ptAnywhere-frontend.html).\n\n    Technologies used: [jQuery](https://jquery.com/), [vis.js](http://visjs.org/) & [Jasmine](http://jasmine.github.io/).\n\n1.  [HTTP API](ptAnywhere-http_api.html).\n\n    Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/) & [Redis](http://redis.io/).\n\n1.  [Internal Packet Tracer API](ptAnywhere-internal_api.html).\n\n    Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n1.  [Learning Analytics](ptAnywhere-learning_analytics.html).\n\n    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).","bodyHtml":"<p><a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Packet Tracer</a> is a network simulation tool created by <a href=\"http://www.cisco.com/\">Cisco</a>.\nAs part of the <a href=\"projects/forge.html\">FORGE project</a>, I developed a web version/frontend for it.</p>\n<p>However, despite of the simplicity of the user interface, the architecture which lies behind is not simple at all.\nIn this article, I will briefly explain the different parts of the architecture.</p>\n<p>A <em>PTAnywhere</em> installation looks like the following image shows.</p>\n<div class=\"text-center\" style=\"margin-bottom: 20px;\">\n  <img alt=\"PTAnywhere installation diagram\" src=\"https://raw.githubusercontent.com/wiki/PTAnywhere/ptAnywhere-installation/typical_installation.png\" width=\"60%\">\n</div>\n<p>There is a web server where the <a href=\"https://github.com/PTAnywhere/ptAnywhere-api\">PTAnywhere API</a> is deployed.\nAdditionally, it might also serve the web application with the <a href=\"https://github.com/PTAnywhere/ptAnywhere-widgets\">HTML widgets</a> which use the API.\nThe <em>PTAnywhere API</em> uses a <a href=\"http://redis.io/\">Redis</a> database to handle students' sessions.\nIt also relies on one or more <em>PT managers</em> to handle <em>Packet Tracer</em> instances.\nEach manager can handle several concurrent instances.\nOptionally, the API can also record interaction details in a <a href=\"https://tincanapi.com/\">Tin Can API</a> compatible Learning Record Store (LRS).</p>\n<p>In the next section, I briefly explain <strong>how to install</strong> <em>PTAnywhere</em>.\nHowever, if you are interested in a specific part of the architecture you can go directly to its explanation clicking in any of the following links:</p>\n<ol>\n<li>\n<p><a href=\"ptAnywhere-frontend.html\">Web frontend (widget)</a>.</p>\n<p>Technologies used: <a href=\"https://jquery.com/\">jQuery</a>, <a href=\"http://visjs.org/\">vis.js</a> &amp; <a href=\"http://jasmine.github.io/\">Jasmine</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-http_api.html\">HTTP API</a>.</p>\n<p>Technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-internal_api.html\">Internal Packet Tracer API</a>.</p>\n<p>Technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n</li>\n<li>\n<p><a href=\"ptAnywhere-learning_analytics.html\">Learning Analytics</a>.</p>\n<p>Technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>), <a href=\"http://www.chartjs.org/\">Chart.js</a> &amp; <a href=\"http://visjs.org/\">vis.js</a>.</p>\n</li>\n</ol>\n","preview":"Packet Tracer is a network simulation tool created by Cisco.\nAs part of the FORGE project, I developed a web version/frontend for","dir":"content/coding","base":"ptAnywhere-intro.json","ext":".json","sourceBase":"ptAnywhere-intro.md","sourceExt":".md"},"content/coding/ptAnywhere-learning_analytics.json":{"title":"Learning Analytics","subtitle":"PT Anywhere","subsection":"ptanywhere","subsectionOrder":5,"date":"2016-06-03T00:00:00.000Z","bodyContent":"Main technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)).\n\n## Data recorded\n\nTin Can API records data in so called statements.\nThey conceptually capture a learning activity.\n\nThese statements are composed by the following elements: subject, verb, activity, result and context.\nThe following table summarizes what _PT Anywhere_ records and how.\nFor a more detailed documentation, visit [this page](https://github.com/PTAnywhere/ptAnywhere-api/wiki/Vocabulary-used-to-capture-user-interaction).\n\n<div class=\"row\" style=\"margin-top: 4%\">\n  <div class=\"col-sm-offset-2 col-sm-8\">\n    <table class=\"table table-striped\">\n      <tbody>\n        <tr>\n          <th scope=\"row\">Subject</th>\n          <td class=\"text-right\">Anonymized ID. Reused from a previous session ID if possible.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Verb</th>\n          <td class=\"text-right\">Initialized, terminated, created, deleted, updated and used.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Activity</th>\n          <td class=\"text-right\">Widget, Device, Link and Command line.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Result</th>\n          <td class=\"text-right\">\n            Specific for an activity instantiation.<br />\n            It has general data and application specific information<br />\n            (discouraged because does not promote interoperability).\n          </td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Context</th>\n          <td class=\"text-right\">Session ID and activity categorization.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n\n<div class=\"row\" style=\"margin-top: 4%\">\n  <img class=\"col-sm-offset-2 col-sm-8\" alt=\"Learning Locker screenshot\" src=\"https://i.imgur.com/rus5D9pl.png\" />\n</div>\n\n## Features of the dashboard\n\n- Client-side visualizations use [Chart.js](http://www.chartjs.org/), & [vis.js](http://visjs.org/).\n- Client-side dashboard uses [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/) & [Bootstrap](http://getbootstrap.com/).\n- Server-side application is implemented in [Jersey 2.x](https://jersey.java.net/) using [Freemarker](http://freemarker.org/).\n- The _Learning Record Store_ is queried using [Learning Locker's Aggregation API](http://docs.learninglocker.net/statements_api/#aggregate).\n\n<div class=\"row\">\n  <iframe\n    width=\"560\" height=\"315\"\n    style=\"width: 560px; height: 315px;\"\n    frameborder=\"0\" allowfullscreen\n    src=\"https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj\"\n  >\n  </iframe>\n</div>\n\n## Data analysis\n\nMain technologies used: [Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), [SciPy](https://www.scipy.org/), [Sklearn](http://scikit-learn.org) and [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/index.html).","bodyHtml":"<p>Main technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>).</p>\n<h2>Data recorded</h2>\n<p>Tin Can API records data in so called statements.\nThey conceptually capture a learning activity.</p>\n<p>These statements are composed by the following elements: subject, verb, activity, result and context.\nThe following table summarizes what <em>PT Anywhere</em> records and how.\nFor a more detailed documentation, visit <a href=\"https://github.com/PTAnywhere/ptAnywhere-api/wiki/Vocabulary-used-to-capture-user-interaction\">this page</a>.</p>\n<div class=\"row\" style=\"margin-top: 4%\">\n  <div class=\"col-sm-offset-2 col-sm-8\">\n    <table class=\"table table-striped\">\n      <tbody>\n        <tr>\n          <th scope=\"row\">Subject</th>\n          <td class=\"text-right\">Anonymized ID. Reused from a previous session ID if possible.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Verb</th>\n          <td class=\"text-right\">Initialized, terminated, created, deleted, updated and used.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Activity</th>\n          <td class=\"text-right\">Widget, Device, Link and Command line.</td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Result</th>\n          <td class=\"text-right\">\n            Specific for an activity instantiation.<br />\n            It has general data and application specific information<br />\n            (discouraged because does not promote interoperability).\n          </td>\n        </tr>\n        <tr>\n          <th scope=\"row\">Context</th>\n          <td class=\"text-right\">Session ID and activity categorization.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>\n<div class=\"row\" style=\"margin-top: 4%\">\n  <img class=\"col-sm-offset-2 col-sm-8\" alt=\"Learning Locker screenshot\" src=\"https://i.imgur.com/rus5D9pl.png\" />\n</div>\n<h2>Features of the dashboard</h2>\n<ul>\n<li>Client-side visualizations use <a href=\"http://www.chartjs.org/\">Chart.js</a>, &amp; <a href=\"http://visjs.org/\">vis.js</a>.</li>\n<li>Client-side dashboard uses <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"https://jquery.com/\">jQuery</a> &amp; <a href=\"http://getbootstrap.com/\">Bootstrap</a>.</li>\n<li>Server-side application is implemented in <a href=\"https://jersey.java.net/\">Jersey 2.x</a> using <a href=\"http://freemarker.org/\">Freemarker</a>.</li>\n<li>The <em>Learning Record Store</em> is queried using <a href=\"http://docs.learninglocker.net/statements_api/#aggregate\">Learning Locker's Aggregation API</a>.</li>\n</ul>\n<div class=\"row\">\n  <iframe\n    width=\"560\" height=\"315\"\n    style=\"width: 560px; height: 315px;\"\n    frameborder=\"0\" allowfullscreen\n    src=\"https://www.youtube.com/embed/_KDi_PMIkHU?list=PLq80PTvJrjOApf1Jkap6BX8uvU514HOSj\"\n  >\n  </iframe>\n</div>\n<h2>Data analysis</h2>\n<p>Main technologies used: <a href=\"http://pandas.pydata.org/\">Pandas</a>, <a href=\"http://matplotlib.org/\">Matplotlib</a>, <a href=\"https://www.scipy.org/\">SciPy</a>, <a href=\"http://scikit-learn.org\">Sklearn</a> and <a href=\"https://stanford.edu/~mwaskom/software/seaborn/index.html\">Seaborn</a>.</p>\n","preview":"Main technologies used: Tin Can API (Learning Locker).\n\nData recorded\n\nTin Can API records data in so called statements.\nThey conceptually","dir":"content/coding","base":"ptAnywhere-learning_analytics.json","ext":".json","sourceBase":"ptAnywhere-learning_analytics.md","sourceExt":".md"},"content/cv/career/2007.json":{"title":"Asanpi 2000 S.L.","what":"System administrator","when":"2007","where":"Abanto-Zierbena, Spain","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2007.json","ext":".json","sourceBase":"2007.md","sourceExt":".md"},"content/cv/career/2011a.json":{"title":"University of Deusto","what":"Assistant lecturer","when":"2011 and 2012","where":"Bilbao, Spain","bodyContent":"I taught BSc and MSc students _programming_ (data structures and algorithms in Java) and\n_development tools_ (VCS, unit testing, continuous integration and issue tracking systems).\n_Additional skills_: communication & working to deadlines.","bodyHtml":"<p>I taught BSc and MSc students <em>programming</em> (data structures and algorithms in Java) and\n<em>development tools</em> (VCS, unit testing, continuous integration and issue tracking systems).\n<em>Additional skills</em>: communication &amp; working to deadlines.</p>\n","preview":"I taught BSc and MSc students programming (data structures and algorithms in Java) and\ndevelopment tools (VCS, unit testing, continuous","dir":"content/cv/career","base":"2011a.json","ext":".json","sourceBase":"2011a.md","sourceExt":".md"},"content/cv/career/2011b.json":{"title":"Lancaster University","what":"Visiting researcher","when":"2011 (6 weeks)","where":"Lancaster, UK","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2011b.json","ext":".json","sourceBase":"2011b.md","sourceExt":".md"},"content/cv/career/2013.json":{"title":"ETH Zürich","what":"Visiting researcher","when":"2013 (7 weeks)","where":"Zürich, Switzerland","bodyContent":"","bodyHtml":"","dir":"content/cv/career","base":"2013.json","ext":".json","sourceBase":"2013.md","sourceExt":".md"},"content/cv/career/2015.json":{"title":"University of Deusto","what":"Research Associate, Research Assistant","when":"2008-2014, 2014-2015","where":"Bilbao, Spain","bodyContent":"I installed and managed a multi-node [OpenStack](https://www.openstack.org/) cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring its [high availability](https://github.com/gomezgoiri/weblabdeusto-playbooks).\nI co-designed and implemented an authentication and authorization mechanism for [hardware-constrained devices](https://github.com/lightsec).\nI ported the [CLIPS](http://www.clipsrules.net/) [rule-based reasoner to Android](https://github.com/gomezgoiri/CLIPS4Android).\n_Additional skills_: team working, self-learning, agile methodologies, working to deadlines & problem assessing and solving.\n\n<!--\nIn the ISMED and ACROSS projects, I developed a Semantic and Web based middleware for different mobile and embedded platforms.\nWorking at the Internet Unit of the Deusto Institute of Technology, DeustoTech.\nI am involved in projects related with the use of Semantic and Web Technologies in resource constrained devices (i.e., mobile and embedded devices).\nAs part of Adizain project, I created a distributed OSGi application which used a queue-based communication.\n-->","bodyHtml":"<p>I installed and managed a multi-node <a href=\"https://www.openstack.org/\">OpenStack</a> cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring its <a href=\"https://github.com/gomezgoiri/weblabdeusto-playbooks\">high availability</a>.\nI co-designed and implemented an authentication and authorization mechanism for <a href=\"https://github.com/lightsec\">hardware-constrained devices</a>.\nI ported the <a href=\"http://www.clipsrules.net/\">CLIPS</a> <a href=\"https://github.com/gomezgoiri/CLIPS4Android\">rule-based reasoner to Android</a>.\n<em>Additional skills</em>: team working, self-learning, agile methodologies, working to deadlines &amp; problem assessing and solving.</p>\n<!--\nIn the ISMED and ACROSS projects, I developed a Semantic and Web based middleware for different mobile and embedded platforms.\nWorking at the Internet Unit of the Deusto Institute of Technology, DeustoTech.\nI am involved in projects related with the use of Semantic and Web Technologies in resource constrained devices (i.e., mobile and embedded devices).\nAs part of Adizain project, I created a distributed OSGi application which used a queue-based communication.\n-->","preview":"I installed and managed a multi-node OpenStack cloud. This cloud hosted the components of a web application (a remote laboratory) ensuring","dir":"content/cv/career","base":"2015.json","ext":".json","sourceBase":"2015.md","sourceExt":".md"},"content/cv/career/2016.json":{"title":"Open University","what":"Research Associate","when":"2015-2016","where":"Milton Keynes, UK","bodyContent":"Lead design, development and maintenance of [PT Anywhere](http://pt-anywhere.kmi.open.ac.uk/),<br />\na web version for the popular network simulator ([Cisco Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/)).<br />\nScaling up PT to run more than 500 simultaneous instances per machine using Docker.<br />\nCreating web API for managing instance allocation and creation based on the computer load.<br />\nCreating tools and visualizations to aid teachers improving students' learning process.<br />\nCreating automatic provision scripts for every component of the architecture.<br />\nResearch on Technology Enhanced Learning within [FORGE](http://ict-forge.eu/) and [weSPOT](http://wespot.net) EU projects.<br />\n_Additional skills_: agile methodologies & problem assessing and solving.","bodyHtml":"<p>Lead design, development and maintenance of <a href=\"http://pt-anywhere.kmi.open.ac.uk/\">PT Anywhere</a>,<br />\na web version for the popular network simulator (<a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Cisco Packet Tracer</a>).<br />\nScaling up PT to run more than 500 simultaneous instances per machine using Docker.<br />\nCreating web API for managing instance allocation and creation based on the computer load.<br />\nCreating tools and visualizations to aid teachers improving students' learning process.<br />\nCreating automatic provision scripts for every component of the architecture.<br />\nResearch on Technology Enhanced Learning within <a href=\"http://ict-forge.eu/\">FORGE</a> and <a href=\"http://wespot.net\">weSPOT</a> EU projects.<br />\n<em>Additional skills</em>: agile methodologies &amp; problem assessing and solving.</p>\n","preview":"Lead design, development and maintenance of PT Anywhere,\na web version for the popular network simulator (Cisco Packet Tracer).\nScaling up","dir":"content/cv/career","base":"2016.json","ext":".json","sourceBase":"2016.md","sourceExt":".md"},"content/cv/career/2019.json":{"title":"IKERLAN","what":"Researcher at the Big Data Architectures team","when":"2016-2019","where":"Arrasate, Spain","bodyContent":"I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing scales or remote controls). The webapps I built let customers monitor their equipment, actuate over it and exploit the data they send to guarantee their correct maintenance.\n\n- Data visualizations in Single-page applications using _React_ and _Redux_. Interaction with devices using websockets and MQTT protocol.\n- Web APIs using _AWS API Gateway_ or _Springboot_ and integrating several authentication services.\n- Data ingest using _Spark structured streaming_, _Apache Kafka_ and _AWS Lambda functions_.\n- Storage using both relational and NoSQL databases like _PostgreSQL_, _DynamoDB_ o _InfluxDB_.\n- Automated deployment using Serverless framework, Maven and Docker containers.","bodyHtml":"<p>I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing scales or remote controls). The webapps I built let customers monitor their equipment, actuate over it and exploit the data they send to guarantee their correct maintenance.</p>\n<ul>\n<li>Data visualizations in Single-page applications using <em>React</em> and <em>Redux</em>. Interaction with devices using websockets and MQTT protocol.</li>\n<li>Web APIs using <em>AWS API Gateway</em> or <em>Springboot</em> and integrating several authentication services.</li>\n<li>Data ingest using <em>Spark structured streaming</em>, <em>Apache Kafka</em> and <em>AWS Lambda functions</em>.</li>\n<li>Storage using both relational and NoSQL databases like <em>PostgreSQL</em>, <em>DynamoDB</em> o <em>InfluxDB</em>.</li>\n<li>Automated deployment using Serverless framework, Maven and Docker containers.</li>\n</ul>\n","preview":"I designed and developed several projects where Internet connectivity was provided to industrial equipment (e.g. press machines, weighing","dir":"content/cv/career","base":"2019.json","ext":".json","sourceBase":"2019.md","sourceExt":".md"},"content/cv/career/2019b.json":{"title":"Tecnalia","what":"Senior researcher at Cybersecurity team","when":"Since 2019","where":"Vitoria-Gasteiz, Spain","bodyContent":"I designed and developed several decentralized applications for a range of projects where blockchain (or more generally _distributed ledger_) technologies were used to ensure an immutable, agreed and shared state between untrusted parties.\n\n- Smart-contracts for [Ethereum](https://ethereum.org/) with Solidity.\n- ÐApps in Javascript.","bodyHtml":"<p>I designed and developed several decentralized applications for a range of projects where blockchain (or more generally <em>distributed ledger</em>) technologies were used to ensure an immutable, agreed and shared state between untrusted parties.</p>\n<ul>\n<li>Smart-contracts for <a href=\"https://ethereum.org/\">Ethereum</a> with Solidity.</li>\n<li>ÐApps in Javascript.</li>\n</ul>\n","preview":"I designed and developed several decentralized applications for a range of projects where blockchain (or more generally distributed ledger)","dir":"content/cv/career","base":"2019b.json","ext":".json","sourceBase":"2019b.md","sourceExt":".md"},"content/cv/education/2008.json":{"title":"University of Deusto","when":"2002-2008","where":"Bilbao, Spain","bodyContent":"__B.Sc.__ Computer Engineering<br />\n__B.Sc.__ Industrial Organization Engineering<br />\n(Joint Degree)","bodyHtml":"<p><strong>B.Sc.</strong> Computer Engineering<br />\n<strong>B.Sc.</strong> Industrial Organization Engineering<br />\n(Joint Degree)</p>\n","preview":"B.Sc. Computer Engineering\nB.Sc. Industrial Organization Engineering\n(Joint Degree)","dir":"content/cv/education","base":"2008.json","ext":".json","sourceBase":"2008.md","sourceExt":".md"},"content/cv/education/2010.json":{"title":"University of Deusto","when":"2009-2010","where":"Bilbao, Spain","bodyContent":"__M.Sc.__ in Development and Integration of Software Solutions<br />\nSpecializations: Java and mobile computing.","bodyHtml":"<p><strong>M.Sc.</strong> in Development and Integration of Software Solutions<br />\nSpecializations: Java and mobile computing.</p>\n","preview":"M.Sc. in Development and Integration of Software Solutions\nSpecializations: Java and mobile computing.","dir":"content/cv/education","base":"2010.json","ext":".json","sourceBase":"2010.md","sourceExt":".md"},"content/cv/education/2014.json":{"title":"University of Deusto","when":"2010-2014","where":"Bilbao, Spain","bodyContent":"__PhD__ in Computer Science.<br />\nDissertation: &#8220;_Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision_&#8221;\n<!-- Supervisors: Diego L&oacute;pez-de-Ipi&ntilde;a and I&ntilde;igo Goiri. -->","bodyHtml":"<p><strong>PhD</strong> in Computer Science.<br />\nDissertation: “<em>Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision</em>”</p>\n<!-- Supervisors: Diego L&oacute;pez-de-Ipi&ntilde;a and I&ntilde;igo Goiri. -->","preview":"PhD in Computer Science.\nDissertation: &#8220;Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision&#8221;","dir":"content/cv/education","base":"2014.json","ext":".json","sourceBase":"2014.md","sourceExt":".md"},"content/cv/technical/02-languages.json":{"title":"Languages","bodyContent":"[JavaScript](http://www.w3schools.com/js/), [Java](http://www.java.com), [Python](https://www.python.org) and others to a lesser extent\n\n<!-- [PHP](http://php.net), [SQL](http://www.w3schools.com/sql/) & [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) -->","bodyHtml":"<p><a href=\"http://www.w3schools.com/js/\">JavaScript</a>, <a href=\"http://www.java.com\">Java</a>, <a href=\"https://www.python.org\">Python</a> and others to a lesser extent</p>\n<!-- [PHP](http://php.net), [SQL](http://www.w3schools.com/sql/) & [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) -->","preview":"JavaScript, Java, Python and others to a lesser extent","dir":"content/cv/technical","base":"02-languages.json","ext":".json","sourceBase":"02-languages.md","sourceExt":".md"},"content/cv/technical/03-frontend.json":{"title":"Web frontend","bodyContent":"[HTML5](http://www.w3schools.com/html/html5_intro.asp), [CSS](http://www.w3schools.com/css/), [React](https://reactjs.org/), [Redux](https://es.redux.js.org/) y [Rxjs](https://rxjs-dev.firebaseapp.com/) <br/>\nWide experience using libraries like [Material UI](https://material-ui.com/), [Highcharts](https://www.highcharts.com/), [vis.js](http://visjs.org/) or [Google maps](https://www.google.com/maps)\n\n<!-- [AngularJS](https://angularjs.org/), [jQuery](https://jquery.com/) -->","bodyHtml":"<p><a href=\"http://www.w3schools.com/html/html5_intro.asp\">HTML5</a>, <a href=\"http://www.w3schools.com/css/\">CSS</a>, <a href=\"https://reactjs.org/\">React</a>, <a href=\"https://es.redux.js.org/\">Redux</a> y <a href=\"https://rxjs-dev.firebaseapp.com/\">Rxjs</a> <br/>\nWide experience using libraries like <a href=\"https://material-ui.com/\">Material UI</a>, <a href=\"https://www.highcharts.com/\">Highcharts</a>, <a href=\"http://visjs.org/\">vis.js</a> or <a href=\"https://www.google.com/maps\">Google maps</a></p>\n<!-- [AngularJS](https://angularjs.org/), [jQuery](https://jquery.com/) -->","preview":"HTML5, CSS, React, Redux y Rxjs\nWide experience using libraries like Material UI, Highcharts, vis.js or Google maps","dir":"content/cv/technical","base":"03-frontend.json","ext":".json","sourceBase":"03-frontend.md","sourceExt":".md"},"content/cv/technical/04-backend.json":{"title":"Web backend","bodyContent":"REST, [Springboot](https://spring.io/projects/spring-boot), [Jersey](https://jersey.java.net/) ([JAX-RS](https://jax-rs-spec.java.net/)), [Flask](http://flask.pocoo.org/), Websockets, [Keycloak](https://www.keycloak.org), [Celery](http://www.celeryproject.org/) & [Swagger](http://swagger.io/)\n\n<!-- [Restlet](https://restlet.com/) -->","bodyHtml":"<p>REST, <a href=\"https://spring.io/projects/spring-boot\">Springboot</a>, <a href=\"https://jersey.java.net/\">Jersey</a> (<a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a>), <a href=\"http://flask.pocoo.org/\">Flask</a>, Websockets, <a href=\"https://www.keycloak.org\">Keycloak</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"http://swagger.io/\">Swagger</a></p>\n<!-- [Restlet](https://restlet.com/) -->","preview":"REST, Springboot, Jersey (JAX-RS), Flask, Websockets, Keycloak, Celery & Swagger","dir":"content/cv/technical","base":"04-backend.json","ext":".json","sourceBase":"04-backend.md","sourceExt":".md"},"content/cv/technical/05-aws.json":{"title":"Amazon WS","bodyContent":"Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 & _Cognito_","bodyHtml":"<p>Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 &amp; <em>Cognito</em></p>\n","preview":"Gateway API, Lambda, Cloudfront, RDS, DynamoDB, Iot, Elastic Beanstalk, S3 & Cognito","dir":"content/cv/technical","base":"05-aws.json","ext":".json","sourceBase":"05-aws.md","sourceExt":".md"},"content/cv/technical/06-big-data.json":{"title":"Big data","bodyContent":"[Spark structured streaming](https://spark.apache.org) & [Kafka](https://kafka.apache.org/)","bodyHtml":"<p><a href=\"https://spark.apache.org\">Spark structured streaming</a> &amp; <a href=\"https://kafka.apache.org/\">Kafka</a></p>\n","preview":"Spark structured streaming & Kafka","dir":"content/cv/technical","base":"06-big-data.json","ext":".json","sourceBase":"06-big-data.md","sourceExt":".md"},"content/cv/technical/07-data-analysis.json":{"title":"Data Analysis","bodyContent":"[Pandas](http://pandas.pydata.org/), [Matplotlib](http://matplotlib.org/), _[Scikit-learn](http://scikit-learn.org)_ & [Jupyter](https://ipython.org/notebook.html)","bodyHtml":"<p><a href=\"http://pandas.pydata.org/\">Pandas</a>, <a href=\"http://matplotlib.org/\">Matplotlib</a>, <em><a href=\"http://scikit-learn.org\">Scikit-learn</a></em> &amp; <a href=\"https://ipython.org/notebook.html\">Jupyter</a></p>\n","preview":"Pandas, Matplotlib, Scikit-learn & Jupyter","dir":"content/cv/technical","base":"07-data-analysis.json","ext":".json","sourceBase":"07-data-analysis.md","sourceExt":".md"},"content/cv/technical/08-mobile-iot.json":{"title":"Mobile & IoT","bodyContent":"[Android](https://www.android.com/), Linux-based embedded platforms (e.g., [Raspberry Pi](https://www.raspberrypi.org/)) & _[Arduino](https://www.arduino.cc/)_","bodyHtml":"<p><a href=\"https://www.android.com/\">Android</a>, Linux-based embedded platforms (e.g., <a href=\"https://www.raspberrypi.org/\">Raspberry Pi</a>) &amp; <em><a href=\"https://www.arduino.cc/\">Arduino</a></em></p>\n","preview":"Android, Linux-based embedded platforms (e.g., Raspberry Pi) & Arduino","dir":"content/cv/technical","base":"08-mobile-iot.json","ext":".json","sourceBase":"08-mobile-iot.md","sourceExt":".md"},"content/cv/technical/09-db.json":{"title":"Databases","bodyContent":"[PostgreSQL](https://www.postgresql.org/), [DynamoDB](https://aws.amazon.com/es/dynamodb/), _[InfluxDB](https://www.influxdata.com/)_, [Redis](http://redis.io/), [MongoDB](https://www.mongodb.org/), [MySQL](https://www.mysql.com/), RDF Stores ([Sesame](http://rdf4j.org/), [GraphDB](http://ontotext.com/products/graphdb/)) & [Learning Locker](https://learninglocker.net) ([Tin Can API](http://tincanapi.com/))","bodyHtml":"<p><a href=\"https://www.postgresql.org/\">PostgreSQL</a>, <a href=\"https://aws.amazon.com/es/dynamodb/\">DynamoDB</a>, <em><a href=\"https://www.influxdata.com/\">InfluxDB</a></em>, <a href=\"http://redis.io/\">Redis</a>, <a href=\"https://www.mongodb.org/\">MongoDB</a>, <a href=\"https://www.mysql.com/\">MySQL</a>, RDF Stores (<a href=\"http://rdf4j.org/\">Sesame</a>, <a href=\"http://ontotext.com/products/graphdb/\">GraphDB</a>) &amp; <a href=\"https://learninglocker.net\">Learning Locker</a> (<a href=\"http://tincanapi.com/\">Tin Can API</a>)</p>\n","preview":"PostgreSQL, DynamoDB, InfluxDB, Redis, MongoDB, MySQL, RDF Stores (Sesame, GraphDB) & Learning Locker (Tin Can API)","dir":"content/cv/technical","base":"09-db.json","ext":".json","sourceBase":"09-db.md","sourceExt":".md"},"content/cv/technical/10-devops.json":{"title":"DevOps","bodyContent":"[Docker](https://www.docker.com/), [Ansible](https://www.ansible.com/), [Jenkins](https://jenkins-ci.org/), [Maven](https://maven.apache.org/), [Npm](https://www.npmjs.com), [Serverless](https://serverless.com), [Pip](https://pip.pypa.io), [Git](https://git-scm.com/), _[Mercurial](https://www.mercurial-scm.org/)_ & [SVN](https://subversion.apache.org/)\n\n<!-- [Vagrant](https://www.vagrantup.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/) -->","bodyHtml":"<p><a href=\"https://www.docker.com/\">Docker</a>, <a href=\"https://www.ansible.com/\">Ansible</a>, <a href=\"https://jenkins-ci.org/\">Jenkins</a>, <a href=\"https://maven.apache.org/\">Maven</a>, <a href=\"https://www.npmjs.com\">Npm</a>, <a href=\"https://serverless.com\">Serverless</a>, <a href=\"https://pip.pypa.io\">Pip</a>, <a href=\"https://git-scm.com/\">Git</a>, <em><a href=\"https://www.mercurial-scm.org/\">Mercurial</a></em> &amp; <a href=\"https://subversion.apache.org/\">SVN</a></p>\n<!-- [Vagrant](https://www.vagrantup.com/), [Gulp](http://gulpjs.com/), [Bower](http://bower.io/) -->","preview":"Docker, Ansible, Jenkins, Maven, Npm, Serverless, Pip, Git, Mercurial & SVN","dir":"content/cv/technical","base":"10-devops.json","ext":".json","sourceBase":"10-devops.md","sourceExt":".md"},"content/cv/technical/11-testing.json":{"title":"Testing","bodyContent":"XUnit, [Mockito](http://mockito.org/), [EasyMock](http://easymock.org/), [Jasmine](http://jasmine.github.io/), _[jMeter](http://jmeter.apache.org/)_ & _[Selenium](http://www.seleniumhq.org/)_\n\n<!-- From PhD: RESTdesc, FuXi, SimPy, pyzeroconf -->","bodyHtml":"<p>XUnit, <a href=\"http://mockito.org/\">Mockito</a>, <a href=\"http://easymock.org/\">EasyMock</a>, <a href=\"http://jasmine.github.io/\">Jasmine</a>, <em><a href=\"http://jmeter.apache.org/\">jMeter</a></em> &amp; <em><a href=\"http://www.seleniumhq.org/\">Selenium</a></em></p>\n<!-- From PhD: RESTdesc, FuXi, SimPy, pyzeroconf -->","preview":"XUnit, Mockito, EasyMock, Jasmine, jMeter & Selenium","dir":"content/cv/technical","base":"11-testing.json","ext":".json","sourceBase":"11-testing.md","sourceExt":".md"},"content/cv/technical/12-os.json":{"title":"OS","bodyContent":"Sysadmin on [GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html) ([Debian](https://www.debian.org/) and [RHEL](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/) -based) & _[OpenStack](https://www.openstack.org/)_","bodyHtml":"<p>Sysadmin on <a href=\"http://www.gnu.org/gnu/linux-and-gnu.html\">GNU/Linux</a> (<a href=\"https://www.debian.org/\">Debian</a> and <a href=\"https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.0_Release_Notes/\">RHEL</a> -based) &amp; <em><a href=\"https://www.openstack.org/\">OpenStack</a></em></p>\n","preview":"Sysadmin on GNU/Linux (Debian and RHEL -based) & OpenStack","dir":"content/cv/technical","base":"12-os.json","ext":".json","sourceBase":"12-os.md","sourceExt":".md"},"content/index.json":{"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","page":"/","paths":["/","/index.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"index.json","ext":".json","sourceBase":"index.md","sourceExt":".md"},"content/landing/contact.json":{"siteTitle":"Aitor Gómez Goiri","description":"Aitor's personal website","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","email":"aitor.gomez [at] tecnalia.com","web":"http://gomezgoiri.net","twitter":"gomezgoiri","github":"gomezgoiri","linkedin":"gomezgoiri","orcid":"0000-0002-5576-0379","slideshare":"twolf","contactQr":"https://tinyurl.com/jlbwljw","bodyContent":"","bodyHtml":"","dir":"content/landing","base":"contact.json","ext":".json","sourceBase":"contact.md","sourceExt":".md"},"content/landing/profile.json":{"author":"Aitor Gómez Goiri","gravatar":"b0f00a2ea95fb62954454074a4a6fc28","bodyContent":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-dissertation.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","bodyHtml":"<p>\n  I&apos;m a senior researcher at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"https://www.tecnalia.com/\">\n      <span itemProp=\"name\">Tecnalia</span>\n    </a>\n  </span>.\n  From 2016 to 2019 I worked at\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <a href=\"http://www.ikerlan.es\">\n      <span itemProp=\"name\">Ikerlan</span>\n    </a>\n  </span> and from 2015 to 2016, at the\n  <span\n    itemProp=\"affiliation\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    <span\n      itemProp=\"department\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <a href=\"http://kmi.open.ac.uk\" itemProp=\"url\">\n        <span itemProp=\"name\">Knowledge Media Institute</span>, KMi\n      </a>\n    </span>\n    (<a href=\"http://www.open.ac.uk\" itemProp=\"url\">\n      <span itemProp=\"name\">the Open University</span>\n    </a>, UK)\n  </span>.\n  Before 2015, I worked at the\n  <a href=\"http://www.morelab.deusto.es/\">MORElab research group</a> and\n  as an Assistant Professor at the\n  <a href=\"http://www.deusto.es/\">University of Deusto</a>.\n  <span\n    itemProp=\"alumniOf\"\n    itemScope\n    itemType=\"http://schema.org/Organization\"\n  >\n    I finished a\n    <a href=\"http://en.wikipedia.org/wiki/Double_degree\">\n      joint-degree\n    </a>\n    on\n    <a href=\"http://www.deusto.es/servlet/Satellite/Estudio/1110478598746/_ingl/%231102609955027%231120828512741%231120828512859/0/c0/UniversidadDeusto/comun/render?tipoColeccion=Page\">\n      Computer Engineering and Engineering in Industrial Organization\n    </a>\n    in 2008 and a MSc in\n    <a href=\"http://www.diss.deusto.es/\">Software Development</a> in\n    2010 and\n    <a\n      href=\"publications/gomezgoiri-dissertation.html\"\n      style={boldStyle}\n    >\n      my PhD\n    </a>\n    in 2014 at the\n    <span\n      itemProp=\"affiliation\"\n      itemScope\n      itemType=\"http://schema.org/Organization\"\n    >\n      <span itemProp=\"name\">University of Deusto</span>.\n    </span>\n  </span>\n</p>","preview":"I&apos;m a senior researcher at\n\n      Tecnalia\n\n  .\n  From 2016 to 2019 I worked at\n\n      Ikerlan\n\n   and from 2015 to 2016, at the","title":"Tecnalia","dir":"content/landing","base":"profile.json","ext":".json","sourceBase":"profile.md","sourceExt":".md"},"content/projects.json":{"title":"Open source contributions","description":"Publications","page":"/coding/section","paths":["/projects.html"],"bodyContent":"Since I first heard about [free software](http://www.gnu.org/philosophy/free-sw.html) back in my [student days](http://www.e-ghost.deusto.es/), I have always been interested in it.\nI am a supporter of this community and its philosophy.\n\nAs a way to give back part of what I have received, I have given some talks but more importantly I have contributed to several open-source projects as often as my research has allowed me.\n\nInstead of simply putting a link to my [GitHub account](https://github.com/gomezgoiri), in this section I will discuss some of the most interesting projects that I have made.\nFor a more research-oriented view of my work, please visit the [R&amp;D section](research_projects.html).\n\n## PT Anywhere\n\n[Packet Tracer](https://www.netacad.com/about-networking-academy/packet-tracer/) is a network simulation tool created by [Cisco](http://www.cisco.com/).\nAs part of the [FORGE project](/projects/forge), I developed a web version/frontend for it.\n\nDuring the following articles, I will guide you through the features I developed for it:\n\n1.  [Introduction - Architecture](coding/ptAnywhere-intro)\n\n1.  [Installation](coding/ptAnywhere-installation)\n\n    Technologies used: [Vagrant](https://www.vagrantup.com/) & [Ansible](https://www.ansible.com/).\n\n1.  [Web frontend (widget)](coding/ptAnywhere-frontend).\n\n    Technologies used: [Angular JS](https://angularjs.org/), [jQuery](https://jquery.com/), [vis.js](http://visjs.org/), [Bower](http://bower.io/) & [Jasmine](http://jasmine.github.io/).\n\n1.  [HTTP API](coding/ptAnywhere-http_api).\n\n    Technologies used: [JAX-RS](https://jax-rs-spec.java.net/) ([Jersey](https://jersey.java.net/)), [Swagger](http://swagger.io/), [Maven](https://maven.apache.org/) & [Redis](http://redis.io/).\n\n1.  [Internal Packet Tracer API](coding/ptAnywhere-internal_api).\n\n    Technologies used: [Flask](http://flask.pocoo.org/), [Celery](http://www.celeryproject.org/) & [Docker](https://www.docker.com/).\n\n1.  [Learning Analytics](coding/ptAnywhere-learning_analytics).\n\n    Technologies used: [Tin Can API](https://tincanapi.com/) ([Learning Locker](http://learninglocker.net/)), [Angular JS](https://angularjs.org/), [Chart.js](http://www.chartjs.org/) & [vis.js](http://visjs.org/).\n\n## FAQ\n\n### Why don't you write these articles in their website or in GitHub?\n\nIn short: to specifically focus on the work I did in them and in the technology I used.\nThe GitHub projects might contain more extensive documentation but\nthey might have also evolved since I stopped working on them or become unavailable or whatever.\n\n### Why do you include screenshoots and screencasts instead of links to web applications?\n\n1.  I am describing the work I (me) did and they might have evolved since I stopped working on them,\n1.  there are parts which are not publicly accessible or\n1.  even if they are public, I cannot guarantee that they will keep like that in the future.\n    I don't own these projects.","bodyHtml":"<p>Since I first heard about <a href=\"http://www.gnu.org/philosophy/free-sw.html\">free software</a> back in my <a href=\"http://www.e-ghost.deusto.es/\">student days</a>, I have always been interested in it.\nI am a supporter of this community and its philosophy.</p>\n<p>As a way to give back part of what I have received, I have given some talks but more importantly I have contributed to several open-source projects as often as my research has allowed me.</p>\n<p>Instead of simply putting a link to my <a href=\"https://github.com/gomezgoiri\">GitHub account</a>, in this section I will discuss some of the most interesting projects that I have made.\nFor a more research-oriented view of my work, please visit the <a href=\"research_projects.html\">R&amp;D section</a>.</p>\n<h2>PT Anywhere</h2>\n<p><a href=\"https://www.netacad.com/about-networking-academy/packet-tracer/\">Packet Tracer</a> is a network simulation tool created by <a href=\"http://www.cisco.com/\">Cisco</a>.\nAs part of the <a href=\"/projects/forge\">FORGE project</a>, I developed a web version/frontend for it.</p>\n<p>During the following articles, I will guide you through the features I developed for it:</p>\n<ol>\n<li>\n<p><a href=\"coding/ptAnywhere-intro\">Introduction - Architecture</a></p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-installation\">Installation</a></p>\n<p>Technologies used: <a href=\"https://www.vagrantup.com/\">Vagrant</a> &amp; <a href=\"https://www.ansible.com/\">Ansible</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-frontend\">Web frontend (widget)</a>.</p>\n<p>Technologies used: <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"https://jquery.com/\">jQuery</a>, <a href=\"http://visjs.org/\">vis.js</a>, <a href=\"http://bower.io/\">Bower</a> &amp; <a href=\"http://jasmine.github.io/\">Jasmine</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-http_api\">HTTP API</a>.</p>\n<p>Technologies used: <a href=\"https://jax-rs-spec.java.net/\">JAX-RS</a> (<a href=\"https://jersey.java.net/\">Jersey</a>), <a href=\"http://swagger.io/\">Swagger</a>, <a href=\"https://maven.apache.org/\">Maven</a> &amp; <a href=\"http://redis.io/\">Redis</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-internal_api\">Internal Packet Tracer API</a>.</p>\n<p>Technologies used: <a href=\"http://flask.pocoo.org/\">Flask</a>, <a href=\"http://www.celeryproject.org/\">Celery</a> &amp; <a href=\"https://www.docker.com/\">Docker</a>.</p>\n</li>\n<li>\n<p><a href=\"coding/ptAnywhere-learning_analytics\">Learning Analytics</a>.</p>\n<p>Technologies used: <a href=\"https://tincanapi.com/\">Tin Can API</a> (<a href=\"http://learninglocker.net/\">Learning Locker</a>), <a href=\"https://angularjs.org/\">Angular JS</a>, <a href=\"http://www.chartjs.org/\">Chart.js</a> &amp; <a href=\"http://visjs.org/\">vis.js</a>.</p>\n</li>\n</ol>\n<h2>FAQ</h2>\n<h3>Why don't you write these articles in their website or in GitHub?</h3>\n<p>In short: to specifically focus on the work I did in them and in the technology I used.\nThe GitHub projects might contain more extensive documentation but\nthey might have also evolved since I stopped working on them or become unavailable or whatever.</p>\n<h3>Why do you include screenshoots and screencasts instead of links to web applications?</h3>\n<ol>\n<li>I am describing the work I (me) did and they might have evolved since I stopped working on them,</li>\n<li>there are parts which are not publicly accessible or</li>\n<li>even if they are public, I cannot guarantee that they will keep like that in the future.\nI don't own these projects.</li>\n</ol>\n","preview":"Since I first heard about free software back in my student days, I have always been interested in it.\nI am a supporter of this community and","dir":"content","base":"projects.json","ext":".json","sourceBase":"projects.md","sourceExt":".md"},"content/projects/2007-09-01-ismed.json":{"title":"ISMED: Intelligent Semantic Middleware for Embedded Devices","short":"ISMED","start":"2007-01","end":"2010-12","website":"http://www.tecnologico.deusto.es/projects/ISMED","moreInfo":"http://www.morelab.deusto.es/projects/info/ismed","bodyContent":"The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home) environments equipped by heterogeneous wireless embedded devices.\nThis semantic middleware adopting the SOA paradigm will be based on the following six core aspects:\n\n- **Sensing**: allows for the capture of environment contextual data through sensors. In particular, the usage of intelligent cameras will allow for people detection and tracking. Other sensor types will gather knowledge about user habits and preferences. The sensorial data captured will be translated into a semantic format useful for the rest of elements.\n- **Service discovery**: allows for the discovery of devices together with their services encountered within an environment. The discovered services are described by means of semantic techniques so that the service composition or reasoning elements can use the captured knowledge.\n- **Service composition**: allows for the provision of composite services resulted from the functional composition and adaptation of two or more services provided by other devices. A key difference compared to other more static and centralised enterprise composition approaches is that the composition process will be continuous, dynamic and completely distributed.\n- **Learning**: it will allow for the cooperative learning of a set of behaviour rules among a community of embedded devices, thus adding new intelligence to the environment. Besides, it will serve to identify hidden unexpected relationships among services through machine learning techniques.\n  Reasoning: each device will individually accomplish some reasoning taking into consideration both its own sensor readings exported as services to other devices, and the readings and capacities published by other devices to the environment during the discovery phase.\n- **Semantic Modelling**: it will act as integrator of other aspects of the middleware, providing a common core infrastructure in the form of a repository of semantic knowledge shared. It will be responsible of gathering the RDF graphs defining the context of services and sensor samples which characterise an environment. Its behaviour will be analogous to a Tuple Spaces system which in this case is extended with semantic capacities, i.e. a distributed and shared RDF store on which the discovery, reasoning, composition and learning aspects of this middleware will be supported.\n\nThe semantic middleware provided, extensible to any cooperative environment, will be deployed and validated in an Ambient Intelligence (AmI)-dedicated research lab at the University of Deusto, namely [SmartLab](http://www.smartlab.deusto.es/). This lab is equipped with a plethora of sensorial and actuation devices which thanks to this semantic infrastructure will seamlessly cooperate in order to provide intelligent services to the end-users.","bodyHtml":"<p>The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home) environments equipped by heterogeneous wireless embedded devices.\nThis semantic middleware adopting the SOA paradigm will be based on the following six core aspects:</p>\n<ul>\n<li><strong>Sensing</strong>: allows for the capture of environment contextual data through sensors. In particular, the usage of intelligent cameras will allow for people detection and tracking. Other sensor types will gather knowledge about user habits and preferences. The sensorial data captured will be translated into a semantic format useful for the rest of elements.</li>\n<li><strong>Service discovery</strong>: allows for the discovery of devices together with their services encountered within an environment. The discovered services are described by means of semantic techniques so that the service composition or reasoning elements can use the captured knowledge.</li>\n<li><strong>Service composition</strong>: allows for the provision of composite services resulted from the functional composition and adaptation of two or more services provided by other devices. A key difference compared to other more static and centralised enterprise composition approaches is that the composition process will be continuous, dynamic and completely distributed.</li>\n<li><strong>Learning</strong>: it will allow for the cooperative learning of a set of behaviour rules among a community of embedded devices, thus adding new intelligence to the environment. Besides, it will serve to identify hidden unexpected relationships among services through machine learning techniques.\nReasoning: each device will individually accomplish some reasoning taking into consideration both its own sensor readings exported as services to other devices, and the readings and capacities published by other devices to the environment during the discovery phase.</li>\n<li><strong>Semantic Modelling</strong>: it will act as integrator of other aspects of the middleware, providing a common core infrastructure in the form of a repository of semantic knowledge shared. It will be responsible of gathering the RDF graphs defining the context of services and sensor samples which characterise an environment. Its behaviour will be analogous to a Tuple Spaces system which in this case is extended with semantic capacities, i.e. a distributed and shared RDF store on which the discovery, reasoning, composition and learning aspects of this middleware will be supported.</li>\n</ul>\n<p>The semantic middleware provided, extensible to any cooperative environment, will be deployed and validated in an Ambient Intelligence (AmI)-dedicated research lab at the University of Deusto, namely <a href=\"http://www.smartlab.deusto.es/\">SmartLab</a>. This lab is equipped with a plethora of sensorial and actuation devices which thanks to this semantic infrastructure will seamlessly cooperate in order to provide intelligent services to the end-users.</p>\n","preview":"The ISMED provided the required software infrastructure to develop and deploy cooperative intelligent (industrial, administrative or home)","dir":"content/projects","base":"2007-09-01-ismed.json","ext":".json","sourceBase":"2007-09-01-ismed.md","sourceExt":".md"},"content/projects/2009-09-01-across.json":{"title":"ACROSS: Auto-configurable robots for social services","short":"ACROSS","start":"2009-01","end":"2011-12","moreInfo":"http://www.morelab.deusto.es/projects/info/across","bodyContent":"The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent systems. These systems are able to self-reconfigure and modify their behavior autonomously through the capacity for understanding, learning and software remote access.\n\nACROSS provides an Open-Source development community to exploit different technological advances, some of them initially unconnected with Robotics. Taking advantage of this synergy, ACROSS will be the starting point from which new standards in robot applications will be built.\n\nThe main technological goals of ACROSS are the following:\n\n- Improve emotional and cognitive capabilities of Social Robots.\n- Context-awareness perception.\n- Establish discovery, composition and execution services using Autonomic Computing Techniques.\n- Open Source software architecture based on distributed components supported by an Open-Source Development Community.\n- Swarm robotics module.","bodyHtml":"<p>The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent systems. These systems are able to self-reconfigure and modify their behavior autonomously through the capacity for understanding, learning and software remote access.</p>\n<p>ACROSS provides an Open-Source development community to exploit different technological advances, some of them initially unconnected with Robotics. Taking advantage of this synergy, ACROSS will be the starting point from which new standards in robot applications will be built.</p>\n<p>The main technological goals of ACROSS are the following:</p>\n<ul>\n<li>Improve emotional and cognitive capabilities of Social Robots.</li>\n<li>Context-awareness perception.</li>\n<li>Establish discovery, composition and execution services using Autonomic Computing Techniques.</li>\n<li>Open Source software architecture based on distributed components supported by an Open-Source Development Community.</li>\n<li>Swarm robotics module.</li>\n</ul>\n","preview":"The ACROSS project modifies the design of social robotics, blocked in providing predefined services, going further by means of intelligent","dir":"content/projects","base":"2009-09-01-across.json","ext":".json","sourceBase":"2009-09-01-across.md","sourceExt":".md"},"content/projects/2010-09-01-crosen.json":{"title":"CROSen!: Comunicación, Razonamiento, Orquestación y Socialización para la creación de Ecosistemas de Objetos Inteligentes","short":"CROSen","start":"2010-01","end":"2011-12","moreInfo":"http://www.morelab.deusto.es/projects/info/crosen","bodyContent":"","bodyHtml":"","dir":"content/projects","base":"2010-09-01-crosen.json","ext":".json","sourceBase":"2010-09-01-crosen.md","sourceExt":".md"},"content/projects/2011-07-01-thofu.json":{"title":"THOFU: Tecnologías del Hotel del Futuro","short":"THOFU","start":"2010-01","end":"2013-12","moreInfo":"http://www.morelab.deusto.es/projects/info/thofu","bodyContent":"THOFU is a large multidisciplinary R&D project which aims to enhance the offer of the hospitality sector through joint research on a new conception of the future hotel, from the spaces and their construction, to objects that reside in it, the interaction with guests, as well as the symbiosis with the Internet.","bodyHtml":"<p>THOFU is a large multidisciplinary R&amp;D project which aims to enhance the offer of the hospitality sector through joint research on a new conception of the future hotel, from the spaces and their construction, to objects that reside in it, the interaction with guests, as well as the symbiosis with the Internet.</p>\n","preview":"THOFU is a large multidisciplinary R&D project which aims to enhance the offer of the hospitality sector through joint research on a new","dir":"content/projects","base":"2011-07-01-thofu.json","ext":".json","sourceBase":"2011-07-01-thofu.md","sourceExt":".md"},"content/projects/2011-09-01-futureinternet2.json":{"title":"Future Internet II","short":"FI2","start":"2011-01","end":"2013-12","moreInfo":"http://www.morelab.deusto.es/projects/info/future-internet-ii","bodyContent":"","bodyHtml":"","dir":"content/projects","base":"2011-09-01-futureinternet2.json","ext":".json","sourceBase":"2011-09-01-futureinternet2.md","sourceExt":".md"},"content/projects/2011-09-01-mcloud.json":{"title":"mCloud: advanced migration of applications to cloud computing","short":"mCloud","start":"2011-01","end":"2014-12","moreInfo":"http://www.morelab.deusto.es/projects/info/mcloud","bodyContent":"The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service oriented development models, having in mind methodological, technological and business aspects. Thus, mCloud will help to increase Spanish software companies' competitiveness by giving them tools to progress towards the Internet of Services where applications will mainly be deployed on the Cloud.","bodyHtml":"<p>The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service oriented development models, having in mind methodological, technological and business aspects. Thus, mCloud will help to increase Spanish software companies' competitiveness by giving them tools to progress towards the Internet of Services where applications will mainly be deployed on the Cloud.</p>\n","preview":"The aim of this project is to provide a set of methods, tools and technical solutions that support migrating towards advanced service","dir":"content/projects","base":"2011-09-01-mcloud.json","ext":".json","sourceBase":"2011-09-01-mcloud.md","sourceExt":".md"},"content/projects/2011-09-01-talisengine.json":{"title":"TALIS+ENGINE: Razonamiento Híbrido Cooperativo y Semántico para la Orquestación de Servicios en Entornos Asistenciales","short":"TALIS+Engine","start":"2011-01","end":"2013-12","moreInfo":"http://www.morelab.deusto.es/projects/info/talisengine","bodyContent":"The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to advance in the automatic or semi-automatic service composition within assistive environments with the goal of allowing in a spontaneous manner the environment adaptation to the concrete needs and goals of the user. Such adaptation of environment’s behaviour demands the adoption of cooperative, hybrid (symbolic and connectionist), adaptable and scalable (evolving being aware of the emerging and disappearing devices and their sensing and acting capabilities) intelligence techniques.","bodyHtml":"<p>The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to advance in the automatic or semi-automatic service composition within assistive environments with the goal of allowing in a spontaneous manner the environment adaptation to the concrete needs and goals of the user. Such adaptation of environment’s behaviour demands the adoption of cooperative, hybrid (symbolic and connectionist), adaptable and scalable (evolving being aware of the emerging and disappearing devices and their sensing and acting capabilities) intelligence techniques.</p>\n","preview":"The aim of the TALIS+ENGINE: Cooperative and Semantic Hybrid Reasoning for Service Orchestration in Reactive Environments subproject is to","dir":"content/projects","base":"2011-09-01-talisengine.json","ext":".json","sourceBase":"2011-09-01-talisengine.md","sourceExt":".md"},"content/projects/2012-09-01-adizain.json":{"title":"ADIZAIN: Monitor Inteligente de superficies comerciales","short":"ADIZAIN","start":"2012-06","end":"2013-12","website":"http://www.morelab.deusto.es/adizain/","moreInfo":"http://www.morelab.deusto.es/projects/info/adizain","bodyContent":"This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the management of different commercial multi-vendor security devices (e.g., people counters or video cameras).\n\nThe resulting system has the following features:\n\n- **Modular design**: it is organized in several OSGi modules which talk to each other through declarative services.\n- **Distributed, decoupled and scalable design**: it uses queues (ActiveMQ) for the inter-OSGi container communication and a NoSQL database (MongoDB).\n- **Customizable and interactive user experience**: it relies on a rule-based reasoning framework to generate alerts and events on a web interface based on MQTT, Javascript and HTML5.","bodyHtml":"<p>This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the management of different commercial multi-vendor security devices (e.g., people counters or video cameras).</p>\n<p>The resulting system has the following features:</p>\n<ul>\n<li><strong>Modular design</strong>: it is organized in several OSGi modules which talk to each other through declarative services.</li>\n<li><strong>Distributed, decoupled and scalable design</strong>: it uses queues (ActiveMQ) for the inter-OSGi container communication and a NoSQL database (MongoDB).</li>\n<li><strong>Customizable and interactive user experience</strong>: it relies on a rule-based reasoning framework to generate alerts and events on a web interface based on MQTT, Javascript and HTML5.</li>\n</ul>\n","preview":"This project's main objective is the development of a industrial solution of a Unified Control Centre.\nThis centre helps to centralize the","dir":"content/projects","base":"2012-09-01-adizain.json","ext":".json","sourceBase":"2012-09-01-adizain.md","sourceExt":".md"},"content/projects/2015-01-01-forge.json":{"title":"FORGE: Forging Online Education through FIRE","short":"FORGE","start":"2015-01","end":"2016-08","website":"http://ict-forge.eu","paths":["/projects/forge"],"bodyContent":"Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future Internet Research and Experimentation) with the ongoing education revolution.\nThis project will specify development methodologies and best practices for offering FIRE experimentation facilities to learners and to the learning community in general.\nFORGE relates to communications and IT, as well as to other disciplines including the physical and social sciences.\nIt will lead to a strong connection between the learning community and existing FIRE platforms and supporting tools.","bodyHtml":"<p>Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future Internet Research and Experimentation) with the ongoing education revolution.\nThis project will specify development methodologies and best practices for offering FIRE experimentation facilities to learners and to the learning community in general.\nFORGE relates to communications and IT, as well as to other disciplines including the physical and social sciences.\nIt will lead to a strong connection between the learning community and existing FIRE platforms and supporting tools.</p>\n","preview":"Forging Online Education through FIRE (FORGE) is a project bringing the FIRE and eLearning worlds together.\nFORGE will align FIRE (Future","dir":"content/projects","base":"2015-01-01-forge.json","ext":".json","sourceBase":"2015-01-01-forge.md","sourceExt":".md"},"content/projects/2015-01-01-wespot.json":{"title":"weSPOT","short":"weSPOT","start":"2015-01","end":"2015-10","website":"http://wespot.net","bodyContent":"weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and teaching practices.\nIt lowers the threshold for linking everyday life with science teaching in schools by technology.\n\nweSPOT supports the meaningful contextualization of scientific concepts by relating them to personal curiosity, experiences, and reasoning.\nIt addresses several challenges in the area of science learning and technology support for building personal conceptual knowledge.","bodyHtml":"<p>weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and teaching practices.\nIt lowers the threshold for linking everyday life with science teaching in schools by technology.</p>\n<p>weSPOT supports the meaningful contextualization of scientific concepts by relating them to personal curiosity, experiences, and reasoning.\nIt addresses several challenges in the area of science learning and technology support for building personal conceptual knowledge.</p>\n","preview":"weSPOT aims at propagating scientific inquiry as the approach for science learning and teaching in combination with today's curricula and","dir":"content/projects","base":"2015-01-01-wespot.json","ext":".json","sourceBase":"2015-01-01-wespot.md","sourceExt":".md"},"content/projects/2016-09-01-partm.json":{"title":"PARTM: Development of a new Remote Access Port for Machines with Built-in Remote Control Receivers","short":"PARTM","start":"2016-09","end":"2019-04","website":"http://www.ikerlan.es/notas-de-prensa/notas-de-prensa/dispositivos-de-control-remoto-conectados-a-la-nube-para-abrir-nuevas-oportunidades-de-negocio-en-la-industria","bodyContent":"As part of the PARTM project we developed a scalable platform to monitor and manage [IKUSI](http://www.ikusi.com)'s industrial remote controls and the machines that they control (e.g., cranes), creating a new range of services and maintenance related businesses.","bodyHtml":"<p>As part of the PARTM project we developed a scalable platform to monitor and manage <a href=\"http://www.ikusi.com\">IKUSI</a>'s industrial remote controls and the machines that they control (e.g., cranes), creating a new range of services and maintenance related businesses.</p>\n","preview":"As part of the PARTM project we developed a scalable platform to monitor and manage IKUSI's industrial remote controls and the machines that","dir":"content/projects","base":"2016-09-01-partm.json","ext":".json","sourceBase":"2016-09-01-partm.md","sourceExt":".md"},"content/projects/2017-01-01-falink.json":{"title":"FAlink: Digital platform to remotely monitor press machines","short":"FAlink","start":"2017-01","end":"2018-01","website":"http://www.ikerlan.es/notas-de-prensa/notas-de-prensa/ik4ikerlan-colabora-con-fagor-arrasate-en-el-desarrollo-de-su-innovador-sistema-de-digitalizacin-que-permite-el-mantenimiento-remoto-de-mquinas","bodyContent":"In this project we built a digital platform which eases the supervision of [Fagor Arrasate](http://www.fagorarrasate.com)'s machines all over the world.\nIt encompasses data analysis tools to monitor press machines avoiding unexpected downtimes and extending their life time.","bodyHtml":"<p>In this project we built a digital platform which eases the supervision of <a href=\"http://www.fagorarrasate.com\">Fagor Arrasate</a>'s machines all over the world.\nIt encompasses data analysis tools to monitor press machines avoiding unexpected downtimes and extending their life time.</p>\n","preview":"In this project we built a digital platform which eases the supervision of Fagor Arrasate's machines all over the world.\nIt encompasses data","dir":"content/projects","base":"2017-01-01-falink.json","ext":".json","sourceBase":"2017-01-01-falink.md","sourceExt":".md"},"content/publications.json":{"title":"Publications","description":"Publications","page":"/publications/section","paths":["/publications.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"publications.json","ext":".json","sourceBase":"publications.md","sourceExt":".md"},"content/publications/2010-07-01-gomezgoiri-triplespace.json":{"title":"A Triple Space-Based Semantic Distributed Middleware for Internet of Things","authors":"Aitor Gómez-Goiri, Diego López-de-Ipiña","restCitation":"In Florian Daniel and Federico Facca, editors, Current Trends in Web Engineering, volume 6385 of Lecture Notes in Computer Science, pages 447-458. Springer Berlin / Heidelberg, July 2010. DOI: <a href=\"http://link.springer.com/chapter/10.1007/978-3-642-16985-4_43\">10.1007/978-3-642-16985-4_43</a>.","pdf":"/static/files/pdf/gomezgoiri2010triplespace.pdf","bib":"/static/files/bibtex/gomezgoiri2010triplespace.bib","semantics":"a-triple-space-based-semantic-distributed-middleware-for-internet-of-things","slides":"http://www.slideshare.net/twolf/a-triple-spacebased-semantic-distributed-middleware-for-internet-of-things","slideshareEmbedCode":4751866,"bodyContent":"In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.\nIn this context, the Triple Space approach, where different processes share common semantic knowledge, seems to fit perfectly.\nIn this paper we present our progress towards a semantic middleware which allows the communication between a wide range of embedded devices in a distributed, decoupled and very expressive manner.\nThis solution has been tested in a stereotypical deployment scenario showing the promising potential of this approach for local environments.","bodyHtml":"<p>In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to interact and share knowledge.\nIn this context, the Triple Space approach, where different processes share common semantic knowledge, seems to fit perfectly.\nIn this paper we present our progress towards a semantic middleware which allows the communication between a wide range of embedded devices in a distributed, decoupled and very expressive manner.\nThis solution has been tested in a stereotypical deployment scenario showing the promising potential of this approach for local environments.</p>\n","preview":"In the Internet of Things several objects with network capabilities are connected over a self-configured local network with other objects to","dir":"content/publications","base":"2010-07-01-gomezgoiri-triplespace.json","ext":".json","sourceBase":"2010-07-01-gomezgoiri-triplespace.md","sourceExt":".md"},"content/publications/2010-09-01-orduna-security.json":{"title":"Identifying Security Issues in the Semantic Web: Injection attacks in the Semantic Query Languages","authors":"Pablo Orduña, Aitor Almeida, Unai Aguilera, Xabier Laiseca, Diego López-de-Ipiña, Aitor Gómez-Goiri","restCitation":"Actas de las VI Jornadas Científico-Técnicas en Servicios Web y SOA JSWEB 2010. p. p. 43 - 50. Valencia, Spain. September 2010. ISBN: 9 78-84-92812-59-2.","pdf":"http://www.morelab.deusto.es/publications/2010/orduna2010identifying.pdf","bib":"/static/files/bibtex/orduna2010identifying.bib","semantics":"identifying-security-issues-in-the-semantic-web-injection-attacks-in-the-semantic-query-languages","slides":"http://www.slideshare.net/nctrun/identifying-security-issues-in-the-semantic-web-injection-attacks-in-the-semantic-query-languages","slideshareEmbedCode":5188900,"bodyContent":"As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes critical.\nIn the Semantic Web the old and well-known vulnerabilities reappear with all the power of the new semantic mechanisms.\nThis semantic mechanisms offer new and dangerous possibilities to malicious users.\nFor this reason it is important for the developers to know and prevent the vulnerabilities in their applications.\nIn this paper we analyze the possibilities of injection attacks in the most used semantic query / update languages (SPARQL/SPARUL).","bodyHtml":"<p>As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes critical.\nIn the Semantic Web the old and well-known vulnerabilities reappear with all the power of the new semantic mechanisms.\nThis semantic mechanisms offer new and dangerous possibilities to malicious users.\nFor this reason it is important for the developers to know and prevent the vulnerabilities in their applications.\nIn this paper we analyze the possibilities of injection attacks in the most used semantic query / update languages (SPARQL/SPARUL).</p>\n","preview":"As new challenges motivated by the Semantic Web get resolved, the need for getting protected against new types of security flaws becomes","dir":"content/publications","base":"2010-09-01-orduna-security.json","ext":".json","sourceBase":"2010-09-01-orduna-security.md","sourceExt":".md"},"content/publications/2011-02-01-gomezgoiri-middleware.json":{"title":"Middleware Semántico Orientado a Recursos para Entornos Ubicuos","authors":"Aitor Gómez-Goiri, Mikel Emaldi-Manrique, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.ati.es/novatica/\">NOVATICA journal</a>, (209): 9–16. ISSN: 0211-2124. February 2011. (<a href=\"http://www.ati.es/spip.php?article2131\">artículo finalista VI Edición del premio NOVATICA</a>)","pdf":"http://www.ati.es/novatica/2011/209/209-9-VI-Premio-Novatica-finalista.pdf","bib":"/static/files/bibtex/gomezgoiri2011middleware.bib","semantics":"middleware-semantico-orientado-a-recursos-para-entornos-ubicuos","bodyContent":"En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este contexto, los modelos semánticos pueden utilizarse para describir el contexto que rodea dichos dispositivos de una manera muy expresiva, normalmente almacenada en bases de conocimiento centralizadas.\nLas aplicaciones construidas a partir de estas bases de conocimiento que generalmente no son sensibles a la dinamicidad de la red.\nEl middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del _Triple Space_.\nEste middleware ha sido probado en un escenario estereotipado, mostrando cómo los diferentes nodos de una red pueden compartir información, conservando su autonomía y con un rendimiento razonable en los dispositivos con capacidad de computación reducida.","bodyHtml":"<p>En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este contexto, los modelos semánticos pueden utilizarse para describir el contexto que rodea dichos dispositivos de una manera muy expresiva, normalmente almacenada en bases de conocimiento centralizadas.\nLas aplicaciones construidas a partir de estas bases de conocimiento que generalmente no son sensibles a la dinamicidad de la red.\nEl middleware propuesto en este artículo facilita el intercambio de conocimiento entre diferentes sensores y actuadores de una manera altamente distribuida, con bajo acoplamiento y orientada a recursos, siguiendo el paradigma del <em>Triple Space</em>.\nEste middleware ha sido probado en un escenario estereotipado, mostrando cómo los diferentes nodos de una red pueden compartir información, conservando su autonomía y con un rendimiento razonable en los dispositivos con capacidad de computación reducida.</p>\n","preview":"En los entornos ubicuos dispositivos de distinta naturaleza comparten información a través de redes altamente interconectadas.\nEn este","dir":"content/publications","base":"2011-02-01-gomezgoiri-middleware.json","ext":".json","sourceBase":"2011-02-01-gomezgoiri-middleware.md","sourceExt":".md"},"content/publications/2011-02-02-gomezgoiri-semantic.json":{"title":"A Semantic Resource Oriented Middleware for Pervasive Environments","authors":"Aitor Gómez-Goiri, Mikel Emaldi-Manrique, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.cepis.org/upgrade\">UPGRADE journal</a>, 2011, Issue No. 1: 5-16. <a href=\"http://www.cepis.org/upgrade/index.jsp?p=2701&amp;n=2702\">February 2011</a>. ISSN: 1684-5285","pdf":"http://www.cepis.org/upgrade/media/GomezGoiri_1_20112.pdf","bib":"/static/files/bibtex/gomezgoiri2011semantic.bib","semantics":"a-semantic-resource-oriented-middleware-for-pervasive-environments","bodyContent":"Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.\nIn this context semantic models can be used to describe the context that surrounds them in a very expressive manner, usually stored in centralized knowledge bases.\nThe applications built on top of these knowledge bases use heterogeneous protocols to transmit their data, but do not capture the dynamicism of the network.\nThe presented middleware facilitates the exchange of knowledge between different sensors and actuators in a highly distributed, decoupled and resource oriented manner following the Triple Space paradigm.\nThis middleware has been tested on an stereotypical scenario, which illustrates how different peers can exchange data keeping them autonomous and yet with a reasonable footprint for devices with reduced computation capabilities.","bodyHtml":"<p>Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected networks.\nIn this context semantic models can be used to describe the context that surrounds them in a very expressive manner, usually stored in centralized knowledge bases.\nThe applications built on top of these knowledge bases use heterogeneous protocols to transmit their data, but do not capture the dynamicism of the network.\nThe presented middleware facilitates the exchange of knowledge between different sensors and actuators in a highly distributed, decoupled and resource oriented manner following the Triple Space paradigm.\nThis middleware has been tested on an stereotypical scenario, which illustrates how different peers can exchange data keeping them autonomous and yet with a reasonable footprint for devices with reduced computation capabilities.</p>\n","preview":"Pervasive environments are highly dynamic with lots of heterogeneous devices which share information through increasingly interconnected","dir":"content/publications","base":"2011-02-02-gomezgoiri-semantic.json","ext":".json","sourceBase":"2011-02-02-gomezgoiri-semantic.md","sourceExt":".md"},"content/publications/2011-06-01-laiseca-distributed.json":{"title":"Distributed Tracking System for Patients with Cognitive Impairments","authors":"Xabier Laiseca, Eduardo Castillejo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, Ester Gonzalez-Aguado","restCitation":"Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.","pdf":"/static/files/pdf/laiseca2011distributed.pdf","bib":"/static/files/bibtex/laiseca2011distributed.bib","semantics":"distributed-tracking-system-for-patients-with-cognitive-impairments","bodyContent":"The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.\nThese requirements, such as medical staff and financial resources, have been multiplied in the last years, and this tendency will continue in the forthcoming ones.\nIn order to reduce these requirements, the introduction of new technologies will be a key aspect.\nn this paper we propose a test-question-based memory game that collects the answers given by patients and facilitates access to this information to caregivers and relatives.","bodyHtml":"<p>The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with cognitive disabilities.\nThese requirements, such as medical staff and financial resources, have been multiplied in the last years, and this tendency will continue in the forthcoming ones.\nIn order to reduce these requirements, the introduction of new technologies will be a key aspect.\nn this paper we propose a test-question-based memory game that collects the answers given by patients and facilitates access to this information to caregivers and relatives.</p>\n","preview":"The increase of life expectancy has arisen new challenges related with the amount of resources required to attend elderly people with","dir":"content/publications","base":"2011-06-01-laiseca-distributed.json","ext":".json","sourceBase":"2011-06-01-laiseca-distributed.md","sourceExt":".md"},"content/publications/2011-06-02-gomezgoiri-easing.json":{"title":"Easing the Mobility of Disabled People in Supermarkets Using a Distributed Solution","authors":"Aitor Gómez-Goiri, Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Diego López-de-Ipiña, Sergio Fínez","restCitation":"Third International Workshop on Ambient Assisted Living (IWAAL 2011). Málaga, Spain, June 2011.","pdf":"/static/files/pdf/gomezgoiri2011easing.pdf","bib":"/static/files/bibtex/gomezgoiri2011easing.bib","semantics":"easing-the-mobility-of-disabled-people-in-supermarkets-using-a-distributed-solution","bodyContent":"People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at home, but especially outside it, where their reduced mobility is a burden.\nBuying in a supermarket can be sometimes troublesome for them and so as to facilitate this task, a product locator application is proposed.\nThis application runs on heterogeneous personal mobile devices keeping the user private information safe on them, and it locates the desired products over each supermarket's map.","bodyHtml":"<p>People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at home, but especially outside it, where their reduced mobility is a burden.\nBuying in a supermarket can be sometimes troublesome for them and so as to facilitate this task, a product locator application is proposed.\nThis application runs on heterogeneous personal mobile devices keeping the user private information safe on them, and it locates the desired products over each supermarket's map.</p>\n","preview":"People's impairments cause a wide range of difficulties in everyday tasks.\nParticularly, handicapped people face many challenges both at","dir":"content/publications","base":"2011-06-02-gomezgoiri-easing.json","ext":".json","sourceBase":"2011-06-02-gomezgoiri-easing.md","sourceExt":".md"},"content/publications/2011-06-03-gomezgoiri-complementarity.json":{"title":"On the complementarity of Triple Spaces and the Web of Things","authors":"Aitor Gómez-Goiri, Diego López-de-Ipiña","restCitation":"In Proceedings of the Second International Workshop on Web of Things, <a href=\"http://www.webofthings.com/wot/2011/\">WoT 11</a>, pages 12:1–12:6. ISBN: <a href=\"http://doi.acm.org/10.1145/1993966.1993983\" target=\"_blank\">978-1-4503-0624-9</a>. New York, NY, USA, 2011.","pdf":"/static/files/pdf/gomezgoiri2011complementarity.pdf","bib":"/static/files/bibtex/gomezgoiri2011complementarity.bib","semantics":"on-the-complementarity-of-triple-spaces-and-the-web-of-things","bodyContent":"The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on allowing such communication through different protocols and architectures.\nSome of these architectural approaches are Web of Things (WoT) and Triple Space (TS) which are both resource oriented architectures.\nThis work analyses and compares both approaches and outlines the scenarios in which they will be more useful.\nParticularly, it outlines how some of the drawbacks of WoT in the discovery and cooperation aspects may be complemented by integrating with TS.","bodyHtml":"<p>The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on allowing such communication through different protocols and architectures.\nSome of these architectural approaches are Web of Things (WoT) and Triple Space (TS) which are both resource oriented architectures.\nThis work analyses and compares both approaches and outlines the scenarios in which they will be more useful.\nParticularly, it outlines how some of the drawbacks of WoT in the discovery and cooperation aspects may be complemented by integrating with TS.</p>\n","preview":"The Internet of Things (IoT) enables communication among real-world things and devices through Internet.\nSo far, IoT research has focused on","dir":"content/publications","base":"2011-06-03-gomezgoiri-complementarity.json","ext":".json","sourceBase":"2011-06-03-gomezgoiri-complementarity.md","sourceExt":".md"},"content/publications/2011-10-01-gomezgoiri-collaboration.json":{"title":"Collaboration of Sensors and Actuators through Triple Spaces","authors":"Aitor Gómez-Goiri, Pablo Orduña, David Ausín, Mikel Emaldi and Diego López-de-Ipiña","restCitation":"In <a href=\"http://ieee-sensors2011.org\" target=\"_blank\">IEEE Sensors 2011</a>, pages 651-654. Limerick, Ireland, October 2011. ISBN: <a href=\"http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=6127316\">978-1-4244-9290-9</a>.","pdf":"/static/files/pdf/gomezgoiri2011collaboration.pdf","bib":"/static/files/bibtex/gomezgoiri2011collaboration.bib","semantics":"collaboration-of-sensors-and-actuators-through-triple-spaces","bodyContent":"In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.\nHence, a promising next step should be to build interaction models on top of this network connectivity and thus focus on the application layer, i.e. how to achieve useful aggregated functionality out of these Internet-connected ecosystems of sensors and actuators.\nThis work analyses the adoption of Triple Spaces coordination language by very heterogeneous and resource-constrained devices and outlines how its primitives can help to develop fully distributed and very decoupled scenarios.","bodyHtml":"<p>In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of challenging and constrained networking environments.\nHence, a promising next step should be to build interaction models on top of this network connectivity and thus focus on the application layer, i.e. how to achieve useful aggregated functionality out of these Internet-connected ecosystems of sensors and actuators.\nThis work analyses the adoption of Triple Spaces coordination language by very heterogeneous and resource-constrained devices and outlines how its primitives can help to develop fully distributed and very decoupled scenarios.</p>\n","preview":"In recent years, projects and initiatives under Internet of Things have focused mainly on establishing connectivity in a variety of","dir":"content/publications","base":"2011-10-01-gomezgoiri-collaboration.json","ext":".json","sourceBase":"2011-10-01-gomezgoiri-collaboration.md","sourceExt":".md"},"content/publications/2011-11-01-castillejo-robotic.json":{"title":"Distributed Semantic Middleware for Social Robotic Services","authors":"Eduardo Castillejo, Pablo Orduña, Xabier Laiseca, Aitor Gómez-Goiri, Diego López de Ipiña, Sergio Fínez","restCitation":"Robot 2011 - III Workshop de Robótica: Robótica Experimental. Seville, Spain. Nov, 2011","pdf":"http://www.morelab.deusto.es/publications/2011/eCastillejo_robot2011.pdf","bib":"/static/files/bibtex/castillejo2011distributed.bib","slides":"http://www.slideshare.net/edlectrico/distributed-semantic-middleware-for-social-robotic-services","slideshareEmbedCode":10412946,"semantics":"distributed-tracking-system-for-patients-with-cognitive-impairments","bodyContent":"Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their intrinsic nature.\nMoreover, these\nenvironments don’t support any semantics by themselves,\nbecoming necessary the implementation of additional solutions\nfor knowledge representation and management.\nAs a result,\nnew troubles arise, as integration and management related.\nThis work proposes the use of a Triple Spaces solution for\nintegrating any semantic and distributed environment.\nParticulary, it outlines how two very different scenarios have been\nimplemented under the Triple Spaces paradigm.","bodyHtml":"<p>Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their intrinsic nature.\nMoreover, these\nenvironments don’t support any semantics by themselves,\nbecoming necessary the implementation of additional solutions\nfor knowledge representation and management.\nAs a result,\nnew troubles arise, as integration and management related.\nThis work proposes the use of a Triple Spaces solution for\nintegrating any semantic and distributed environment.\nParticulary, it outlines how two very different scenarios have been\nimplemented under the Triple Spaces paradigm.</p>\n","preview":"Distributed architectures mean signiﬁcant beneﬁts\nfor many scenarios.\nHowever, they also entail difﬁculties and\nproblems because of their","dir":"content/publications","base":"2011-11-01-castillejo-robotic.json","ext":".json","sourceBase":"2011-11-01-castillejo-robotic.md","sourceExt":".md"},"content/publications/2012-06-01-gomezgoiri-restful.json":{"title":"RESTful Triple Spaces of Things","authors":"Aitor Gómez-Goiri, Pablo Orduña and Diego López-De-Ipiña","restCitation":"Third International <a href=\"http://www.webofthings.org/wot/2012/\">Workshop on the Web of Things</a> (WoT 2012). Newcastle, UK, June 2012. ISBN&#58; 978-1-4503-1603-3. DOI&#58; <a href=\"http://dx.doi.org/10.1145/2379756.2379761\" target=\"_blank\">10.1145/2379756.2379761</a>","pdf":"/static/files/pdf/gomezgoiri2012restful.pdf","bib":"/static/files/bibtex/gomezgoiri2012restful.bib","semantics":"restful-triple-spaces-of-things","slides":"http://www.slideshare.net/twolf/restful-triple-spaces-of-things","slideshareEmbedCode":13378432,"bodyContent":"The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these objects have to face well-known problems from the web world.\nThe lack of expressiveness and human orientation of the syntactically described capabilities and contents of those resources is one of these difficulties.\nThe Semantic Web on the contrary interlinks each object's data to one another, enabling its automatic process to reveal possible new relationships and therefore enhancing the interoperability of semantic-enabled objects.\nIn this work we present a semantically enabled Web of Things compliant HTTP interface for Internet-enabled objects which uses Triple Spaces (TS) as a basis.\nSpecifically, we address the adoption of this paradigm by a wide range of resource constrained devices assessing the feasibility of our middleware solution, focusing both on the web and on the semantic aspects. Besides, we stress the degree of interoperability achieved by the applications made using RESTful TS by describing two scenarios where it could be used.","bodyHtml":"<p>The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these objects have to face well-known problems from the web world.\nThe lack of expressiveness and human orientation of the syntactically described capabilities and contents of those resources is one of these difficulties.\nThe Semantic Web on the contrary interlinks each object's data to one another, enabling its automatic process to reveal possible new relationships and therefore enhancing the interoperability of semantic-enabled objects.\nIn this work we present a semantically enabled Web of Things compliant HTTP interface for Internet-enabled objects which uses Triple Spaces (TS) as a basis.\nSpecifically, we address the adoption of this paradigm by a wide range of resource constrained devices assessing the feasibility of our middleware solution, focusing both on the web and on the semantic aspects. Besides, we stress the degree of interoperability achieved by the applications made using RESTful TS by describing two scenarios where it could be used.</p>\n","preview":"The demand for Internet-enabled objects which expose their content in a RESTful and web compliant manner is increasing.\nConsequently, these","dir":"content/publications","base":"2012-06-01-gomezgoiri-restful.json","ext":".json","sourceBase":"2012-06-01-gomezgoiri-restful.md","sourceExt":".md"},"content/publications/2012-06-20-gomezgoiri-otsopack.json":{"title":"Otsopack: Lightweight Framework for Ambient Intelligence Applications","authors":"Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña and Javier Diego","restCitation":"5th World Summit on the Knowledge Society (WSKS 2012), June 20-22, 2012, Rome, Italy","bodyContent":"Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments, a wide variety of devices and platforms such as sensors, actuators or digital personality carriers (mobile devices) are usually deployed.\nIf each application has been developed for each platform using ad-hoc services, the interaction and the chances of adding or replacing devices decreases.\nParadigms such as Triple Space Computing -a tuplespace extension- are focused on enabling the interoperability and coordination of applications, by sharing information represented in a semantic format through a common virtual space.\nAs long as the application developers use standard ontologies, different applications using the same spaces will interact automatically.\nTo do so, a middleware that makes this abstraction possible is required.\nThe focus of this paper is to present Otsopack, a Triple Spaces fully distributed middleware designed to enable the development of AmI applications running in mobile and resource constrained devices.","bodyHtml":"<p>Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments, a wide variety of devices and platforms such as sensors, actuators or digital personality carriers (mobile devices) are usually deployed.\nIf each application has been developed for each platform using ad-hoc services, the interaction and the chances of adding or replacing devices decreases.\nParadigms such as Triple Space Computing -a tuplespace extension- are focused on enabling the interoperability and coordination of applications, by sharing information represented in a semantic format through a common virtual space.\nAs long as the application developers use standard ontologies, different applications using the same spaces will interact automatically.\nTo do so, a middleware that makes this abstraction possible is required.\nThe focus of this paper is to present Otsopack, a Triple Spaces fully distributed middleware designed to enable the development of AmI applications running in mobile and resource constrained devices.</p>\n","preview":"Ambient intelligence (AmI) applications are characterized by a remarkable necessity of interoperability.\nIn these intelligent environments,","dir":"content/publications","base":"2012-06-20-gomezgoiri-otsopack.json","ext":".json","sourceBase":"2012-06-20-gomezgoiri-otsopack.md","sourceExt":".md"},"content/publications/2012-07-04-gomezgoiri-assesing.json":{"title":"Assessing data dissemination strategies within Triple Spaces on the Web of Things","authors":"Aitor Gómez-Goiri and Diego López-de-Ipiña","restCitation":"Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing (<a href=\"http://www.esiot.com/\">IMIS</a>), pp.763-769, Palermo, Italy, July 4-6, 2012. DOI&#58; <a href=\"http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6296950\">10.1109/IMIS.2012.120</a>.","pdf":"/static/files/pdf/gomezgoiri2012dissemination.pdf","bib":"/static/files/bibtex/gomezgoiri2012dissemination.bib","semantics":"assessing-data-dissemination-strategies-within-triple-spaces-on-the-web-of-things","slides":"http://www.slideshare.net/twolf/assessing-data-dissemination-strategies","slideshareEmbedCode":13652892,"bodyContent":"The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol and other web techniques.\nUnfortunately, it usually defines the data shared by these devices in a syntactic level, showing a lack of expressiveness.\nDuring the last decade, the Semantic Web (SW) has aimed to solve these problems by adding logic to the Web to make it machine-understandable and by therefore enhancing the interoperability of the applications using it.\nThe SW is used in the Triple Space Computing paradigm, which proposes a blackboard model where semantically described knowledge is shared between different devices in a completely RESTful, and consequently WoT compliant, manner.\nThis paradigm's shared blackboard can be implemented using many strategies, from centralized to completely distributed.\nIn this work, we compare and analyze the behaviors of these two extreme cases in several simulations which try to represent common IoT scenarios.\nFinally, we propose an improvement of the completely distributed strategy by enabling the gossiping between devices.","bodyHtml":"<p>The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol and other web techniques.\nUnfortunately, it usually defines the data shared by these devices in a syntactic level, showing a lack of expressiveness.\nDuring the last decade, the Semantic Web (SW) has aimed to solve these problems by adding logic to the Web to make it machine-understandable and by therefore enhancing the interoperability of the applications using it.\nThe SW is used in the Triple Space Computing paradigm, which proposes a blackboard model where semantically described knowledge is shared between different devices in a completely RESTful, and consequently WoT compliant, manner.\nThis paradigm's shared blackboard can be implemented using many strategies, from centralized to completely distributed.\nIn this work, we compare and analyze the behaviors of these two extreme cases in several simulations which try to represent common IoT scenarios.\nFinally, we propose an improvement of the completely distributed strategy by enabling the gossiping between devices.</p>\n","preview":"The upcoming of the Web of Things initiative has improved the integration of Internet-connected devices through the standard HTTP protocol","dir":"content/publications","base":"2012-07-04-gomezgoiri-assesing.json","ext":".json","sourceBase":"2012-07-04-gomezgoiri-assesing.md","sourceExt":".md"},"content/publications/2012-12-03-naranjo-lightweight.json":{"title":"Lightweight User Access Control in Energy-Constrained Wireless Network Services","authors":"J. A. M. Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, L. G. Casado","restCitation":"In Proceedings of the Sixth International Conference, <a href=\"http://mami.uclm.es/ucami2012/\">UCAmI 2012</a>, Vitoria-Gasteiz, Spain, December 3-5, 2012. ISBN&#58; 978-3-642-35376-5. DOI&#58; <a href=\"http://link.springer.com/chapter/10.1007%2F978-3-642-35377-2_5\">10.1007/978-3-642-35377-2_5</a>","pdf":"/static/files/pdf/naranjo2012lightweight.pdf","bib":"/static/files/bibtex/naranjo2012lightweight.bib","semantics":"lightweight-user-access-control-in-energy-constrained-wireless-network-services","bodyContent":"This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with services.\nLow energy consumption is a key point in this kind of scenarios given that devices usually run on batteries and are unattended for long periods of time.\nOur proposal achieves privacy, authentication, semantic security, low energy and computational demand and device compromise impact limitation on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties and compare our proposal to previous related work.","bodyHtml":"<p>This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with services.\nLow energy consumption is a key point in this kind of scenarios given that devices usually run on batteries and are unattended for long periods of time.\nOur proposal achieves privacy, authentication, semantic security, low energy and computational demand and device compromise impact limitation on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties and compare our proposal to previous related work.</p>\n","preview":"This work introduces a novel access control solution for infrastructures composed of highly constrained devices which provide users with","dir":"content/publications","base":"2012-12-03-naranjo-lightweight.json","ext":".json","sourceBase":"2012-12-03-naranjo-lightweight.md","sourceExt":".md"},"content/publications/2013-02-06-orduna-weblab.json":{"title":"WebLab-Deployer: exporting remote laboratories as SaaS through federation protocols","authors":"Pablo Orduña, Xabier Larrakoetxea, David Buján, Aitor Gómez-Goiri, Ignacio Angulo, Olga Dziabenko, Luis Rodriguez-Gil, Diego López-de-Ipiña, Javier Garcia-Zubia","restCitation":"<a href=\"http://www.rev-conference.org/REV2013/\">REV2013: 10th International Conference on Remote Engineering and Virtual Instrumentation</a>. Sydney, Australia, 6 - 8 February 2013.","bib":"/static/files/bibtex/orduna2013weblab.bib","bodyContent":"During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the world.\nHowever, today most of the remote laboratories are still only used by the same institution that provides or even develops them, or by direct partners in federated environments.\nThere are two ways to support this type of federation: a) using a federated authentication system such as Shibboleth or b) installing a remote laboratory management system that supports federation natively.\nIn both cases, the consumer institution must go through a process of deployment or complex configuration.\nThis contribution explores providing access to laboratories using a Cloud Computing approach, considering the federated environments that do not have laboratories attached as a SaaS (Software as a Service) system.\nThis approach not only makes adoption by other institutions easier, but also benefits from the existing features provided by Cloud Computing, such as elasticity to reuse the same resources for different institutions to balance the load.","bodyHtml":"<p>During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the world.\nHowever, today most of the remote laboratories are still only used by the same institution that provides or even develops them, or by direct partners in federated environments.\nThere are two ways to support this type of federation: a) using a federated authentication system such as Shibboleth or b) installing a remote laboratory management system that supports federation natively.\nIn both cases, the consumer institution must go through a process of deployment or complex configuration.\nThis contribution explores providing access to laboratories using a Cloud Computing approach, considering the federated environments that do not have laboratories attached as a SaaS (Software as a Service) system.\nThis approach not only makes adoption by other institutions easier, but also benefits from the existing features provided by Cloud Computing, such as elasticity to reuse the same resources for different institutions to balance the load.</p>\n","preview":"During the last decade, remote laboratories have been extensively used as a primary learning tool in many universities around the","dir":"content/publications","base":"2013-02-06-orduna-weblab.json","ext":".json","sourceBase":"2013-02-06-orduna-weblab.md","sourceExt":".md"},"content/publications/2013-11-01-naranjo-enabling.json":{"title":"Enabling user access control in energy-constrained wireless smart environments","authors":"J. A. M. Naranjo, Pablo Orduña, Aitor Gómez-Goiri, Diego López-de-Ipiña, L. G. Casado","restCitation":"<a href=\"http://www.jucs.org/\">Journal of Universal Computer Science</a>, <a href=\"http://www.jucs.org/jucs_19\">Volume 19</a>, <a href=\"http://www.jucs.org/jucs_19_17\">number 17</a>, <a href=\"http://www.jucs.org/jucs_19_17/enabling_user_access_control\">Pages 2490-2505</a>, November 2013.","bib":"/static/files/bibtex/naranjo2013enabling.bib","pdf":"http://www.jucs.org/jucs_19_17/enabling_user_access_control/jucs_19_17_2490_2502_naranjo.pdf","semantics":"enabling-user-access-control-in-energy-constrained-wireless-smart-environments","bodyContent":"This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal use of computation, energy and storage resources at wireless sensors so as to address constrained devices: the proposed methods for key distribution and access control rely on extremely fast key derivation functions and, for the same reason, memory usage is reduced since keys are computed on the fly when needed.\nOur solution achieves privacy, authentication, semantic security, low energy, low computational demand and impacts mitigation of compromised devices on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties, compare our proposal to previous related work and provide experimental results that confirm its viability.","bodyHtml":"<p>This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal use of computation, energy and storage resources at wireless sensors so as to address constrained devices: the proposed methods for key distribution and access control rely on extremely fast key derivation functions and, for the same reason, memory usage is reduced since keys are computed on the fly when needed.\nOur solution achieves privacy, authentication, semantic security, low energy, low computational demand and impacts mitigation of compromised devices on a simple manner.\nThe access control provided is based on user identity and time intervals.\nWe discuss these properties, compare our proposal to previous related work and provide experimental results that confirm its viability.</p>\n","preview":"This work introduces a novel access control solution for wireless network services in Internet of Things scenarios.\nWe focus on a minimal","dir":"content/publications","base":"2013-11-01-naranjo-enabling.json","ext":".json","sourceBase":"2013-11-01-naranjo-enabling.md","sourceExt":".md"},"content/publications/2013-11-13-naranjo-extending.json":{"title":"Extending a User Access Control Proposal for Wireless Network Services with Hierarchical User Credentials","authors":"J. A. M. Naranjo, Aitor Gómez-Goiri, Pablo Orduña, Diego López-de-Ipiña, L. G. Casado","restCitation":"In Proceedings of the Sixth International Conference on Computational Intelligence in Security for Information Systems, <a href=\"http://gicap.ubu.es/cisis2013/home/home.shtml\">CISIS 2013</a>, Salamanca, Spain, September 11-13, 2013. ISBN&#58; 978-3-319-01853-9. DOI&#58; <a href=\"http://link.springer.com/chapter/10.1007%2F978-3-319-01854-6_61\">10.1007/978-3-319-01854-6_61</a>","pdf":"/static/files/pdf/naranjo2013extending.pdf","bib":"/static/files/bibtex/naranjo2013extending.bib","semantics":"extending-a-user-access-control-proposal-for-wireless-network-services-with-hierarchical-user-credentials","bodyContent":"We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth the basic solution and this novel extension focus on minimizing computation, energy, storage and communications required at sensors so they can be run in very constrained hardware, since the computations involved rely on symmetric cryptography and key derivation functions.\nFurthermore, no additional messages between users and sensors are needed.\nAccess control is based on user identity, group membership and time intervals.","bodyHtml":"<p>We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth the basic solution and this novel extension focus on minimizing computation, energy, storage and communications required at sensors so they can be run in very constrained hardware, since the computations involved rely on symmetric cryptography and key derivation functions.\nFurthermore, no additional messages between users and sensors are needed.\nAccess control is based on user identity, group membership and time intervals.</p>\n","preview":"We extend a previous access control solution for wireless network services with group-based authorization and encryption capabilities.\nBoth","dir":"content/publications","base":"2013-11-13-naranjo-extending.json","ext":".json","sourceBase":"2013-11-13-naranjo-extending.md","sourceExt":".md"},"content/publications/2014-01-01-gomezgoiri-otsopack.json":{"title":"Otsopack: Lightweight semantic framework for interoperable ambient intelligence applications","authors":"Aitor Gómez-Goiri, Pablo Orduña, Javier Diego, Diego López-de-Ipiña","restCitation":"<a href=\"http://www.journals.elsevier.com/computers-in-human-behavior/\">Computers in Human Behavior</a>, <a href=\"http://www.sciencedirect.com/science/journal/07475632/30/supp/C\">Volume 30</a>, Pages <a href=\"http://www.sciencedirect.com/science/article/pii/S0747563213002148\">460-467</a>, January 2014, ISSN 0747-5632. DOI: <a href=\"http://dx.doi.org/10.1016/j.chb.2013.06.022\">10.1016/j.chb.2013.06.022</a>.","bib":"/static/files/bibtex/gomezgoiri2014otsopack.bib","semantics":"otsopack-lightweight-semantic-framework-for-interoperable-ambient-intelligence-applications","bodyContent":"In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the communication protocols they use is multifarious.\nTherefore, the applications running on top of them remarkably demand interoperability.\nThe Triple Space Computing (TSC) paradigm addresses that problem by sharing information represented in a semantic format through a common virtual space.\nAs long as application developers use standard ontologies, different applications using the same spaces will interact automatically.\nThe focus of this paper is to present Otsopack, a fully distributed TSC middleware designed to meet the needs of mobile and resource constrained devices.\nOtsopack defines a simple HTTP interface for the TSC operations.\nThis interface focuses on simplicity and modularity, so that two implementations that support different modules can still interact.\nTo assess the middleware we provide time and load measurements, and we analyze two independent implementations.","bodyHtml":"<p>In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the communication protocols they use is multifarious.\nTherefore, the applications running on top of them remarkably demand interoperability.\nThe Triple Space Computing (TSC) paradigm addresses that problem by sharing information represented in a semantic format through a common virtual space.\nAs long as application developers use standard ontologies, different applications using the same spaces will interact automatically.\nThe focus of this paper is to present Otsopack, a fully distributed TSC middleware designed to meet the needs of mobile and resource constrained devices.\nOtsopack defines a simple HTTP interface for the TSC operations.\nThis interface focuses on simplicity and modularity, so that two implementations that support different modules can still interact.\nTo assess the middleware we provide time and load measurements, and we analyze two independent implementations.</p>\n","preview":"In Ambient Intelligence environments machines proactively and transparently work on behalf of humans.\nThe nature of these machines and the","dir":"content/publications","base":"2014-01-01-gomezgoiri-otsopack.json","ext":".json","sourceBase":"2014-01-01-gomezgoiri-otsopack.md","sourceExt":".md"},"content/publications/2014-01-02-gomezgoiri-energy.json":{"title":"Energy-aware Architecture for Information Search in the Semantic Web of Things","authors":"Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña","restCitation":"<a href=\"http&#58;//www.inderscience.com/jhome.php?jcode=ijwgs\">International Journal of Web and Grid Services</a>, <a href=\"http://www.inderscience.com/info/inarticle.php?artid=60252\">Vol.10, No.2/3, pp.192–217</a>, 2014. <br /> ISSN: 1741-1106. DOI: <a href=\"http://dx.doi.org/10.1504/IJWGS.2014.060252\">10.1504/IJWGS.2014.060252</a>.","bib":"/static/files/bibtex/gomezgoiri2014energy.bib","code":"/static/files/code/gomezgoiri2014energy.html","bodyContent":"Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this way, these devices can form an Ambient Intelligence environment where they can share and provide information.\nThe integration of such devices is difficult as they normally use different protocols.\nTo overcome this problem, the Web of Things (WoT) initiative proposes to use well-established web standards to ease their communication.\nHowever, these devices still need to share data in different formats.\nFor this reason, it is convenient to annotate data semantically in the WoT.\nWorking with annotated data is expensive for devices which usually have limited capacity.\n\nIn this paper, we propose a dynamic architecture to search semantically annotated data in the WoT.\nThis architecture takes into account the reduced computation capacity and the limited energy autonomy of embedded devices.","bodyHtml":"<p>Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this way, these devices can form an Ambient Intelligence environment where they can share and provide information.\nThe integration of such devices is difficult as they normally use different protocols.\nTo overcome this problem, the Web of Things (WoT) initiative proposes to use well-established web standards to ease their communication.\nHowever, these devices still need to share data in different formats.\nFor this reason, it is convenient to annotate data semantically in the WoT.\nWorking with annotated data is expensive for devices which usually have limited capacity.</p>\n<p>In this paper, we propose a dynamic architecture to search semantically annotated data in the WoT.\nThis architecture takes into account the reduced computation capacity and the limited energy autonomy of embedded devices.</p>\n","preview":"Nowadays, not only computers or mobile phones are connected to the Internet but also other devices like cars or washing machines.\nIn this","dir":"content/publications","base":"2014-01-02-gomezgoiri-energy.json","ext":".json","sourceBase":"2014-01-02-gomezgoiri-energy.md","sourceExt":".md"},"content/publications/2014-06-16-gomezgoiri-semantic.json":{"title":"Semantic Tuple Spaces for Constrained Devices: A Web-compliant Vision","authors":"Aitor Gómez-Goiri","restCitation":"PhD thesis, <a href=\"http://www.deusto.es\">Universidad de Deusto</a>, June 16th, 2014.","pdf":"https://gateway.pinata.cloud/ipfs/QmaTVSWNg53eBpLQqwguDkt8j8TqfVX3DWQg34sEzbkGa4","bib":"/static/files/bibtex/gomezgoiri2014dissertation.bib","slides":"https://gateway.pinata.cloud/ipfs/Qmdsxg5aKm2VBqzAQcicVjUD61RexpwW5p1y3wU4sPVa5z","code":"https://github.com/gomezgoiri/dissertation","paths":["/publications/gomezgoiri-dissertation.html"],"bodyContent":"Supervisors:\n\n- [Diego López de Ipiña](http://paginaspersonales.deusto.es/dipina/) (University of Deusto)\n- [Iñigo Goiri](http://www.research.rutgers.edu/~goiri/) ([Rutgers University](http://www.rutgers.edu/)).\n\nJury panel:\n\n- Antonio F. Gómez-Skarmeta ([University of Murcia](http://www.um.es/), chair)\n- [George Roussos](http://www.dcs.bbk.ac.uk/~gr/) ([University of London](http://www.dcs.bbk.ac.uk), vocal)\n- [Mikel Larrea](http://www.sc.ehu.es/acwlaalm/) ([University of the Basque Country](http://www.ehu.es), secretary)\n\n<hr />\n\nUbiquitous Computing (UbiComp) envisions environments where devices interact among themselves to work seamlessly together on behalf of humans.\nIn recent years, the emergence of the Internet of Things (IoT) concept, which opts for connecting everyday objects to the Internet, and the Mobile Computing paradigm have contributed to strengthening UbiComp.\nFor this reason, UbiComp environments are not necessarily populated by powerful computers.\nOn the contrary, resource constrained devices (e.g., embedded and mobile devices) are the main actors in these environments.\nThus, it is important for the environment to deal with their heterogeneity, unreliability, and replaceability.\n\nIn order to cope with heterogeneity, the Semantic Web has proposed several standards and models to clearly define the terms so that they can be reused across applications boundaries.\nRegarding unreliability and replaceability, space-based computing (or Tuple Spaces) promotes the uncoupled coordination of the devices.\nSolutions based on semantic tuple spaces combine these three beneficial aspects resulting from bridging the Semantic Web and Tuple Spaces domains for UbiComp.\n\nMost of these semantic tuple spaces consider embedded and mobile devices as mere clients in a space managed by more powerful devices.\nSuch delegation helps to reduce the workload of devices with computing and energy limitations.\nHowever, this delegation moves the data away from where it is physically generated.\nThis creates a conflict between providing updated data and generating unnecessary network traffic for unused information.\nIn addition, this delegation makes constrained devices intrinsically dependent on other devices when it might not always be necessary.\nThis dissertation explores how these constrained devices can act as fully fledged semantic knowledge providers to create a more decentralized space.\n\nIn conclusion, this dissertation presents a novel adaptation of semantic tuple space which considers the energy and computational impact on the devices.\nSpecifically, this dissertation proposes the following contributions:\n\n- A space model which considers the principles which have made the web flourish in the last decades, together with the uncoupling properties of space-based computing.\n- An energy-aware search mechanism for autonomous constrained devices.\n- An alignment of two approaches to act on the physical environment, namely a space-based indirect actuation and a web-based direct actuation.","bodyHtml":"<p>Supervisors:</p>\n<ul>\n<li><a href=\"http://paginaspersonales.deusto.es/dipina/\">Diego López de Ipiña</a> (University of Deusto)</li>\n<li><a href=\"http://www.research.rutgers.edu/~goiri/\">Iñigo Goiri</a> (<a href=\"http://www.rutgers.edu/\">Rutgers University</a>).</li>\n</ul>\n<p>Jury panel:</p>\n<ul>\n<li>Antonio F. Gómez-Skarmeta (<a href=\"http://www.um.es/\">University of Murcia</a>, chair)</li>\n<li><a href=\"http://www.dcs.bbk.ac.uk/~gr/\">George Roussos</a> (<a href=\"http://www.dcs.bbk.ac.uk\">University of London</a>, vocal)</li>\n<li><a href=\"http://www.sc.ehu.es/acwlaalm/\">Mikel Larrea</a> (<a href=\"http://www.ehu.es\">University of the Basque Country</a>, secretary)</li>\n</ul>\n<hr />\n<p>Ubiquitous Computing (UbiComp) envisions environments where devices interact among themselves to work seamlessly together on behalf of humans.\nIn recent years, the emergence of the Internet of Things (IoT) concept, which opts for connecting everyday objects to the Internet, and the Mobile Computing paradigm have contributed to strengthening UbiComp.\nFor this reason, UbiComp environments are not necessarily populated by powerful computers.\nOn the contrary, resource constrained devices (e.g., embedded and mobile devices) are the main actors in these environments.\nThus, it is important for the environment to deal with their heterogeneity, unreliability, and replaceability.</p>\n<p>In order to cope with heterogeneity, the Semantic Web has proposed several standards and models to clearly define the terms so that they can be reused across applications boundaries.\nRegarding unreliability and replaceability, space-based computing (or Tuple Spaces) promotes the uncoupled coordination of the devices.\nSolutions based on semantic tuple spaces combine these three beneficial aspects resulting from bridging the Semantic Web and Tuple Spaces domains for UbiComp.</p>\n<p>Most of these semantic tuple spaces consider embedded and mobile devices as mere clients in a space managed by more powerful devices.\nSuch delegation helps to reduce the workload of devices with computing and energy limitations.\nHowever, this delegation moves the data away from where it is physically generated.\nThis creates a conflict between providing updated data and generating unnecessary network traffic for unused information.\nIn addition, this delegation makes constrained devices intrinsically dependent on other devices when it might not always be necessary.\nThis dissertation explores how these constrained devices can act as fully fledged semantic knowledge providers to create a more decentralized space.</p>\n<p>In conclusion, this dissertation presents a novel adaptation of semantic tuple space which considers the energy and computational impact on the devices.\nSpecifically, this dissertation proposes the following contributions:</p>\n<ul>\n<li>A space model which considers the principles which have made the web flourish in the last decades, together with the uncoupling properties of space-based computing.</li>\n<li>An energy-aware search mechanism for autonomous constrained devices.</li>\n<li>An alignment of two approaches to act on the physical environment, namely a space-based indirect actuation and a web-based direct actuation.</li>\n</ul>\n","preview":"Supervisors:\n\nDiego López de Ipiña (University of Deusto)\nIñigo Goiri (Rutgers University).\n\nJury panel:\n\nAntonio F. Gómez-Skarmeta","dir":"content/publications","base":"2014-06-16-gomezgoiri-semantic.json","ext":".json","sourceBase":"2014-06-16-gomezgoiri-semantic.md","sourceExt":".md"},"content/publications/2014-07-02-gomezgoiri-reusing.json":{"title":"Reusing Web-Enabled Actuators from a Semantic Space-Based Perspective","authors":"Aitor Gómez-Goiri, Íñigo Goiri, Diego López-de-Ipiña","restCitation":"<a href=\"https://ieeexplore.ieee.org/xpl/conhome/6963207/proceeding\">Eighth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing</a>, July 2014. <br /> DOI: <a href=\"https://doi.org/10.1109/IMIS.2014.45\">10.1109/IMIS.2014.45 </a>.","bib":"/static/files/bibtex/gomezgoiri2014reusing.bib","slides":"https://gateway.pinata.cloud/ipfs/QmcrYWYakHGnNpxGHM3UwhTEpxjuFi9n9dh8VHH9vp5cSU","code":"https://github.com/gomezgoiri/reusingWebActuatorsFromSemanticSpace","bodyContent":"Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been widely applied to cope with both aspects.\nHowever, the integration of these devices with the web has gained momentum in the last years.\nTherefore, the seamless reuse of these web-enabled devices drastically increases the actuation possibilities of any application.\nThis paper explores how semantic space-based applications can perform the aforementioned reuse.\nThis exploration is guided by the implementation of a scenario.\nThe scenario shows a neat interoperation between nodes from both worlds: space-based computing and the web.\nIn addition, the generalization of the proposed solution poses new challenges to be tackled.","bodyHtml":"<p>Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been widely applied to cope with both aspects.\nHowever, the integration of these devices with the web has gained momentum in the last years.\nTherefore, the seamless reuse of these web-enabled devices drastically increases the actuation possibilities of any application.\nThis paper explores how semantic space-based applications can perform the aforementioned reuse.\nThis exploration is guided by the implementation of a scenario.\nThe scenario shows a neat interoperation between nodes from both worlds: space-based computing and the web.\nIn addition, the generalization of the proposed solution poses new challenges to be tackled.</p>\n","preview":"Ubiquitous Computing is characterized by heterogeneous devices of a dynamic nature.\nSo far, semantics and space-based computing have been","dir":"content/publications","base":"2014-07-02-gomezgoiri-reusing.json","ext":".json","sourceBase":"2014-07-02-gomezgoiri-reusing.md","sourceExt":".md"},"content/publications/2015-02-25-orduna-wCloud.json":{"title":"wCloud: Automatic generation of WebLab-Deusto deployments in the Cloud","authors":"Pablo Orduña, Aitor Gómez-Goiri, Luis Rodriguez-Gil, Javier Diego, Diego López-de-Ipiña, Javier Garcia-Zubia","restCitation":"In <a href=\"http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7080986\">12th International Conference on Remote Engineering and Virtual Instrumentation (REV)</a>, pp.223–229</a>, February 2015, Bangkok , Thailand. DOI: <a href=\"http://dx.doi.org/10.1109/REV.2015.7087296\">10.1109/REV.2015.7087296</a>.","bib":"/static/files/bibtex/orduna2015wcloud.bib","bodyContent":"Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in universities as if they were in a hands-on-lab session. Since most remote labs share certain management tasks (authentication, Learning Analytics, scheduling, etc.), software systems implementing them on top of which remote labs could be implemented were developed and called Remote Lab Management Systems (RLMS). A key feature provided by certain RLMSs is sharing a remote laboratory between two systems deployed in two institutions. This way, it becomes possible to have multiple RLMS instances (which are pure software) in a Cloud environment, customized for different schools or universities. Each school would have its own RLMS, with all the management features (e.g., managing its own students), and in the end, the RLMS would connect to the RLMS which has the physical equipment. The focus of this contribution is to detail how this “RLMS as a Service” is being implemented in the case of WebLab-Deusto as part of the mCloud project, from a technical point of view.","bodyHtml":"<p>Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in universities as if they were in a hands-on-lab session. Since most remote labs share certain management tasks (authentication, Learning Analytics, scheduling, etc.), software systems implementing them on top of which remote labs could be implemented were developed and called Remote Lab Management Systems (RLMS). A key feature provided by certain RLMSs is sharing a remote laboratory between two systems deployed in two institutions. This way, it becomes possible to have multiple RLMS instances (which are pure software) in a Cloud environment, customized for different schools or universities. Each school would have its own RLMS, with all the management features (e.g., managing its own students), and in the end, the RLMS would connect to the RLMS which has the physical equipment. The focus of this contribution is to detail how this “RLMS as a Service” is being implemented in the case of WebLab-Deusto as part of the mCloud project, from a technical point of view.</p>\n","preview":"Educational remote laboratories are software and hardware tools that allow students to remotely access real equipment located in","dir":"content/publications","base":"2015-02-25-orduna-wCloud.json","ext":".json","sourceBase":"2015-02-25-orduna-wCloud.md","sourceExt":".md"},"content/publications/2015-09-15-mikroyannidis-deploying.json":{"title":"Deploying learning analytics for awareness and reflection in online scientific experimentation","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, John Domingue, Daan Pareit, Jono Vanhie-Van Gerwen, Johann M. Marquez-Barja","restCitation":"In <a href=\"http://www.teleurope.eu/pg/pages/view/389887/\">5th Workshop on Awareness and Reflection in Technology Enhanced Learning (ARTEL)</a> colocated with <a href=\"http://ectel2015.httc.de/index.php?id=704\">10th European Conference on Technology Enhanced Learning: Design for Teaching and Learning in a Networked World (EC-TEL 2015)</a>, 15 September 2015, Toledo, Spain.","pdf":"/static/files/pdf/mikroyannidis2015deploying.pdf","bib":"/static/files/bibtex/mikroyannidis2015deploying.bib","bodyContent":"Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the education sector by offering learners with access to free learning materials of high quality, as well as with the means to monitor their progress and reflect on their learning experiences.\nThis part presents FORGE, a European initiative for online learning and experimentation via interactive learning resources.\nFORGE provides learners and educators with access to world-class experimentation facilities and high quality learning materials.\nAdditionally, the deployment of Learning Analytics in the FORGE learning resources aims at supporting awareness and reflection both for learners and educators.","bodyHtml":"<p>Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the education sector by offering learners with access to free learning materials of high quality, as well as with the means to monitor their progress and reflect on their learning experiences.\nThis part presents FORGE, a European initiative for online learning and experimentation via interactive learning resources.\nFORGE provides learners and educators with access to world-class experimentation facilities and high quality learning materials.\nAdditionally, the deployment of Learning Analytics in the FORGE learning resources aims at supporting awareness and reflection both for learners and educators.</p>\n","preview":"Recent trends in online learning, most notably Massive Open Online Courses (MOOCs) and Learning Analytics, are changing the landscape in the","dir":"content/publications","base":"2015-09-15-mikroyannidis-deploying.json","ext":".json","sourceBase":"2015-09-15-mikroyannidis-deploying.md","sourceExt":".md"},"content/publications/2015-11-26-domingue-forging.json":{"title":"Forging Online Education through FIRE","authors":"John Domingue, Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, Daan Pareit, Jono Vanhie-Van Gerwen, Christos Tranoris, Kostas Lampropoulos, Guillaume Jourjon, Olivier Fourmaux, Mohammed Yasin Rahman","restCitation":"<a href=\"https://itunes.apple.com/us/book/id1062612920\">iBook</a>, 2015. <br /> ISBN: 978-1-4730-2016-0.","bib":"/static/files/bibtex/domingue2015forging.bib","bodyContent":"The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research and development of new Future Internet concepts, giving researchers the tools they need to conduct large-scale experiments on new paradigms. The FORGE project introduces the FIRE experimental facilities to the eLearning community, in order to promote experimentally driven research in education by using experiments as an interactive learning and training channel both for students and professionals.\n\nThis book introduces a range of Future Internet topics using FIRE facilities. You will have the opportunity to study in depth various aspects of networking protocols and infrastructure, watch instructional movies and screencasts, as well as conduct experiments using the FIRE infrastructure.","bodyHtml":"<p>The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research and development of new Future Internet concepts, giving researchers the tools they need to conduct large-scale experiments on new paradigms. The FORGE project introduces the FIRE experimental facilities to the eLearning community, in order to promote experimentally driven research in education by using experiments as an interactive learning and training channel both for students and professionals.</p>\n<p>This book introduces a range of Future Internet topics using FIRE facilities. You will have the opportunity to study in depth various aspects of networking protocols and infrastructure, watch instructional movies and screencasts, as well as conduct experiments using the FIRE infrastructure.</p>\n","preview":"The FIRE initiative (Future Internet Research and Experimentation) creates an open research environment that facilitates strategic research","dir":"content/publications","base":"2015-11-26-domingue-forging.json","ext":".json","sourceBase":"2015-11-26-domingue-forging.md","sourceExt":".md"},"content/publications/2016-02-01-ventura-security.json":{"title":"Security analysis and resource requirements of group-oriented user access control for hardware-constrained wireless network services","authors":"Daniela Ventura, Aitor Gómez-Goiri, Vincenzo Catania, Diego López-de-Ipiña, J. A. M. Naranjo, L. G. Casado","restCitation":"<a href=\"http://jigpal.oxfordjournals.org/\">Logic Journal of the IGPL</a>, <a href=\"http://jigpal.oxfordjournals.org/content/24/1/80.abstract\">Vol.24, No.1, pp.80–91</a>, 2016. <br /> DOI: <a href=\"http://dx.doi.org/10.1093/jigpal/jzv045\">10.1093/jigpal/jzv045</a>.","pdf":"/static/files/pdf/ventura2016security.pdf","bib":"/static/files/bibtex/ventura2016security.bib","code":"https://github.com/lightsec","bodyContent":"We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and encryption are provided, and access control relies on user identity, group membership and time intervals.\nBoth the basic solution and the extension focus on minimizing computation, energy, storage and communications on the sensor side: computations involved rely on symmetric cryptography and key derivation functions, and no additional messages between user and sensor are needed.\nThe performance of our solution is proven by experiments on a highly constrained platform such as Arduino.\nFinally, its security is validated against the AVISPA tool.","bodyHtml":"<p>We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and encryption are provided, and access control relies on user identity, group membership and time intervals.\nBoth the basic solution and the extension focus on minimizing computation, energy, storage and communications on the sensor side: computations involved rely on symmetric cryptography and key derivation functions, and no additional messages between user and sensor are needed.\nThe performance of our solution is proven by experiments on a highly constrained platform such as Arduino.\nFinally, its security is validated against the AVISPA tool.</p>\n","preview":"We extend and analyse a previous access control solution for wireless network services with group-based authorization.\nAuthentication and","dir":"content/publications","base":"2016-02-01-ventura-security.json","ext":".json","sourceBase":"2016-02-01-ventura-security.md","sourceExt":".md"},"content/publications/2017-06-08-mikroyannidis-online.json":{"title":"Online experimentation and interactive learning resources for teaching network engineering","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, John Domingue","restCitation":"In: 2017 IEEE Global Engineering Education Conference (EDUCON) (25-28 Apr 2017, Athens, Greece) (pp. 181-188)","pdf":"http://oro.open.ac.uk/49733/1/07942845.pdf","bib":"/static/files/bibtex/mikroyannidis2017online.bib","bodyContent":"This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has been developed in collaboration with the Cisco Networking Academy in the context of the FORGE project, which promotes online learning and experimentation by offering access to virtual and remote labs. The main goal of this work is allowing learners and educators to perform network simulations within a web browser or an interactive eBook by using any type of mobile, tablet or desktop device.\nLearning Analytics are employed in order to monitor learning behaviour for further analysis of the learning experience offered to students.","bodyHtml":"<p>This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has been developed in collaboration with the Cisco Networking Academy in the context of the FORGE project, which promotes online learning and experimentation by offering access to virtual and remote labs. The main goal of this work is allowing learners and educators to perform network simulations within a web browser or an interactive eBook by using any type of mobile, tablet or desktop device.\nLearning Analytics are employed in order to monitor learning behaviour for further analysis of the learning experience offered to students.</p>\n","preview":"This paper presents a case study on teaching network engineering in conjunction with interactive learning resources.\nThis case study has","dir":"content/publications","base":"2017-06-08-mikroyannidis-online.json","ext":".json","sourceBase":"2017-06-08-mikroyannidis-online.md","sourceExt":".md"},"content/publications/2018-11-15-mikroyannidis-ptanywhere.json":{"title":"PT Anywhere: a mobile environment for practical learning of network engineering","authors":"Alexander Mikroyannidis, Aitor Gomez-Goiri, Andrew Smith, John Domingue","restCitation":"Interactive Learning Environments pp. 1–15.","bib":"/static/files/bibtex/mikroyannidis2018ptanywhere.bib","bodyContent":"The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised and up-to-date network equipment, as well as the high costs associated with obtaining and maintaining this equipment.\nThe PT Anywhere initiative addresses these challenges by offering a mobile environment for acquiring practical knowledge and skills of network engineering.\nPT Anywhere facilitates learner-centred anywhere/anytime learning and offers learners access to high-quality interactive learning resources.\nAdditionally, PT Anywhere employs Learning Analytics in order to help learners and educators in understanding and improving learning.\nThis paper presents the learning design and software design principles driving the development of PT Anywhere, as well as the outcomes of an evaluation session conducted with members of the Cisco Networking Academy.\nThe results of this evaluation indicate that PT Anywhere holds the potential to engage learners in different ways inside and outside of the classroom, without the need for access to specialised equipment","bodyHtml":"<p>The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised and up-to-date network equipment, as well as the high costs associated with obtaining and maintaining this equipment.\nThe PT Anywhere initiative addresses these challenges by offering a mobile environment for acquiring practical knowledge and skills of network engineering.\nPT Anywhere facilitates learner-centred anywhere/anytime learning and offers learners access to high-quality interactive learning resources.\nAdditionally, PT Anywhere employs Learning Analytics in order to help learners and educators in understanding and improving learning.\nThis paper presents the learning design and software design principles driving the development of PT Anywhere, as well as the outcomes of an evaluation session conducted with members of the Cisco Networking Academy.\nThe results of this evaluation indicate that PT Anywhere holds the potential to engage learners in different ways inside and outside of the classroom, without the need for access to specialised equipment</p>\n","preview":"The main challenges commonly associated with acquiring practical network engineering skills are the requirements for access to specialised","dir":"content/publications","base":"2018-11-15-mikroyannidis-ptanywhere.json","ext":".json","sourceBase":"2018-11-15-mikroyannidis-ptanywhere.md","sourceExt":".md"},"content/publications/2021-07-30-gutierrez-burnable.json":{"title":"Burnable Pseudo-Identity: A Non-Binding Anonymous Identity Method for Ethereum","authors":"Iván Gutiérrez-Agüero, Sergio Anguita, Xabier Larrucea, Aitor Gomez-Goiri, Borja Urquizu","restCitation":"In <a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639\">IEEE Access</a>, vol. 9, pp. 108912-108923</a>, 2021, Doi: <a href=\"https://doi.org/10.1109/ACCESS.2021.3101302\">10.1109/ACCESS.2021.3101302</a>.","bib":"/static/files/bibtex/gutierrez2021burnable.bib","bodyContent":"The concept of identity has become one common research topic in security and privacy where the real identity of users must be preserved, usually covered by pseudonym identifiers.\nWith the rise of Blockchain-based systems, identities are becoming even more critical than before, mainly due to the immutability property.\nIn fact, many publicly accessible Blockchain networks like Ethereum rely on pseudonymization as a method for identifying subject actions.\nPseudonyms are often employed to maintain anonymity, but true anonymity requires unlinkability.\nWithout this property, any attacker can examine the messages sent by a specific pseudonym and learn new information about the holder of this pseudonym.\nThis use of Blockchain collides with regulations because of the right to be forgotten, and Blockchain-based solutions are ensuring that every data stored within the chain will not be modified.\nIn this paper we define a method and a tool for dealing with digital identities within Blockchain environments that are compliant with regulations.\nThe proposed method provides a way to grant digital pseudo identities unlinked to the real identity.\nThis new method uses the benefits of key derivation systems to ensure a non-binding interaction between users and the information model associated with their identity.\nThe proposed method is demonstated in the Ethereum context and illustrated with a case study.","bodyHtml":"<p>The concept of identity has become one common research topic in security and privacy where the real identity of users must be preserved, usually covered by pseudonym identifiers.\nWith the rise of Blockchain-based systems, identities are becoming even more critical than before, mainly due to the immutability property.\nIn fact, many publicly accessible Blockchain networks like Ethereum rely on pseudonymization as a method for identifying subject actions.\nPseudonyms are often employed to maintain anonymity, but true anonymity requires unlinkability.\nWithout this property, any attacker can examine the messages sent by a specific pseudonym and learn new information about the holder of this pseudonym.\nThis use of Blockchain collides with regulations because of the right to be forgotten, and Blockchain-based solutions are ensuring that every data stored within the chain will not be modified.\nIn this paper we define a method and a tool for dealing with digital identities within Blockchain environments that are compliant with regulations.\nThe proposed method provides a way to grant digital pseudo identities unlinked to the real identity.\nThis new method uses the benefits of key derivation systems to ensure a non-binding interaction between users and the information model associated with their identity.\nThe proposed method is demonstated in the Ethereum context and illustrated with a case study.</p>\n","preview":"The concept of identity has become one common research topic in security and privacy where the real identity of users must be preserved,","dir":"content/publications","base":"2021-07-30-gutierrez-burnable.json","ext":".json","sourceBase":"2021-07-30-gutierrez-burnable.md","sourceExt":".md"},"content/research_projects.json":{"title":"R&D Projects","description":"Research and development projects","page":"/rdProjects/section","paths":["/research_projects.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"research_projects.json","ext":".json","sourceBase":"research_projects.md","sourceExt":".md"},"content/teaching.json":{"title":"Teaching","description":"Teaching","page":"/teaching","paths":["/teaching.html"],"bodyContent":"","bodyHtml":"","dir":"content","base":"teaching.json","ext":".json","sourceBase":"teaching.md","sourceExt":".md"},"content/teaching/2008-07-18-php.json":{"category":"eghost","title":"PHP","where":"<a href=\"http://www.e-ghost.deusto.es/\">E-ghost</a>'s summer courses","originalName":"Introducción a PHP","topics":"<a href=\"http://www.php.net/\">PHP</a>","language":"Spanish","when":"16th-18th July 2008 (6 hours)","bodyContent":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/529882\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n\n<div style=\"margin-bottom:5px\">\n  <strong><a href=\"https://www.slideshare.net/twolf/presentacion-529882\" title=\"Introducción a PHP5\" target=\"_blank\">Introducción a PHP5</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a>\n</div></strong>","bodyHtml":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/529882\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n<div style=\"margin-bottom:5px\">\n  <strong><a href=\"https://www.slideshare.net/twolf/presentacion-529882\" title=\"Introducción a PHP5\" target=\"_blank\">Introducción a PHP5</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a>\n</div></strong>","preview":"Introducción a PHP5  from Aitor Gómez Goiri","dir":"content/teaching","base":"2008-07-18-php.json","ext":".json","sourceBase":"2008-07-18-php.md","sourceExt":".md"},"content/teaching/2012-06-01-programazioa-ii.json":{"category":"university","title":"Programming II","where":"<a href=\"http://www.ingenieria.deusto.es/cs/Satellite/ingenieria/es/estudios-0/estudios-ingenieria-grado/ingenieria-informatica/ingenieria-informatica/\">BSc in Computer Engineering</a>","originalName":"Programazioa II","topics":"algorithms and data structures (2D arrays, object files, lists, queues, stacks and trees).","language":"Basque","when":"Second semester of 2010/2011 and 2011/2012 (5 hours a week).","bodyContent":"Materials:\n\n- <a href=\"http://www.slideshare.net/twolf/2d-arraya-eta-objetu-arrayak\" target=\"_blank\">2D arraya eta objetu arrayak</a>\n- <a href=\"http://www.slideshare.net/twolf/02-fitxategiak\" target=\"_blank\">Fitxategiak</a>\n- <a href=\"http://www.slideshare.net/twolf/konposizioa-herentzia-eta-polimorfismoa\" target=\"_blank\">Konposizioa, herentzia eta polimorfismoa</a>\n- <a href=\"http://www.slideshare.net/twolf/egitura-linealak\" target=\"_blank\">Egitura linealak</a>\n- <a href=\"http://www.slideshare.net/twolf/errekurtsibitatea\" target=\"_blank\">Errekurtsibitatea</a>\n- <a href=\"http://www.slideshare.net/twolf/zuhaitzak-9797376\" target=\"_blank\">Zuhaitzak</a>","bodyHtml":"<p>Materials:</p>\n<ul>\n<li><a href=\"http://www.slideshare.net/twolf/2d-arraya-eta-objetu-arrayak\" target=\"_blank\">2D arraya eta objetu arrayak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/02-fitxategiak\" target=\"_blank\">Fitxategiak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/konposizioa-herentzia-eta-polimorfismoa\" target=\"_blank\">Konposizioa, herentzia eta polimorfismoa</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/egitura-linealak\" target=\"_blank\">Egitura linealak</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/errekurtsibitatea\" target=\"_blank\">Errekurtsibitatea</a></li>\n<li><a href=\"http://www.slideshare.net/twolf/zuhaitzak-9797376\" target=\"_blank\">Zuhaitzak</a></li>\n</ul>\n","preview":"Materials:\n\n2D arraya eta objetu arrayak\nFitxategiak\nKonposizioa, herentzia eta polimorfismoa\nEgitura linealak\nErrekurtsibitatea\nZuhaitzak","dir":"content/teaching","base":"2012-06-01-programazioa-ii.json","ext":".json","sourceBase":"2012-06-01-programazioa-ii.md","sourceExt":".md"},"content/teaching/2012-07-19-redis.json":{"category":"eghost","title":"Redis","where":"<a href=\"http://www.e-ghost.deusto.es/\">E-ghost</a>'s summer courses","originalName":"Redis","topics":"<a href=\"http://redis.io/\">Redis store</a>","language":"Spanish","when":"18th-19th July 2012 (4 hours)","who":"<a href=\"http://paginaspersonales.deusto.es/porduna\">Pablo Orduña</a> and me","bodyContent":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/13761632\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n\n<div style=\"margin-bottom:5px\">\n  <strong> <a href=\"https://www.slideshare.net/twolf/redis-13761632\" title=\"Redis\" target=\"_blank\">Redis</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a></strong>\n</div>","bodyHtml":"<iframe\n  src=\"https://www.slideshare.net/slideshow/embed_code/13761632\"\n  width=\"427\" height=\"356\"\n  style=\"width: 427px; height: 356px; border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px\"\n  frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"\n  allowfullscreen webkitallowfullscreen mozallowfullscreen>\n</iframe>\n<div style=\"margin-bottom:5px\">\n  <strong> <a href=\"https://www.slideshare.net/twolf/redis-13761632\" title=\"Redis\" target=\"_blank\">Redis</a> </strong> from <strong><a href=\"https://www.slideshare.net/twolf\" target=\"_blank\">Aitor Gómez Goiri</a></strong>\n</div>","preview":"Redis  from Aitor Gómez Goiri","dir":"content/teaching","base":"2012-07-19-redis.json","ext":".json","sourceBase":"2012-07-19-redis.md","sourceExt":".md"},"content/teaching/2012-11-18-htas-desarrollo.json":{"category":"university","title":"Development tools","where":"<a href=\"http://www.diss.deusto.es/\">Master's in Development and Integration of Software Solutions</a>","originalName":"Herramientas de soporte integral al desarrollo","topics":"<a href=\"http://en.wikipedia.org/wiki/Revision_control\">version control systems</a> (<a href=\"http://svnbook.red-bean.com/\">subversion</a> and <a href=\"http://hgbook.red-bean.com/\">mercurial</a>), <a href=\"http://en.wikipedia.org/wiki/Unit_testing\">unit testing</a>, etc.","language":"Spanish","when":"First semester of 2011/2012 and 2012/2013 (one week each course, 3 hours a day).","who":"<a href=\"http://paginaspersonales.deusto.es/porduna\">Pablo Orduña</a> and me","bodyContent":"Materials soon...","bodyHtml":"<p>Materials soon...</p>\n","preview":"Materials soon...","dir":"content/teaching","base":"2012-11-18-htas-desarrollo.json","ext":".json","sourceBase":"2012-11-18-htas-desarrollo.md","sourceExt":".md"}},"sourceFileArray":["content/404.md","content/coding/ptAnywhere-frontend.md","content/coding/ptAnywhere-http_api.md","content/coding/ptAnywhere-installation.md","content/coding/ptAnywhere-internal_api.md","content/coding/ptAnywhere-intro.md","content/coding/ptAnywhere-learning_analytics.md","content/cv/career/2007.md","content/cv/career/2011a.md","content/cv/career/2011b.md","content/cv/career/2013.md","content/cv/career/2015.md","content/cv/career/2016.md","content/cv/career/2019.md","content/cv/career/2019b.md","content/cv/education/2008.md","content/cv/education/2010.md","content/cv/education/2014.md","content/cv/technical/02-languages.md","content/cv/technical/03-frontend.md","content/cv/technical/04-backend.md","content/cv/technical/05-aws.md","content/cv/technical/06-big-data.md","content/cv/technical/07-data-analysis.md","content/cv/technical/08-mobile-iot.md","content/cv/technical/09-db.md","content/cv/technical/10-devops.md","content/cv/technical/11-testing.md","content/cv/technical/12-os.md","content/index.md","content/landing/contact.md","content/landing/profile.md","content/projects.md","content/projects/2007-09-01-ismed.md","content/projects/2009-09-01-across.md","content/projects/2010-09-01-crosen.md","content/projects/2011-07-01-thofu.md","content/projects/2011-09-01-futureinternet2.md","content/projects/2011-09-01-mcloud.md","content/projects/2011-09-01-talisengine.md","content/projects/2012-09-01-adizain.md","content/projects/2015-01-01-forge.md","content/projects/2015-01-01-wespot.md","content/projects/2016-09-01-partm.md","content/projects/2017-01-01-falink.md","content/publications.md","content/publications/2010-07-01-gomezgoiri-triplespace.md","content/publications/2010-09-01-orduna-security.md","content/publications/2011-02-01-gomezgoiri-middleware.md","content/publications/2011-02-02-gomezgoiri-semantic.md","content/publications/2011-06-01-laiseca-distributed.md","content/publications/2011-06-02-gomezgoiri-easing.md","content/publications/2011-06-03-gomezgoiri-complementarity.md","content/publications/2011-10-01-gomezgoiri-collaboration.md","content/publications/2011-11-01-castillejo-robotic.md","content/publications/2012-06-01-gomezgoiri-restful.md","content/publications/2012-06-20-gomezgoiri-otsopack.md","content/publications/2012-07-04-gomezgoiri-assesing.md","content/publications/2012-12-03-naranjo-lightweight.md","content/publications/2013-02-06-orduna-weblab.md","content/publications/2013-11-01-naranjo-enabling.md","content/publications/2013-11-13-naranjo-extending.md","content/publications/2014-01-01-gomezgoiri-otsopack.md","content/publications/2014-01-02-gomezgoiri-energy.md","content/publications/2014-06-16-gomezgoiri-semantic.md","content/publications/2014-07-02-gomezgoiri-reusing.md","content/publications/2015-02-25-orduna-wCloud.md","content/publications/2015-09-15-mikroyannidis-deploying.md","content/publications/2015-11-26-domingue-forging.md","content/publications/2016-02-01-ventura-security.md","content/publications/2017-06-08-mikroyannidis-online.md","content/publications/2018-11-15-mikroyannidis-ptanywhere.md","content/publications/2021-07-30-gutierrez-burnable.md","content/research_projects.md","content/teaching.md","content/teaching/2008-07-18-php.md","content/teaching/2012-06-01-programazioa-ii.md","content/teaching/2012-07-19-redis.md","content/teaching/2012-11-18-htas-desarrollo.md"]};
 
 /***/ }),
 
@@ -2715,6 +2715,92 @@ var unitlessKeys = {
 
 /***/ }),
 
+/***/ "./node_modules/call-bind/callBound.js":
+/*!*********************************************!*\
+  !*** ./node_modules/call-bind/callBound.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var GetIntrinsic = __webpack_require__(/*! get-intrinsic */ "./node_modules/get-intrinsic/index.js");
+
+var callBind = __webpack_require__(/*! ./ */ "./node_modules/call-bind/index.js");
+
+var $indexOf = callBind(GetIntrinsic('String.prototype.indexOf'));
+
+module.exports = function callBoundIntrinsic(name, allowMissing) {
+	var intrinsic = GetIntrinsic(name, !!allowMissing);
+	if (typeof intrinsic === 'function' && $indexOf(name, '.prototype.') > -1) {
+		return callBind(intrinsic);
+	}
+	return intrinsic;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/call-bind/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/call-bind/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
+var GetIntrinsic = __webpack_require__(/*! get-intrinsic */ "./node_modules/get-intrinsic/index.js");
+
+var $apply = GetIntrinsic('%Function.prototype.apply%');
+var $call = GetIntrinsic('%Function.prototype.call%');
+var $reflectApply = GetIntrinsic('%Reflect.apply%', true) || bind.call($call, $apply);
+
+var $gOPD = GetIntrinsic('%Object.getOwnPropertyDescriptor%', true);
+var $defineProperty = GetIntrinsic('%Object.defineProperty%', true);
+var $max = GetIntrinsic('%Math.max%');
+
+if ($defineProperty) {
+	try {
+		$defineProperty({}, 'a', { value: 1 });
+	} catch (e) {
+		// IE 8 has a broken defineProperty
+		$defineProperty = null;
+	}
+}
+
+module.exports = function callBind(originalFunction) {
+	var func = $reflectApply(bind, $call, arguments);
+	if ($gOPD && $defineProperty) {
+		var desc = $gOPD(func, 'length');
+		if (desc.configurable) {
+			// original length, plus the receiver, minus any additional arguments (after the receiver)
+			$defineProperty(
+				func,
+				'length',
+				{ value: 1 + $max(0, originalFunction.length - (arguments.length - 1)) }
+			);
+		}
+	}
+	return func;
+};
+
+var applyBind = function applyBind() {
+	return $reflectApply(bind, $apply, arguments);
+};
+
+if ($defineProperty) {
+	$defineProperty(module.exports, 'apply', { value: applyBind });
+} else {
+	module.exports.apply = applyBind;
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/array/from.js":
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/from.js ***!
@@ -3572,7 +3658,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.11' };
+var core = module.exports = { version: '2.6.12' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -5033,7 +5119,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
 });
 
 
@@ -6712,6 +6798,373 @@ module.exports = Function.prototype.bind || implementation;
 
 /***/ }),
 
+/***/ "./node_modules/get-intrinsic/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/get-intrinsic/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var undefined;
+
+var $SyntaxError = SyntaxError;
+var $Function = Function;
+var $TypeError = TypeError;
+
+// eslint-disable-next-line consistent-return
+var getEvalledConstructor = function (expressionSyntax) {
+	try {
+		return $Function('"use strict"; return (' + expressionSyntax + ').constructor;')();
+	} catch (e) {}
+};
+
+var $gOPD = Object.getOwnPropertyDescriptor;
+if ($gOPD) {
+	try {
+		$gOPD({}, '');
+	} catch (e) {
+		$gOPD = null; // this is IE 8, which has a broken gOPD
+	}
+}
+
+var throwTypeError = function () {
+	throw new $TypeError();
+};
+var ThrowTypeError = $gOPD
+	? (function () {
+		try {
+			// eslint-disable-next-line no-unused-expressions, no-caller, no-restricted-properties
+			arguments.callee; // IE 8 does not throw here
+			return throwTypeError;
+		} catch (calleeThrows) {
+			try {
+				// IE 8 throws on Object.getOwnPropertyDescriptor(arguments, '')
+				return $gOPD(arguments, 'callee').get;
+			} catch (gOPDthrows) {
+				return throwTypeError;
+			}
+		}
+	}())
+	: throwTypeError;
+
+var hasSymbols = __webpack_require__(/*! has-symbols */ "./node_modules/has-symbols/index.js")();
+
+var getProto = Object.getPrototypeOf || function (x) { return x.__proto__; }; // eslint-disable-line no-proto
+
+var needsEval = {};
+
+var TypedArray = typeof Uint8Array === 'undefined' ? undefined : getProto(Uint8Array);
+
+var INTRINSICS = {
+	'%AggregateError%': typeof AggregateError === 'undefined' ? undefined : AggregateError,
+	'%Array%': Array,
+	'%ArrayBuffer%': typeof ArrayBuffer === 'undefined' ? undefined : ArrayBuffer,
+	'%ArrayIteratorPrototype%': hasSymbols ? getProto([][Symbol.iterator]()) : undefined,
+	'%AsyncFromSyncIteratorPrototype%': undefined,
+	'%AsyncFunction%': needsEval,
+	'%AsyncGenerator%': needsEval,
+	'%AsyncGeneratorFunction%': needsEval,
+	'%AsyncIteratorPrototype%': needsEval,
+	'%Atomics%': typeof Atomics === 'undefined' ? undefined : Atomics,
+	'%BigInt%': typeof BigInt === 'undefined' ? undefined : BigInt,
+	'%Boolean%': Boolean,
+	'%DataView%': typeof DataView === 'undefined' ? undefined : DataView,
+	'%Date%': Date,
+	'%decodeURI%': decodeURI,
+	'%decodeURIComponent%': decodeURIComponent,
+	'%encodeURI%': encodeURI,
+	'%encodeURIComponent%': encodeURIComponent,
+	'%Error%': Error,
+	'%eval%': eval, // eslint-disable-line no-eval
+	'%EvalError%': EvalError,
+	'%Float32Array%': typeof Float32Array === 'undefined' ? undefined : Float32Array,
+	'%Float64Array%': typeof Float64Array === 'undefined' ? undefined : Float64Array,
+	'%FinalizationRegistry%': typeof FinalizationRegistry === 'undefined' ? undefined : FinalizationRegistry,
+	'%Function%': $Function,
+	'%GeneratorFunction%': needsEval,
+	'%Int8Array%': typeof Int8Array === 'undefined' ? undefined : Int8Array,
+	'%Int16Array%': typeof Int16Array === 'undefined' ? undefined : Int16Array,
+	'%Int32Array%': typeof Int32Array === 'undefined' ? undefined : Int32Array,
+	'%isFinite%': isFinite,
+	'%isNaN%': isNaN,
+	'%IteratorPrototype%': hasSymbols ? getProto(getProto([][Symbol.iterator]())) : undefined,
+	'%JSON%': typeof JSON === 'object' ? JSON : undefined,
+	'%Map%': typeof Map === 'undefined' ? undefined : Map,
+	'%MapIteratorPrototype%': typeof Map === 'undefined' || !hasSymbols ? undefined : getProto(new Map()[Symbol.iterator]()),
+	'%Math%': Math,
+	'%Number%': Number,
+	'%Object%': Object,
+	'%parseFloat%': parseFloat,
+	'%parseInt%': parseInt,
+	'%Promise%': typeof Promise === 'undefined' ? undefined : Promise,
+	'%Proxy%': typeof Proxy === 'undefined' ? undefined : Proxy,
+	'%RangeError%': RangeError,
+	'%ReferenceError%': ReferenceError,
+	'%Reflect%': typeof Reflect === 'undefined' ? undefined : Reflect,
+	'%RegExp%': RegExp,
+	'%Set%': typeof Set === 'undefined' ? undefined : Set,
+	'%SetIteratorPrototype%': typeof Set === 'undefined' || !hasSymbols ? undefined : getProto(new Set()[Symbol.iterator]()),
+	'%SharedArrayBuffer%': typeof SharedArrayBuffer === 'undefined' ? undefined : SharedArrayBuffer,
+	'%String%': String,
+	'%StringIteratorPrototype%': hasSymbols ? getProto(''[Symbol.iterator]()) : undefined,
+	'%Symbol%': hasSymbols ? Symbol : undefined,
+	'%SyntaxError%': $SyntaxError,
+	'%ThrowTypeError%': ThrowTypeError,
+	'%TypedArray%': TypedArray,
+	'%TypeError%': $TypeError,
+	'%Uint8Array%': typeof Uint8Array === 'undefined' ? undefined : Uint8Array,
+	'%Uint8ClampedArray%': typeof Uint8ClampedArray === 'undefined' ? undefined : Uint8ClampedArray,
+	'%Uint16Array%': typeof Uint16Array === 'undefined' ? undefined : Uint16Array,
+	'%Uint32Array%': typeof Uint32Array === 'undefined' ? undefined : Uint32Array,
+	'%URIError%': URIError,
+	'%WeakMap%': typeof WeakMap === 'undefined' ? undefined : WeakMap,
+	'%WeakRef%': typeof WeakRef === 'undefined' ? undefined : WeakRef,
+	'%WeakSet%': typeof WeakSet === 'undefined' ? undefined : WeakSet
+};
+
+var doEval = function doEval(name) {
+	var value;
+	if (name === '%AsyncFunction%') {
+		value = getEvalledConstructor('async function () {}');
+	} else if (name === '%GeneratorFunction%') {
+		value = getEvalledConstructor('function* () {}');
+	} else if (name === '%AsyncGeneratorFunction%') {
+		value = getEvalledConstructor('async function* () {}');
+	} else if (name === '%AsyncGenerator%') {
+		var fn = doEval('%AsyncGeneratorFunction%');
+		if (fn) {
+			value = fn.prototype;
+		}
+	} else if (name === '%AsyncIteratorPrototype%') {
+		var gen = doEval('%AsyncGenerator%');
+		if (gen) {
+			value = getProto(gen.prototype);
+		}
+	}
+
+	INTRINSICS[name] = value;
+
+	return value;
+};
+
+var LEGACY_ALIASES = {
+	'%ArrayBufferPrototype%': ['ArrayBuffer', 'prototype'],
+	'%ArrayPrototype%': ['Array', 'prototype'],
+	'%ArrayProto_entries%': ['Array', 'prototype', 'entries'],
+	'%ArrayProto_forEach%': ['Array', 'prototype', 'forEach'],
+	'%ArrayProto_keys%': ['Array', 'prototype', 'keys'],
+	'%ArrayProto_values%': ['Array', 'prototype', 'values'],
+	'%AsyncFunctionPrototype%': ['AsyncFunction', 'prototype'],
+	'%AsyncGenerator%': ['AsyncGeneratorFunction', 'prototype'],
+	'%AsyncGeneratorPrototype%': ['AsyncGeneratorFunction', 'prototype', 'prototype'],
+	'%BooleanPrototype%': ['Boolean', 'prototype'],
+	'%DataViewPrototype%': ['DataView', 'prototype'],
+	'%DatePrototype%': ['Date', 'prototype'],
+	'%ErrorPrototype%': ['Error', 'prototype'],
+	'%EvalErrorPrototype%': ['EvalError', 'prototype'],
+	'%Float32ArrayPrototype%': ['Float32Array', 'prototype'],
+	'%Float64ArrayPrototype%': ['Float64Array', 'prototype'],
+	'%FunctionPrototype%': ['Function', 'prototype'],
+	'%Generator%': ['GeneratorFunction', 'prototype'],
+	'%GeneratorPrototype%': ['GeneratorFunction', 'prototype', 'prototype'],
+	'%Int8ArrayPrototype%': ['Int8Array', 'prototype'],
+	'%Int16ArrayPrototype%': ['Int16Array', 'prototype'],
+	'%Int32ArrayPrototype%': ['Int32Array', 'prototype'],
+	'%JSONParse%': ['JSON', 'parse'],
+	'%JSONStringify%': ['JSON', 'stringify'],
+	'%MapPrototype%': ['Map', 'prototype'],
+	'%NumberPrototype%': ['Number', 'prototype'],
+	'%ObjectPrototype%': ['Object', 'prototype'],
+	'%ObjProto_toString%': ['Object', 'prototype', 'toString'],
+	'%ObjProto_valueOf%': ['Object', 'prototype', 'valueOf'],
+	'%PromisePrototype%': ['Promise', 'prototype'],
+	'%PromiseProto_then%': ['Promise', 'prototype', 'then'],
+	'%Promise_all%': ['Promise', 'all'],
+	'%Promise_reject%': ['Promise', 'reject'],
+	'%Promise_resolve%': ['Promise', 'resolve'],
+	'%RangeErrorPrototype%': ['RangeError', 'prototype'],
+	'%ReferenceErrorPrototype%': ['ReferenceError', 'prototype'],
+	'%RegExpPrototype%': ['RegExp', 'prototype'],
+	'%SetPrototype%': ['Set', 'prototype'],
+	'%SharedArrayBufferPrototype%': ['SharedArrayBuffer', 'prototype'],
+	'%StringPrototype%': ['String', 'prototype'],
+	'%SymbolPrototype%': ['Symbol', 'prototype'],
+	'%SyntaxErrorPrototype%': ['SyntaxError', 'prototype'],
+	'%TypedArrayPrototype%': ['TypedArray', 'prototype'],
+	'%TypeErrorPrototype%': ['TypeError', 'prototype'],
+	'%Uint8ArrayPrototype%': ['Uint8Array', 'prototype'],
+	'%Uint8ClampedArrayPrototype%': ['Uint8ClampedArray', 'prototype'],
+	'%Uint16ArrayPrototype%': ['Uint16Array', 'prototype'],
+	'%Uint32ArrayPrototype%': ['Uint32Array', 'prototype'],
+	'%URIErrorPrototype%': ['URIError', 'prototype'],
+	'%WeakMapPrototype%': ['WeakMap', 'prototype'],
+	'%WeakSetPrototype%': ['WeakSet', 'prototype']
+};
+
+var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
+var hasOwn = __webpack_require__(/*! has */ "./node_modules/has/src/index.js");
+var $concat = bind.call(Function.call, Array.prototype.concat);
+var $spliceApply = bind.call(Function.apply, Array.prototype.splice);
+var $replace = bind.call(Function.call, String.prototype.replace);
+var $strSlice = bind.call(Function.call, String.prototype.slice);
+
+/* adapted from https://github.com/lodash/lodash/blob/4.17.15/dist/lodash.js#L6735-L6744 */
+var rePropName = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g;
+var reEscapeChar = /\\(\\)?/g; /** Used to match backslashes in property paths. */
+var stringToPath = function stringToPath(string) {
+	var first = $strSlice(string, 0, 1);
+	var last = $strSlice(string, -1);
+	if (first === '%' && last !== '%') {
+		throw new $SyntaxError('invalid intrinsic syntax, expected closing `%`');
+	} else if (last === '%' && first !== '%') {
+		throw new $SyntaxError('invalid intrinsic syntax, expected opening `%`');
+	}
+	var result = [];
+	$replace(string, rePropName, function (match, number, quote, subString) {
+		result[result.length] = quote ? $replace(subString, reEscapeChar, '$1') : number || match;
+	});
+	return result;
+};
+/* end adaptation */
+
+var getBaseIntrinsic = function getBaseIntrinsic(name, allowMissing) {
+	var intrinsicName = name;
+	var alias;
+	if (hasOwn(LEGACY_ALIASES, intrinsicName)) {
+		alias = LEGACY_ALIASES[intrinsicName];
+		intrinsicName = '%' + alias[0] + '%';
+	}
+
+	if (hasOwn(INTRINSICS, intrinsicName)) {
+		var value = INTRINSICS[intrinsicName];
+		if (value === needsEval) {
+			value = doEval(intrinsicName);
+		}
+		if (typeof value === 'undefined' && !allowMissing) {
+			throw new $TypeError('intrinsic ' + name + ' exists, but is not available. Please file an issue!');
+		}
+
+		return {
+			alias: alias,
+			name: intrinsicName,
+			value: value
+		};
+	}
+
+	throw new $SyntaxError('intrinsic ' + name + ' does not exist!');
+};
+
+module.exports = function GetIntrinsic(name, allowMissing) {
+	if (typeof name !== 'string' || name.length === 0) {
+		throw new $TypeError('intrinsic name must be a non-empty string');
+	}
+	if (arguments.length > 1 && typeof allowMissing !== 'boolean') {
+		throw new $TypeError('"allowMissing" argument must be a boolean');
+	}
+
+	var parts = stringToPath(name);
+	var intrinsicBaseName = parts.length > 0 ? parts[0] : '';
+
+	var intrinsic = getBaseIntrinsic('%' + intrinsicBaseName + '%', allowMissing);
+	var intrinsicRealName = intrinsic.name;
+	var value = intrinsic.value;
+	var skipFurtherCaching = false;
+
+	var alias = intrinsic.alias;
+	if (alias) {
+		intrinsicBaseName = alias[0];
+		$spliceApply(parts, $concat([0, 1], alias));
+	}
+
+	for (var i = 1, isOwn = true; i < parts.length; i += 1) {
+		var part = parts[i];
+		var first = $strSlice(part, 0, 1);
+		var last = $strSlice(part, -1);
+		if (
+			(
+				(first === '"' || first === "'" || first === '`')
+				|| (last === '"' || last === "'" || last === '`')
+			)
+			&& first !== last
+		) {
+			throw new $SyntaxError('property names with quotes must have matching quotes');
+		}
+		if (part === 'constructor' || !isOwn) {
+			skipFurtherCaching = true;
+		}
+
+		intrinsicBaseName += '.' + part;
+		intrinsicRealName = '%' + intrinsicBaseName + '%';
+
+		if (hasOwn(INTRINSICS, intrinsicRealName)) {
+			value = INTRINSICS[intrinsicRealName];
+		} else if (value != null) {
+			if (!(part in value)) {
+				if (!allowMissing) {
+					throw new $TypeError('base intrinsic for ' + name + ' exists, but the property is not available.');
+				}
+				return void undefined;
+			}
+			if ($gOPD && (i + 1) >= parts.length) {
+				var desc = $gOPD(value, part);
+				isOwn = !!desc;
+
+				// By convention, when a data property is converted to an accessor
+				// property to emulate a data property that does not suffer from
+				// the override mistake, that accessor's getter is marked with
+				// an `originalValue` property. Here, when we detect this, we
+				// uphold the illusion by pretending to see that original data
+				// property, i.e., returning the value rather than the getter
+				// itself.
+				if (isOwn && 'get' in desc && !('originalValue' in desc.get)) {
+					value = desc.get;
+				} else {
+					value = value[part];
+				}
+			} else {
+				isOwn = hasOwn(value, part);
+				value = value[part];
+			}
+
+			if (isOwn && !skipFurtherCaching) {
+				INTRINSICS[intrinsicRealName] = value;
+			}
+		}
+	}
+	return value;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/has-symbols/index.js":
+/*!*******************************************!*\
+  !*** ./node_modules/has-symbols/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var origSymbol = typeof Symbol !== 'undefined' && Symbol;
+var hasSymbolSham = __webpack_require__(/*! ./shams */ "./node_modules/has-symbols/shams.js");
+
+module.exports = function hasNativeSymbols() {
+	if (typeof origSymbol !== 'function') { return false; }
+	if (typeof Symbol !== 'function') { return false; }
+	if (typeof origSymbol('foo') !== 'symbol') { return false; }
+	if (typeof Symbol('bar') !== 'symbol') { return false; }
+
+	return hasSymbolSham();
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/has-symbols/shams.js":
 /*!*******************************************!*\
   !*** ./node_modules/has-symbols/shams.js ***!
@@ -6745,7 +7198,7 @@ module.exports = function hasSymbols() {
 
 	var symVal = 42;
 	obj[sym] = symVal;
-	for (sym in obj) { return false; } // eslint-disable-line no-restricted-syntax
+	for (sym in obj) { return false; } // eslint-disable-line no-restricted-syntax, no-unreachable-loop
 	if (typeof Object.keys === 'function' && Object.keys(obj).length !== 0) { return false; }
 
 	if (typeof Object.getOwnPropertyNames === 'function' && Object.getOwnPropertyNames(obj).length !== 0) { return false; }
@@ -6793,7 +7246,7 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 "use strict";
 
 
-var reactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var reactIs = __webpack_require__(/*! react-is */ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js");
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -6894,6 +7347,216 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
+
+
+/***/ }),
+
+/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/index.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js");
+}
 
 
 /***/ }),
@@ -7458,11 +8121,11 @@ var Router = /*#__PURE__*/function () {
         // navigating back from an external site
         if (history.state) {
           var _history$state = history.state,
-              _url2 = _history$state.url,
+              url = _history$state.url,
               _as2 = _history$state.as,
               options = _history$state.options;
 
-          _this.changeState('replaceState', _url2, _as2, (0, _assign.default)({}, options, {
+          _this.changeState('replaceState', url, _as2, (0, _assign.default)({}, options, {
             fromExternal: true
           }));
         }
@@ -8034,21 +8697,27 @@ exports.default = Router;
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
+var _Reflect$construct = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
+
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
+
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
 
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js"));
 
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js"));
 
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
-
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
-
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js"));
 
 var _set = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js"));
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = _Reflect$construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_Reflect$construct) return false; if (_Reflect$construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(_Reflect$construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -8072,22 +8741,14 @@ function withSideEffect() {
 
   var SideEffect = /*#__PURE__*/function (_react_1$Component) {
     (0, _inherits2.default)(SideEffect, _react_1$Component);
-    (0, _createClass2.default)(SideEffect, null, [{
-      key: "rewind",
-      // Used when server rendering
-      value: function rewind() {
-        var recordedState = state;
-        state = undefined;
-        mountedInstances.clear();
-        return recordedState;
-      }
-    }]);
+
+    var _super = _createSuper(SideEffect);
 
     function SideEffect(props) {
       var _this;
 
       (0, _classCallCheck2.default)(this, SideEffect);
-      _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(SideEffect).call(this, props));
+      _this = _super.call(this, props);
 
       if (isServer) {
         mountedInstances.add((0, _assertThisInitialized2.default)(_this));
@@ -8118,6 +8779,15 @@ function withSideEffect() {
       key: "render",
       value: function render() {
         return null;
+      }
+    }], [{
+      key: "rewind",
+      value: // Used when server rendering
+      function rewind() {
+        var recordedState = state;
+        state = undefined;
+        mountedInstances.clear();
+        return recordedState;
       }
     }]);
     return SideEffect;
@@ -9639,12 +10309,12 @@ module.exports = function(module) {
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_2e29b3ddf0a4859f688e ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_bddb6eed8fbd46b918fd ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2e29b3ddf0a4859f688e */ "dll-reference dll_2e29b3ddf0a4859f688e"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_bddb6eed8fbd46b918fd */ "dll-reference dll_bddb6eed8fbd46b918fd"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -9867,16 +10537,17 @@ module.exports = function isArguments(value) {
 
 // modified from https://github.com/es-shims/es6-shim
 var keys = __webpack_require__(/*! object-keys */ "./node_modules/object-keys/index.js");
-var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
 var canBeObject = function (obj) {
 	return typeof obj !== 'undefined' && obj !== null;
 };
 var hasSymbols = __webpack_require__(/*! has-symbols/shams */ "./node_modules/has-symbols/shams.js")();
+var callBound = __webpack_require__(/*! call-bind/callBound */ "./node_modules/call-bind/callBound.js");
 var toObject = Object;
-var push = bind.call(Function.call, Array.prototype.push);
-var propIsEnumerable = bind.call(Function.call, Object.prototype.propertyIsEnumerable);
+var $push = callBound('Array.prototype.push');
+var $propIsEnumerable = callBound('Object.prototype.propertyIsEnumerable');
 var originalGetSymbols = hasSymbols ? Object.getOwnPropertySymbols : null;
 
+// eslint-disable-next-line no-unused-vars
 module.exports = function assign(target, source1) {
 	if (!canBeObject(target)) { throw new TypeError('target must be an object'); }
 	var objTarget = toObject(target);
@@ -9889,15 +10560,15 @@ module.exports = function assign(target, source1) {
 			syms = getSymbols(source);
 			for (i = 0; i < syms.length; ++i) {
 				key = syms[i];
-				if (propIsEnumerable(source, key)) {
-					push(props, key);
+				if ($propIsEnumerable(source, key)) {
+					$push(props, key);
 				}
 			}
 		}
 		for (i = 0; i < props.length; ++i) {
 			key = props[i];
 			value = source[key];
-			if (propIsEnumerable(source, key)) {
+			if ($propIsEnumerable(source, key)) {
 				objTarget[key] = value;
 			}
 		}
@@ -9919,20 +10590,25 @@ module.exports = function assign(target, source1) {
 
 
 var defineProperties = __webpack_require__(/*! define-properties */ "./node_modules/define-properties/index.js");
+var callBind = __webpack_require__(/*! call-bind */ "./node_modules/call-bind/index.js");
 
 var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/object.assign/implementation.js");
 var getPolyfill = __webpack_require__(/*! ./polyfill */ "./node_modules/object.assign/polyfill.js");
 var shim = __webpack_require__(/*! ./shim */ "./node_modules/object.assign/shim.js");
 
-var polyfill = getPolyfill();
+var polyfill = callBind.apply(getPolyfill());
+// eslint-disable-next-line no-unused-vars
+var bound = function assign(target, source1) {
+	return polyfill(Object, arguments);
+};
 
-defineProperties(polyfill, {
+defineProperties(bound, {
 	getPolyfill: getPolyfill,
 	implementation: implementation,
 	shim: shim
 });
 
-module.exports = polyfill;
+module.exports = bound;
 
 
 /***/ }),
@@ -9953,8 +10629,10 @@ var lacksProperEnumerationOrder = function () {
 	if (!Object.assign) {
 		return false;
 	}
-	// v8, specifically in node 4.x, has a bug with incorrect property enumeration order
-	// note: this does not detect the bug unless there's 20 characters
+	/*
+	 * v8, specifically in node 4.x, has a bug with incorrect property enumeration order
+	 * note: this does not detect the bug unless there's 20 characters
+	 */
 	var str = 'abcdefghijklmnopqrst';
 	var letters = str.split('');
 	var map = {};
@@ -9973,8 +10651,10 @@ var assignHasPendingExceptions = function () {
 	if (!Object.assign || !Object.preventExtensions) {
 		return false;
 	}
-	// Firefox 37 still has "pending exception" logic in its Object.assign implementation,
-	// which is 72% slower than our shim, and Firefox 40's native implementation.
+	/*
+	 * Firefox 37 still has "pending exception" logic in its Object.assign implementation,
+	 * which is 72% slower than our shim, and Firefox 40's native implementation.
+	 */
 	var thrower = Object.preventExtensions({ 1: 2 });
 	try {
 		Object.assign(thrower, 'xy');
@@ -10312,12 +10992,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_2e29b3ddf0a4859f688e ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_bddb6eed8fbd46b918fd ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2e29b3ddf0a4859f688e */ "dll-reference dll_2e29b3ddf0a4859f688e"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_bddb6eed8fbd46b918fd */ "dll-reference dll_bddb6eed8fbd46b918fd"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -10338,7 +11018,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2e29b3ddf0a4859f688e
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -10939,7 +11619,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -10952,12 +11632,222 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_2e29b3ddf0a4859f688e ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_bddb6eed8fbd46b918fd ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2e29b3ddf0a4859f688e */ "dll-reference dll_2e29b3ddf0a4859f688e"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_bddb6eed8fbd46b918fd */ "dll-reference dll_bddb6eed8fbd46b918fd"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
+}
+
 
 /***/ }),
 
@@ -11959,12 +12849,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_2e29b3ddf0a4859f688e ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_bddb6eed8fbd46b918fd ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2e29b3ddf0a4859f688e */ "dll-reference dll_2e29b3ddf0a4859f688e"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_bddb6eed8fbd46b918fd */ "dll-reference dll_bddb6eed8fbd46b918fd"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -12034,21 +12924,21 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServerStyleSheet", function() { return ServerStyleSheet; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetConsumer", function() { return StyleSheetConsumer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetContext", function() { return StyleSheetContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetManager", function() { return StyleSheetManager; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeConsumer", function() { return ThemeConsumer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeContext", function() { return ThemeContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return ThemeProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__PRIVATE__", function() { return __PRIVATE__; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createGlobalStyle", function() { return createGlobalStyle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "css", function() { return css; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isStyledComponent", function() { return isStyledComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keyframes", function() { return keyframes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTheme", function() { return useTheme; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "version", function() { return version; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withTheme", function() { return withTheme; });
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServerStyleSheet", function() { return Ue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetConsumer", function() { return le; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetContext", function() { return ue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyleSheetManager", function() { return ye; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeConsumer", function() { return Le; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeContext", function() { return ze; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemeProvider", function() { return Ge; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__PRIVATE__", function() { return Ze; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createGlobalStyle", function() { return $e; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "css", function() { return Ae; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isStyledComponent", function() { return N; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keyframes", function() { return We; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTheme", function() { return Xe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "version", function() { return C; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withTheme", function() { return Je; });
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_is__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -12060,1925 +12950,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @emotion/is-prop-valid */ "./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.browser.esm.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
 /* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-
-
-
-
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-// 
-var interleave = (function (strings, interpolations) {
-  var result = [strings[0]];
-
-  for (var i = 0, len = interpolations.length; i < len; i += 1) {
-    result.push(interpolations[i], strings[i + 1]);
-  }
-
-  return result;
-});
-
-// 
-var isPlainObject = (function (x) {
-  return typeof x === 'object' && x.constructor === Object;
-});
-
-// 
-var EMPTY_ARRAY = Object.freeze([]);
-var EMPTY_OBJECT = Object.freeze({});
-
-// 
-function isFunction(test) {
-  return typeof test === 'function';
-}
-
-// 
-function getComponentName(target) {
-  return ( true ? typeof target === 'string' && target : undefined) || // $FlowFixMe
-  target.displayName || // $FlowFixMe
-  target.name || 'Component';
-}
-
-// 
-function isStatelessFunction(test) {
-  return typeof test === 'function' && !(test.prototype && test.prototype.isReactComponent);
-}
-
-// 
-function isStyledComponent(target) {
-  return target && typeof target.styledComponentId === 'string';
-}
-
-// 
-var SC_ATTR = typeof process !== 'undefined' && (process.env.REACT_APP_SC_ATTR || process.env.SC_ATTR) || 'data-styled';
-var SC_ATTR_ACTIVE = 'active';
-var SC_ATTR_VERSION = 'data-styled-version';
-var SC_VERSION = "5.0.1";
-var IS_BROWSER = typeof window !== 'undefined' && 'HTMLElement' in window;
-var DISABLE_SPEEDY = typeof SC_DISABLE_SPEEDY === 'boolean' && SC_DISABLE_SPEEDY || typeof process !== 'undefined' && (process.env.REACT_APP_SC_DISABLE_SPEEDY || process.env.SC_DISABLE_SPEEDY) || "development" !== 'production'; // Shared empty execution context when generating static styles
-
-var STATIC_EXECUTION_CONTEXT = {};
-
-// 
-
-/* eslint-disable camelcase, no-undef */
-var getNonce = function getNonce() {
-  return  true ? __webpack_require__.nc : undefined;
-};
-
-var errorMap = {
-  "1": "Cannot create styled-component for component: %s.\n\n",
-  "2": "Can't collect styles once you've consumed a `ServerStyleSheet`'s styles! `ServerStyleSheet` is a one off instance for each server-side render cycle.\n\n- Are you trying to reuse it across renders?\n- Are you accidentally calling collectStyles twice?\n\n",
-  "3": "Streaming SSR is only supported in a Node.js environment; Please do not try to call this method in the browser.\n\n",
-  "4": "The `StyleSheetManager` expects a valid target or sheet prop!\n\n- Does this error occur on the client and is your target falsy?\n- Does this error occur on the server and is the sheet falsy?\n\n",
-  "5": "The clone method cannot be used on the client!\n\n- Are you running in a client-like environment on the server?\n- Are you trying to run SSR on the client?\n\n",
-  "6": "Trying to insert a new style tag, but the given Node is unmounted!\n\n- Are you using a custom target that isn't mounted?\n- Does your document not have a valid head element?\n- Have you accidentally removed a style tag manually?\n\n",
-  "7": "ThemeProvider: Please return an object from your \"theme\" prop function, e.g.\n\n```js\ntheme={() => ({})}\n```\n\n",
-  "8": "ThemeProvider: Please make your \"theme\" prop an object.\n\n",
-  "9": "Missing document `<head>`\n\n",
-  "10": "Cannot find a StyleSheet instance. Usually this happens if there are multiple copies of styled-components loaded at once. Check out this issue for how to troubleshoot and fix the common cases where this situation can happen: https://github.com/styled-components/styled-components/issues/1941#issuecomment-417862021\n\n",
-  "11": "_This error was replaced with a dev-time warning, it will be deleted for v4 final._ [createGlobalStyle] received children which will not be rendered. Please use the component without passing children elements.\n\n",
-  "12": "It seems you are interpolating a keyframe declaration (%s) into an untagged string. This was supported in styled-components v3, but is not longer supported in v4 as keyframes are now injected on-demand. Please wrap your string in the css\\`\\` helper which ensures the styles are injected correctly. See https://www.styled-components.com/docs/api#css\n\n",
-  "13": "%s is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.\n\n",
-  "14": "ThemeProvider: \"theme\" prop is required.\n\n",
-  "15": "A stylis plugin has been supplied that is not named. We need a name for each plugin to be able to prevent styling collisions between different stylis configurations within the same app. Before you pass your plugin to `<StyleSheetManager stylisPlugins={[]}>`, please make sure each plugin is uniquely-named, e.g.\n\n```js\nObject.defineProperty(importedPlugin, 'name', { value: 'some-unique-name' });\n```\n\n",
-  "16": "Reached the limit of how many styled components may be created at group %s.\nYou may only create up to 1,073,741,824 components. If you're creating components dynamically,\nas for instance in your render method then you may be running into this limitation.\n\n",
-  "17": "CSSStyleSheet could not be found on HTMLStyleElement.\nHas styled-components' style tag been unmounted or altered by another script?\n"
-};
-
-// 
-var ERRORS =  true ? errorMap : undefined;
-/**
- * super basic version of sprintf
- */
-
-function format() {
-  var a = arguments.length <= 0 ? undefined : arguments[0];
-  var b = [];
-
-  for (var c = 1, len = arguments.length; c < len; c += 1) {
-    b.push(c < 0 || arguments.length <= c ? undefined : arguments[c]);
-  }
-
-  b.forEach(function (d) {
-    a = a.replace(/%[a-z]/, d);
-  });
-  return a;
-}
-/**
- * Create an error file out of errors.md for development and a simple web link to the full errors
- * in production mode.
- */
-
-
-function throwStyledComponentsError(code) {
-  for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  if (false) {} else {
-    throw new Error(format.apply(void 0, [ERRORS[code]].concat(interpolations)).trim());
-  }
-}
-
-// 
-var ELEMENT_TYPE = 1;
-/* Node.ELEMENT_TYPE */
-
-/** Find last style element if any inside target */
-
-var findLastStyleTag = function findLastStyleTag(target) {
-  var childNodes = target.childNodes;
-
-  for (var i = childNodes.length; i >= 0; i--) {
-    var child = childNodes[i];
-
-    if (child && child.nodeType === ELEMENT_TYPE && child.hasAttribute(SC_ATTR)) {
-      return child;
-    }
-  }
-
-  return undefined;
-};
-/** Create a style element inside `target` or <head> after the last */
-
-
-var makeStyleTag = function makeStyleTag(target) {
-  var head = document.head;
-  var parent = target || head;
-  var style = document.createElement('style');
-  var prevStyle = findLastStyleTag(parent);
-  var nextSibling = prevStyle !== undefined ? prevStyle.nextSibling : null;
-  style.setAttribute(SC_ATTR, SC_ATTR_ACTIVE);
-  style.setAttribute(SC_ATTR_VERSION, SC_VERSION);
-  var nonce = getNonce();
-  if (nonce) style.setAttribute('nonce', nonce);
-  parent.insertBefore(style, nextSibling);
-  return style;
-};
-/** Get the CSSStyleSheet instance for a given style element */
-
-var getSheet = function getSheet(tag) {
-  if (tag.sheet) {
-    return tag.sheet;
-  } // Avoid Firefox quirk where the style element might not have a sheet property
-
-
-  var _document = document,
-      styleSheets = _document.styleSheets;
-
-  for (var i = 0, l = styleSheets.length; i < l; i++) {
-    var sheet = styleSheets[i];
-
-    if (sheet.ownerNode === tag) {
-      return sheet;
-    }
-  }
-
-  throwStyledComponentsError(17);
-  return undefined;
-};
-
-// 
-/** Create a CSSStyleSheet-like tag depending on the environment */
-
-var makeTag = function makeTag(_ref) {
-  var isServer = _ref.isServer,
-      useCSSOMInjection = _ref.useCSSOMInjection,
-      target = _ref.target;
-
-  if (isServer) {
-    return new VirtualTag(target);
-  } else if (useCSSOMInjection) {
-    return new CSSOMTag(target);
-  } else {
-    return new TextTag(target);
-  }
-};
-var CSSOMTag =
-/*#__PURE__*/
-function () {
-  function CSSOMTag(target) {
-    var element = this.element = makeStyleTag(target); // Avoid Edge bug where empty style elements don't create sheets
-
-    element.appendChild(document.createTextNode(''));
-    this.sheet = getSheet(element);
-    this.length = 0;
-  }
-
-  var _proto = CSSOMTag.prototype;
-
-  _proto.insertRule = function insertRule(index, rule) {
-    try {
-      this.sheet.insertRule(rule, index);
-      this.length++;
-      return true;
-    } catch (_error) {
-      return false;
-    }
-  };
-
-  _proto.deleteRule = function deleteRule(index) {
-    this.sheet.deleteRule(index);
-    this.length--;
-  };
-
-  _proto.getRule = function getRule(index) {
-    var rule = this.sheet.cssRules[index]; // Avoid IE11 quirk where cssText is inaccessible on some invalid rules
-
-    if (rule !== undefined && typeof rule.cssText === 'string') {
-      return rule.cssText;
-    } else {
-      return '';
-    }
-  };
-
-  return CSSOMTag;
-}();
-/** A Tag that emulates the CSSStyleSheet API but uses text nodes */
-
-var TextTag =
-/*#__PURE__*/
-function () {
-  function TextTag(target) {
-    var element = this.element = makeStyleTag(target);
-    this.nodes = element.childNodes;
-    this.length = 0;
-  }
-
-  var _proto2 = TextTag.prototype;
-
-  _proto2.insertRule = function insertRule(index, rule) {
-    if (index <= this.length && index >= 0) {
-      var node = document.createTextNode(rule);
-      var refNode = this.nodes[index];
-      this.element.insertBefore(node, refNode || null);
-      this.length++;
-      return true;
-    } else {
-      return false;
-    }
-  };
-
-  _proto2.deleteRule = function deleteRule(index) {
-    this.element.removeChild(this.nodes[index]);
-    this.length--;
-  };
-
-  _proto2.getRule = function getRule(index) {
-    if (index < this.length) {
-      return this.nodes[index].textContent;
-    } else {
-      return '';
-    }
-  };
-
-  return TextTag;
-}();
-/** A completely virtual (server-side) Tag that doesn't manipulate the DOM */
-
-var VirtualTag =
-/*#__PURE__*/
-function () {
-  function VirtualTag(_target) {
-    this.rules = [];
-    this.length = 0;
-  }
-
-  var _proto3 = VirtualTag.prototype;
-
-  _proto3.insertRule = function insertRule(index, rule) {
-    if (index <= this.length) {
-      this.rules.splice(index, 0, rule);
-      this.length++;
-      return true;
-    } else {
-      return false;
-    }
-  };
-
-  _proto3.deleteRule = function deleteRule(index) {
-    this.rules.splice(index, 1);
-    this.length--;
-  };
-
-  _proto3.getRule = function getRule(index) {
-    if (index < this.length) {
-      return this.rules[index];
-    } else {
-      return '';
-    }
-  };
-
-  return VirtualTag;
-}();
-
-// 
-/** Create a GroupedTag with an underlying Tag implementation */
-
-var makeGroupedTag = function makeGroupedTag(tag) {
-  return new DefaultGroupedTag(tag);
-};
-var BASE_SIZE = 1 << 9;
-
-var DefaultGroupedTag =
-/*#__PURE__*/
-function () {
-  function DefaultGroupedTag(tag) {
-    this.groupSizes = new Uint32Array(BASE_SIZE);
-    this.length = BASE_SIZE;
-    this.tag = tag;
-  }
-
-  var _proto = DefaultGroupedTag.prototype;
-
-  _proto.indexOfGroup = function indexOfGroup(group) {
-    var index = 0;
-
-    for (var i = 0; i < group; i++) {
-      index += this.groupSizes[i];
-    }
-
-    return index;
-  };
-
-  _proto.insertRules = function insertRules(group, rules) {
-    if (group >= this.groupSizes.length) {
-      var oldBuffer = this.groupSizes;
-      var oldSize = oldBuffer.length;
-      var newSize = oldSize;
-
-      while (group >= newSize) {
-        newSize <<= 1;
-
-        if (newSize < 0) {
-          throwStyledComponentsError(16, "" + group);
-        }
-      }
-
-      this.groupSizes = new Uint32Array(newSize);
-      this.groupSizes.set(oldBuffer);
-      this.length = newSize;
-
-      for (var i = oldSize; i < newSize; i++) {
-        this.groupSizes[i] = 0;
-      }
-    }
-
-    var ruleIndex = this.indexOfGroup(group + 1);
-
-    for (var _i = 0, l = rules.length; _i < l; _i++) {
-      if (this.tag.insertRule(ruleIndex, rules[_i])) {
-        this.groupSizes[group]++;
-        ruleIndex++;
-      }
-    }
-  };
-
-  _proto.clearGroup = function clearGroup(group) {
-    if (group < this.length) {
-      var length = this.groupSizes[group];
-      var startIndex = this.indexOfGroup(group);
-      var endIndex = startIndex + length;
-      this.groupSizes[group] = 0;
-
-      for (var i = startIndex; i < endIndex; i++) {
-        this.tag.deleteRule(startIndex);
-      }
-    }
-  };
-
-  _proto.getGroup = function getGroup(group) {
-    var css = '';
-
-    if (group >= this.length || this.groupSizes[group] === 0) {
-      return css;
-    }
-
-    var length = this.groupSizes[group];
-    var startIndex = this.indexOfGroup(group);
-    var endIndex = startIndex + length;
-
-    for (var i = startIndex; i < endIndex; i++) {
-      css += this.tag.getRule(i) + "\n";
-    }
-
-    return css;
-  };
-
-  return DefaultGroupedTag;
-}();
-
-// 
-var MAX_SMI = 1 << 31 - 1;
-var groupIDRegister = new Map();
-var reverseRegister = new Map();
-var nextFreeGroup = 1;
-var getGroupForId = function getGroupForId(id) {
-  if (groupIDRegister.has(id)) {
-    return groupIDRegister.get(id);
-  }
-
-  var group = nextFreeGroup++;
-
-  if ( true && ((group | 0) < 0 || group > MAX_SMI)) {
-    throwStyledComponentsError(16, "" + group);
-  }
-
-  groupIDRegister.set(id, group);
-  reverseRegister.set(group, id);
-  return group;
-};
-var getIdForGroup = function getIdForGroup(group) {
-  return reverseRegister.get(group);
-};
-var setGroupForId = function setGroupForId(id, group) {
-  if (group >= nextFreeGroup) {
-    nextFreeGroup = group + 1;
-  }
-
-  groupIDRegister.set(id, group);
-  reverseRegister.set(group, id);
-};
-
-// 
-var SELECTOR = "style[" + SC_ATTR + "][" + SC_ATTR_VERSION + "=\"" + SC_VERSION + "\"]";
-var RULE_RE = /(?:\s*)?(.*?){((?:{[^}]*}|(?!{).*?)*)}/g;
-var MARKER_RE = new RegExp("^" + SC_ATTR + "\\.g(\\d+)\\[id=\"([\\w\\d-]+)\"\\]");
-var outputSheet = function outputSheet(sheet) {
-  var tag = sheet.getTag();
-  var length = tag.length;
-  var css = '';
-
-  for (var group = 0; group < length; group++) {
-    var id = getIdForGroup(group);
-    if (id === undefined) continue;
-    var names = sheet.names.get(id);
-    var rules = tag.getGroup(group);
-    if (names === undefined || rules.length === 0) continue;
-    var selector = SC_ATTR + ".g" + group + "[id=\"" + id + "\"]";
-    var content = '';
-
-    if (names !== undefined) {
-      names.forEach(function (name) {
-        if (name.length > 0) {
-          content += name + ",";
-        }
-      });
-    } // NOTE: It's easier to collect rules and have the marker
-    // after the actual rules to simplify the rehydration
-
-
-    css += "" + rules + selector + "{content:\"" + content + "\"}\n";
-  }
-
-  return css;
-};
-
-var rehydrateNamesFromContent = function rehydrateNamesFromContent(sheet, id, content) {
-  var names = content.split(',');
-  var name;
-
-  for (var i = 0, l = names.length; i < l; i++) {
-    // eslint-disable-next-line
-    if (name = names[i]) {
-      sheet.registerName(id, name);
-    }
-  }
-};
-
-var rehydrateSheetFromTag = function rehydrateSheetFromTag(sheet, style) {
-  var rawHTML = style.innerHTML;
-  var rules = [];
-  var parts; // parts = [match, selector, content]
-  // eslint-disable-next-line no-cond-assign
-
-  while (parts = RULE_RE.exec(rawHTML)) {
-    var marker = parts[1].match(MARKER_RE);
-
-    if (marker) {
-      var group = parseInt(marker[1], 10) | 0;
-      var id = marker[2];
-
-      if (group !== 0) {
-        // Rehydrate componentId to group index mapping
-        setGroupForId(id, group); // Rehydrate names and rules
-        // looks like: data-styled.g11[id="idA"]{content:"nameA,"}
-
-        rehydrateNamesFromContent(sheet, id, parts[2].split('"')[1]);
-        sheet.getTag().insertRules(group, rules);
-      }
-
-      rules.length = 0;
-    } else {
-      rules.push(parts[0].trim());
-    }
-  }
-};
-
-var rehydrateSheet = function rehydrateSheet(sheet) {
-  var nodes = document.querySelectorAll(SELECTOR);
-
-  for (var i = 0, l = nodes.length; i < l; i++) {
-    var node = nodes[i];
-
-    if (node && node.getAttribute(SC_ATTR) !== SC_ATTR_ACTIVE) {
-      rehydrateSheetFromTag(sheet, node);
-
-      if (node.parentNode) {
-        node.parentNode.removeChild(node);
-      }
-    }
-  }
-};
-
-var SHOULD_REHYDRATE = IS_BROWSER;
-var defaultOptions = {
-  isServer: !IS_BROWSER,
-  useCSSOMInjection: !DISABLE_SPEEDY
-};
-/** Contains the main stylesheet logic for stringification and caching */
-
-var StyleSheet =
-/*#__PURE__*/
-function () {
-  /** Register a group ID to give it an index */
-  StyleSheet.registerId = function registerId(id) {
-    return getGroupForId(id);
-  };
-
-  function StyleSheet(options, globalStyles, names) {
-    if (options === void 0) {
-      options = defaultOptions;
-    }
-
-    if (globalStyles === void 0) {
-      globalStyles = {};
-    }
-
-    this.options = _extends({}, defaultOptions, {}, options);
-    this.gs = globalStyles;
-    this.names = new Map(names); // We rehydrate only once and use the sheet that is created first
-
-    if (!this.options.isServer && IS_BROWSER && SHOULD_REHYDRATE) {
-      SHOULD_REHYDRATE = false;
-      rehydrateSheet(this);
-    }
-  }
-
-  var _proto = StyleSheet.prototype;
-
-  _proto.reconstructWithOptions = function reconstructWithOptions(options) {
-    return new StyleSheet(_extends({}, this.options, {}, options), this.gs, this.names);
-  };
-
-  _proto.allocateGSInstance = function allocateGSInstance(id) {
-    return this.gs[id] = (this.gs[id] || 0) + 1;
-  }
-  /** Lazily initialises a GroupedTag for when it's actually needed */
-  ;
-
-  _proto.getTag = function getTag() {
-    return this.tag || (this.tag = makeGroupedTag(makeTag(this.options)));
-  }
-  /** Check whether a name is known for caching */
-  ;
-
-  _proto.hasNameForId = function hasNameForId(id, name) {
-    return this.names.has(id) && this.names.get(id).has(name);
-  }
-  /** Mark a group's name as known for caching */
-  ;
-
-  _proto.registerName = function registerName(id, name) {
-    getGroupForId(id);
-
-    if (!this.names.has(id)) {
-      var groupNames = new Set();
-      groupNames.add(name);
-      this.names.set(id, groupNames);
-    } else {
-      this.names.get(id).add(name);
-    }
-  }
-  /** Insert new rules which also marks the name as known */
-  ;
-
-  _proto.insertRules = function insertRules(id, name, rules) {
-    this.registerName(id, name);
-    this.getTag().insertRules(getGroupForId(id), rules);
-  }
-  /** Clears all cached names for a given group ID */
-  ;
-
-  _proto.clearNames = function clearNames(id) {
-    if (this.names.has(id)) {
-      this.names.get(id).clear();
-    }
-  }
-  /** Clears all rules for a given group ID */
-  ;
-
-  _proto.clearRules = function clearRules(id) {
-    this.getTag().clearGroup(getGroupForId(id));
-    this.clearNames(id);
-  }
-  /** Clears the entire tag which deletes all rules but not its names */
-  ;
-
-  _proto.clearTag = function clearTag() {
-    // NOTE: This does not clear the names, since it's only used during SSR
-    // so that we can continuously output only new rules
-    this.tag = undefined;
-  }
-  /** Outputs the current sheet as a CSS string with markers for SSR */
-  ;
-
-  _proto.toString = function toString() {
-    return outputSheet(this);
-  };
-
-  return StyleSheet;
-}();
-
-// 
-
-/* eslint-disable */
-var SEED = 5381; // When we have separate strings it's useful to run a progressive
-// version of djb2 where we pretend that we're still looping over
-// the same string
-
-var phash = function phash(h, x) {
-  var i = x.length;
-
-  while (i) {
-    h = h * 33 ^ x.charCodeAt(--i);
-  }
-
-  return h;
-}; // This is a djb2 hashing function
-
-var hash = function hash(x) {
-  return phash(SEED, x);
-};
-
-/**
- * MIT License
- *
- * Copyright (c) 2016 Sultan Tarimo
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"),
- * to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
- * sell copies of the Software and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
- * OR IMPLIED INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
- * IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
-
-/* eslint-disable */
-function insertRulePlugin (insertRule) {
-  var delimiter = '/*|*/';
-  var needle = delimiter + "}";
-
-  function toSheet(block) {
-    if (block) {
-      try {
-        insertRule(block + "}");
-      } catch (e) {}
-    }
-  }
-
-  return function ruleSheet(context, content, selectors, parents, line, column, length, ns, depth, at) {
-    switch (context) {
-      // property
-      case 1:
-        // @import
-        if (depth === 0 && content.charCodeAt(0) === 64) return insertRule(content + ";"), '';
-        break;
-      // selector
-
-      case 2:
-        if (ns === 0) return content + delimiter;
-        break;
-      // at-rule
-
-      case 3:
-        switch (ns) {
-          // @font-face, @page
-          case 102:
-          case 112:
-            return insertRule(selectors[0] + content), '';
-
-          default:
-            return content + (at === 0 ? delimiter : '');
-        }
-
-      case -2:
-        content.split(needle).forEach(toSheet);
-    }
-  };
-}
-
-var COMMENT_REGEX = /^\s*\/\/.*$/gm;
-function createStylisInstance(_temp) {
-  var _ref = _temp === void 0 ? EMPTY_OBJECT : _temp,
-      _ref$options = _ref.options,
-      options = _ref$options === void 0 ? EMPTY_OBJECT : _ref$options,
-      _ref$plugins = _ref.plugins,
-      plugins = _ref$plugins === void 0 ? EMPTY_ARRAY : _ref$plugins;
-
-  var stylis = new _emotion_stylis__WEBPACK_IMPORTED_MODULE_3__["default"](options); // Wrap `insertRulePlugin to build a list of rules,
-  // and then make our own plugin to return the rules. This
-  // makes it easier to hook into the existing SSR architecture
-
-  var parsingRules = []; // eslint-disable-next-line consistent-return
-
-  var returnRulesPlugin = function returnRulesPlugin(context) {
-    if (context === -2) {
-      var parsedRules = parsingRules;
-      parsingRules = [];
-      return parsedRules;
-    }
-  };
-
-  var parseRulesPlugin = insertRulePlugin(function (rule) {
-    parsingRules.push(rule);
-  });
-
-  var _componentId;
-
-  var _selector;
-
-  var _selectorRegexp;
-
-  var selfReferenceReplacer = function selfReferenceReplacer(match, offset, string) {
-    if ( // the first self-ref is always untouched
-    offset > 0 && // there should be at least two self-refs to do a replacement (.b > .b)
-    string.slice(0, offset).indexOf(_selector) !== -1 && // no consecutive self refs (.b.b); that is a precedence boost and treated differently
-    string.slice(offset - _selector.length, offset) !== _selector) {
-      return "." + _componentId;
-    }
-
-    return match;
-  };
-  /**
-   * When writing a style like
-   *
-   * & + & {
-   *   color: red;
-   * }
-   *
-   * The second ampersand should be a reference to the static component class. stylis
-   * has no knowledge of static class so we have to intelligently replace the base selector.
-   *
-   * https://github.com/thysultan/stylis.js#plugins <- more info about the context phase values
-   * "2" means this plugin is taking effect at the very end after all other processing is complete
-   */
-
-
-  var selfReferenceReplacementPlugin = function selfReferenceReplacementPlugin(context, _, selectors) {
-    if (context === 2 && selectors.length && selectors[0].lastIndexOf(_selector) > 0) {
-      // eslint-disable-next-line no-param-reassign
-      selectors[0] = selectors[0].replace(_selectorRegexp, selfReferenceReplacer);
-    }
-  };
-
-  stylis.use([].concat(plugins, [selfReferenceReplacementPlugin, parseRulesPlugin, returnRulesPlugin]));
-
-  function stringifyRules(css, selector, prefix, componentId) {
-    if (componentId === void 0) {
-      componentId = '&';
-    }
-
-    var flatCSS = css.replace(COMMENT_REGEX, '');
-    var cssStr = selector && prefix ? prefix + " " + selector + " { " + flatCSS + " }" : flatCSS; // stylis has no concept of state to be passed to plugins
-    // but since JS is single=threaded, we can rely on that to ensure
-    // these properties stay in sync with the current stylis run
-
-    _componentId = componentId;
-    _selector = selector;
-    _selectorRegexp = new RegExp("\\" + _selector + "\\b", 'g');
-    return stylis(prefix || !selector ? '' : selector, cssStr);
-  }
-
-  stringifyRules.hash = plugins.length ? plugins.reduce(function (acc, plugin) {
-    if (!plugin.name) {
-      throwStyledComponentsError(15);
-    }
-
-    return phash(acc, plugin.name);
-  }, SEED).toString() : '';
-  return stringifyRules;
-}
-
-// 
-var StyleSheetContext = react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext();
-var StyleSheetConsumer = StyleSheetContext.Consumer;
-var StylisContext = react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext();
-var StylisConsumer = StylisContext.Consumer;
-var masterSheet = new StyleSheet();
-var masterStylis = createStylisInstance();
-function useStyleSheet() {
-  return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StyleSheetContext) || masterSheet;
-}
-function useStylis() {
-  return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StylisContext) || masterStylis;
-}
-function StyleSheetManager(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(props.stylisPlugins),
-      plugins = _useState[0],
-      setPlugins = _useState[1];
-
-  var contextStyleSheet = useStyleSheet();
-  var styleSheet = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
-    var sheet = contextStyleSheet;
-
-    if (props.sheet) {
-      // eslint-disable-next-line prefer-destructuring
-      sheet = props.sheet;
-    } else if (props.target) {
-      sheet = sheet.reconstructWithOptions({
-        target: props.target
-      });
-    }
-
-    if (props.disableCSSOMInjection) {
-      sheet = sheet.reconstructWithOptions({
-        useCSSOMInjection: false
-      });
-    }
-
-    return sheet;
-  }, [props.disableCSSOMInjection, props.sheet, props.target]);
-  var stylis = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
-    return createStylisInstance({
-      options: {
-        prefix: !props.disableVendorPrefixes
-      },
-      plugins: plugins
-    });
-  }, [props.disableVendorPrefixes, plugins]);
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    if (!shallowequal__WEBPACK_IMPORTED_MODULE_2___default()(plugins, props.stylisPlugins)) setPlugins(props.stylisPlugins);
-  }, [props.stylisPlugins]);
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyleSheetContext.Provider, {
-    value: styleSheet
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StylisContext.Provider, {
-    value: stylis
-  },  true ? react__WEBPACK_IMPORTED_MODULE_1___default.a.Children.only(props.children) : undefined));
-}
-
-// 
-
-var Keyframes =
-/*#__PURE__*/
-function () {
-  function Keyframes(name, stringifyArgs) {
-    var _this = this;
-
-    this.inject = function (styleSheet) {
-      if (!styleSheet.hasNameForId(_this.id, _this.name)) {
-        styleSheet.insertRules(_this.id, _this.name, masterStylis.apply(void 0, _this.stringifyArgs));
-      }
-    };
-
-    this.toString = function () {
-      return throwStyledComponentsError(12, String(_this.name));
-    };
-
-    this.name = name;
-    this.id = "sc-keyframes-" + name;
-    this.stringifyArgs = stringifyArgs;
-  }
-
-  var _proto = Keyframes.prototype;
-
-  _proto.getName = function getName() {
-    return this.name;
-  };
-
-  return Keyframes;
-}();
-
-// 
-
-/**
- * inlined version of
- * https://github.com/facebook/fbjs/blob/master/packages/fbjs/src/core/hyphenateStyleName.js
- */
-var uppercasePattern = /([A-Z])/g;
-var msPattern = /^ms-/;
-/**
- * Hyphenates a camelcased CSS property name, for example:
- *
- *   > hyphenateStyleName('backgroundColor')
- *   < "background-color"
- *   > hyphenateStyleName('MozTransition')
- *   < "-moz-transition"
- *   > hyphenateStyleName('msTransition')
- *   < "-ms-transition"
- *
- * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
- * is converted to `-ms-`.
- *
- * @param {string} string
- * @return {string}
- */
-
-function hyphenateStyleName(string) {
-  return string.replace(uppercasePattern, '-$1').toLowerCase().replace(msPattern, '-ms-');
-}
-
-// 
-
-function addUnitIfNeeded(name, value) {
-  // https://github.com/amilajack/eslint-plugin-flowtype-errors/issues/133
-  // $FlowFixMe
-  if (value == null || typeof value === 'boolean' || value === '') {
-    return '';
-  }
-
-  if (typeof value === 'number' && value !== 0 && !(name in _emotion_unitless__WEBPACK_IMPORTED_MODULE_4__["default"])) {
-    return value + "px"; // Presumes implicit 'px' suffix for unitless numbers
-  }
-
-  return String(value).trim();
-}
-
-// 
-/**
- * It's falsish not falsy because 0 is allowed.
- */
-
-var isFalsish = function isFalsish(chunk) {
-  return chunk === undefined || chunk === null || chunk === false || chunk === '';
-};
-
-var objToCssArray = function objToCssArray(obj, prevKey) {
-  var rules = [];
-  var keys = Object.keys(obj);
-  keys.forEach(function (key) {
-    if (!isFalsish(obj[key])) {
-      if (isPlainObject(obj[key])) {
-        rules.push.apply(rules, objToCssArray(obj[key], key));
-        return rules;
-      } else if (isFunction(obj[key])) {
-        rules.push(hyphenateStyleName(key) + ":", obj[key], ';');
-        return rules;
-      }
-
-      rules.push(hyphenateStyleName(key) + ": " + addUnitIfNeeded(key, obj[key]) + ";");
-    }
-
-    return rules;
-  });
-  return prevKey ? [prevKey + " {"].concat(rules, ['}']) : rules;
-};
-function flatten(chunk, executionContext, styleSheet) {
-  if (Array.isArray(chunk)) {
-    var ruleSet = [];
-
-    for (var i = 0, len = chunk.length, result; i < len; i += 1) {
-      result = flatten(chunk[i], executionContext, styleSheet);
-      if (result === '') continue;else if (Array.isArray(result)) ruleSet.push.apply(ruleSet, result);else ruleSet.push(result);
-    }
-
-    return ruleSet;
-  }
-
-  if (isFalsish(chunk)) {
-    return '';
-  }
-  /* Handle other components */
-
-
-  if (isStyledComponent(chunk)) {
-    return "." + chunk.styledComponentId;
-  }
-  /* Either execute or defer the function */
-
-
-  if (isFunction(chunk)) {
-    if (isStatelessFunction(chunk) && executionContext) {
-      var _result = chunk(executionContext);
-
-      if ( true && Object(react_is__WEBPACK_IMPORTED_MODULE_0__["isElement"])(_result)) {
-        // eslint-disable-next-line no-console
-        console.warn(getComponentName(chunk) + " is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.");
-      }
-
-      return flatten(_result, executionContext, styleSheet);
-    } else return chunk;
-  }
-
-  if (chunk instanceof Keyframes) {
-    if (styleSheet) {
-      chunk.inject(styleSheet);
-      return chunk.getName();
-    } else return chunk;
-  }
-  /* Handle objects */
-
-
-  return isPlainObject(chunk) ? objToCssArray(chunk) : chunk.toString();
-}
-
-// 
-function css(styles) {
-  for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  if (isFunction(styles) || isPlainObject(styles)) {
-    // $FlowFixMe
-    return flatten(interleave(EMPTY_ARRAY, [styles].concat(interpolations)));
-  }
-
-  if (interpolations.length === 0 && styles.length === 1 && typeof styles[0] === "string") {
-    // $FlowFixMe
-    return styles;
-  } // $FlowFixMe
-
-
-  return flatten(interleave(styles, interpolations));
-}
-
-function constructWithOptions(componentConstructor, tag, options) {
-  if (options === void 0) {
-    options = EMPTY_OBJECT;
-  }
-
-  if (!Object(react_is__WEBPACK_IMPORTED_MODULE_0__["isValidElementType"])(tag)) {
-    return throwStyledComponentsError(1, String(tag));
-  }
-  /* This is callable directly as a template function */
-  // $FlowFixMe: Not typed to avoid destructuring arguments
-
-
-  var templateFunction = function templateFunction() {
-    return componentConstructor(tag, options, css.apply(void 0, arguments));
-  };
-  /* If config methods are called, wrap up a new template function and merge options */
-
-
-  templateFunction.withConfig = function (config) {
-    return constructWithOptions(componentConstructor, tag, _extends({}, options, {}, config));
-  };
-  /* Modify/inject new props at runtime */
-
-
-  templateFunction.attrs = function (attrs) {
-    return constructWithOptions(componentConstructor, tag, _extends({}, options, {
-      attrs: Array.prototype.concat(options.attrs, attrs).filter(Boolean)
-    }));
-  };
-
-  return templateFunction;
-}
-
-/* eslint-disable */
-
-/**
-  mixin-deep; https://github.com/jonschlinkert/mixin-deep
-  Inlined such that it will be consistently transpiled to an IE-compatible syntax.
-
-  The MIT License (MIT)
-
-  Copyright (c) 2014-present, Jon Schlinkert.
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-*/
-var isObject = function isObject(val) {
-  return typeof val === 'function' || typeof val === 'object' && val !== null && !Array.isArray(val);
-};
-
-var isValidKey = function isValidKey(key) {
-  return key !== '__proto__' && key !== 'constructor' && key !== 'prototype';
-};
-
-function mixin(target, val, key) {
-  var obj = target[key];
-
-  if (isObject(val) && isObject(obj)) {
-    mixinDeep(obj, val);
-  } else {
-    target[key] = val;
-  }
-}
-
-function mixinDeep(target) {
-  for (var _len = arguments.length, rest = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    rest[_key - 1] = arguments[_key];
-  }
-
-  for (var _i = 0, _rest = rest; _i < _rest.length; _i++) {
-    var obj = _rest[_i];
-
-    if (isObject(obj)) {
-      for (var key in obj) {
-        if (isValidKey(key)) {
-          mixin(target, obj[key], key);
-        }
-      }
-    }
-  }
-
-  return target;
-}
-
-// 
-
-/* eslint-disable no-bitwise */
-var AD_REPLACER_R = /(a)(d)/gi;
-/* This is the "capacity" of our alphabet i.e. 2x26 for all letters plus their capitalised
- * counterparts */
-
-var charsLength = 52;
-/* start at 75 for 'a' until 'z' (25) and then start at 65 for capitalised letters */
-
-var getAlphabeticChar = function getAlphabeticChar(code) {
-  return String.fromCharCode(code + (code > 25 ? 39 : 97));
-};
-/* input a number, usually a hash and convert it to base-52 */
-
-
-function generateAlphabeticName(code) {
-  var name = '';
-  var x;
-  /* get a char and divide by alphabet-length */
-
-  for (x = Math.abs(code); x > charsLength; x = x / charsLength | 0) {
-    name = getAlphabeticChar(x % charsLength) + name;
-  }
-
-  return (getAlphabeticChar(x % charsLength) + name).replace(AD_REPLACER_R, '$1-$2');
-}
-
-// 
-function isStaticRules(rules) {
-  for (var i = 0; i < rules.length; i += 1) {
-    var rule = rules[i];
-
-    if (isFunction(rule) && !isStyledComponent(rule)) {
-      // functions are allowed to be static if they're just being
-      // used to get the classname of a nested styled component
-      return false;
-    }
-  }
-
-  return true;
-}
-
-// 
-/*
- ComponentStyle is all the CSS-specific stuff, not
- the React-specific stuff.
- */
-
-var ComponentStyle =
-/*#__PURE__*/
-function () {
-  function ComponentStyle(rules, componentId) {
-    this.rules = rules;
-    this.staticRulesId = '';
-    this.isStatic =  false && false;
-    this.componentId = componentId;
-    this.baseHash = hash(componentId); // NOTE: This registers the componentId, which ensures a consistent order
-    // for this component's styles compared to others
-
-    StyleSheet.registerId(componentId);
-  }
-  /*
-   * Flattens a rule set into valid CSS
-   * Hashes it, wraps the whole chunk in a .hash1234 {}
-   * Returns the hash to be injected on render()
-   * */
-
-
-  var _proto = ComponentStyle.prototype;
-
-  _proto.generateAndInjectStyles = function generateAndInjectStyles(executionContext, styleSheet, stylis) {
-    var componentId = this.componentId; // force dynamic classnames if user-supplied stylis plugins are in use
-
-    if (this.isStatic && !stylis.hash) {
-      if (this.staticRulesId && styleSheet.hasNameForId(componentId, this.staticRulesId)) {
-        return this.staticRulesId;
-      }
-
-      var cssStatic = flatten(this.rules, executionContext, styleSheet).join('');
-      var name = generateAlphabeticName(phash(this.baseHash, cssStatic.length) >>> 0);
-
-      if (!styleSheet.hasNameForId(componentId, name)) {
-        var cssStaticFormatted = stylis(cssStatic, "." + name, undefined, componentId);
-        styleSheet.insertRules(componentId, name, cssStaticFormatted);
-      }
-
-      this.staticRulesId = name;
-      return name;
-    } else {
-      var length = this.rules.length;
-      var dynamicHash = phash(this.baseHash, stylis.hash);
-      var css = '';
-
-      for (var i = 0; i < length; i++) {
-        var partRule = this.rules[i];
-
-        if (typeof partRule === 'string') {
-          css += partRule;
-          if (true) dynamicHash = phash(dynamicHash, partRule + i);
-        } else {
-          var partChunk = flatten(partRule, executionContext, styleSheet);
-          var partString = Array.isArray(partChunk) ? partChunk.join('') : partChunk;
-          dynamicHash = phash(dynamicHash, partString + i);
-          css += partString;
-        }
-      }
-
-      var _name = generateAlphabeticName(dynamicHash >>> 0);
-
-      if (!styleSheet.hasNameForId(componentId, _name)) {
-        var cssFormatted = stylis(css, "." + _name, undefined, componentId);
-        styleSheet.insertRules(componentId, _name, cssFormatted);
-      }
-
-      return _name;
-    }
-  };
-
-  return ComponentStyle;
-}();
-
-// 
-var LIMIT = 200;
-var createWarnTooManyClasses = (function (displayName, componentId) {
-  var generatedClasses = {};
-  var warningSeen = false;
-  return function (className) {
-    if (!warningSeen) {
-      generatedClasses[className] = true;
-
-      if (Object.keys(generatedClasses).length >= LIMIT) {
-        // Unable to find latestRule in test environment.
-
-        /* eslint-disable no-console, prefer-template */
-        var parsedIdString = componentId ? " with the id of \"" + componentId + "\"" : '';
-        console.warn("Over " + LIMIT + " classes were generated for component " + displayName + parsedIdString + ".\n" + 'Consider using the attrs method, together with a style object for frequently changed styles.\n' + 'Example:\n' + '  const Component = styled.div.attrs(props => ({\n' + '    style: {\n' + '      background: props.background,\n' + '    },\n' + '  }))`width: 100%;`\n\n' + '  <Component />');
-        warningSeen = true;
-        generatedClasses = {};
-      }
-    }
-  };
-});
-
-// 
-var invalidHookCallRe = /invalid hook call/i;
-var seen = new Set();
-var checkDynamicCreation = function checkDynamicCreation(displayName, componentId) {
-  if (true) {
-    var parsedIdString = componentId ? " with the id of \"" + componentId + "\"" : '';
-    var message = "The component " + displayName + parsedIdString + " has been created dynamically.\n" + 'You may see this warning because you\'ve called styled inside another component.\n' + 'To resolve this only create new StyledComponents outside of any render method and function component.';
-
-    try {
-      // We purposefully call `useRef` outside of a component and expect it to throw
-      // If it doesn't, then we're inside another component.
-      // eslint-disable-next-line react-hooks/rules-of-hooks
-      Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
-
-      if (!seen.has(message)) {
-        // eslint-disable-next-line no-console
-        console.warn(message);
-        seen.add(message);
-      }
-    } catch (error) {
-      // The error here is expected, since we're expecting anything that uses `checkDynamicCreation` to
-      // be called outside of a React component.
-      if (invalidHookCallRe.test(error.message)) {
-        // This shouldn't happen, but resets `warningSeen` if we had this error happen intermittently
-        seen["delete"](message);
-      }
-    }
-  }
-};
-
-// 
-var determineTheme = (function (props, providedTheme, defaultProps) {
-  if (defaultProps === void 0) {
-    defaultProps = EMPTY_OBJECT;
-  }
-
-  return props.theme !== defaultProps.theme && props.theme || providedTheme || defaultProps.theme;
-});
-
-// 
-var escapeRegex = /[[\].#*$><+~=|^:(),"'`-]+/g;
-var dashesAtEnds = /(^-|-$)/g;
-/**
- * TODO: Explore using CSS.escape when it becomes more available
- * in evergreen browsers.
- */
-
-function escape(str) {
-  return str // Replace all possible CSS selectors
-  .replace(escapeRegex, '-') // Remove extraneous hyphens at the start and end
-  .replace(dashesAtEnds, '');
-}
-
-// 
-function isTag(target) {
-  return typeof target === 'string' && ( true ? target.charAt(0) === target.charAt(0).toLowerCase() : undefined);
-}
-
-// 
-function generateDisplayName(target) {
-  // $FlowFixMe
-  return isTag(target) ? "styled." + target : "Styled(" + getComponentName(target) + ")";
-}
-
-// 
-var generateComponentId = (function (str) {
-  return generateAlphabeticName(hash(str) >>> 0);
-});
-
-/**
- * Convenience function for joining strings to form className chains
- */
-function joinStrings(a, b) {
-  return a && b ? a + " " + b : a || b;
-}
-
-var ThemeContext = react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext();
-var ThemeConsumer = ThemeContext.Consumer;
-
-function mergeTheme(theme, outerTheme) {
-  if (!theme) {
-    return throwStyledComponentsError(14);
-  }
-
-  if (isFunction(theme)) {
-    var mergedTheme = theme(outerTheme);
-
-    if ( true && (mergedTheme === null || Array.isArray(mergedTheme) || typeof mergedTheme !== 'object')) {
-      return throwStyledComponentsError(7);
-    }
-
-    return mergedTheme;
-  }
-
-  if (Array.isArray(theme) || typeof theme !== 'object') {
-    return throwStyledComponentsError(8);
-  }
-
-  return outerTheme ? _extends({}, outerTheme, {}, theme) : theme;
-}
-/**
- * Provide a theme to an entire react component tree via context
- */
-
-
-function ThemeProvider(props) {
-  var outerTheme = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ThemeContext);
-  var themeContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
-    return mergeTheme(props.theme, outerTheme);
-  }, [props.theme, outerTheme]);
-
-  if (!props.children) {
-    return null;
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ThemeContext.Provider, {
-    value: themeContext
-  }, props.children);
-}
-
-/* global $Call */
-
-var identifiers = {};
-/* We depend on components having unique IDs */
-
-function generateId(displayName, parentComponentId) {
-  var name = typeof displayName !== 'string' ? 'sc' : escape(displayName); // Ensure that no displayName can lead to duplicate componentIds
-
-  identifiers[name] = (identifiers[name] || 0) + 1;
-  var componentId = name + "-" + generateComponentId(name + identifiers[name]);
-  return parentComponentId ? parentComponentId + "-" + componentId : componentId;
-}
-
-function useResolvedAttrs(theme, props, attrs) {
-  if (theme === void 0) {
-    theme = EMPTY_OBJECT;
-  }
-
-  // NOTE: can't memoize this
-  // returns [context, resolvedAttrs]
-  // where resolvedAttrs is only the things injected by the attrs themselves
-  var context = _extends({}, props, {
-    theme: theme
-  });
-
-  var resolvedAttrs = {};
-  attrs.forEach(function (attrDef) {
-    var resolvedAttrDef = attrDef;
-    var key;
-
-    if (isFunction(resolvedAttrDef)) {
-      resolvedAttrDef = resolvedAttrDef(context);
-    }
-    /* eslint-disable guard-for-in */
-
-
-    for (key in resolvedAttrDef) {
-      context[key] = resolvedAttrs[key] = key === 'className' ? joinStrings(resolvedAttrs[key], resolvedAttrDef[key]) : resolvedAttrDef[key];
-    }
-    /* eslint-enable guard-for-in */
-
-  });
-  return [context, resolvedAttrs];
-}
-
-function useInjectedStyle(componentStyle, hasAttrs, resolvedAttrs, warnTooManyClasses) {
-  var styleSheet = useStyleSheet();
-  var stylis = useStylis(); // statically styled-components don't need to build an execution context object,
-  // and shouldn't be increasing the number of class names
-
-  var isStatic = componentStyle.isStatic && !hasAttrs;
-  var className = isStatic ? componentStyle.generateAndInjectStyles(EMPTY_OBJECT, styleSheet, stylis) : componentStyle.generateAndInjectStyles(resolvedAttrs, styleSheet, stylis);
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"])(className);
-
-  if ( true && !isStatic && warnTooManyClasses) {
-    warnTooManyClasses(className);
-  }
-
-  return className;
-}
-
-function useStyledComponentImpl(forwardedComponent, props, forwardedRef) {
-  var componentAttrs = forwardedComponent.attrs,
-      componentStyle = forwardedComponent.componentStyle,
-      defaultProps = forwardedComponent.defaultProps,
-      foldedComponentIds = forwardedComponent.foldedComponentIds,
-      styledComponentId = forwardedComponent.styledComponentId,
-      target = forwardedComponent.target;
-  Object(react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"])(styledComponentId); // NOTE: the non-hooks version only subscribes to this when !componentStyle.isStatic,
-  // but that'd be against the rules-of-hooks. We could be naughty and do it anyway as it
-  // should be an immutable value, but behave for now.
-
-  var theme = determineTheme(props, Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ThemeContext), defaultProps);
-
-  var _useResolvedAttrs = useResolvedAttrs(theme || EMPTY_OBJECT, props, componentAttrs),
-      context = _useResolvedAttrs[0],
-      attrs = _useResolvedAttrs[1];
-
-  var generatedClassName = useInjectedStyle(componentStyle, componentAttrs.length > 0, context,  true ? forwardedComponent.warnTooManyClasses : undefined);
-  var refToForward = forwardedRef;
-  var elementToBeCreated = attrs.as || props.as || target;
-  var isTargetTag = isTag(elementToBeCreated);
-  var computedProps = attrs !== props ? _extends({}, props, {}, attrs) : props;
-  var shouldFilterProps = isTargetTag || 'as' in computedProps || 'forwardedAs' in computedProps;
-  var propsForElement = shouldFilterProps ? {} : _extends({}, computedProps);
-
-  if (shouldFilterProps) {
-    // eslint-disable-next-line guard-for-in
-    for (var key in computedProps) {
-      if (key === 'forwardedAs') {
-        propsForElement.as = computedProps[key];
-      } else if (key !== 'as' && key !== 'forwardedAs' && (!isTargetTag || Object(_emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__["default"])(key))) {
-        // Don't pass through non HTML tags through to HTML elements
-        propsForElement[key] = computedProps[key];
-      }
-    }
-  }
-
-  if (props.style && attrs.style !== props.style) {
-    propsForElement.style = _extends({}, props.style, {}, attrs.style);
-  }
-
-  propsForElement.className = Array.prototype.concat(foldedComponentIds, styledComponentId, generatedClassName !== styledComponentId ? generatedClassName : null, props.className, attrs.className).filter(Boolean).join(' ');
-  propsForElement.ref = refToForward;
-  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(elementToBeCreated, propsForElement);
-}
-
-function createStyledComponent(target, options, rules) {
-  var isTargetStyledComp = isStyledComponent(target);
-  var isCompositeComponent = !isTag(target);
-  var _options$displayName = options.displayName,
-      displayName = _options$displayName === void 0 ? generateDisplayName(target) : _options$displayName,
-      _options$componentId = options.componentId,
-      componentId = _options$componentId === void 0 ? generateId(options.displayName, options.parentComponentId) : _options$componentId,
-      _options$attrs = options.attrs,
-      attrs = _options$attrs === void 0 ? EMPTY_ARRAY : _options$attrs;
-  var styledComponentId = options.displayName && options.componentId ? escape(options.displayName) + "-" + options.componentId : options.componentId || componentId; // fold the underlying StyledComponent attrs up (implicit extend)
-
-  var finalAttrs = // $FlowFixMe
-  isTargetStyledComp && target.attrs ? Array.prototype.concat(target.attrs, attrs).filter(Boolean) : attrs;
-  var componentStyle = new ComponentStyle(isTargetStyledComp ? // fold the underlying StyledComponent rules up (implicit extend)
-  // $FlowFixMe
-  target.componentStyle.rules.concat(rules) : rules, styledComponentId);
-  /**
-   * forwardRef creates a new interim component, which we'll take advantage of
-   * instead of extending ParentComponent to create _another_ interim class
-   */
-
-  var WrappedStyledComponent; // eslint-disable-next-line react-hooks/rules-of-hooks
-
-  var forwardRef = function forwardRef(props, ref) {
-    return useStyledComponentImpl(WrappedStyledComponent, props, ref);
-  };
-
-  forwardRef.displayName = displayName; // $FlowFixMe this is a forced cast to merge it StyledComponentWrapperProperties
-
-  WrappedStyledComponent = react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(forwardRef);
-  WrappedStyledComponent.attrs = finalAttrs;
-  WrappedStyledComponent.componentStyle = componentStyle;
-  WrappedStyledComponent.displayName = displayName; // this static is used to preserve the cascade of static classes for component selector
-  // purposes; this is especially important with usage of the css prop
-
-  WrappedStyledComponent.foldedComponentIds = isTargetStyledComp ? // $FlowFixMe
-  Array.prototype.concat(target.foldedComponentIds, target.styledComponentId) : EMPTY_ARRAY;
-  WrappedStyledComponent.styledComponentId = styledComponentId; // fold the underlying StyledComponent target up since we folded the styles
-
-  WrappedStyledComponent.target = isTargetStyledComp ? // $FlowFixMe
-  target.target : target; // $FlowFixMe
-
-  WrappedStyledComponent.withComponent = function withComponent(tag) {
-    var previousComponentId = options.componentId,
-        optionsToCopy = _objectWithoutPropertiesLoose(options, ["componentId"]);
-
-    var newComponentId = previousComponentId && previousComponentId + "-" + (isTag(tag) ? tag : escape(getComponentName(tag)));
-
-    var newOptions = _extends({}, optionsToCopy, {
-      attrs: finalAttrs,
-      componentId: newComponentId
-    });
-
-    return createStyledComponent(tag, newOptions, rules);
-  }; // $FlowFixMe
-
-
-  Object.defineProperty(WrappedStyledComponent, 'defaultProps', {
-    get: function get() {
-      return this._foldedDefaultProps;
-    },
-    set: function set(obj) {
-      // $FlowFixMe
-      this._foldedDefaultProps = isTargetStyledComp ? mixinDeep({}, target.defaultProps, obj) : obj;
-    }
-  });
-
-  if (true) {
-    checkDynamicCreation(displayName, styledComponentId);
-    WrappedStyledComponent.warnTooManyClasses = createWarnTooManyClasses(displayName, styledComponentId);
-  } // $FlowFixMe
-
-
-  WrappedStyledComponent.toString = function () {
-    return "." + WrappedStyledComponent.styledComponentId;
-  };
-
-  if (isCompositeComponent) {
-    hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(WrappedStyledComponent, target, {
-      // all SC-specific things should not be hoisted
-      attrs: true,
-      componentStyle: true,
-      displayName: true,
-      foldedComponentIds: true,
-      self: true,
-      styledComponentId: true,
-      target: true,
-      withComponent: true
-    });
-  }
-
-  return WrappedStyledComponent;
-}
-
-// 
-// Thanks to ReactDOMFactories for this handy list!
-var domElements = ['a', 'abbr', 'address', 'area', 'article', 'aside', 'audio', 'b', 'base', 'bdi', 'bdo', 'big', 'blockquote', 'body', 'br', 'button', 'canvas', 'caption', 'cite', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dfn', 'dialog', 'div', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'kbd', 'keygen', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'marquee', 'menu', 'menuitem', 'meta', 'meter', 'nav', 'noscript', 'object', 'ol', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 'progress', 'q', 'rp', 'rt', 'ruby', 's', 'samp', 'script', 'section', 'select', 'small', 'source', 'span', 'strong', 'style', 'sub', 'summary', 'sup', 'table', 'tbody', 'td', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'track', 'u', 'ul', 'var', 'video', 'wbr', // SVG
-'circle', 'clipPath', 'defs', 'ellipse', 'foreignObject', 'g', 'image', 'line', 'linearGradient', 'marker', 'mask', 'path', 'pattern', 'polygon', 'polyline', 'radialGradient', 'rect', 'stop', 'svg', 'text', 'tspan'];
-
-// 
-
-var styled = function styled(tag) {
-  return constructWithOptions(createStyledComponent, tag);
-}; // Shorthands for all valid HTML Elements
-
-
-domElements.forEach(function (domElement) {
-  styled[domElement] = styled(domElement);
-});
-
-// 
-
-var GlobalStyle =
-/*#__PURE__*/
-function () {
-  function GlobalStyle(rules, componentId) {
-    this.rules = rules;
-    this.componentId = componentId;
-    this.isStatic = isStaticRules(rules);
-  }
-
-  var _proto = GlobalStyle.prototype;
-
-  _proto.createStyles = function createStyles(instance, executionContext, styleSheet, stylis) {
-    var flatCSS = flatten(this.rules, executionContext, styleSheet);
-    var css = stylis(flatCSS.join(''), '');
-    var id = this.componentId + instance; // NOTE: We use the id as a name as well, since these rules never change
-
-    styleSheet.insertRules(id, id, css);
-  };
-
-  _proto.removeStyles = function removeStyles(instance, styleSheet) {
-    styleSheet.clearRules(this.componentId + instance);
-  };
-
-  _proto.renderStyles = function renderStyles(instance, executionContext, styleSheet, stylis) {
-    StyleSheet.registerId(this.componentId + instance); // NOTE: Remove old styles, then inject the new ones
-
-    this.removeStyles(instance, styleSheet);
-    this.createStyles(instance, executionContext, styleSheet, stylis);
-  };
-
-  return GlobalStyle;
-}();
-
-function createGlobalStyle(strings) {
-  for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  var rules = css.apply(void 0, [strings].concat(interpolations));
-  var styledComponentId = "sc-global-" + generateComponentId(JSON.stringify(rules));
-  var globalStyle = new GlobalStyle(rules, styledComponentId);
-
-  if (true) {
-    checkDynamicCreation(styledComponentId);
-  }
-
-  function GlobalStyleComponent(props) {
-    var styleSheet = useStyleSheet();
-    var stylis = useStylis();
-    var theme = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ThemeContext);
-    var instanceRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
-
-    if (instanceRef.current === null) {
-      instanceRef.current = styleSheet.allocateGSInstance(styledComponentId);
-    }
-
-    var instance = instanceRef.current;
-
-    if ( true && react__WEBPACK_IMPORTED_MODULE_1___default.a.Children.count(props.children)) {
-      // eslint-disable-next-line no-console
-      console.warn("The global style component " + styledComponentId + " was given child JSX. createGlobalStyle does not render children.");
-    }
-
-    if ( true && rules.some(function (rule) {
-      return typeof rule === 'string' && rule.indexOf('@import') !== -1;
-    })) {
-      console.warn("Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well. Instead, we recommend using a library such as react-helmet to inject a typical <link> meta tag to the stylesheet, or simply embedding it manually in your index.html <head> section for a simpler app.");
-    }
-
-    if (globalStyle.isStatic) {
-      globalStyle.renderStyles(instance, STATIC_EXECUTION_CONTEXT, styleSheet, stylis);
-    } else {
-      var context = _extends({}, props, {
-        theme: determineTheme(props, theme, GlobalStyleComponent.defaultProps)
-      });
-
-      globalStyle.renderStyles(instance, context, styleSheet, stylis);
-    }
-
-    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-      return function () {
-        return globalStyle.removeStyles(instance, styleSheet);
-      };
-    }, EMPTY_ARRAY);
-    return null;
-  } // $FlowFixMe
-
-
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.memo(GlobalStyleComponent);
-}
-
-// 
-function keyframes(strings) {
-  /* Warning if you've used keyframes on React Native */
-  if ( true && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-    // eslint-disable-next-line no-console
-    console.warn('`keyframes` cannot be used on ReactNative, only on the web. To do animation in ReactNative please use Animated.');
-  }
-
-  for (var _len = arguments.length, interpolations = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    interpolations[_key - 1] = arguments[_key];
-  }
-
-  var rules = css.apply(void 0, [strings].concat(interpolations)).join('');
-  var name = generateComponentId(rules);
-  return new Keyframes(name, [rules, name, '@keyframes']);
-}
-
-var ServerStyleSheet =
-/*#__PURE__*/
-function () {
-  function ServerStyleSheet() {
-    var _this = this;
-
-    this._emitSheetCSS = function () {
-      var css = _this.instance.toString();
-
-      var nonce = getNonce();
-      var attrs = [nonce && "nonce=\"" + nonce + "\"", SC_ATTR + "=\"true\"", SC_ATTR_VERSION + "=\"" + SC_VERSION + "\""];
-      var htmlAttr = attrs.filter(Boolean).join(' ');
-      return "<style " + htmlAttr + ">" + css + "</style>";
-    };
-
-    this.getStyleTags = function () {
-      if (_this.sealed) {
-        return throwStyledComponentsError(2);
-      }
-
-      return _this._emitSheetCSS();
-    };
-
-    this.getStyleElement = function () {
-      var _props;
-
-      if (_this.sealed) {
-        return throwStyledComponentsError(2);
-      }
-
-      var props = (_props = {}, _props[SC_ATTR] = '', _props[SC_ATTR_VERSION] = SC_VERSION, _props.dangerouslySetInnerHTML = {
-        __html: _this.instance.toString()
-      }, _props);
-      var nonce = getNonce();
-
-      if (nonce) {
-        props.nonce = nonce;
-      } // v4 returned an array for this fn, so we'll do the same for v5 for backward compat
-
-
-      return [react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("style", _extends({}, props, {
-        key: "sc-0-0"
-      }))];
-    };
-
-    this.seal = function () {
-      _this.sealed = true;
-    };
-
-    this.instance = new StyleSheet({
-      isServer: true
-    });
-    this.sealed = false;
-  }
-
-  var _proto = ServerStyleSheet.prototype;
-
-  _proto.collectStyles = function collectStyles(children) {
-    if (this.sealed) {
-      return throwStyledComponentsError(2);
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyleSheetManager, {
-      sheet: this.instance
-    }, children);
-  };
-
-  // eslint-disable-next-line consistent-return
-  _proto.interleaveWithNodeStream = function interleaveWithNodeStream(input) {
-    {
-      return throwStyledComponentsError(3);
-    }
-  };
-
-  return ServerStyleSheet;
-}();
-
-// export default <Config: { theme?: any }, Instance>(
-//  Component: AbstractComponent<Config, Instance>
-// ): AbstractComponent<$Diff<Config, { theme?: any }> & { theme?: any }, Instance>
-//
-// but the old build system tooling doesn't support the syntax
-
-var withTheme = (function (Component) {
-  // $FlowFixMe This should be React.forwardRef<Config, Instance>
-  var WithTheme = react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (props, ref) {
-    var theme = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ThemeContext); // $FlowFixMe defaultProps isn't declared so it can be inferrable
-
-    var defaultProps = Component.defaultProps;
-    var themeProp = determineTheme(props, theme, defaultProps);
-
-    if ( true && themeProp === undefined) {
-      // eslint-disable-next-line no-console
-      console.warn("[withTheme] You are not using a ThemeProvider nor passing a theme prop or a theme in defaultProps in component class \"" + getComponentName(Component) + "\"");
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, props, {
-      theme: themeProp,
-      ref: ref
-    }));
-  });
-  hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(WithTheme, Component);
-  WithTheme.displayName = "WithTheme(" + getComponentName(Component) + ")";
-  return WithTheme;
-});
-
-// 
-
-var useTheme = function useTheme() {
-  return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ThemeContext);
-};
-
-// 
-var __PRIVATE__ = {
-  StyleSheet: StyleSheet,
-  masterSheet: masterSheet
-};
-
-// 
-/* Define bundle version for export */
-
-var version = "5.0.1";
-/* Warning if you've imported this file on React Native */
-
-if ( true && typeof navigator !== 'undefined' && navigator.product === 'ReactNative') {
-  // eslint-disable-next-line no-console
-  console.warn("It looks like you've imported 'styled-components' on React Native.\n" + "Perhaps you're looking to import 'styled-components/native'?\n" + 'Read more about this at https://www.styled-components.com/docs/basics#react-native');
-}
-/* Warning if there are several instances of styled-components */
-
-
-if ( true && typeof window !== 'undefined') {
-  window['__styled-components-init__'] = window['__styled-components-init__'] || 0;
-
-  if (window['__styled-components-init__'] === 1) {
-    // eslint-disable-next-line no-console
-    console.warn("It looks like there are several instances of 'styled-components' initialized in this application. " + 'This may cause dynamic styles not rendering properly, errors happening during rehydration process, ' + 'missing theme prop, and makes your application bigger without a good reason.\n\n' + 'See https://s-c.sh/2BAXzed for more info.');
-  }
-
-  window['__styled-components-init__'] += 1;
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (styled);
-
+function v(){return(v=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}var g=function(e,t){for(var n=[e[0]],r=0,o=t.length;r<o;r+=1)n.push(t[r],e[r+1]);return n},S=function(t){return null!==t&&"object"==typeof t&&"[object Object]"===(t.toString?t.toString():Object.prototype.toString.call(t))&&!Object(react_is__WEBPACK_IMPORTED_MODULE_0__["typeOf"])(t)},w=Object.freeze([]),E=Object.freeze({});function b(e){return"function"==typeof e}function _(e){return true&&"string"==typeof e&&e||e.displayName||e.name||"Component"}function N(e){return e&&"string"==typeof e.styledComponentId}var A="undefined"!=typeof process&&(process.env.REACT_APP_SC_ATTR||process.env.SC_ATTR)||"data-styled",C="5.3.0",I="undefined"!=typeof window&&"HTMLElement"in window,P=Boolean("boolean"==typeof SC_DISABLE_SPEEDY?SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==process.env.REACT_APP_SC_DISABLE_SPEEDY&&""!==process.env.REACT_APP_SC_DISABLE_SPEEDY?"false"!==process.env.REACT_APP_SC_DISABLE_SPEEDY&&process.env.REACT_APP_SC_DISABLE_SPEEDY:"undefined"!=typeof process&&void 0!==process.env.SC_DISABLE_SPEEDY&&""!==process.env.SC_DISABLE_SPEEDY?"false"!==process.env.SC_DISABLE_SPEEDY&&process.env.SC_DISABLE_SPEEDY:"production"!=="development"),O={},R= true?{1:"Cannot create styled-component for component: %s.\n\n",2:"Can't collect styles once you've consumed a `ServerStyleSheet`'s styles! `ServerStyleSheet` is a one off instance for each server-side render cycle.\n\n- Are you trying to reuse it across renders?\n- Are you accidentally calling collectStyles twice?\n\n",3:"Streaming SSR is only supported in a Node.js environment; Please do not try to call this method in the browser.\n\n",4:"The `StyleSheetManager` expects a valid target or sheet prop!\n\n- Does this error occur on the client and is your target falsy?\n- Does this error occur on the server and is the sheet falsy?\n\n",5:"The clone method cannot be used on the client!\n\n- Are you running in a client-like environment on the server?\n- Are you trying to run SSR on the client?\n\n",6:"Trying to insert a new style tag, but the given Node is unmounted!\n\n- Are you using a custom target that isn't mounted?\n- Does your document not have a valid head element?\n- Have you accidentally removed a style tag manually?\n\n",7:'ThemeProvider: Please return an object from your "theme" prop function, e.g.\n\n```js\ntheme={() => ({})}\n```\n\n',8:'ThemeProvider: Please make your "theme" prop an object.\n\n',9:"Missing document `<head>`\n\n",10:"Cannot find a StyleSheet instance. Usually this happens if there are multiple copies of styled-components loaded at once. Check out this issue for how to troubleshoot and fix the common cases where this situation can happen: https://github.com/styled-components/styled-components/issues/1941#issuecomment-417862021\n\n",11:"_This error was replaced with a dev-time warning, it will be deleted for v4 final._ [createGlobalStyle] received children which will not be rendered. Please use the component without passing children elements.\n\n",12:"It seems you are interpolating a keyframe declaration (%s) into an untagged string. This was supported in styled-components v3, but is not longer supported in v4 as keyframes are now injected on-demand. Please wrap your string in the css\\`\\` helper which ensures the styles are injected correctly. See https://www.styled-components.com/docs/api#css\n\n",13:"%s is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details.\n\n",14:'ThemeProvider: "theme" prop is required.\n\n',15:"A stylis plugin has been supplied that is not named. We need a name for each plugin to be able to prevent styling collisions between different stylis configurations within the same app. Before you pass your plugin to `<StyleSheetManager stylisPlugins={[]}>`, please make sure each plugin is uniquely-named, e.g.\n\n```js\nObject.defineProperty(importedPlugin, 'name', { value: 'some-unique-name' });\n```\n\n",16:"Reached the limit of how many styled components may be created at group %s.\nYou may only create up to 1,073,741,824 components. If you're creating components dynamically,\nas for instance in your render method then you may be running into this limitation.\n\n",17:"CSSStyleSheet could not be found on HTMLStyleElement.\nHas styled-components' style tag been unmounted or altered by another script?\n"}:undefined;function D(){for(var e=arguments.length<=0?void 0:arguments[0],t=[],n=1,r=arguments.length;n<r;n+=1)t.push(n<0||arguments.length<=n?void 0:arguments[n]);return t.forEach((function(t){e=e.replace(/%[a-z]/,t)})),e}function j(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];throw false?undefined:new Error(D.apply(void 0,[R[e]].concat(n)).trim())}var T=function(){function e(e){this.groupSizes=new Uint32Array(512),this.length=512,this.tag=e}var t=e.prototype;return t.indexOfGroup=function(e){for(var t=0,n=0;n<e;n++)t+=this.groupSizes[n];return t},t.insertRules=function(e,t){if(e>=this.groupSizes.length){for(var n=this.groupSizes,r=n.length,o=r;e>=o;)(o<<=1)<0&&j(16,""+e);this.groupSizes=new Uint32Array(o),this.groupSizes.set(n),this.length=o;for(var i=r;i<o;i++)this.groupSizes[i]=0}for(var s=this.indexOfGroup(e+1),a=0,c=t.length;a<c;a++)this.tag.insertRule(s,t[a])&&(this.groupSizes[e]++,s++)},t.clearGroup=function(e){if(e<this.length){var t=this.groupSizes[e],n=this.indexOfGroup(e),r=n+t;this.groupSizes[e]=0;for(var o=n;o<r;o++)this.tag.deleteRule(n)}},t.getGroup=function(e){var t="";if(e>=this.length||0===this.groupSizes[e])return t;for(var n=this.groupSizes[e],r=this.indexOfGroup(e),o=r+n,i=r;i<o;i++)t+=this.tag.getRule(i)+"/*!sc*/\n";return t},e}(),k=new Map,x=new Map,V=1,B=function(e){if(k.has(e))return k.get(e);for(;x.has(V);)V++;var t=V++;return true&&((0|t)<0||t>1<<30)&&j(16,""+t),k.set(e,t),x.set(t,e),t},M=function(e){return x.get(e)},z=function(e,t){k.set(e,t),x.set(t,e)},L="style["+A+'][data-styled-version="5.3.0"]',G=new RegExp("^"+A+'\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'),F=function(e,t,n){for(var r,o=n.split(","),i=0,s=o.length;i<s;i++)(r=o[i])&&e.registerName(t,r)},Y=function(e,t){for(var n=t.innerHTML.split("/*!sc*/\n"),r=[],o=0,i=n.length;o<i;o++){var s=n[o].trim();if(s){var a=s.match(G);if(a){var c=0|parseInt(a[1],10),u=a[2];0!==c&&(z(u,c),F(e,u,a[3]),e.getTag().insertRules(c,r)),r.length=0}else r.push(s)}}},q=function(){return"undefined"!=typeof window&&void 0!==window.__webpack_nonce__?window.__webpack_nonce__:null},H=function(e){var t=document.head,n=e||t,r=document.createElement("style"),o=function(e){for(var t=e.childNodes,n=t.length;n>=0;n--){var r=t[n];if(r&&1===r.nodeType&&r.hasAttribute(A))return r}}(n),i=void 0!==o?o.nextSibling:null;r.setAttribute(A,"active"),r.setAttribute("data-styled-version","5.3.0");var s=q();return s&&r.setAttribute("nonce",s),n.insertBefore(r,i),r},$=function(){function e(e){var t=this.element=H(e);t.appendChild(document.createTextNode("")),this.sheet=function(e){if(e.sheet)return e.sheet;for(var t=document.styleSheets,n=0,r=t.length;n<r;n++){var o=t[n];if(o.ownerNode===e)return o}j(17)}(t),this.length=0}var t=e.prototype;return t.insertRule=function(e,t){try{return this.sheet.insertRule(t,e),this.length++,!0}catch(e){return!1}},t.deleteRule=function(e){this.sheet.deleteRule(e),this.length--},t.getRule=function(e){var t=this.sheet.cssRules[e];return void 0!==t&&"string"==typeof t.cssText?t.cssText:""},e}(),W=function(){function e(e){var t=this.element=H(e);this.nodes=t.childNodes,this.length=0}var t=e.prototype;return t.insertRule=function(e,t){if(e<=this.length&&e>=0){var n=document.createTextNode(t),r=this.nodes[e];return this.element.insertBefore(n,r||null),this.length++,!0}return!1},t.deleteRule=function(e){this.element.removeChild(this.nodes[e]),this.length--},t.getRule=function(e){return e<this.length?this.nodes[e].textContent:""},e}(),U=function(){function e(e){this.rules=[],this.length=0}var t=e.prototype;return t.insertRule=function(e,t){return e<=this.length&&(this.rules.splice(e,0,t),this.length++,!0)},t.deleteRule=function(e){this.rules.splice(e,1),this.length--},t.getRule=function(e){return e<this.length?this.rules[e]:""},e}(),J=I,X={isServer:!I,useCSSOMInjection:!P},Z=function(){function e(e,t,n){void 0===e&&(e=E),void 0===t&&(t={}),this.options=v({},X,{},e),this.gs=t,this.names=new Map(n),!this.options.isServer&&I&&J&&(J=!1,function(e){for(var t=document.querySelectorAll(L),n=0,r=t.length;n<r;n++){var o=t[n];o&&"active"!==o.getAttribute(A)&&(Y(e,o),o.parentNode&&o.parentNode.removeChild(o))}}(this))}e.registerId=function(e){return B(e)};var t=e.prototype;return t.reconstructWithOptions=function(t,n){return void 0===n&&(n=!0),new e(v({},this.options,{},t),this.gs,n&&this.names||void 0)},t.allocateGSInstance=function(e){return this.gs[e]=(this.gs[e]||0)+1},t.getTag=function(){return this.tag||(this.tag=(n=(t=this.options).isServer,r=t.useCSSOMInjection,o=t.target,e=n?new U(o):r?new $(o):new W(o),new T(e)));var e,t,n,r,o},t.hasNameForId=function(e,t){return this.names.has(e)&&this.names.get(e).has(t)},t.registerName=function(e,t){if(B(e),this.names.has(e))this.names.get(e).add(t);else{var n=new Set;n.add(t),this.names.set(e,n)}},t.insertRules=function(e,t,n){this.registerName(e,t),this.getTag().insertRules(B(e),n)},t.clearNames=function(e){this.names.has(e)&&this.names.get(e).clear()},t.clearRules=function(e){this.getTag().clearGroup(B(e)),this.clearNames(e)},t.clearTag=function(){this.tag=void 0},t.toString=function(){return function(e){for(var t=e.getTag(),n=t.length,r="",o=0;o<n;o++){var i=M(o);if(void 0!==i){var s=e.names.get(i),a=t.getGroup(o);if(void 0!==s&&0!==a.length){var c=A+".g"+o+'[id="'+i+'"]',u="";void 0!==s&&s.forEach((function(e){e.length>0&&(u+=e+",")})),r+=""+a+c+'{content:"'+u+'"}/*!sc*/\n'}}}return r}(this)},e}(),K=/(a)(d)/gi,Q=function(e){return String.fromCharCode(e+(e>25?39:97))};function ee(e){var t,n="";for(t=Math.abs(e);t>52;t=t/52|0)n=Q(t%52)+n;return(Q(t%52)+n).replace(K,"$1-$2")}var te=function(e,t){for(var n=t.length;n;)e=33*e^t.charCodeAt(--n);return e},ne=function(e){return te(5381,e)};function re(e){for(var t=0;t<e.length;t+=1){var n=e[t];if(b(n)&&!N(n))return!1}return!0}var oe=ne("5.3.0"),ie=function(){function e(e,t,n){this.rules=e,this.staticRulesId="",this.isStatic= false&&false,this.componentId=t,this.baseHash=te(oe,t),this.baseStyle=n,Z.registerId(t)}return e.prototype.generateAndInjectStyles=function(e,t,n){var r=this.componentId,o=[];if(this.baseStyle&&o.push(this.baseStyle.generateAndInjectStyles(e,t,n)),this.isStatic&&!n.hash)if(this.staticRulesId&&t.hasNameForId(r,this.staticRulesId))o.push(this.staticRulesId);else{var i=Ne(this.rules,e,t,n).join(""),s=ee(te(this.baseHash,i.length)>>>0);if(!t.hasNameForId(r,s)){var a=n(i,"."+s,void 0,r);t.insertRules(r,s,a)}o.push(s),this.staticRulesId=s}else{for(var c=this.rules.length,u=te(this.baseHash,n.hash),l="",d=0;d<c;d++){var h=this.rules[d];if("string"==typeof h)l+=h, true&&(u=te(u,h+d));else if(h){var p=Ne(h,e,t,n),f=Array.isArray(p)?p.join(""):p;u=te(u,f+d),l+=f}}if(l){var m=ee(u>>>0);if(!t.hasNameForId(r,m)){var y=n(l,"."+m,void 0,r);t.insertRules(r,m,y)}o.push(m)}}return o.join(" ")},e}(),se=/^\s*\/\/.*$/gm,ae=[":","[",".","#"];function ce(e){var t,n,r,o,i=void 0===e?E:e,s=i.options,a=void 0===s?E:s,c=i.plugins,u=void 0===c?w:c,l=new _emotion_stylis__WEBPACK_IMPORTED_MODULE_3__["default"](a),d=[],h=function(e){function t(t){if(t)try{e(t+"}")}catch(e){}}return function(n,r,o,i,s,a,c,u,l,d){switch(n){case 1:if(0===l&&64===r.charCodeAt(0))return e(r+";"),"";break;case 2:if(0===u)return r+"/*|*/";break;case 3:switch(u){case 102:case 112:return e(o[0]+r),"";default:return r+(0===d?"/*|*/":"")}case-2:r.split("/*|*/}").forEach(t)}}}((function(e){d.push(e)})),f=function(e,r,i){return 0===r&&-1!==ae.indexOf(i[n.length])||i.match(o)?e:"."+t};function m(e,i,s,a){void 0===a&&(a="&");var c=e.replace(se,""),u=i&&s?s+" "+i+" { "+c+" }":c;return t=a,n=i,r=new RegExp("\\"+n+"\\b","g"),o=new RegExp("(\\"+n+"\\b){2,}"),l(s||!i?"":i,u)}return l.use([].concat(u,[function(e,t,o){2===e&&o.length&&o[0].lastIndexOf(n)>0&&(o[0]=o[0].replace(r,f))},h,function(e){if(-2===e){var t=d;return d=[],t}}])),m.hash=u.length?u.reduce((function(e,t){return t.name||j(15),te(e,t.name)}),5381).toString():"",m}var ue=react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext(),le=ue.Consumer,de=react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext(),he=(de.Consumer,new Z),pe=ce();function fe(){return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ue)||he}function me(){return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(de)||pe}function ye(e){var t=Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(e.stylisPlugins),n=t[0],i=t[1],c=fe(),u=Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])((function(){var t=c;return e.sheet?t=e.sheet:e.target&&(t=t.reconstructWithOptions({target:e.target},!1)),e.disableCSSOMInjection&&(t=t.reconstructWithOptions({useCSSOMInjection:!1})),t}),[e.disableCSSOMInjection,e.sheet,e.target]),l=Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])((function(){return ce({options:{prefix:!e.disableVendorPrefixes},plugins:n})}),[e.disableVendorPrefixes,n]);return Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])((function(){shallowequal__WEBPACK_IMPORTED_MODULE_2___default()(n,e.stylisPlugins)||i(e.stylisPlugins)}),[e.stylisPlugins]),react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ue.Provider,{value:u},react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(de.Provider,{value:l}, true?react__WEBPACK_IMPORTED_MODULE_1___default.a.Children.only(e.children):undefined))}var ve=function(){function e(e,t){var n=this;this.inject=function(e,t){void 0===t&&(t=pe);var r=n.name+t.hash;e.hasNameForId(n.id,r)||e.insertRules(n.id,r,t(n.rules,r,"@keyframes"))},this.toString=function(){return j(12,String(n.name))},this.name=e,this.id="sc-keyframes-"+e,this.rules=t}return e.prototype.getName=function(e){return void 0===e&&(e=pe),this.name+e.hash},e}(),ge=/([A-Z])/,Se=/([A-Z])/g,we=/^ms-/,Ee=function(e){return"-"+e.toLowerCase()};function be(e){return ge.test(e)?e.replace(Se,Ee).replace(we,"-ms-"):e}var _e=function(e){return null==e||!1===e||""===e};function Ne(e,n,r,o){if(Array.isArray(e)){for(var i,s=[],a=0,c=e.length;a<c;a+=1)""!==(i=Ne(e[a],n,r,o))&&(Array.isArray(i)?s.push.apply(s,i):s.push(i));return s}if(_e(e))return"";if(N(e))return"."+e.styledComponentId;if(b(e)){if("function"!=typeof(l=e)||l.prototype&&l.prototype.isReactComponent||!n)return e;var u=e(n);return true&&Object(react_is__WEBPACK_IMPORTED_MODULE_0__["isElement"])(u)&&console.warn(_(e)+" is not a styled component and cannot be referred to via component selector. See https://www.styled-components.com/docs/advanced#referring-to-other-components for more details."),Ne(u,n,r,o)}var l;return e instanceof ve?r?(e.inject(r,o),e.getName(o)):e:S(e)?function e(t,n){var r,o,i=[];for(var s in t)t.hasOwnProperty(s)&&!_e(t[s])&&(S(t[s])?i.push.apply(i,e(t[s],s)):b(t[s])?i.push(be(s)+":",t[s],";"):i.push(be(s)+": "+(r=s,null==(o=t[s])||"boolean"==typeof o||""===o?"":"number"!=typeof o||0===o||r in _emotion_unitless__WEBPACK_IMPORTED_MODULE_4__["default"]?String(o).trim():o+"px")+";"));return n?[n+" {"].concat(i,["}"]):i}(e):e.toString()}function Ae(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return b(e)||S(e)?Ne(g(w,[e].concat(n))):0===n.length&&1===e.length&&"string"==typeof e[0]?e:Ne(g(e,n))}var Ce=/invalid hook call/i,Ie=new Set,Pe=function(e,t){if(true){var n="The component "+e+(t?' with the id of "'+t+'"':"")+" has been created dynamically.\nYou may see this warning because you've called styled inside another component.\nTo resolve this only create new StyledComponents outside of any render method and function component.";try{Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(),Ie.has(n)||(console.warn(n),Ie.add(n))}catch(e){Ce.test(e.message)&&Ie.delete(n)}}},Oe=function(e,t,n){return void 0===n&&(n=E),e.theme!==n.theme&&e.theme||t||n.theme},Re=/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,De=/(^-|-$)/g;function je(e){return e.replace(Re,"-").replace(De,"")}var Te=function(e){return ee(ne(e)>>>0)};function ke(e){return"string"==typeof e&&( false||e.charAt(0)===e.charAt(0).toLowerCase())}var xe=function(e){return"function"==typeof e||"object"==typeof e&&null!==e&&!Array.isArray(e)},Ve=function(e){return"__proto__"!==e&&"constructor"!==e&&"prototype"!==e};function Be(e,t,n){var r=e[n];xe(t)&&xe(r)?Me(r,t):e[n]=t}function Me(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];for(var o=0,i=n;o<i.length;o++){var s=i[o];if(xe(s))for(var a in s)Ve(a)&&Be(e,s[a],a)}return e}var ze=react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext(),Le=ze.Consumer;function Ge(e){var t=Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ze),n=Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])((function(){return function(e,t){if(!e)return j(14);if(b(e)){var n=e(t);return false||null!==n&&!Array.isArray(n)&&"object"==typeof n?n:j(7)}return Array.isArray(e)||"object"!=typeof e?j(8):t?v({},t,{},e):e}(e.theme,t)}),[e.theme,t]);return e.children?react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ze.Provider,{value:n},e.children):null}var Fe={};function Ye(e,t,n){var o=N(e),s=!ke(e),a=t.attrs,c=void 0===a?w:a,d=t.componentId,h=void 0===d?function(e,t){var n="string"!=typeof e?"sc":je(e);Fe[n]=(Fe[n]||0)+1;var r=n+"-"+Te("5.3.0"+n+Fe[n]);return t?t+"-"+r:r}(t.displayName,t.parentComponentId):d,p=t.displayName,f=void 0===p?function(e){return ke(e)?"styled."+e:"Styled("+_(e)+")"}(e):p,g=t.displayName&&t.componentId?je(t.displayName)+"-"+t.componentId:t.componentId||h,S=o&&e.attrs?Array.prototype.concat(e.attrs,c).filter(Boolean):c,A=t.shouldForwardProp;o&&e.shouldForwardProp&&(A=t.shouldForwardProp?function(n,r,o){return e.shouldForwardProp(n,r,o)&&t.shouldForwardProp(n,r,o)}:e.shouldForwardProp);var C,I=new ie(n,g,o?e.componentStyle:void 0),P=I.isStatic&&0===c.length,O=function(e,t){return function(e,t,n,r){var o=e.attrs,s=e.componentStyle,a=e.defaultProps,c=e.foldedComponentIds,d=e.shouldForwardProp,h=e.styledComponentId,p=e.target; true&&Object(react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"])(h);var f=function(e,t,n){void 0===e&&(e=E);var r=v({},t,{theme:e}),o={};return n.forEach((function(e){var t,n,i,s=e;for(t in b(s)&&(s=s(r)),s)r[t]=o[t]="className"===t?(n=o[t],i=s[t],n&&i?n+" "+i:n||i):s[t]})),[r,o]}(Oe(t,Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ze),a)||E,t,o),y=f[0],g=f[1],S=function(e,t,n,r){var o=fe(),i=me(),s=t?e.generateAndInjectStyles(E,o,i):e.generateAndInjectStyles(n,o,i);return true&&Object(react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"])(s), true&&!t&&r&&r(s),s}(s,r,y, true?e.warnTooManyClasses:undefined),w=n,_=g.$as||t.$as||g.as||t.as||p,N=ke(_),A=g!==t?v({},t,{},g):t,C={};for(var I in A)"$"!==I[0]&&"as"!==I&&("forwardedAs"===I?C.as=A[I]:(d?d(I,_emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__["default"],_):!N||Object(_emotion_is_prop_valid__WEBPACK_IMPORTED_MODULE_5__["default"])(I))&&(C[I]=A[I]));return t.style&&g.style!==t.style&&(C.style=v({},t.style,{},g.style)),C.className=Array.prototype.concat(c,h,S!==h?S:null,t.className,g.className).filter(Boolean).join(" "),C.ref=w,Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_,C)}(C,e,t,P)};return O.displayName=f,(C=react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(O)).attrs=S,C.componentStyle=I,C.displayName=f,C.shouldForwardProp=A,C.foldedComponentIds=o?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):w,C.styledComponentId=g,C.target=o?e.target:e,C.withComponent=function(e){var r=t.componentId,o=function(e,t){if(null==e)return{};var n,r,o={},i=Object.keys(e);for(r=0;r<i.length;r++)n=i[r],t.indexOf(n)>=0||(o[n]=e[n]);return o}(t,["componentId"]),i=r&&r+"-"+(ke(e)?e:je(_(e)));return Ye(e,v({},o,{attrs:S,componentId:i}),n)},Object.defineProperty(C,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(t){this._foldedDefaultProps=o?Me({},e.defaultProps,t):t}}), true&&(Pe(f,g),C.warnTooManyClasses=function(e,t){var n={},r=!1;return function(o){if(!r&&(n[o]=!0,Object.keys(n).length>=200)){var i=t?' with the id of "'+t+'"':"";console.warn("Over 200 classes were generated for component "+e+i+".\nConsider using the attrs method, together with a style object for frequently changed styles.\nExample:\n  const Component = styled.div.attrs(props => ({\n    style: {\n      background: props.background,\n    },\n  }))`width: 100%;`\n\n  <Component />"),r=!0,n={}}}}(f,g)),C.toString=function(){return"."+C.styledComponentId},s&&hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(C,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,shouldForwardProp:!0,styledComponentId:!0,target:!0,withComponent:!0}),C}var qe=function(e){return function e(t,r,o){if(void 0===o&&(o=E),!Object(react_is__WEBPACK_IMPORTED_MODULE_0__["isValidElementType"])(r))return j(1,String(r));var i=function(){return t(r,o,Ae.apply(void 0,arguments))};return i.withConfig=function(n){return e(t,r,v({},o,{},n))},i.attrs=function(n){return e(t,r,v({},o,{attrs:Array.prototype.concat(o.attrs,n).filter(Boolean)}))},i}(Ye,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","textPath","tspan"].forEach((function(e){qe[e]=qe(e)}));var He=function(){function e(e,t){this.rules=e,this.componentId=t,this.isStatic=re(e),Z.registerId(this.componentId+1)}var t=e.prototype;return t.createStyles=function(e,t,n,r){var o=r(Ne(this.rules,t,n,r).join(""),""),i=this.componentId+e;n.insertRules(i,i,o)},t.removeStyles=function(e,t){t.clearRules(this.componentId+e)},t.renderStyles=function(e,t,n,r){e>2&&Z.registerId(this.componentId+e),this.removeStyles(e,n),this.createStyles(e,t,n,r)},e}();function $e(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),o=1;o<t;o++)n[o-1]=arguments[o];var s=Ae.apply(void 0,[e].concat(n)),a="sc-global-"+Te(JSON.stringify(s)),u=new He(s,a);function l(e){var t=fe(),n=me(),o=Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ze),l=Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(t.allocateGSInstance(a)).current;return true&&react__WEBPACK_IMPORTED_MODULE_1___default.a.Children.count(e.children)&&console.warn("The global style component "+a+" was given child JSX. createGlobalStyle does not render children."), true&&s.some((function(e){return"string"==typeof e&&-1!==e.indexOf("@import")}))&&console.warn("Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well. Instead, we recommend using a library such as react-helmet to inject a typical <link> meta tag to the stylesheet, or simply embedding it manually in your index.html <head> section for a simpler app."),Object(react__WEBPACK_IMPORTED_MODULE_1__["useLayoutEffect"])((function(){return h(l,e,t,o,n),function(){return u.removeStyles(l,t)}}),[l,e,t,o,n]),null}function h(e,t,n,r,o){if(u.isStatic)u.renderStyles(e,O,n,o);else{var i=v({},t,{theme:Oe(t,r,l.defaultProps)});u.renderStyles(e,i,n,o)}}return true&&Pe(a),react__WEBPACK_IMPORTED_MODULE_1___default.a.memo(l)}function We(e){ true&&"undefined"!=typeof navigator&&"ReactNative"===navigator.product&&console.warn("`keyframes` cannot be used on ReactNative, only on the web. To do animation in ReactNative please use Animated.");for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var o=Ae.apply(void 0,[e].concat(n)).join(""),i=Te(o);return new ve(i,o)}var Ue=function(){function e(){var e=this;this._emitSheetCSS=function(){var t=e.instance.toString(),n=q();return"<style "+[n&&'nonce="'+n+'"',A+'="true"','data-styled-version="5.3.0"'].filter(Boolean).join(" ")+">"+t+"</style>"},this.getStyleTags=function(){return e.sealed?j(2):e._emitSheetCSS()},this.getStyleElement=function(){var t;if(e.sealed)return j(2);var n=((t={})[A]="",t["data-styled-version"]="5.3.0",t.dangerouslySetInnerHTML={__html:e.instance.toString()},t),o=q();return o&&(n.nonce=o),[react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("style",v({},n,{key:"sc-0-0"}))]},this.seal=function(){e.sealed=!0},this.instance=new Z({isServer:!0}),this.sealed=!1}var t=e.prototype;return t.collectStyles=function(e){return this.sealed?j(2):react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ye,{sheet:this.instance},e)},t.interleaveWithNodeStream=function(e){return j(3)},e}(),Je=function(e){var t=react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef((function(t,n){var o=Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ze),s=e.defaultProps,a=Oe(t,o,s);return true&&void 0===a&&console.warn('[withTheme] You are not using a ThemeProvider nor passing a theme prop or a theme in defaultProps in component class "'+_(e)+'"'),react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(e,v({},t,{theme:a,ref:n}))}));return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_6___default()(t,e),t.displayName="WithTheme("+_(e)+")",t},Xe=function(){return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(ze)},Ze={StyleSheet:Z,masterSheet:he}; true&&"undefined"!=typeof navigator&&"ReactNative"===navigator.product&&console.warn("It looks like you've imported 'styled-components' on React Native.\nPerhaps you're looking to import 'styled-components/native'?\nRead more about this at https://www.styled-components.com/docs/basics#react-native"), true&&(window["__styled-components-init__"]=window["__styled-components-init__"]||0,1===window["__styled-components-init__"]&&console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."),window["__styled-components-init__"]+=1);/* harmony default export */ __webpack_exports__["default"] = (qe);
 //# sourceMappingURL=styled-components.browser.esm.js.map
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
@@ -14766,42 +13738,53 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
 
 
 
+
+
+var _excluded = ["children"];
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default()(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
 
 var Intersected = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Intersected, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Intersected, _React$Component);
+
+  var _super = _createSuper(Intersected);
 
   function Intersected(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Intersected);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Intersected);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Intersected).call(this, props));
-    _this.ref = react__WEBPACK_IMPORTED_MODULE_7___default.a.createRef();
+    _this = _super.call(this, props);
+    _this.ref = react__WEBPACK_IMPORTED_MODULE_8___default.a.createRef();
     _this.observer = null;
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Intersected, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Intersected, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this$props = this.props,
@@ -14829,18 +13812,18 @@ var Intersected = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this$props2 = this.props,
           children = _this$props2.children,
-          other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_this$props2, ["children"]);
+          other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_this$props2, _excluded);
 
       delete other.onIntersect;
       delete other.options;
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
         ref: this.ref
       }, other), children);
     }
   }]);
 
   return Intersected;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 Intersected.defaultProps = {
   options: {
@@ -14848,11 +13831,11 @@ Intersected.defaultProps = {
   }
 };
 Intersected.propTypes = {
-  onIntersect: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func,
-  options: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.shape({
-    threshold: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.number)])
+  onIntersect: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.func,
+  options: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.shape({
+    threshold: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number, prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.number)])
   }),
-  children: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.element
+  children: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.element
 };
 /* harmony default export */ __webpack_exports__["default"] = (Intersected);
 
@@ -14875,6 +13858,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Intersected__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Intersected */ "./pages/index/Intersected.jsx");
 /* harmony import */ var _Section__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Section */ "./pages/index/Section.jsx");
 
+var _excluded = ["onEnter", "children"];
 
 
 
@@ -14883,9 +13867,9 @@ __webpack_require__.r(__webpack_exports__);
 var IntersectedSection = function IntersectedSection(_ref) {
   var onEnter = _ref.onEnter,
       children = _ref.children,
-      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["onEnter", "children"]);
+      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Intersected__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Intersected__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onIntersect: function onIntersect(ratio, height) {
       if (height > 0) {
         onEnter(other.id, height);
@@ -14894,7 +13878,7 @@ var IntersectedSection = function IntersectedSection(_ref) {
     options: {
       threshold: [0, 0.1, 0.2, 0.5, 0.9, 1]
     }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_4__["default"], other, children));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_4__["default"], other, children));
 };
 
 IntersectedSection.propTypes = {
@@ -14920,18 +13904,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: 0px;\n  background-color: #222222;\n  color: #fff;\n  padding: 10px 0;\n  font-size: 1.2em;\n  word-wrap: break-word;\n  z-index: 999;\n\n  .menu-list a {\n    color: #fff;\n  }\n\n  .menu-list a:hover {\n    color: #000;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
-var BodyStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject());
+var BodyStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["css"])(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  border: 0px;\n  background-color: #222222;\n  color: #fff;\n  padding: 10px 0;\n  font-size: 1.2em;\n  word-wrap: break-word;\n  z-index: 999;\n\n  .menu-list a {\n    color: #fff;\n  }\n\n  .menu-list a:hover {\n    color: #000;\n  }\n"])));
 /* harmony default export */ __webpack_exports__["default"] = (BodyStyle);
 
 /***/ }),
@@ -14958,23 +13934,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _excluded = ["className"];
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  ", "\n\n  position: fixed;\n  top: 20vh;\n  right: 0;\n  width: ", ";\n  min-width: ", ";\n  border-radius: 10px 0 0 10px;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n\n  .btn-collapse {\n    margin: 0.5em 0;\n    text-align: center;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
 
 
 
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject(), _BodyStyle__WEBPACK_IMPORTED_MODULE_6__["default"], function (_ref) {
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  ", "\n\n  position: fixed;\n  top: 20vh;\n  right: 0;\n  width: ", ";\n  min-width: ", ";\n  border-radius: 10px 0 0 10px;\n\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n\n  .btn-collapse {\n    margin: 0.5em 0;\n    text-align: center;\n  }\n"])), _BodyStyle__WEBPACK_IMPORTED_MODULE_6__["default"], function (_ref) {
   var isCollapsed = _ref.isCollapsed;
   return isCollapsed ? '4vw' : '12vw';
 }, function (_ref2) {
@@ -14984,7 +13953,7 @@ var Container = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_t
 
 var CollapsibleMenu = function CollapsibleMenu(_ref3) {
   var className = _ref3.className,
-      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref3, ["className"]);
+      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref3, _excluded);
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(true),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
@@ -14997,10 +13966,10 @@ var CollapsibleMenu = function CollapsibleMenu(_ref3) {
     return setCollapsed(!isCollapsed);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Container, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Container, {
     className: className,
     isCollapsed: isCollapsed
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     role: "button",
     tabIndex: 0,
     "aria-label": "menu",
@@ -15015,7 +13984,7 @@ var CollapsibleMenu = function CollapsibleMenu(_ref3) {
         toggleCollapsed();
       }
     }
-  }), !isCollapsed && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuContent__WEBPACK_IMPORTED_MODULE_7__["default"], other));
+  }), !isCollapsed && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuContent__WEBPACK_IMPORTED_MODULE_7__["default"], other));
 };
 
 CollapsibleMenu.propTypes = {
@@ -15047,16 +14016,16 @@ var Menu = function Menu(_ref) {
       _ref$selected = _ref.selected,
       selected = _ref$selected === void 0 ? null : _ref$selected,
       className = _ref.className;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
     className: className
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "menu-list"
   }, items.map(function (_ref2) {
     var href = _ref2.href,
         label = _ref2.label;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
       key: href
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       href: "#".concat(href),
       className: selected === href ? 'is-active' : undefined
     }, label));
@@ -15092,21 +14061,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MenuContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../MenuContent */ "./pages/index/Menu/MenuContent.jsx");
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n  ", ";\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
 
 
-var StyledMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_MenuContent__WEBPACK_IMPORTED_MODULE_4__["default"])(_templateObject(), _BodyStyle__WEBPACK_IMPORTED_MODULE_3__["default"], function (_ref) {
+var StyledMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(_MenuContent__WEBPACK_IMPORTED_MODULE_4__["default"])(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  ", "\n  ", "\n\n  ", ";\n"])), _BodyStyle__WEBPACK_IMPORTED_MODULE_3__["default"], function (_ref) {
   var css = _ref.css;
   return css;
 }, function (_ref2) {
@@ -15139,15 +14100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  top: 94vh;\n  height: 7vh;\n\n  max-height: 52px;\n  border-radius: 10px 10px 0 0;\n  background-color: #222222;\n  ", "\n\n  a {\n    display: block;\n    color: #fff;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    font-size: 3vh;\n  }\n\n  @keyframes wiggle {\n    0% {\n      padding-top: 1.5vh;\n    }\n    50% {\n      padding-top: 2.5vh;\n    }\n    100% {\n      padding-top: 1.5vh;\n    }\n  }\n\n  a div {\n    animation-name: wiggle;\n    animation-duration: 1.2s;\n    animation-timing-function: linear;\n    animation-iteration-count: infinite;\n    animation-direction: normal;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -15156,11 +14109,11 @@ function _templateObject() {
 var MenuTop = function MenuTop(_ref) {
   var className = _ref.className,
       href = _ref.href;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: className
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: href
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "fas fa-chevron-down"
   })));
 };
@@ -15170,7 +14123,7 @@ MenuTop.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
 }; // For some reason top 93vh does not work properly
 
-var StyledMenuTop = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(MenuTop)(_templateObject(), function (_ref2) {
+var StyledMenuTop = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(MenuTop)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  position: absolute;\n  top: 94vh;\n  height: 7vh;\n\n  max-height: 52px;\n  border-radius: 10px 10px 0 0;\n  background-color: #222222;\n  ", "\n\n  a {\n    display: block;\n    color: #fff;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    font-size: 3vh;\n  }\n\n  @keyframes wiggle {\n    0% {\n      padding-top: 1.5vh;\n    }\n    50% {\n      padding-top: 2.5vh;\n    }\n    100% {\n      padding-top: 1.5vh;\n    }\n  }\n\n  a div {\n    animation-name: wiggle;\n    animation-duration: 1.2s;\n    animation-timing-function: linear;\n    animation-iteration-count: infinite;\n    animation-direction: normal;\n  }\n"])), function (_ref2) {
   var css = _ref2.css;
   return css;
 });
@@ -15203,37 +14156,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _excluded = ["atTop", "clickHref", "className"];
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  right: 3vw;\n  width: 12vw;\n  min-width: 150px;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
 
 
 
-var menuPosition = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["css"])(_templateObject());
+var menuPosition = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["css"])(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  right: 3vw;\n  width: 12vw;\n  min-width: 150px;\n"])));
 
 var RegularMenu = function RegularMenu(_ref) {
   var _ref$atTop = _ref.atTop,
       atTop = _ref$atTop === void 0 ? true : _ref$atTop,
       clickHref = _ref.clickHref,
       className = _ref.className,
-      menuProps = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["atTop", "clickHref", "className"]);
+      menuProps = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: className
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuTop__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuTop__WEBPACK_IMPORTED_MODULE_6__["default"], {
     href: clickHref,
     css: menuPosition
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuBody__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_MenuBody__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     atTop: atTop,
     css: menuPosition
   }, menuProps)));
@@ -15267,6 +14213,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Collapsible__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Collapsible */ "./pages/index/Menu/Collapsible.jsx");
 
 
+var _excluded = ["atTop", "clickHref"];
 
 
 
@@ -15276,13 +14223,13 @@ var Menu = function Menu(_ref) {
   var _ref$atTop = _ref.atTop,
       atTop = _ref$atTop === void 0 ? true : _ref$atTop,
       clickHref = _ref.clickHref,
-      menuProps = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["atTop", "clickHref"]);
+      menuProps = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Regular__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Regular__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     atTop: atTop,
     clickHref: clickHref,
     className: "is-hidden-mobile"
-  }, menuProps)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Collapsible__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  }, menuProps)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Collapsible__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: "is-hidden-tablet"
   }, menuProps)));
 };
@@ -15316,31 +14263,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _excluded = ["className", "title", "children"];
 
-function _templateObject2() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  display: flex;\n  align-items: center;\n\n  background: ", ";\n\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    color: ", ";\n  }\n\n  hr {\n    border: 1em;\n    width: 80%;\n    background: white; /* For browsers that do not support gradients */\n    background: linear-gradient(\n      to right,\n      rgba(0, 0, 0, 0),\n      rgba(204, 204, 204, 0.6),\n      rgba(0, 0, 0, 0)\n    );\n  }\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  min-height: ", "vh;\n  /* width: 100%; */\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject, _templateObject2;
 
 
 
 
-var PlainSection = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].section(_templateObject(), function (_ref) {
+var PlainSection = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].section(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  min-height: ", "vh;\n  /* width: 100%; */\n"])), function (_ref) {
   var isFullScreen = _ref.isFullScreen;
   return isFullScreen ? '100' : '70';
 });
@@ -15354,19 +14284,19 @@ var RegularSection = function RegularSection(_ref2) {
   var className = _ref2.className,
       title = _ref2.title,
       children = _ref2.children,
-      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, ["className", "title", "children"]);
+      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(PlainSection, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(PlainSection, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: "section ".concat(className)
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "columns"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
     className: "title"
-  }, title), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("hr", null), children))));
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("hr", null), children))));
 };
 
 RegularSection.propTypes = {
@@ -15375,7 +14305,7 @@ RegularSection.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired
 };
 
-var StyledRegularSection = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(RegularSection)(_templateObject2(), function (_ref3) {
+var StyledRegularSection = Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(RegularSection)(_templateObject2 || (_templateObject2 = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  display: flex;\n  align-items: center;\n\n  background: ", ";\n\n  h2,\n  h3,\n  h4,\n  h5,\n  h6 {\n    color: ", ";\n  }\n\n  hr {\n    border: 1em;\n    width: 80%;\n    background: white; /* For browsers that do not support gradients */\n    background: linear-gradient(\n      to right,\n      rgba(0, 0, 0, 0),\n      rgba(204, 204, 204, 0.6),\n      rgba(0, 0, 0, 0)\n    );\n  }\n"])), function (_ref3) {
   var _ref3$bgColor = _ref3.bgColor,
       bgColor = _ref3$bgColor === void 0 ? '#fff' : _ref3$bgColor;
   return bgColor;
@@ -15423,15 +14353,7 @@ var _content_index_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/_
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  h2 {\n    font-size: 54px;\n    text-align: center;\n  }\n\n  h2,\n  h3 {\n    font-weight: 300;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -15482,47 +14404,48 @@ var Index = function Index(_ref) {
     return dispatch(Object(_reducer__WEBPACK_IMPORTED_MODULE_13__["setTop"])(v));
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: className
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     httpEquiv: "content-type",
     content: "text/html; charset=utf-8"
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, _content_index_json__WEBPACK_IMPORTED_MODULE_14__.siteTitle), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, _content_index_json__WEBPACK_IMPORTED_MODULE_14__.siteTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "author",
     content: "Aitor G\xF3mez Goiri"
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "description",
     content: _content_index_json__WEBPACK_IMPORTED_MODULE_14__.description
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
     rel: "stylesheet",
-    href: "https://use.fontawesome.com/releases/v5.8.1/css/all.css",
-    integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf",
-    crossOrigin: "anonymous"
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Top__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+    integrity: "sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==",
+    crossOrigin: "anonymous",
+    referrerPolicy: "no-referrer"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Top__WEBPACK_IMPORTED_MODULE_7__["default"], {
     onTop: function onTop(isThere) {
       return setOnTop(isThere);
     }
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Menu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Menu__WEBPACK_IMPORTED_MODULE_6__["default"], {
     clickHref: "#profile",
     atTop: onTop,
     items: menuItems,
     selected: currentSection
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Profile__WEBPACK_IMPORTED_MODULE_8__["default"], {
     id: "profile",
     onEnter: setCurrentSectionIfNeeded
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Experience__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Experience__WEBPACK_IMPORTED_MODULE_9__["default"], {
     id: "experience",
     onEnter: setCurrentSectionIfNeeded
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Technical__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Technical__WEBPACK_IMPORTED_MODULE_10__["default"], {
     id: "skills",
     onEnter: setCurrentSectionIfNeeded
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_MoreInfo__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_MoreInfo__WEBPACK_IMPORTED_MODULE_12__["default"], {
     id: "moreInfo",
     onEnter: setCurrentSectionIfNeeded
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Contact__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_sections_Contact__WEBPACK_IMPORTED_MODULE_11__["default"], {
     id: "contact",
     onEnter: setCurrentSectionIfNeeded
   }));
@@ -15533,7 +14456,7 @@ var Index = function Index(_ref) {
 Index.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Index)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Index)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  h2 {\n    font-size: 54px;\n    text-align: center;\n  }\n\n  h2,\n  h3 {\n    font-weight: 300;\n  }\n"]))));
 
 /***/ }),
 
@@ -15686,16 +14609,9 @@ var _content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  a,\n  p {\n    color: #fff;\n    opacity: 0.6;\n  }\n\n  a:hover {\n    opacity: 1;\n  }\n\n  hr {\n    background: white; /* For browsers that do not support gradients */\n    background: linear-gradient(\n      to right,\n      rgba(0, 0, 0, 0),\n      rgba(255, 255, 255, 0.6),\n      rgba(0, 0, 0, 0)\n    );\n  }\n\n  p {\n    margin-bottom: 2em;\n    text-align: center;\n  }\n\n  div.columns {\n    width: 100%;\n  }\n\n  .contact {\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap;\n\n    .contact-links {\n      a {\n        display: block;\n      }\n    }\n  }\n"]);
+var _templateObject;
 
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
+var _excluded = ["className"];
 
 
 
@@ -15704,60 +14620,67 @@ function _templateObject() {
 var twitterUrl = "http://twitter.com/".concat(_content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.twitter);
 var linkedInUrl = "http://linkedin.es/in/".concat(_content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.linkedin, "/");
 var githubUrl = "https://github.com/".concat(_content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.github, "/");
+var orcidUrl = "https://orcid.org/".concat(_content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.orcid, "/");
 var slideshareUrl = "http://www.slideshare.net/".concat(_content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.slideshare, "/");
 var cvUrl = '/cv.html';
 
 var Contact = function Contact(_ref) {
   var className = _ref.className,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, ["className"]);
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     isFullScreen: true,
     title: "Contact",
     bgColor: "#434242",
     hdColor: "#fff",
     className: className
-  }, props), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "contact"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Do you still want to know more about me? Check the following links or scan the QR code to add me as a contact."), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Do you still want to know more about me? Check the following links or scan the QR code to add me as a contact."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "columns is-vcentered"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-6 is-offset-1-desktop is-5-desktop is-offset-2-widescreen is-4-widescreen"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "contact-links"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
     href: twitterUrl,
     rel: "noopener noreferrer",
     target: "_blank"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
     className: "fab fa-twitter-square"
-  }), " ", twitterUrl), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+  }), " ", twitterUrl), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
     href: linkedInUrl,
     rel: "noopener noreferrer",
     target: "_blank"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
     className: "fab fa-linkedin"
-  }), " ", linkedInUrl), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+  }), " ", linkedInUrl), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
     href: githubUrl,
     rel: "noopener noreferrer",
     target: "_blank"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
     className: "fab fa-github-square"
-  }), " ", githubUrl), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+  }), " ", githubUrl), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+    href: orcidUrl,
+    rel: "noopener noreferrer",
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+    className: "fab fa-orcid"
+  }), " My research profile"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
     href: cvUrl
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
     className: "fas fa-file-alt"
-  }), " My complete CV"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+  }), " My complete CV"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
     href: slideshareUrl,
     rel: "noopener noreferrer",
     target: "_blank"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
     className: "fab fa-slideshare"
-  }), " Some presentations I made"))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }), " Some presentations I made"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column qr-container is-offset-4-mobile is-4-mobile is-offset-2 is-4 is-3-widescreen"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
     className: "image is-square"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
     src: _content_landing_contact_json__WEBPACK_IMPORTED_MODULE_7__.contactQr,
     alt: "Scan it and add me to your contacts!"
   }))))));
@@ -15766,7 +14689,7 @@ var Contact = function Contact(_ref) {
 Contact.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(Contact)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(Contact)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  a,\n  p {\n    color: #fff;\n    opacity: 0.6;\n  }\n\n  a:hover {\n    opacity: 1;\n  }\n\n  hr {\n    background: white; /* For browsers that do not support gradients */\n    background: linear-gradient(\n      to right,\n      rgba(0, 0, 0, 0),\n      rgba(255, 255, 255, 0.6),\n      rgba(0, 0, 0, 0)\n    );\n  }\n\n  p {\n    margin-bottom: 2em;\n    text-align: center;\n  }\n\n  div.columns {\n    width: 100%;\n  }\n\n  .contact {\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap;\n\n    .contact-links {\n      a {\n        display: block;\n      }\n    }\n  }\n"]))));
 
 /***/ }),
 
@@ -15787,15 +14710,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .experience-title {\n    font-weight: bold;\n  }\n\n  .location {\n    margin-top: 1em;\n  }\n\n  .what {\n    font-weight: ", ";\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -15807,9 +14722,9 @@ var ExperienceTable = function ExperienceTable(_ref) {
       experiences = _ref$experiences === void 0 ? [] : _ref$experiences,
       _ref$showTitle = _ref.showTitle,
       showTitle = _ref$showTitle === void 0 ? false : _ref$showTitle;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "columns ".concat(className, " is-desktop")
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "column is-full"
   }, experiences.map(function (_ref2) {
     var title = _ref2.title,
@@ -15817,26 +14732,26 @@ var ExperienceTable = function ExperienceTable(_ref) {
         when = _ref2.when,
         where = _ref2.where,
         bodyHtml = _ref2.bodyHtml;
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       key: "".concat(what, "-").concat(when),
       className: "columns"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "column is-one-thirds"
-    }, showTitle && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, showTitle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "experience-title"
-    }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "experience-period"
-    }, when)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, when)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "column is-two-thirds"
-    }, !showTitle && title && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, title), what && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, !showTitle && title && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, title), what && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "what"
-    }, what), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }, what), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       dangerouslySetInnerHTML: {
         __html: bodyHtml
       }
-    }), where && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    }), where && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: "location"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
       className: "fas fa-map-marker-alt"
     }), " ", where)));
   })));
@@ -15852,7 +14767,7 @@ ExperienceTable.propTypes = {
   showTitle: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(ExperienceTable)(_templateObject(), function (_ref3) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(ExperienceTable)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .experience-title {\n    font-weight: bold;\n  }\n\n  .location {\n    margin-top: 1em;\n  }\n\n  .what {\n    font-weight: ", ";\n  }\n"])), function (_ref3) {
   var _ref3$remarkWhat = _ref3.remarkWhat,
       remarkWhat = _ref3$remarkWhat === void 0 ? false : _ref3$remarkWhat;
   return remarkWhat ? 'bold' : 'normal';
@@ -15882,15 +14797,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .location {\n    color: #22a39f;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -15902,19 +14809,19 @@ var CAREER = Object(utils_content__WEBPACK_IMPORTED_MODULE_5__["filterCV"])('car
 var EDUCATION = Object(utils_content__WEBPACK_IMPORTED_MODULE_5__["filterCV"])('education'); // Career | Work experience | Professional Experience
 
 var Experience = function Experience(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_6__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     title: "Experience",
     bgColor: "#f3efe0",
     hdColor: "#22a39f"
-  }, props), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     className: "subtitle"
-  }, "Career"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Career"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
     showTitle: true,
     remarkWhat: true,
     experiences: CAREER
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     className: "subtitle"
-  }, "Education"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Table__WEBPACK_IMPORTED_MODULE_7__["default"], {
     experiences: EDUCATION
   }));
 };
@@ -15922,7 +14829,7 @@ var Experience = function Experience(props) {
 Experience.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Experience)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Experience)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .location {\n    color: #22a39f;\n  }\n"]))));
 
 /***/ }),
 
@@ -15949,16 +14856,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    border-radius: 1em;\n    padding: 1rem;\n\n    figure {\n      width: 2em;\n      font-size: 1.5rem;\n    }\n\n    .section-text {\n      h3 {\n        color: #000;\n        font-weight: bold;\n        font-size: 1.5rem;\n      }\n\n      p {\n        color: #7a7a7a;\n        font-size: 1.25rem;\n      }\n    }\n  }\n\n  a:hover {\n    background-color: #fafafa;\n  }\n"]);
+var _templateObject;
 
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
+var _excluded = ["className"];
 
 
 
@@ -15970,56 +14870,56 @@ TO CHECK
 
 var MoreInfo = function MoreInfo(_ref) {
   var className = _ref.className,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, ["className"]);
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     title: "More stuff",
     bgColor: "#f3efe0",
     hdColor: "#22a39f",
     className: className
-  }, props), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "columns"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-6"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
     href: "/projects.html"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
     className: "fas fa-code-branch"
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "section-text"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Projects"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Some of my open source contributions explained.")))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Some of my open source contributions explained.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-6"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
     href: "/publications.html"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
     className: "fas fa-scroll"
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "section-text"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Publications"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "What I published during my academic years."))))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Publications"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "What I published during my academic years."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "columns"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-6"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
     href: "/research_projects.html"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
     className: "fas fa-project-diagram"
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "section-text"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "R&D Projects"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Research projects in which I have taken part.")))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "R&D Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Research projects in which I have taken part.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "column is-6"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_Link__WEBPACK_IMPORTED_MODULE_6__["default"], {
     href: "/teaching.html"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("figure", {
     className: "fas fa-chalkboard-teacher"
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "section-text"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Teaching"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Yes, I also taught several topics in the past."))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h3", null, "Teaching"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, "Yes, I also taught several topics in the past."))))));
 };
 
 MoreInfo.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(MoreInfo)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(MoreInfo)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    border-radius: 1em;\n    padding: 1rem;\n\n    figure {\n      width: 2em;\n      font-size: 1.5rem;\n    }\n\n    .section-text {\n      h3 {\n        color: #000;\n        font-weight: bold;\n        font-size: 1.5rem;\n      }\n\n      p {\n        color: #7a7a7a;\n        font-size: 1.25rem;\n      }\n    }\n  }\n\n  a:hover {\n    background-color: #fafafa;\n  }\n"]))));
 
 /***/ }),
 
@@ -16045,15 +14945,7 @@ var _content_landing_profile_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .avatar {\n    text-align: center;\n\n    img {\n      border-radius: 1em;\n    }\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -16062,22 +14954,22 @@ function _templateObject() {
 
 
 var Profile = function Profile(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     title: "Profile"
-  }, props), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "columns is-desktop"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "column is-two-thirds-desktop"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
     className: "subtitle"
-  }, "About me"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, "About me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "content",
     dangerouslySetInnerHTML: {
       __html: _content_landing_profile_json__WEBPACK_IMPORTED_MODULE_6__.bodyHtml
     }
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "column is-one-thirds-desktop avatar"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
     src: "https://s.gravatar.com/avatar/".concat(_content_landing_profile_json__WEBPACK_IMPORTED_MODULE_6__.gravatar, "?s=200"),
     alt: _content_landing_profile_json__WEBPACK_IMPORTED_MODULE_6__.author,
     width: "200",
@@ -16089,7 +14981,7 @@ var Profile = function Profile(props) {
 Profile.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Profile)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(Profile)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .avatar {\n    text-align: center;\n\n    img {\n      border-radius: 1em;\n    }\n  }\n"]))));
 
 /***/ }),
 
@@ -16112,15 +15004,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  p {\n    margin-bottom: 2em;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -16129,16 +15013,16 @@ function _templateObject() {
 var SKILLS = Object(utils_content__WEBPACK_IMPORTED_MODULE_4__["filterCV"])('technical').reverse(); // Add categories: EXPERIENCE WITH, DAY-TO-DAY COMFORT
 
 var TechnicalSkills = function TechnicalSkills(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_IntersectedSection__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     title: "Technical Skills"
-  }, props), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "The following should be read as: \"Experience with\" (default) and \"Day-to-day comfort\" (in italic)."), SKILLS.map(function (_ref) {
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "The following should be read as: \"Experience with\" (default) and \"Day-to-day comfort\" (in italic)."), SKILLS.map(function (_ref) {
     var title = _ref.title,
         bodyHtml = _ref.bodyHtml;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
       key: title
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h3", {
       className: "subtitle"
-    }, title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: "content",
       dangerouslySetInnerHTML: {
         __html: bodyHtml
@@ -16147,7 +15031,7 @@ var TechnicalSkills = function TechnicalSkills(props) {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(TechnicalSkills)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(TechnicalSkills)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  p {\n    margin-bottom: 2em;\n  }\n"]))));
 
 /***/ }),
 
@@ -16175,16 +15059,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .hero-body {\n    display: flex;\n    align-items: center;\n  }\n"]);
+var _templateObject;
 
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
+var _excluded = ["onTop", "className"];
 
 
 
@@ -16195,9 +15072,9 @@ function _templateObject() {
 var Top = function Top(_ref) {
   var onTop = _ref.onTop,
       className = _ref.className,
-      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, ["onTop", "className"]);
+      other = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, _excluded);
 
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Intersected__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Intersected__WEBPACK_IMPORTED_MODULE_7__["default"], {
     onIntersect: function onIntersect(ratio) {
       var isOnTop = ratio > 0;
       onTop(isOnTop);
@@ -16205,18 +15082,18 @@ var Top = function Top(_ref) {
     options: {
       threshold: [0, 0.01]
     }
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_8__["PlainSection"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Section__WEBPACK_IMPORTED_MODULE_8__["PlainSection"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     isFullScreen: true,
     className: "hero is-primary is-bold ".concat(className)
-  }, other), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, other), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "hero-head"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_NavBar__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(components_NavBar__WEBPACK_IMPORTED_MODULE_6__["default"], {
     hideBrand: true
-  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "hero-body"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "container has-text-centered"
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
     className: "title"
   }, "Aitor G\xF3mez Goiri")))));
 };
@@ -16225,7 +15102,7 @@ Top.propTypes = {
   onTop: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
   className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(Top)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(Top)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  .hero-body {\n    display: flex;\n    align-items: center;\n  }\n"]))));
 
 /***/ }),
 
@@ -16248,6 +15125,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
 
 
+var _excluded = ["href", "children"];
 
 
 
@@ -16256,18 +15134,18 @@ var assetPrefix = "";
 var Link = function Link(_ref) {
   var href = _ref.href,
       children = _ref.children,
-      rest = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["href", "children"]);
+      rest = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, _excluded);
 
   var customLink = href.indexOf('/') === 0;
 
   if (customLink) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: href,
       as: "".concat(assetPrefix).concat(href)
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", rest, children));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", rest, children));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     href: href
   }, rest), children);
 };
@@ -16300,15 +15178,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: rgb(255, 255, 255, 0.7);\n\n  .navbar-burger > i {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    transition: transform 0.2s ease 0s;\n  }\n\n  .pressed i {\n    transform-origin: center center;\n    transform: rotate(180deg);\n  }\n\n  .navbar-menu {\n    background-color: transparent;\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var _templateObject;
 
 
 
@@ -16329,16 +15199,16 @@ var NavBar = function NavBar(_ref) {
     return setActive(!isActive);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", {
     className: "navbar is-transparent ".concat(className)
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "container"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "navbar-brand"
-  }, !hideBrand && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, !hideBrand && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "navbar-item",
     href: "/index.html"
-  }, "Aitor G\xF3mez Goiri"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  }, "Aitor G\xF3mez Goiri"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     role: "button",
     tabIndex: 0,
     "aria-label": "menu",
@@ -16353,23 +15223,23 @@ var NavBar = function NavBar(_ref) {
       }
     },
     className: "navbar-burger ".concat(isActive ? 'pressed' : '')
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("i", {
     className: "fas fa-chevron-down"
-  }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     id: "navMenu",
     className: "navbar-menu ".concat(isActive ? 'is-active' : '')
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "navbar-end"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "navbar-item",
     href: "/projects.html"
-  }, "Projects"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "navbar-item",
     href: "/publications.html"
-  }, "Publications"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Publications"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "navbar-item",
     href: "/research_projects.html"
-  }, "R&D Projects"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "R&D Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Link__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "navbar-item",
     href: "/teaching.html"
   }, "Teaching")))));
@@ -16379,7 +15249,7 @@ NavBar.propTypes = {
   hideBrand: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(NavBar)(_templateObject()));
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(NavBar)(_templateObject || (_templateObject = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background-color: rgb(255, 255, 255, 0.7);\n\n  .navbar-burger > i {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    transition: transform 0.2s ease 0s;\n  }\n\n  .pressed i {\n    transform-origin: center center;\n    transform: rotate(180deg);\n  }\n\n  .navbar-menu {\n    background-color: transparent;\n  }\n"]))));
 
 /***/ }),
 
@@ -16516,14 +15386,14 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_2e29b3ddf0a4859f688e":
+/***/ "dll-reference dll_bddb6eed8fbd46b918fd":
 /*!*******************************************!*\
-  !*** external "dll_2e29b3ddf0a4859f688e" ***!
+  !*** external "dll_bddb6eed8fbd46b918fd" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_2e29b3ddf0a4859f688e;
+module.exports = dll_bddb6eed8fbd46b918fd;
 
 /***/ })
 
