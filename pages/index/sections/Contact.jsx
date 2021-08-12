@@ -8,7 +8,7 @@ import CONTACT from '../../../content/landing/contact.json'
 const twitterUrl = `http://twitter.com/${CONTACT.twitter}`
 const linkedInUrl = `http://linkedin.es/in/${CONTACT.linkedin}/`
 const githubUrl = `https://github.com/${CONTACT.github}/`
-const orcidUrl = `https://orcid.org/${CONTACT.orcid}/`
+const orcidUrl = `https://orcid.org/${CONTACT.orcid}`
 const slideshareUrl = `http://www.slideshare.net/${CONTACT.slideshare}/`
 const cvUrl = '/cv.html'
 
