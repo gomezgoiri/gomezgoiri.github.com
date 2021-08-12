@@ -4,6 +4,19 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Icon from './Icon'
 
+/*
+Morelab's semantic URLs no longer work:
+
+{semantics && (
+      <Icon
+        href={`http://www.morelab.deusto.es/labman/resource/publications/${semantics}`}
+        title="Check the semantic description of this publication"
+        src="rdf.png"
+        alt="Semantics of the publication"
+      />
+    )}{' '}
+*/
+
 const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
   <div className={className}>
     {bib && (
@@ -23,14 +36,6 @@ const PublicationIcons = ({ bib, code, semantics, slides, pdf, className }) => (
           alt="Check the code associated with the publication"
         />
       </span>
-    )}{' '}
-    {semantics && (
-      <Icon
-        href={`http://www.morelab.deusto.es/labman/resource/publications/${semantics}`}
-        title="Check the semantic description of this publication"
-        src="rdf.png"
-        alt="Semantics of the publication"
-      />
     )}{' '}
     {slides && (
       <span
@@ -63,7 +68,7 @@ PublicationIcons.propTypes = {
   semantics: PropTypes.string,
   slides: PropTypes.string,
   pdf: PropTypes.string,
-  className: PropTypes.string.isRequired
+  className: PropTypes.string.isRequired,
 }
 
 export default styled(PublicationIcons)`
