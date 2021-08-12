@@ -8,6 +8,7 @@ import CONTACT from '../../../content/landing/contact.json'
 const twitterUrl = `http://twitter.com/${CONTACT.twitter}`
 const linkedInUrl = `http://linkedin.es/in/${CONTACT.linkedin}/`
 const githubUrl = `https://github.com/${CONTACT.github}/`
+const orcidUrl = `https://orcid.org/${CONTACT.orcid}/`
 const slideshareUrl = `http://www.slideshare.net/${CONTACT.slideshare}/`
 const cvUrl = '/cv.html'
 
@@ -37,6 +38,9 @@ const Contact = ({ className, ...props }) => (
             <a href={githubUrl} rel="noopener noreferrer" target="_blank">
               <span className="fab fa-github-square" /> {githubUrl}
             </a>
+            <a href={orcidUrl} rel="noopener noreferrer" target="_blank">
+              <span className="fab fa-orcid" /> My research profile
+            </a>
             <a href={cvUrl}>
               <span className="fas fa-file-alt" /> My complete CV
             </a>
@@ -59,7 +63,7 @@ const Contact = ({ className, ...props }) => (
 )
 
 Contact.propTypes = {
-  className: PropTypes.string.isRequired
+  className: PropTypes.string.isRequired,
 }
 
 export default styled(Contact)`
