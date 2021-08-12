@@ -10,10 +10,10 @@
   "dependencies": {
     "next": "^8.1.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-google-charts": "^3.0.15",
-    "styled-components": "~4.2.1",
+    "styled-components": "~5.3.0",
     "webpack": "^4.42.0"
   },
   "devDependencies": {
@@ -24,9 +24,9 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "gh-pages": "^2.2.0",
-    "processmd": "^4.5.0",
-    "standard": "^14.3.1"
+    "gh-pages": "^3.2.3",
+    "processmd": "^4.6.1",
+    "standard": "^16.0.3"
   },
   "scripts": {
     "start": "node server.js",
