@@ -1,0 +1,44 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+
+interface Props {
+  title: string;
+  pageTitle: string;
+  description?: string;
+  backLink?: { href: string; text: string };
+  topNav?: any;
+}
+
+const { title, pageTitle, description, backLink } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <NavBar />
+  <section class="section">
+    <div class="container">
+      <header>
+        {backLink && (
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li class="is-active">
+                <a href={backLink.href}>{backLink.text}</a>
+              </li>
+            </ul>
+          </nav>
+        )}
+        <div class="level">
+          <div class="level-left">
+            <slot name="top-nav" />
+          </div>
+        </div>
+        <div class="content">
+          <h1>{pageTitle}</h1>
+        </div>
+      </header>
+      <main class="content">
+        <slot />
+      </main>
+    </div>
+  </section>
+</BaseLayout>

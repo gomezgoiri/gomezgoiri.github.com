@@ -1,0 +1,517 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { readFile } from 'node:fs/promises';
+import matter from 'gray-matter';
+
+const profileRaw = await readFile('./src/content/landing/profile.md', 'utf-8');
+const profileParsed = matter(profileRaw);
+const profileData = profileParsed.data as { author: string; gravatar: string };
+const profileHtml = profileParsed.content;
+
+const contactRaw = await readFile('./src/content/landing/contact.md', 'utf-8');
+const contactData = matter(contactRaw).data as {
+  github: string;
+  linkedin: string;
+  orcid: string;
+  contactQr: string;
+};
+
+const careerEntries = (await getCollection('career')).sort((a, b) => b.id.localeCompare(a.id));
+const career = await Promise.all(
+  careerEntries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { data: entry.data, Content };
+  })
+);
+
+const educationEntries = (await getCollection('education')).sort((a, b) => b.id.localeCompare(a.id));
+const education = await Promise.all(
+  educationEntries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { data: entry.data, Content };
+  })
+);
+
+
+const linkedInUrl = `https://linkedin.com/in/${contactData.linkedin}/`;
+const githubUrl = `https://github.com/${contactData.github}/`;
+const orcidUrl = `https://orcid.org/${contactData.orcid}`;
+---
+
+<BaseLayout title="Aitor Gómez Goiri">
+  <!-- Top Hero -->
+  <section id="top" class="hero is-primary is-bold is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title is-1">Aitor Gómez Goiri</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky nav for scrolled state -->
+  <nav id="scrollNav" class="navbar is-fixed-top scroll-nav is-hidden">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">Aitor Gómez Goiri</a>
+        <a
+          role="button"
+          class="navbar-burger"
+          id="scrollNavBurger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="scrollNavMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="scrollNavMenu">
+        <div class="navbar-end">
+          <a class="navbar-item nav-link" href="#profile">Profile</a>
+          <a class="navbar-item nav-link" href="#career">Career</a>
+          <a class="navbar-item nav-link" href="#education">Education</a>
+          <a class="navbar-item nav-link" href="#skills">Technical skills</a>
+          <a class="navbar-item nav-link" href="#moreInfo">More info</a>
+          <a class="navbar-item nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile" class="section landing-section bg-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title section-title">Profile</h2>
+          <hr class="section-hr" />
+          <div class="columns is-desktop">
+            <div class="column is-two-thirds-desktop">
+              <h3 class="subtitle">About me</h3>
+              <div class="content" set:html={profileHtml} />
+            </div>
+            <div class="column is-one-third-desktop avatar">
+              <img
+                src={`https://s.gravatar.com/avatar/${profileData.gravatar}?s=200`}
+                alt={profileData.author}
+                width="200"
+                height="200"
+                itemProp="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career -->
+  <section id="career" class="section landing-section bg-cream">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title section-title">Career</h2>
+          <hr class="section-hr" />
+          <div class="columns is-desktop">
+            <div class="column is-full">
+              {career.map(({ data, Content }) => (
+                <div class="columns experience-row">
+                  <div class="column is-one-third">
+                    <div class="experience-title">{data.title}</div>
+                    <div class="experience-period">{data.when}</div>
+                  </div>
+                  <div class="column is-two-thirds">
+                    {data.what && <div class="what-bold">{data.what}</div>}
+                    <div class="content"><Content /></div>
+                    {data.where && (
+                      <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> {data.where}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section landing-section bg-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title section-title">Education</h2>
+          <hr class="section-hr" />
+          <div class="columns is-desktop">
+            <div class="column is-full">
+              {education.map(({ data, Content }) => (
+                <div class="columns experience-row">
+                  <div class="column is-one-third">
+                    <div class="experience-period">{data.when}</div>
+                  </div>
+                  <div class="column is-two-thirds">
+                    <div>{data.title}</div>
+                    <div class="content"><Content /></div>
+                    {data.where && (
+                      <div class="location">
+                        <i class="fas fa-map-marker-alt"></i> {data.where}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="section landing-section bg-cream">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title section-title">Technical Skills</h2>
+          <hr class="section-hr" />
+          <div class="content skills-note">
+            <p>
+              Keeping a detailed skills list up to date is a hassle since technologies in R&D shift with every project.
+              Besides, in today’s AI-driven world, adaptability matters more than knowing any one tool.
+            </p>
+            <p>
+             However, lately I've been mostly developing in
+              <a href="https://www.typescriptlang.org/">TypeScript</a> and
+              <a href="https://soliditylang.org/">Solidity</a> using
+              <a href="https://deno.com/">Deno</a> and
+              <a href="https://getfoundry.sh/">Foundry</a> as supporting platforms.
+              I also have significant
+              <a href="https://developer.mozilla.org/en-US/docs/Web">web development</a> and
+              <a href="https://es.wikipedia.org/wiki/DevOps">DevOps</a> experience.
+            </p>
+            <p>
+              I'm most comfortable on
+              <a href="https://www.gnu.org/gnu/linux-and-gnu.html">GNU/Linux</a>.
+            </p>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Info -->
+  <section id="moreInfo" class="section landing-section bg-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title section-title">More stuff</h2>
+          <hr class="section-hr" />
+          <div class="columns">
+            <div class="column is-4">
+              <a href="/projects.html" class="more-info-card">
+                <span class="card-icon fas fa-code-branch"></span>
+                <div class="section-text">
+                  <h3>Projects</h3>
+                  <p>Some of my open source contributions explained.</p>
+                </div>
+              </a>
+            </div>
+            <div class="column is-4">
+              <a href={orcidUrl} target="_blank" rel="noopener noreferrer" class="more-info-card">
+                <span class="card-icon fas fa-scroll"></span>
+                <div class="section-text">
+                  <h3>Publications</h3>
+                  <p>What I published during my academic years (ORCID).</p>
+                </div>
+              </a>
+            </div>
+            <div class="column is-4">
+              <a href={orcidUrl} target="_blank" rel="noopener noreferrer" class="more-info-card">
+                <span class="card-icon fas fa-project-diagram"></span>
+                <div class="section-text">
+                  <h3>R&amp;D Projects</h3>
+                  <p>Research projects in which I participated (ORCID).</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section landing-section bg-dark">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10-widescreen is-9-tablet is-10-mobile is-offset-1-mobile">
+          <h2 class="title contact-title">Contact</h2>
+          <hr class="contact-hr" />
+          <p class="contact-text">
+            Do you still want to know more about me? Check the following links or
+            scan the QR code to add me as a contact.
+          </p>
+          <div class="columns is-vcentered is-desktop is-centered">
+            <div class="column is-narrow">
+              <div class="contact-links">
+                <a href={linkedInUrl} rel="noopener noreferrer" target="_blank">
+                  <span class="fab fa-linkedin"></span> My LinkedIn
+                </a>
+                <a href={orcidUrl} rel="noopener noreferrer" target="_blank">
+                  <span class="fab fa-orcid"></span> My research profile
+                </a>
+                <a href={githubUrl} rel="noopener noreferrer" target="_blank">
+                  <span class="fab fa-github-square"></span> My GitHub account
+                </a>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="qr-container">
+                <figure class="image qr-image">
+                  <img
+                    src={contactData.contactQr}
+                    alt="Scan it and add me to your contacts!"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  const burger = document.getElementById('scrollNavBurger');
+  const menu = document.getElementById('scrollNavMenu');
+  if (burger && menu) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+    menu.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('is-active');
+        menu.classList.remove('is-active');
+      });
+    });
+  }
+
+  const topSection = document.getElementById('top');
+  const scrollNav = document.getElementById('scrollNav');
+  if (topSection && scrollNav) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        scrollNav.classList.toggle('is-hidden', entry.isIntersecting);
+      },
+      { threshold: [0, 0.01] }
+    );
+    observer.observe(topSection);
+  }
+
+  const sections = document.querySelectorAll('.landing-section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  if (sections.length && navLinks.length) {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            navLinks.forEach((link) => {
+              const href = link.getAttribute('href');
+              link.classList.toggle(
+                'is-active',
+                href === `#${entry.target.id}`
+              );
+            });
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    sections.forEach((section) => sectionObserver.observe(section));
+  }
+</script>
+
+<style>
+  .hero-body {
+    display: flex;
+    align-items: center;
+  }
+
+  .scroll-nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+  }
+
+  .scroll-nav .nav-link.is-active {
+    color: #22a39f;
+    font-weight: bold;
+  }
+
+  .landing-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .bg-white {
+    background: #fff;
+  }
+
+  .bg-cream {
+    background: #f3efe0;
+  }
+
+  .bg-dark {
+    background: #434242;
+  }
+
+  .section-title {
+    color: #22a39f;
+  }
+
+  .section-hr {
+    border: 0;
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(204, 204, 204, 0.6),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .bg-cream :global(h2),
+  .bg-cream :global(h3),
+  .bg-cream :global(h4),
+  .bg-cream :global(h5),
+  .bg-cream :global(h6) {
+    color: #22a39f;
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .avatar img {
+    border-radius: 1em;
+  }
+
+  /* Experience */
+  .experience-title {
+    font-weight: bold;
+  }
+
+  .what-bold {
+    font-weight: bold;
+  }
+
+  .location {
+    margin-top: 1em;
+    color: #22a39f;
+  }
+
+  /* Skills */
+  .skills-note p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  /* More Info cards */
+  .more-info-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 1em;
+    padding: 1rem;
+  }
+
+  .card-icon {
+    width: 2em;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .more-info-card .section-text h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .more-info-card .section-text p {
+    color: #7a7a7a;
+    font-size: 1.25rem;
+  }
+
+  .more-info-card:hover {
+    background-color: #fafafa;
+  }
+
+  /* Contact section */
+  .contact-title {
+    color: #fff;
+  }
+
+  .contact-hr {
+    border: 0;
+    height: 1px;
+    width: 80%;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .contact-text {
+    color: #fff;
+    opacity: 0.6;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .contact-links {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .contact-links {
+      text-align: left;
+      padding-right: 3rem;
+    }
+  }
+
+  .contact-links a {
+    display: block;
+    color: #fff;
+    opacity: 0.6;
+    margin-bottom: 0.5em;
+  }
+
+  .contact-links a:hover {
+    opacity: 1;
+  }
+
+  .qr-container {
+    text-align: center;
+  }
+
+  .qr-image {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+</style>

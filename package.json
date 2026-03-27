@@ -1,48 +1,19 @@
 {
-  "version": "1.0.0",
-  "author": "Aitor Gómez Goiri",
   "name": "aitor-personal-website",
-  "description": "Markdown based personal website",
-  "homepage": "http://gomezgoiri.net",
-  "twitter": "gomezgoiri",
-  "main": "index.js",
+  "type": "module",
+  "version": "3.0.0",
+  "description": "Aitor Gómez Goiri's personal website",
+  "author": "Aitor Gómez Goiri",
   "license": "MIT",
-  "dependencies": {
-    "next": "^8.1.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-google-charts": "^3.0.15",
-    "styled-components": "~4.2.1",
-    "webpack": "^4.42.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "gh-pages": "^3.2.3",
-    "processmd": "^4.6.1",
-    "standard": "^16.0.3"
-  },
   "scripts": {
-    "start": "node server.js",
-    "server": "NODE_ENV=production node server.js",
-    "build": "next build",
-    "export": "next export && cp -R static/* out/",
-    "lint": "eslint \"pages/**/*.+(js|jsx)\" \"src/**/*.+(js|jsx)\" --fix || echo 'Check your code!'",
-    "build:content": "processmd \"content/**/*.md\" --outputDir content --preview 140 --markdownOptions.html=true --includeBodyProps --summaryOutput content/summary.json",
-    "build:content:watch": "processmd \"content/**/*.md\" --outputDir content --preview 140 --markdownOptions.html=true --includeBodyProps --summaryOutput content/summary.json --watch",
-    "build:export": "npm run build && npm run export",
-    "build:deploy": "npm run build:content && npm run build:export",
-    "build:gh": "touch out/.nojekyll && echo gomezgoiri.net > out/CNAME",
-    "deploy:publish": "gh-pages -b master -d out --dotfiles -m \"Exporting commit `git rev-parse v2_nextjs`\"",
-    "deploy": "npm run build:deploy && npm run build:gh && npm run deploy:publish",
-    "v-patch": "npm version patch && git push --tags && npm publish && git push",
-    "v-minor": "npm version minor && git push --tags && npm publish && git push",
-    "v-major": "npm version major && git push --tags && npm publish && git push"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.1.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^17.0.5"
   }
 }

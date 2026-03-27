@@ -1,0 +1,14 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { readFile } from 'node:fs/promises';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+
+const raw = await readFile('./src/content/landing/projects.md', 'utf-8');
+const parsed = matter(raw);
+const bodyHtml = await marked(parsed.content);
+---
+
+<PageLayout title={`${parsed.data.title} - Aitor Gómez Goiri`} pageTitle={parsed.data.title} description={parsed.data.description}>
+  <Fragment set:html={bodyHtml} />
+</PageLayout>

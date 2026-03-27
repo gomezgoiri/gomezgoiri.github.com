@@ -1,0 +1,55 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PublicationIcons from '../../components/PublicationIcons.astro';
+import { readFile } from 'node:fs/promises';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+
+const raw = await readFile('./src/content/landing/dissertation.md', 'utf-8');
+const parsed = matter(raw);
+const bodyHtml = await marked(parsed.content);
+const { title, authors, restCitation, pdf, bib, slides, code } = parsed.data;
+---
+
+<PageLayout
+  title={`${title} - Aitor Gómez Goiri`}
+  pageTitle={title}
+>
+  <article itemScope itemType="http://schema.org/ScholarlyArticle">
+    <header>
+      <h2 class="is-sr-only">
+        <a href="/publications/gomezgoiri-dissertation.html" rel="bookmark" itemProp="url">
+          <span itemProp="name">{title}</span>
+        </a>
+      </h2>
+      <h5>
+        <span>{authors}</span>
+      </h5>
+    </header>
+
+    <blockquote set:html={restCitation} />
+
+    <PublicationIcons bib={bib} pdf={pdf} slides={slides} code={code} />
+
+    <br />
+
+    <div class="clear" itemProp="description" set:html={bodyHtml} />
+  </article>
+</PageLayout>
+
+<style>
+  .clear {
+    clear: both;
+  }
+
+  .is-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>

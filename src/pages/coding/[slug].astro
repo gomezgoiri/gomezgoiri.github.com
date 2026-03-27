@@ -1,0 +1,90 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('coding');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const allEntries = (await getCollection('coding'))
+  .filter((e) => e.data.subsection === entry.data.subsection)
+  .sort((a, b) => (a.data.subsectionOrder ?? 0) - (b.data.subsectionOrder ?? 0));
+
+const currentIndex = allEntries.findIndex((e) => e.id === entry.id);
+const prev = currentIndex > 0 ? allEntries[currentIndex - 1] : null;
+const next = currentIndex < allEntries.length - 1 ? allEntries[currentIndex + 1] : null;
+---
+
+<PageLayout
+  title={`${entry.data.title} - Aitor Gómez Goiri`}
+  pageTitle={entry.data.title}
+  backLink={{ href: '/projects.html', text: '<< Back to the projects list' }}
+>
+  <Fragment slot="top-nav">
+    <div class="dropdown is-hoverable">
+      <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="subsection-menu">
+          <span>{entry.data.subtitle ?? 'Sections'}</span>
+          <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="subsection-menu" role="menu">
+        <div class="dropdown-content">
+          {allEntries.map((e) => (
+            <a
+              href={`/coding/${e.id}.html`}
+              class:list={['dropdown-item', { 'is-active': e.id === entry.id }]}
+            >
+              {e.data.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </Fragment>
+
+  {entry.data.date && (
+    <p class="published-date">Published on {new Date(entry.data.date).toLocaleDateString()}</p>
+  )}
+
+  <Content />
+
+  <nav class="level bottom-nav">
+    <div class="level-left">
+      {prev && (
+        <a href={`/coding/${prev.id}.html`} class="button">
+          &larr; {prev.data.title}
+        </a>
+      )}
+    </div>
+    <div class="level-right">
+      {next && (
+        <a href={`/coding/${next.id}.html`} class="button is-primary">
+          {next.data.title} &rarr;
+        </a>
+      )}
+    </div>
+  </nav>
+</PageLayout>
+
+<style>
+  .published-date {
+    margin-bottom: 20px;
+    color: #7a7a7a;
+  }
+
+  .bottom-nav {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+</style>

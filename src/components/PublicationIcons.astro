@@ -1,0 +1,53 @@
+---
+interface Props {
+  bib?: string;
+  code?: string;
+  slides?: string;
+  pdf?: string;
+}
+
+const { bib, code, slides, pdf } = Astro.props;
+---
+
+<div class="publication-icons">
+  {bib && (
+    <a href={bib} title="Download the citation in Bibtex format">
+      <img src="/static/img/bibtex.png" alt="Bibtex citation" />
+    </a>
+  )}
+  {code && (
+    <span itemProp="hasPart" itemScope itemType="http://schema.org/Code">
+      <a href={code} itemProp="codeRepository">
+        <img src="/static/img/code-icon.png" alt="Check the code associated with the publication" />
+      </a>
+    </span>
+  )}
+  {slides && (
+    <span itemProp="hasPart" itemScope itemType="http://schema.org/CreativeWork">
+      <a href={slides} title="See the presentation of this publication">
+        <img src="/static/img/slides.png" alt="Presentation" />
+      </a>
+    </span>
+  )}
+  {pdf && (
+    <a href={pdf} title="Download this publication in PDF format">
+      <img src="/static/img/pdf.png" alt="Read the full publication" />
+    </a>
+  )}
+</div>
+
+<style>
+  .publication-icons {
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .publication-icons a {
+    margin-left: 0.3em;
+  }
+
+  .publication-icons img {
+    height: 24px;
+    width: auto;
+  }
+</style>
