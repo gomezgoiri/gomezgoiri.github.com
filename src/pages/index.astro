@@ -41,10 +41,10 @@ const orcidUrl = `https://orcid.org/${contactData.orcid}`;
 
 <BaseLayout title="Aitor Gómez Goiri">
   <!-- Top Hero -->
-  <section id="top" class="hero is-primary is-bold is-fullheight">
+  <section id="top" class="hero is-fullheight hero-dark">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title is-1">Aitor Gómez Goiri</p>
+        <p class="title is-1 hero-name">Aitor <span class="g-blue">G</span>ómez <span class="g-green">G</span>oiri</p>
       </div>
     </div>
   </section>
@@ -343,6 +343,28 @@ const orcidUrl = `https://orcid.org/${contactData.orcid}`;
 </script>
 
 <style>
+  .hero-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #232323 100%);
+  }
+
+  .hero-name {
+    color: #fff;
+  }
+
+  .g-blue {
+    background: linear-gradient(135deg, #5bc0ff, #004a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .g-green {
+    background: linear-gradient(135deg, #5eff8a, #0d7a30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .hero-body {
     display: flex;
     align-items: center;
